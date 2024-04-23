@@ -1,0 +1,446 @@
+{
+    "jar_name": "commons-codec-1.16.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from commons-codec-1.16.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from commons-codec-1.16.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the commons-codec-1.16.0 project or its source code. However, based on the information provided, I can provide you with a list of some common classes from the Apache Commons Codec library.\n\n1. DigestUtils\n2. Hex\n3. Base64\n4. BinaryDecoder\n5. BinaryEncoder\n6. BinaryDecoder\n7. BinaryEncoder\n8. BinaryDecoder\n9. BinaryEncoder\n10. BinaryDecoder\n11. BinaryEncoder\n12. BinaryDecoder\n13. BinaryEncoder\n14. BinaryDecoder\n15. BinaryEncoder\n16. BinaryDecoder\n17. BinaryEncoder\n18. BinaryDecoder\n19. BinaryEncoder\n20. BinaryDecoder\n21. BinaryEncoder\n22. BinaryDecoder\n23. BinaryEncoder\n24. BinaryDecoder\n25. BinaryEncoder\n26. BinaryDecoder\n27. BinaryEncoder\n28. BinaryDecoder\n29. BinaryEncoder\n30. BinaryDecoder\n31. BinaryEncoder\n32. BinaryDecoder\n33. BinaryEncoder\n34. BinaryDecoder\n35. BinaryEncoder\n36. BinaryDecoder\n37. BinaryEncoder\n38. BinaryDecoder\n39. BinaryEncoder\n40. BinaryDecoder\n41. BinaryEncoder\n42. BinaryDecoder\n43. BinaryEncoder\n44. BinaryDecoder\n45. BinaryEncoder\n46. BinaryDecoder\n47. BinaryEncoder\n48. BinaryDecoder\n49. BinaryEncoder\n50. BinaryDecoder\n\nPlease note that this list is based on the assumption that the classes you're looking for are located in the org.apache.commons.codec package. If you're looking for a different set of classes, you'll need to adjust the package accordingly.",
+        "extracted_APIs_from_prediction": [
+            "DigestUtils",
+            "Hex",
+            "Base64",
+            "BinaryDecoder",
+            "BinaryEncoder"
+        ],
+        "correct_API_predictions": [
+            "DigestUtils",
+            "Hex",
+            "Base64"
+        ],
+        "wrong_API_predictions": [
+            "BinaryDecoder",
+            "BinaryEncoder"
+        ],
+        "number_of_correct_APIs": 3,
+        "number_of_wrong_APIs": 2,
+        "failure_rate_for_APIs": 0.4,
+        "model_confidence": 0.8214665055274963,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "DigestUtils": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"DigestUtils\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DigestUtils\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the Java code that uses \"commons-codec-1.16.0\" along with other APIs:\n\n```java\nimport java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\nimport org.apache.commons.codec.digest.DigestUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String originalString = \"Sample Text\";\n            System.out.println(\"Original String: \" + originalString);\n\n            // Using MessageDigest with String\n            MessageDigest md = MessageDigest.getInstance(\"MD5\");\n            byte[] messageDigest = md.digest(originalString.getBytes());\n\n            System.out.println(\"MD5 Hash: \" + DigestUtils.md5Hex(originalString));\n\n            // Using Apache DigestUtils for MD5\n            System.out.println(\"MD5 Hash with Apache Digest: \" + DigestUtils.md5Hex(originalString));\n        } catch (NoSuchAlgorithmException e) {\n            System.out.println(\"Exception thrown: \" + e.getMessage());\n        }\n    }\n}\n```\n\nThis is a very basic code that demonstrates how to compute the MD5 hash of a String using `MessageDigest` and then again using `DigestUtils`. `MessageDigest` allows us to use any algorithm supported by Java (MD2, MD5, SHA-1, SHA-256, etc.), whereas `DigestUtils` supports some well-known algorithms with a simpler API. The only dependency on this Java code is the `commons-codec` library provided by Maven, hence it does not need any new dependencies added to your pom.xml file. If you're not using Maven, please let me know about your build tool and I'll add the necessary dependencies.",
+                "extracted_java_code_from_prediction": "import java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\nimport org.apache.commons.codec.digest.DigestUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String originalString = \"Sample Text\";\n            System.out.println(\"Original String: \" + originalString);\n\n            // Using MessageDigest with String\n            MessageDigest md = MessageDigest.getInstance(\"MD5\");\n            byte[] messageDigest = md.digest(originalString.getBytes());\n\n            System.out.println(\"MD5 Hash: \" + DigestUtils.md5Hex(originalString));\n\n            // Using Apache DigestUtils for MD5\n            System.out.println(\"MD5 Hash with Apache Digest: \" + DigestUtils.md5Hex(originalString));\n        } catch (NoSuchAlgorithmException e) {\n            System.out.println(\"Exception thrown: \" + e.getMessage());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.security.MessageDigest",
+                    "java.security.NoSuchAlgorithmException",
+                    "org.apache.commons.codec.digest.DigestUtils"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.security.MessageDigest",
+                    "java.security.NoSuchAlgorithmException",
+                    "org.apache.commons.codec.digest.DigestUtils"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5608395934104919,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DigestUtils\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java program that uses the \"DigestUtils\" API from the \"commons-codec-1.16.0\" project. It first computes the MD5 hash of the string \"Hello, world!\" and then computes the SHA-256 hash of the string \"Hello, world!\".\n\nBefore you run this program, make sure you have imported the required Apache commons-codec library in your project.\n\n```java\nimport java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String input = \"Hello, world!\";\n            \n            MessageDigest mdMD5 = MessageDigest.getInstance(\"MD5\");\n            MessageDigest mdSHA256 = MessageDigest.getInstance(\"SHA-256\");\n            \n            mdMD5.update(input.getBytes());\n            byte[] md5Digest = mdMD5.digest();\n            System.out.println(\"MD5 Hash: \" + bytesToHex(md5Digest));\n            \n            mdSHA256.update(input.getBytes());\n            byte[] sha256Digest = mdSHA256.digest();\n            System.outc.out.println(\"SHA-256 Hash: \" + bytesToHex(sha256Digest));\n        } catch (NoSuchAlgorithmException e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static String bytesToHex(byte[] bytes) {\n        StringBuilder sb = new StringBuilder();\n        for (byte b : bytes) {\n            sb.append(String.format(\"%02x\", b));\n        }\n        return sb.toString();\n    }\n}\n```\n\nIn this program, `MessageDigest` is used to generate the hash of a given string. The `getInstance()` method is used to get an instance of `MessageDigest` for the desired algorithm (MD5 or SHA-256 in this case). The `update()` method is used to update the digest with the bytes of the input string. The `digest()` method is then used to compute the hash of the input string and the resulting bytes are converted to a hexadecimal string using the `bytesToHex()` method.",
+                "extracted_java_code_from_prediction": "import java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String input = \"Hello, world!\";\n            \n            MessageDigest mdMD5 = MessageDigest.getInstance(\"MD5\");\n            MessageDigest mdSHA256 = MessageDigest.getInstance(\"SHA-256\");\n            \n            mdMD5.update(input.getBytes());\n            byte[] md5Digest = mdMD5.digest();\n            System.out.println(\"MD5 Hash: \" + bytesToHex(md5Digest));\n            \n            mdSHA256.update(input.getBytes());\n            byte[] sha256Digest = mdSHA256.digest();\n            System.outc.out.println(\"SHA-256 Hash: \" + bytesToHex(sha256Digest));\n        } catch (NoSuchAlgorithmException e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static String bytesToHex(byte[] bytes) {\n        StringBuilder sb = new StringBuilder();\n        for (byte b : bytes) {\n            sb.append(String.format(\"%02x\", b));\n        }\n        return sb.toString();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.security.MessageDigest",
+                    "java.security.NoSuchAlgorithmException"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.security.MessageDigest",
+                    "java.security.NoSuchAlgorithmException"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.7635958194732666,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DigestUtils\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to use DigestUtils, you should import the necessary dependency and add the import statement at the beginning of your Java code. Then, you can use the DigestUtils methods for creating and managing hash codes of byte arrays. Here is an example how you might use it:\n\n```java\nimport org.apache.commons.codec.digest.DigestUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Define your byte array to hash\n        byte[] array = {1, 2, 3, 4, 5};\n        \n        // Calculate the SHA-256 hash code\n        byte[] sha256Hash = DigestUtils.sha256(array);\n        \n        // Print the SHA-256 hash code\n        System.out.println(\"SHA-256 hash: \" + DigestUtils.sha256Hex(array));\n    }\n}\n```\n\nIn the above Java code:\n\n- We import the DigestUtils class from commons-codec-1.16.0.\n- In the main method, we define a byte array to be hashed.\n- Then, we call the DigestUtils.sha256() method to get the SHA-256 hash code of the array in a byte array.\n- Finally, we call the DigestUtils.sha256Hex() method to convert the byte array to a string and print it.\n\nPlease remember to add the necessary dependencies and build your code using your IDE's build tool or compile it from command line with a command like 'javac Main.java'.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.digest.DigestUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Define your byte array to hash\n        byte[] array = {1, 2, 3, 4, 5};\n        \n        // Calculate the SHA-256 hash code\n        byte[] sha256Hash = DigestUtils.sha256(array);\n        \n        // Print the SHA-256 hash code\n        System.out.println(\"SHA-256 hash: \" + DigestUtils.sha256Hex(array));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.digest.DigestUtils"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.apache.commons.codec.digest.DigestUtils"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5300620198249817,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DigestUtils\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo create the given requirement, you would need a complete Java code that includes the necessary APIs along with the Apache Commons Codec library. Below is a sample example:\n\n```java\nimport java.nio.charset.StandardCharsets;\nimport org.apache.commons.codec.digest.DigestUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        String input = \"Hello World\";\n        String sha256Hex = DigestUtils.sha256Hex(input.getBytes(StandardCharsets.UTF_8));\n        String md5Hex = DigestUtils.md5Hex(input.getBytes(StandardCharsetsStandardCharsets.UTF_8));\n        System.out.println(\"SHA-256 hash of \" + input + \" is: \" + sha256Hex);\n        System.out.println(\"MD5 hash of \" + input + \" is: \" + md5Hex);\n    }\n}\n```\nThis code defines a class Main that has a main method. Within the main method, two strings (\"Hello World\") are created and encoded using SHA-256 and MD5 hashing algorithms of the Apache Commons Codec library. The resulting hashes are then printed on the console. \n\nPlease note, in order for your code to work, you should import the necessary APIs at the top of your source file along with the necessary dependencies: `import java.nio.charset.StandardCharsets;` and `import org.apache.commons.codec.digest.DigestUtils;`. If you are using IntelliJ Idea, you would need to add \"commons-codec-1.16.0\" library as a dependency in your module settings, or alternatively add the following maven dependency to your pom file:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>commons-codec</groupId>\n        <artifactId>commons-codec</artifactId>\n        <version>1.16.0</version>\n    </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "import java.nio.charset.StandardCharsets;\nimport org.apache.commons.codec.digest.DigestUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        String input = \"Hello World\";\n        String sha256Hex = DigestUtils.sha256Hex(input.getBytes(StandardCharsets.UTF_8));\n        String md5Hex = DigestUtils.md5Hex(input.getBytes(StandardCharsetsStandardCharsets.UTF_8));\n        System.out.println(\"SHA-256 hash of \" + input + \" is: \" + sha256Hex);\n        System.out.println(\"MD5 hash of \" + input + \" is: \" + md5Hex);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.nio.charset.StandardCharsets",
+                    "org.apache.commons.codec.digest.DigestUtils"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.nio.charset.StandardCharsets",
+                    "org.apache.commons.codec.digest.DigestUtils"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.6231988668441772,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DigestUtils\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple Java code using \"DigestUtils\" API from \"commons-codec-1.16.0\" project:\n\n```java\nimport org.apache.commons.codec.digest.DigestUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        String stringToDigest = \"The quick brown fox jumps over the lazy dog.\";\n        String md5Digest = DigestUtils.md5Hex(stringToDigest);\n        String sha256Digest = DigestUtils.sha256Hex(stringToDigest);\n        System.out.println(\"MD5 digest: \" + md5Digest);\n        System.outDigest: \" + sha256Digest);\n    }\n}\n```\n\nThis program computes the MD5 (Message-Digest algorithm 5) and SHA-256 (Secure Hash Algorithm, version 256 bit) digest of the string \"The quick brown fox jumps over the lazy dog.\". Please replace the string in the program with your required string for which you want to compute the digests.\n\nTo compile this Java program, you will need to make sure that you have the appropriate \"commons-codec\" library in your project build path or classpath. If you are using an IDE like Eclipse or IntelliJ, you can follow the steps below:\n\n1. Create a new Java Project in your IDE.\n2. Create a new class and paste the code above in it.\n3. Add the appropriate \"commons-codec\" library to your project's build path.\n4. Now you can run the program from your IDE.\n\nIf you are compiling this program from the command line, you will need to have Java Development Kit installed on your machine. You can compile this program using javac compiler, which comes with the JDK:\n\n```shell\njavac Main.java\n```\nThis will compile the Java program. If there are no errors, it will create `Main.class` file in your directory. \n\nTo run the Java program, you can use `java` command:\n\n```shell\njava Main\n```",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.digest.DigestUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        String stringToDigest = \"The quick brown fox jumps over the lazy dog.\";\n        String md5Digest = DigestUtils.md5Hex(stringToDigest);\n        String sha256Digest = DigestUtils.sha256Hex(stringToDigest);\n        System.out.println(\"MD5 digest: \" + md5Digest);\n        System.outDigest: \" + sha256Digest);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.digest.DigestUtils"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.apache.commons.codec.digest.DigestUtils"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.617174506187439,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "Hex": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Hex\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Hex\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a very basic implementation for your requirements, using the Apache Commons Codec library to provide the \"hex\" API:\n\n```java\nimport org.apache.commons.codec.binary.Hex;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String originalString = \"I love programming!\";\n        byte[] bytes = originalString.getBytes();\n        \n        // Convert the string to a Hexadecimal string\n        String hexString = Hex.encodeHexString(bytes);\n        System.out.println(\"The hexadecimal representation is: \" + hexString);\n        \n        // Convert the hexadecimal back to a string\n        byte[] decodedBytes = Hex.decodeHex(hexString);\n        String decodedString = new String(decodedBytes);\n        System.out.println(\"The decoded string is: \" + decodedString);\n    }\n\n}\n```\nThis code first converts a string to a byte array, then encodes that byte array into a hexadecimal string. Finally, it decodes the hexadecimal string back into a byte array, then converts that byte array back to a string. The result of the original and the decoded string should be the same.\n\nPlease make sure to add the necessary imports at the top of your Java file. In this example, \"org.apache.commons.codec.binary.Hex\" is required for the encode and decode functions.\n\nNOTE: This example assumes that the commons-codec library is installed correctly and it's available in your classpath. If the library is not found, adding it to the classpath might solve the problem.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Hex;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String originalString = \"I love programming!\";\n        byte[] bytes = originalString.getBytes();\n        \n        // Convert the string to a Hexadecimal string\n        String hexString = Hex.encodeHexString(bytes);\n        System.out.println(\"The hexadecimal representation is: \" + hexString);\n        \n        // Convert the hexadecimal back to a string\n        byte[] decodedBytes = Hex.decodeHex(hexString);\n        String decodedString = new String(decodedBytes);\n        System.out.println(\"The decoded string is: \" + decodedString);\n    }\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Hex"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Hex"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5357055068016052,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,44] unreported exception org.apache.commons.codec.DecoderException; must be caught or declared to be thrown\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.088 s\n[INFO] Finished at: 2024-04-16T22:58:55-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,44] unreported exception org.apache.commons.codec.DecoderException; must be caught or declared to be thrown\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 44,
+                                "message": "unreported exception org.apache.commons.codec.DecoderException; must be caught or declared to be thrown"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Hex\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a complete Java code using \"commons-codec-1.16.0\" library. This program demonstrates the use of two methods \"digest()\" and \"encodeHex()\":\n\n```java\nimport org.apache.commons.codec.digest.DigestUtils;\nimport org.apache.commons.codec.binary.Hex;\n\npublic class Main {\n    public static void main(String[] args) {\n        // input message\n        String message = \"Hello, world!\";\n\n        // calculate the digest\n        byte[] sha256 = DigestUtils.sha256(message);\n        \n        // encode digest in hex\n        String hex = Hex.encodeHexString(sha256);\n        \n        System.out.println(\"Message: \" + message);\n        System.out.println(\"Message Digest (SHA-256): \" + hex);\n    }\n}\n```\nPlease note this code might not work in an online compiler environment as this example relies on the existence and correctness of the commons-codec-1.16.0 library. If you want to run it, you need to run it from your own local environment, or use an online Java compiler with the correct libraries referenced.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.digest.DigestUtils;\nimport org.apache.commons.codec.binary.Hex;\n\npublic class Main {\n    public static void main(String[] args) {\n        // input message\n        String message = \"Hello, world!\";\n\n        // calculate the digest\n        byte[] sha256 = DigestUtils.sha256(message);\n        \n        // encode digest in hex\n        String hex = Hex.encodeHexString(sha256);\n        \n        System.out.println(\"Message: \" + message);\n        System.out.println(\"Message Digest (SHA-256): \" + hex);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.digest.DigestUtils",
+                    "org.apache.commons.codec.binary.Hex"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.digest.DigestUtils",
+                    "org.apache.commons.codec.binary.Hex"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.48598599433898926,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Hex\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAssuming you're looking for a simple program that converts a string into hex format and then back to string format, here is a sample Java program using \"Hex\" API from \"commons-codec-1.16.0\" project:\n\nMake sure to add the appropriate dependencies in your `pom.xml` file.\n\n```xml\n<dependency>\n    <groupId>commons-codec</groupId>\n    <artifactId>commons-codec</artifactId>\n    <version>1.16.0</version>\n</dependency>\n```\n\nThe main code is as follows:\n\n```java\nimport org.apache.commons.codec.binary.Hex;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String input = \"Hello World\";\n        String hex = Hex.encodeHexString(input.getBytes());\n        System.out.println(\"Input string: \" + input);\n        System.out.println(\"Hex string: \" + hex);\n        byte[] bytes = Hex.decodeHex(hex.toCharArray());\n        String output = new String(bytes);\n        System.out.println(\"Output string: \" + output);\n    }\n}\n```\n\nIn this code:\n- A Hex encoder is created.\n- The string \"Hello World\" is converted to a byte array and then encoded to a hex string.\n- The hex string is then decoded back into a byte array.\n- Finally, a new string is created from the decoded byte array and printed.\n  \nNote: Be sure to replace \"Hello World\" with your actual string.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Hex;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String input = \"Hello World\";\n        String hex = Hex.encodeHexString(input.getBytes());\n        System.out.println(\"Input string: \" + input);\n        System.out.println(\"Hex string: \" + hex);\n        byte[] bytes = Hex.decodeHex(hex.toCharArray());\n        String output = new String(bytes);\n        System.out.println(\"Output string: \" + output);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Hex"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Hex"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5620917677879333,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,37] unreported exception org.apache.commons.codec.DecoderException; must be caught or declared to be thrown\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.850 s\n[INFO] Finished at: 2024-04-16T22:58:59-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,37] unreported exception org.apache.commons.codec.DecoderException; must be caught or declared to be thrown\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 37,
+                                "message": "unreported exception org.apache.commons.codec.DecoderException; must be caught or declared to be thrown"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Hex\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simple Java program which uses commons-codec-1.16.0 library. It uses the API for hexadecimal conversions.\n\n```java\nimport org.apache.commons.codec.binary.Hex;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String hex = \"48656c6c6f20576f726c64\"; // \"Hello World\" in hexadecimal\n        byte[] bytes = Hex.decodeHex(hex);\n        String decodedString = new String(bytes);\n        System.out.println(decodedString);\n    }\n}\n```\n\nIn the example above, we start by including the Hex class from Apache Commons Codec library. The main method in the class then decodes a hexadecimal string (\"48656c6c6f20576f726c64\") to its original string form (\"Hello World\"), prints it to the console, and then terminates. Please replace the hex string in line 12 with your own hexadecimal string to see the result.\n\nNote: This program needs commons-codec to be included as a dependency in your build path.\n\nPlease also install the commons-codec library and the related dependencies, and properly handle them in your IDE or project build process. \n\nThe library can be downloaded from the official Apache Maven Repository (https://mvnrepository.com/artifact/commons-codec/commons-codec/1.16) and added to the project by editing your project's build configuration.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Hex;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String hex = \"48656c6c6f20576f726c64\"; // \"Hello World\" in hexadecimal\n        byte[] bytes = Hex.decodeHex(hex);\n        String decodedString = new String(bytes);\n        System.out.println(decodedString);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Hex"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Hex"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.498699814081192,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,37] unreported exception org.apache.commons.codec.DecoderException; must be caught or declared to be thrown\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.123 s\n[INFO] Finished at: 2024-04-16T22:59:01-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,37] unreported exception org.apache.commons.codec.DecoderException; must be caught or declared to be thrown\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 37,
+                                "message": "unreported exception org.apache.commons.codec.DecoderException; must be caught or declared to be thrown"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Hex\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java program that uses APIs from the \"commons-codec-1.16.0\" library and also from the \"jackson-databind-2.13.4.jar\" library:\n\n```java\nimport org.apache.commons.codec.binary.Hex;\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport java.nio.charset.StandardCharsets;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        String message = \"Hello World!\";\n        byte[] messageBytes = message.getBytes(StandardCharsets.UTF_8);\n        String hexValue = Hex.encodeHexString(messageBytes);\n\n        System.out.println(\"Hex representation of the string: \" + hexValue);\n\n        // For json parsing example\n        String json = \"{\\\"name\\\": \\\"John\\\", \\\"age\\\": 30, \\\"city\\\": \\\"New York\\\"}\";\n        ObjectMapper mapper = new ObjectMapper();\n        JsonNode jsonNode = mapper.readTree(json);\n        String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode);\n\n        System.out.println(\"Parsed JSON: \" + jsonString);\n    }\n}\n```\n\nThis program firstly converts a String into bytes and then into a hex String representation. Secondly, it parses a JSON string using a JsonNode and writes the JSON back as a string.\n\nBefore you run this program, you need to add the dependencies into your project:\n\n1. Add the following in your `pom.xml`:\n\n```xml\n<dependency>\n    <groupId>commons-codec</groupId>\n    <artifactId>commons-codec</artifactId>\n    <version>1.16.0</version>\n</dependency>\n<dependency>\n    <groupId>com.fasterxml.jackson.core</groupId>\n    <artifactId>jackson-databind</artifactId>\n    <version>2.13.4</version>\n</dependency>\n```\n\n2. Make sure to build your project again to fetch these dependencies and generate the needed `.jar` files.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Hex;\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport java.nio.charset.StandardCharsets;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        String message = \"Hello World!\";\n        byte[] messageBytes = message.getBytes(StandardCharsets.UTF_8);\n        String hexValue = Hex.encodeHexString(messageBytes);\n\n        System.out.println(\"Hex representation of the string: \" + hexValue);\n\n        // For json parsing example\n        String json = \"{\\\"name\\\": \\\"John\\\", \\\"age\\\": 30, \\\"city\\\": \\\"New York\\\"}\";\n        ObjectMapper mapper = new ObjectMapper();\n        JsonNode jsonNode = mapper.readTree(json);\n        String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode);\n\n        System.out.println(\"Parsed JSON: \" + jsonString);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Hex",
+                    "com.fasterxml.jackson.databind.ObjectMapper",
+                    "java.nio.charset.StandardCharsets"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Hex",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.nio.charset.StandardCharsets"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.7130410671234131,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,9] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,35] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java:[20,9] cannot find symbol\n  symbol:   class JsonNode\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.244 s\n[INFO] Finished at: 2024-04-16T22:59:04-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,9] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,35] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java:[20,9] cannot find symbol\n[ERROR]   symbol:   class JsonNode\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/commons-codec-1.16.0/Hex/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Base64": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the Java code with all necessary dependencies and APIs included.\n\n```java\nimport java.util.Base64;\nimport java.nio.charset.StandardCharsets;\nimport java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\n\npublic class Main {\n\n    public static void main(String[] args) throws NoSuchAlgorithmException {\n\n        // Base64 API\n        String originalString = \"This is a sample string!\";\n        String encodedString = Base64.getEncoder().encodeToString(originalString.getBytes(StandardCharsets.UTF_8));\n        String decodedString = new String(Base64.getDecoder().decode(encodedString), StandardCharsets.UTF_8);\n        \n        System.out.println(\"Original String: \" + originalString);\n        System.out.println(\"Encoded String: \" + encodedString);\n        System.out.println(\"Decoded String: \" + decodedString);\n\n        // MessageDigest API (SHA-256 hash)\n        MessageDigest md = MessageDigest.getInstance(\"SHA-256\");\n        md.update(originalString.getBytes(StandardCharsets.UTF_8));\n        byte[] hash = md.digest();\n        \n        System.out.println(\"Original String: \" + originalString);\n        System.out.println(\"SHA-256 Hash: \" + bytesToHex(hash));\n    }\n\n    public static String bytesToHex(byte[] bytes) {\n        StringBuilder result = new StringBuilder();\n        for (byte byt : bytes) {\n            result.append(Integer.toString((byt & 0xff) + 0x100, 16).substring(1));\n        }\n        return result.toString();\n    }\n}\n```\nThis code includes the use of the `Base64` from the `java.util` package for encoding and decoding strings, and the `MessageDigest` from the `java.security` package for creating SHA-256 hashes. Both APIs are part of the Java SE Platform.",
+                "extracted_java_code_from_prediction": "import java.util.Base64;\nimport java.nio.charset.StandardCharsets;\nimport java.security.MessageDigest;\nimport java.security.NoSuchAlgorithmException;\n\npublic class Main {\n\n    public static void main(String[] args) throws NoSuchAlgorithmException {\n\n        // Base64 API\n        String originalString = \"This is a sample string!\";\n        String encodedString = Base64.getEncoder().encodeToString(originalString.getBytes(StandardCharsets.UTF_8));\n        String decodedString = new String(Base64.getDecoder().decode(encodedString), StandardCharsets.UTF_8);\n        \n        System.out.println(\"Original String: \" + originalString);\n        System.out.println(\"Encoded String: \" + encodedString);\n        System.out.println(\"Decoded String: \" + decodedString);\n\n        // MessageDigest API (SHA-256 hash)\n        MessageDigest md = MessageDigest.getInstance(\"SHA-256\");\n        md.update(originalString.getBytes(StandardCharsets.UTF_8));\n        byte[] hash = md.digest();\n        \n        System.out.println(\"Original String: \" + originalString);\n        System.out.println(\"SHA-256 Hash: \" + bytesToHex(hash));\n    }\n\n    public static String bytesToHex(byte[] bytes) {\n        StringBuilder result = new StringBuilder();\n        for (byte byt : bytes) {\n            result.append(Integer.toString((byt & 0xff) + 0x100, 16).substring(1));\n        }\n        return result.toString();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.Base64",
+                    "java.nio.charset.StandardCharsets",
+                    "java.security.MessageDigest",
+                    "java.security.NoSuchAlgorithmException"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.util.Base64",
+                    "java.nio.charset.StandardCharsets",
+                    "java.security.MessageDigest",
+                    "java.security.NoSuchAlgorithmException"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.7155018448829651,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo work with \"Base64\", \"commons-codec-1.16.0\" dependency needs to be added. This dependency will allow the usage of the \"Base64\" API. Here's a simple Java program that uses the Base64 encoding and decoding APIs from \"commons-codec-1.16.0\" project.\n\nPlease note that for this code to compile and run, we must have Apache Maven installed in the system. Maven is a dependency management system that allows to handle dependencies and their versions directly from POM files.\n\nHere is the code:\n\n```Java\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String input = \"Hello, World!\";\n        byte[] inputByte = input.getBytes();\n        byte[] encoded = Base64.encodeBase64(inputByte);\n        String encodedString = new String(encoded);\n        System.out.println(\"Base64 Encoded Output is: \"+encodedString);\n        byte[] decodedBytes = Base64.decodeBase64(encodedString);\n        String decodedString = new String(decodedBytes);\n        System.out.println(\"Base64 Decoded Output is: \"+decodedString);\n    }\n}\n```\n\nFor the code to compile, you need to:\n- Import the necessary dependencies into your project.\n- Make sure the correct Java version is being used.\n- The commons-codec library version you are using is already added in the dependencies.\n- Run this code in an IDE that supports Maven projects, or if it is a Maven project you can run `mvn compile` in the command line.\n\nPlease note that this code is pretty basic. You can extend it to suit your needs and requirements. You should always verify and verify the inputs being sent to the Base64 APIs to ensure you are working with the correct data and types as required by the API.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5192661881446838,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThis code assumes you have a method that needs Base64 encoding. \n\n1. Import the necessary Java classes and APIs. \n2. You will need to import the necessary libraries to use the Base64 encoding library from commons-codec.\n3. The Main class will have a main method where the base64 encoding is performed.\n\n```java\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalInput = \"Hello World!\";\n        byte[] bytes = originalInput.getBytes();\n        byte[] encodedBytes = Base64.encodeBase64(bytes);\n        String encodedString = new String(encodedBytes);\n        System.out.println(\"Original Input: \" + originalInput);\n        System.out.println(\"Encoded String: \" + encodedString);\n\n        byte[] decodedBytes = Base64.decodeBase64(encodedString);\n        String decodedString = new String(decodedBytes);\n        System.out.println(\"Decoded String: \" + decodedString);\n    }\n}\n```\n\nThis code first converts the original string into bytes, then uses the Apache Commons Codec's Base64 class to encode and decode those bytes. It demonstrates the conversion process by printing both the original and result of the Base64 operations, allowing verification of the correctness of the operations.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalInput = \"Hello World!\";\n        byte[] bytes = originalInput.getBytes();\n        byte[] encodedBytes = Base64.encodeBase64(bytes);\n        String encodedString = new String(encodedBytes);\n        System.out.println(\"Original Input: \" + originalInput);\n        System.out.println(\"Encoded String: \" + encodedString);\n\n        byte[] decodedBytes = Base64.decodeBase64(encodedString);\n        String decodedString = new String(decodedBytes);\n        System.out.println(\"Decoded String: \" + decodedString);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5350036025047302,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIf the task you are trying to accomplish requires the use of an API or APIs, it's essential to add dependencies to the project (pom.xml in case of maven or build.gradle in case of gradle).\n\nThe solution below will allow you to use the \"Base64\" API from the \"commons-codec\" project to encode and decode strings using Base64 encoding scheme.\n\nFirstly, you need to include the following dependency into your pom.xml file (if you are using maven) or build.gradle file (if you are using Gradle):\n\n```xml\n<!-- pom.xml -->\n<dependency>\n  <groupId>commons-codec</groupId>\n  <artifactId>commons-codec</artifactId>\n  <version>1.16.0</version>\n</dependency>\n```\nor\n```groovy\n// build.gradle\ndependencies {\n  implementation 'commons-codec:commons-codec:1.16.0'\n}\n```\n\nIf you don't want to add a dependency to another project, the Base64 class can be used like below:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalInput = \"Original Text\";\n\n        // Encoding the original input using Base64\n        byte[] bytesEncoded = Base64.encodeBase64(originalInput.getBytes());\n        String encodedString = new String(bytesEncoded);\n        System.out.println(\"Encoded string using Base64: \" + encodedString);\n\n        // Decoding the previously encoded string\n        byte[] bytesDecoded = Base64.decodeBase64(encodedString.getBytes());\n        String decodedString = new String(bytesDecoded);\n        System.out.println(\"Decoded string using Base64: \" + decodedString);\n    }\n}\n```\n\nIn this code, we use `Base64.encodeBase64` to convert the original input string to a Base64 encoded string and store it in `encodedString`. Then, we use `Base64.decodeBase64` to convert the previously encoded string back to its original form and store it in `decodedString`. This demonstrates the encoding and decoding process using the Apache Commons Codec's Base64 API.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalInput = \"Original Text\";\n\n        // Encoding the original input using Base64\n        byte[] bytesEncoded = Base64.encodeBase64(originalInput.getBytes());\n        String encodedString = new String(bytesEncoded);\n        System.out.println(\"Encoded string using Base64: \" + encodedString);\n\n        // Decoding the previously encoded string\n        byte[] bytesDecoded = Base64.decodeBase64(encodedString.getBytes());\n        String decodedString = new String(bytesDecoded);\n        System.out.println(\"Decoded string using Base64: \" + decodedString);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.7013795971870422,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo fulfill your request you must have the Apache Maven framework to compile and install necessary dependencies. Below you can find a complete Java program which uses Apache Commons Codec to encode a string to Base64 and decode it again.\n\n```java\nimport java.nio.charset.StandardCharsets;\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String text = \"Hello, World!\";\n        \n        // Convert string to Base64\n        byte[] byteArray = text.getBytes(StandardCharsets.UTF_8);\n        String encodedText = Base64.encodeBase64String(byteArray);\n        System.out.println(\"Base64 Encoded text: \" + encodedText);\n        \n        // Decode Base64\n        byte[] decodedByteArray = Base64.decodeBase64(encodedText);\n        String decodedText = new String(decodedByteArray, StandardCharsets.UTF_8);\n        System.out.println(\"Original text: \" + decodedText);\n    }\n}\n```\nThis program begins by converting a string to bytes. The Base64 utility class in Apache Commons Codec is used to encode these bytes to a string. The Base64 encoded string is then printed. Next, the Base64 utility class is used again to decode the encoded string back into bytes, which are then converted back into a string. The original string is then printed.\n\nPlease remember that the Apache Commons Codec library needs to be added to your project along with its dependencies. The pom.xml file (if it's a Maven project) must include the following dependency:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>commons-codec</groupId>\n        <artifactId>commons-codec</artifactId>\n        <version>1.16.0</version>\n    </dependency>\n</dependencies>\n```\n\nIf you're not using Maven you should check Maven or Gradle documentation to set up dependencies.",
+                "extracted_java_code_from_prediction": "import java.nio.charset.StandardCharsets;\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String text = \"Hello, World!\";\n        \n        // Convert string to Base64\n        byte[] byteArray = text.getBytes(StandardCharsets.UTF_8);\n        String encodedText = Base64.encodeBase64String(byteArray);\n        System.out.println(\"Base64 Encoded text: \" + encodedText);\n        \n        // Decode Base64\n        byte[] decodedByteArray = Base64.decodeBase64(encodedText);\n        String decodedText = new String(decodedByteArray, StandardCharsets.UTF_8);\n        System.out.println(\"Original text: \" + decodedText);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.nio.charset.StandardCharsets",
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "correct_FQN_predictions": [
+                    "java.nio.charset.StandardCharsets",
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.610692024230957,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        }
+    }
+}

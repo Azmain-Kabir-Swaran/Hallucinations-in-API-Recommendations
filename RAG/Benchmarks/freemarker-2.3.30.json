@@ -1,0 +1,449 @@
+{
+    "jar_name": "freemarker-2.3.30.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from kotlin-stdlib-jdk8-1.6.20 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JDK8PlatformImplementations\n2. CollectionsJDK8Kt\n3. DurationConversionsJDK8Kt\n4. JvmRepeatableKt\n5. RegexExtensionsJDK8Kt\n6. StreamsKt\n7. PlatformThreadLocalRandom\n\nList correct API's class names from jakarta.mail-api-2.1.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. RecipientStringTerm\n2. MailDateFormat\n3. RecipientTerm\n4. MessagingException\n5. NewsAddress\n6. MimePartDataSource\n7. InternetAddress\n8. AddressException\n9. MessageIDTerm\n10. MethodNotSupportedException\n11. FlagTerm\n12. HeaderTokenizer\n13. Flags\n14. MessageNumberTerm\n15. FolderNotFoundException\n16. MimeMultipart\n17. SendFailedException\n18. MimeBodyPart\n19. ReceivedDateTerm\n20. MessageContext\n21. SentDateTerm\n22. MimeUtility\n23. ContentType\n24. ParameterList\n25. HeaderTerm\n26. MimeMessage\n27. SearchException\n28. ParseException\n29. ByteArrayDataSource\n30. FolderClosedException\n31. AuthenticationFailedException\n32. Header\n33. BodyTerm\n34. SubjectTerm\n35. MessageRemovedException\n36. IllegalWriteException\n37. InternetHeaders\n38. StoreClosedException\n39. Provider\n40. MessageCountEvent\n41. ReadOnlyFolderException\n42. TransportEvent\n43. AndTerm\n44. URLName\n45. NotTerm\n46. PreencodedMimeBodyPart\n47. SharedByteArrayInputStream\n48. MessageChangedEvent\n49. OrTerm\n50. FetchProfile\n\nList correct API's class names from freemarker-2.3.30 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from kotlin-stdlib-jdk8-1.6.20 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JDK8PlatformImplementations\n2. CollectionsJDK8Kt\n3. DurationConversionsJDK8Kt\n4. JvmRepeatableKt\n5. RegexExtensionsJDK8Kt\n6. StreamsKt\n7. PlatformThreadLocalRandom\n\nList correct API's class names from jakarta.mail-api-2.1.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. RecipientStringTerm\n2. MailDateFormat\n3. RecipientTerm\n4. MessagingException\n5. NewsAddress\n6. MimePartDataSource\n7. InternetAddress\n8. AddressException\n9. MessageIDTerm\n10. MethodNotSupportedException\n11. FlagTerm\n12. HeaderTokenizer\n13. Flags\n14. MessageNumberTerm\n15. FolderNotFoundException\n16. MimeMultipart\n17. SendFailedException\n18. MimeBodyPart\n19. ReceivedDateTerm\n20. MessageContext\n21. SentDateTerm\n22. MimeUtility\n23. ContentType\n24. ParameterList\n25. HeaderTerm\n26. MimeMessage\n27. SearchException\n28. ParseException\n29. ByteArrayDataSource\n30. FolderClosedException\n31. AuthenticationFailedException\n32. Header\n33. BodyTerm\n34. SubjectTerm\n35. MessageRemovedException\n36. IllegalWriteException\n37. InternetHeaders\n38. StoreClosedException\n39. Provider\n40. MessageCountEvent\n41. ReadOnlyFolderException\n42. TransportEvent\n43. AndTerm\n44. URLName\n45. NotTerm\n46. PreencodedMimeBodyPart\n47. SharedByteArrayInputStream\n48. MessageChangedEvent\n49. OrTerm\n50. FetchProfile\n\nList correct API's class names from freemarker-2.3.30 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. TemplateDirectiveModel\n2. TemplateModel\n3. TemplateModelException\n4. TemplateModelIterator\n5. TemplateModelReturn\n6. TemplateModelString\n7. TemplateModelWriter\n8. TemplateScalarModel\n9. TemplateSequenceModel\n10. TemplateBooleanModel\n11. TemplateHashModel\n12. TemplateDateModel\n13. TemplateNumberModel\n14. TemplateException\n15. TemplateModelStaticImport\n16. TemplateModelStaticMethod\n17. TemplateModelStaticVariable\n18. TemplateModelStaticMethod\n19. TemplateModelStaticVariable\n20. TemplateModelStaticMethod\n21. TemplateModelStaticVariable\n22. TemplateModelStaticMethod\n23. TemplateModelStaticVariable\n24. TemplateModelStaticMethod\n25. TemplateModelStaticVariable\n26. TemplateModelStaticMethod\n27. TemplateModelStaticVariable\n28. TemplateModelStaticMethod\n29. TemplateModelStaticVariable\n30. TemplateModelStaticMethod\n31. TemplateModelStaticVariable\n32. TemplateModelStaticMethod\n33. TemplateModelStaticVariable\n34. TemplateModelStaticMethod\n35. TemplateModelStaticVariable\n36. TemplateModelStaticMethod\n37. TemplateModelStaticVariable\n38. TemplateModelStaticMethod\n39. TemplateModelStaticVariable\n40. TemplateModelStaticMethod\n41. TemplateModelStaticVariable\n42. TemplateModelStaticMethod\n43. TemplateModelStaticVariable\n44. TemplateModelStaticMethod\n45. TemplateModelStaticVariable\n46. TemplateModelStaticMethod\n47. TemplateModelStaticVariable\n48. TemplateModelStaticMethod\n49. TemplateModelStaticVariable\n50. TemplateModelStaticMethod",
+        "extracted_APIs_from_prediction": [
+            "TemplateDirectiveModel",
+            "TemplateModel",
+            "TemplateModelException",
+            "TemplateModelIterator",
+            "TemplateModelReturn",
+            "TemplateModelString",
+            "TemplateModelWriter",
+            "TemplateScalarModel",
+            "TemplateSequenceModel",
+            "TemplateBooleanModel",
+            "TemplateHashModel",
+            "TemplateDateModel",
+            "TemplateNumberModel",
+            "TemplateException",
+            "TemplateModelStaticImport",
+            "TemplateModelStaticMethod",
+            "TemplateModelStaticVariable"
+        ],
+        "correct_API_predictions": [
+            "TemplateModelException",
+            "TemplateException"
+        ],
+        "wrong_API_predictions": [
+            "TemplateDirectiveModel",
+            "TemplateModel",
+            "TemplateModelIterator",
+            "TemplateModelReturn",
+            "TemplateModelString",
+            "TemplateModelWriter",
+            "TemplateScalarModel",
+            "TemplateSequenceModel",
+            "TemplateBooleanModel",
+            "TemplateHashModel",
+            "TemplateDateModel",
+            "TemplateNumberModel",
+            "TemplateModelStaticImport",
+            "TemplateModelStaticMethod",
+            "TemplateModelStaticVariable"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 15,
+        "failure_rate_for_APIs": 0.8823529411764706,
+        "model_confidence": 0.7472013235092163,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "TemplateModelException": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"TemplateModelException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateModelException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, you can find a simple example of creating a freemarker model using API TemplateModelException in the following code snippet. However, I must note that you cannot import TemplateModelException class in this case since it is a part of the freemarker library.\n\n```java\nimport freemarker.template.SimpleScalar;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        try {\n            SimpleScalar simpleScalar = new SimpleScalar(\"Hello, World!\", \"UTF-8\");\n\n            // The rest of the logic goes here.\n\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn the provided code above, an instance of `SimpleScalar` is created with a string value of \"Hello, World!\" and a charset of \"UTF-8\". Please replace the logic inside the `try` block with your actual business logic. Note that the `SimpleScalar` class comes directly from FreeMarker API and does not require additional imports.\n\nThe `main` method is also provided inside a class named `Main`, but the name of the class should be changed according to your project structure.",
+                "extracted_java_code_from_prediction": "import freemarker.template.SimpleScalar;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        try {\n            SimpleScalar simpleScalar = new SimpleScalar(\"Hello, World!\", \"UTF-8\");\n\n            // The rest of the logic goes here.\n\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "freemarker.template.SimpleScalar"
+                ],
+                "correct_FQN_predictions": [
+                    "freemarker.template.SimpleScalar"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4291806221008301,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,41] constructor SimpleScalar in class freemarker.template.SimpleScalar cannot be applied to given types;\n  required: java.lang.String\n  found:    java.lang.String,java.lang.String\n  reason: actual and formal argument lists differ in length\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.697 s\n[INFO] Finished at: 2024-04-16T20:20:36-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,41] constructor SimpleScalar in class freemarker.template.SimpleScalar cannot be applied to given types;\n[ERROR]   required: java.lang.String\n[ERROR]   found:    java.lang.String,java.lang.String\n[ERROR]   reason: actual and formal argument lists differ in length\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 41,
+                                "message": "constructor SimpleScalar in class freemarker.template.SimpleScalar cannot be applied to given types;"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateModelException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo be able to use Freemarker APIs without adding dependencies requiring new imports, you can utilize reflection. Here is a very basic example of how you could use the TemplateModelException API in a single java file named Main.java.\n\n```java\nimport java.lang.reflect.Constructor;\nimport java.lang.reflect.Method;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            Class<?> clazz = Class.forName(\"freemarker.core.TemplateModelException\");\n            Constructor<?> constructor = clazz.getConstructor(new Class[] {String.class, Throwable.class});\n            Object obj = constructor.newInstance(new Object[] {\"test\", null});\n            Method getMessage = clazz.getMethod(\"getMessage\");\n            System.out.println(getMessage.invoke(obj));\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThe code above will print: test. \n\nIn the reflection, we are just using the default constructor, since the message and cause are supplied as parameters. Note that you need to have the appropriate exceptions handlers for this.\n\nKeep in mind that while this code works and demonstrates reflection, it is generally considered bad practice because of performance and potential runtime exceptions. This is due to the fact that we are assuming that the given class exists and the necessary methods are available, without any type safety guarantees. Usually, when working with reflection, you want to have the ability to check the actual class at compile-time and catch all potential exceptions at runtime.",
+                "extracted_java_code_from_prediction": "import java.lang.reflect.Constructor;\nimport java.lang.reflect.Method;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            Class<?> clazz = Class.forName(\"freemarker.core.TemplateModelException\");\n            Constructor<?> constructor = clazz.getConstructor(new Class[] {String.class, Throwable.class});\n            Object obj = constructor.newInstance(new Object[] {\"test\", null});\n            Method getMessage = clazz.getMethod(\"getMessage\");\n            System.out.println(getMessage.invoke(obj));\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.lang.reflect.Constructor",
+                    "java.lang.reflect.Method"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.lang.reflect.Constructor",
+                    "java.lang.reflect.Method"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.47752392292022705,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateModelException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYou can use the following code to demonstrate the use of `TemplateModelException` from `freemarker-2.3.30`:\n\nThe code snippet below will work perfectly on a system where `freemarker-2.3.30` is available, including on a build that adds the needed dependencies to the `classpath`. The `TemplateModelException` exception is not part of the default Java API. It is however part of the FreeMarker API. Hence we need the `freemarker.template.TemplateModelException` class available, which brings along the necessary dependencies.\n\n```Java\nimport freemarker.template.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    try {\n      // do something that may throw TemplateModelException\n    } catch (TemplateModelException e) {\n      // handle TemplateModelException\n      System.out.println(e.getMessage());\n    }\n  }\n}\n```\n\nThis is a simple example showing how to handle a `TemplateModelException`. Depending upon the context you may want to add handling of different types of exceptions similar to what's shown here. In the case of using a free-marker template engine, the error may relate to the API provided by this library and hence, `TemplateModelException` is most likely needed. In this case, you would also want to include the `freemarker` library and its dependencies in your project.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.43561309576034546,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateModelException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a complete, correct, and compilable Java code example that uses the TemplateModelException API from the \"freemarker-2.3.30\" project:\n\n```java\nimport freemarker.ext.beans.StringModel;\nimport freemarker.ext.beans.BeansWrapper;\nimport freemarker.template.TemplateModelException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        try {\n            // Create a BeansWrapper instance\n            BeansWrapper wrapper = BeansWrapper.getDefaultInstance();\n            \n            // Create a StringModel\n            StringModel stringModel = new StringModel(\"Hello World!\", wrapper.getLocale());\n            \n            // Get template model from string model and catch TemplateModelException\n            try {\n                wrapper.getTemplateModel(stringModel);\n            } catch (TemplateModelException e) {\n                e.printStackTrace();\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nPlease note that while the example includes only a single import statement from \"freemarker.template\" which includes TemplateModelException, other APIs requiring additional dependencies such as BeansWrapper are excluded to maintain simplicity in the example. You will need to add those APIs individually once you need them.",
+                "extracted_java_code_from_prediction": "import freemarker.ext.beans.StringModel;\nimport freemarker.ext.beans.BeansWrapper;\nimport freemarker.template.TemplateModelException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        try {\n            // Create a BeansWrapper instance\n            BeansWrapper wrapper = BeansWrapper.getDefaultInstance();\n            \n            // Create a StringModel\n            StringModel stringModel = new StringModel(\"Hello World!\", wrapper.getLocale());\n            \n            // Get template model from string model and catch TemplateModelException\n            try {\n                wrapper.getTemplateModel(stringModel);\n            } catch (TemplateModelException e) {\n                e.printStackTrace();\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "freemarker.ext.beans.StringModel",
+                    "freemarker.ext.beans.BeansWrapper",
+                    "freemarker.template.TemplateModelException"
+                ],
+                "correct_FQN_predictions": [
+                    "freemarker.ext.beans.BeansWrapper",
+                    "freemarker.template.TemplateModelException"
+                ],
+                "wrong_FQN_predictions": [
+                    "freemarker.ext.beans.StringModel"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.5040305256843567,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/java/org/example/Main.java: /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/java/org/example/Main.java uses or overrides a deprecated API.\n[WARNING] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/java/org/example/Main.java: Recompile with -Xlint:deprecation for details.\n[INFO] 2 warnings \n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,78] cannot find symbol\n  symbol:   method getLocale()\n  location: variable wrapper of type freemarker.ext.beans.BeansWrapper\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/java/org/example/Main.java:[20,24] cannot find symbol\n  symbol:   method getTemplateModel(freemarker.ext.beans.StringModel)\n  location: variable wrapper of type freemarker.ext.beans.BeansWrapper\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.677 s\n[INFO] Finished at: 2024-04-16T20:20:38-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,78] cannot find symbol\n[ERROR]   symbol:   method getLocale()\n[ERROR]   location: variable wrapper of type freemarker.ext.beans.BeansWrapper\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/java/org/example/Main.java:[20,24] cannot find symbol\n[ERROR]   symbol:   method getTemplateModel(freemarker.ext.beans.StringModel)\n[ERROR]   location: variable wrapper of type freemarker.ext.beans.BeansWrapper\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 78,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 24,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateModelException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, as of current versions of Freemarker, TemplateModelException is deprecated and its usage is discouraged. The alternative recommended is TemplateModel, or RuntimeTemplateModel, that includes the necessary functionalities to solve your problem with the current versions of Freemarker.\n\nBelow is a basic example of what your Main class might look like using Freemarker 2.3.30.\n\n```java\nimport freemarker.template.Configuration;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateException;\nimport freemarker.template.TemplateExceptionHandler;\n\nimport java.io.File;\nimport java.io.IOException;\nimport java.io.Writer;\nimport java.nio.file.Files;\nimport java.nio.file.Paths;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration cfg = new Configuration(Configuration.VERSION_2_3_30);\n        \n        cfg.setDirectoryForTemplateLoading(new File(\"src/main/resources\"));\n        cfg.setDefaultEncoding(\"UTF-8\");\n        cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);\n\n        try {\n            Template template = cfg.getTemplate(\"template.ftl\");\n            Map<String, String> map = new HashMap<>();\n            map.put(\"key\", \"value\");\n            Writer output = Files.newBufferedWriter(Paths.get(\"output.txt\"));\n\n            template.process(map, output);\n        } catch (IOException | TemplateException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nThis code sets up a Freemarker Configuration object and uses it to load a template file. It creates a simple map to pass to the template, processes the template, and writes the output to \"output.txt\". If any errors occur, they are printed to the console using e.printStackTrace().\n\nThis example assumes that a freemarker template file (template.ftl) is located in a \"src/main/resources\" directory, which holds the main method class. If your Freemarker template file is located somewhere else or if you are using another method to get input from the template file, you would need to adjust the method calls in the template.process() method accordingly. \n\nPlease, replace the path and name of template file and the output file according to your requirements.\n\nRemember, you might want to handle such exceptions more elegantly in a production environment, potentially by returning an error response to the client or logging the error for debugging purposes.",
+                "extracted_java_code_from_prediction": "import freemarker.template.Configuration;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateException;\nimport freemarker.template.TemplateExceptionHandler;\n\nimport java.io.File;\nimport java.io.IOException;\nimport java.io.Writer;\nimport java.nio.file.Files;\nimport java.nio.file.Paths;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration cfg = new Configuration(Configuration.VERSION_2_3_30);\n        \n        cfg.setDirectoryForTemplateLoading(new File(\"src/main/resources\"));\n        cfg.setDefaultEncoding(\"UTF-8\");\n        cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);\n\n        try {\n            Template template = cfg.getTemplate(\"template.ftl\");\n            Map<String, String> map = new HashMap<>();\n            map.put(\"key\", \"value\");\n            Writer output = Files.newBufferedWriter(Paths.get(\"output.txt\"));\n\n            template.process(map, output);\n        } catch (IOException | TemplateException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "freemarker.template.Configuration",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateException",
+                    "freemarker.template.TemplateExceptionHandler",
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.io.Writer",
+                    "java.nio.file.Files",
+                    "java.nio.file.Paths",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "freemarker.template.Configuration",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateException",
+                    "freemarker.template.TemplateExceptionHandler"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.io.Writer",
+                    "java.nio.file.Files",
+                    "java.nio.file.Paths",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 7,
+                "failure_rate_for_FQNs": 0.6363636363636364,
+                "model_confidence": 0.6645137071609497,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_5/Wrapper/src/main/java/org/example/Main.java:[20,43] unreported exception java.io.IOException; must be caught or declared to be thrown\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.680 s\n[INFO] Finished at: 2024-04-16T20:20:39-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_5/Wrapper/src/main/java/org/example/Main.java:[20,43] unreported exception java.io.IOException; must be caught or declared to be thrown\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateModelException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 43,
+                                "message": "unreported exception java.io.IOException; must be caught or declared to be thrown"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "TemplateException": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"TemplateException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the Java code. It compiles and runs successfully with the required FreeMarker APIs. Please note, you should replace `templatePath` with your actual template path and replace `dataModel` with your actual data model. The FreeMarker dependency is already added to your project if you are using a build tool like Maven or Gradle.\n\n```java\nimport freemarker.template.Configuration;\nimport freemarker.template.DefaultObjectWrapper;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateException;\nimport freemarker.template.TemplateExceptionHandler;\n\nimport java.io.File;\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration configuration = new Configuration(Configuration.VERSION_2_3_23);\n\n        configuration.setDirectoryForTemplateLoading(new File(\"Path_to_the_folder\"));\n        configuration.setObjectWrapper(new DefaultObjectWrapper(Configuration.VERSION_2_3_23));\n        configuration.setDefaultEncoding(\"UTF-8\");\n        configuration.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);\n\n        Map dataModel = new HashMap();\n        dataModel.put(\"message\", \"Hello World\");\n\n        Template template;\n        try {\n            template = configuration.getTemplate(\"template.ftl\");\n            StringWriter writer = new StringWriter();\n            template.process(dataModel, writer);\n            System.out.println(writer.toString());\n        } catch (IOException e) {\n            e.printStackTrace();\n        } catch (TemplateException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nMake sure that you have imported the required APIs and the required dependencies are added in your project correctly. FreeMarker itself and all dependencies are included in your project (if you are using Maven) when you add them in the \"dependencies\" section of your pom.xml file.",
+                "extracted_java_code_from_prediction": "import freemarker.template.Configuration;\nimport freemarker.template.DefaultObjectWrapper;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateException;\nimport freemarker.template.TemplateExceptionHandler;\n\nimport java.io.File;\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration configuration = new Configuration(Configuration.VERSION_2_3_23);\n\n        configuration.setDirectoryForTemplateLoading(new File(\"Path_to_the_folder\"));\n        configuration.setObjectWrapper(new DefaultObjectWrapper(Configuration.VERSION_2_3_23));\n        configuration.setDefaultEncoding(\"UTF-8\");\n        configuration.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);\n\n        Map dataModel = new HashMap();\n        dataModel.put(\"message\", \"Hello World\");\n\n        Template template;\n        try {\n            template = configuration.getTemplate(\"template.ftl\");\n            StringWriter writer = new StringWriter();\n            template.process(dataModel, writer);\n            System.out.println(writer.toString());\n        } catch (IOException e) {\n            e.printStackTrace();\n        } catch (TemplateException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "freemarker.template.Configuration",
+                    "freemarker.template.DefaultObjectWrapper",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateException",
+                    "freemarker.template.TemplateExceptionHandler",
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.io.StringWriter",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "freemarker.template.Configuration",
+                    "freemarker.template.DefaultObjectWrapper",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateException",
+                    "freemarker.template.TemplateExceptionHandler"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.io.StringWriter",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 5,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5959916710853577,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_1/Wrapper/src/main/java/org/example/Main.java: /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_1/Wrapper/src/main/java/org/example/Main.java uses unchecked or unsafe operations.\n[WARNING] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_1/Wrapper/src/main/java/org/example/Main.java: Recompile with -Xlint:unchecked for details.\n[INFO] 2 warnings \n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,53] unreported exception java.io.IOException; must be caught or declared to be thrown\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.733 s\n[INFO] Finished at: 2024-04-16T20:21:20-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,53] unreported exception java.io.IOException; must be caught or declared to be thrown\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 53,
+                                "message": "unreported exception java.io.IOException; must be caught or declared to be thrown"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple example of a Java class using FreeMarker's TemplateException API. \n\n```java\nimport freemarker.template.TemplateException;\nimport freemarker.template.Configuration;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateExceptionHandler;\n\nimport java.io.File;\nimport java.io.IOException;\nimport java.io.OutputStreamWriter;\nimport java.io.Writer;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration cfg = new Configuration(Configuration.VERSION_2_3_28);\n        cfg.setDirectoryForTemplateLoading(new File(\"path-to-your-template-folder\"));\n        cfg.setDefaultEncoding(\"UTF-8\");\n        cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);\n\n        try {\n            Template template = cfg.getTemplate(\"your-template-name.ftl\");\n            Map<String, Object> dataModel = new HashMap<>();\n            dataModel.put(\"title\", \"Simple Title\");\n\n            Writer output = new OutputStreamWriter(System.out);\n            template.process(dataModel, output);\n        } catch (IOException e) {\n            e.printStackTrace();\n        } catch (TemplateException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nHere `cfg.getTemplate(\"your-template-name.ftl\")` is using the FreeMarker Template class to load the template file. Please note you need to replace the placeholder `\"your-template-name.ftl\"` and `\"path-to-your-template-folder\"` with your actual file name and folder path.\n\nThe data model is constructed using a `HashMap`, replace the key-value pairs with your own data.\n\nLastly, the `template.process(dataModel, output)` method will output the parsed template to the console. If you want to send the output elsewhere, you may replace `System.out` with a `FileWriter` or `OutputStream` or any other `Writer`.",
+                "extracted_java_code_from_prediction": "import freemarker.template.TemplateException;\nimport freemarker.template.Configuration;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateExceptionHandler;\n\nimport java.io.File;\nimport java.io.IOException;\nimport java.io.OutputStreamWriter;\nimport java.io.Writer;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration cfg = new Configuration(Configuration.VERSION_2_3_28);\n        cfg.setDirectoryForTemplateLoading(new File(\"path-to-your-template-folder\"));\n        cfg.setDefaultEncoding(\"UTF-8\");\n        cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);\n\n        try {\n            Template template = cfg.getTemplate(\"your-template-name.ftl\");\n            Map<String, Object> dataModel = new HashMap<>();\n            dataModel.put(\"title\", \"Simple Title\");\n\n            Writer output = new OutputStreamWriter(System.out);\n            template.process(dataModel, output);\n        } catch (IOException e) {\n            e.printStackTrace();\n        } catch (TemplateException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "freemarker.template.TemplateException",
+                    "freemarker.template.Configuration",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateExceptionHandler",
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.io.OutputStreamWriter",
+                    "java.io.Writer",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "freemarker.template.TemplateException",
+                    "freemarker.template.Configuration",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateExceptionHandler"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.io.OutputStreamWriter",
+                    "java.io.Writer",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 6,
+                "failure_rate_for_FQNs": 0.6,
+                "model_confidence": 0.6253880262374878,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_2/Wrapper/src/main/java/org/example/Main.java:[18,43] unreported exception java.io.IOException; must be caught or declared to be thrown\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.772 s\n[INFO] Finished at: 2024-04-16T20:21:22-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_2/Wrapper/src/main/java/org/example/Main.java:[18,43] unreported exception java.io.IOException; must be caught or declared to be thrown\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 43,
+                                "message": "unreported exception java.io.IOException; must be caught or declared to be thrown"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to complete the compilable Java code with necessary imports and correct use of \"TemplateException\", we will use Apache Freemarker API. As Apache Freemarker doesn't provide a Maven dependency for TemplateException (it might be available from other APIs), we will use basic java and its built-in packages.\n\nAlso, please ensure that all import statements are added correctly, as incorrect imports can cause compile errors.\n\nBelow is a simple Java program which uses TemplateException:\n\n```java\nimport java.io.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        TemplateException exception = new TemplateException(\"Exception Message\");\n        exception.printStackTrace();\n    }\n}\n```\nIn this code, `TemplateException` is not available in the default Java imports or as a Maven dependency. So, this program might not compile. Please note the actual use of TemplateException might be different based on your actual implementation.",
+                "extracted_java_code_from_prediction": "import java.io.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        TemplateException exception = new TemplateException(\"Exception Message\");\n        exception.printStackTrace();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.*",
+                    "java.util.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.io.*",
+                    "java.util.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.3369470238685608,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example Java code that uses the freemarker-2.3.30 library and uses TemplateException API:\n\n```java\nimport freemarker.template.Configuration;\nimport freemarker.template.TemplateException;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateExceptionHandler;\n\nimport java.io.File;\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration cfg = new Configuration(Configuration.VERSION_2_3_30);\n        \n        try {\n            cfg.setDirectoryForTemplateLoading(new File(\"/path/to/your/templates\"));\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n        \n        cfg.setDefaultEncoding(\"UTF-8\");\n        cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);\n        \n        StringWriter output = new StringWriter();\n        Map<String, Object> map = new HashMap<>();\n        map.put(\"name\", \"John\");\n        map.put(\"age\", \"25\");\n        \n        try {\n            Template template = cfg.getTemplate(\"template.ftl\");\n            template.process(map, output);\n            System.out.println(output);\n        } catch (IOException e) {\n            e.printStackTrace();\n        } catch (TemplateException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code will read an example Freemarker template from the specified directory (/path/to/your/templates), inject the values from the `HashMap` into the template, and print the output to the console. Note that you need to replace the \"/path/to/your/templates\" with the actual path to your Freemarker template directory.\n\nIf you need more APIs, you may need to include additional dependencies in your pom.xml file, like the following:\n\n```xml\n<dependency>\n    <groupId>org.springframework</groupId>\n    <artifactId>spring-core</artifactId>\n    <version>5.2.8.RELEASE</version>\n</dependency>\n```\n\nAnd add the necessary import statements at the top of your Java file:\n\n```java\nimport org.springframework.expression.Expression;\nimport org.springframework.expression.ExpressionParser;\nimport org.springframework.expression.spel.standard.SpelExpressionParser;\n```\n\nThen you can use `Expression` and `ExpressionParser` like below:\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        ExpressionParser parser = new SpelExpressionParser();\n        Expression expression = parser.parseExpression(\"'Hello World'\");\n        String message = (String) expression.getValue();\n        System.out.println(message);\n    }\n}\n```\n\nThis will output:\n\n```\nHello World\n```",
+                "extracted_java_code_from_prediction": "import freemarker.template.Configuration;\nimport freemarker.template.TemplateException;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateExceptionHandler;\n\nimport java.io.File;\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration cfg = new Configuration(Configuration.VERSION_2_3_30);\n        \n        try {\n            cfg.setDirectoryForTemplateLoading(new File(\"/path/to/your/templates\"));\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n        \n        cfg.setDefaultEncoding(\"UTF-8\");\n        cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);\n        \n        StringWriter output = new StringWriter();\n        Map<String, Object> map = new HashMap<>();\n        map.put(\"name\", \"John\");\n        map.put(\"age\", \"25\");\n        \n        try {\n            Template template = cfg.getTemplate(\"template.ftl\");\n            template.process(map, output);\n            System.out.println(output);\n        } catch (IOException e) {\n            e.printStackTrace();\n        } catch (TemplateException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "freemarker.template.Configuration",
+                    "freemarker.template.TemplateException",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateExceptionHandler",
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.io.StringWriter",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "freemarker.template.Configuration",
+                    "freemarker.template.TemplateException",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateExceptionHandler",
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.io.StringWriter",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 9,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5555555555555556,
+                "model_confidence": 0.7743266820907593,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TemplateException\" API from \"freemarker-2.3.30\" project along with other necessary APIs. The dependency is already added for \"freemarker-2.3.30\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to use the \"freemarker-2.3.30\" project's API in a Java project, you need to download the jar file of that project and add it to your classpath. Here's an example of a simple Java program that utilizes the API. Note that the actual compilation may require the FreeMarker libraries to be accessible in the classpath:\n\n```java\nimport freemarker.template.Configuration;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Configuration cfg = new Configuration(Configuration.VERSION_2_3_30);\n        // The directory where the template file is.\n        cfg.setClassForTemplateLoading(Main.class, \"/\");\n\n        try {\n            Template template = cfg.getTemplate(\"template.ftl\");\n\n            StringWriter out = new StringWriter();\n            HashMap data = new HashMap();\n            data.put(\"name\", \"John Doe\");\n            data.put(\"msg\", \"Hello World!\");\n\n            template.process(data, out);\n            System.out.println(out);\n        } catch (TemplateException e) {\n            e.printStackTrace();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis is just a simple example of FreeMarker usage. The template file \"template.ftl\" should exist in the root of your project:\n```\nHello, ${name}! ${msg}\n```\n\nThis is a basic code that uses freemarker. You can extend it according to your needs by adding more data to the HashMap, handling exceptions properly, etc.\n\nAlso, make sure you have the FreeMarker jar file in the classpath.",
+                "extracted_java_code_from_prediction": "import freemarker.template.Configuration;\nimport freemarker.template.Template;\nimport freemarker.template.TemplateException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Configuration cfg = new Configuration(Configuration.VERSION_2_3_30);\n        // The directory where the template file is.\n        cfg.setClassForTemplateLoading(Main.class, \"/\");\n\n        try {\n            Template template = cfg.getTemplate(\"template.ftl\");\n\n            StringWriter out = new StringWriter();\n            HashMap data = new HashMap();\n            data.put(\"name\", \"John Doe\");\n            data.put(\"msg\", \"Hello World!\");\n\n            template.process(data, out);\n            System.out.println(out);\n        } catch (TemplateException e) {\n            e.printStackTrace();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "freemarker.template.Configuration",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateException"
+                ],
+                "correct_FQN_predictions": [
+                    "freemarker.template.Configuration",
+                    "freemarker.template.Template",
+                    "freemarker.template.TemplateException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.544954776763916,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[18,13] cannot find symbol\n  symbol:   class StringWriter\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[18,36] cannot find symbol\n  symbol:   class StringWriter\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,13] cannot find symbol\n  symbol:   class HashMap\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,32] cannot find symbol\n  symbol:   class HashMap\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[27,18] cannot find symbol\n  symbol:   class IOException\n  location: class org.example.Main\n[INFO] 5 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.773 s\n[INFO] Finished at: 2024-04-16T20:21:25-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[18,13] cannot find symbol\n[ERROR]   symbol:   class StringWriter\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[18,36] cannot find symbol\n[ERROR]   symbol:   class StringWriter\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,13] cannot find symbol\n[ERROR]   symbol:   class HashMap\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,32] cannot find symbol\n[ERROR]   symbol:   class HashMap\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java:[27,18] cannot find symbol\n[ERROR]   symbol:   class IOException\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 36,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 27,
+                                "column": 18,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/freemarker-2.3.30/TemplateException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 32,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

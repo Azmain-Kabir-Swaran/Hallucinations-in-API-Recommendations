@@ -1,0 +1,20 @@
+{
+    "jar_name": "maven-core-3.8.6.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from maven-core-3.8.6 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from maven-core-3.8.6 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have the ability to directly access or view a project's code or dependencies. However, I can provide you with a general idea of how to approach this problem.\n\nTo list correct API's class names from a Maven project, you would typically use the Maven Dependency Plugin. This plugin provides several goals that can be used to manage dependencies.\n\nHere's a general idea of how you might use the plugin to list classes:\n\n1. Add the following to your pom.xml file:\n\n```xml\n<plugin>\n    <groupId>org.apache.maven.plugins</groupId>\n    <artifactId>maven-dependency-plugin</artifactId>\n    <version>3.1.2</version>\n</plugin>\n```\n\n2. Then, you can use the goal \"tree\" to list all classes in the project:\n\n```bash\nmvn dependency:tree\n```\n\nThis will list all classes and dependencies in the project.\n\nHowever, to list only non-abstract classes, you would need to use a tool that can parse the output of the \"tree\" command and filter the results. This would involve a bit more work and might not be feasible for a large project with many dependencies.\n\nAs for the number of classes, it's hard to say without knowing the exact project structure and dependencies. It could be as many as the number of classes in the project and its dependencies.\n\nIf you need to list classes from a specific package or a specific dependency, you can use the \"tree\" goal with the \"-Dincludes=\" option to filter the results. For example:\n\n```bash\nmvn dependency:tree -Dincludes=com.example:*\n```\n\nThis will list all classes in the com.example package and its dependencies.\n\nPlease note that this is a general idea and might need to be adjusted based on the specific project and requirements.",
+        "extracted_APIs_from_prediction": [
+            "1.2</version>"
+        ],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [
+            "1.2</version>"
+        ],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 1,
+        "model_confidence": 0.6285849809646606,
+        "failure_rate_for_APIs": 1.0,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

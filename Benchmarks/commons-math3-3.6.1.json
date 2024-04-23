@@ -1,0 +1,16 @@
+{
+    "jar_name": "commons-math3-3.6.1.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from commons-math3-3.6.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from commons-math3-3.6.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the commons-math3-3.6.1 project or its source code. However, I can provide you with a general approach to solve this problem.\n\nTo list correct API's class names from a project, you would typically need to:\n\n1. Access the project's source code.\n2. Analyze the source code to identify classes.\n3. Check if the classes are abstract.\n4. If not, add them to the list.\n\nHowever, as I don't have the source code, I can't provide you with the exact list of classes. However, I can provide you with a general approach to solve this problem.\n\nHere's a Python example of how you might approach this:\n\n```python\nimport os\nimport re\n\ndef get_classes(path):\n    classes = []\n    for root, dirs, files in os.walk(path):\n        for file in files:\n            if file.endswith(\".java\"):\n                with open(os.path.join(root, file), 'r') as f:\n                    content = f.read()\n                    matches = re.findall(r'public\\s+class\\s+(\\w+)', content)\n                    for match in matches:\n                        if not re.search(r'abstract\\s+class\\s+(\\w+)', content):\n                            classes.append(match)\n    return classes\n\npath_to_project = \"/path/to/commons-math3-3.6.1\"\nclasses = get_classes(path_to_project)\nprint(classes)\n```\n\nThis script will walk through the Java files in the specified directory and its subdirectories, and for each file, it will search for classes that are not abstract. It will then print out the names of these classes.\n\nPlease note that this is a general approach and might not work perfectly for all projects. Also, it's important to respect the project's license when using its source code.",
+        "extracted_APIs_from_prediction": [],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 0,
+        "model_confidence": 0.7048667073249817,
+        "failure_rate_for_APIs": 1,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

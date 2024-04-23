@@ -1,0 +1,400 @@
+{
+    "jar_name": "fastjson2-2.0.3.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from guice-7.0.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. Guice\n2. GuiceInternal\n3. Classes\n4. InternalClassesToSkipSources\n5. ClassDefining\n6. BytecodeGen\n7. DeclaredMembers\n8. ClassBuilding\n9. Names\n10. GenericErrorDetail\n11. ModuleAnnotatedMethodScannerBinding\n12. SourceProvider\n13. InterceptorBinding\n14. DefaultBindingScopingVisitor<V>\n15. KotlinSupport\n16. ElementSource\n17. InjectionPoint\n18. InternalProvisionException\n19. Types\n20. CreationException\n21. ConstantBindingBuilderImpl<T>\n22. Errors\n23. Annotations\n24. InternalFlags\n25. TypeListenerBinding\n26. Dependency<T>\n27. ErrorId\n28. ConfigurationException\n29. UniqueAnnotations\n30. TypeConverterBinding\n31. ProviderMethodsModule\n32. Modules\n33. RealMapBinder<K,\n34. BindingBuilder<T>\n35. MultibindingsScanner\n36. MembersInjectorLookup<T>\n37. RequireAtInjectOnConstructorsOption\n38. ProvisionListenerBinding\n39. InternalInjectorCreator\n40. ErrorsException\n41. Nullability\n42. RequireExactBindingAnnotationsOption\n43. StackTraceElements\n44. RealOptionalBinder<T>\n45. RequireExplicitBindingsOption\n46. TypeLiteral<T>\n47. MoreTypes\n48. PrivateElementsImpl\n49. Enhanced\n50. RealMultibinder<T>\n\nList correct API's class names from commons-cli-1.5.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. PosixParser\n2. PatternOptionBuilder\n3. CommandLine\n4. BasicParser\n5. TypeHandler\n6. UnrecognizedOptionException\n7. DefaultParser\n8. ParseException\n9. GnuParser\n10. AmbiguousOptionException\n11. HelpFormatter\n12. MissingOptionException\n13. MissingArgumentException\n14. OptionBuilder\n15. OptionGroup\n16. AlreadySelectedException\n17. Options\n18. Option\n\nList correct API's class names from fastjson2-2.0.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from guice-7.0.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. Guice\n2. GuiceInternal\n3. Classes\n4. InternalClassesToSkipSources\n5. ClassDefining\n6. BytecodeGen\n7. DeclaredMembers\n8. ClassBuilding\n9. Names\n10. GenericErrorDetail\n11. ModuleAnnotatedMethodScannerBinding\n12. SourceProvider\n13. InterceptorBinding\n14. DefaultBindingScopingVisitor<V>\n15. KotlinSupport\n16. ElementSource\n17. InjectionPoint\n18. InternalProvisionException\n19. Types\n20. CreationException\n21. ConstantBindingBuilderImpl<T>\n22. Errors\n23. Annotations\n24. InternalFlags\n25. TypeListenerBinding\n26. Dependency<T>\n27. ErrorId\n28. ConfigurationException\n29. UniqueAnnotations\n30. TypeConverterBinding\n31. ProviderMethodsModule\n32. Modules\n33. RealMapBinder<K,\n34. BindingBuilder<T>\n35. MultibindingsScanner\n36. MembersInjectorLookup<T>\n37. RequireAtInjectOnConstructorsOption\n38. ProvisionListenerBinding\n39. InternalInjectorCreator\n40. ErrorsException\n41. Nullability\n42. RequireExactBindingAnnotationsOption\n43. StackTraceElements\n44. RealOptionalBinder<T>\n45. RequireExplicitBindingsOption\n46. TypeLiteral<T>\n47. MoreTypes\n48. PrivateElementsImpl\n49. Enhanced\n50. RealMultibinder<T>\n\nList correct API's class names from commons-cli-1.5.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. PosixParser\n2. PatternOptionBuilder\n3. CommandLine\n4. BasicParser\n5. TypeHandler\n6. UnrecognizedOptionException\n7. DefaultParser\n8. ParseException\n9. GnuParser\n10. AmbiguousOptionException\n11. HelpFormatter\n12. MissingOptionException\n13. MissingArgumentException\n14. OptionBuilder\n15. OptionGroup\n16. AlreadySelectedException\n17. Options\n18. Option\n\nList correct API's class names from fastjson2-2.0.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. JSONObject\n2. JSONArray\n3. JSON\n4. JSONStreamAware\n5. JSONPath\n6. JSONStreamAware\n7. JSONAware\n8. JSONStreamAware\n9. JSONStreamAware\n10. JSONStreamAware\n11. JSONStreamAware\n12. JSONStreamAware\n13. JSONStreamAware\n14. JSONStreamAware\n15. JSONStreamAware\n16. JSONStreamAware\n17. JSONStreamAware\n18. JSONStreamAware\n19. JSONStreamAware\n20. JSONStreamAware\n21. JSONStreamAware\n22. JSONStreamAware\n23. JSONStreamAware\n24. JSONStreamAware\n25. JSONStreamAware\n26. JSONStreamAware\n27. JSONStreamAware\n28. JSONStreamAware\n29. JSONStreamAware\n30. JSONStreamAware\n31. JSONStreamAware\n32. JSONStreamAware\n33. JSONStreamAware\n34. JSONStreamAware\n35. JSONStreamAware\n36. JSONStreamAware\n37. JSONStreamAware\n38. JSONStreamAware\n39. JSONStreamAware\n40. JSONStreamAware\n41. JSONStreamAware\n42. JSONStreamAware\n43. JSONStreamAware\n44. JSONStreamAware\n",
+        "extracted_APIs_from_prediction": [
+            "JSONObject",
+            "JSONArray",
+            "JSON",
+            "JSONStreamAware",
+            "JSONPath",
+            "JSONAware"
+        ],
+        "correct_API_predictions": [
+            "JSONObject",
+            "JSONArray"
+        ],
+        "wrong_API_predictions": [
+            "JSON",
+            "JSONStreamAware",
+            "JSONPath",
+            "JSONAware"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 4,
+        "failure_rate_for_APIs": 0.6666666666666666,
+        "model_confidence": 0.7418079376220703,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "JSONObject": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JSONObject\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONObject\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example Java program using \"fastjson2-2.0.3\" project:\n\n```java\nimport com.alibaba.fastjson2.JSONObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JSON object\n        JSONObject jsonObject = new JSONObject();\n        \n        // Put some data into the JSON object\n        jsonObject.put(\"name\", \"John\");\n        jsonObject.put(\"age\", 30);\n\n        // Print the JSON object\n        System.out.println(jsonObject);\n    }\n}\n```\n\nThis program creates a JSON object using the \"fastjson2-2.0.3\" project and prints it.\n\nPlease note that the \"fastjson2-2.0.3\" project is an alias for the \"com.alibaba:fastjson2:2.0.3\" dependency, a JSON library for Java projects.\n\nThe fastjson2-2.0.3 is already mentioned in the \"fastjson2-2.0.3\" project and doesn't need to be added in the main method.\n\nIt's better to import the \"com.alibaba.fastjson2.JSONObject\" directly, as it simplifies the code and avoids unnecessary dependencies.",
+                "extracted_java_code_from_prediction": "import com.alibaba.fastjson2.JSONObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JSON object\n        JSONObject jsonObject = new JSONObject();\n        \n        // Put some data into the JSON object\n        jsonObject.put(\"name\", \"John\");\n        jsonObject.put(\"age\", 30);\n\n        // Print the JSON object\n        System.out.println(jsonObject);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson2.JSONObject"
+                ],
+                "correct_FQN_predictions": [
+                    "com.alibaba.fastjson2.JSONObject"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.541729748249054,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONObject\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nGiven your requirements, here is a possible solution using FastJSON and the usage of other APIs would require adding additional dependencies. However, the solution below includes only a basic example of using FastJSON and does not require any additional APIs.\n\nFirstly, add the FastJSON2 jar to the classpath. To build a project with maven, your pom.xml should have this line:\n```xml\n<dependencies>\n    <dependency>\n        <groupId>com.alibaba</groupId>\n        <artifactId>fastjson2</artifactId>\n        <version>2.0.3</version>\n    </dependency>\n</dependencies>\n```\nNow, you can use the JSONObject API like so:\n\n```java\npackage somepackage; // change this to your actual package\n\nimport com.alibaba.fastjson2.JSONObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        // creating a new JSONObject\n        JSONObject jsonObject = new JSONObject();\n\n        // adding key-value pairs to the JSONObject\n        jsonObject.put(\"key1\", \"value1\");\n        jsonObject.put(\"key2\", 2);\n\n        // printing the JSONObject\n        System.out.println(jsonObject);\n    }\n}\n```\nIn this code snippet, we first import the necessary API (FastJSON2). Then, we have a class with the main method, where we create a JSONObject and add some key-value pairs to it. Finally, we print the JSONObject to the console.",
+                "extracted_java_code_from_prediction": "package somepackage; // change this to your actual package\n\nimport com.alibaba.fastjson2.JSONObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        // creating a new JSONObject\n        JSONObject jsonObject = new JSONObject();\n\n        // adding key-value pairs to the JSONObject\n        jsonObject.put(\"key1\", \"value1\");\n        jsonObject.put(\"key2\", 2);\n\n        // printing the JSONObject\n        System.out.println(jsonObject);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson2.JSONObject"
+                ],
+                "correct_FQN_predictions": [
+                    "com.alibaba.fastjson2.JSONObject"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5274726748466492,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONObject\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a basic example of how you can use FastJson and other required APIs to parse a JSON string and extract values. \n\nThis code assumes you have added the necessary dependencies in your project and have the necessary import statements, as per usual in Java development.\n\nPlease note that you might need to install the \"fastjson2-2.0.3\" library. This can be done using a dependency manager like Maven or Gradle. For Maven, it would look something like this:\n\n```xml\n<dependency>\n    <groupId>com.alibaba</groupId>\n    <artifactId>fastjson2-2.0.3</artifactId>\n    <version>2.0.3</version>\n</dependency>\n```\nFor Gradle, it would look something like this:\n\n```groovy\nimplementation 'com.alibaba:fastjson2-2.0.3:2.0.3'\n```\n\n```java\nimport com.alibaba.fastjson2.JSONObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        String json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\";\n        JSONObject jsonObject = JSONObject.parseObject(json);\n\n        System.out.println(jsonObject.getString(\"name\")); // Outputs \"John\"\n        System.out  .println(jsonObject.getIntValue(\"age\")); // Outputs 30\n        System.out.println(jsonObject.getString(\"city\")); // Outputs \"New York\"\n    }\n}\n```\nIn the given sample code, we are assuming the input JSON string which will be parsed,\n`\"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\"`\n\nThis code will parse the above JSON and extract the \"name\", \"age\", and \"city\" and print out the values. You need to replace the values with your own.\n\nKeep in mind to ensure you have added the FastJson library to your project.\n\nThis is a basic example. The code should cover most use cases. You would need to handle edge cases and errors, based on your actual requirements.",
+                "extracted_java_code_from_prediction": "import com.alibaba.fastjson2.JSONObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        String json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\";\n        JSONObject jsonObject = JSONObject.parseObject(json);\n\n        System.out.println(jsonObject.getString(\"name\")); // Outputs \"John\"\n        System.out  .println(jsonObject.getIntValue(\"age\")); // Outputs 30\n        System.out.println(jsonObject.getString(\"city\")); // Outputs \"New York\"\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson2.JSONObject"
+                ],
+                "correct_FQN_predictions": [
+                    "com.alibaba.fastjson2.JSONObject"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6550297737121582,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONObject/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONObject/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONObject/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONObject/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,43] method parseObject in class com.alibaba.fastjson2.JSONObject cannot be applied to given types;\n  required: java.lang.String,java.lang.Class<T>\n  found:    java.lang.String\n  reason: cannot infer type-variable(s) T\n    (actual and formal argument lists differ in length)\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.799 s\n[INFO] Finished at: 2024-04-16T19:52:03-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONObject/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,43] method parseObject in class com.alibaba.fastjson2.JSONObject cannot be applied to given types;\n[ERROR]   required: java.lang.String,java.lang.Class<T>\n[ERROR]   found:    java.lang.String\n[ERROR]   reason: cannot infer type-variable(s) T\n[ERROR]     (actual and formal argument lists differ in length)\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONObject/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 43,
+                                "message": "method parseObject in class com.alibaba.fastjson2.JSONObject cannot be applied to given types;"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONObject\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure. Here is a simple example of how to use the `JSONObject` API from the `fastjson2-2.0.3` project in Java:\n\n```java\nimport com.alibaba.fastjson2.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating a JSONObject\n        JSONObject jsonObject = new JSONObject();\n\n        // Adding values\n        jsonObject.put(\"name\", \"John\");\n        jsonObject.put(\"age\", 30);\n        jsonObject.put(\"city\", \"New York\");\n        \n        // Getting values\n        String name = jsonObject.getJSONObject(\"name\");\n        int age = jsonObject.getIntValue(\"age\");\n        String city = jsonObject.getJSONObject(\"city\");\n\n        System.out.println(name);\n        System.out.println(age);\n        System.out.println(city);\n    }\n}\n```\n\nIn this code, we use `put` method to insert key-value pairs into the `JSONObject`, and `get` methods to retrieve the value for a particular key. Note that some APIs may require adding specific dependencies which you did not provide in your request. You might need `java.io` for input and output operations, `java.util` for date-time operations, etc.\n\nPlease ensure to properly manage your dependencies. The `JSONObject` class is part of `com.alibaba.fastjson2` package, which is available as a dependency in the `fastjson2-2.0.3` project.",
+                "extracted_java_code_from_prediction": "import com.alibaba.fastjson2.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating a JSONObject\n        JSONObject jsonObject = new JSONObject();\n\n        // Adding values\n        jsonObject.put(\"name\", \"John\");\n        jsonObject.put(\"age\", 30);\n        jsonObject.put(\"city\", \"New York\");\n        \n        // Getting values\n        String name = jsonObject.getJSONObject(\"name\");\n        int age = jsonObject.getIntValue(\"age\");\n        String city = jsonObject.getJSONObject(\"city\");\n\n        System.out.println(name);\n        System.out.println(age);\n        System.out.println(city);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson2.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.alibaba.fastjson2.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.546722948551178,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONObject\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java code snippet that uses \"fastjson2-2.0.3\" and JSONObject:\n\n```java\nimport com.alibaba.fastjson2.JSON;\nimport com.alibaba.fastjson2.JSONObject;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        JSONObject jsonObject = new JSONObject();\n        jsonObject.put(\"name\", \"John Doe\");\n        jsonObject.put(\"age\", 30);\n        System.out.println(jsonObject); // Output: {\"age\":30,\"name\":\"John Doe\"}\n        \n        String jsonString = jsonObject.toJSONString();\n        JSONObject jsonObjectFromString = JSON.parseObject(jsonString);\n        System.out.println(jsonObjectFromString); // Output: {\"age\":30,\"name\":\"John Doe\"}\n    }\n}\n```\n\nThis code snippet uses two JSONObject APIs: JSONObject and parseObject from JSON. \n\nPlease note: \n1. This code is for educational purposes only. In a real-world scenario, you would need to handle exceptions appropriately.\n2. You need to make sure to use the correct versions of libraries (FastJSON in this case) and import statements are up to date.\n3. Make sure you are properly setting up your development environment to access this project in your maven settings. \n4. Also, please be aware that using JSONObject class from \"fastjson2-2.0.3\" might not work in a regular way in IntelliJ IDEA as it tends to have its own version of JSONObject. Please make sure the IDEA version and settings are not causing problems. \n\nPlease replace `\"fastjson2-2.0.3\"` and `JSONObject` with the correct import and class if required. Also, it is recommended to always import your dependencies properly for production-level Java development.",
+                "extracted_java_code_from_prediction": "import com.alibaba.fastjson2.JSON;\nimport com.alibaba.fastjson2.JSONObject;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        JSONObject jsonObject = new JSONObject();\n        jsonObject.put(\"name\", \"John Doe\");\n        jsonObject.put(\"age\", 30);\n        System.out.println(jsonObject); // Output: {\"age\":30,\"name\":\"John Doe\"}\n        \n        String jsonString = jsonObject.toJSONString();\n        JSONObject jsonObjectFromString = JSON.parseObject(jsonString);\n        System.out.println(jsonObjectFromString); // Output: {\"age\":30,\"name\":\"John Doe\"}\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson2.JSON",
+                    "com.alibaba.fastjson2.JSONObject"
+                ],
+                "correct_FQN_predictions": [
+                    "com.alibaba.fastjson2.JSON",
+                    "com.alibaba.fastjson2.JSONObject"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5297428965568542,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "JSONArray": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JSONArray\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONArray\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a simple Java code using the JSONArray API from the fastjson2-2.0.3 project.\n\nMake sure to include the necessary dependencies in your project.\n\n```java\nimport com.alibaba.fastjson2.JSONArray;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JSONArray\n        JSONArray jsonArray = new JSONArray();\n\n        // Add elements to the JSONArray\n        jsonArray.add(\"Element 1\");\n        jsonArray.add(\"Element 2\");\n        jsonArray.add(\"Element 3\");\n\n        // Print the elements of the JSONArray\n        for(int i=0;i<jsonArray.size();i++) {\n            System.out.println(jsonArray.get(i));\n        }\n    }\n}\n```\n\nNote that if you don't want to use FastJSON2, you would have to replace this example with the actual code that needs to be implemented. Also remember to add the necessary import statements for your classes.",
+                "extracted_java_code_from_prediction": "import com.alibaba.fastjson2.JSONArray;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JSONArray\n        JSONArray jsonArray = new JSONArray();\n\n        // Add elements to the JSONArray\n        jsonArray.add(\"Element 1\");\n        jsonArray.add(\"Element 2\");\n        jsonArray.add(\"Element 3\");\n\n        // Print the elements of the JSONArray\n        for(int i=0;i<jsonArray.size();i++) {\n            System.out.println(jsonArray.get(i));\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson2.JSONArray"
+                ],
+                "correct_FQN_predictions": [
+                    "com.alibaba.fastjson2.JSONArray"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4792936146259308,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONArray\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nI don't have the ability to download dependencies or compile code without the actual code. However, below you'll find a simple class that incorporates the necessary classes and methods from the mentioned APIs.\n\nFor this example, I will be using `JSONArray`, `JSONObject` and `JSON`. Note that you should import these classes from their respective packages in your own code.\n\n```java\nimport com.alibaba.fastjson.JSON;\nimport com.alibaba.fastjson.JSONArray;\nimport com.alibaba.fastjson.JSONObject;\n\nclass Main {\n    public static void main(String[] args) {\n        // Let's create a new JSONArray object\n        JSONArray array = new JSONArray();\n        \n        // And put two JSONObjects into it\n        array.add(new JSONObject().fluentPut(\"name\", \"John\").fluentPut(\"age\", \"24\"));\n        array.add(new JSONObject().fluentPut(\"name\", \"Sarah\").fluentPut(\"age\", \"27\"));\n        \n        // Now, let's print the JSONArray\n        System.out.println(array.toJSONString());\n        \n        // Or if you prefer, let's parse the JSONArray back into JSONObject\n        JSONArray parsedArray = JSONArray.parseArray(array.toJSONString());\n        \n        // Now we have our parsedArray, we can also parse it into Java objects.\n        for(int i = 0; i < parsedArray.size(); i++){\n            JSONObject obj = parsedArray.getJSONObject(i);\n            String name = obj.getString(\"name\");\n            int age = obj.getIntValue(\"age\");\n            \n            System.out.println(\"Name: \" + name + \", Age: \" + age);\n        }\n        \n        // Now let's create a JSONObject from a Java object\n        User user = new User(\"Joe\", 30);\n        JSONObject userObject = (JSONObject) JSON.toJSON(user);\n        \n        System.out.println(userObject.toJSONString());\n    }\n}\n\nclass User {\n    private String name;\n    private int age;\n\n    public User(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n}\n```\nIn this code snippet, we are using `JSONArray` to create a JSON array. Then, we parse JSON strings into JSONObjects and extract JSON object values. We also create JSON object from a Java object using `com.alibaba.fastjson.JSON` utility class. Note that you need to have `fastjson2-2.0.3` added as a dependency in your build system.",
+                "extracted_java_code_from_prediction": "import com.alibaba.fastjson.JSON;\nimport com.alibaba.fastjson.JSONArray;\nimport com.alibaba.fastjson.JSONObject;\n\nclass Main {\n    public static void main(String[] args) {\n        // Let's create a new JSONArray object\n        JSONArray array = new JSONArray();\n        \n        // And put two JSONObjects into it\n        array.add(new JSONObject().fluentPut(\"name\", \"John\").fluentPut(\"age\", \"24\"));\n        array.add(new JSONObject().fluentPut(\"name\", \"Sarah\").fluentPut(\"age\", \"27\"));\n        \n        // Now, let's print the JSONArray\n        System.out.println(array.toJSONString());\n        \n        // Or if you prefer, let's parse the JSONArray back into JSONObject\n        JSONArray parsedArray = JSONArray.parseArray(array.toJSONString());\n        \n        // Now we have our parsedArray, we can also parse it into Java objects.\n        for(int i = 0; i < parsedArray.size(); i++){\n            JSONObject obj = parsedArray.getJSONObject(i);\n            String name = obj.getString(\"name\");\n            int age = obj.getIntValue(\"age\");\n            \n            System.out.println(\"Name: \" + name + \", Age: \" + age);\n        }\n        \n        // Now let's create a JSONObject from a Java object\n        User user = new User(\"Joe\", 30);\n        JSONObject userObject = (JSONObject) JSON.toJSON(user);\n        \n        System.out.println(userObject.toJSONString());\n    }\n}\n\nclass User {\n    private String name;\n    private int age;\n\n    public User(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson.JSON",
+                    "com.alibaba.fastjson.JSONArray",
+                    "com.alibaba.fastjson.JSONObject"
+                ],
+                "correct_FQN_predictions": [
+                    "com.alibaba.fastjson.JSON",
+                    "com.alibaba.fastjson.JSONArray",
+                    "com.alibaba.fastjson.JSONObject"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6783857941627502,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/User.java:[3,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/User.java:[4,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/User.java:[5,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n  symbol:   class JSONArray\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,31] cannot find symbol\n  symbol:   class JSONArray\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[14,23] cannot find symbol\n  symbol:   class JSONObject\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,23] cannot find symbol\n  symbol:   class JSONObject\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[21,9] cannot find symbol\n  symbol:   class JSONArray\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[21,33] cannot find symbol\n  symbol:   variable JSONArray\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[25,13] cannot find symbol\n  symbol:   class JSONObject\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[34,9] cannot find symbol\n  symbol:   class JSONObject\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[34,34] cannot find symbol\n  symbol:   class JSONObject\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[34,46] cannot find symbol\n  symbol:   variable JSON\n  location: class org.example.Main\n[INFO] 16 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.824 s\n[INFO] Finished at: 2024-04-16T19:52:41-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/User.java:[3,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/User.java:[4,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/User.java:[5,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,28] package com.alibaba.fastjson does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n[ERROR]   symbol:   class JSONArray\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,31] cannot find symbol\n[ERROR]   symbol:   class JSONArray\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[14,23] cannot find symbol\n[ERROR]   symbol:   class JSONObject\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,23] cannot find symbol\n[ERROR]   symbol:   class JSONObject\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[21,9] cannot find symbol\n[ERROR]   symbol:   class JSONArray\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[21,33] cannot find symbol\n[ERROR]   symbol:   variable JSONArray\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[25,13] cannot find symbol\n[ERROR]   symbol:   class JSONObject\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[34,9] cannot find symbol\n[ERROR]   symbol:   class JSONObject\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[34,34] cannot find symbol\n[ERROR]   symbol:   class JSONObject\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java:[34,46] cannot find symbol\n[ERROR]   symbol:   variable JSON\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 28,
+                                "message": "package com.alibaba.fastjson does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 28,
+                                "message": "package com.alibaba.fastjson does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/User.java",
+                                "line": 5,
+                                "column": 28,
+                                "message": "package com.alibaba.fastjson does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/User.java",
+                                "line": 4,
+                                "column": 28,
+                                "message": "package com.alibaba.fastjson does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 34,
+                                "column": 34,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 31,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 34,
+                                "column": 46,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 28,
+                                "message": "package com.alibaba.fastjson does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/User.java",
+                                "line": 3,
+                                "column": 28,
+                                "message": "package com.alibaba.fastjson does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 33,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 34,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONArray\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java code that uses `JSONArray` from the `fastjson2-2.0.3` project to parse a JSON array and print its content:\n\n```java\nimport com.alibaba.fastjson2.JSONArray;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Suppose json is a JSON string\n        String json = \"[{\\\"name\\\":\\\"John\\\", \\\"age\\\":30}, {\\\"name\\\":\\\"Steve\\\", \\\"age\\\":25}]\";\n        \n        // Parse JSON to JSONArray\n        JSONArray jsonArray = JSONArray.parseArray(json);\n        \n        // Printing the JSONArray\n        System.out.println(jsonArray.toString());\n    }\n}\n```\n\nIn this code, the `JSONArray.parseArray` method is used to parse a JSON string to a `JSONArray`. The `JSONArray.toString` method is then used to print the content of the array. The `alibaba.fastjson2` and `com.alibaba.fastjson2` package are needed in the project's classpath. They should be included in the project where this main method is used. \n\nMake sure you have added the dependency in your project using Maven, Gradle, or any build tool of your choice.\n\nPlease replace the json string with your actual JSON string. \n\nThe dependency management for `fastjson2-2.0.3` is handled by the build tool you are using, so you don't need to manually add it as a dependency in your project.\n\nImportant: Make sure the package of your project includes `com.alibaba.fastjson2` because if you want to use the mentioned method, you need to add this package in your project.",
+                "extracted_java_code_from_prediction": "import com.alibaba.fastjson2.JSONArray;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Suppose json is a JSON string\n        String json = \"[{\\\"name\\\":\\\"John\\\", \\\"age\\\":30}, {\\\"name\\\":\\\"Steve\\\", \\\"age\\\":25}]\";\n        \n        // Parse JSON to JSONArray\n        JSONArray jsonArray = JSONArray.parseArray(json);\n        \n        // Printing the JSONArray\n        System.out.println(jsonArray.toString());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson2.JSONArray"
+                ],
+                "correct_FQN_predictions": [
+                    "com.alibaba.fastjson2.JSONArray"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5245596170425415,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,40] cannot find symbol\n  symbol:   method parseArray(java.lang.String)\n  location: class com.alibaba.fastjson2.JSONArray\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.756 s\n[INFO] Finished at: 2024-04-16T19:52:42-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,40] cannot find symbol\n[ERROR]   symbol:   method parseArray(java.lang.String)\n[ERROR]   location: class com.alibaba.fastjson2.JSONArray\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 40,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONArray\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example to show how to use JSONArray API from fastjson2-2.0.3 project:\n\n```java\nimport com.alibaba.fastjson2.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating a JSONArray\n        JSONArray array = new JSONArray();\n\n        // Adding an object to the JSONArray\n        array.add(JSON.toJSON(\"Hello World\"));\n\n        // Printing the JSONArray\n        System.out.println(array);\n    }\n}\n```\nIn this example, we are creating a JSONArray using `new JSONArray()`. Then we add a string \"Hello World\" using the `add()` method, which is a method of the `JSONArray` class. Finally, we print the JSONArray using `System.out.println()`.\n\nPlease note, that the above code assumes that you have added the `fastjson2` dependency to your `pom.xml` file. Here is an example of how to do that:\n\n```xml\n<dependencies>\n  <dependency>\n    <groupId>com.alibaba</groupId>\n    <artifactId>fastjson2</artifactId>\n    <version>2.0.3</version>\n  </dependency>\n</dependencies>\n```\n\nMake sure to replace `2.0.3` with the actual version of the `fastjson2` library you are using.",
+                "extracted_java_code_from_prediction": "import com.alibaba.fastjson2.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating a JSONArray\n        JSONArray array = new JSONArray();\n\n        // Adding an object to the JSONArray\n        array.add(JSON.toJSON(\"Hello World\"));\n\n        // Printing the JSONArray\n        System.out.println(array);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson2.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.alibaba.fastjson2.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5582919120788574,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JSONArray\" API from \"fastjson2-2.0.3\" project along with other necessary APIs. The dependency is already added for \"fastjson2-2.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYou didn't specify what exact functionality you want in your Java code. However, here is a basic example of how you can use JSONArray from the \"fastjson2-2.0.3\" project.\n\nPlease note that JSONArray is a part of the FastJSON library. So, you will need to include the library (import it correctly into your classpath).\n\nThe steps to include the library would be:\n1. Download the required library file from Maven Repository: https://mvnrepository.com/artifact/com.alibaba/fastjson2/2.0.3\n2. Locate the .jar file in your local file system.\n3. Include that .jar file in your project using the Java Build Path > Add External Jars option.\n\nOnce you have the .jar file in your project and the necessary imports (i.e., import com.alibaba.fastjson2.JSONArray;) in your class, you can follow along with the code below:\n\n```java\nimport com.alibaba.fastjson2.JSONArray;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JSONArray object\n        JSONArray jsonArray = new JSONArray();\n\n        // Add items to the JSONArray\n        jsonArray.add(\"Item 1\");\n        jsonArray.add(\"Item 2\");\n        jsonArray.add(\"Item 3\");\n\n        // Print the JSONArray\n        System.out.println(jsonArray);\n\n        // Retrieve an item from the JSONArray\n        System.out.out.println(jsonArray.get(1));\n\n        // Remove an item from the JSONArray\n        jsonArray.remove(0);\n\n        // Print the JSONArray again\n        System.out.println(jsonArray);\n    }\n}\n```\n\nThis simple Java program utilizes the JSONArray from the \"fastjson2-2.0.3\" project to add and remove items, and then print the final JSONArray. Be sure to replace \"s\" in System.out.println(jsonArray); with \"out\", as \"s\" is reserved for strings.\n\nThis code will throw an error if the provided \"fastjson2-2.0.3\" project is not accessible. You can also implement error handling if you want to handle any possible exceptions or errors that might occur.",
+                "extracted_java_code_from_prediction": "import com.alibaba.fastjson2.JSONArray;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JSONArray object\n        JSONArray jsonArray = new JSONArray();\n\n        // Add items to the JSONArray\n        jsonArray.add(\"Item 1\");\n        jsonArray.add(\"Item 2\");\n        jsonArray.add(\"Item 3\");\n\n        // Print the JSONArray\n        System.out.println(jsonArray);\n\n        // Retrieve an item from the JSONArray\n        System.out.out.println(jsonArray.get(1));\n\n        // Remove an item from the JSONArray\n        jsonArray.remove(0);\n\n        // Print the JSONArray again\n        System.out.println(jsonArray);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.alibaba.fastjson2.JSONArray"
+                ],
+                "correct_FQN_predictions": [
+                    "com.alibaba.fastjson2.JSONArray"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5613745450973511,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_5/Wrapper/src/main/java/org/example/Main.java:[20,19] out has protected access in java.io.FilterOutputStream\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_5/Wrapper/src/main/java/org/example/Main.java:[20,23] cannot find symbol\n  symbol:   method println(java.lang.Object)\n  location: variable out of type java.io.OutputStream\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.701 s\n[INFO] Finished at: 2024-04-16T19:52:44-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_5/Wrapper/src/main/java/org/example/Main.java:[20,19] out has protected access in java.io.FilterOutputStream\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_5/Wrapper/src/main/java/org/example/Main.java:[20,23] cannot find symbol\n[ERROR]   symbol:   method println(java.lang.Object)\n[ERROR]   location: variable out of type java.io.OutputStream\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 19,
+                                "message": "out has protected access in java.io.FilterOutputStream"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/fastjson2-2.0.3/JSONArray/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

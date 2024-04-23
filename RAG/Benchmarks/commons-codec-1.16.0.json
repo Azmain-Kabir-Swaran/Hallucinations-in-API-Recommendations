@@ -1,0 +1,435 @@
+{
+    "jar_name": "commons-codec-1.16.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from junit-jupiter-api-5.10.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. AssertionsKt\n2. JRE\n3. DynamicTest\n4. TestInstantiationException\n5. AssertionFailureBuilder\n6. Assertions\n7. ParameterResolutionException\n8. ExtensionConfigurationException\n9. OS\n10. DynamicContainer\n11. ExtensionContextException\n12. ResourceAccessMode\n13. CleanupMode\n14. Resources\n15. ExecutionMode\n16. Assumptions\n17. ConditionEvaluationResult\n\nList correct API's class names from javax.servlet-api-4.0.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. ServletSecurityElement\n2. ServletResponseWrapper\n3. ServletRequestWrapper\n4. ServletRequestAttributeEvent\n5. ServletContextAttributeEvent\n6. ServletException\n7. ServletContextEvent\n8. ServletRequestEvent\n9. HttpServletRequestWrapper\n10. HttpServletResponseWrapper\n11. HttpUtils\n12. HttpMethodConstraintElement\n13. HttpConstraintElement\n14. Cookie\n15. HttpSessionBindingEvent\n16. DispatcherType\n17. HttpSessionEvent\n18. MultipartConfigElement\n19. UnavailableException\n20. MappingMatch\n21. SessionTrackingMode\n22. AsyncEvent\n\nList correct API's class names from commons-codec-1.16.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from junit-jupiter-api-5.10.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. AssertionsKt\n2. JRE\n3. DynamicTest\n4. TestInstantiationException\n5. AssertionFailureBuilder\n6. Assertions\n7. ParameterResolutionException\n8. ExtensionConfigurationException\n9. OS\n10. DynamicContainer\n11. ExtensionContextException\n12. ResourceAccessMode\n13. CleanupMode\n14. Resources\n15. ExecutionMode\n16. Assumptions\n17. ConditionEvaluationResult\n\nList correct API's class names from javax.servlet-api-4.0.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. ServletSecurityElement\n2. ServletResponseWrapper\n3. ServletRequestWrapper\n4. ServletRequestAttributeEvent\n5. ServletContextAttributeEvent\n6. ServletException\n7. ServletContextEvent\n8. ServletRequestEvent\n9. HttpServletRequestWrapper\n10. HttpServletResponseWrapper\n11. HttpUtils\n12. HttpMethodConstraintElement\n13. HttpConstraintElement\n14. Cookie\n15. HttpSessionBindingEvent\n16. DispatcherType\n17. HttpSessionEvent\n18. MultipartConfigElement\n19. UnavailableException\n20. MappingMatch\n21. SessionTrackingMode\n22. AsyncEvent\n\nList correct API's class names from commons-codec-1.16.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. Base64\n2. BinaryDecoder\n3. BinaryEncoder\n4. BinaryIoException\n5. BinaryCodecException\n6. DecoderException\n7. EncoderException\n8. StringDecoder\n9. StringEncoder\n10. StringBDecoder\n11. StringBEncoder\n12. StringBCodec\n13. StringCodec\n14. StringBCodec\n15. StringCodec\n16. StringBCodec\n17. StringCodec\n18. StringBCodec\n19. StringCodec\n20. StringBCodec\n21. StringCodec\n22. StringBCodec\n23. StringCodec\n24. StringBCodec\n25. StringCodec\n26. StringBCodec\n27. StringCodec\n28. StringBCodec\n29. StringCodec\n30. StringBCodec\n31. StringCodec\n32. StringBCodec\n33. StringCodec\n34. StringBCodec\n35. StringCodec\n36. StringBCodec\n37. StringCodec\n38. StringBCodec\n39. StringCodec\n40. StringBCodec\n41. StringCodec\n42. StringBCodec\n43. StringCodec\n44. StringBCodec\n45. StringCodec\n46. StringBCodec\n47. StringCodec\n48. StringBCodec\n49. StringCodec\n50. StringBCodec",
+        "extracted_APIs_from_prediction": [
+            "Base64",
+            "BinaryDecoder",
+            "BinaryEncoder",
+            "BinaryIoException",
+            "BinaryCodecException",
+            "DecoderException",
+            "EncoderException",
+            "StringDecoder",
+            "StringEncoder",
+            "StringBDecoder",
+            "StringBEncoder",
+            "StringBCodec",
+            "StringCodec"
+        ],
+        "correct_API_predictions": [
+            "Base64",
+            "DecoderException",
+            "EncoderException"
+        ],
+        "wrong_API_predictions": [
+            "BinaryDecoder",
+            "BinaryEncoder",
+            "BinaryIoException",
+            "BinaryCodecException",
+            "StringDecoder",
+            "StringEncoder",
+            "StringBDecoder",
+            "StringBEncoder",
+            "StringBCodec",
+            "StringCodec"
+        ],
+        "number_of_correct_APIs": 3,
+        "number_of_wrong_APIs": 10,
+        "failure_rate_for_APIs": 0.7692307692307693,
+        "model_confidence": 0.7804871797561646,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "Base64": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the complete, compilable Java code that uses the Base64 API from \"commons-codec-1.16.0\". Note that it uses the org.apache.commons.codec.binary.Base64 API to perform Base64 encoding and decoding.\n\n```java\nimport java.io.UnsupportedEncodingException;\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalString = \"Hello, Base64!This is a sample string.\";\n\n        try {\n            //encoding\n            byte[] encodedBytes = Base64.encodeBase64(originalString.getBytes(\"utf-8\"));\n            System.out.println(\"Encoded String: \" + new String(encodedBytes));\n\n            //decoding\n            byte[] decodedBytes = Base64.decodeBase64(encodedBytes);\n            System.out.println(\"Decoded String: \" + new String(decodedBytes, \"utf-8\"));\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nYou can use the following command to compile and run this Java program:\n\n```bash\njavac Main.java && java Main\n```",
+                "extracted_java_code_from_prediction": "import java.io.UnsupportedEncodingException;\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalString = \"Hello, Base64!This is a sample string.\";\n\n        try {\n            //encoding\n            byte[] encodedBytes = Base64.encodeBase64(originalString.getBytes(\"utf-8\"));\n            System.out.println(\"Encoded String: \" + new String(encodedBytes));\n\n            //decoding\n            byte[] decodedBytes = Base64.decodeBase64(encodedBytes);\n            System.out.println(\"Decoded String: \" + new String(decodedBytes, \"utf-8\"));\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.UnsupportedEncodingException",
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "correct_FQN_predictions": [
+                    "java.io.UnsupportedEncodingException",
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.573677659034729,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, I cannot directly compile the code for you, but I can provide you with a basic example of how you can encode and decode a string to Base64 using Apache's commons-codec library. This is a complete Java application, compiled, and ready to run. Make sure to add the commons-codec library to your classpath:\n\n```Java\nimport java.nio.charset.StandardCharsets;\n\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String originalString = \"Hello, World!\";\n        String encodedString = encodeString(originalString);\n        String decodedString = decodeString(encodedString);\n\n        System.out.println(\"Original String: \" + originalString);\n        System.out.println(\"Encoded String: \" + encodedString);\n        System.out.println(\"Decoded String: \" + decodedString);\n    }\n\n    public static String encodeString(String originalString) {\n        return Base64.encodeBase64String(originalString.getBytes(StandardCharsets.UTF_8));\n    }\n\n    public static String decodeString(String encodedString) {\n        byte[] bytes = Base64.decodeBase64(encodedString);\n        return new String(bytes, StandardCharsets.UTF_8);\n    }\n}\n```\nPlease note that you need to have Apache commons-codec-1.16.0 library included in your build path and add the following to your pom.xml if you are using Maven:\n\n```xml\n<dependency>\n  <groupId>commons-codec</groupId>\n  <artifactId>commons-codec</artifactId>\n  <version>1.16.0</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.7230309247970581,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, to demonstrate the usage of Base64 from the \"commons-codec-1.16.0\" library, you can try the following code:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n   public static void main(String[] args) {\n      String text = \"Hello, Base64! This is a test string.\";\n      System.out.println(\"Text Before Encoding: \" + text);\n\n      byte[] binaryData = text.getBytes();\n      byte[] base64Data = Base64.encodeBase64(binaryData);\n      System.out.println(\"Base64 Encoding: \" + new String(base64Data));\n\n      byte[] decodedData = Base64.decodeBase64(base64Data);\n      System.out.println(\"Text After Decoding: \" + new String(decodedData));\n   }\n}\n```\nPlease note, `Base64` class is available in commons-codec library, and it does not need any new dependencies.\n\nThis code will print the original text, then the same text after being Base64 encoded, and finally the decoded version of the Base64 string.\n\nThis example is written in Java 8 and assumes that the Apache Commons Codec library is correctly included in the classpath.\n\nThe Main.java file needs to be saved under your project directory and be executed through a Java compiler/IDE. Ensure you have a correct Java development environment setup to run and compile Java programs.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n   public static void main(String[] args) {\n      String text = \"Hello, Base64! This is a test string.\";\n      System.out.println(\"Text Before Encoding: \" + text);\n\n      byte[] binaryData = text.getBytes();\n      byte[] base64Data = Base64.encodeBase64(binaryData);\n      System.out.println(\"Base64 Encoding: \" + new String(base64Data));\n\n      byte[] decodedData = Base64.decodeBase64(base64Data);\n      System.out.println(\"Text After Decoding: \" + new String(decodedData));\n   }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5519714951515198,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo utilize the Base64 API from \"commons-codec-1.16.0\" project, you will need a maven project set up. The Base64 API itself does not need any additional APIs, so no import statement for the API is necessary in your main class.\n\nThe following is a simple \"main\" Java class for encrypting and decrypting Base64 data using the commons-codec-1.16.0 library:\n\n```java\nimport java.nio.charset.StandardCharsets;\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n\n  public static void main(String[] args) {\n\n    String originalInput = \"Hello, World!\";\n    \n    byte[] encodedBytes = Base64.encodeBase64(originalInput.getBytes());\n    String encodedString = new String(encodedBytes, StandardCharsets.UTF_8);\n    System.out.println(\"Base64 encoded: \" + encodedString);\n    \n    byte[] decodedBytes = Base64.decodeBase64(encodedBytes);\n    String decodedString = new String(decodedBytes, StandardCharsets.UTF_8);\n    System.out.println(\"Base64 decoded: \" + decodedString);\n  }\n}\n```\n\nNote: It is recommended to add error handling and other necessary code when applying Base64 encoding and decoding in actual projects. This is a very basic example to show the use of Base64 API from commons-codec-1.16.0 library.",
+                "extracted_java_code_from_prediction": "import java.nio.charset.StandardCharsets;\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n\n  public static void main(String[] args) {\n\n    String originalInput = \"Hello, World!\";\n    \n    byte[] encodedBytes = Base64.encodeBase64(originalInput.getBytes());\n    String encodedString = new String(encodedBytes, StandardCharsets.UTF_8);\n    System.out.println(\"Base64 encoded: \" + encodedString);\n    \n    byte[] decodedBytes = Base64.decodeBase64(encodedBytes);\n    String decodedString = new String(decodedBytes, StandardCharsets.UTF_8);\n    System.out.println(\"Base64 decoded: \" + decodedString);\n  }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.nio.charset.StandardCharsets",
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "correct_FQN_predictions": [
+                    "java.nio.charset.StandardCharsets",
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5927834510803223,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Base64\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn Java, to use Base64 encoding and decoding, we generally use Apache Commons Codec. However, you can't directly include a jar file in your code, you have to use a repository from where you can download it.\n\nIn the example below, a String value \"Hello World\" is encoded to Base64 and then decoded again:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalInput = \"Hello World\";\n        \n        // Convert input string to Base64\n        byte[] bytesEncoded = Base64.encodeBase64(originalInput.getBytes());\n        \n        // Convert the encoded bytes to string\n        String encodedString = new String(bytesEncoded);\n        System.out.println(\"Base64 Encoded String: \" + encodedString);\n        \n        // Decode Base64 string back to original String\n        byte[] bytesDecoded = Base64.decodeBase64(encodedString);\n        String decodedString = new String(bytesDecoded);\n        System.out.println(\"Decoded String: \" + decodedString);\n    }\n}\n```\n\nThis code depends on the Apache Commons Codec libraries and you need to have these libraries added to your classpath when compiling. If you use an IDE like Eclipse or IntelliJ, you can add them by going to `Project Structure -> Modules` and adding the libraries there.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalInput = \"Hello World\";\n        \n        // Convert input string to Base64\n        byte[] bytesEncoded = Base64.encodeBase64(originalInput.getBytes());\n        \n        // Convert the encoded bytes to string\n        String encodedString = new String(bytesEncoded);\n        System.out.println(\"Base64 Encoded String: \" + encodedString);\n        \n        // Decode Base64 string back to original String\n        byte[] bytesDecoded = Base64.decodeBase64(encodedString);\n        String decodedString = new String(bytesDecoded);\n        System.out.println(\"Decoded String: \" + decodedString);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.55198734998703,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "DecoderException": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"DecoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DecoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo make things simple, here's an example of a class named Main where you may require the use of the \"commons-codec-1.16.0\" DecoderException and other APIs:\n\nThis is a hypothetical use case and won't compile due to lack of actual code, but will demonstrate the correct way to incorporate a dependency, and potentially use APIs from it. You would replace the throws DecoderException with actual code if needed.\n\n```java\nimport org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.DecoderException;\n\npublic class Main {\n    public static void main(String[] args) throws DecoderException {\n        String encoded = Base64.encodeBase64String(\"This is a test.\".getBytes());\n        byte[] decoded = Base64.decodeBase64(encoded);\n        System.out.println(new String(decoded));\n    }\n}\n```\n\nIn this case, we are using `Base64` from `org.apache.commons.codec.binary` for encoding and decoding.\n\nIn production environments, you should handle dependencies and exception yourself. For dependencies, you need to add these to your classpath. For exceptions, you should catch them and handle them according to your requirements.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.DecoderException;\n\npublic class Main {\n    public static void main(String[] args) throws DecoderException {\n        String encoded = Base64.encodeBase64String(\"This is a test.\".getBytes());\n        byte[] decoded = Base64.decodeBase64(encoded);\n        System.out.println(new String(decoded));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.DecoderException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.DecoderException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.48619332909584045,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DecoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, it's not possible to generate a complete Java code snippet for the given conditions. A problem statement must include a specific requirement, such as a method or a piece of code with its description, so that an accurate solution could be created. However, I can show you an example of how to use \"commons-codec\" and handle the DecoderException.\n\nAssuming the problem statement is something like \"Given an input, we need to encode and then decode that input using commons-codec and catch any DecoderException thrown during the process\", here is the Java code:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.DecoderException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String input = \"Hello, World!\";\n        \n        try {\n            // Encode the input\n            byte[] encodedBytes = Base64.encodeBase64(input.getBytes());\n            System.out.println(\"Encoded: \" + new String(encodedBytes));\n\n            // Decode the input\n            byte[] decodedBytes = Base64.decodeBase64(encodedBytes);\n            System.out.println(\"Decoded: \" + new String(decodedBytes));\n        } catch (DecoderException e) {\n            System.out.println(\"An error occurred during decoding: \" + e.getMessage());\n        }\n    }\n}\n```\n\nThe above code will encode and then decode the input string using Apache's Base64 utility. It also includes a catch block for handling DecoderException if it occurs during the decoding process.\n\nPlease provide a more specific description of the problem, to provide the correct solution.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.DecoderException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String input = \"Hello, World!\";\n        \n        try {\n            // Encode the input\n            byte[] encodedBytes = Base64.encodeBase64(input.getBytes());\n            System.out.println(\"Encoded: \" + new String(encodedBytes));\n\n            // Decode the input\n            byte[] decodedBytes = Base64.decodeBase64(encodedBytes);\n            System.out.println(\"Decoded: \" + new String(decodedBytes));\n        } catch (DecoderException e) {\n            System.out.println(\"An error occurred during decoding: \" + e.getMessage());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.DecoderException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.DecoderException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6241593360900879,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_2/Wrapper/src/main/java/org/example/Main.java:[20,11] exception org.apache.commons.codec.DecoderException is never thrown in body of corresponding try statement\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.736 s\n[INFO] Finished at: 2024-04-16T18:44:51-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_2/Wrapper/src/main/java/org/example/Main.java:[20,11] exception org.apache.commons.codec.DecoderException is never thrown in body of corresponding try statement\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 11,
+                                "message": "exception org.apache.commons.codec.DecoderException is never thrown in body of corresponding try statement"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DecoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java code using the \"commons-codec-1.16.0\" API that can decode a Base64 string. Remember to replace \"your-base64-string\" with the actual Base64 string you want to decode.\n\n```Java\nimport java.io.UnsupportedEncodingException;\nimport org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.DecoderException;\n\npublic class Main {\n    public static void main(String[] args) throws DecoderException {\n        String base64String = \"your-base64-string\";\n        byte[] decodedBytes = Base64.decodeBase64(base64String);\n        String decodedString = new String(decodedBytes, \"UTF-8\");\n\n        System.out.println(decodedString);\n    }\n}\n```\n\nThis code decodes a Base64 string into bytes then transform those bytes into a string.\n\nReplace \"your-base64-string\" with the actual Base64 string you want to decode. It should throw a DecoderException if the Base64 string is not valid.\n\nMake sure Apache Commons Codec 1.16.0 is correctly imported and configured in your project. If the Apache commons libraries have not been added to your project, it should throw an error during the compilation stage since there's no dependency resolution.\n\nAlso ensure you are aware that \"Main\" is the name of your class that has a main method and should be located in a package if you have a package-based structure for your project. If you're following package-based structure, then you can create a package in the project and keep this code in that package.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6033284664154053,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DecoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIt would be impossible to provide a complete Java code with a specific class name as \"Main\" in the absence of actual logic. However, I can provide an example of how to import a specific class and catch an exception that might be thrown:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.DecoderException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String encoded = \"SGVsbG8=\"; // Sample string\n\n        try {\n            byte[] decodedBytes = Base64.decodeBase64(encoded);\n            String decodedString = new String(decodedBytes);\n            System.out.println(\"Decoded string: \" + decodedString);\n        } catch (DecoderException e) {\n            System.err.println(\"Failed to decode the string. Reason: \" + e.getMessage());\n        }\n    }\n}\n```\n\nIn this example, I'm using `Base64` from Apache Commons Codec library to demonstrate an exception handling using the `DecoderException`. Note that the code above doesn't require new APIs from other libraries. \n\nThis class `Main` has a main method which tries to decode a Base64 encoded string. If an exception occurs, it catches the `DecoderException` and prints an error message.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.DecoderException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String encoded = \"SGVsbG8=\"; // Sample string\n\n        try {\n            byte[] decodedBytes = Base64.decodeBase64(encoded);\n            String decodedString = new String(decodedBytes);\n            System.out.println(\"Decoded string: \" + decodedString);\n        } catch (DecoderException e) {\n            System.err.println(\"Failed to decode the string. Reason: \" + e.getMessage());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.DecoderException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.DecoderException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5477138161659241,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,11] exception org.apache.commons.codec.DecoderException is never thrown in body of corresponding try statement\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.667 s\n[INFO] Finished at: 2024-04-16T18:44:52-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,11] exception org.apache.commons.codec.DecoderException is never thrown in body of corresponding try statement\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/DecoderException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 11,
+                                "message": "exception org.apache.commons.codec.DecoderException is never thrown in body of corresponding try statement"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"DecoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSorry for the confusion, but as of the current version of StackOverflow (as of 2022), it doesn't support the compilation of a Java program directly from here. I'll leave the code as an example, but you must run it in your local environment with a Java compiler installed.\n\nHere is the compilable code:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.DecoderException;\n\npublic class Main {\n\n    public static void main(String[] args) throws DecoderException {\n        String encodedString = \"SGVsbG8=\"; // Hello in Base64\n        byte[] decodedBytes = Base64.decodeBase64(encodedString);\n        String decodedString = new String(decodedBytes);\n        System.out.println(decodedString); // Prints: Hello\n    }\n}\n```\nThis code imports required APIs from \"commons-codec-1.16.0\" project and decodes a simple Base64 string. \n\nRemember that you need to have the Apache Commons Codec library in your classpath. If you are using maven, you can add the following dependency to your pom.xml:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>commons-codec</groupId>\n        <artifactId>commons-codec</artifactId>\n        <version>1.16.0</version>\n    </dependency>\n</dependencies>\n```\nYou'll also need to ensure that your IDE is properly configured to use the library.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.DecoderException;\n\npublic class Main {\n\n    public static void main(String[] args) throws DecoderException {\n        String encodedString = \"SGVsbG8=\"; // Hello in Base64\n        byte[] decodedBytes = Base64.decodeBase64(encodedString);\n        String decodedString = new String(decodedBytes);\n        System.out.println(decodedString); // Prints: Hello\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.DecoderException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.DecoderException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6161938309669495,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "EncoderException": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"EncoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EncoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of Java code that uses \"commons-codec-1.16.0\" API:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalInput = \"Hello, World!\";\n        \n        byte[] bytesEncoded = Base64.encodeBase64(originalInput.getBytes());\n        System.out.println(\"Base64 encoded string \" + new String(bytesEncoded));\n\n        byte[] bytesDecoded = Base64.decodeBase64(bytesEncoded);\n        System.out.println(\"Original string: \" + new String(bytesDecoded));\n    }\n}\n```\n\nThis is a simple program using \"commons-codec-1.16.0\" API which performs Base64 encoding and decoding. The input string \"Hello, World!\" is converted into bytes, then encoded to Base64 format, and finally decoded back to its original form.\n\nPlease remember to handle exceptions properly in a real-world scenario. The above example does not account for such.\n\nThe main class in this example is `Main`.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n    public static void main(String[] args) {\n        String originalInput = \"Hello, World!\";\n        \n        byte[] bytesEncoded = Base64.encodeBase64(originalInput.getBytes());\n        System.out.println(\"Base64 encoded string \" + new String(bytesEncoded));\n\n        byte[] bytesDecoded = Base64.decodeBase64(bytesEncoded);\n        System.out.println(\"Original string: \" + new String(bytesDecoded));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5198213458061218,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EncoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIf you want to encode a string into Base64, you can use the `Base64` class from the `commons-codec` library which requires adding commons-codec dependency in your pom file. Here's how to do it:\n\n1. Make sure you have the commons-codec library included in your classpath. The Maven dependencies can be added in the pom.xml file like this:\n\n```xml\n<dependency>\n    <groupId>commons-codec</groupId>\n    <artifactId>commons-codec</artifactId>\n    <version>1.16.0</version>\n</dependency>\n```\n\n2. Import required classes:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.binary.StringUtils;\nimport org.apache.commons.codec.EncoderException;\n```\n\n3. Implement the main class (lets name it \"Main\") :\n\n```java\npublic class Main {\n    public static void main(String[] args) throws EncoderException {\n        String originalString = \"Hello, World!\";\n        byte[] bytes = StringUtils.getBytesUtf8(originalString);\n        byte[] encoded = Base64.encodeBase64(bytes);\n        String encodedString = StringUtils.newStringUtf8(encoded);\n\n        System.out.println(\"Encoded String (Base64): \" + encodedString);\n    }\n}\n```\n\nIn this code snippet, the string \"Hello, World!\" is first converted into bytes and then Base64 encoded. The encoded string is then printed on the console. \n\nNote: You may need to manage EncoderException that the library may throw if encoding fails for some reason. So you may handle the exception.\nAlso, if you need to decode a base64 back to string you can use:\n\n```java\nbyte[] decoded = Base64.decodeBase64(encodedString);\nString originalString = StringUtils.newStringUtf8(decoded);\n```",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.binary.StringUtils;\nimport org.apache.commons.codec.EncoderException;",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.binary.StringUtils",
+                    "org.apache.commons.codec.EncoderException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.EncoderException"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.apache.commons.codec.binary.StringUtils"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.6666856408119202,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EncoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of how you could use the Apache Commons Codec EncoderException:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        try {\n            String encoded = Base64.encodeBase64String(\"Hello, World!\".getBytes());\n            System.out.println(encoded);\n        } catch (org.apache.commons.codec.binary.EncoderException ex) {\n            System.err.println(\"An error occurred: \" + ex);\n        }\n    }\n}\n```\n\nIn this example, we use the `Base64` class from the `commons-codec-1.16.0` package. The `encodeBase64String` method is used to encode a string into a Base64 encoded string.\n\nIf an `EncoderException` occurs while encoding, the catch block will be executed, printing an error message to the standard error stream.\n\nPlease note that you need to add the necessary dependencies to your project. You can use Maven, for instance, to manage your dependencies. Here's how to include commons-codec in your Maven project:\n\n```xml\n<dependency>\n    <groupId>commons-codec</groupId>\n    <artifactId>commons-codec</artifactId>\n    <version>1.16.0</version>\n</dependency>\n```\nSave the changes to your `pom.xml` file, and run `mvn clean install` to download and install the dependency. You can then compile and run your Java code.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        try {\n            String encoded = Base64.encodeBase64String(\"Hello, World!\".getBytes());\n            System.out.println(encoded);\n        } catch (org.apache.commons.codec.binary.EncoderException ex) {\n            System.err.println(\"An error occurred: \" + ex);\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5667074918746948,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,49] cannot find symbol\n  symbol:   class EncoderException\n  location: package org.apache.commons.codec.binary\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.696 s\n[INFO] Finished at: 2024-04-16T18:45:21-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,49] cannot find symbol\n[ERROR]   symbol:   class EncoderException\n[ERROR]   location: package org.apache.commons.codec.binary\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 49,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EncoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of Java code using \"commons-codec-1.16.0\". Please note that since it requires the use of specific APIs from the project, it might not be fully compilable as per your requirements.\n\nThe following simple Java program takes a string and encodes it using the Apache Commons Codec library.\n\n```Java\nimport org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.EncoderException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String originalString = \"Hello World\";\n            byte[] bytes = originalString.getBytes();\n            String encodedString = new String(Base64.encodeBase64(bytes));\n\n            System.out.println(encodedString);\n        } catch (EncoderException e) {\n            System.out.println(\"Error while encoding: \" + e.getMessage());\n        }\n    }\n}\n```\n\nThis program uses `Base64` to convert a String to bytes, then encodes it into a Base64 String. An exception is caught if `encodeBase64()` throws an `EncoderException`. You can replace the string \"Hello World\" with any string you want to encode. Please install the commons-codec-1.16.0 library if not done already and add the commons-codec-1.16.0 as the library in your IDE.\n\nRemember to add the Apache Commons Codec library to your classpath when you compile and run this code. You can do it by using command line:\n\n```sh\njavac -cp .:commons-codec-1.16.0.jar Main.java\n```",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5470632314682007,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EncoderException\" API from \"commons-codec-1.16.0\" project along with other necessary APIs. The dependency is already added for \"commons-codec-1.16.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a basic example of how your code might look. The Java code below uses Apache Commons Codec library's `EncoderException` and `Base64` classes. Note, however, that the full functionality of the Apache Commons Codec library is required for this code to work, and this does not include any additional dependencies beyond what is already included in the Apache Commons Codec library:\n\n```java\nimport org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.EncoderException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String input = \"Input String\";\n            String encoded = Base64.encodeBase64String(input.getBytes());\n            System.out.println(\"Encoded String: \" + encoded);\n\n            byte[] decodedBytes = Base64.decodeBase64(encoded);\n            String decoded = new String(decodedBytes);\n            System.out.println(\"Decoded String: \" + decoded);\n        } catch (EncoderException e) {\n            System.out.println(\"An error occurred while encoding or decoding: \" + e.getMessage());\n        }\n    }\n}\n```\n\nIn this code, a string is first encoded in Base64 using `Base64.encodeBase64String()`. Then, the encoded string is printed. The Base64 encoded string is decoded using `Base64.decodeBase64()`. The decoded bytes are converted back to a string and printed. If an error occurs during the encoding or decoding, such as an input error, the `EncoderException` is caught and handled by printing an error message.\n\nIt is crucial to use the correct import statements for the Apache Commons Codec library's classes and methods. It is important to note that your project structure and dependencies may vary according to your requirements. Make sure your Apache Commons Codec library dependency is included in your project's build path and correctly configured in the \"build.gradle\" or \"pom.xml\" file if you are using a Gradle or Maven-based project.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.codec.binary.Base64;\nimport org.apache.commons.codec.EncoderException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String input = \"Input String\";\n            String encoded = Base64.encodeBase64String(input.getBytes());\n            System.out.println(\"Encoded String: \" + encoded);\n\n            byte[] decodedBytes = Base64.decodeBase64(encoded);\n            String decoded = new String(decodedBytes);\n            System.out.println(\"Decoded String: \" + decoded);\n        } catch (EncoderException e) {\n            System.out.println(\"An error occurred while encoding or decoding: \" + e.getMessage());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.EncoderException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.codec.binary.Base64",
+                    "org.apache.commons.codec.EncoderException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6530114412307739,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_5/Wrapper/src/main/java/org/example/Main.java:[17,11] exception org.apache.commons.codec.EncoderException is never thrown in body of corresponding try statement\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.702 s\n[INFO] Finished at: 2024-04-16T18:45:22-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_5/Wrapper/src/main/java/org/example/Main.java:[17,11] exception org.apache.commons.codec.EncoderException is never thrown in body of corresponding try statement\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/commons-codec-1.16.0/EncoderException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 11,
+                                "message": "exception org.apache.commons.codec.EncoderException is never thrown in body of corresponding try statement"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

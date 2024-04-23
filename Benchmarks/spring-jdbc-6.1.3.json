@@ -1,0 +1,866 @@
+{
+    "jar_name": "spring-jdbc-6.1.3.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from spring-jdbc-6.1.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from spring-jdbc-6.1.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI, I don't have direct access to the Spring-JDBC-6.1.3 project. However, I can provide you with a general idea of the classes that are part of Spring JDBC and are not abstract.\n\n1. JdbcTemplate\n2. NamedParameterJdbcTemplate\n3. SimpleJdbcCall\n4. SimpleJdbcInsert\n5. SimpleJdbcTemplate\n6. SqlRowSetFunction\n7. SqlRowSetMapper\n8. SqlRowSetMapperFactory\n9. SqlRowSetMapperResultSetExtractor\n10. SqlRowSetResultSetExtractor\n11. SqlRowSetResultSetExtractorFactory\n12. SqlRowSetResultSetExtractorFactory\n13. SqlRowSetResultSetExtractorFactory\n14. SqlRowSetResultSetExtractorFactory\n15. SqlRowSetResultSetExtractorFactory\n16. SqlRowSetResultSetExtractorFactory\n17. SqlRowSetResultSetExtractorFactory\n18. SqlRowSetResultSetExtractorFactory\n19. SqlRowSetResultSetExtractorFactory\n20. SqlRowSetResultSetExtractorFactory\n21. SqlRowSetResultSetExtractorFactory\n22. SqlRowSetResultSetExtractorFactory\n23. SqlRowSetResultSetExtractorFactory\n24. SqlRowSetResultSetExtractorFactory\n25. SqlRowSetResultSetExtractorFactory\n26. SqlRowSetResultSetExtractorFactory\n27. SqlRowSetResultSetExtractorFactory\n28. SqlRowSetResultSetExtractorFactory\n29. SqlRowSetResultSetExtractorFactory\n30. SqlRowSetResultSetExtractorFactory\n31. SqlRowSetResultSetExtractorFactory\n32. SqlRowSetResultSetExtractorFactory\n33. SqlRowSetResultSetExtractorFactory\n34. SqlRowSetResultSetExtractorFactory\n35. SqlRowSetResultSetExtractorFactory\n36. SqlRowSetResultSetExtractorFactory\n37. SqlRowSetResultSetExtractorFactory\n38. SqlRowSetResultSetExtractorFactory\n39. SqlRowSetResultSetExtractorFactory\n40. SqlRowSetResultSetExtractorFactory\n41. SqlRowSetResultSetExtractorFactory\n42. SqlRowSetResultSetExtractorFactory\n43. SqlRowSetResultSetExtractorFactory\n44. SqlRowSetResultSetExtractorFactory\n45. SqlRowSetResultSetExtractorFactory\n46. SqlRowSetResultSetExtractorFactory\n47. SqlRowSetResultSetExtractorFactory\n48. SqlRowSetResultSetExtractorFactory\n49. SqlRowSetResultSetExtractorFactory\n50. SqlRowSetResultSetExtractorFactory\n\nPlease note that the actual list may vary depending on the version of Spring JDBC you are using.",
+        "extracted_APIs_from_prediction": [
+            "JdbcTemplate",
+            "NamedParameterJdbcTemplate",
+            "SimpleJdbcCall",
+            "SimpleJdbcInsert",
+            "SimpleJdbcTemplate",
+            "SqlRowSetFunction",
+            "SqlRowSetMapper",
+            "SqlRowSetMapperFactory",
+            "SqlRowSetMapperResultSetExtractor",
+            "SqlRowSetResultSetExtractor",
+            "SqlRowSetResultSetExtractorFactory"
+        ],
+        "correct_API_predictions": [
+            "JdbcTemplate",
+            "NamedParameterJdbcTemplate",
+            "SimpleJdbcCall",
+            "SimpleJdbcInsert",
+            "SqlRowSetResultSetExtractor"
+        ],
+        "wrong_API_predictions": [
+            "SimpleJdbcTemplate",
+            "SqlRowSetFunction",
+            "SqlRowSetMapper",
+            "SqlRowSetMapperFactory",
+            "SqlRowSetMapperResultSetExtractor",
+            "SqlRowSetResultSetExtractorFactory"
+        ],
+        "number_of_correct_APIs": 5,
+        "number_of_wrong_APIs": 6,
+        "failure_rate_for_APIs": 0.5454545454545454,
+        "model_confidence": 0.8521590232849121,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "JdbcTemplate": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example that utilizes JdbcTemplate from spring-jdbc-6.1.3 with other Spring and standard libraries. Remember you need to configure Database connection properly in application.properties file. \n\n```java\n\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\nimport javax.sql.DataSource;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        DataSource dataSource = new DriverManagerDataSource(\"jdbc:mysql://localhost:3306/test\", \"user\", \"password\");\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n\n        String sql = \"CREATE TABLE MyUsers(\"\n                + \" ID INT NOT NULL AUTO_INCREMENT,\"\n                + \" USER_NAME VARCHAR(100) NOT NULL,\"\n                + \" PASSWORD VARCHAR(100) NOT NULL,\"\n                + \" EMAIL VARCHAR(100),\"\n                + \" PRIMARY KEY (ID)\"\n                + \")\";\n        jdbcTemplate.execute(sql);\n\n        String insertSQL = \"INSERT INTO MyUsers(USER_NAME, PASSWORD, EMAIL) VALUES (?, ?, ?)\";\n        jdbcTemplate.update(insertSQL, \"John\", \"pass123\", \"john@example.com\");\n        jdbcTemplate.update(insertSQL, \"Tom\", \"pass321\", \"tom@example.com\");\n\n        String selectSQL = \"SELECT * FROM MyUsers\";\n        jdbcTemplate.query(selectSQL, (rs, rowNum) -> new User(rs.getInt(\"ID\"), rs.getString(\"USER_NAME\"), rs.getString(\"PASSWORD\"), rs.getString(\"EMAIL\")))\n                .forEach(user -> System.out.println(user));\n    }\n\n    static class User {\n        int id;\n        String userName;\n        String password;\n        String email;\n\n        User(int id, String userName, String password, String email) {\n            this.id = id;\n            this.userName = userName;\n            this.password = password;\n            this.email = email;\n        }\n\n        @Override\n        public String toString() {\n            return \"User{\" +\n                    \"id=\" + id +\n                    \", userName='\" + userName + '\\'' +\n                    \", password='\" + password + '\\'' +\n                    \", email='\" + email + '\\'' +\n                    '}';\n        }\n    }\n}\n```\n\nIn this code, you'll notice several things. Firstly, we're importing Spring's JdbcTemplate and DataSource classes directly from their package, and SQL-specific classes like DriverManagerDataSource and ResultSetExtractor are from their package.\n\nThis example is using MySQL, so you'll also see usage of the DriverManagerDataSource which is used to create a connection pool to the database (using a simple URL pointing to the database you're using).\n\nSecondly, we define a User class for representing our records in the database. The toString() method is useful for testing that the User objects we get back from our queries make sense.\n\nThirdly, notice the creation of an instance of JdbcTemplate with the DataSource. This is the primary API for interacting with the database.\n\nFinally, we do a couple of things:\n- We create a table with a SQL statement (that we execute via jdbcTemplate.execute()).\n- We insert two records into our table (via jdbcTemplate.update()).\n- We do a simple query to get all records from our table (via jdbcTemplate.query()). We supply an implementation of RowMapper to turn each row of our results into a User object, then we print them out (using a Java 8 feature to do this in a clean, elegant way).",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\nimport javax.sql.DataSource;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        DataSource dataSource = new DriverManagerDataSource(\"jdbc:mysql://localhost:3306/test\", \"user\", \"password\");\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n\n        String sql = \"CREATE TABLE MyUsers(\"\n                + \" ID INT NOT NULL AUTO_INCREMENT,\"\n                + \" USER_NAME VARCHAR(100) NOT NULL,\"\n                + \" PASSWORD VARCHAR(100) NOT NULL,\"\n                + \" EMAIL VARCHAR(100),\"\n                + \" PRIMARY KEY (ID)\"\n                + \")\";\n        jdbcTemplate.execute(sql);\n\n        String insertSQL = \"INSERT INTO MyUsers(USER_NAME, PASSWORD, EMAIL) VALUES (?, ?, ?)\";\n        jdbcTemplate.update(insertSQL, \"John\", \"pass123\", \"john@example.com\");\n        jdbcTemplate.update(insertSQL, \"Tom\", \"pass321\", \"tom@example.com\");\n\n        String selectSQL = \"SELECT * FROM MyUsers\";\n        jdbcTemplate.query(selectSQL, (rs, rowNum) -> new User(rs.getInt(\"ID\"), rs.getString(\"USER_NAME\"), rs.getString(\"PASSWORD\"), rs.getString(\"EMAIL\")))\n                .forEach(user -> System.out.println(user));\n    }\n\n    static class User {\n        int id;\n        String userName;\n        String password;\n        String email;\n\n        User(int id, String userName, String password, String email) {\n            this.id = id;\n            this.userName = userName;\n            this.password = password;\n            this.email = email;\n        }\n\n        @Override\n        public String toString() {\n            return \"User{\" +\n                    \"id=\" + id +\n                    \", userName='\" + userName + '\\'' +\n                    \", password='\" + password + '\\'' +\n                    \", email='\" + email + '\\'' +\n                    '}';\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource",
+                    "javax.sql.DataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource",
+                    "javax.sql.DataSource"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.7080577611923218,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a complete java code that demonstrates how to execute a SQL query using Spring's JdbcTemplate. Please ensure that spring-jdbc-6.1.3 is properly added in the project classpath.\n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\nimport javax.sql.DataSource;\nimport java.util.List;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // data source\n        DataSource dataSource = new DriverManagerDataSource(\"jdbc:mysql://localhost:3306/testDB\", \"username\", \"password\");\n\n        // jdbc template\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n\n        // sql\n        String sql = \"SELECT * FROM employee\";\n\n        // execute query\n        List<Map<String, Object>> queryResult = jdbcTemplate.queryForList(sql);\n\n        // print query result\n        for (Map<String, Object> row : queryResult) {\n            System.out.println(row.toString());\n        }\n    }\n}\n```\n\nYou would need to replace the string (\"jdbc:mysql://localhost:3306/testDB\") and string array (\"username\", \"password\") in this code with your database's actual URL and login credentials.\n\nMake sure to have \"spring-jdbc-6.1.3\" dependency properly added in your project. You can add this dependency in your project using build automation tools like Maven or Gradle.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\nimport javax.sql.DataSource;\nimport java.util.List;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        // data source\n        DataSource dataSource = new DriverManagerDataSource(\"jdbc:mysql://localhost:3306/testDB\", \"username\", \"password\");\n\n        // jdbc template\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n\n        // sql\n        String sql = \"SELECT * FROM employee\";\n\n        // execute query\n        List<Map<String, Object>> queryResult = jdbcTemplate.queryForList(sql);\n\n        // print query result\n        for (Map<String, Object> row : queryResult) {\n            System.out.println(row.toString());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource",
+                    "javax.sql.DataSource",
+                    "java.util.List",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource",
+                    "javax.sql.DataSource",
+                    "java.util.List",
+                    "java.util.Map"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.6,
+                "model_confidence": 0.4712812602519989,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a simple Java program that uses JdbcTemplate to connect to a SQL database and perform CRUD operations. It assumes you are using MySQL database, the database is named 'testdb', the table is named 'employees', and the columns in 'employees' are 'id' and 'name'. Please replace it with your own database details.\n\n```Java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n    public static void main(String[] args) {\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n        dataSource.setUrl(\"jdbc:mysql://localhost:3306/testdb\");\n        dataSource.setUsername(\"username\");\n        dataSource.setPassword(\"password\");\n\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n\n        // Insert operation\n        String sql = \"INSERT INTO employees(id, name) VALUES (?, ?)\";\n        jdbcTemplate.update(sql, 2, \"John\");\n\n        System.out.println(\"Inserted successfully\");\n\n        // Select operation\n        sql = \"SELECT * FROM employees WHERE id = ?\";\n        Employee employee = jdbcTemplate.queryForObject(sql, new Object[]{2}, (rs, rowNum) -> {\n            Employee emp = new Employee();\n            emp.setId(rs.getInt(\"id\"));\n            emp.setName(rs.getString(\"name\"));\n            return emp;\n        });\n\n        System.out.println(employee);\n\n        // Update operation\n        sql = \"UPDATE employees SET name = ? WHERE id = ?\";\n        jdbcTemplate.update(sql, \"Jack\", 2);\n\n        System.out.println(\"Updated successfully\");\n\n        // Delete operation\n        sql = \"DELETE FROM employees WHERE id = ?\";\n        jdbcTemplate.update(sql, 2);\n\n        System.out.println(\"Deleted successfully\");\n    }\n\n    static class Employee {\n        private int id;\n        private String name;\n\n        public int getId() {\n            return id;\n        }\n\n        public void setId(int id) {\n            this.id = id;\n        }\n\n        public String getName() {\n            return name;\n        }\n\n        public void setName(String name) {\n            this.name = name;\n        }\n\n        @Override\n        public String toString() {\n            return \"Employee{\" +\n                    \"id=\" + id +\n                    \", name='\" + name + '\\'' +\n                    '}';\n        }\n    }\n}\n```\n\nIn this program, we define an `Employee` class just to hold employee data. `DriverManagerDataSource` is used to setup the data source for the connection to the database, while `JdbcTemplate` is then used to perform CRUD operations. We used predefined JDBC calls like `update` and `queryForObject` to manipulate data in database. Please replace the example database credentials and table details with your own ones.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6862636804580688,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSorry, but to provide a complete, correct and compilable Java code with \"JdbcTemplate\" API from \"spring-jdbc-6.1.3\" project, it will also require a lot of setup. Below is a basic example for using JdbcTemplate in spring framework.\n\nAdd the `spring-jdbc` dependency to your build script (pom.xml for Maven, build.gradle for Gradle):\n\nFor Maven:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-jdbc</artifactId>\n        <version>6.1.3</version>\n    </dependency>\n</dependencies>\n```\n\nFor Gradle:\n\n```groovy\ndependencies {\n    implementation 'org.springframework:spring-jdbc:6.1.3'\n}\n```\n\nThe code will need a datasource (e.g. `DataSource`) that can be created like below:\n\n```java\nimport javax.sql.DataSource;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        DataSource dataSource = new DriverManagerDataSource(\n          \"jdbc:mysql://localhost:3306/test\", \"username\", \"password\");\n\n        // JdbcTemplate initialization and usage goes here\n    }\n}\n```\n\nHere is a simple code for you to create, initialize and use `JdbcTemplate`:\n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport javax.sql.DataSource;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        DataSource dataSource = new DriverManagerDataSource(\n          \"jdbc:mysql://localhost:3306/test\", \"username\", \"password\");\n\n        JdbcTemplate jdbcTemplate = new JdbcTemplate();\n        jdbcTemplate.setDataSource(dataSource);\n        \n        String sql = \"INSERT INTO user (name, email) VALUES (?, ?)\";\n        jdbcTemplate.update(sql, \"John Doe\", \"john@example.com\");\n\n        sql = \"SELECT * FROM user WHERE name = ?\";\n        List<Map<String, Object>> resultList = jdbcTemplate.queryForList(sql, \"John Doe\");\n        \n        System.out.println(resultList);\n    }\n}\n```\n\nThe above code initializes a JdbcTemplate with a DataSource, then it performs an INSERT query and a SELECT query respectively. Note that the usage of the actual database interaction code might need to be changed depending on your specific application logic, database schema, etc.\n\nAlso, please replace \"username\" and \"password\" with your actual MySQL username and password, and \"jdbc:mysql://localhost:3306/test\" with your actual MySQL url. Please note that this is a simple example and may not cover the edge cases.",
+                "extracted_java_code_from_prediction": "import javax.sql.DataSource;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        DataSource dataSource = new DriverManagerDataSource(\n          \"jdbc:mysql://localhost:3306/test\", \"username\", \"password\");\n\n        // JdbcTemplate initialization and usage goes here\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "javax.sql.DataSource",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "javax.sql.DataSource",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.6157082319259644,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simplified example of how you could use the Spring JdbcTemplate to interact with a database.\n\nPlease note that for this code to run successfully, a database connection must be setup properly in your Spring configuration (e.g. application.properties).\n\nThis is a basic example on how you can use the JdbcTemplate in Spring to interact with a database:\n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n\n    private JdbcTemplate jdbcTemplate;\n\n    public Main(String dbUrl, String username, String password) {\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n        dataSource.setUrl(dbUrl);\n        dataSource.setUsername(username);\n        dataSource.setPassword(password);\n        this.jdbcTemplate = new JdbcTemplate(dataSource);\n    }\n\n    public void createTable() {\n        String sql = \"CREATE TABLE customers\" +\n                \"(id INT PRIMARY KEY, name VARCHAR(50), email VARCHAR(50))\";\n        jdbcTemplate.update(sql);\n        System.out.println(\"Table created.\");\n    }\n\n    public static void main(String[] args) {\n        String dbUrl = \"jdbc:mysql://localhost:3306/testdb\";\n        String username = \"testuser\";\n        String password = \"password\";\n\n        Main main = new Main(dbUrl, username, password);\n        main.createTable();\n    }\n}\n```\n\nIn the provided code, we have created a table named 'customers' with 3 columns - id, name, and email. This code also uses a database URL (dbUrl), a username, and a password to connect to the database.\n\nPlease replace \"com.mysql.jdbc.Driver\" with your own database driver and \"jdbc:mysql://localhost:3306/testdb\", \"testuser\", \"password\" with the actual values of your database URL, username, and password respectively.\n\nTo run this code, you will need a local installation of a MySQL server. Make sure to set up your MySQL server with a database that you have the privileges to create tables on.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n\n    private JdbcTemplate jdbcTemplate;\n\n    public Main(String dbUrl, String username, String password) {\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n        dataSource.setUrl(dbUrl);\n        dataSource.setUsername(username);\n        dataSource.setPassword(password);\n        this.jdbcTemplate = new JdbcTemplate(dataSource);\n    }\n\n    public void createTable() {\n        String sql = \"CREATE TABLE customers\" +\n                \"(id INT PRIMARY KEY, name VARCHAR(50), email VARCHAR(50))\";\n        jdbcTemplate.update(sql);\n        System.out.println(\"Table created.\");\n    }\n\n    public static void main(String[] args) {\n        String dbUrl = \"jdbc:mysql://localhost:3306/testdb\";\n        String username = \"testuser\";\n        String password = \"password\";\n\n        Main main = new Main(dbUrl, username, password);\n        main.createTable();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5443301200866699,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "NamedParameterJdbcTemplate": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"NamedParameterJdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"NamedParameterJdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, this problem seems to require a significant amount of code to be provided accurately without any details about the specific functionality that should be implemented. However, here is a simple, basic implementation that will use the \"NamedParameterJdbcTemplate\" and \"JdbcTemplate\" from the \"spring-jdbc-6.1.3\" project:\n\n```java\nimport org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport javax.sql.DataSource;\n\npublic class Main {\n    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;\n    private JdbcTemplate jdbcTemplate;\n    \n    public void setDataSource(DataSource dataSource){\n        this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);\n        this.jdbcTemplate = new JdbcTemplate(dataSource);\n    }\n    \n    public void insert(){\n        MapSqlParameterSource parameters = new MapSqlParameterSource();\n        parameters.addValue(\"id\", 1);\n        parameters.addValue(\"name\", \"John\");\n        String sql = \"INSERT INTO table(id, name) VALUES (:id, :name)\";\n        namedParameterJdbcTemplate.update(sql, parameters);\n    }\n\n    public static void main(String[] args) {\n        // Create an instance of Main class\n        Main main = new Main();\n        // Assuming we have a datasource instance dataSource\n        // Here, you need to provide a DataSource implementation instead of null\n        DataSource dataSource = null;\n        main.setDataSource(dataSource);\n        main.insert();\n    }\n}\n```\nThis code will create an instance of the Main class, insert a new record into a table named \"table\" using the \"NamedParameterJdbcTemplate\".\n\nRemember to provide an implementation of the DataSource interface in the \"main\" method. The insert method will throw a NullPointerException if no DataSource is set.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport javax.sql.DataSource;\n\npublic class Main {\n    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;\n    private JdbcTemplate jdbcTemplate;\n    \n    public void setDataSource(DataSource dataSource){\n        this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);\n        this.jdbcTemplate = new JdbcTemplate(dataSource);\n    }\n    \n    public void insert(){\n        MapSqlParameterSource parameters = new MapSqlParameterSource();\n        parameters.addValue(\"id\", 1);\n        parameters.addValue(\"name\", \"John\");\n        String sql = \"INSERT INTO table(id, name) VALUES (:id, :name)\";\n        namedParameterJdbcTemplate.update(sql, parameters);\n    }\n\n    public static void main(String[] args) {\n        // Create an instance of Main class\n        Main main = new Main();\n        // Assuming we have a datasource instance dataSource\n        // Here, you need to provide a DataSource implementation instead of null\n        DataSource dataSource = null;\n        main.setDataSource(dataSource);\n        main.insert();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "javax.sql.DataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "javax.sql.DataSource"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.4974278509616852,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"NamedParameterJdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo solve this problem, you will need to utilize the Spring Framework's JdbcTemplate which is a class that performs JDBC operations and is designed for that purpose. However, it does not support the 'NamedParameterJdbcTemplate' API, which requires usage of named parameters for queries instead of '?' placeholders.\n\nHere is a basic example of such a problem:\n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize DriverManagerDataSource\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n        dataSource.setUrl(\"jdbc:mysql://localhost:3306/test\");\n        dataSource.setUsername(\"root\");\n        dataSource.setPassword(\"password\");\n        \n        // JdbcTemplate initialization\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n        \n        // Insert statement\n        String sql = \"INSERT INTO user (name, age) VALUES (?, ?)\";\n        jdbcTemplate.update(sql, \"John Doe\", 30);\n        \n        // Select statement\n        sql = \"SELECT * FROM user\";\n        List<Map<String, Object>> users = jdbcTemplate.queryForList(sql);\n        for (Map<String, Object> user : users) {\n            System.out.println(\"Name: \" + user.get(\"name\") + \", Age: \" + user.get(\"age\"));\n        }\n    }\n}\n```\nIn this code, a DriverManagerDataSource is created and used in the context of JdbcTemplate. The code creates and executes a SQL insert statement to insert a new user into a user table and a SQL select statement to retrieve all users from the database.\n\nNote that to use this code successfully, you need to have the necessary Maven dependencies set in your project (`spring-jdbc-6.1.3`) which are already included in this problem description because they are used for JDBC.\n\nIf you need to use NamedParameterJdbcTemplate, then you should add a new dependency for it like this:\n\n```\n<dependencies>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-jdbc</artifactId>\n        <version>6.1.3</version>\n    </dependency>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-jdbc</artifactId>\n        <version>6.1.3</version>\n        <classifier>sources</classifier>\n    </dependency>\n</dependencies>\n```\nAnd then use it like this:\n\n```java\nimport org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize DriverManagerDataSource and NamedParameterJdbcTemplate\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n        dataSource.setUrl(\"jdbc:mysql://localhost:3306/test\");\n        dataSource.setUsername(\"root\");\n        dataSource.setPassword(\"password\");\n        \n        NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);\n        \n        // MapSqlParameterSource for Named Parameters\n        MapSqlParameterSource namedParameters = new MapSqlParameterSource();\n        namedParameters.addValue(\"name\", \"Jane Doe\");\n        namedParameters.addValue(\"age\", 25);\n\n        // Insert statement\n        String sql = \"INSERT INTO user (name, age) VALUES (:name, :age)\";\n        namedParameterJdbcTemplate.update(sql, namedParameters);\n\n        // Select statement\n        sql = \"SELECT * FROM user\";\n        List<Map<String, Object>> users = namedParameterJdbcTemplate.queryForList(sql, namedParameters);\n        for (Map<String, Object> user : users) {\n            System.out.println(\"Name: \" + user.get(\"name\") + \", Age: \" + user.get(\"age\"));\n        }\n    }\n}\n```\nRemember to replace `\"root\"` and `\"password\"` with the actual username and password of your database.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Initialize DriverManagerDataSource\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n        dataSource.setUrl(\"jdbc:mysql://localhost:3306/test\");\n        dataSource.setUsername(\"root\");\n        dataSource.setPassword(\"password\");\n        \n        // JdbcTemplate initialization\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n        \n        // Insert statement\n        String sql = \"INSERT INTO user (name, age) VALUES (?, ?)\";\n        jdbcTemplate.update(sql, \"John Doe\", 30);\n        \n        // Select statement\n        sql = \"SELECT * FROM user\";\n        List<Map<String, Object>> users = jdbcTemplate.queryForList(sql);\n        for (Map<String, Object> user : users) {\n            System.out.println(\"Name: \" + user.get(\"name\") + \", Age: \" + user.get(\"age\"));\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.7891318202018738,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/java/org/example/Main.java:[25,9] cannot find symbol\n  symbol:   class List\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/java/org/example/Main.java:[25,14] cannot find symbol\n  symbol:   class Map\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/java/org/example/Main.java:[26,14] cannot find symbol\n  symbol:   class Map\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.733 s\n[INFO] Finished at: 2024-04-17T01:03:40-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/java/org/example/Main.java:[25,9] cannot find symbol\n[ERROR]   symbol:   class List\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/java/org/example/Main.java:[25,14] cannot find symbol\n[ERROR]   symbol:   class Map\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/java/org/example/Main.java:[26,14] cannot find symbol\n[ERROR]   symbol:   class Map\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 14,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 14,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"NamedParameterJdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic code snippet demonstrating how you can use \"NamedParameterJdbcTemplate\" and \"JdbcTemplate\" from spring framework.\n\nMake sure to import required classes from Spring library (in case of JdbcTemplate):\n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n```\n\nInitialize `DriverManagerDataSource` object, set database driver class name, database url, username and password:\n\n```java\nDriverManagerDataSource dataSource = new DriverManagerDataSource();\ndataSource.setDriverClassName(\"com.mysql.jdbc.Driver\"); // Driver class name\ndataSource.setUrl(\"jdbc:mysql://localhost:3306/mydb\"); // DB URL\ndataSource.setUsername(\"root\"); // DB username\ndataSource.setPassword(\"password\"); // DB password\n```\n\nThen, initialize `JdbcTemplate` and `NamedParameterJdbcTemplate` objects with the `dataSource`:\n\n```java\nJdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\nNamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);\n```\n\nNow, you can use these `jdbcTemplate` and `namedParameterJdbcTemplate` objects to execute SQL queries:\n\n```java\nString sql = \"SELECT id, name FROM table\";\nList<Map<String, Object>> result = jdbcTemplate.queryForList(sql);\n\nMap<String, String> paramMap = new HashMap<>();\nparamMap.put(\"name\", \"SomeName\");\nList<User> users = namedParameterJdbcTemplate.query(\"SELECT id, name FROM table WHERE name=:name\", paramMap, new UserRowMapper());\n```\n\nIn the `UserRowMapper` you'd need to define how to map the data from your query to a User object:\n\n```java\npublic class UserRowMapper implements RowMapper<User> {\n    public User mapRow(ResultSet rs, int rowNum) throws SQLException {\n        User user = new User();\n        user.setId(rs.getInt(\"id\"));\n        user.setName(rs.getString(\"name\"));\n        return user;\n    }\n}\n```\n\nSo, all together it will be:\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\"); \n        dataSource.setUrl(\"jdbc:mysql://localhost:3306/mydb\");\n        dataSource.setUsername(\"root\");\n        dataSource.setPassword(\"password\");\n\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n        NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);\n\n        String sql = \"SELECT id, name FROM table\";\n        List<Map<String, Object>> result = jdbcTemplate.queryForList(sql);\n\n        Map<String, String> paramMap = new HashMap<>();\n        paramMap.put(\"name\", \"SomeName\");\n        List<User> users = namedParameterJdbcTemplate.query(\"SELECT id, name FROM table WHERE name=:name\", paramMap, new UserRowMapper());\n    }\n}\n```\n\nThis is a basic example and you might want to enhance it, adjusting it to your needs.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.689246416091919,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"NamedParameterJdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo create a named parameter JDBC template, we will need the following dependencies in our project:\n- Spring JDBC\n- Spring Core\n\nWe can add these dependencies in our pom.xml file.\n\nFirst, we need to add the dependencies for Spring JDBC and Spring Core to our pom.xml file. Here, we also add a dependency for HikariCP as the DataSource to help manage the connections:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-jdbc</artifactId>\n        <version>6.1.3</version>\n    </dependency>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-core</artifactId>\n        <version>6.1.3</version>\n    </dependency>\n    <dependency>\n        <groupId>com.zaxxer</groupId>\n        <artifactId>HikariCP</artifactId>\n        <version>5.0.1</version>\n    </dependency>\n</dependencies>\n```\n\nAfter adding the dependencies, we need to configure our DataSource and our NamedParameterJdbcTemplate in our application context XML file (spring-config.xml for instance).\n\n```xml\n<!-- Data Source -->\n<bean id=\"dataSource\" class=\"com.zaxxer.hikari.HikariDataSource\">\n    <property name=\"jdbcUrl\" value=\"${db.url}\"/>\n    <property name=\"username\" value=\"${db.username}\"/>\n    <property name=\"password\" value=\"${db.password}\"/>\n</bean>\n\n<!-- NamedParameterJdbcTemplate -->\n<bean id=\"namedParameterJdbcTemplate\" class=\"org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate\">\n    <constructor-arg ref=\"dataSource\"/>\n</bean>\n```\n\nThen, we can use the NamedParameterJdbcTemplate like the following:\n\n```java\nimport org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.namedparam.SqlParameterSource;\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.context.ApplicationContext;\nimport org.springframework.context.support.ClassPathXmlApplicationContext;\n\npublic class Main {\n    public static void main(String[] args) {\n        ApplicationContext context = new ClassPathXmlApplicationContext(\"spring-config.xml\");\n        NamedParameterJdbcTemplate template = context.getBean(\"namedParameterJdbcTemplate\", NamedParameterJdbcTemplate.class);\n        \n        // Your SQL\n        String sql = \"SELECT * FROM YourTable WHERE name = :name\";\n        \n        // Parameters\n        SqlParameterSource namedParameters = new MapSqlParameterSource().addValue(\"name\", \"YourValue\");\n        \n        List<Map<String, Object>> results = template.queryForList(sql, namedParameters);\n        \n        // Process results\n        results.forEach(result -> {\n            // Process each result\n        });\n    }\n}\n```\n\nPlease remember to replace \"YourTable\" and \"YourValue\" with your actual table and value for example purpose.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.namedparam.SqlParameterSource;\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.context.ApplicationContext;\nimport org.springframework.context.support.ClassPathXmlApplicationContext;\n\npublic class Main {\n    public static void main(String[] args) {\n        ApplicationContext context = new ClassPathXmlApplicationContext(\"spring-config.xml\");\n        NamedParameterJdbcTemplate template = context.getBean(\"namedParameterJdbcTemplate\", NamedParameterJdbcTemplate.class);\n        \n        // Your SQL\n        String sql = \"SELECT * FROM YourTable WHERE name = :name\";\n        \n        // Parameters\n        SqlParameterSource namedParameters = new MapSqlParameterSource().addValue(\"name\", \"YourValue\");\n        \n        List<Map<String, Object>> results = template.queryForList(sql, namedParameters);\n        \n        // Process results\n        results.forEach(result -> {\n            // Process each result\n        });\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource",
+                    "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+                    "org.springframework.context.ApplicationContext",
+                    "org.springframework.context.support.ClassPathXmlApplicationContext"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource",
+                    "org.springframework.jdbc.core.namedparam.SqlParameterSource",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+                    "org.springframework.context.ApplicationContext",
+                    "org.springframework.context.support.ClassPathXmlApplicationContext"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6542701125144958,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[7,35] package org.springframework.context does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[8,43] package org.springframework.context.support does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n  symbol:   class ApplicationContext\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,42] cannot find symbol\n  symbol:   class ClassPathXmlApplicationContext\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,9] cannot find symbol\n  symbol:   class List\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,14] cannot find symbol\n  symbol:   class Map\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.783 s\n[INFO] Finished at: 2024-04-17T01:03:42-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[7,35] package org.springframework.context does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[8,43] package org.springframework.context.support does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n[ERROR]   symbol:   class ApplicationContext\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,42] cannot find symbol\n[ERROR]   symbol:   class ClassPathXmlApplicationContext\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,9] cannot find symbol\n[ERROR]   symbol:   class List\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,14] cannot find symbol\n[ERROR]   symbol:   class Map\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 42,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 35,
+                                "message": "package org.springframework.context does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 43,
+                                "message": "package org.springframework.context.support does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/NamedParameterJdbcTemplate/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 14,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"NamedParameterJdbcTemplate\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThis is just a basic example of a working SpringJdbc template using the NamedParameterJdbcTemplate for reading data. For it to run, you need a JDBC DataSource, which can be a connection to a database. Please replace the necessary connection details for your setup.\n\nMain.java\n```java\nimport java.util.List;\nimport java.util.Map;\n\nimport javax.sql.DataSource;\n\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n  \n    public static void main(String[] args) {\n        DataSource dataSource = new DriverManagerDataSource(\"jdbc:mysql://localhost/test\", \"user\", \"password\");\n\n        NamedParameterJdbcTemplate template = new NamedParameterJdbcTemplate(dataSource);\n\n        String sql = \"SELECT * FROM users WHERE username = :name\";\n        List<Map<String, Object>> list = template.queryForList(sql, Map.of(\"name\", \"user1\"));\n\n        for(Map<String, Object> row : list) {\n            for(Map.Entry<String, Object> entry : row.entrySet()) {\n                System.out.println(entry.getKey() + \" : \" + entry.getValue());\n            }\n            System.out.println(\"------\");\n        }\n    }\n}\n```\n\nThis code will connect to your database and execute the SQL query using NamedParameterJdbcTemplate. It assumes your database is a MySQL database with a table named 'users' which contains 'username' field. It selects all records from the 'users' table for a specific user ('user1') and prints them to the console.\n\nTo make this code work, you should have the mysql-connector-java library in your project dependencies.\nIf you want to work with PostgreSQL, replace the library and connection parameters. You may need to add a few more dependencies depending on what databases you are planning to use. \n\nAlso, remember to handle exceptions properly in a production scenario \u2013 this example does not contain any exception handling mechanism.",
+                "extracted_java_code_from_prediction": "import java.util.List;\nimport java.util.Map;\n\nimport javax.sql.DataSource;\n\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n  \n    public static void main(String[] args) {\n        DataSource dataSource = new DriverManagerDataSource(\"jdbc:mysql://localhost/test\", \"user\", \"password\");\n\n        NamedParameterJdbcTemplate template = new NamedParameterJdbcTemplate(dataSource);\n\n        String sql = \"SELECT * FROM users WHERE username = :name\";\n        List<Map<String, Object>> list = template.queryForList(sql, Map.of(\"name\", \"user1\"));\n\n        for(Map<String, Object> row : list) {\n            for(Map.Entry<String, Object> entry : row.entrySet()) {\n                System.out.println(entry.getKey() + \" : \" + entry.getValue());\n            }\n            System.out.println(\"------\");\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.List",
+                    "java.util.Map",
+                    "javax.sql.DataSource",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "java.util.List",
+                    "java.util.Map",
+                    "javax.sql.DataSource",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.6,
+                "model_confidence": 0.4730556011199951,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "SimpleJdbcCall": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"SimpleJdbcCall\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcCall\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\n```Java\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\nimport java.util.Map;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        \n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"org.postgresql.Driver\");\n        dataSource.setUrl(\"jdbc:postgresql://localhost:5432/sampleDB\");\n        dataSource.setUsername(\"postgres\");\n        dataSource.setPassword(\"root\");\n\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n        SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate);\n        simpleJdbcCall.withFunctionName(\"sampleSchema\", \"getSampleFunction\");\n        Map<String, Object> results = simpleJdbcCall.execute(Map.of(\"p1\", 1));\n\n        System.out.println(results.get(\"outputParam\"));\n    }\n}\n```\nIn this Java code, we're using Spring's SimpleJdbcCall API to make a function call within our Java application. The call is made to a PostgreSQL database, which is assumed to have been configured appropriately. Note that this requires the appropriate Postgres JDBC driver to be added to the classpath, and the necessary connection and access details to connect to your PostgreSQL instance.\n\nThis example assumes a PostgreSQL database with a single schema named \"sampleSchema\" with a function named \"getSampleFunction\" accepting a parameter p1. In your environment, you may need to adjust the connection details (URL, username, password, etc.), database schema and function name.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5492953658103943,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcCall\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, Here is the java code that uses SimpleJdbcCall from spring-jdbc project. This code also connects to a simple database using Spring JDBC Template. \n\n```java\n\nimport org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\"); // Set your driver class name\n        dataSource.setUrl(\"jdbc:mysql://localhost/test\");  // Set your database URL \n        dataSource.setUsername(\"username\"); // Set your database username\n        dataSource.setPassword(\"password\"); // Set your database password\n\n        SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(dataSource)\n                .withProcedureName(\"getUserDetails\"); // Set your stored procedure name\n\n        MapSqlParameterSource in = new MapSqlParameterSource()\n                .addValue(\"user_id\", 1);\n\n        Map<String, Object> out = simpleJdbcCall.execute(in);\n\n        // Now you can get the values from the stored procedure call using 'out'\n    }\n}\n\n```\n\nThis code will connect to a MySQL database using a JDBC dataSource, and call the stored procedure 'getUserDetails'. The 'getUserDetails' procedure accepts an input parameter 'user_id' and it returns multiple values such as 'user_name', 'user_email' etc. It then passes these parameters and returns a map that has the output parameters from the stored procedure.\n\nNote: Please install the necessary Spring libraries and add them to the classpath. In this example, you would add the spring-jdbc dependency to your project.\n\nAdd the following dependency in your pom.xml file to use spring JDBC:\n\n```xml\n<dependency>\n    <groupId>org.springframework</groupId>\n    <artifactId>spring-jdbc</artifactId>\n    <version>6.1.3</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\"); // Set your driver class name\n        dataSource.setUrl(\"jdbc:mysql://localhost/test\");  // Set your database URL \n        dataSource.setUsername(\"username\"); // Set your database username\n        dataSource.setPassword(\"password\"); // Set your database password\n\n        SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(dataSource)\n                .withProcedureName(\"getUserDetails\"); // Set your stored procedure name\n\n        MapSqlParameterSource in = new MapSqlParameterSource()\n                .addValue(\"user_id\", 1);\n\n        Map<String, Object> out = simpleJdbcCall.execute(in);\n\n        // Now you can get the values from the stored procedure call using 'out'\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.5774091482162476,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_2/Wrapper/src/main/java/org/example/Main.java:[24,9] cannot find symbol\n  symbol:   class Map\n  location: class org.example.Main\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.836 s\n[INFO] Finished at: 2024-04-17T01:04:18-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_2/Wrapper/src/main/java/org/example/Main.java:[24,9] cannot find symbol\n[ERROR]   symbol:   class Map\n[ERROR]   location: class org.example.Main\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 24,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcCall\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simple example of how you might use `SimpleJdbcCall` along with a few other standard Spring classes. The given code assumes you're using Spring Boot, and it can potentially be compiled as a standalone Spring Boot project.\n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\nimport org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;\nimport org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // Create an embedded database, that resides in memory\n        var dataSource = new EmbeddedDatabaseBuilder().generateUniqueName(true).setType(EmbeddedDatabaseType.H2).build();\n\n        // Create a JdbcTemplate to execute SQL statements\n        var jdbcTemplate = new JdbcTemplate(dataSource);\n\n        // Insert into table\n        jdbcTemplate.execute(\"CREATE TABLE FOO (ID INTEGER, BAR VARCHAR)\");\n        jdbcTemplate.update(\"INSERT INTO FOO (ID, BAR) VALUES (?, ?)\", 1, \"bar\");\n\n        // Use SimpleJdbcCall to call stored procedures\n        var simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate).withProcedureName(\"procedureName\");\n        var result = simpleJdbcCall.execute(Map.of(\"argName\", \"argValue\"));\n        System.out.println(result);\n    }\n}\n```\nThis example code will create an embedded in-memory database, uses Spring's JDBC `JdbcTemplate` to execute SQL statements, and then uses `SimpleJdbcCall` to execute stored procedures.\n\nYou need to have access to `org.springframework.jdbc.core.JdbcTemplate`, `org.springframework.jdbc.core.simple.SimpleJdbcCall` and `org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder` classes for this to work. Adding additional dependencies would need to be done separately.\n\nPlease ensure that you replace \"procedureName\", \"argName\", \"argValue\", \"FOO\" with your actual data. And ensure that the table or stored procedure you're trying to access and the argument are present in your actual database schema.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\nimport org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;\nimport org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // Create an embedded database, that resides in memory\n        var dataSource = new EmbeddedDatabaseBuilder().generateUniqueName(true).setType(EmbeddedDatabaseType.H2).build();\n\n        // Create a JdbcTemplate to execute SQL statements\n        var jdbcTemplate = new JdbcTemplate(dataSource);\n\n        // Insert into table\n        jdbcTemplate.execute(\"CREATE TABLE FOO (ID INTEGER, BAR VARCHAR)\");\n        jdbcTemplate.update(\"INSERT INTO FOO (ID, BAR) VALUES (?, ?)\", 1, \"bar\");\n\n        // Use SimpleJdbcCall to call stored procedures\n        var simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate).withProcedureName(\"procedureName\");\n        var result = simpleJdbcCall.execute(Map.of(\"argName\", \"argValue\"));\n        System.out.println(result);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall",
+                    "org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder",
+                    "org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder",
+                    "org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6162007451057434,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_3/Wrapper/src/main/java/org/example/Main.java:[25,45] cannot find symbol\n  symbol:   variable Map\n  location: class org.example.Main\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.786 s\n[INFO] Finished at: 2024-04-17T01:04:19-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_3/Wrapper/src/main/java/org/example/Main.java:[25,45] cannot find symbol\n[ERROR]   symbol:   variable Map\n[ERROR]   location: class org.example.Main\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 45,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcCall\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThis problem is difficult to solve, as it involves creating a code that uses several specific Spring libraries and APIs. Additionally, the problem does not specify the exact functionality to be implemented which makes it impossible to provide a correct code example with explanations.\n\nHowever, I can provide a basic usage example of SimpleJdbcCall along with necessary imports for it to work:\n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\n\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        JdbcTemplate jdbcTemplate = /* Instantiate JdbcTemplate with your dataSource */\n\n        SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate)\n                .withFunctionName(\"yourFunctionName\")\n                .returningResultSet(\"yourReturnResultSetName\",\n                        rs -> new HashMap<String, Object>(), (rs, rowNum) -> {\n                            Map<String, Object> map = new HashMap<>();\n                            map.put(\"column_name\", rs.getObject(\"column_name\"));\n                            return map;\n                        });\n\n        MapSqlParameterSource params = new MapSqlParameterSource();\n        params.addValue(\"param_name\", \"value\");\n\n        Map<String, Object> results = simpleJdbcCall.execute(params);\n\n        results.forEach((k, v) -> {\n            System.out.println(k + \":\" + v);\n        });\n    }\n}\n```\n\nPlease replace `\"yourFunctionName\"` with the actual function name and `\"yourReturnResultSetName\"` with the actual name of the returning ResultSet in your stored procedure or function. Also, replace `\"param_name\"` and `\"column_name\"` with actual parameter names and column names in your stored procedure or function.\n\nRemember, if the SimpleJdbcCall is not used properly, it may lead to SQL injection vulnerabilities. Therefore, you should validate the input parameters correctly and use PreparedStatement or JdbcTemplate to prevent SQL injection.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\n\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        JdbcTemplate jdbcTemplate = /* Instantiate JdbcTemplate with your dataSource */\n\n        SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate)\n                .withFunctionName(\"yourFunctionName\")\n                .returningResultSet(\"yourReturnResultSetName\",\n                        rs -> new HashMap<String, Object>(), (rs, rowNum) -> {\n                            Map<String, Object> map = new HashMap<>();\n                            map.put(\"column_name\", rs.getObject(\"column_name\"));\n                            return map;\n                        });\n\n        MapSqlParameterSource params = new MapSqlParameterSource();\n        params.addValue(\"param_name\", \"value\");\n\n        Map<String, Object> results = simpleJdbcCall.execute(params);\n\n        results.forEach((k, v) -> {\n            System.out.println(k + \":\" + v);\n        });\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.6,
+                "model_confidence": 0.5851057171821594,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_4/Wrapper/src/main/java/org/example/Main.java:[15,23] ';' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.604 s\n[INFO] Finished at: 2024-04-17T01:04:21-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_4/Wrapper/src/main/java/org/example/Main.java:[15,23] ';' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 23,
+                                "message": "';' expected"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcCall\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nCreating a complete Java code using \"SimpleJdbcCall\" API would involve multiple dependencies and files, which can't be accomplished here due to the formatting limitations of this platform. However, I will provide a basic code example to use \"SimpleJdbcCall\" with JDBC Driver. \n\nPlease note that the below code does not rely on the Spring Framework, it uses pure JDBC and SimpleJdbcCall for making DB operations. You would also need to include the JDBC driver for your database and map the properties in application.properties or application.yml file based on your database configuration.\n\nHere is a Java class Main with method named main that will demonstrate how to use \"SimpleJdbcCall\" API. \n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\nimport java.util.Map;\nimport java.util.HashMap;\n\npublic class Main {\n\n    // Replace \"jdbc:mysql://localhost:3306/test\" with your DB connection url\n    private static String jdbcUrl = \"jdbc:mysql://localhost:3306/test\";\n\n    public static void main(String[] args) {\n        // Instantiate JdbcTemplate\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(DataSourceUtils.getDataSource(jdbcUrl));\n\n        // Get the stored procedure call object\n        SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate)\n                .withProcedureName(\"procedureName\");\n\n        // Create parameters if needed\n        Map<String, Object> paramMap = new HashMap<>();\n        paramMap.put(\"inputParamName\", \"inputValue\");\n\n        // Execute the stored procedure and retrieve result\n        Map<String, Object> resultMap = simpleJdbcCall.execute(paramMap);\n\n        // Handle the result returned from the stored procedure\n        System.out.println(resultMap.get(\"outputParamName\"));\n    }\n}\n```\n\nIn this code:\n\n- `SimpleJdbcCall` is used to create stored procedure call objects.\n- `execute` is a method on `SimpleJdbcCall` to invoke a stored procedure and retrieve the result.\n\nPlease replace `\"jdbc:mysql://localhost:3306/test\"` with your DB url, `\"procedureName\"` with your procedure name and modify the `\"inputParamName\"` and `\"outputParamName\"` based on your procedure definitions. The same principle applies for the map with parameters and return value.\n\nIf you have an existing project in the Spring Framework environment, you could utilize the ApplicationContext or Application Properties files to pass your connection string and other necessary parameters to this class.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\nimport java.util.Map;\nimport java.util.HashMap;\n\npublic class Main {\n\n    // Replace \"jdbc:mysql://localhost:3306/test\" with your DB connection url\n    private static String jdbcUrl = \"jdbc:mysql://localhost:3306/test\";\n\n    public static void main(String[] args) {\n        // Instantiate JdbcTemplate\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(DataSourceUtils.getDataSource(jdbcUrl));\n\n        // Get the stored procedure call object\n        SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate)\n                .withProcedureName(\"procedureName\");\n\n        // Create parameters if needed\n        Map<String, Object> paramMap = new HashMap<>();\n        paramMap.put(\"inputParamName\", \"inputValue\");\n\n        // Execute the stored procedure and retrieve result\n        Map<String, Object> resultMap = simpleJdbcCall.execute(paramMap);\n\n        // Handle the result returned from the stored procedure\n        System.out.println(resultMap.get(\"outputParamName\"));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall",
+                    "java.util.Map",
+                    "java.util.HashMap"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall",
+                    "java.util.Map",
+                    "java.util.HashMap"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.75,
+                "model_confidence": 0.6229290962219238,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_5/Wrapper/src/main/java/org/example/Main.java:[16,54] cannot find symbol\n  symbol:   variable DataSourceUtils\n  location: class org.example.Main\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.836 s\n[INFO] Finished at: 2024-04-17T01:04:22-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_5/Wrapper/src/main/java/org/example/Main.java:[16,54] cannot find symbol\n[ERROR]   symbol:   variable DataSourceUtils\n[ERROR]   location: class org.example.Main\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcCall/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 54,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "SimpleJdbcInsert": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"SimpleJdbcInsert\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcInsert\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThis problem seems to require some level of understanding on how to use the Spring framework and Java Database Connectivity (JDBC) through Spring framework. You might want to use `SimpleJdbcInsert` for insertion of records into a database, and for that, you will need to have proper connection to the database.\n\nHere is the complete Java code:\n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcInsert;\nimport javax.sql.DataSource;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // Assume datasource is injected into your class through DI and we will use it here.\n        DataSource dataSource = null; //Inject this from your DI\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n\n        // Create a new SimpleJdbcInsert with the specified table name and data source.\n        SimpleJdbcInsert insert = new SimpleJdbcInsert(jdbcTemplate)\n                                        .withTableName(\"Customers\");\n\n        // Create a map for insertion with required fields.\n        Map<String, Object> values = new HashMap<String, Object>();\n        values.put(\"CustomerName\", \"John Doe\");\n        values.put(\"ContactName\", \"John\");\n        values.put(\"Address\", \"2143 Fake Street\");\n        values.put(\"City\", \"Springfield\");\n\n        // Insert data into table.\n        insert.execute(values);\n    }\n}\n```\n\nThis code will insert a new customer in the database. Remember to import all the necessary classes. \n\nNote: This is a basic example, if you require a more advanced usage (e.g., handling exceptions, inserting multiple records at once, using prepared statements, etc.), you will have to tweak this example accordingly.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcInsert;\nimport javax.sql.DataSource;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // Assume datasource is injected into your class through DI and we will use it here.\n        DataSource dataSource = null; //Inject this from your DI\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n\n        // Create a new SimpleJdbcInsert with the specified table name and data source.\n        SimpleJdbcInsert insert = new SimpleJdbcInsert(jdbcTemplate)\n                                        .withTableName(\"Customers\");\n\n        // Create a map for insertion with required fields.\n        Map<String, Object> values = new HashMap<String, Object>();\n        values.put(\"CustomerName\", \"John Doe\");\n        values.put(\"ContactName\", \"John\");\n        values.put(\"Address\", \"2143 Fake Street\");\n        values.put(\"City\", \"Springfield\");\n\n        // Insert data into table.\n        insert.execute(values);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcInsert",
+                    "javax.sql.DataSource",
+                    "java.util.*"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcInsert",
+                    "javax.sql.DataSource",
+                    "java.util.*"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5178351402282715,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcInsert\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use \"SimpleJdbcInsert\" API, you'll need to add \"spring-jdbc\" dependency in your project. Below is an example of a simple Java program using \"SimpleJdbcInsert\" API. The program may be compiled and executed using \"java -jar yourfile.jar\" where \"yourfile.jar\" is the Jar file produced by your Java build tools like Maven or Gradle.\n\n```Java\nimport org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.simple.SimpleJdbcInsert;\nimport javax.sql.DataSource;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        DataSource dataSource = // your datasource\n\n        SimpleJdbcInsert jdbcInsert = new SimpleJdbcInsert(dataSource)\n                .withTableName(\"test\")\n                .usingGeneratedKeyColumns(\"id\");\n\n        Map<String, Object> parameters = new HashMap<>();\n        parameters.put(\"name\", \"test\");\n        parameters.put(\"value\", 100);\n\n        Number newId = jdbcInsert.executeAndReturnKey(new MapSqlParameterSource(parameters));\n\n        System.out.println(\"New record ID: \" + newId);\n    }\n}\n```\nRemember that you need to replace `// your datasource` with an actual data source.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.49946948885917664,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcInsert\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYour requirement is to create a simple Java application that includes the SimpleJdbcInsert class from the spring-jdbc project. Here is a simple example of how you could implement it:\n\nMake sure to handle the exceptions properly in your code.\n\nMain.java\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcInsert;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setUrl(\"jdbc:mysql://localhost/test\");\n        dataSource.setUsername(\"root\");\n        dataSource.setPassword(\"password\");\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n\n        SimpleJdbcInsert simpleJdbcInsert = new SimpleJdbcInsert(jdbcTemplate)\n            .withTableName(\"customer\")\n            .usingColumns(\"name\", \"email\");\n        \n        Map<String, Object> parameters = new HashMap<>();\n        parameters.put(\"name\", \"John Doe\");\n        parameters.put(\"email\", \"john.doe@email.com\");\n        simpleJdbcInsert.execute(parameters);\n    }\n}\n```\n\nThis example creates a new JdbcTemplate for communicating with a database, and then creates a SimpleJdbcInsert object with a JdbcTemplate and table name. It then defines a parameter map, inserts a new customer record, and then finally executes the query.\n\nReplace `\"jdbc:mysql://localhost/test\"`, `\"root\"`, `\"password\"` with your database details. Replace the table name (`\"customer\"`) and the columns names (`\"name\"` and `\"email\"`) with your table's names and columns.\n\nThe `\"com.mysql.jdbc.Driver\"` is a specific driver used for MySQL Database, use the appropriate one according to your database.\n\nThis will insert a new customer into a table in a MySQL database. If your schema or table differs, make sure to adapt the code to your needs accordingly.\n\nThis is a simple example which just demonstrates the usage of the SimpleJdbcInsert class. For more complex scenarios you would typically need to handle transaction management or error handling appropriately.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcInsert;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\n\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) {\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setUrl(\"jdbc:mysql://localhost/test\");\n        dataSource.setUsername(\"root\");\n        dataSource.setPassword(\"password\");\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n\n        SimpleJdbcInsert simpleJdbcInsert = new SimpleJdbcInsert(jdbcTemplate)\n            .withTableName(\"customer\")\n            .usingColumns(\"name\", \"email\");\n        \n        Map<String, Object> parameters = new HashMap<>();\n        parameters.put(\"name\", \"John Doe\");\n        parameters.put(\"email\", \"john.doe@email.com\");\n        simpleJdbcInsert.execute(parameters);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcInsert",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcInsert",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.4,
+                "model_confidence": 0.5755764245986938,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcInsert\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a complete code snippet that utilizes SimpleJdbcInsert in Spring's JDBC package. We also assume that JDBC connection parameters, such as database URL, username, and password, are defined in application properties file or an equivalent.\n\nDependencies:\n\n```xml\n<!-- Spring framework -->\n<dependency>\n    <groupId>org.springframework</groupId>\n    <artifactId>spring-context</artifactId>\n    <version>5.2.5.RELEASE</version>\n</dependency>\n<dependency>\n    <groupId>org.springframework</groupId>\n    <artifactId>spring-jdbc</artifactId>\n    <version>5.2.5.RELEASE</version>\n</dependency>\n<!-- Assuming MySQL driver dependency -->\n<dependency>\n    <groupId>mysql</groupId>\n    <artifactId>mysql-connector-java</artifactId>\n    <version>8.0.21</version>\n</dependency>\n```\n\nJava code:\n\n```java\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcInsert;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setUrl(\"jdbc:mysql://localhost:3306/test\");\n        dataSource.setUsername(\"root\");\n        dataSource.setPassword(\"password\");\n        dataSource.setDriverClassName(\"com.mysql.cj.jdbc.Driver\");\n\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n        SimpleJdbcInsert insertActor = new SimpleJdbcInsert(jdbcTemplate)\n            .withTableName(\"actor\")\n            .usingGeneratedKeyColumns(\"actor_id\");\n\n        Map<String, Object> parameters = new HashMap<>();\n        parameters.put(\"first_name\", \"John\");\n        parameters.put(\"last_name\", \"Doe\");\n        parameters.put(\"last_update\", \"2021-06-01\");\n\n        Number newId = insertActor.executeAndReturnKey(parameters);\n        System.out.println(\"New actor ID: \" + newId);\n    }\n}\n```\n\nIn the above code, we assume that we have an \"actor\" table with columns like \"actor_id\", \"first_name\", \"last_name\", and \"last_update\". We are using a MySQL database, but it could be replaced with another database supported by the Spring Data JDBC library. The database connection parameters and table name should be replaced with your actual values.\n\nPlease note that the `SimpleJdbcInsert` API requires a valid `JdbcTemplate` instance for which we are creating a `DriverManagerDataSource`. If you have a custom `DataSource`, pass it to the `SimpleJdbcInsert` constructor instead. The same is true for `JdbcTemplate`. It expects a `DataSource` object to get the connection.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.simple.SimpleJdbcInsert;\nimport org.springframework.jdbc.datasource.DriverManagerDataSource;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        DriverManagerDataSource dataSource = new DriverManagerDataSource();\n        dataSource.setUrl(\"jdbc:mysql://localhost:3306/test\");\n        dataSource.setUsername(\"root\");\n        dataSource.setPassword(\"password\");\n        dataSource.setDriverClassName(\"com.mysql.cj.jdbc.Driver\");\n\n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n        SimpleJdbcInsert insertActor = new SimpleJdbcInsert(jdbcTemplate)\n            .withTableName(\"actor\")\n            .usingGeneratedKeyColumns(\"actor_id\");\n\n        Map<String, Object> parameters = new HashMap<>();\n        parameters.put(\"first_name\", \"John\");\n        parameters.put(\"last_name\", \"Doe\");\n        parameters.put(\"last_update\", \"2021-06-01\");\n\n        Number newId = insertActor.executeAndReturnKey(parameters);\n        System.out.println(\"New actor ID: \" + newId);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcInsert",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcInsert",
+                    "org.springframework.jdbc.datasource.DriverManagerDataSource",
+                    "java.util.HashMap",
+                    "java.util.Map"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.4,
+                "model_confidence": 0.7413844466209412,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SimpleJdbcInsert\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe requirement as provided is rather broad and unclear. It seems to specify using the `SimpleJdbcInsert` API from a project that is not explicitly provided and also requires a main class which must be named as Main. This would be very complex to do.\n\nHowever, you can still see the basic usage of the `SimpleJdbcInsert` API here:\n\n```java\nimport org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;\nimport org.springframework.jdbc.core.simple.SimpleJdbcInsert;\nimport javax.sql.DataSource;\n\npublic class Main {\n\n    private DataSource dataSource;\n\n    public Main(DataSource dataSource) {\n        this.dataSource = dataSource;\n    }\n\n    public void insertData(User user) {\n        SimpleJdbcInsert simpleJdbcInsert = new SimpleJdbcInsert(dataSource);\n        simpleJdbcInsert.withTableName(\"users\")\n                .usingColumns(\"first_name\", \"last_name\", \"email\")\n                .usingGeneratedKeyColumns(\"user_id\");\n\n        BeanPropertySqlParameterSource beanPS = new BeanPropertySqlParameterSource(user);\n        int id = simpleJdbcInsert.executeAndReturnKey(beanPS).intValue();\n        System.out.println(\"Generated ID: \" + id);\n    }\n}\n```\n\nHere is a sample User class:\n\n```java\npublic class User {\n    private String firstName;\n    private String lastName;\n    private String email;\n\n    // getters and setters\n}\n```\n\nNote: This is a very basic setup, actual applications would need more features and could need refactoring for production. They would also need to handle connections, exceptions etc. The provided example is only for demonstrating the usage of `SimpleJdbcInsert`.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;\nimport org.springframework.jdbc.core.simple.SimpleJdbcInsert;\nimport javax.sql.DataSource;\n\npublic class Main {\n\n    private DataSource dataSource;\n\n    public Main(DataSource dataSource) {\n        this.dataSource = dataSource;\n    }\n\n    public void insertData(User user) {\n        SimpleJdbcInsert simpleJdbcInsert = new SimpleJdbcInsert(dataSource);\n        simpleJdbcInsert.withTableName(\"users\")\n                .usingColumns(\"first_name\", \"last_name\", \"email\")\n                .usingGeneratedKeyColumns(\"user_id\");\n\n        BeanPropertySqlParameterSource beanPS = new BeanPropertySqlParameterSource(user);\n        int id = simpleJdbcInsert.executeAndReturnKey(beanPS).intValue();\n        System.out.println(\"Generated ID: \" + id);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcInsert",
+                    "javax.sql.DataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcInsert"
+                ],
+                "wrong_FQN_predictions": [
+                    "javax.sql.DataSource"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.5266059637069702,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcInsert/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcInsert/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcInsert/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcInsert/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,28] cannot find symbol\n  symbol:   class User\n  location: class org.example.Main\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.724 s\n[INFO] Finished at: 2024-04-17T01:05:08-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcInsert/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,28] cannot find symbol\n[ERROR]   symbol:   class User\n[ERROR]   location: class org.example.Main\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SimpleJdbcInsert/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 28,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "SqlRowSetResultSetExtractor": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"SqlRowSetResultSetExtractor\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SqlRowSetResultSetExtractor\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nFor this task, you have to import some dependencies which can be done with the help of Maven.\n\nHere is a simple Java program that incorporates \"Spring-jdbc-6.1.3\" to implement \"SqlRowSetResultSetExtractor\".\n\nWe are assuming that you have a working Maven Project and you have pom.xml configured to download Spring Framework from Maven Repository.\n\nFirstly, add the dependencies:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-context</artifactId>\n        <version>6.1.3</version>\n    </dependency>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-jdbc</artifactId>\n        <version>6.1.3</version>\n    </dependency>\n</dependencies>\n```\nIn your Main.java class import the required classes:\n```java\nimport javax.sql.DataSource;\nimport org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.simple.ParameterizedRowMapper;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\nimport org.springframework.jdbc.core.simple.SimpleJdbcTemplate;\nimport org.springframework.jdbc.support.rowset.SqlRowSetResultSetExtractor;\nimport java.sql.ResultSet;\nimport java.sql.SQLException;\n```\nThe main method:\n```java\npublic class Main {\n    public static void main(String[] args) {\n        DataSource dataSource = null; \n        SimpleJdbcTemplate jdbcTemplate = new SimpleJdbcTemplate(dataSource);\n\n        ParameterizedRowMapper<Person> rowMapper = new ParameterizedRowMapper<Person>() {\n            public Person mapRow(ResultSet rs, int rowNum) throws SQLException {\n                Person person = new Person();\n                person.setName(rs.getString(\"name\"));\n                person.setAge(rs.getInt(\"age\"));\n                return person;\n            }\n        };\n\n        MapSqlParameterSource paramSource = new MapSqlParameterSource();\n        paramSource.addValue(\"name\", \"John\");\n        paramSource.addValue(\"age\", 18);\n        \n        SimpleJdbcCall simpleJdbcCall = new SimpleJdbcCall(jdbcTemplate)\n                .withProcedureName(\"call_name\")\n                .returningResultSet(\"Person\", rowMapper)\n                .withResultSetExtractor(new SqlRowSetResultSetExtractor());\n\n        Person person = simpleJdbcCall.execute(paramSource);\n        System.out.println(person);\n    }\n}\n```\nDo not forget to handle exceptions and close resources. \n\nPlease, be aware that the implementation above is simplified and might not fit your specific needs. Also, replace \"call_name\" and \"Person\" with your actual data source, stored procedure name, and your DTO class, respectively.",
+                "extracted_java_code_from_prediction": "import javax.sql.DataSource;\nimport org.springframework.jdbc.core.namedparam.MapSqlParameterSource;\nimport org.springframework.jdbc.core.simple.ParameterizedRowMapper;\nimport org.springframework.jdbc.core.simple.SimpleJdbcCall;\nimport org.springframework.jdbc.core.simple.SimpleJdbcTemplate;\nimport org.springframework.jdbc.support.rowset.SqlRowSetResultSetExtractor;\nimport java.sql.ResultSet;\nimport java.sql.SQLException;",
+                "extracted_FQNs_from_prediction": [
+                    "javax.sql.DataSource",
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource",
+                    "org.springframework.jdbc.core.simple.ParameterizedRowMapper",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcTemplate",
+                    "org.springframework.jdbc.support.rowset.SqlRowSetResultSetExtractor",
+                    "java.sql.ResultSet",
+                    "java.sql.SQLException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.namedparam.MapSqlParameterSource"
+                ],
+                "wrong_FQN_predictions": [
+                    "javax.sql.DataSource",
+                    "org.springframework.jdbc.core.simple.ParameterizedRowMapper",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcCall",
+                    "org.springframework.jdbc.core.simple.SimpleJdbcTemplate",
+                    "org.springframework.jdbc.support.rowset.SqlRowSetResultSetExtractor",
+                    "java.sql.ResultSet",
+                    "java.sql.SQLException"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 7,
+                "failure_rate_for_FQNs": 0.875,
+                "model_confidence": 0.7288575768470764,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SqlRowSetResultSetExtractor\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use \"SqlRowSetResultSetExtractor\" API from \"spring-jdbc-6.1.3\" project, you might need to create a Spring-based Java application first. Here is a basic example of such a setup.\n\n```java\nimport javax.sql.DataSource;\nimport javax.sql.RowSet;\nimport javax.sql.rowset.Predicate;\nimport javax.sql.rowset.CachedRowSet;\nimport javax.sql.rowset.JdbcRowSet;\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.SqlRowSetResultSetExtractor;\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.jdbc.support.lobs.DefaultLobHandler;\n\nimport java.sql.SQLException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Your database related setups here\n        DataSource dataSource = null; // configure your datasource\n        \n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n        NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(jdbcTemplate);\n        \n        // Assume we have a SQL query that selects all rows\n        String query = \"SELECT * FROM your_table\";\n\n        RowSet rowSet = jdbcTemplate.query(query, new SqlRowSetResultSetExtractor());\n        while(rowSet.next()){\n            // Do something with each row\n            System.out.println(rowSet.getString(\"column_name\"));\n        }\n    }\n}\n```\nPlease modify the \"your_table\" and \"column_name\" according to your actual table and column names. Please note that the dependencies and build tool setup should be in place according to your project structure.\n\nThis code does not require to add any new dependencies apart from the Spring JDBC jar. However, please ensure to add the actual correct JDBC driver for the database you are using, along with the correct version for the Spring JDBC dependency, in your classpath.\n\nThis example uses CachedRowSet which is not thread-safe. If you need thread safety, you should consider using WebSphere's Wrapped CachedRowSet or Atmosphere's AtmCachedRowSet.",
+                "extracted_java_code_from_prediction": "import javax.sql.DataSource;\nimport javax.sql.RowSet;\nimport javax.sql.rowset.Predicate;\nimport javax.sql.rowset.CachedRowSet;\nimport javax.sql.rowset.JdbcRowSet;\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.core.SqlRowSetResultSetExtractor;\nimport org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;\nimport org.springframework.jdbc.support.lobs.DefaultLobHandler;\n\nimport java.sql.SQLException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Your database related setups here\n        DataSource dataSource = null; // configure your datasource\n        \n        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);\n        NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(jdbcTemplate);\n        \n        // Assume we have a SQL query that selects all rows\n        String query = \"SELECT * FROM your_table\";\n\n        RowSet rowSet = jdbcTemplate.query(query, new SqlRowSetResultSetExtractor());\n        while(rowSet.next()){\n            // Do something with each row\n            System.out.println(rowSet.getString(\"column_name\"));\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "javax.sql.DataSource",
+                    "javax.sql.RowSet",
+                    "javax.sql.rowset.Predicate",
+                    "javax.sql.rowset.CachedRowSet",
+                    "javax.sql.rowset.JdbcRowSet",
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.SqlRowSetResultSetExtractor",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+                    "org.springframework.jdbc.support.lobs.DefaultLobHandler",
+                    "java.sql.SQLException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.core.SqlRowSetResultSetExtractor",
+                    "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"
+                ],
+                "wrong_FQN_predictions": [
+                    "javax.sql.DataSource",
+                    "javax.sql.RowSet",
+                    "javax.sql.rowset.Predicate",
+                    "javax.sql.rowset.CachedRowSet",
+                    "javax.sql.rowset.JdbcRowSet",
+                    "org.springframework.jdbc.support.lobs.DefaultLobHandler",
+                    "java.sql.SQLException"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 7,
+                "failure_rate_for_FQNs": 0.7,
+                "model_confidence": 0.5555388331413269,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SqlRowSetResultSetExtractor/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SqlRowSetResultSetExtractor/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SqlRowSetResultSetExtractor/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SqlRowSetResultSetExtractor/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,45] package org.springframework.jdbc.support.lobs does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SqlRowSetResultSetExtractor/sample_2/Wrapper/src/main/java/org/example/Main.java:[27,43] incompatible types: inference variable T has incompatible bounds\n    equality constraints: org.springframework.jdbc.support.rowset.SqlRowSet\n    lower bounds: javax.sql.RowSet,java.lang.Object\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.724 s\n[INFO] Finished at: 2024-04-17T01:05:47-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SqlRowSetResultSetExtractor/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,45] package org.springframework.jdbc.support.lobs does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SqlRowSetResultSetExtractor/sample_2/Wrapper/src/main/java/org/example/Main.java:[27,43] incompatible types: inference variable T has incompatible bounds\n[ERROR]     equality constraints: org.springframework.jdbc.support.rowset.SqlRowSet\n[ERROR]     lower bounds: javax.sql.RowSet,java.lang.Object\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SqlRowSetResultSetExtractor/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 45,
+                                "message": "package org.springframework.jdbc.support.lobs does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-jdbc-6.1.3/SqlRowSetResultSetExtractor/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 27,
+                                "column": 43,
+                                "message": "incompatible types: inference variable T has incompatible bounds"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SqlRowSetResultSetExtractor\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple Java code sample that utilizes the necessary APIs from Spring's \"spring-jdbc\" project. \n\nThis code sample doesn't fully use the \"SqlRowSetResultSetExtractor\" API, but it serves as a placeholder for a basic retrieval of data from a database using JDBC. It makes use of the JDBC API, DataSource, Connection and PreparedStatement.\n\nRemember, to run this code, you should add the appropriate dependencies in the 'build.gradle' file.\n\n```java\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.PreparedStatement;\nimport java.sql.ResultSet;\nimport javax.sql.DataSource;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        String jdbcUrl = \"jdbc:mysql://localhost:3306/testdb\";\n        String username = \"root\";\n        String password = \"password\";\n\n        String query = \"SELECT * FROM test_table\";\n\n        try (Connection conn = DriverManager.getConnection(jdbcUrl, username, password);\n             PreparedStatement stmt = conn.prepareStatement(query)) {\n\n            ResultSet rs = stmt.executeQuery();\n\n            while (rs.next()) {\n                String column1 = rs.getString(\"column1\");\n                int column2 = rs.getInt(\"column2\");\n                double column3 = rs.getDouble(\"column3\");\n\n                System.out.println(\"Column 1: \" + column1);\n                System.out.println(\"Column 2: \" + column2);\n                System.out.println(\"Column 3: \" + column3);\n            }\n\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n\n    }\n\n}\n```\n\nNote: This code doesn't follow best practices for handling database connections, like using try-with-resources to automatically close connections and statements, or for handling SQL exceptions properly. Also, this code does not include any logging whatsoever. Implement logging and exception handling according to your project's requirements. This simple code gives an idea of how to use Spring's jdbc project APIs without importing unnecessary dependencies.",
+                "extracted_java_code_from_prediction": "import java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.PreparedStatement;\nimport java.sql.ResultSet;\nimport javax.sql.DataSource;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        String jdbcUrl = \"jdbc:mysql://localhost:3306/testdb\";\n        String username = \"root\";\n        String password = \"password\";\n\n        String query = \"SELECT * FROM test_table\";\n\n        try (Connection conn = DriverManager.getConnection(jdbcUrl, username, password);\n             PreparedStatement stmt = conn.prepareStatement(query)) {\n\n            ResultSet rs = stmt.executeQuery();\n\n            while (rs.next()) {\n                String column1 = rs.getString(\"column1\");\n                int column2 = rs.getInt(\"column2\");\n                double column3 = rs.getDouble(\"column3\");\n\n                System.out.println(\"Column 1: \" + column1);\n                System.out.println(\"Column 2: \" + column2);\n                System.out.println(\"Column 3: \" + column3);\n            }\n\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n\n    }\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.sql.Connection",
+                    "java.sql.DriverManager",
+                    "java.sql.PreparedStatement",
+                    "java.sql.ResultSet",
+                    "javax.sql.DataSource"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.sql.Connection",
+                    "java.sql.DriverManager",
+                    "java.sql.PreparedStatement",
+                    "java.sql.ResultSet",
+                    "javax.sql.DataSource"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 5,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.569981038570404,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SqlRowSetResultSetExtractor\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, we can't provide a complete code in this instance as the specification of what you need varies greatly depending on what specific task you want to achieve in your \"Main\" class. The SqlRowSetResultSetExtractor depends on the specific database you are using (Oracle, SQL Server, etc.) and you would need to have the correct JDBC driver for that database to ensure it can be properly integrated.\n\nHowever, you can provide an example of how to use the SqlRowSetResultSetExtractor in a Spring Boot application:\n\n```java\nimport org.springframework.jdbc.core.SqlRowSetResultSetExtractor;\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.support.rowset.SqlRowSet;\n\npublic class Main {\n  public static void main(String[] args) {\n    JdbcTemplate jdbcTemplate = new JdbcTemplate();\n    SqlRowSetResultSetExtractor extractor = new SqlRowSetResultSetExtractor();\n    SqlRowSet rowSet = jdbcTemplate.query(\"SELECT * FROM table\", extractor);\n    \n    // iterate over SqlRowSet and print the values\n    while(rowSet.next()) {\n      System.out.println(rowSet.getString(\"columnName\"));\n    }\n  }\n}\n```\nThis program will select everything from the table named \"table\". The result will then be processed with a \"SqlRowSetResultSetExtractor\" that creates a result set object based on the \"sql.ResultSet\".\n\nRemember to replace `\"SELECT * FROM table\"` and `\"columnName\"` with your own SQL queries and column names respectively. Also, add the necessary Spring Boot and JDBC dependencies to your project to compile and run this program.",
+                "extracted_java_code_from_prediction": "import org.springframework.jdbc.core.SqlRowSetResultSetExtractor;\nimport org.springframework.jdbc.core.JdbcTemplate;\nimport org.springframework.jdbc.support.rowset.SqlRowSet;\n\npublic class Main {\n  public static void main(String[] args) {\n    JdbcTemplate jdbcTemplate = new JdbcTemplate();\n    SqlRowSetResultSetExtractor extractor = new SqlRowSetResultSetExtractor();\n    SqlRowSet rowSet = jdbcTemplate.query(\"SELECT * FROM table\", extractor);\n    \n    // iterate over SqlRowSet and print the values\n    while(rowSet.next()) {\n      System.out.println(rowSet.getString(\"columnName\"));\n    }\n  }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.jdbc.core.SqlRowSetResultSetExtractor",
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.support.rowset.SqlRowSet"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.jdbc.core.SqlRowSetResultSetExtractor",
+                    "org.springframework.jdbc.core.JdbcTemplate",
+                    "org.springframework.jdbc.support.rowset.SqlRowSet"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4920107424259186,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SqlRowSetResultSetExtractor\" API from \"spring-jdbc-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-jdbc-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe problem you are asking is asking for a complete Java program but without any clear requirements or specifications on what the program should do, which API's should be used, and so on. We're currently not able to create a code for your requirement as the missing information might be a part of your project requirement and hence, it cannot be accomplished without clear specifications. However, here's a simple \"Hello World\" program in Java:\n\n```java\npublic class Main {\n\n    public static void main(String[] args) {\n        System.out.println(\"Hello World!\");\n    }\n}\n```\nIn this program, \"Hello World!\" will print to the console.",
+                "extracted_java_code_from_prediction": "public class Main {\n\n    public static void main(String[] args) {\n        System.out.println(\"Hello World!\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.2861722707748413,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        }
+    }
+}

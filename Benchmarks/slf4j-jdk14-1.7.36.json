@@ -1,0 +1,16 @@
+{
+    "jar_name": "slf4j-jdk14-1.7.36.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from slf4j-jdk14-1.7.36 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from slf4j-jdk14-1.7.36 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of a project to extract the class names. However, I can provide you with a general approach to solve this problem.\n\nTo list correct API's class names from a project, you would typically need to:\n\n1. Access the source code of the project.\n2. Parse the source code to identify classes.\n3. Check if the class is abstract.\n4. If the class is not abstract, add it to the list.\n\nHowever, as I don't have direct access to the source code of a project, I can't provide you with the exact list of classes. However, I can provide you with a general approach to solve this problem.\n\nHere's a Python example of how you might approach this problem:\n\n```python\nimport os\nimport re\n\ndef get_classes(directory):\n    classes = []\n    for root, dirs, files in os.walk(directory):\n        for file in files:\n            if file.endswith(\".java\"):\n                with open(os.path.join(root, file), 'r') as f:\n                    content = f.read()\n                    class_names = re.findall(r'public\\s+class\\s+(\\w+)', content)\n                    for class_name in class_names:\n                        if not re.search(r'abstract\\s+class\\s+\\1', content):\n                            classes.append(class_name)\n    return classes\n\nclasses = get_classes('/path/to/your/project')\nprint(classes)\n```\n\nThis script will walk through all the Java files in the specified directory and its subdirectories, and for each file, it will find all public classes that are not abstract. It will then print out the names of these classes.\n\nPlease note that this is a general approach and might not work perfectly for all projects. Also, it's important to respect the copyright and licensing of the project you're trying to analyze.",
+        "extracted_APIs_from_prediction": [],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 0,
+        "model_confidence": 0.7039700150489807,
+        "failure_rate_for_APIs": 1,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

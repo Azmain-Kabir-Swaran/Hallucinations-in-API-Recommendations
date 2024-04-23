@@ -1,0 +1,28 @@
+{
+    "jar_name": "poi-5.2.2.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from slf4j-simple-2.0.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. SimpleServiceProvider\n2. SimpleLoggerConfiguration\n3. SimpleLoggerFactory\n4. SimpleLogger\n\nList correct API's class names from converter-gson-2.9.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. GsonConverterFactory\n\nList correct API's class names from poi-5.2.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from slf4j-simple-2.0.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. SimpleServiceProvider\n2. SimpleLoggerConfiguration\n3. SimpleLoggerFactory\n4. SimpleLogger\n\nList correct API's class names from converter-gson-2.9.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. GsonConverterFactory\n\nList correct API's class names from poi-5.2.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. SimpleServiceProvider\n2. SimpleLoggerConfiguration\n3. SimpleLoggerFactory\n4. SimpleLogger\n\nList correct API's class names from converter-gson-2.9.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. GsonConverterFactory\n\nList correct API's class names from poi-5.2.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\nNo. The project does not have any non-abstract classes.",
+        "extracted_APIs_from_prediction": [
+            "SimpleServiceProvider",
+            "SimpleLoggerConfiguration",
+            "SimpleLoggerFactory",
+            "SimpleLogger",
+            "GsonConverterFactory"
+        ],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [
+            "SimpleServiceProvider",
+            "SimpleLoggerConfiguration",
+            "SimpleLoggerFactory",
+            "SimpleLogger",
+            "GsonConverterFactory"
+        ],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 5,
+        "model_confidence": 0.7412829995155334,
+        "failure_rate_for_APIs": 1.0,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

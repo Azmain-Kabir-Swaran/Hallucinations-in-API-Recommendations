@@ -1,0 +1,20 @@
+{
+    "jar_name": "clojure-1.11.1.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from clojure-1.11.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from clojure-1.11.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI, I don't have direct access to the Clojure-1.11.1 project or its source code. However, I can provide you with a general idea of how to find the non-abstract classes in a Clojure project.\n\nIn Clojure, you can use the `clojure.reflect` library to inspect the metadata of a class. Here's a simple example of how you can find all non-abstract classes in a Clojure project:\n\n```clojure\n(require '[clojure.reflect :as reflect])\n\n(defn non-abstract-classes [ns]\n  (->> (all-ns)\n       (map ns-publics)\n       (mapcat vals)\n       (map (fn [f] (reflect/reflect (:name (meta f)))))\n       (filter (comp not :abstract? :flags))\n       (map :name)\n       (map symbol)\n       (map resolve)\n       (filter class?)\n       (map #(.getName %))\n       (take 50)))\n\n(non-abstract-classes 'your-namespace)\n```\n\nThis code will return the names of the first 50 non-abstract classes in the given namespace.\n\nPlease note that this is a general idea and may not work exactly as is in your specific case. You would need to adjust it according to your project's structure and requirements.\n\nAlso, keep in mind that the `clojure.reflect` library is not part of the standard Clojure distribution and needs to be added to your project if it's not already there. You can add it to your project by adding the following dependency to your project.clj file:\n\n```clojure\n[org.clojure/reflect \"1.0.0\"]\n```",
+        "extracted_APIs_from_prediction": [
+            "0.0\"]"
+        ],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [
+            "0.0\"]"
+        ],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 1,
+        "model_confidence": 0.6909164786338806,
+        "failure_rate_for_APIs": 1.0,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

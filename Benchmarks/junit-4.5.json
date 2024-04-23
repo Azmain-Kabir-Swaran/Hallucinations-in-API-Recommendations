@@ -1,0 +1,312 @@
+{
+    "jar_name": "junit-4.5.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from junit-4.5 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from junit-4.5 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the JUnit project or its source code. However, I can provide you with a general idea of the classes that are part of JUnit and are not abstract.\n\nHere are some of the classes that are part of JUnit and are not abstract:\n\n1. `Assert`: This class provides static methods for common assertions.\n2. `AssertEquals`: This class provides static methods for comparing objects.\n3. `AssertSame`: This class provides static methods for comparing object references.\n4. `AssertTrue`: This class provides static methods for testing boolean conditions.\n5. `AssertFalse`: This class provides static methods for testing boolean conditions.\n6. `AssertNull`: This class provides static methods for testing nullity.\n7. `AssertNotNull`: This class provides static methods for testing nullity.\n8. `AssertSame`: This class provides static methods for testing object identity.\n9. `AssertNotSame`: This class provides static methods for testing object identity.\n10. `AssertArrayEquals`: This class provides static methods for comparing arrays.\n11. `AssertEqualsNoOrder`: This class provides static methods for comparing collections.\n12. `AssertEqualsCanonicalForm`: This class provides static methods for comparing objects.\n13. `AssertEqualsNoOrderCanonicalForm`: This class provides static methods for comparing collections.\n14. `AssertEqualsIgnoreCase`: This class provides static methods for comparing strings.\n15. `AssertEqualsNoOrderIgnoreCase`: This class provides static methods for comparing collections.\n16. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n17. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n18. `AssertEqualsNoOrderCanonicalForm`: This class provides static methods for comparing collections.\n19. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n20. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n21. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n22. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n23. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n24. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n25. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n26. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n27. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n28. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n29. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n30. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n31. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n32. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n33. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n34. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n35. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n36. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n37. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n38. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for comparing objects.\n39. `AssertEqualsNoOrderCanonicalFormIgnoreCase`: This class provides static methods for comparing collections.\n40. `AssertEqualsCanonicalFormIgnoreCase`: This class provides static methods for",
+        "extracted_APIs_from_prediction": [
+            "Assert",
+            "AssertEquals",
+            "AssertSame",
+            "AssertTrue",
+            "AssertFalse",
+            "AssertNull",
+            "AssertNotNull",
+            "AssertNotSame",
+            "AssertArrayEquals",
+            "AssertEqualsNoOrder",
+            "AssertEqualsCanonicalForm",
+            "AssertEqualsNoOrderCanonicalForm",
+            "AssertEqualsIgnoreCase",
+            "AssertEqualsNoOrderIgnoreCase",
+            "AssertEqualsCanonicalFormIgnoreCase",
+            "AssertEqualsNoOrderCanonicalFormIgnoreCase"
+        ],
+        "correct_API_predictions": [
+            "Assert"
+        ],
+        "wrong_API_predictions": [
+            "AssertEquals",
+            "AssertSame",
+            "AssertTrue",
+            "AssertFalse",
+            "AssertNull",
+            "AssertNotNull",
+            "AssertNotSame",
+            "AssertArrayEquals",
+            "AssertEqualsNoOrder",
+            "AssertEqualsCanonicalForm",
+            "AssertEqualsNoOrderCanonicalForm",
+            "AssertEqualsIgnoreCase",
+            "AssertEqualsNoOrderIgnoreCase",
+            "AssertEqualsCanonicalFormIgnoreCase",
+            "AssertEqualsNoOrderCanonicalFormIgnoreCase"
+        ],
+        "number_of_correct_APIs": 1,
+        "number_of_wrong_APIs": 15,
+        "failure_rate_for_APIs": 0.9375,
+        "model_confidence": 0.8726630210876465,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "Assert": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Assert\" API from \"junit-4.5\" project along with other necessary APIs. The dependency is already added for \"junit-4.5\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Assert\" API from \"junit-4.5\" project along with other necessary APIs. The dependency is already added for \"junit-4.5\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use Junit's assertions in Java code, we need to ensure that the dependencies are set up correctly. Here is a basic setup of JUnit 4.5 for Java, also note the main class should be \"Main\".\n\n**pom.xml**\n```xml\n<project xmlns=\"http://maven.apache.com/\" s:version=\"1.0.0\">\n    <modelVersion>4.0.0</modelVersion>\n    <groupId>org.example</groupId>\n    <artifactId>my-app</artifactId>\n    <version>1.0.0</version>\n    <dependencies>\n        <dependency>\n            <groupId>junit</groupId>\n            <artifactId>junit</artifactId>\n            <version>4.5</version>\n            <scope>test</scope>\n        </dependency>\n    </dependencies>\n</project>\n```\n\nHere's a very basic example of a program using JUnit assertions in Java.\n\n**Main.java**\n```java\nimport org.junit.Test;\nimport static org.junit.Assert.*;\n\npublic class Main {\n\n    @Test\n    public void testAdd() {\n        String str = \"Junit is working fine\";\n        assertEquals(\"Junit is working fine\", str);\n    }\n\n    public static void main(String[] args) {\n        // no need to write any code here\n    }\n}\n```\nIn the above code, the `@Test` annotation is used to define the `testAdd` method as a test method. The `assertEquals` method is used as a JUnit assertion to test that `str` is equal to \"Junit is working fine\".\n\nPlease make sure to run these in a directory that is managed by Maven.\n\nIf you're using an IDE like IntelliJ, you can compile your main class by simply running the main method in the IDE or by executing the command `mvn clean install` in the command line.",
+                "extracted_java_code_from_prediction": "import org.junit.Test;\nimport static org.junit.Assert.*;\n\npublic class Main {\n\n    @Test\n    public void testAdd() {\n        String str = \"Junit is working fine\";\n        assertEquals(\"Junit is working fine\", str);\n    }\n\n    public static void main(String[] args) {\n        // no need to write any code here\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Test",
+                    "static org.junit.Assert.*"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "static org.junit.Assert.*"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.6320478320121765,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java:[9,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n  symbol:   method assertEquals(java.lang.String,java.lang.String)\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.964 s\n[INFO] Finished at: 2024-04-16T23:23:13-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java:[9,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n[ERROR]   symbol:   method assertEquals(java.lang.String,java.lang.String)\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 24,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Assert\" API from \"junit-4.5\" project along with other necessary APIs. The dependency is already added for \"junit-4.5\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use the \"Assert\" API in your code, import the \"org.junit.Assert\" package, since \"Assert\" is a JUnit class. It includes a lot of methods to test the equality, relationships, and conditions of the objects in your code.\n\nHere's a simple example of how you could use the \"Assert\" API:\n\n```java\nimport org.junit.Assert;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Assert.assertEquals(\"Hello\", \"Hello\");\n    }\n}\n```\n\nIn this code, we simply assert that the string \"Hello\" is equal to \"Hello\". If the strings are equal, the assertion is successful. If they are not equal, the JUnit test will fail with an AssertionError.\n\nRemember, this doesn't contain any other necessary APIs, it's just an example and doesn't do anything useful on its own. If you need more complex functionality, you would need to import additional necessary APIs. These APIs usually need to be added to the build path or added as dependencies to the Maven project.",
+                "extracted_java_code_from_prediction": "import org.junit.Assert;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Assert.assertEquals(\"Hello\", \"Hello\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Assert"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Assert"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4200657308101654,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.031 s\n[INFO] Finished at: 2024-04-16T23:23:15-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Assert\" API from \"junit-4.5\" project along with other necessary APIs. The dependency is already added for \"junit-4.5\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, given that you need to use the Assert API from JUnit 4.5 and you are already added the JUnit project dependency in your classpath. Here is a simple Java code using the Assert API:\n\n```java\nimport org.junit.Assert;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Test case 1\n        int num1 = 5;\n        int num2 = 10;\n        Assert.assertEquals(\"Test Case 1 Failed\", num1 + num2, 15);\n        System.out.println(\"Test Case 1 Passed\");\n\n        // Test case 2\n        String str1 = \"Hello\";\n        String str2 = \"World\";\n        Assert.assertEquals(\"Test Case 2 Failed\", str1 + \" \" + str2, \"Hello World\");\n        System.out.println(\"Test Case 2 Passed\");\n\n        // Test case 3\n        boolean condition = true;\n        Assert.assertTrue(\"Test Case 3 Failed\", condition);\n        System.out.println(\"Test Case 3 Passed\");\n    }\n}\n```\n\nIn the code provided above, we have three test cases as follows:\n\n1. Test case 1 - This test case verifies that `num1 + num2` equals to 15.\n\n2. Test case 2 - This test case verifies that `str1 + \" \" + str2` equals to \"Hello World\".\n\n3. Test case 3 - This test case verifies the true condition.\n\nNote: The test cases should be written as expected because we are using Assert API's `assertEquals()` and `assertTrue()` methods. If the expected and actual values do not match then it will throw AssertionError.",
+                "extracted_java_code_from_prediction": "import org.junit.Assert;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Test case 1\n        int num1 = 5;\n        int num2 = 10;\n        Assert.assertEquals(\"Test Case 1 Failed\", num1 + num2, 15);\n        System.out.println(\"Test Case 1 Passed\");\n\n        // Test case 2\n        String str1 = \"Hello\";\n        String str2 = \"World\";\n        Assert.assertEquals(\"Test Case 2 Failed\", str1 + \" \" + str2, \"Hello World\");\n        System.out.println(\"Test Case 2 Passed\");\n\n        // Test case 3\n        boolean condition = true;\n        Assert.assertTrue(\"Test Case 3 Failed\", condition);\n        System.out.println(\"Test Case 3 Passed\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Assert"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Assert"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6171135902404785,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java:[18,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java:[23,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.162 s\n[INFO] Finished at: 2024-04-16T23:23:17-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java:[18,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java:[23,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 23,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Assert\" API from \"junit-4.5\" project along with other necessary APIs. The dependency is already added for \"junit-4.5\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a Java code using the \"Assert\" API from the \"junit-4.5\" project:\n\n```java\nimport org.junit.Assert;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Test case 1: Equality Check\n        Assert.assertEquals(\"Message\", 1, 1);\n        \n        // Test case 2: Non-Equality Check\n        Assert.assertNotEquals(\"Message\", 1, 2);\n        \n        // Test case 3: Null Check\n        String nullString = null;\n        Assert.assertNull(\"Message\", nullString);\n        \n        // Test case 4: Not Null Check\n        String notNullString = \"Test\";\n        Assert.assertNotNull(\"Message\", notNullString);\n        \n        // Test case 5: True Check\n        boolean condition = true;\n        Assert.assertTrue(\"Message\", condition);\n        \n        // Test case 6: False Check\n        boolean falseCondition = false;\n        Assert.assertFalse(\"Message\", falseCondition);\n    }\n}\n```\n\nIn this example, there are tests for six scenarios: check if two equal values or numbers are equal, check if two different values or numbers are not equal, check if a null object is null, check if a non-null object is not null, check if a true condition is true, and check if a false condition is not false.\n\nEach assertion test has a message that will be displayed if the assertion fails. The code will compile and run just fine. The Junit library is already included and the import statement for it is valid without adding a new dependency. We don't need to import APIs from other libraries to perform these tests, so that should meet your criteria.",
+                "extracted_java_code_from_prediction": "import org.junit.Assert;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Test case 1: Equality Check\n        Assert.assertEquals(\"Message\", 1, 1);\n        \n        // Test case 2: Non-Equality Check\n        Assert.assertNotEquals(\"Message\", 1, 2);\n        \n        // Test case 3: Null Check\n        String nullString = null;\n        Assert.assertNull(\"Message\", nullString);\n        \n        // Test case 4: Not Null Check\n        String notNullString = \"Test\";\n        Assert.assertNotNull(\"Message\", notNullString);\n        \n        // Test case 5: True Check\n        boolean condition = true;\n        Assert.assertTrue(\"Message\", condition);\n        \n        // Test case 6: False Check\n        boolean falseCondition = false;\n        Assert.assertFalse(\"Message\", falseCondition);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Assert"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Assert"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6033912301063538,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[13,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[17,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[25,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[29,9] cannot find symbol\n  symbol:   variable Assert\n  location: class org.example.Main\n[INFO] 7 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.873 s\n[INFO] Finished at: 2024-04-16T23:23:18-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[13,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[17,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[25,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java:[29,9] cannot find symbol\n[ERROR]   symbol:   variable Assert\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 29,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Assert\" API from \"junit-4.5\" project along with other necessary APIs. The dependency is already added for \"junit-4.5\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a Java application that uses the \"Assert\" API in JUnit 4.5. The JUnit library must be included in the classpath, and all dependencies are handled at compile-time.\n\nPlease note that the import statements for the necessary classes like `Test` or `Assert` are self-explanatory. They are provided by JUnit framework.\n\nTo add a dependency to your project, you can add the Maven dependency in your `pom.xml` file.\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>junit</groupId>\n        <artifactId>junit</artifactId>\n        <version>4.5</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```\nThen, you can use the Assert library in your classes.\n\n```java\nimport org.junit.Test;\nimport static org.junit.Assert.*;\n\npublic class Main {\n    @Test\n    public void testAdd() {\n        String str = \"Junit is working fine\";\n        assertEquals(\"Junit is working fine\", str);\n    }\n\n    public static void main(String[] args) {\n        System.out.println(\"Main method executing...\");\n    }\n}\n```\nIn the above code, the `testAdd()` method is used to test the add functionality of the application. This method checks if \"Junit is working fine\" is equal to a variable `str` using the `assertEquals()` method provided by the JUnit framework.\n\nYou can run the `testAdd()` method by adding the `@Test` annotation to this method. This will ensure that the test is picked up by the JUnit testing framework.\n\nIf you're planning to run this code in a Maven project, you can do so by placing this code inside a class in the src/test directory and use the Maven Surefire plugin to run the tests. The Maven command would look like this:\n```shell\nmvn surefire:test\n```",
+                "extracted_java_code_from_prediction": "import org.junit.Test;\nimport static org.junit.Assert.*;\n\npublic class Main {\n    @Test\n    public void testAdd() {\n        String str = \"Junit is working fine\";\n        assertEquals(\"Junit is working fine\", str);\n    }\n\n    public static void main(String[] args) {\n        System.out.println(\"Main method executing...\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Test",
+                    "static org.junit.Assert.*"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "static org.junit.Assert.*"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.6030199527740479,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n  symbol:   method assertEquals(java.lang.String,java.lang.String)\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.048 s\n[INFO] Finished at: 2024-04-16T23:23:20-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n[ERROR]   symbol:   method assertEquals(java.lang.String,java.lang.String)\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 24,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.5/Assert/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

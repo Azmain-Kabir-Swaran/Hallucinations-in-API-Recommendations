@@ -1,0 +1,902 @@
+{
+    "jar_name": "testng-7.9.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from testng-7.9.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from testng-7.9.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the TestNG project or its source code. However, based on the information provided, I can provide you with a list of some of the classes that are likely to be non-abstract in the TestNG project.\n\n1. TestNG\n2. Suite\n3. Test\n4. TestContext\n5. TestFactory\n6. TestListenerAdapter\n7. TestNGListener\n8. TestNGMethod\n9. TestRunner\n10. TestResult\n11. TestSuite\n12. TestSuiteListener\n13. TestSuiteResult\n14. TestSuiteRunner\n15. TestSuiteXmlParser\n16. TestSuiteXmlParserListener\n17. TestSuiteXmlParserListener\n18. TestSuiteXmlParserListener\n19. TestSuiteXmlParserListener\n20. TestSuiteXmlParserListener\n21. TestSuiteXmlParserListener\n22. TestSuiteXmlParserListener\n23. TestSuiteXmlParserListener\n24. TestSuiteXmlParserListener\n25. TestSuiteXmlParserListener\n26. TestSuiteXmlParserListener\n27. TestSuiteXmlParserListener\n28. TestSuiteXmlParserListener\n29. TestSuiteXmlParserListener\n30. TestSuiteXmlParserListener\n31. TestSuiteXmlParserListener\n32. TestSuiteXmlParserListener\n33. TestSuiteXmlParserListener\n34. TestSuiteXmlParserListener\n35. TestSuiteXmlParserListener\n36. TestSuiteXmlParserListener\n37. TestSuiteXmlParserListener\n38. TestSuiteXmlParserListener\n39. TestSuiteXmlParserListener\n40. TestSuiteXmlParserListener\n41. TestSuiteXmlParserListener\n42. TestSuiteXmlParserListener\n43. TestSuiteXmlParserListener\n44. TestSuiteXmlParserListener\n45. TestSuiteXmlParserListener\n46. TestSuiteXmlParserListener\n47. TestSuiteXmlParserListener\n48. TestSuiteXmlParserListener\n49. TestSuiteXmlParserListener\n50. TestSuiteXmlParserListener\n\nPlease note that this list is based on the assumption that the classes you are looking for are located in the TestNG project and are not abstract. If you are looking for classes in a different project or a different set of classes, the list will need to be updated accordingly.",
+        "extracted_APIs_from_prediction": [
+            "TestNG",
+            "Suite",
+            "Test",
+            "TestContext",
+            "TestFactory",
+            "TestListenerAdapter",
+            "TestNGListener",
+            "TestNGMethod",
+            "TestRunner",
+            "TestResult",
+            "TestSuite",
+            "TestSuiteListener",
+            "TestSuiteResult",
+            "TestSuiteRunner",
+            "TestSuiteXmlParser",
+            "TestSuiteXmlParserListener"
+        ],
+        "correct_API_predictions": [
+            "TestNG",
+            "TestListenerAdapter",
+            "TestNGMethod",
+            "TestRunner",
+            "TestResult"
+        ],
+        "wrong_API_predictions": [
+            "Suite",
+            "Test",
+            "TestContext",
+            "TestFactory",
+            "TestNGListener",
+            "TestSuite",
+            "TestSuiteListener",
+            "TestSuiteResult",
+            "TestSuiteRunner",
+            "TestSuiteXmlParser",
+            "TestSuiteXmlParserListener"
+        ],
+        "number_of_correct_APIs": 5,
+        "number_of_wrong_APIs": 11,
+        "failure_rate_for_APIs": 0.6875,
+        "model_confidence": 0.7981248497962952,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "TestNG": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"TestNG\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNG\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTestNG is a testing framework for the Java programming language, developed primarily by Curtis Masterson and it is available on Maven Central repository. Here is a simple example of how you can use TestNG in a project.\n\nFirst, you need to add TestNG library to your project, as this library is not part of the default Java library, so you will need to add it manually.\n\nStep 1:\nAdd the following to your pom.xml file inside the dependencies tag:\n\n```xml\n<dependency>\n    <groupId>org.testng</groupId>\n    <artifactId>testng</artifactId>\n    <version>7.9.0</version>\n    <scope>test</scope>\n</dependency>\n```\n\nStep 2:\nDefine a test class with annotation @Test:\n\n```java\nimport org.testng.Assert;\nimport org.testng.annotations.Test;\n\npublic class Main {\n    @Test\n    public void sum() {\n        int result = sum(1, 2);\n        Assert.assertEquals(result, 3);\n    }\n\n    public int sum(int a, int b) {\n        return a + b;\n    }\n}\n```\n\nStep 3:\nDefine a testng.xml to run your tests:\n\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<tests>\n  <test name=\"My First Test\">\n    <classes>\n      <class name=\"Main\"/>\n    </classes>\n  </test>\n</tests>\n```\n\nStep 4:\nCompile and run your test using Maven or using your preferred IDE.\n\nIf you need to use other APIs, make sure they are added in the Maven dependencies and imported properly. If you're using other APIs that are not on Maven repositories, you may need to add those repositories in your Maven pom file.",
+                "extracted_java_code_from_prediction": "import org.testng.Assert;\nimport org.testng.annotations.Test;\n\npublic class Main {\n    @Test\n    public void sum() {\n        int result = sum(1, 2);\n        Assert.assertEquals(result, 3);\n    }\n\n    public int sum(int a, int b) {\n        return a + b;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.Assert",
+                    "org.testng.annotations.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.Assert",
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6489257216453552,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNG\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here's an example of a simple TestNG program using \"testng-7.9.0\" dependency:\n\n```java\nimport org.testng.Assert;\nimport org.testng.annotations.Test;\n\npublic class Main {\n  \n    @Test\n    public void exampleTest() {\n        String str = \"TestNG\";\n        Assert.assertEquals(str, \"TestNG\");\n    }\n}\n```\n\nJust to explain the code a bit:\n\nThe `@Test` annotation tells TestNG that this method should be executed as a test case.\n\nThe `Assert.assertEquals(str, \"TestNG\")` line is checking whether `str` equals \"TestNG\", it will throw an AssertionError if it's not true.\n\nThis example also assumes that TestNG is configured correctly on your machine and that you have a TestNG library available to compile your Java code.\n\nPlease replace the example with your own code based on your requirement and ensure that you import the necessary packages correctly.",
+                "extracted_java_code_from_prediction": "import org.testng.Assert;\nimport org.testng.annotations.Test;\n\npublic class Main {\n  \n    @Test\n    public void exampleTest() {\n        String str = \"TestNG\";\n        Assert.assertEquals(str, \"TestNG\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.Assert",
+                    "org.testng.annotations.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.Assert",
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4641436040401459,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNG\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo create a complete working Java program utilizing TestNG framework, the necessary import statements and a main method class are as follows:\n\n```java\nimport org.testng.Assert;\nimport org.testng.annotations.Test;\nimport org.testng.annotations.BeforeTest;\nimport org.testng.annotations.AfterTest;\n\npublic class Main {\n\n  @Test\n  public void testNGTest1() {\n    Assert.assertEquals(2,2);\n  }\n\n  @BeforeTest\n  public void beforeTest() {\n    System.out.println(\"Before Test\");\n  }\n\n  @AfterTest\n  public void afterTest() {\n    System.out.println(\"After Test\");\n  }\n}\n```\n\nExplanation:\nThe @Test annotation marks the testNGTest1 method as a test that TestNG will execute. This method uses the Assert.assertEquals(2,2) method from the Java Utilities Package, which checks whether the first argument equals the second argument.\n\nThe @BeforeTest and @AfterTest annotations are used to execute code before and after the test methods respectively. \n\nIn the \"pom.xml\" file of your Maven project, make sure to include the following dependencies for TestNG:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.testng</groupId>\n        <artifactId>testng</artifactId>\n        <version>7.9.0</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "import org.testng.Assert;\nimport org.testng.annotations.Test;\nimport org.testng.annotations.BeforeTest;\nimport org.testng.annotations.AfterTest;\n\npublic class Main {\n\n  @Test\n  public void testNGTest1() {\n    Assert.assertEquals(2,2);\n  }\n\n  @BeforeTest\n  public void beforeTest() {\n    System.out.println(\"Before Test\");\n  }\n\n  @AfterTest\n  public void afterTest() {\n    System.out.println(\"After Test\");\n  }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.Assert",
+                    "org.testng.annotations.Test",
+                    "org.testng.annotations.BeforeTest",
+                    "org.testng.annotations.AfterTest"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.Assert",
+                    "org.testng.annotations.Test",
+                    "org.testng.annotations.BeforeTest",
+                    "org.testng.annotations.AfterTest"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5632942318916321,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNG\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple example of how to use \"TestNG\" with a \"main\" method named \"Main\" in a Java application.\n\n```java\nimport org.testng.annotations.Test;\nimport org.testng.annotations.BeforeTest;\nimport org.testng.annotations.AfterTest;\n\npublic class Main {\n\n    @BeforeTest\n    public void beforeTest() {\n        // This method will execute before every test method.\n        System.out.println(\"Before test\");\n    }\n\n    @AfterTest\n    public void afterTest() {\n        // This method will execute after every test method.\n        System.outk.println(\"After test\");\n    }\n\n    @Test\n    public void testExample() {\n        // This is a test method.\n        System.out.println(\"This is a test\");\n    }\n\n    public static void main(String[] args) {\n        // This is the main method.\n        System.out.println(\"This is the main method\");\n    }\n}\n```\n\nYou can run this code using a command-line tool such as Apache Maven or Gradle, or directly from your Java IDE. Note that \"@Test\", \"@BeforeTest\", and \"@AfterTest\" are TestNG annotations for test methods, and \"main\" is the entry point of the application.",
+                "extracted_java_code_from_prediction": "import org.testng.annotations.Test;\nimport org.testng.annotations.BeforeTest;\nimport org.testng.annotations.AfterTest;\n\npublic class Main {\n\n    @BeforeTest\n    public void beforeTest() {\n        // This method will execute before every test method.\n        System.out.println(\"Before test\");\n    }\n\n    @AfterTest\n    public void afterTest() {\n        // This method will execute after every test method.\n        System.outk.println(\"After test\");\n    }\n\n    @Test\n    public void testExample() {\n        // This is a test method.\n        System.out.println(\"This is a test\");\n    }\n\n    public static void main(String[] args) {\n        // This is the main method.\n        System.out.println(\"This is the main method\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.annotations.Test",
+                    "org.testng.annotations.BeforeTest",
+                    "org.testng.annotations.AfterTest"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.annotations.Test",
+                    "org.testng.annotations.BeforeTest",
+                    "org.testng.annotations.AfterTest"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5062893033027649,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNG/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNG/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNG/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNG/sample_4/Wrapper/src/main/java/org/example/Main.java:[19,15] cannot find symbol\n  symbol:   variable outk\n  location: class java.lang.System\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.653 s\n[INFO] Finished at: 2024-04-17T00:46:20-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNG/sample_4/Wrapper/src/main/java/org/example/Main.java:[19,15] cannot find symbol\n[ERROR]   symbol:   variable outk\n[ERROR]   location: class java.lang.System\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNG/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 15,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNG\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example program using TestNG to run a test. \n\n`Main.java`\n```java\nimport org.testng.annotations.Test;\n\npublic class Main {\n    @Test\n    public void testMethod() {\n        System.out.println(\"This is a TestNG test.\");\n    }\n}\n```\nThis code creates a simple Java class `Main`. \n\nThe class `Main` contains a test method annotated with `@Test` from the `testng-7.9.0` project.\n\nTo run this TestNG test, you should add testng.jar in your classpath and call TestNG on the command line with the fully qualified name of the test class:\n\nFor example:\n```bash\njava -cp .:<path-to-testng.jar> org.testng.TestNG Main.java\n```\nThe `<path-to-testng.jar>` can be found on your machine. You just need to unzip the `testng-7.9.0` project downloaded from Apache's website and search for `testng.jar` under the `lib` folder.",
+                "extracted_java_code_from_prediction": "import org.testng.annotations.Test;\n\npublic class Main {\n    @Test\n    public void testMethod() {\n        System.out.println(\"This is a TestNG test.\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.annotations.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.47952133417129517,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "TestListenerAdapter": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"TestListenerAdapter\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestListenerAdapter\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, I would be glad to help you with that. The \"TestListenerAdapter\" API comes with \"TestNG\" library. This is a simple example of using it:\n\n```java\nimport org.testng.ITestContext;\nimport org.testng.ITestListener;\nimport org.testng.ITestResult;\nimport org.testng.TestListenerAdapter;\n\npublic class TestClass extends TestListenerAdapter {\n\n    public void onTestStart(ITestResult result) {\n        System.out.println(\"Starting test: \" + result.getName());\n    }\n\n    public void onTestSuccess(ITestResult result) {\n        System.outou.println(\"Test \" + result.getName() + \" successful.\");\n    }\n\n    public void onTestFailure(ITestResult result) {\n        System.out.println(\"Test \" + result.getName() + \" failed.\");\n    }\n\n    public void onTestSkipped(ITestResult result) {\n        System.out.println(\"Test \" + result.getName() + \" skipped.\");\n    }\n}\n```\nFor this example, you need to define a TestNG xml file to run your tests which uses this listener:\n\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<suite name=\"suite-name\">\n    <test name=\"test-name\">\n        <classes>\n            <class name=\"TestClass\"/>\n        </classes>\n    </test>\n</suite>\n```\n\nRemember that the class you want to test needs to be executed by TestNG.\n\nIn this example, you use a simple class with methods defined to react to different states: start, success, failure and skip of a test. You can modify these methods to handle your requirements, such as logging failures, running some other processes, etc.\n\nKeep in mind that \"TestNG\" is a very handy tool for test automation in Java and \"TestListenerAdapter\" is a common approach to implement test events like listeners in TestNG. The advantage of using it is that you don't need to create your own listener interface and methods.",
+                "extracted_java_code_from_prediction": "import org.testng.ITestContext;\nimport org.testng.ITestListener;\nimport org.testng.ITestResult;\nimport org.testng.TestListenerAdapter;\n\npublic class TestClass extends TestListenerAdapter {\n\n    public void onTestStart(ITestResult result) {\n        System.out.println(\"Starting test: \" + result.getName());\n    }\n\n    public void onTestSuccess(ITestResult result) {\n        System.outou.println(\"Test \" + result.getName() + \" successful.\");\n    }\n\n    public void onTestFailure(ITestResult result) {\n        System.out.println(\"Test \" + result.getName() + \" failed.\");\n    }\n\n    public void onTestSkipped(ITestResult result) {\n        System.out.println(\"Test \" + result.getName() + \" skipped.\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.ITestContext",
+                    "org.testng.ITestListener",
+                    "org.testng.ITestResult",
+                    "org.testng.TestListenerAdapter"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.ITestContext",
+                    "org.testng.ITestListener",
+                    "org.testng.ITestResult",
+                    "org.testng.TestListenerAdapter"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5291931629180908,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_1/Wrapper/src/main/java/org/example/TestClass.java:[15,15] cannot find symbol\n  symbol:   variable outou\n  location: class java.lang.System\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.677 s\n[INFO] Finished at: 2024-04-17T00:47:07-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_1/Wrapper/src/main/java/org/example/TestClass.java:[15,15] cannot find symbol\n[ERROR]   symbol:   variable outou\n[ERROR]   location: class java.lang.System\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_1/Wrapper/src/main/java/org/example/TestClass.java",
+                                "line": 15,
+                                "column": 15,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestListenerAdapter\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a basic implementation of the listener that extends TestNG's TestListenerAdapter:\n\n```java\nimport org.testng.ITestContext;\nimport org.testng.ITestListener;\nimport org.testng.ITestResult;\nimport org.testng.TestListenerAdapter;\n\npublic class MyListener extends TestListenerAdapter {\n\n    @Override\n    public void onStart(ITestContext context) {\n        super.onStart(context);\n    }\n\n    @Override\n    public void onFinish(ITestContext context) {\n        super.onFinish(context);\n    }\n\n    @Override\n    public void onTestStart(ITestResult result) {\n        super.onTestStart(result);\n    }\n\n    @Override\n    public void onTestSuccess(ITestResult result) {\n        super.onTestSuccess(result);\n    }\n\n    @Override\n    public void onTestFailure(ITestResult result) {\n        super.onTestFailure(result);\n    }\n\n    @Override\n    public void onTestSkipped(ITestResult result) {\n        super.onTestSkipped(result);\n    }\n}\n```\n\nHere, we just override the necessary testng events.\n\nNow, to use it in TestNG XML, add this in your xml file:\n\n```xml\n<suite name=\"My test suite\">\n    <test name=\"Test\">\n        <classes>\n            <class name=\"com.mytests.MyTest\"/>\n        </classes>\n    </test>\n    <listeners>\n        <listener class-name=\"com.mytests.MyListener\"/>\n    </listeners>\n</suite>\n```\n\nAnd finally, to run this suite, add this to your `main` method:\n\n```java\npublic class Main {\n\n    public static void main(String[] args) {\n        TestNG testng = new TestNG();\n        testng.setTestClasses(new Object[] { MyTest.class });\n        testng.addListener(new MyListener());\n        testng.run();\n    }\n}\n```\n\nMake sure you replace the package and class names with your actual package and class names. Also, please note that if you have added TestNG dependency in your project, you should be using it everywhere where TestNG related functionality is needed, otherwise, you won't be able to use TestNG's classes.",
+                "extracted_java_code_from_prediction": "import org.testng.ITestContext;\nimport org.testng.ITestListener;\nimport org.testng.ITestResult;\nimport org.testng.TestListenerAdapter;\n\npublic class MyListener extends TestListenerAdapter {\n\n    @Override\n    public void onStart(ITestContext context) {\n        super.onStart(context);\n    }\n\n    @Override\n    public void onFinish(ITestContext context) {\n        super.onFinish(context);\n    }\n\n    @Override\n    public void onTestStart(ITestResult result) {\n        super.onTestStart(result);\n    }\n\n    @Override\n    public void onTestSuccess(ITestResult result) {\n        super.onTestSuccess(result);\n    }\n\n    @Override\n    public void onTestFailure(ITestResult result) {\n        super.onTestFailure(result);\n    }\n\n    @Override\n    public void onTestSkipped(ITestResult result) {\n        super.onTestSkipped(result);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.ITestContext",
+                    "org.testng.ITestListener",
+                    "org.testng.ITestResult",
+                    "org.testng.TestListenerAdapter"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.ITestContext",
+                    "org.testng.ITestListener",
+                    "org.testng.ITestResult",
+                    "org.testng.TestListenerAdapter"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.62664794921875,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestListenerAdapter\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic setup of a TestNG test with a TestListener. Make sure to replace the <code>MyTest</code> with your test name.\n\nAlso, add your needed dependencies to your classpath.\n\n```java\nimport org.testng.ITestContext;\nimport org.testng.ITestListener;\nimport org.testng.ITestResult;\nimport org.testng.annotations.BeforeTest;\nimport org.testng.annotations.Listeners;\nimport org.testng.annotations.Test;\n\n@Listeners(MyListener.class)\npublic class MyTest {\n    @Test\n    void testMethod() {\n        System.out.println(\"This is a test method\");\n    }\n}\n\nclass MyListener implements ITestListener {\n    @Override\n    public void onTestStart(ITestResult result) {\n        System.out.println(\"Test Started: \" + result.getName());\n    }\n    @Override\n    public void onTestSuccess(ITestResult result) {\n        System.out.println(\"Test Successful: \" + result.getName());\n    }\n    @Override\n    public void onTestFailure(ITestResult result) {\n        System.out.println(\"Test Failed: \" + result.getName());\n    }\n    @Override\n    public void onTestSkipped(ITestResult result) {\n        System.out.println(\"Test Skipped: \" + result.getName());\n    }\n    @Override\n    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {\n        // TODO Auto-generated method stub\n    }\n    @Override\n    public void onTestFailedWithTimeout(ITestResult result) {\n        System.out.println(\"Test Failed With Timeout: \" + result.getName());\n    }\n    @Override\n    public void onStart(ITestContext context) {\n        System.out.println(\"Started running tests: \" + context.getName());\n    }\n    @Override\n    public void onFinish(ITestContext context) {\n        System.out.println(\"Finished running tests: \" + context.getName());\n    }\n}\n```\n\nNote: You will need to add the following to your TestNG XML configuration file:\n\n```xml\n<suite name=\"Suite\">\n  <test name=\"Test\">\n    <classes>\n      <class name=\"MyTest\"/>\n    </classes>\n  </test>\n</suite>\n```\n\nThis code will log all started and finished tests, along with test start and success. You can expand these to include more detailed logging as needed.\n\nEnsure you have all necessary dependencies in your classpath (like TestNG).\n\nRemember to use the correct import statements. For example, for ITestContext and ITestResult, use:\n```java\nimport org.testng.ITestContext;\nimport org.testng.ITestResult;\n```\n\nAlso remember to use the correct TestNG XML file configuration.\n\nMake sure that your TestNG test class is annotated with @Listeners(MyListener.class) where MyListener is your implementation of ITestListener.\n\nAlso your class MyTest should extend TestNG's TestCase and use the annotations provided by TestNG.\n  \nIf you want to run your testng.xml in IntelliJ IDEA, you can set Run/Debug Configurations -> TestNG -> Suite XML -> Test Suite Location with your xml configuration.",
+                "extracted_java_code_from_prediction": "import org.testng.ITestContext;\nimport org.testng.ITestListener;\nimport org.testng.ITestResult;\nimport org.testng.annotations.BeforeTest;\nimport org.testng.annotations.Listeners;\nimport org.testng.annotations.Test;\n\n@Listeners(MyListener.class)\npublic class MyTest {\n    @Test\n    void testMethod() {\n        System.out.println(\"This is a test method\");\n    }\n}\n\nclass MyListener implements ITestListener {\n    @Override\n    public void onTestStart(ITestResult result) {\n        System.out.println(\"Test Started: \" + result.getName());\n    }\n    @Override\n    public void onTestSuccess(ITestResult result) {\n        System.out.println(\"Test Successful: \" + result.getName());\n    }\n    @Override\n    public void onTestFailure(ITestResult result) {\n        System.out.println(\"Test Failed: \" + result.getName());\n    }\n    @Override\n    public void onTestSkipped(ITestResult result) {\n        System.out.println(\"Test Skipped: \" + result.getName());\n    }\n    @Override\n    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {\n        // TODO Auto-generated method stub\n    }\n    @Override\n    public void onTestFailedWithTimeout(ITestResult result) {\n        System.out.println(\"Test Failed With Timeout: \" + result.getName());\n    }\n    @Override\n    public void onStart(ITestContext context) {\n        System.out.println(\"Started running tests: \" + context.getName());\n    }\n    @Override\n    public void onFinish(ITestContext context) {\n        System.out.println(\"Finished running tests: \" + context.getName());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.ITestContext",
+                    "org.testng.ITestListener",
+                    "org.testng.ITestResult",
+                    "org.testng.annotations.BeforeTest",
+                    "org.testng.annotations.Listeners",
+                    "org.testng.annotations.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.ITestContext",
+                    "org.testng.ITestListener",
+                    "org.testng.ITestResult",
+                    "org.testng.annotations.BeforeTest",
+                    "org.testng.annotations.Listeners",
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 6,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.16666666666666666,
+                "model_confidence": 0.7145466804504395,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestListenerAdapter\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe `TestListenerAdapter` API doesn't have a specific implementation to handle test events. Therefore, we cannot provide a complete code implementing it without knowing what exactly do you want to achieve in this case. But generally, here is an example of a simple test class using `TestNG`'s `ITestListener` interface:\n\n```java\nimport org.testng.Assert;\nimport org.testng.annotations.Test;\nimport org.testng.ITestListener;\nimport org.testng.ITestResult;\n\npublic class Main extends TestListenerAdapter {\n\n  @Override\n  public void onTestStart(ITestResult result) {\n    System.out.println(\"Test started: \" + result.getName());\n  }\n\n  @Override\n  public void onTestFailure(ITestResult result) {\n    System.outerr.println(\"Test failed: \" + result.getName());\n  }\n\n  @Test\n  public void testMethod() {\n    Assert.assertTrue(false, \"This test should fail\");\n  }\n}\n```\n\nIn this example, whenever a test starts (`onTestStart`) or fails (`onTestFailure`), it logs a message to standard output.\n\nPlease adjust the `onTestStart`, `onTestFailure` methods to handle whatever test events you want to capture.\n\nAlso, please note that Java 8+ is required to use TestNG and its APIs.",
+                "extracted_java_code_from_prediction": "import org.testng.Assert;\nimport org.testng.annotations.Test;\nimport org.testng.ITestListener;\nimport org.testng.ITestResult;\n\npublic class Main extends TestListenerAdapter {\n\n  @Override\n  public void onTestStart(ITestResult result) {\n    System.out.println(\"Test started: \" + result.getName());\n  }\n\n  @Override\n  public void onTestFailure(ITestResult result) {\n    System.outerr.println(\"Test failed: \" + result.getName());\n  }\n\n  @Test\n  public void testMethod() {\n    Assert.assertTrue(false, \"This test should fail\");\n  }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.Assert",
+                    "org.testng.annotations.Test",
+                    "org.testng.ITestListener",
+                    "org.testng.ITestResult"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.Assert",
+                    "org.testng.annotations.Test",
+                    "org.testng.ITestListener",
+                    "org.testng.ITestResult"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4751901626586914,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java:[8,27] cannot find symbol\n  symbol: class TestListenerAdapter\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,3] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java:[15,3] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java:[17,11] cannot find symbol\n  symbol:   variable outerr\n  location: class java.lang.System\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.675 s\n[INFO] Finished at: 2024-04-17T00:47:12-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java:[8,27] cannot find symbol\n[ERROR]   symbol: class TestListenerAdapter\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,3] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java:[15,3] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java:[17,11] cannot find symbol\n[ERROR]   symbol:   variable outerr\n[ERROR]   location: class java.lang.System\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 3,
+                                "message": "method does not override or implement a method from a supertype"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 27,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 3,
+                                "message": "method does not override or implement a method from a supertype"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestListenerAdapter\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's an example of a Java class that extends TestListenerAdapter, which includes the necessary import statements, assuming that the TestNG framework is used:\n\n```java\nimport org.testng.ITestResult;\nimport org.testng.TestListenerAdapter;\n\npublic class MyListener extends TestListenerAdapter {\n\n    @Override\n    public void onTestStart(ITestResult tr) {\n        super.onTestStart(tr);\n        System.out.println(\"Test started: \" + tr.getTestName());\n    }\n\n    @Override\n    public void onTestSuccess(ITestResult tr) {\n        super.onTestSuccess(tr);\n        System.out\n        System.out.println(\"Test passed: \" + tr.getTestName());\n    }\n\n    @Override\n    public void onTestFailure(ITestResult tr) {\n        super.onTestFailure(tr);\n        System.out.println(\"Test failed: \" + tr.getTestName());\n    }\n\n    @Override\n    public void onTestSkipped(ITestResult tr) {\n        super.onTestSkipped(tr);\n        System.out.println(\"Test skipped: \" + tr.getTestName());\n    }\n}\n```\nThis class overrides various TestListenerAdapter methods to print the name of the test as it begins, passes, fails, or is skipped. This demonstrates a simple way to use TestListenerAdapter and does not require adding any other dependencies.\n\nNote: Replace the content of the main method in the Main class with your own requirements.\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        // Your main method logic here.\n    }\n}\n```\nThe above code should compile and work on your local Java environment once imported into an IDE that supports TestNG testing.\n\nRemember to add your `MyListener` as listener in the TestNG xml configuration file:\n\n```xml\n<listeners>\n    <listener class-name=\"MyListener\" />\n</listeners>\n```\nThis way, when TestNG runs your tests, it will use your listener, and your listener will react appropriately to each test's start, success, failure, or skipped state.",
+                "extracted_java_code_from_prediction": "import org.testng.ITestResult;\nimport org.testng.TestListenerAdapter;\n\npublic class MyListener extends TestListenerAdapter {\n\n    @Override\n    public void onTestStart(ITestResult tr) {\n        super.onTestStart(tr);\n        System.out.println(\"Test started: \" + tr.getTestName());\n    }\n\n    @Override\n    public void onTestSuccess(ITestResult tr) {\n        super.onTestSuccess(tr);\n        System.out\n        System.out.println(\"Test passed: \" + tr.getTestName());\n    }\n\n    @Override\n    public void onTestFailure(ITestResult tr) {\n        super.onTestFailure(tr);\n        System.out.println(\"Test failed: \" + tr.getTestName());\n    }\n\n    @Override\n    public void onTestSkipped(ITestResult tr) {\n        super.onTestSkipped(tr);\n        System.out.println(\"Test skipped: \" + tr.getTestName());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.ITestResult",
+                    "org.testng.TestListenerAdapter"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.ITestResult",
+                    "org.testng.TestListenerAdapter"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5564775466918945,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_5/Wrapper/src/main/java/org/example/MyListener.java:[18,15] ';' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.584 s\n[INFO] Finished at: 2024-04-17T00:47:13-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_5/Wrapper/src/main/java/org/example/MyListener.java:[18,15] ';' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestListenerAdapter/sample_5/Wrapper/src/main/java/org/example/MyListener.java",
+                                "line": 18,
+                                "column": 15,
+                                "message": "';' expected"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "TestNGMethod": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"TestNGMethod\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNGMethod\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a simple example of how you could use `TestNGMethod` from the TestNG library in Java. The `TestNGMethod` is a class representing a method with test attributes from the TestNG framework. This code can be extended to include more complex functionality. \n\nFor instance, you could use `TestNGMethod` to run a test method, collect its test results, and then analyze the results.\n\n```java\nimport org.testng.internal.annotations.TestNGMethod;\n\nimport java.lang.reflect.Method;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Get the class that contains the test method\n            Class<?> testClass = Class.forName(\"your.test.class.name\");\n\n            // Get the method instance\n            Method method = testClass.getMethod(\"yourTestMethodName\");\n\n            // Create a TestNGMethod from the Method instance\n            TestNGMethod testNgMethod = new TestNGMethod(method);\n\n            // Run the test method\n            testNgMethod.run(null, new TestNGMethodRunner(), true, TestNGMethod.ThreadedRunner, new TestNGMethodRunner().getParametersAndContexts());\n\n            // Now you can analyze and process the results from testNgMethod\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nRemember to replace `\"your.test.class.name\"` and `\"yourTestMethodName\"` with the actual class name and method name respectively.\n\nNote: The above code assumes that the method to be executed is a test method and should be marked with `@Test` annotation from `testng-7.9.0` library. Also, to use the method, the class in which it resides must be loaded, hence you must have access to the code that defines the method, and it must be defined with an `@Test` annotation from `testng` framework.\n\nThis is a basic example. In practice, you would need to handle more complex scenarios such as test class instantiation, test method parameters, test class and method instantiation, test result processing, etc.",
+                "extracted_java_code_from_prediction": "import org.testng.internal.annotations.TestNGMethod;\n\nimport java.lang.reflect.Method;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Get the class that contains the test method\n            Class<?> testClass = Class.forName(\"your.test.class.name\");\n\n            // Get the method instance\n            Method method = testClass.getMethod(\"yourTestMethodName\");\n\n            // Create a TestNGMethod from the Method instance\n            TestNGMethod testNgMethod = new TestNGMethod(method);\n\n            // Run the test method\n            testNgMethod.run(null, new TestNGMethodRunner(), true, TestNGMethod.ThreadedRunner, new TestNGMethodRunner().getParametersAndContexts());\n\n            // Now you can analyze and process the results from testNgMethod\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.internal.annotations.TestNGMethod",
+                    "java.lang.reflect.Method"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.testng.internal.annotations.TestNGMethod",
+                    "java.lang.reflect.Method"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5069494843482971,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNGMethod\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here's a simple example of how to use `TestNGMethod` API from \"testng-7.9.0\" project, in Java:\n\n```java\nimport org.testng.IMethodInstance;\nimport org.testng.ITestContext;\nimport org.testng.ITestNGMethod;\nimport org.testng.annotations.Test;\n\npublic class Main {\n    \n    @Test\n    public void test() {\n        ITestContext context = new ITestContext() {\n            // Implement ITestContext methods here, but they aren't necessary for the example.\n        };\n\n        IMethodInstance methodInstance = new IMethodInstance() {\n            // Implement IMethodInstance methods here, but they aren't necessary for the example.\n        };\n\n        ITestNGMethod method = new ITestNGMethod() {\n            // Implement ITestNGMethod methods here, but they aren't necessary for the example.\n        };\n\n        method.getMethodName();\n        method.getTestClass();\n        method.getTestInstance(context);\n        method.getName();\n        method.getParameterTypes();\n        method.getConstructorOrMethod();\n        method.getBeforeGroups();\n        method.getAfterGroups();\n        method.getGroups();\n        method.getDescription();\n        method.getPriority();\n        method.getXmlTestName();\n    }\n}\n```\n\nPlease note that for simplicity and readability, some methods of `ITestNGMethod` are left with comments to show the structure of the method. These methods will need to be implemented appropriately for the use case.\n\nAlso, it would be good to add a `testng.xml` configuration file to your project and run the tests. \n\nThis is a simple example, for a more complex scenario, you'll probably need to create your `ITestNGMethod` instances, get an `ITestContext`, and so on. There's no need to use methods that rely on the TestNG library's dependencies, as all dependencies are provided in the library itself.",
+                "extracted_java_code_from_prediction": "import org.testng.IMethodInstance;\nimport org.testng.ITestContext;\nimport org.testng.ITestNGMethod;\nimport org.testng.annotations.Test;\n\npublic class Main {\n    \n    @Test\n    public void test() {\n        ITestContext context = new ITestContext() {\n            // Implement ITestContext methods here, but they aren't necessary for the example.\n        };\n\n        IMethodInstance methodInstance = new IMethodInstance() {\n            // Implement IMethodInstance methods here, but they aren't necessary for the example.\n        };\n\n        ITestNGMethod method = new ITestNGMethod() {\n            // Implement ITestNGMethod methods here, but they aren't necessary for the example.\n        };\n\n        method.getMethodName();\n        method.getTestClass();\n        method.getTestInstance(context);\n        method.getName();\n        method.getParameterTypes();\n        method.getConstructorOrMethod();\n        method.getBeforeGroups();\n        method.getAfterGroups();\n        method.getGroups();\n        method.getDescription();\n        method.getPriority();\n        method.getXmlTestName();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.IMethodInstance",
+                    "org.testng.ITestContext",
+                    "org.testng.ITestNGMethod",
+                    "org.testng.annotations.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.IMethodInstance",
+                    "org.testng.ITestContext",
+                    "org.testng.ITestNGMethod",
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5389625430107117,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,51] <anonymous org.example.Main$1> is not abstract and does not override abstract method getCurrentXmlTest() in org.testng.ITestContext\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[16,64] <anonymous org.example.Main$2> is not abstract and does not override abstract method getInstance() in org.testng.IMethodInstance\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[20,52] <anonymous org.example.Main$3> is not abstract and does not override abstract method getQualifiedName() in org.testng.ITestNGMethod\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[26,15] cannot find symbol\n  symbol:   method getTestInstance(org.testng.ITestContext)\n  location: variable method of type org.testng.ITestNGMethod\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[27,15] cannot find symbol\n  symbol:   method getName()\n  location: variable method of type org.testng.ITestNGMethod\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[35,15] cannot find symbol\n  symbol:   method getXmlTestName()\n  location: variable method of type org.testng.ITestNGMethod\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.616 s\n[INFO] Finished at: 2024-04-17T00:47:46-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,51] <anonymous org.example.Main$1> is not abstract and does not override abstract method getCurrentXmlTest() in org.testng.ITestContext\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[16,64] <anonymous org.example.Main$2> is not abstract and does not override abstract method getInstance() in org.testng.IMethodInstance\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[20,52] <anonymous org.example.Main$3> is not abstract and does not override abstract method getQualifiedName() in org.testng.ITestNGMethod\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[26,15] cannot find symbol\n[ERROR]   symbol:   method getTestInstance(org.testng.ITestContext)\n[ERROR]   location: variable method of type org.testng.ITestNGMethod\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[27,15] cannot find symbol\n[ERROR]   symbol:   method getName()\n[ERROR]   location: variable method of type org.testng.ITestNGMethod\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java:[35,15] cannot find symbol\n[ERROR]   symbol:   method getXmlTestName()\n[ERROR]   location: variable method of type org.testng.ITestNGMethod\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 27,
+                                "column": 15,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 51,
+                                "message": "<anonymous org.example.Main$1> is not abstract and does not override abstract method getCurrentXmlTest() in org.testng.ITestContext"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 35,
+                                "column": 15,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 64,
+                                "message": "<anonymous org.example.Main$2> is not abstract and does not override abstract method getInstance() in org.testng.IMethodInstance"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 15,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 52,
+                                "message": "<anonymous org.example.Main$3> is not abstract and does not override abstract method getQualifiedName() in org.testng.ITestNGMethod"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNGMethod\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nWithout any specific method name and functionality you need, here's a simple example showing you how to use the TestNGMethod class:\n\n```java\nimport org.testng.IMethodInstance;\nimport org.testng.IMethodInterceptor;\nimport org.testng.ISuite;\nimport org.testng.ISuiteListener;\nimport org.testng.ITestContext;\nimport org.testng.ITestNGMethod;\nimport org.testng.ITestResult;\nimport org.testng.annotations.BeforeTest;\nimport org.testng.annotations.Test;\nimport org.testng.collections.Lists;\nimport org.testng.internal.MethodInterceptorAdapter;\n\nimport java.util.List;\n\npublic class Main implements ISuiteListener {\n\n    @BeforeTest\n    public void beforeTest(ITestContext context) {\n        List<ITestNGMethod> methods = Lists.newArrayList(context.getTestNGMethods());\n        System.out.println(\"No of methods are: \" + methods.size());\n    }\n\n    @Test\n    public void main(ITestContext context) {\n        List<ITestNGMethod> methods = Lists.newArrayList(context.getTestNGMethods());\n        System.out.println(\"No of methods are: \" + methods.size());\n    }\n\n    public void onStart(ISuite suite) {\n        System.out.println(\"Starting\");\n    }\n\n    public void onFinish(ISuite suite) {\n        System.out.println(\"Finished\");\n    }\n\n    public static class TestNGMethodInterceptor extends MethodInterceptorAdapter {\n        public List<IMethodInstance> intercept(List<IMethodInstance> methods, ITestContext context) {\n            return methods;\n        }\n    }\n}\n```\nThis example has a single `Main` class with one `test` method that prints the number of methods in the ITestContext. It uses the `beforeTest` method, which is annotated with `@BeforeTest`, to print the number of methods before the test method runs.\nThe testng-listeners are used to hook into the life cycle of the TestNG test run. In this example, I have used `onStart` and `onFinish` to print a message when the test run has started and finished.\n\nThe TestNG API allows for the creation of method interceptors, similar to how Servlet filters work in the Servlet API. The `TestNGMethodInterceptor` intercepts the methods executed in a `Test Suite` before they are run, and returns the methods that were passed to it.",
+                "extracted_java_code_from_prediction": "import org.testng.IMethodInstance;\nimport org.testng.IMethodInterceptor;\nimport org.testng.ISuite;\nimport org.testng.ISuiteListener;\nimport org.testng.ITestContext;\nimport org.testng.ITestNGMethod;\nimport org.testng.ITestResult;\nimport org.testng.annotations.BeforeTest;\nimport org.testng.annotations.Test;\nimport org.testng.collections.Lists;\nimport org.testng.internal.MethodInterceptorAdapter;\n\nimport java.util.List;\n\npublic class Main implements ISuiteListener {\n\n    @BeforeTest\n    public void beforeTest(ITestContext context) {\n        List<ITestNGMethod> methods = Lists.newArrayList(context.getTestNGMethods());\n        System.out.println(\"No of methods are: \" + methods.size());\n    }\n\n    @Test\n    public void main(ITestContext context) {\n        List<ITestNGMethod> methods = Lists.newArrayList(context.getTestNGMethods());\n        System.out.println(\"No of methods are: \" + methods.size());\n    }\n\n    public void onStart(ISuite suite) {\n        System.out.println(\"Starting\");\n    }\n\n    public void onFinish(ISuite suite) {\n        System.out.println(\"Finished\");\n    }\n\n    public static class TestNGMethodInterceptor extends MethodInterceptorAdapter {\n        public List<IMethodInstance> intercept(List<IMethodInstance> methods, ITestContext context) {\n            return methods;\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.IMethodInstance",
+                    "org.testng.IMethodInterceptor",
+                    "org.testng.ISuite",
+                    "org.testng.ISuiteListener",
+                    "org.testng.ITestContext",
+                    "org.testng.ITestNGMethod",
+                    "org.testng.ITestResult",
+                    "org.testng.annotations.BeforeTest",
+                    "org.testng.annotations.Test",
+                    "org.testng.collections.Lists",
+                    "org.testng.internal.MethodInterceptorAdapter",
+                    "java.util.List"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.IMethodInstance",
+                    "org.testng.IMethodInterceptor",
+                    "org.testng.ISuite",
+                    "org.testng.ISuiteListener",
+                    "org.testng.ITestContext",
+                    "org.testng.ITestNGMethod",
+                    "org.testng.ITestResult",
+                    "org.testng.annotations.BeforeTest",
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.testng.collections.Lists",
+                    "org.testng.internal.MethodInterceptorAdapter",
+                    "java.util.List"
+                ],
+                "number_of_correct_FQNs": 9,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6907951235771179,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,27] cannot find symbol\n  symbol:   class MethodInterceptorAdapter\n  location: package org.testng.internal\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java:[38,57] cannot find symbol\n  symbol:   class MethodInterceptorAdapter\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java:[20,65] cannot find symbol\n  symbol:   method getTestNGMethods()\n  location: variable context of type org.testng.ITestContext\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java:[26,65] cannot find symbol\n  symbol:   method getTestNGMethods()\n  location: variable context of type org.testng.ITestContext\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.763 s\n[INFO] Finished at: 2024-04-17T00:47:48-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,27] cannot find symbol\n[ERROR]   symbol:   class MethodInterceptorAdapter\n[ERROR]   location: package org.testng.internal\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java:[38,57] cannot find symbol\n[ERROR]   symbol:   class MethodInterceptorAdapter\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java:[20,65] cannot find symbol\n[ERROR]   symbol:   method getTestNGMethods()\n[ERROR]   location: variable context of type org.testng.ITestContext\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java:[26,65] cannot find symbol\n[ERROR]   symbol:   method getTestNGMethods()\n[ERROR]   location: variable context of type org.testng.ITestContext\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 65,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 38,
+                                "column": 57,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 65,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 27,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNGMethod\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSorry, as an AI, I don't have the capability of running or writing actual Java code. However, I can provide you with a basic example of how to use \"TestNGMethod\" API from \"testng-7.9.0\" project. Please note that you will need to have TestNG installed on your machine and use it appropriately to run the examples.\n\nIn this example, we will use \"testng-7.9.0\" project to run a simple test method.\n\nBelow is the example of a class named Main.\n\n```java\nimport org.testng.TestNGMethod;\nimport java.lang.reflect.Method;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        Method m = Main.class.getMethod(\"sampleTestMethod\");\n        TestNGMethod tngM = new TestNGMethod(m);\n        tngM.invoke(new Main());\n    }\n\n    public void sampleTestMethod() {\n        System.out.println(\"This is a sample test method.\");\n    }\n}\n```\nIn this example, we get a Method object using reflection API, then create a TestNGMethod object with the Method object we got. Finally, we invoke our test method using this TestNGMethod object.\n\nYou should also note that the TestNG API requires TestNG framework for running tests and the functionality of \"TestNGMethod\" is more related to TestNG's test case execution. If you intend to run your test cases with different test frameworks, you might have to find different solutions.",
+                "extracted_java_code_from_prediction": "import org.testng.TestNGMethod;\nimport java.lang.reflect.Method;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        Method m = Main.class.getMethod(\"sampleTestMethod\");\n        TestNGMethod tngM = new TestNGMethod(m);\n        tngM.invoke(new Main());\n    }\n\n    public void sampleTestMethod() {\n        System.out.println(\"This is a sample test method.\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.TestNGMethod",
+                    "java.lang.reflect.Method"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.testng.TestNGMethod",
+                    "java.lang.reflect.Method"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4840320646762848,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestNGMethod\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a basic example of how you might use the \"TestNGMethod\" API from the \"testng-7.9.0\" project:\n\n```java\nimport org.testng.ITestContext;\nimport org.testng.ITestNGMethod;\nimport org.testng.annotations.DataProvider;\nimport org.testng.annotations.Factory;\nimport org.testng.annotations.Test;\n\npublic class TestNgFactoryTest {\n\n    private String name;\n\n    public TestNgFactoryTest(String name) {\n        this.name = name;\n    }\n\n    @Test\n    public void testMethod() {\n        System.out.println(name);\n    }\n\n    @DataProvider\n    public Object[][] provideData() {\n        return new Object[][] {\n                {\"test1\"},\n                {\"test2\"},\n                {\"test3\"}\n        };\n    }\n\n    @Factory(dataProvider = \"provideData\")\n    public static Object[] createInstances(ITestContext ctx) {\n        ITestNGMethod[] tests = ctx.getAllTestMethods();\n        Object[] instances = new Object[tests.length];\n        for (int i = 0; i < tests.length; i++) {\n            instances[i] = new TestNgFactoryTest(tests[i].getParameters()[0].getParameter());\n        }\n        return instances;\n    }\n}\n```\n\nIn this example, the test method \"testMethod()\" is run multiple times with varying parameters provided by the \"provideData()\" method. Each time, it outputs a different name based on the provided data.\n\nThis is a simple example and might not cover all scenarios that you might need in your code. It's recommended to look at the actual TestNG API documentation to understand how you can use it effectively in your code.",
+                "extracted_java_code_from_prediction": "import org.testng.ITestContext;\nimport org.testng.ITestNGMethod;\nimport org.testng.annotations.DataProvider;\nimport org.testng.annotations.Factory;\nimport org.testng.annotations.Test;\n\npublic class TestNgFactoryTest {\n\n    private String name;\n\n    public TestNgFactoryTest(String name) {\n        this.name = name;\n    }\n\n    @Test\n    public void testMethod() {\n        System.out.println(name);\n    }\n\n    @DataProvider\n    public Object[][] provideData() {\n        return new Object[][] {\n                {\"test1\"},\n                {\"test2\"},\n                {\"test3\"}\n        };\n    }\n\n    @Factory(dataProvider = \"provideData\")\n    public static Object[] createInstances(ITestContext ctx) {\n        ITestNGMethod[] tests = ctx.getAllTestMethods();\n        Object[] instances = new Object[tests.length];\n        for (int i = 0; i < tests.length; i++) {\n            instances[i] = new TestNgFactoryTest(tests[i].getParameters()[0].getParameter());\n        }\n        return instances;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.ITestContext",
+                    "org.testng.ITestNGMethod",
+                    "org.testng.annotations.DataProvider",
+                    "org.testng.annotations.Factory",
+                    "org.testng.annotations.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.ITestContext",
+                    "org.testng.ITestNGMethod",
+                    "org.testng.annotations.DataProvider",
+                    "org.testng.annotations.Factory",
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5836581587791443,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_5/Wrapper/src/main/java/org/example/TestNgFactoryTest.java:[36,58] cannot find symbol\n  symbol:   method getParameters()\n  location: interface org.testng.ITestNGMethod\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.659 s\n[INFO] Finished at: 2024-04-17T00:47:49-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_5/Wrapper/src/main/java/org/example/TestNgFactoryTest.java:[36,58] cannot find symbol\n[ERROR]   symbol:   method getParameters()\n[ERROR]   location: interface org.testng.ITestNGMethod\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestNGMethod/sample_5/Wrapper/src/main/java/org/example/TestNgFactoryTest.java",
+                                "line": 36,
+                                "column": 58,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "TestRunner": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"TestRunner\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestRunner\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use the TestRunner API from the TestNG project, you first need to include the necessary dependencies in your Maven project. TestNG isn't a simple API and does require its own dependency to be added in your `pom.xml` file. \n\nIf you already added `testng-7.9.0` to your project, here's a simple implementation of the `Main` class:\n\n```java\nimport org.testng.TestNG;\nimport org.testng.xml.XmlSuite;\nimport org.testng.xml.XmlTest;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        TestNG testng = new TestNG();\n        XmlSuite suite = new XmlSuite();\n        XmlTest test = new XmlTest(suite);\n\n        test.setName(\"TestNG Suite\");\n        // You need to set this to a specific path on your system\n        test.addIncludedGroup(\"group1\");\n\n        // Add your testng.xml file here\n        // If not provided, then use default behaviour\n        // testng.setTestClasses(new Class[] { YourClass.class });\n        testng.addListener(new TestNgListener());\n        suite.addTest(test);\n        testng.setXmlSuites(new XmlSuite[]{suite});\n        testng.run();\n    }\n}\n```\n\nHere, we use `TestNG` as the main testing class. The `XmlSuite` and `XmlTest` classes are used to define the XML structure for a testng suite. `TestNG` is used to run the testng suite.\n\nNote: The `TestNgListener` is a listener class that you would need to implement to capture results from your tests. You would use this in your tests to capture the results and then analyze these results in the `TestNgListener`. The `addIncludedGroup(\"group1\")` line may be replaced with the specific test cases or classes that you want to run.",
+                "extracted_java_code_from_prediction": "import org.testng.TestNG;\nimport org.testng.xml.XmlSuite;\nimport org.testng.xml.XmlTest;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        TestNG testng = new TestNG();\n        XmlSuite suite = new XmlSuite();\n        XmlTest test = new XmlTest(suite);\n\n        test.setName(\"TestNG Suite\");\n        // You need to set this to a specific path on your system\n        test.addIncludedGroup(\"group1\");\n\n        // Add your testng.xml file here\n        // If not provided, then use default behaviour\n        // testng.setTestClasses(new Class[] { YourClass.class });\n        testng.addListener(new TestNgListener());\n        suite.addTest(test);\n        testng.setXmlSuites(new XmlSuite[]{suite});\n        testng.run();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.TestNG",
+                    "org.testng.xml.XmlSuite",
+                    "org.testng.xml.XmlTest"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.TestNG",
+                    "org.testng.xml.XmlSuite",
+                    "org.testng.xml.XmlTest"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.583936333656311,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_1/Wrapper/src/main/java/org/example/Main.java:[22,32] cannot find symbol\n  symbol:   class TestNgListener\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_1/Wrapper/src/main/java/org/example/Main.java:[24,29] incompatible types: org.testng.xml.XmlSuite[] cannot be converted to java.util.List<org.testng.xml.XmlSuite>\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.639 s\n[INFO] Finished at: 2024-04-17T00:48:14-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_1/Wrapper/src/main/java/org/example/Main.java:[22,32] cannot find symbol\n[ERROR]   symbol:   class TestNgListener\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_1/Wrapper/src/main/java/org/example/Main.java:[24,29] incompatible types: org.testng.xml.XmlSuite[] cannot be converted to java.util.List<org.testng.xml.XmlSuite>\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 22,
+                                "column": 32,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 24,
+                                "column": 29,
+                                "message": "incompatible types: org.testng.xml.XmlSuite[] cannot be converted to java.util.List<org.testng.xml.XmlSuite>"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestRunner\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nWithout knowing your exact requirements and the specific Java APIs you need, I cannot provide a precise Java code solution. However, I can give you a general template based on the description, which should work even if \"TestRunner\" API or other APIs are not available.\n\nHere's a simple example of how you might structure your code:\n\n```java\nimport org.testng.TestNG;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Create a TestNG object\n        TestNG testNG = new TestNG();\n\n        // Add test class to the TestNG object\n        testNG.addTest(\"TestRunner\");\n\n        // Run the tests\n        testNG.run();\n    }\n}\n```\n\nIn this example, \"TestNG\" class is used from the \"testng-7.9.0\" project for running the tests, which was not explicitly mentioned in your requirements. Please adjust the code according to your specific test cases, test classes, and test runner.\n\nNote that to use the \"TestNG\" API in your project, you should include the following dependency in your project's pom.xml:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.testng</groupId>\n        <artifactId>testng</artifactId>\n        <version>7.9.0</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "import org.testng.TestNG;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Create a TestNG object\n        TestNG testNG = new TestNG();\n\n        // Add test class to the TestNG object\n        testNG.addTest(\"TestRunner\");\n\n        // Run the tests\n        testNG.run();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.TestNG"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.TestNG"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4945012629032135,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_2/Wrapper/src/main/java/org/example/Main.java:[13,15] cannot find symbol\n  symbol:   method addTest(java.lang.String)\n  location: variable testNG of type org.testng.TestNG\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.620 s\n[INFO] Finished at: 2024-04-17T00:48:15-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_2/Wrapper/src/main/java/org/example/Main.java:[13,15] cannot find symbol\n[ERROR]   symbol:   method addTest(java.lang.String)\n[ERROR]   location: variable testNG of type org.testng.TestNG\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 15,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestRunner\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of how to use the TestNG framework in a basic way:\n\nMain.java:\n```java\npublic class Main {\n    public static void main(String[] args) {\n        TestRunner testRunner = new TestRunner();\n        testRunner.runTestCases();\n    }\n}\n```\n\nTestRunner.java:\n```java\nimport org.testng.annotations.Test;\n\npublic class TestRunner {\n    @Test\n    public void runTestCases() {\n        System.out.println(\"Test cases are running!\");\n    }\n}\n```\n\nPlease make sure that you have the TestNG framework properly integrated to your project. Here you can add dependencies and then implement the code provided above. \n\nHowever, the code provided doesn't use any external APIs, so we don't need to worry about adding new dependencies in that case.\n\nMake sure to import the necessary TestNG annotations and classes in the \"TestRunner\" class. Also, don't forget to add @Test annotation to the \"runTestCases\" method as it represents a test case in TestNG. \n\nMake sure that the main class Main has a public static void main(String[] args) method to ensure that this code will be compiled and executed correctly.",
+                "extracted_java_code_from_prediction": "public class Main {\n    public static void main(String[] args) {\n        TestRunner testRunner = new TestRunner();\n        testRunner.runTestCases();\n    }\n}",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.4743106961250305,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestRunner\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSorry, but it's not possible to provide you with a compilable Java code as I don't have enough information about your specific project. \n\nBut I can provide you with a basic structure of the main class you're asking for. This Main class should be configured as your TestNG main class:\n\n```java\nimport org.testng.TestRunner;\nimport org.testng.TestNG;\n\npublic class Main {\n\n   public static void main(String[] args) {\n      TestNG tng = new TestNG();\n      TestRunner testRunner = new TestRunner(tng);\n      testRunner.runTest(\"classpath:your-test-suite.xml\");\n   }\n}\n```\n\nThis example assumes that you have a TestNG XML configuration file named \"your-test-suite.xml\". \n\nRemember to import TestNG and TestRunner into your project and correctly reference the TestNG jar file in your classpath. Also, ensure that all the testng.xml file's test and suite configuration are correct to run correctly as is. \n\nAlso, if you are using an IDE like Eclipse or IntelliJ IDEA to run your Java application, you must ensure that your Main class is being used as the Application entry point (in your case, Main). \n\nAlso, note that TestNG TestRunner is deprecated as of version 6.14. Also, you should consider to use TestNG in your test framework. \n\nIt would be helpful if you could provide more details about the tests you want to run and your project context.",
+                "extracted_java_code_from_prediction": "import org.testng.TestRunner;\nimport org.testng.TestNG;\n\npublic class Main {\n\n   public static void main(String[] args) {\n      TestNG tng = new TestNG();\n      TestRunner testRunner = new TestRunner(tng);\n      testRunner.runTest(\"classpath:your-test-suite.xml\");\n   }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.TestRunner",
+                    "org.testng.TestNG"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.TestRunner",
+                    "org.testng.TestNG"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4408966898918152,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_4/Wrapper/src/main/java/org/example/Main.java:[11,31] no suitable constructor found for TestRunner(org.testng.TestNG)\n    constructor org.testng.TestRunner.TestRunner(org.testng.internal.IConfiguration,org.testng.ISuite,org.testng.xml.XmlTest,java.lang.String,org.testng.internal.annotations.IAnnotationFinder,boolean,java.util.Collection<org.testng.IInvokedMethodListener>,java.util.List<org.testng.IClassListener>,java.util.Comparator<org.testng.ITestNGMethod>,org.testng.DataProviderHolder,org.testng.ISuiteRunnerListener) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor org.testng.TestRunner.TestRunner(org.testng.internal.IConfiguration,org.testng.ISuite,org.testng.xml.XmlTest,boolean,java.util.Collection<org.testng.IInvokedMethodListener>,java.util.List<org.testng.IClassListener>,java.util.Comparator<org.testng.ITestNGMethod>,org.testng.ISuiteRunnerListener) is not applicable\n      (actual and formal argument lists differ in length)\n    constructor org.testng.TestRunner.TestRunner(org.testng.internal.IConfiguration,org.testng.ISuite,org.testng.xml.XmlTest,boolean,java.util.Collection<org.testng.IInvokedMethodListener>,java.util.List<org.testng.IClassListener>,org.testng.ISuiteRunnerListener) is not applicable\n      (actual and formal argument lists differ in length)\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,17] cannot find symbol\n  symbol:   method runTest(java.lang.String)\n  location: variable testRunner of type org.testng.TestRunner\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.687 s\n[INFO] Finished at: 2024-04-17T00:48:16-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_4/Wrapper/src/main/java/org/example/Main.java:[11,31] no suitable constructor found for TestRunner(org.testng.TestNG)\n[ERROR]     constructor org.testng.TestRunner.TestRunner(org.testng.internal.IConfiguration,org.testng.ISuite,org.testng.xml.XmlTest,java.lang.String,org.testng.internal.annotations.IAnnotationFinder,boolean,java.util.Collection<org.testng.IInvokedMethodListener>,java.util.List<org.testng.IClassListener>,java.util.Comparator<org.testng.ITestNGMethod>,org.testng.DataProviderHolder,org.testng.ISuiteRunnerListener) is not applicable\n[ERROR]       (actual and formal argument lists differ in length)\n[ERROR]     constructor org.testng.TestRunner.TestRunner(org.testng.internal.IConfiguration,org.testng.ISuite,org.testng.xml.XmlTest,boolean,java.util.Collection<org.testng.IInvokedMethodListener>,java.util.List<org.testng.IClassListener>,java.util.Comparator<org.testng.ITestNGMethod>,org.testng.ISuiteRunnerListener) is not applicable\n[ERROR]       (actual and formal argument lists differ in length)\n[ERROR]     constructor org.testng.TestRunner.TestRunner(org.testng.internal.IConfiguration,org.testng.ISuite,org.testng.xml.XmlTest,boolean,java.util.Collection<org.testng.IInvokedMethodListener>,java.util.List<org.testng.IClassListener>,org.testng.ISuiteRunnerListener) is not applicable\n[ERROR]       (actual and formal argument lists differ in length)\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,17] cannot find symbol\n[ERROR]   symbol:   method runTest(java.lang.String)\n[ERROR]   location: variable testRunner of type org.testng.TestRunner\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 31,
+                                "message": "no suitable constructor found for TestRunner(org.testng.TestNG)"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestRunner/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 17,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestRunner\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a very simple example of how you could use TestNG with importing classes from other packages and executing the tests within Main class.\n\nFirst, let's start with the dependencies:\n\n```\n<dependencies>\n    <dependency>\n        <groupId>org.testng</groupId>\n        <artifactId>testng</artifactId>\n        <version>7.9.0</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```\nNow, let's start with creating the test class which contains tests and also imports the necessary APIs:\n\n```java\npackage com.company.tests;\n\nimport org.testng.annotations.Test;\n\npublic class MyTest {\n    @Test\n    public void TestCase1(){\n        // Your test code goes here\n    }\n\n    @Test\n    public void TestCase2(){\n        // Another test code here\n    }\n\n    // More tests here...\n}\n```\nThen we create the main class which includes the TestRunner:\n\n```java\npackage com.company.main;\n\nimport com.company.tests.MyTest;\nimport org.testng.TestNG;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        TestNG testng = new TestNG();\n        testng.setTestClasses(new Class[] { MyTest.class });\n        testng.run();\n    }\n}\n```\nThis Main class sets the test classes and runs them with TestNG.\n\nPlease remember to replace \"// Your test code goes here\" and \"// Another test code here\" with your actual test code.\nAlso, make sure the package names and class names align with your actual project structure.\nIn the above code, we have a single class MyTest which contains two simple test methods. The Main class sets up the TestNG runner and the MyTest class as the test class to run.\n\nNote: This code does not handle any exception or error, so you might need to handle exceptions in your actual code.",
+                "extracted_java_code_from_prediction": "package com.company.tests;\n\nimport org.testng.annotations.Test;\n\npublic class MyTest {\n    @Test\n    public void TestCase1(){\n        // Your test code goes here\n    }\n\n    @Test\n    public void TestCase2(){\n        // Another test code here\n    }\n\n    // More tests here...\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.annotations.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6202134490013123,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "TestResult": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"TestResult\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestResult\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, I can provide a basic example of how you could use TestNG's TestResult API in your code. In the example below, we will create a single test method and pass TestResult object to it. We'll also print out the current method name each time we run the test method:\n\n```java\nimport org.testng.ITestResult;\nimport org.testng.annotations.Test;\n\npublic class Main {\n\n    @Test\n    public void someTest(ITestResult result) {\n        System.out.println(\"Running test: \" + result.getName());\n    }\n}\n```\n\nPlease note that for your project to fully compile, you would need to add at least one \"test\" method into your class marked with \"TestNG\". Also, make sure you follow the correct naming conventions and import the right libraries. \n\nFor full TestNG functionality, you would likely want to include some annotations such as @BeforeMethod, @AfterMethod, and @DataProvider. It would also be useful to have a TestNG.xml file if you're using data driven testing or configuring your tests. \n\nAlso, don't forget to include your TestNG dependencies in your POM.xml (if you're using Maven) or build.gradle (if you're using Gradle):\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.testng</groupId>\n        <artifactId>testng</artifactId>\n        <version>7.9.0</version>\n    </dependency>\n</dependencies>\n```\nor\n```gradle\ndependencies {\n    testImplementation 'org.testng:testng:7.9.0'\n}\n```\nThis will ensure your project has access to the TestNG library and its TestResult API, along with any other necessary APIs.",
+                "extracted_java_code_from_prediction": "import org.testng.ITestResult;\nimport org.testng.annotations.Test;\n\npublic class Main {\n\n    @Test\n    public void someTest(ITestResult result) {\n        System.out.println(\"Running test: \" + result.getName());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.ITestResult",
+                    "org.testng.annotations.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.ITestResult",
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5106481313705444,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestResult\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nFirstly, import the TestNG library which contains the TestResult class.\n\n```java\nimport org.testng.TestResult;\n```\n\nThen, create your main class:\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        // Code goes here.\n    }\n}\n```\n\nInside your main method, you'd use TestResult class in TestNG:\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        TestResult result = new TestResult();\n        // use TestResult methods here\n    }\n}\n```\n\nAgain, remember that TestNG classes, methods and properties are accessible within the TestNG namespace, so there's no need to import anything else.",
+                "extracted_java_code_from_prediction": "import org.testng.TestResult;",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.TestResult"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.testng.TestResult"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.3602539896965027,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestResult\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe TestNG TestResult API is not a Java API, rather it is an internal API used by TestNG testing framework for internal testing purpose and it's not included in any standard Java distribution. Also it's not compilable since it's designed for internal use and is specific to TestNG library. Therefore I am not able to provide a compilable version of the Java code using TestNG's TestResult API.\n\nTestNG framework doesn't provide a TestResult object for each test case that is executed. When a test method is executed, TestNG creates a TestNGMethod instance. Each TestNGMethod instance contains the result of that specific test method. \n\nYou might be looking to implement your own way to retrieve test results from your TestNG tests. Here is a simplified version of an example on how you can retrieve results from TestNG method:\n\n```java\nimport org.testng.annotations.*;\nimport org.testng.ITestResult;\n\npublic class Main {\n    @Test\n    void testMethodOne() {\n        System.out.println(\"Test Method One\");\n    }\n\n    @Test\n    void testMethodTwo() {\n        System.out\n                .println(\"Test Method Two\");\n        throw new RuntimeException(\"Test Method Two Failed\");\n    }\n\n    @AfterMethod\n    void afterMethod(ITestResult result) {\n        if (result.getStatus() == ITestResult.FAILURE) {\n            System.out\n                    .println(\"Test Method '\" + result.getName() + \"' Failed with Reason : \"\n                            + result.getThrowable().getMessage());\n        } else if (result.getStatus() == ITestResult.SUCCESS) {\n            System.out\n                    .println(\"Test Method '\" + result.getName() + \"' PASSED \");\n        } else if (result.getStatus() == ITestResult.SKIP) {\n            System.out\n                    .println(\"Test Method '\" + result.getName() + \"' SKIPPED \");\n        } else if (result.getStatus() == ITestResult.SUCCESS_PERCENTAGE_FAILED) {\n            System.out\n                    .println(\"Test Method '\" + result.getName() + \"' FAILED \");\n        }\n    }\n}\n```\n\nYou will need to import the necessary TestNG annotations and classes. Do keep in mind, though, that you should manage your dependencies using a tool like Gradle or Maven, and not rely on direct download and include the necessary JARs in your build path.",
+                "extracted_java_code_from_prediction": "import org.testng.annotations.*;\nimport org.testng.ITestResult;\n\npublic class Main {\n    @Test\n    void testMethodOne() {\n        System.out.println(\"Test Method One\");\n    }\n\n    @Test\n    void testMethodTwo() {\n        System.out\n                .println(\"Test Method Two\");\n        throw new RuntimeException(\"Test Method Two Failed\");\n    }\n\n    @AfterMethod\n    void afterMethod(ITestResult result) {\n        if (result.getStatus() == ITestResult.FAILURE) {\n            System.out\n                    .println(\"Test Method '\" + result.getName() + \"' Failed with Reason : \"\n                            + result.getThrowable().getMessage());\n        } else if (result.getStatus() == ITestResult.SUCCESS) {\n            System.out\n                    .println(\"Test Method '\" + result.getName() + \"' PASSED \");\n        } else if (result.getStatus() == ITestResult.SKIP) {\n            System.out\n                    .println(\"Test Method '\" + result.getName() + \"' SKIPPED \");\n        } else if (result.getStatus() == ITestResult.SUCCESS_PERCENTAGE_FAILED) {\n            System.out\n                    .println(\"Test Method '\" + result.getName() + \"' FAILED \");\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.annotations.*",
+                    "org.testng.ITestResult"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.ITestResult"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.testng.annotations.*"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5549618005752563,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestResult/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestResult/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestResult/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestResult/sample_3/Wrapper/src/main/java/org/example/Main.java:[31,53] cannot find symbol\n  symbol:   variable SUCCESS_PERCENTAGE_FAILED\n  location: interface org.testng.ITestResult\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.671 s\n[INFO] Finished at: 2024-04-17T00:48:56-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/testng-7.9.0/TestResult/sample_3/Wrapper/src/main/java/org/example/Main.java:[31,53] cannot find symbol\n[ERROR]   symbol:   variable SUCCESS_PERCENTAGE_FAILED\n[ERROR]   location: interface org.testng.ITestResult\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/testng-7.9.0/TestResult/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 31,
+                                "column": 53,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestResult\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nI'm sorry for the misunderstanding but as far as I know, `TestResult` from the `testng-7.9.0` project is a proprietary class used exclusively by TestNG. It does not have a public API, so it can't be called directly like that in a Java program. It is more commonly used as part of the TestNG's listener infrastructure which allows for extending TestNG with custom listeners, among other things. \n\nIn terms of coding, you cannot compile and run just that one class, because TestNG classes like `TestResult` depend on each other in complex ways. The `TestResult` class is a part of the `org.testng.ITestResult` API which is implemented by `org.testng.TestResult`. So you need those classes in your classpath and your main class might also need to depend on those classes in some way.\n\nBut if you really want to see code that uses `TestResult`, we need more details, such as what functionality you want to replicate using `TestResult`, what classes you need to compile and run and how they are connected. \n\nSo far, I've managed to come up with a simple `Main` class that extends `TestListenerAdapter`, which is a part of TestNG, in order to see how you might possibly want to use `TestResult`:\n\n```java\nimport org.testng.ITestResult;\nimport org.testng.TestListenerAdapter;\nimport org.testng.annotations.Test;\nimport java.util.logging.Logger;\n\npublic class Main extends TestListenerAdapter {\n    private static Logger logger = Logger.getLogger(Main.class.getName());\n\n    @Test\n    void test() {\n        System.out.println(\"Hello world\");\n    }\n\n    @Override\n    public void onTestSuccess(ITestResult tr) {\n        super.onTestSuccess(tr);\n        logger.info(\"Test \" + tr.getName() + \" PASSED.\");\n    }\n\n    @Override\n    public void onTestFailure(ITestResult tr) {\n        super.onTestFailure(tr);\n        logger.warning(\"Test \" + tr.getName() + \" FAILED.\");\n    }\n}\n```\nIn this code, the `test` method is annotated with `@Test`. This annotation tells TestNG that it should run this method as a test method. \n\nThe `Main` class also extends `TestListenerAdapter`, which is a listener for test events (i.e., when a test begins or ends, when a test succeeds or fails). By extending `TestListenerAdapter` and overriding the methods we are interested in, we can listen for those events and respond accordingly.\n\nThis example doesn't involve any TestNG specific code but relies on TestNG to run the tests, and the methods are not using `TestResult` but listen to TestNG events instead.\n\nRemember that you need `testng-7.9.0` in your classpath to compile and run this example.",
+                "extracted_java_code_from_prediction": "import org.testng.ITestResult;\nimport org.testng.TestListenerAdapter;\nimport org.testng.annotations.Test;\nimport java.util.logging.Logger;\n\npublic class Main extends TestListenerAdapter {\n    private static Logger logger = Logger.getLogger(Main.class.getName());\n\n    @Test\n    void test() {\n        System.out.println(\"Hello world\");\n    }\n\n    @Override\n    public void onTestSuccess(ITestResult tr) {\n        super.onTestSuccess(tr);\n        logger.info(\"Test \" + tr.getName() + \" PASSED.\");\n    }\n\n    @Override\n    public void onTestFailure(ITestResult tr) {\n        super.onTestFailure(tr);\n        logger.warning(\"Test \" + tr.getName() + \" FAILED.\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.ITestResult",
+                    "org.testng.TestListenerAdapter",
+                    "org.testng.annotations.Test",
+                    "java.util.logging.Logger"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.ITestResult",
+                    "org.testng.TestListenerAdapter",
+                    "org.testng.annotations.Test",
+                    "java.util.logging.Logger"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.5911617279052734,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestResult\" API from \"testng-7.9.0\" project along with other necessary APIs. The dependency is already added for \"testng-7.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo write a fully functioning Java program using \"TestNG\" for testing, you would need both test code and main entry point (typically your main method). TestNG uses annotations to identify test methods. Here's an example of a minimalistic main method with a test:\n\n```java\nimport org.testng.annotations.Test;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Your main entry point\n    }\n\n    @Test\n    public void testMethod() {\n        // Implementation of your test.\n    }\n}\n```\n\nIn this example, the \"testMethod\" is a test method annotated with @Test annotation from the \"org.testng.annotations\" package. This method could represent a set of checks for a specific feature, or a single scenario, etc. If you want to execute the test, you should configure your test runner to search for classes annotated with @Test, run them and report the result. Typically, you should configure this at the level of the build tool and not manually in the source code.\n\nA more complex example would be a web driver test using Selenium, TestNG and Maven, where there will be a main method and other test methods, as below:\n\n```java\nimport org.openqa.selenium.WebDriver;\nimport org.openqa.selenium.chrome.ChromeDriver;\nimport org.testng.annotations.AfterMethod;\nimport org.testng.annotations.BeforeMethod;\nimport org.testng.annotations.Test;\n\npublic class SeleniumTest {\n    WebDriver driver;\n\n    @BeforeMethod\n    public void setup() {\n        driver = new ChromeDriver();\n    }\n\n    @Test\n    public void googleTest() {\n        driver.get(\"http://www.google.com\");\n        // additional checks here...\n    }\n\n    @AfterMethod\n    public void teardown() {\n        driver.quit();\n    }\n}\n```\n\nIn this example, before each test, a driver object is created for Chrome. After the test, the driver is closed. Each test method is annotated with @Test. This way, TestNG knows that these methods are meant to be executed as tests. The test runner is notified of these test methods and runs them. TestNG uses the same XML format for defining the tests as JUnit does. In a real test project, the test classes would be located in a separate package (for example, \"com.example.tests\"), while the main method would be located in the \"com.example.Main\" class in the \"com.example\" package. The main method would typically launch the test runner with the desired test classes.",
+                "extracted_java_code_from_prediction": "import org.testng.annotations.Test;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Your main entry point\n    }\n\n    @Test\n    public void testMethod() {\n        // Implementation of your test.\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.testng.annotations.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.testng.annotations.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5371164679527283,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        }
+    }
+}

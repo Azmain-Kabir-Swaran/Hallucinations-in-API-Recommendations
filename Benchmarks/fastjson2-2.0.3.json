@@ -1,0 +1,16 @@
+{
+    "jar_name": "fastjson2-2.0.3.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from fastjson2-2.0.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from fastjson2-2.0.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of a project to extract the class names. However, I can provide you with a general approach to solve this problem.\n\n1. Identify the project's source code.\n2. Look for the Java files.\n3. Open each Java file and look for the class declarations.\n4. Identify the non-abstract classes.\n5. Check if the class is part of the fastjson2-2.0.3 project.\n6. If the class is part of the project, add it to the list.\n\nHere's a general pseudo-code to solve the problem:\n\n```\ndef get_class_names(project_source_code):\n    class_names = []\n    for file in project_source_code:\n        if file.endswith(\".java\"):\n            with open(file, 'r') as java_file:\n                for line in java_file:\n                    if line.startswith(\"public class\") or line.startswith(\"class\"):\n                        class_name = line.split(\" \")[1].split(\"{\")[0]\n                        if \"abstract\" not in line:\n                            class_names.append(class_name)\n    return class_names\n\nproject_source_code = \"path_to_project_source_code\"\nclass_names = get_class_names(project_source_code)\n\nif len(class_names) > 50:\n    print(\"No\")\nelse:\n    print(class_names)\n```\n\nPlease note that this is a general approach and might not work for all projects. Also, the actual implementation might vary depending on the complexity of the project and the structure of the source code.",
+        "extracted_APIs_from_prediction": [],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 0,
+        "model_confidence": 0.6950778365135193,
+        "failure_rate_for_APIs": 1,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

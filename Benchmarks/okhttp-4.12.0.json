@@ -1,0 +1,1115 @@
+{
+    "jar_name": "okhttp-4.12.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from okhttp-4.12.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from okhttp-4.12.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the code or project files. However, based on the information provided, I can provide you with a list of possible API classes that are non-abstract and are not more than 50 in number.\n\n1. OkHttpClient\n2. Call\n3. Request\n4. Response\n5. Cache\n6. CacheControl\n7. Interceptor\n8. MediaType\n9. RequestBody\n10. ResponseBody\n11. WebSocket\n12. WebSocketListener\n13. WebSocketCall\n14. WebSocketUpgradeInterceptor\n15. WebSocketCall.Factory\n16. WebSocketListener.Factory\n17. WebSocketCall.Factory\n18. WebSocketUpgradeInterceptor.Factory\n19. WebSocketCall.Factory\n20. WebSocketListener.Factory\n21. WebSocketCall.Factory\n22. WebSocketUpgradeInterceptor.Factory\n23. WebSocketCall.Factory\n24. WebSocketListener.Factory\n25. WebSocketCall.Factory\n26. WebSocketUpgradeInterceptor.Factory\n27. WebSocketCall.Factory\n28. WebSocketListener.Factory\n29. WebSocketCall.Factory\n30. WebSocketUpgradeInterceptor.Factory\n31. WebSocketCall.Factory\n32. WebSocketListener.Factory\n33. WebSocketCall.Factory\n34. WebSocketUpgradeInterceptor.Factory\n35. WebSocketCall.Factory\n36. WebSocketListener.Factory\n37. WebSocketCall.Factory\n38. WebSocketUpgradeInterceptor.Factory\n39. WebSocketCall.Factory\n40. WebSocketListener.Factory\n41. WebSocketCall.Factory\n42. WebSocketUpgradeInterceptor.Factory\n43. WebSocketCall.Factory\n44. WebSocketListener.Factory\n45. WebSocketCall.Factory\n46. WebSocketUpgradeInterceptor.Factory\n47. WebSocketCall.Factory\n48. WebSocketListener.Factory\n49. WebSocketCall.Factory\n50. WebSocketUpgradeInterceptor.Factory\n\nPlease note that this list is based on the provided information and might not be exhaustive or correct. It's also important to note that the number of classes and their names can vary depending on the specific project and the version of OkHttp being used.",
+        "extracted_APIs_from_prediction": [
+            "OkHttpClient",
+            "Call",
+            "Request",
+            "Response",
+            "Cache",
+            "CacheControl",
+            "Interceptor",
+            "MediaType",
+            "RequestBody",
+            "ResponseBody",
+            "WebSocket",
+            "WebSocketListener",
+            "WebSocketCall",
+            "WebSocketUpgradeInterceptor",
+            "WebSocketCall.Factory",
+            "WebSocketListener.Factory",
+            "WebSocketUpgradeInterceptor.Factory"
+        ],
+        "correct_API_predictions": [
+            "OkHttpClient",
+            "Request",
+            "Response",
+            "Cache",
+            "CacheControl",
+            "MediaType"
+        ],
+        "wrong_API_predictions": [
+            "Call",
+            "Interceptor",
+            "RequestBody",
+            "ResponseBody",
+            "WebSocket",
+            "WebSocketListener",
+            "WebSocketCall",
+            "WebSocketUpgradeInterceptor",
+            "WebSocketCall.Factory",
+            "WebSocketListener.Factory",
+            "WebSocketUpgradeInterceptor.Factory"
+        ],
+        "number_of_correct_APIs": 6,
+        "number_of_wrong_APIs": 11,
+        "failure_rate_for_APIs": 0.6470588235294118,
+        "model_confidence": 0.809849739074707,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "OkHttpClient": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"OkHttpClient\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"OkHttpClient\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic sample of OkHttpClient usage in Java to perform GET requests. \n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3Sponse;\nimport okhttp3.RequestBody;\n\npublic class Main {\n    public static final MediaType JSON = MediaType.get(\"application/json; charset=utf-8\");\n    public static OkHttpClient client = new OkHttpClient();\n\n    public static void main(String[] args) throws IOException {\n        String url = \"https://api.github.com\";\n        run(\"GET\", url, null);\n    }\n\n    public static String run(String method, String url, RequestBody body) throws IOException {\n        Request request = new Request.Builder()\n            .url(url)\n            .method(method, body)\n            .build();\n        \n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            return response.body().string();\n        }\n    }\n}\n```\n\nThis code does a simple GET request to https://api.github.com using OkHttpClient library. This code does not cover all the cases. If you want a more complex example you need to implement according to your needs. You can use other APIs in accordance with their dependencies and import statements.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3Sponse;\nimport okhttp3.RequestBody;\n\npublic class Main {\n    public static final MediaType JSON = MediaType.get(\"application/json; charset=utf-8\");\n    public static OkHttpClient client = new OkHttpClient();\n\n    public static void main(String[] args) throws IOException {\n        String url = \"https://api.github.com\";\n        run(\"GET\", url, null);\n    }\n\n    public static String run(String method, String url, RequestBody body) throws IOException {\n        Request request = new Request.Builder()\n            .url(url)\n            .method(method, body)\n            .build();\n        \n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            return response.body().string();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3Sponse",
+                    "okhttp3.RequestBody"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.RequestBody"
+                ],
+                "wrong_FQN_predictions": [
+                    "okhttp3Sponse"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.538902759552002,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,21] '.' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.631 s\n[INFO] Finished at: 2024-04-16T22:11:19-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,21] '.' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 21,
+                                "message": "'.' expected"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"OkHttpClient\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure! Here's a simple example of a Java program that uses the OkHttpClient API from the okhttp-4.12.0 project:\n\nPlease note that you'll need to add the necessary dependencies into your build file (e.g., pom.xml for Maven, build.gradle for Gradle)\n\nMain.java\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            OkHttpClient client = new OkHttpClient();\n            Request request = new Request.Builder()\n                    .url(\"https://api.github.com\")\n                    .build();\n\n            Response response = client.newCall(request).execute();\n\n            System.out.println(response.body().string());\n\n            response.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code makes a GET request to the GitHub API and prints the response. You'll need to replace the URL with the API you want to request from.\n\nAlso, please remember that OkHttp is a lower-level HTTP client library and it's not tied to an IOC container or a web framework. You may want to consider using a framework or a library that integrates with it like Spring Web or Spring Boot.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            OkHttpClient client = new OkHttpClient();\n            Request request = new Request.Builder()\n                    .url(\"https://api.github.com\")\n                    .build();\n\n            Response response = client.newCall(request).execute();\n\n            System.out.println(response.body().string());\n\n            response.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5166143178939819,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"OkHttpClient\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a complete Java program using the OkHttpClient API from the \"okhttp-4.12.0\" project, along with the Guava API.\n\nNote: Please remember to install Guava library in your classpath before running this code.\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport com.google.common.base.Strings;\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n        \n        Request request = new Request.Builder()\n                                    .url(\"http://example.com\")\n                                    .build();\n\n        Response response;\n        try {\n            response = client.newCall(request).execute();\n            if (response.isSuccessful() && !Strings.isNullOrEmpty(response.body().string())) {\n                System.out.println(response.body().string());\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code creates a new OkHttpClient, creates a new HTTP GET request to http://example.com, executes the request and prints the response body string if the request was successful and the response body is not empty.\n\nNote: You need to replace http://example.com with the URL you want to request, and you should handle exceptions properly in a real-world scenario.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport com.google.common.base.Strings;\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n        \n        Request request = new Request.Builder()\n                                    .url(\"http://example.com\")\n                                    .build();\n\n        Response response;\n        try {\n            response = client.newCall(request).execute();\n            if (response.isSuccessful() && !Strings.isNullOrEmpty(response.body().string())) {\n                System.out.println(response.body().string());\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "com.google.common.base.Strings",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.google.common.base.Strings",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.4,
+                "model_confidence": 0.5750006437301636,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_3/Wrapper/src/main/java/org/example/Main.java:[7,30] package com.google.common.base does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_3/Wrapper/src/main/java/org/example/Main.java:[22,45] cannot find symbol\n  symbol:   variable Strings\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.788 s\n[INFO] Finished at: 2024-04-16T22:11:22-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_3/Wrapper/src/main/java/org/example/Main.java:[7,30] package com.google.common.base does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_3/Wrapper/src/main/java/org/example/Main.java:[22,45] cannot find symbol\n[ERROR]   symbol:   variable Strings\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 30,
+                                "message": "package com.google.common.base does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/OkHttpClient/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 22,
+                                "column": 45,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"OkHttpClient\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a very basic implementation of how you would use the OkHttpClient API along with the Java IO and Util APIs. You can replace the URL and any needed changes in the request headers and body:\n\n```java\nimport okhttp3.*;\nimport java.io.IOException;\nimport java.util.concurrent.TimeUnit;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient.Builder()\n                .connectTimeout(15, TimeUnit.SECONDS)\n                .writeTimeout(15, TimeUnitENDS)\n                .readTimeout(15, TimeUnit.SECONDS)\n                .build();\n\n        Request request = new Request.Builder()\n                .url(\"https://example.com\")\n                .get()\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn this example, we set timeout values for connection, reading, and writing operations and then make a GET request to a URL using this client. If the response is successful, the response body is printed, otherwise an exception is thrown and the error stacktrace is printed to the console.\n\nMake sure to replace the URL with the actual one you intend to send the request to.\n\nNote: OkHttp3 and its dependencies are available in Maven Central Repository. Add this to your Maven POM file to add it to your project:\n\n```xml\n<dependency>\n  <groupId>com.squareup.okhttp3</groupId>\n  <artifactId>okhttp</artifactId>\n  <version>4.12.0</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "import okhttp3.*;\nimport java.io.IOException;\nimport java.util.concurrent.TimeUnit;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient.Builder()\n                .connectTimeout(15, TimeUnit.SECONDS)\n                .writeTimeout(15, TimeUnitENDS)\n                .readTimeout(15, TimeUnit.SECONDS)\n                .build();\n\n        Request request = new Request.Builder()\n                .url(\"https://example.com\")\n                .get()\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.*",
+                    "java.io.IOException",
+                    "java.util.concurrent.TimeUnit"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "okhttp3.*",
+                    "java.io.IOException",
+                    "java.util.concurrent.TimeUnit"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.6797506213188171,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"OkHttpClient\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe below code can be compiled and run in a Java environment. It uses OkHttpClient API along with other necessary APIs for HTTP requests. For other required APIs, you do not need to add new dependencies.\n\n```java\nimport okhttp3.*;\nimport java.io.IOException;\n\npublic class Main {\n    private OkHttpClient client = new OkHttpClient();\n\n    public static void main(String[] args) throws IOException {\n        Main main = new Main();\n        Request request = new Request.Builder()\n                .url(\"https://api.github.com/repos/square/okhttp/issues?q=author:okhttp+language:java\")\n                .build();\n        Response response = main.client.newCall(request).execute();\n        if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n        System.out.println(response.body().string());\n    }\n}\n```\nIn this example code, we've created a new Main class and instantiated an OkHttpClient in it. We then created a new GET request and executed it using the client, capturing the response in the Response object. If the response wasn't successful, an IOException is thrown.\n\nAfter that, we printed the response body string to the console.\n\nRemember to install and manage OkHttp as described in its project documentation: https://github.com/square/okhttp.",
+                "extracted_java_code_from_prediction": "import okhttp3.*;\nimport java.io.IOException;\n\npublic class Main {\n    private OkHttpClient client = new OkHttpClient();\n\n    public static void main(String[] args) throws IOException {\n        Main main = new Main();\n        Request request = new Request.Builder()\n                .url(\"https://api.github.com/repos/square/okhttp/issues?q=author:okhttp+language:java\")\n                .build();\n        Response response = main.client.newCall(request).execute();\n        if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n        System.out.println(response.body().string());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.*",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "okhttp3.*",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5191686749458313,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "Request": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Request\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Request\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nI'm sorry for any inconvenience but as an AI language model, I can't provide a fully compilable Java code as it involves specific APIs from libraries like OkHttp. I can, however, describe how to use the OkHttp library to make HTTP requests in general. It involves creating an OkHttpClient object and then making a new Call with a Request object, like this:\n\n```java\nimport okhttp3.Call;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.com/helloworld.txt\")\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn the above code, we first import the necessary classes from the OkHttp library. Then, we create a new OkHttpClient and a new Request with the URL we want to get data from. Finally, we make a new Call with the Request and execute it with the client. If the response is not successful, we throw an IOException. Then, we use the `Response` object to get the body of the response and print it out. If an IOException occurs during these steps, we print the stack trace of the exception.\n\nIf you want to add other libraries, you'll need to add them to the build.gradle file or pom.xml file (depending on whether you're using Gradle or Maven). The format would look something like this:\n\nFor Gradle:\n```groovy\ndependencies {\n    implementation 'otherLibrary:libraryName:version'\n}\n```\nFor Maven:\n```xml\n<dependencies>\n    <dependency>\n        <groupId>otherLibrary</groupId>\n        <artifactId>libraryName</artifactId>\n        <version>version</version>\n    </dependency>\n</dependencies>\n```\nRemember, you should replace `otherLibrary`, `libraryName`, and `version` with the actual details of the library you're using.",
+                "extracted_java_code_from_prediction": "import okhttp3.Call;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.com/helloworld.txt\")\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.Call",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.Call",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.4,
+                "model_confidence": 0.6919105052947998,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Request\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic example of using OkHttp library in Java. In this program, we are making a GET request to a webpage and printing the response body.\n\nPlease note: This program might not work as it is unless a `main` function is defined. \n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/helloworld.txt\")\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        }\n    }\n}\n```\nIn this example, we have used `okhttp3.OkHttpClient`, `okhttp3.Request`, and `okhttp3.Response`. \n\n`OkHttpClient` is used to create a new request session, \n`Request` is used to build the GET request we want to make,\n`Response` is used to get the response from the server, \n`isSuccessful()` is used to check if the HTTP request was successful, \nand `string()` is used to convert the response body to a string.\n\nPlease ensure to add the necessary dependencies and add the necessary import statements at the beginning of your code.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/helloworld.txt\")\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5447357892990112,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_2/Wrapper/src/main/java/org/example/Main.java:[17,53] cannot find symbol\n  symbol:   class IOException\n  location: class org.example.Main\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.649 s\n[INFO] Finished at: 2024-04-16T22:11:55-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_2/Wrapper/src/main/java/org/example/Main.java:[17,53] cannot find symbol\n[ERROR]   symbol:   class IOException\n[ERROR]   location: class org.example.Main\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 53,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Request\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, to use \"Request\" API from \"okhttp-4.12.0\", you need to include the necessary dependencies in your project. Here is a simple code example of how you might set up an HTTP request with \"okhttp-4.12.0\":\n\nAdding these import statements:\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n```\nTo your code is all you need to make an HTTP request to a URL:\n\n```java\npublic class Main {\n  public static void main(String... args) throws Exception {\n    OkHttpClient client = new OkHttpClient();\n    \n    Request request = new Request.Builder()\n        .url(\"https://publicobject.com/helloworld.txt\")\n        .build();\n    \n    Response response = client.newCall(request).execute();\n\n    System.out.println(response.body().string());\n  }\n}\n```\nIn the above example, we're making a request to a hypothetical URL that serves up the text \"Hello, World!\". Replace this URL with your intended one. The response body is then printed to the standard output.\n\nThis code needs the OkHttp libraries in the classpath. If you're using an IDE, make sure the libraries are included in your build path. If you're using the Maven build tool, add the following dependencies to your pom.xml:\n\n```xml\n<dependencies>\n  <dependency>\n    <groupId>com.squareup.okhttp3</groupId>\n    <artifactId>okhttp</artifactId>\n    <version>4.12.0</version>\n  </dependency>\n</dependencies>\n```\nThe Maven command to run the Java program:\n```bash\nmvn compile exec:java -Dexec.mainClass=Main\n```\n\nNote: Replace `Main` with the name of your main class if it is different.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5644984245300293,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Request\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the complete, correct and compilable Java code which uses \"Request\" API from \"okhttp-4.12.0\" project along with some other basic APIs.\n\nThe class which has the main method should be named as `Main`.\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport okhttp3.Call;\nimport okhttp3.RequestBody;\nimport java.io.IOException;\nimport java.util.concurrent.TimeUnit;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Create a client\n        OkHttpClient client = new OkHttpClient().newBuilder()\n                                                .connectTimeout(10, TimeUnit.SECONDS)\n                                                .writeTimeout(10, TimeUnit\n                                                .readTimeout(30, TimeUnit.SECONDS)\n                                                .retryOnConnectionFailure(true)\n                                                .build();\n\n        // Create a request\n        Request request = new Request.Builder()\n                .url(\"https://www.example.com\")\n                .build();\n        \n        // Create call\n        Call call = client.newCall(request);\n        \n        try (Response response = call.execute()) {\n            // Handle response\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nThis code creates a OkHttpClient, sends a GET request to the website \"https://www.example.com\". If the request is successful, it prints the response's body.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport okhttp3.Call;\nimport okhttp3.RequestBody;\nimport java.io.IOException;\nimport java.util.concurrent.TimeUnit;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Create a client\n        OkHttpClient client = new OkHttpClient().newBuilder()\n                                                .connectTimeout(10, TimeUnit.SECONDS)\n                                                .writeTimeout(10, TimeUnit\n                                                .readTimeout(30, TimeUnit.SECONDS)\n                                                .retryOnConnectionFailure(true)\n                                                .build();\n\n        // Create a request\n        Request request = new Request.Builder()\n                .url(\"https://www.example.com\")\n                .build();\n        \n        // Create call\n        Call call = client.newCall(request);\n        \n        try (Response response = call.execute()) {\n            // Handle response\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "okhttp3.Call",
+                    "okhttp3.RequestBody",
+                    "java.io.IOException",
+                    "java.util.concurrent.TimeUnit"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "okhttp3.RequestBody"
+                ],
+                "wrong_FQN_predictions": [
+                    "okhttp3.Call",
+                    "java.io.IOException",
+                    "java.util.concurrent.TimeUnit"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.42857142857142855,
+                "model_confidence": 0.5649558901786804,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,57] ')' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.547 s\n[INFO] Finished at: 2024-04-16T22:11:56-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,57] ')' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 57,
+                                "message": "')' expected"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Request\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of how to use the OkHttp 4.12.0 Request API in Java:\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3response;\nimport java.io.*;\n\npublic class Main {\n    private static final OkHttpClient client = new OkHttpClient();\n\n    public static void main(String args[]) throws IOException {\n        String url = \"http://www.google.com\";\n        run(url);\n    }\n\n    public static void run(String url) throws IOException {\n        Request request = new Request.Builder()\n            .url(url)\n            .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        }\n    }\n}\n```\nThis program sends a GET request to a given URL and then prints the response body.\n\nYou need to add OkHttp and its dependencies into your build system. As per your request, APIs do not require new dependencies. The dependency on the OkHttp library is already provided in your codebase.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3response;\nimport java.io.*;\n\npublic class Main {\n    private static final OkHttpClient client = new OkHttpClient();\n\n    public static void main(String args[]) throws IOException {\n        String url = \"http://www.google.com\";\n        run(url);\n    }\n\n    public static void run(String url) throws IOException {\n        Request request = new Request.Builder()\n            .url(url)\n            .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3response",
+                    "java.io.*"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request"
+                ],
+                "wrong_FQN_predictions": [
+                    "okhttp3response",
+                    "java.io.*"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5266461372375488,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,23] '.' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.566 s\n[INFO] Finished at: 2024-04-16T22:11:57-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,23] '.' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Request/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 23,
+                                "message": "'.' expected"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "Response": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Response\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Response\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to compile and run the code successfully, we need to use the OkHttpClient to perform HTTP requests. Here's a simple example on how you can get a response for a GET request. The Response API is required to manage the response from the OkHttp client.\n\nNote that it's essential that you have OkHttp and other libraries in your project or classpath. You can add them in your Maven pom.xml file (if you are using Maven) or build.gradle file (if you are using Gradle). Here is an example using Maven:\n\n```\n<dependencies>\n    <dependency>\n        <groupId>com.squareup.okhttp3</groupId>\n        <artifactId>okhttp</artifactId>\n        <version>4.12.0</version>\n    </dependency>\n</dependencies>\n```\n\nOnce the dependencies are set, you can use the OkHttpClient to make a request.\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/helloworld.txt\")\n                .build();\n\n        Response response = null;\n        try {\n            response = client.newCall(request).execute();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n\n        if (response.isSuccessful()) {\n            try {\n                System.out.println(response.body().string());\n            } catch (IOException e) {\n                e.printStackTrace();\n            }\n        }\n    }\n}\n```\nIn this example, we're sending a GET request to \"http://publicobject.org/helloworld.txt\", and printing the response body to the console. If the response is successful, we print the body.\n\nMake sure you replace the URL with your own, and make sure you're using a main method for execution.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/helloworld.txt\")\n                .build();\n\n        Response response = null;\n        try {\n            response = client.newCall(request).execute();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n\n        if (response.isSuccessful()) {\n            try {\n                System.out.println(response.body().string());\n            } catch (IOException e) {\n                e.printStackTrace();\n            }\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6764289140701294,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Response\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYour request includes a number of requirements, such as:\n\n- Using \"Response\" API from the \"okhttp-4.12.0\" project\n- Compiling a class that has a `main` method\n- Using only APIs which don't require adding new dependencies\n\nFirst, please note that the requirements above are contradictory. If you wish to use the `Response` class from `okhttp-4.12.0`, then it implies that you have imported that class into your code, but as far as I know, `Response` class is not provided in a standalone library like `okhttp`, it is typically used within a larger framework (like OkHttp) to represent the response from a server. \n\nSecondly, \"other necessary APIs\" without providing a more precise definition of those requirements, it seems impossible to provide a specific compilable Java code.\n\nHowever, I'll still attempt to demonstrate a simple code using only necessary APIs with the minimum dependencies (javax.xml.bind & org.json) for illustrative purposes.\n\n```java\nimport javax.xml.bind.JAXBContext;\nimport javax.xml.bind.JAXBException;\nimport org.json.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\nIn the above example, a class named Main is created with a `main` method which simply prints \"Hello, World!\".\n\nFor further customization and more specific requirements, please provide more details.",
+                "extracted_java_code_from_prediction": "import javax.xml.bind.JAXBContext;\nimport javax.xml.bind.JAXBException;\nimport org.json.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "javax.xml.bind.JAXBContext",
+                    "javax.xml.bind.JAXBException",
+                    "org.json.*"
+                ],
+                "correct_FQN_predictions": [
+                    "javax.xml.bind.JAXBContext",
+                    "javax.xml.bind.JAXBException"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.json.*"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.4415877163410187,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,22] package javax.xml.bind does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,22] package javax.xml.bind does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,1] package org.json does not exist\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.668 s\n[INFO] Finished at: 2024-04-16T22:12:27-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,22] package javax.xml.bind does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,22] package javax.xml.bind does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,1] package org.json does not exist\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 22,
+                                "message": "package javax.xml.bind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 1,
+                                "message": "package org.json does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Response/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 22,
+                                "message": "package javax.xml.bind does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Response\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, your request lacks important information such as what specific functionality or tasks you need the code to perform. Therefore, it is difficult to provide a code snippet that covers all possibilities. However, I'll create an example of a simple program using \"okhttp\" and \"Okio\" libraries to make a simple HTTP request.\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        OkHttpClient client = new OkHttpClient().newBuilder().build();\n        \n        Request request = new Request.Builder()\n            .url(\"https://example.com\")  // Change this to your desired url\n            .build();\n\n        Response response = client.newCall(request).execute();\n        System.out.println(\"Response from server: \" + response.body().string());\n    }\n}\n```\nThis Java program will perform a simple HTTP GET request to a given URL and print the response body. The dependency for OkHttp should already be added in your build file. Also remember that OkHttp is only an HTTP client library, it doesn't include the functionality to handle JSON or XML responses. You should add appropriate dependencies or additional libraries depending upon your use case.\n\nThis is a very basic example. In a real-world application, you may want to manage HTTP errors, close connections, handle redirects, and much more. This example code does not include these aspects.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        OkHttpClient client = new OkHttpClient().newBuilder().build();\n        \n        Request request = new Request.Builder()\n            .url(\"https://example.com\")  // Change this to your desired url\n            .build();\n\n        Response response = client.newCall(request).execute();\n        System.out.println(\"Response from server: \" + response.body().string());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4565533697605133,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Response\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo complete your request, we need more context. It's necessary for us to know what functionality you want from the code. But if you're looking to make a simple GET request to a server using OKHttp library in Java, here is a simple example of code you can use:\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"https://jsonplaceholder.typicode.com/posts\") //replace URL with your desired request\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn this example, we use OKHttp's OkHttpClient class to make a new call to a server. We create a new HTTP request with a URL of our choosing and send it off with the execute() function. Then, based on whether the response was successful or not, we print the response body to the console.\n\nPlease replace \"https://jsonplaceholder.typicode.com/posts\" with the actual API endpoint you want to hit.\n\nIf you need something different, please provide more information.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"https://jsonplaceholder.typicode.com/posts\") //replace URL with your desired request\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.5385183095932007,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Response\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use the \"Response\" API from \"okhttp-4.12.0\" you need to include OkHttp in your project.\n\nHere is an example of a simple program that creates a GET request and gets a response from the Google home page. The `Response` API is used here as it returns a HTTP response. If you need to use another API, you should check if its not included in the OkHttp library.\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://www.google.com\")\n                .build();\n\n        try {\n            Response response = client.newCall(request).execute();\n            System.out.println(\"Response: \" + response);\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nPlease note that you need to include OkHttp dependency in your project.\n\nFor Gradle, you can add the following line to your module's `build.gradle` file:\n\n```gradle\nimplementation 'com.squareup.okhttp3:okhttp:4.9.1'\n```\n\nFor Maven, you can add the following lines to your pom.xml file:\n\n```xml\n<dependency>\n    <groupId>com.squareup.okhttp3</groupId>\n    <artifactId>okhttp</artifactId>\n    <version>4.9.1</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://www.google.com\")\n                .build();\n\n        try {\n            Response response = client.newCall(request).execute();\n            System.out.println(\"Response: \" + response);\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5877046585083008,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "Cache": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Cache\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Cache\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nFirst, you will need to import the necessary APIs. The OKHttp library is already imported in this case.\n\n```java\nimport okhttp3.Cache;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport java.io.File;\nimport java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Paths;\nimport java.util.concurrent.TimeUnit;\n```\n\nIn the following code, you'll see the class and method definitions. This example uses cache management of OKHttp. You can modify and expand it according to your needs.\n\n```java\npublic class Main {\n\n    // Assuming the cache size is 5 MB\n    private static final long CACHE_SIZE = 5 * 1024 * 1024; // 5 MB\n\n    // Root directory where cached files will be stored\n    private static final File CACHE_DIR = new File(System.getProperty(\"user.home\"), \".cache\");\n\n    public static void main(String[] args) {\n        try {\n            setupCache();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n\n    /**\n     * Sets up the cache.\n     * This method creates a cache directory if it doesn't exist, and a cache object to be used by the HTTP client.\n     *\n     * @throws IOException thrown when an I/O error occurs during file operations\n     */\n    private static void setupCache() throws IOException {\n        if (!CACHE_DIR.exists())\n            CACHE_DIR.mkdirs();\n\n        Cache cache = new Cache(new File(CACHE_DIR, \"http-cache\"), CACHE_SIZE);\n\n        OkHttpClient client = new OkHttpClient.Builder()\n                .cache(cache)\n                .connectTimeout(10, TimeUnit.SECONDS)\n                .readTimeout(10, TimeUnit)\n                .build();\n\n        // Make a network request to download a file\n        executeRequest(client, \"http://example.com/large_file\");\n    }\n\n    /**\n     * Executes a GET request to the specified URL using the provided OkHttp client.\n     *\n     * @param client the OkHttpClient instance to make the request with\n     * @param url the URL of the resource to be fetched\n     */\n    private static void executeRequest(OkHttpClient client, String url) {\n        Request request = new Request.Builder()\n                .url(url)\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            Files.write(Paths.get(System.getProperty(\"user.home\") + \"/downloaded_file\"), response.body().bytes());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nThis code creates a cache object and a client that uses that cache. It then uses this client to make a GET request to the specified URL. The response body is written to a file. Note that this is a basic example and in real-world applications, you would likely want to handle errors more gracefully, e.g., catching more specific exceptions like `OkHttpRequestException` and `IOException`.",
+                "extracted_java_code_from_prediction": "import okhttp3.Cache;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport java.io.File;\nimport java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Paths;\nimport java.util.concurrent.TimeUnit;",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.Cache",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.nio.file.Files",
+                    "java.nio.file.Paths",
+                    "java.util.concurrent.TimeUnit"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.Cache",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.File",
+                    "java.io.IOException",
+                    "java.nio.file.Files",
+                    "java.nio.file.Paths",
+                    "java.util.concurrent.TimeUnit"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 5,
+                "failure_rate_for_FQNs": 0.5555555555555556,
+                "model_confidence": 0.715908944606781,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Cache\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple class written in Java which uses the Okhttp library:\n\n```Java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.22977423667907715,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Cache\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java code snippet that uses the Cache API provided by the okhttp library to make a GET request. Make sure to add the OkHttp library dependency to your project. If you want to add more APIs, you should consider if they are widely used, well-documented, and widely used in the JDK or included with popular libraries such as OkHttp, Apache HttpClient, etc.\n\nThis example uses OkHttp's interfaces, specifically `OkHttpClient`, `Request`, and `Response`.\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp33.3.2.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://example.com\")\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nThis is a very simple OkHttp example that sends a HTTP GET request to the specified URL and outputs the body of the response. Please replace `\"http://example.com\"` with the URL you want to send a request to.\n\nNOTE: OkHttp has moved to the Apache2 License as of version 4.9.0.\nAlso note that using APIs without adding dependencies on new projects that are more generally useful and widely tested and used in the JDK or popular libraries is usually a good practice.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp33.3.2.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://example.com\")\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp33.3.2.Response",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request"
+                ],
+                "wrong_FQN_predictions": [
+                    "okhttp33.3.2.Response",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.4984115958213806,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_3/Wrapper/src/main/java/org/example/Main.java:[6,16] '.' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.548 s\n[INFO] Finished at: 2024-04-16T22:13:14-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_3/Wrapper/src/main/java/org/example/Main.java:[6,16] '.' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 16,
+                                "message": "'.' expected"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Cache\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simple example of a class called Main that uses the OkHttp library to perform a GET request. Note that OkHttp is an external library so it must be included in the classpath and the build process as a dependency.\n\nThe code will compile if the OkHttp library is in the project classpath. For example, if you use Maven, you can include it with this dependency:\n\n```xml\n<dependency>\n    <groupId>com.squareup.okhttp3</groupId>\n    <artifactId>okhttp</artifactId>\n    <version>4.9.1</version>\n</dependency>\n```\n\nFor Gradle:\n```groovy\ndependencies {\n    implementation 'com.squareup.okhttp3:okhttp:4.9.1'\n}\n```\n\nHere's the Java code:\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3Response;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/helloworld.txt\")\n                .build();\n\n        Response response = client.newCall(request).execute();\n        System.out.println(response.body().string());\n    }\n}\n```\n\nPlease replace the url in the Request object with the one you want to fetch, and handle the IOExceptions properly in your application. This code simply prints the response body to the console.\n\nRemember to import the OkHttp3 packages at the beginning of your Main class with the necessary import statements according to the APIs used.\n\nAlso, ensure that you include the required libraries in your project. If using Maven, include the following dependency:\n\n```xml\n<dependency>\n    <groupId>com.squareup.okhttp3</groupId>\n    <artifactId>okhttp</artifactId>\n    <version>4.9.1</version>\n</dependency>\n```\n\nThis is a basic example of how you can use OkHttp in your Java application. Depending on your needs, you may need to add error handling, handle the response differently, set up a cache, or modify other parts of the request or response.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3Response;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/helloworld.txt\")\n                .build();\n\n        Response response = client.newCall(request).execute();\n        System.out.println(response.body().string());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3Response",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request"
+                ],
+                "wrong_FQN_predictions": [
+                    "okhttp3Response",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5587597489356995,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,23] '.' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.553 s\n[INFO] Finished at: 2024-04-16T22:13:15-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,23] '.' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/Cache/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 23,
+                                "message": "'.' expected"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Cache\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a complete Java code that uses \"Cache\" API from \"okhttp-4.12.0\" project:\n\n```java\nimport okhttp3.Cache;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.File;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create cache directory\n        File cacheDir = new File(System.getProperty(\"java.io.tmpdir\"), \"okhttp-cache\");\n        Cache cache = new Cache(cacheDir, 1024); // 1024 * 1024 bytes = 1MiB\n\n        // Create OkHttpClient with the cache\n        OkHttpClient client = new OkHttpClient.Builder()\n                .cache(cache)\n                .build();\n\n        // Define your URL to request\n        String url = \"https://www.example.com\";\n\n        // Create a request\n        Request request = new Request.Builder()\n                .url(url)\n                .build();\n\n        // Make a call using the OkHttpClient\n        try {\n            Response response = client.newCall(request).execute();\n\n            // Print the response\n            System.out.println(response.body().string());\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nThis code creates a new cache, adds it to a client, then makes a request to the provided URL.\n\nNotes:\n\n- Make sure to replace the URL string \"https://www.example.com\" with the actual URL you want to hit.\n- If the actual URL requires credentials (such as Basic Auth username & password), you would need to include them in the Request object, either directly or via Interceptor.\n- Handling the exception and closing the client are left out in this code for simplicity. They are crucial to properly handle network requests.\n- This code is using OkHttp v4.12.0, make sure you are using the exact same version in your project or any version compatible with your project.\n\nMake sure to include the appropriate dependencies and add the following to your pom.xml for the same:\n```xml\n<dependency>\n    <groupId>com.squareup.okhttp3</groupId>\n    <artifactId>okhttp</artifactId>\n    <version>4.12.0</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "import okhttp3.Cache;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.File;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create cache directory\n        File cacheDir = new File(System.getProperty(\"java.io.tmpdir\"), \"okhttp-cache\");\n        Cache cache = new Cache(cacheDir, 1024); // 1024 * 1024 bytes = 1MiB\n\n        // Create OkHttpClient with the cache\n        OkHttpClient client = new OkHttpClient.Builder()\n                .cache(cache)\n                .build();\n\n        // Define your URL to request\n        String url = \"https://www.example.com\";\n\n        // Create a request\n        Request request = new Request.Builder()\n                .url(url)\n                .build();\n\n        // Make a call using the OkHttpClient\n        try {\n            Response response = client.newCall(request).execute();\n\n            // Print the response\n            System.out.println(response.body().string());\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.Cache",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.File",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.Cache",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.File",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 6,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.5561685562133789,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "CacheControl": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"CacheControl\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"CacheControl\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIf you're asking for a basic example of how to use CacheControl in an OkHttp3 request, this should be close to what you're looking for. \n\nHowever, you must note that using older versions such as okhttp-4.12.0 may not provide the latest features and libraries. Current stable version could be used.\n\nHere is an example of how to do it:\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n    OkHttpClient client = new OkHttpClient();\n\n    public void run() throws IOException {\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/octopage/\")\n                .cacheControl(CacheControl.Builder()\n                        .maxStale(3600, TimeUnit.SECONDS)\n                        .build())\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n            System.out.println(response.body().string());\n        }\n    }\n}\n```\nIn this example, an OkHttp client is created to send a GET request to a URL, \"http://publicobject.org/octopage/\". The response will come from the cache, if available. If the cache is stale by more than 3600 seconds (1 hour), it's allowed.\n\nRemember, the real-life project needs more complex setup and more functionality, like error handling, logging, etc. But this is a simple example showing how to use the CacheControl in a request. \n\nBefore running the program, don't forget to add necessary dependencies to your pom.xml file:\n\n```xml\n<dependencies>\n  <dependency>\n    <groupId>com.squareup.okhttp3</groupId>\n    <artifactId>okhttp</artifactId>\n    <version>4.9.1</version>\n  </dependency>\n</dependencies>\n```\n\nand run the Maven command \"mvn clean install\". Then import this project to your favourite Java IDE and run it.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n    OkHttpClient client = new OkHttpClient();\n\n    public void run() throws IOException {\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/octopage/\")\n                .cacheControl(CacheControl.Builder()\n                        .maxStale(3600, TimeUnit.SECONDS)\n                        .build())\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n            System.out.println(response.body().string());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6462594270706177,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,41] cannot find symbol\n  symbol:   variable TimeUnit\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,31] cannot find symbol\n  symbol:   variable CacheControl\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.723 s\n[INFO] Finished at: 2024-04-16T22:13:45-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,41] cannot find symbol\n[ERROR]   symbol:   variable TimeUnit\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,31] cannot find symbol\n[ERROR]   symbol:   variable CacheControl\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 41,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 31,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"CacheControl\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nGiven the circumstances, I'll provide you with a basic program to demonstrate use of \"CacheControl\" API from \"okhttp-4.12.0\". However, you may need to modify it according to your needs.\n\n```java\nimport okhttp3.*;\nimport okhttp3.RequestBody.*;\nimport okhttp3.ResponseBody.*;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        OkHttpClient client = new OkHttpClient.Builder()\n                .cache(new Cache(new File(\"myCacheDirectory\"), 1024)) // Assumes \"myCacheDirectory\" exists and is read/write\n                .build();\n\n        Request request = new Request.Builder()\n                .cacheControl(CacheControl.FORCE_CACHE)\n                .url(\"http://example.com\")\n                .build();\n\n        Response response = client.newCall(request).execute();\n        \n        System.out.println(response.body().string()); // Assumes successful request\n    }\n}\n```\nIn this code:\n\n- OkHttpClient is used to make network requests.\n- `cacheControl(CacheControl.FORCE_CACHE)` is used to configure the request to bypass the cache and go directly to the network.\n\nThis code assumes you have OkHttp library available as a dependency in your project, and the example URL http://example.com is a sample URL for demonstration purposes. You would need to replace it with your actual URL where the data to be fetched is located.\n\nPlease note that the provided code is a sample and may need further modifications to suit your exact needs. If you face issues, make sure you check that the OkHttp library is included as a dependency in your project and that it has all the necessary resources.",
+                "extracted_java_code_from_prediction": "import okhttp3.*;\nimport okhttp3.RequestBody.*;\nimport okhttp3.ResponseBody.*;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        OkHttpClient client = new OkHttpClient.Builder()\n                .cache(new Cache(new File(\"myCacheDirectory\"), 1024)) // Assumes \"myCacheDirectory\" exists and is read/write\n                .build();\n\n        Request request = new Request.Builder()\n                .cacheControl(CacheControl.FORCE_CACHE)\n                .url(\"http://example.com\")\n                .build();\n\n        Response response = client.newCall(request).execute();\n        \n        System.out.println(response.body().string()); // Assumes successful request\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.*",
+                    "okhttp3.RequestBody.*",
+                    "okhttp3.ResponseBody.*",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "okhttp3.*",
+                    "okhttp3.RequestBody.*",
+                    "okhttp3.ResponseBody.*",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5206573605537415,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"CacheControl\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is an example Java code snippet that uses the CacheControl class from the okhttp-4.12.0 project, and the Response class from the same project to perform an HTTP GET request:\n\n```java\nimport okhttp3.*;\nimport okhttp3.Request;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient.Builder()\n                .cache(new Cache(new File(\"cache\"), 1024 * 1024))\n                .build();\n\n        Request request = new Request.Builder()\n                .url(\"http://example.com\")\n                .cacheControl(CacheControl.FORCE_NETWORK)\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn this code, we create a new OkHttpClient using the CacheControl.FORCE_NETWORK mode. This tells OkHttp to bypass its own cache, and to download a new version of the response. This is a good way to refresh data from a server if your cache is stale.\n\nIn the request, we specify that it must download a new copy from the server regardless of its own cache and then execute it.\n\nIf the response is successful (i.e., it is successful in HTTP terms), the code prints the body of the response. If an error occurs, it prints the error message.",
+                "extracted_java_code_from_prediction": "import okhttp3.*;\nimport okhttp3.Request;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient.Builder()\n                .cache(new Cache(new File(\"cache\"), 1024 * 1024))\n                .build();\n\n        Request request = new Request.Builder()\n                .url(\"http://example.com\")\n                .cacheControl(CacheControl.FORCE_NETWORK)\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.*",
+                    "okhttp3.Request",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.Request"
+                ],
+                "wrong_FQN_predictions": [
+                    "okhttp3.*",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.5557700991630554,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,38] cannot find symbol\n  symbol:   class File\n  location: class org.example.Main\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.685 s\n[INFO] Finished at: 2024-04-16T22:13:46-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,38] cannot find symbol\n[ERROR]   symbol:   class File\n[ERROR]   location: class org.example.Main\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 38,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"CacheControl\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to use Okhttp in a Java program, you need to include Okhttp library in your project. We are not using other APIs, the import statements are managed by Okhttp.\n\nHere is the complete code you requested:\n\n```java\nimport okhttp3.CacheControl;\nimport okhttp3.Call;\nimport okhttp33.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n\n    public static final String URL = \"http://example.com\";\n\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        CacheControl cacheControl = new CacheControl.Builder().maxStale(60, TimeUnit.SECONDS).build();\n\n        Request request = new Request.Builder().cacheControl(cacheControl).url(URL).build();\n\n        Call call = client.newCall(request);\n\n        try {\n            Response response = call.execute();\n\n            if (!response.isSuccessful()) {\n                throw new IOException(\"Unexpected code \" + response);\n            }\n\n            System.out.println(response.body().string());\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nThe code is a simple example of how you can use Okhttp to make a GET request and print the response content in your console. You need to replace `\"http://example.com\"` with the URL you actually want to retrieve data from.\n\nPlease note that this program is compiled and run without any external libraries added in your dependencies. The import statements are managed by Okhttp and are thus not added in the dependencies.",
+                "extracted_java_code_from_prediction": "import okhttp3.CacheControl;\nimport okhttp3.Call;\nimport okhttp33.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n\n    public static final String URL = \"http://example.com\";\n\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        CacheControl cacheControl = new CacheControl.Builder().maxStale(60, TimeUnit.SECONDS).build();\n\n        Request request = new Request.Builder().cacheControl(cacheControl).url(URL).build();\n\n        Call call = client.newCall(request);\n\n        try {\n            Response response = call.execute();\n\n            if (!response.isSuccessful()) {\n                throw new IOException(\"Unexpected code \" + response);\n            }\n\n            System.out.println(response.body().string());\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.CacheControl",
+                    "okhttp3.Call",
+                    "okhttp33.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.Request",
+                    "okhttp3.Response"
+                ],
+                "wrong_FQN_predictions": [
+                    "okhttp3.CacheControl",
+                    "okhttp3.Call",
+                    "okhttp33.OkHttpClient",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.5502236485481262,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,16] package okhttp33 does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,9] cannot find symbol\n  symbol:   class OkHttpClient\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,35] cannot find symbol\n  symbol:   class OkHttpClient\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java:[18,77] cannot find symbol\n  symbol:   variable TimeUnit\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.730 s\n[INFO] Finished at: 2024-04-16T22:13:47-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,16] package okhttp33 does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,9] cannot find symbol\n[ERROR]   symbol:   class OkHttpClient\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,35] cannot find symbol\n[ERROR]   symbol:   class OkHttpClient\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java:[18,77] cannot find symbol\n[ERROR]   symbol:   variable TimeUnit\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 77,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/CacheControl/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 16,
+                                "message": "package okhttp33 does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"CacheControl\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nOkHttp has many components that might need to be used. But from the requirement, we can only use CacheControl and OkHttpClient to show some basic usage.\n\nMaven dependency for OkHttp:\n\n```xml\n<dependency>\n    <groupId>com.squareup.okhttp3</groupId>\n    <artifactId>okhttp</artifactId>\n    <version>4.12.0</version>\n</dependency>\n```\n\nThe actual code to use the CacheControl and OkHttpClient API could look something like this:\n\n```java\nimport okhttp3.*;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .cacheControl(CacheControl.FORCE_NETWORK)\n                .url(\"https://example.com\")\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if(!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn this example code, OkHttp client makes a HTTP GET request to a specified URL which returns the cache control directive of FORCE_NETWORK. If any other error occurs during the process, it is caught and handled by the IOException.\n\nPlease note that you have to replace `https://example.com` with the actual URL you want to fetch. Also, you need to have the required OkHttp and Java version installed to compile this code.",
+                "extracted_java_code_from_prediction": "import okhttp3.*;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .cacheControl(CacheControl.FORCE_NETWORK)\n                .url(\"https://example.com\")\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if(!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.*",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "okhttp3.*",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5584985017776489,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "MediaType": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"MediaType\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MediaType\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nWithout knowing the specific task or problem that you want a Java solution for, I'll provide a general example of how you could use the 'okhttp-4.12.0' library. This example shows the basic usage of the 'okhttp' library to make a HTTP GET request, and parse the response.\n\n```java\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport okhttp3.ResponseBody;\n\nimport java.io.IOException;\n\npublic class Main {\n    private static final String SERVER_URL = \"http://your-server-url.com\";\n\n    public static void main(String[] args) throws IOException {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(SERVER_URL)\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            ResponseBody body = response.body();\n            if (body != null) {\n                System.out.println(body.string());\n            }\n        }\n    }\n}\n```\n\nThe provided code will execute a HTTP GET request to `http://your-server-url.com`, print the response body to the console.\n\nReplace `\"http://your-server-url.com\"` with the actual server URL you want to send the request to. \n\nAlso, please note that the 'okhttp' library is available only in a form of a single JAR file and requires `okhttp-4.12.0.jar` to be in the classpath when you compile or run your Java code.",
+                "extracted_java_code_from_prediction": "import okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport okhttp3.ResponseBody;\n\nimport java.io.IOException;\n\npublic class Main {\n    private static final String SERVER_URL = \"http://your-server-url.com\";\n\n    public static void main(String[] args) throws IOException {\n        OkHttpClient client = new OkHttpClient();\n\n        Request request = new Request.Builder()\n                .url(SERVER_URL)\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            ResponseBody body = response.body();\n            if (body != null) {\n                System.out.println(body.string());\n            }\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "okhttp3.ResponseBody",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "okhttp3.ResponseBody",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.5658527612686157,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MediaType\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example to illustrate a compilable Java code using \"MediaType\" API from the \"okhttp-4.12.0\" project. Remember that you need to have the dependencies added in your project, but they are not required to use other APIs. \n\nThe program can't do anything useful with network requests since it needs network access, but it'll compile and execute.\n\n```java\nimport okhttp3.MediaType;\nimport okhttp3.Request;\nimport okhttp3.RequestBody;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        MediaType mediaType = MediaType.get(\"text/plain; charset=utf-8\");\n        Request request = new Request.Builder()\n                .url(\"https://example.com\")\n                .post(RequestBody.create(mediaType, \"body\"))\n                .build();\n        \n        System.out.println(request);\n    }\n}\n```\nPlease note, you need to add okhttp dependency in your project first. You can find the okhttp jar file from Maven Central Repository or Okhttp Github repository.",
+                "extracted_java_code_from_prediction": "import okhttp3.MediaType;\nimport okhttp3.Request;\nimport okhttp3.RequestBody;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        MediaType mediaType = MediaType.get(\"text/plain; charset=utf-8\");\n        Request request = new Request.Builder()\n                .url(\"https://example.com\")\n                .post(RequestBody.create(mediaType, \"body\"))\n                .build();\n        \n        System.out.println(request);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.MediaType",
+                    "okhttp3.Request",
+                    "okhttp3.RequestBody"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.MediaType",
+                    "okhttp3.Request",
+                    "okhttp3.RequestBody"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4256798326969147,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MediaType\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a simple Java program using OkHttp and its MediaType API:\n\n```java\nimport okhttp3.MediaType;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Set up the OkHttpClient\n        OkHttpClient client = new OkHttpClient();\n\n        // Prepare the request to send\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/helloworld.txt\")\n                .build();\n\n        try {\n            // Send the request\n            Response response = client.newCall(request).execute();\n\n            // Check the response\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            // Extract the body\n            String body = response.body().string();\n            System.out.println(body);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nPlease note that `s` in `import okhttp3.Response;` should be replaced with either `Body`, `Cache-Control`, `MediaType`, `RequestBody`, `ResponseBody`, `Call`, `OkHttpClient`, `Interceptor`, `Request`, `Callback`, or `MediaType` depending upon the API you want to use.\n\nIn the above program, the `Main` class uses OkHttp's `OkHttpClient` to send a GET request to http://publicobject.org/helloworld.txt. The response body is then printed to the console. Note that you will need the `okhttp3` and `okio` libraries in your classpath. If you are using Maven, these should automatically be included when you include the OkHttp library.",
+                "extracted_java_code_from_prediction": "import okhttp3.MediaType;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.Response;\n\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Set up the OkHttpClient\n        OkHttpClient client = new OkHttpClient();\n\n        // Prepare the request to send\n        Request request = new Request.Builder()\n                .url(\"http://publicobject.org/helloworld.txt\")\n                .build();\n\n        try {\n            // Send the request\n            Response response = client.newCall(request).execute();\n\n            // Check the response\n            if (!response.isSuccessful()) throw new IOException(\"Unexpected code \" + response);\n\n            // Extract the body\n            String body = response.body().string();\n            System.out.println(body);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.MediaType",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.MediaType",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.5399331450462341,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MediaType\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe \"MediaType\" API from the \"okhttp-4.12.0\" project is used for handling types of data. This API includes methods to get a string representation of the media type, which may contain a charset parameter, and to parse a media type string into a MediaType.\n\nHere is a complete Java program that uses \"MediaType\" from the \"okhttp-4.12.0\" project:\n\n```java\nimport okhttp3.MediaType;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.RequestBody;\nimport okhttp3.Response;\nimport okhttp3.Call;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        OkHttpClient client = new OkHttpClient();\n        MediaType mediaType = MediaType.get(\"application/json; charset=utf-8\");\n\n        String json = \"{\\\"name\\\": \\\"John\\\", \\\"age\\\":30}\";\n        RequestBody body = RequestBody.create(json, mediaType);\n        Request request = new Request.Builder()\n                .url(\"https://example.com/api\")\n                .post(body)\n                .build();\n\n        Call call = client.newCall(request);\n        Response response = call.execute();\n        System.out.println(response.body().string());\n    }\n}\n```\n\nIn the above example, we import the necessary packages (okhttp3.MediaType and okhttp3.) for the MediaType from the okhttp-4.12.0 project. The code defines a Main class with a main method. Inside the main method, we create an instance of OkHttpClient and a MediaType. Then we create a request body using the JSON string and MediaType. After that, we create a request with url, request body and type. Finally, we send this request to the server using the call object and get the response. We print the response body in the console.",
+                "extracted_java_code_from_prediction": "import okhttp3.MediaType;\nimport okhttp3.OkHttpClient;\nimport okhttp3.Request;\nimport okhttp3.RequestBody;\nimport okhttp3.Response;\nimport okhttp3.Call;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        OkHttpClient client = new OkHttpClient();\n        MediaType mediaType = MediaType.get(\"application/json; charset=utf-8\");\n\n        String json = \"{\\\"name\\\": \\\"John\\\", \\\"age\\\":30}\";\n        RequestBody body = RequestBody.create(json, mediaType);\n        Request request = new Request.Builder()\n                .url(\"https://example.com/api\")\n                .post(body)\n                .build();\n\n        Call call = client.newCall(request);\n        Response response = call.execute();\n        System.out.println(response.body().string());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.MediaType",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.RequestBody",
+                    "okhttp3.Response",
+                    "okhttp3.Call"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.MediaType",
+                    "okhttp3.OkHttpClient",
+                    "okhttp3.Request",
+                    "okhttp3.RequestBody",
+                    "okhttp3.Response",
+                    "okhttp3.Call"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 6,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.16666666666666666,
+                "model_confidence": 0.5658497214317322,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MediaType\" API from \"okhttp-4.12.0\" project along with other necessary APIs. The dependency is already added for \"okhttp-4.12.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to get a compilable Java code you might need to understand the basic concept of the HTTP protocol. I will create a Java code to perform a POST request to some URL using OkHttp library. This will depend on the structure and endpoint of your API. I will use Gson library to handle Json conversions (install it via maven):\n\n```xml\n<dependency>\n    <groupId>com.squareup.retrofit2</groupId>\n    <artifactId>converter-gson</artifactId>\n    <version>2.9.0</version>\n</dependency>\n```\n\nJava Code:\n\n```java\nimport okhttp3.*;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport com.google.gson.Gson;\n\npublic class Main {\n    private static final MediaType JSON = MediaType.get(\"application/json; charset=utf-8\");\n    private static OkHttpClient client = new OkHttpClient();\n\n    public static void main(String[] args) {\n        Post post = new Post(); // create an instance of post\n        Gson gson = new Gson();\n        String jsonPost = gson.toJson(post);\n\n        RequestBody requestBody = RequestBody.create(JSON, jsonPost);\n        Request request = new Request.Builder()\n                .url(\"https://url-you-want-to-post-to\")\n                .post(requestBody)\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) {\n                throw new IOException(\"Unexpected code \" + response);\n            }\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n\nclass Post {\n    // Here you would define your post object with fields you want to pass\n    // For example:\n    private String title;\n    private String content;\n    private boolean published;\n\n    // getters and setters...\n}\n```\n\nThe above code does the following:\n\n1. Instantiates an OkHttpClient object (client) which is used to make the actual HTTP requests.\n2. Constructs a RequestBody which includes the JSON data as a string.\n3. Constructs a new Request object using a URL, HTTP method (POST), and the RequestBody from above.\n4. Uses client to make the HTTP request through the execute() method.\n5. Parses the HTTP response (stored in the Response object) and prints it to the system console.\n6. Calls close() on the Response object automatically via Java's try-with-resources block.\n\nPlease note, you would have to replace URL and fields in the \"Post\" class with the actual values you need.",
+                "extracted_java_code_from_prediction": "import okhttp3.*;\nimport okhttp3.Request;\nimport okhttp3.Response;\nimport com.google.gson.Gson;\n\npublic class Main {\n    private static final MediaType JSON = MediaType.get(\"application/json; charset=utf-8\");\n    private static OkHttpClient client = new OkHttpClient();\n\n    public static void main(String[] args) {\n        Post post = new Post(); // create an instance of post\n        Gson gson = new Gson();\n        String jsonPost = gson.toJson(post);\n\n        RequestBody requestBody = RequestBody.create(JSON, jsonPost);\n        Request request = new Request.Builder()\n                .url(\"https://url-you-want-to-post-to\")\n                .post(requestBody)\n                .build();\n\n        try (Response response = client.newCall(request).execute()) {\n            if (!response.isSuccessful()) {\n                throw new IOException(\"Unexpected code \" + response);\n            }\n            System.out.println(response.body().string());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n\nclass Post {\n    // Here you would define your post object with fields you want to pass\n    // For example:\n    private String title;\n    private String content;\n    private boolean published;\n\n    // getters and setters...\n}",
+                "extracted_FQNs_from_prediction": [
+                    "okhttp3.*",
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "com.google.gson.Gson"
+                ],
+                "correct_FQN_predictions": [
+                    "okhttp3.Request",
+                    "okhttp3.Response",
+                    "com.google.gson.Gson"
+                ],
+                "wrong_FQN_predictions": [
+                    "okhttp3.*"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6521767973899841,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java: /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java uses or overrides a deprecated API.\n[WARNING] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java: Recompile with -Xlint:deprecation for details.\n[INFO] 2 warnings \n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Post.java:[6,23] package com.google.gson does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,23] package com.google.gson does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n  symbol:   class Gson\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,25] cannot find symbol\n  symbol:   class Gson\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[26,27] cannot find symbol\n  symbol:   class IOException\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[29,18] cannot find symbol\n  symbol:   class IOException\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.758 s\n[INFO] Finished at: 2024-04-16T22:14:30-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Post.java:[6,23] package com.google.gson does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,23] package com.google.gson does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n[ERROR]   symbol:   class Gson\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,25] cannot find symbol\n[ERROR]   symbol:   class Gson\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[26,27] cannot find symbol\n[ERROR]   symbol:   class IOException\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java:[29,18] cannot find symbol\n[ERROR]   symbol:   class IOException\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Post.java",
+                                "line": 6,
+                                "column": 23,
+                                "message": "package com.google.gson does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 25,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 23,
+                                "message": "package com.google.gson does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 29,
+                                "column": 18,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/okhttp-4.12.0/MediaType/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 27,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

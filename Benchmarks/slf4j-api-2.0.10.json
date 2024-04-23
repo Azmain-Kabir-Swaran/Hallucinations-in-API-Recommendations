@@ -1,0 +1,16 @@
+{
+    "jar_name": "slf4j-api-2.0.10.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from slf4j-api-2.0.10 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from slf4j-api-2.0.10 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of a project to extract the class names. However, I can provide you with a general approach to solve this problem.\n\nTo list correct API's class names from a project, you would typically need to:\n\n1. Access the source code of the project.\n2. Parse the source code to identify classes.\n3. Filter out abstract classes.\n4. List the non-abstract classes.\n\nHowever, as you mentioned that you don't have the source code, I can't provide you with the exact class names. However, I can provide you with a general approach to solve this problem.\n\nHere's a Python example using the `javalang` library to parse Java source code and list non-abstract classes:\n\n```python\nimport javalang\n\ndef list_non_abstract_classes(source_code):\n    tree = javalang.parse.parse(source_code)\n    for path, node in tree.visit():\n        if isinstance(node, javalang.tree.ClassDeclaration) and not node.is_abstract:\n            print(node.name)\n\n# You would need to replace this with the actual source code of the project\nsource_code = \"\"\"\npublic class MyClass {\n    // ...\n}\n\nabstract class MyAbstractClass {\n    // ...\n}\n\"\"\"\n\nlist_non_abstract_classes(source_code)\n```\n\nThis script will print:\n\n```\nMyClass\n```\n\nPlease note that this is a simplified example and does not handle all possible edge cases. For a real-world application, you would need to handle more complex scenarios such as nested classes, interfaces, and more.\n\nAlso, remember that the source code of a project is usually not publicly available, so you would need to access it in some way, such as downloading it from a repository or using a decompiler to extract it.",
+        "extracted_APIs_from_prediction": [],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 0,
+        "model_confidence": 0.661059558391571,
+        "failure_rate_for_APIs": 1,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

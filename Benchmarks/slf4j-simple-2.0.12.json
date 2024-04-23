@@ -1,0 +1,16 @@
+{
+    "jar_name": "slf4j-simple-2.0.12.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from slf4j-simple-2.0.12 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from slf4j-simple-2.0.12 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of a project to extract the class names. However, I can provide you with a general approach to solve this problem.\n\nTo list correct API's class names from a project, you would typically need to:\n\n1. Access the source code of the project.\n2. Parse the source code to identify classes.\n3. Check if the class is abstract.\n4. If the class is not abstract, add it to the list.\n\nHowever, as I don't have direct access to the source code of a project, I can't provide you with the exact list of classes. However, I can provide you with a general approach to solve this problem.\n\nHere's a Python-like pseudo code to illustrate the process:\n\n```python\n# Assuming you have the source code in a directory structure\n# and you have a list of all the .java files\n\ndef get_non_abstract_classes(java_files):\n    non_abstract_classes = []\n    for file in java_files:\n        with open(file, 'r') as f:\n            for line in f:\n                if 'class' in line and 'abstract' not in line:\n                    class_name = line.split(' ')[1].split('{')[0]\n                    non_abstract_classes.append(class_name)\n    return non_abstract_classes\n```\n\nThis function opens each .java file, reads it line by line, and checks if the line contains the keyword 'class' and 'abstract' is not in the line. If it does, it extracts the class name and adds it to the list of non-abstract classes.\n\nPlease note that this is a simplified example and may not work for all cases. For example, it doesn't handle nested classes, classes in inner classes, or classes in anonymous inner classes. Also, it doesn't handle classes in packages or imports.\n\nIf you have the source code, you would need to parse it using a Java parser or a similar tool to extract the class names.",
+        "extracted_APIs_from_prediction": [],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 0,
+        "model_confidence": 0.670231282711029,
+        "failure_rate_for_APIs": 1,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

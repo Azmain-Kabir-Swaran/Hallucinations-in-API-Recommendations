@@ -1,0 +1,20 @@
+{
+    "jar_name": "log4j-core-2.22.1.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from log4j-core-2.22.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from log4j-core-2.22.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of a project or any external resources. However, I can provide you with a general idea of how to approach this problem.\n\nTo list correct API's class names from log4j-core-2.22.1 project, you can follow these steps:\n\n1. Download the source code of log4j-core-2.22.1 project.\n2. Unzip the downloaded file.\n3. Open the project in an IDE like Eclipse or IntelliJ.\n4. Use the IDE's search functionality to find all non-abstract classes.\n5. Filter out the abstract classes.\n6. List the non-abstract classes.\n\nHere's a Python code snippet that uses the `os` and `re` modules to list non-abstract classes:\n\n```python\nimport os\nimport re\n\ndef list_non_abstract_classes(directory):\n    classes = []\n    for root, dirs, files in os.walk(directory):\n        for file in files:\n            if file.endswith(\".java\"):\n                with open(os.path.join(root, file), 'r') as f:\n                    content = f.read()\n                    matches = re.findall(r'public class\\s+(\\w+)\\s+(?!abstract)\\b', content)\n                    classes.extend(matches)\n    return classes\n\nclasses = list_non_abstract_classes('/path/to/log4j-core-2.22.1')\nprint(classes)\n```\n\nThis script will list all non-abstract classes in the log4j-core-2.22.1 project. Please replace '/path/to/log4j-core-2.22.1' with the actual path to the project.\n\nPlease note that this is a general approach and might not work for all projects. Also, the script might not work if the project uses a different build system or if the project is not written in Java.",
+        "extracted_APIs_from_prediction": [
+            "22.1')"
+        ],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [
+            "22.1')"
+        ],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 1,
+        "model_confidence": 0.7146410346031189,
+        "failure_rate_for_APIs": 1.0,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

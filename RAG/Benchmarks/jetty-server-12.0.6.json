@@ -1,0 +1,518 @@
+{
+    "jar_name": "jetty-server-12.0.6.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from junit-4.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JUnit4TestAdapter\n2. JUnit4TestCaseFacade\n3. JUnit4TestAdapterCache\n4. TestClassMethodsRunner\n5. JUnitCore\n6. TestClassRunner\n7. OldTestClassRunner\n8. TestMethodRunner\n9. ClassesRequest\n10. ClassRequest\n11. TestIntrospector\n12. TestRunner\n13. TestDecorator\n14. TestFailure\n15. TestSetup\n16. ActiveTestSuite\n17. TestResult\n18. AllTests\n19. TestSuite\n20. Assert\n21. RepeatedTest\n22. MethodValidator\n23. AssertionFailedError\n24. ErrorReportingRunner\n25. InitializationError\n26. Version\n27. CompositeRunner\n28. Parameterized\n29. NoTestsRemainException\n30. SortingRequest\n31. RunNotifier\n32. RunListener\n33. Description\n34. Result\n35. Sorter\n36. ErrorReportingRequest\n37. Suite\n38. ComparisonFailure\n39. ComparisonCompactor\n40. TextListener\n41. Failure\n42. StoppedByUserException\n43. ResultPrinter\n44. FilterRequest\n\nList correct API's class names from clojure-1.11.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. Clojure\n2. genclass__init\n3. cl_format__init\n4. core_deftype__init\n5. TypePath\n6. java__init\n7. ClassWriter\n8. Constructor\n9. Tuple\n10. datafy__init\n11. Compile\n12. Namespace\n13. Compiler\n14. DynamicClassLoader\n15. protocols__init\n16. EnumerationSeq\n17. Type\n18. uuid__init\n19. pprint_base__init\n20. gvec__init\n21. javadoc__init\n22. TypeReference\n23. Murmur3\n24. junit__init\n25. SeqEnumeration\n26. Vec\n27. Symbol\n28. core__init\n29. utilities__init\n30. LazilyPersistentVector\n31. math__init\n32. PersistentHashMap\n33. edn__init\n34. TransactionalHashMap<K,\n35. LocalVariablesSorter\n36. io__init\n37. dispatch__init\n38. ByteVector\n39. main__init\n40. LazySeq\n41. main\n42. VecNode\n43. IteratorSeq\n44. Attribute\n45. test__init\n46. core_print__init\n47. walk__init\n48. pprint__init\n49. Label\n50. template__init\n\nList correct API's class names from jetty-server-12.0.6 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from junit-4.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JUnit4TestAdapter\n2. JUnit4TestCaseFacade\n3. JUnit4TestAdapterCache\n4. TestClassMethodsRunner\n5. JUnitCore\n6. TestClassRunner\n7. OldTestClassRunner\n8. TestMethodRunner\n9. ClassesRequest\n10. ClassRequest\n11. TestIntrospector\n12. TestRunner\n13. TestDecorator\n14. TestFailure\n15. TestSetup\n16. ActiveTestSuite\n17. TestResult\n18. AllTests\n19. TestSuite\n20. Assert\n21. RepeatedTest\n22. MethodValidator\n23. AssertionFailedError\n24. ErrorReportingRunner\n25. InitializationError\n26. Version\n27. CompositeRunner\n28. Parameterized\n29. NoTestsRemainException\n30. SortingRequest\n31. RunNotifier\n32. RunListener\n33. Description\n34. Result\n35. Sorter\n36. ErrorReportingRequest\n37. Suite\n38. ComparisonFailure\n39. ComparisonCompactor\n40. TextListener\n41. Failure\n42. StoppedByUserException\n43. ResultPrinter\n44. FilterRequest\n\nList correct API's class names from clojure-1.11.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. Clojure\n2. genclass__init\n3. cl_format__init\n4. core_deftype__init\n5. TypePath\n6. java__init\n7. ClassWriter\n8. Constructor\n9. Tuple\n10. datafy__init\n11. Compile\n12. Namespace\n13. Compiler\n14. DynamicClassLoader\n15. protocols__init\n16. EnumerationSeq\n17. Type\n18. uuid__init\n19. pprint_base__init\n20. gvec__init\n21. javadoc__init\n22. TypeReference\n23. Murmur3\n24. junit__init\n25. SeqEnumeration\n26. Vec\n27. Symbol\n28. core__init\n29. utilities__init\n30. LazilyPersistentVector\n31. math__init\n32. PersistentHashMap\n33. edn__init\n34. TransactionalHashMap<K,\n35. LocalVariablesSorter\n36. io__init\n37. dispatch__init\n38. ByteVector\n39. main__init\n40. LazySeq\n41. main\n42. VecNode\n43. IteratorSeq\n44. Attribute\n45. test__init\n46. core_print__init\n47. walk__init\n48. pprint__init\n49. Label\n50. template__init\n\nList correct API's class names from jetty-server-12.0.6 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. Server\n2. ServerConnector\n3. HttpChannel\n4. HttpOutput\n5. HttpInput\n6. HttpComet\n7. HttpCometConnection\n8. HttpCometDraft\n9. HttpCometDraft$CometDraft\n10. HttpCometDraft$CometDraft$CometDraftResponse\n11. HttpCometDraft$CometDraft$CometDraftResponse$CometDraftResponse\n12. HttpCometDraft$CometDraft$CometDraftResponse$CometDraftResponse$CometDraftResponse\n13. HttpCometDraft$CometDraft$CometDraftResponse$CometDraftResponse$CometDraftResponse$CometDraftResponse\n14. HttpCometDraft",
+        "extracted_APIs_from_prediction": [
+            "Server",
+            "ServerConnector",
+            "HttpChannel",
+            "HttpOutput",
+            "HttpInput",
+            "HttpComet",
+            "HttpCometConnection",
+            "HttpCometDraft",
+            "HttpCometDraft$CometDraft",
+            "HttpCometDraft$CometDraft$CometDraftResponse",
+            "HttpCometDraft$CometDraft$CometDraftResponse$CometDraftResponse",
+            "HttpCometDraft$CometDraft$CometDraftResponse$CometDraftResponse$CometDraftResponse",
+            "HttpCometDraft$CometDraft$CometDraftResponse$CometDraftResponse$CometDraftResponse$CometDraftResponse"
+        ],
+        "correct_API_predictions": [
+            "Server",
+            "ServerConnector"
+        ],
+        "wrong_API_predictions": [
+            "HttpChannel",
+            "HttpOutput",
+            "HttpInput",
+            "HttpComet",
+            "HttpCometConnection",
+            "HttpCometDraft",
+            "HttpCometDraft$CometDraft",
+            "HttpCometDraft$CometDraft$CometDraftResponse",
+            "HttpCometDraft$CometDraft$CometDraftResponse$CometDraftResponse",
+            "HttpCometDraft$CometDraft$CometDraftResponse$CometDraftResponse$CometDraftResponse",
+            "HttpCometDraft$CometDraft$CometDraftResponse$CometDraftResponse$CometDraftResponse$CometDraftResponse"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 11,
+        "failure_rate_for_APIs": 0.8461538461538461,
+        "model_confidence": 0.7006433606147766,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "Server": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Server\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Server\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a simple code that uses Jetty \"Server\" API from the \"jetty-server-12.0.6\" project. For this code to run, don't forget to add the Jetty jar to your classpath.\n\nIn Java, this will not be a real-world application. It creates a Server and waits for it to stop.\n\n```java\nimport org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.servlet.DefaultServlet;\nimport org.eclipse.jetty.servlet.ServletContextHandler;\n\nimport javax.servlet.DispatcherType;\nimport javax.servlet.http.HttpServletRequest;\nimport java.util.EnumSet;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n        Server server = new Server(8080);\n\n        ServletContextHandler handler = new ServletContextHandler();\n        handler.addServlet(DefaultServlet.class, \"/\");\n        handler.addServlet(HelloWorldServlet.class, \"/hello\");\n        handler.setInitParameter(\"useFileMappings\", \"false\");\n        handler.setInitParameter(\"welcomeServlets\", HelloWorldServlet.class.getName());\n        handler.setInitParameter(\"dirAllowed\", \"false\");\n        handler.setInitParameter(\"listings\", \"false\");\n\n        server.setHandler(handler);\n\n        server.start();\n        server.join();\n    }\n}\n```\n\nIn this example, HelloWorldServlet is not defined. To actually run this code you'll have to define HelloWorldServlet which extends HttpServlet and implements the doGet method.\n\nAlso, do note that \"Server\" and \"ServletContextHandler\" classes are part of the Jetty server, which comes with all of its APIs packed together in the jar. So, there's no need to add other APIs like \"javax.servlet-api\" or \"javax.servlet-3.1\". \"DefaultServlet\" does not require an additional dependency either.\n\nDisclaimer: It's generally a bad practice to add external libraries or dependencies directly on StackOverflow but for this example it's acceptable.",
+                "extracted_java_code_from_prediction": "import org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.servlet.DefaultServlet;\nimport org.eclipse.jetty.servlet.ServletContextHandler;\n\nimport javax.servlet.DispatcherType;\nimport javax.servlet.http.HttpServletRequest;\nimport java.util.EnumSet;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n        Server server = new Server(8080);\n\n        ServletContextHandler handler = new ServletContextHandler();\n        handler.addServlet(DefaultServlet.class, \"/\");\n        handler.addServlet(HelloWorldServlet.class, \"/hello\");\n        handler.setInitParameter(\"useFileMappings\", \"false\");\n        handler.setInitParameter(\"welcomeServlets\", HelloWorldServlet.class.getName());\n        handler.setInitParameter(\"dirAllowed\", \"false\");\n        handler.setInitParameter(\"listings\", \"false\");\n\n        server.setHandler(handler);\n\n        server.start();\n        server.join();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.servlet.DefaultServlet",
+                    "org.eclipse.jetty.servlet.ServletContextHandler",
+                    "javax.servlet.DispatcherType",
+                    "javax.servlet.http.HttpServletRequest",
+                    "java.util.EnumSet"
+                ],
+                "correct_FQN_predictions": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.servlet.DefaultServlet",
+                    "org.eclipse.jetty.servlet.ServletContextHandler",
+                    "javax.servlet.DispatcherType",
+                    "javax.servlet.http.HttpServletRequest"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.util.EnumSet"
+                ],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.16666666666666666,
+                "model_confidence": 0.5343616604804993,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,21] package javax.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[8,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,9] cannot find symbol\n  symbol:   class ServletContextHandler\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,45] cannot find symbol\n  symbol:   class ServletContextHandler\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[18,28] cannot find symbol\n  symbol:   class DefaultServlet\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,28] cannot find symbol\n  symbol:   class HelloWorldServlet\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[21,53] cannot find symbol\n  symbol:   class HelloWorldServlet\n  location: class org.example.Main\n[INFO] 9 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.823 s\n[INFO] Finished at: 2024-04-16T20:51:13-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,21] package javax.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[8,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,9] cannot find symbol\n[ERROR]   symbol:   class ServletContextHandler\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,45] cannot find symbol\n[ERROR]   symbol:   class ServletContextHandler\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[18,28] cannot find symbol\n[ERROR]   symbol:   class DefaultServlet\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,28] cannot find symbol\n[ERROR]   symbol:   class HelloWorldServlet\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java:[21,53] cannot find symbol\n[ERROR]   symbol:   class HelloWorldServlet\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 53,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 33,
+                                "message": "package org.eclipse.jetty.servlet does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 45,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 28,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 33,
+                                "message": "package org.eclipse.jetty.servlet does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 21,
+                                "message": "package javax.servlet does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 26,
+                                "message": "package javax.servlet.http does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 28,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Server\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nWhile it's impossible to create an exact, runnable Java code snippet without context or full specifications, here's a very basic example of using the `Server` API from the `jetty-server` project. Keep in mind that the exact structure of your project, including the necessary imports and packages, would likely depend on the functionalities you need and your application's needs. For more specific needs, you might need other API dependencies as well.\n\n```java\nimport org.eclipse.jetty.server.Server;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080);\n        server.start();\n        server.join();\n    }\n\n}\n```\n\nThis simple example creates a new server, starts it on port 8080 and then stops it gracefully when the program is interrupted (like Ctrl-C). Make sure to run this in an environment where you have correctly configured your classpath and it has access to the necessary JAR file `jetty-server-12.0.6`.",
+                "extracted_java_code_from_prediction": "import org.eclipse.jetty.server.Server;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080);\n        server.start();\n        server.join();\n    }\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.eclipse.jetty.server.Server"
+                ],
+                "correct_FQN_predictions": [
+                    "org.eclipse.jetty.server.Server"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.3247561454772949,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Server\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a sample code:\n\n```java\nimport org.eclipse.jetty.server.Server;\nimport org.eclipsetter.server.RequestHandler;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080); // Define the server to use port 8080\n        server.setHandler(new RequestHandler()); // Define a request handler\n        server.start(); // Start the server\n        server.join();  // Waits until server is ready to handle requests\n    }\n}\n```\n\nHere, we use \"Server\" API from \"jetty-server-12.0.6\" project along with other necessary API \"RequestHandler\". The \"Server\" class is responsible for handling client requests and communicating with them.\n\nPlease note that your IDE must be set up to recognize the jetty library path or you must add a jar manually to your build path. In Eclipse, you can right-click on your project -> Properties -> Java Build Path -> Libraries -> Add JARs -> Select your Jetty JAR file -> Apply and Close.\n\nNote: If you are using an older version of Jetty (Jetty 9.3 and below), you might face the issue of \"unsupported major.minor version 52.0\" with Java 8+ due to using generics and lambda expressions in your code. In such a scenario, you need to use Jetty 10 or higher which supports these features of Java 8+.",
+                "extracted_java_code_from_prediction": "import org.eclipse.jetty.server.Server;\nimport org.eclipsetter.server.RequestHandler;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080); // Define the server to use port 8080\n        server.setHandler(new RequestHandler()); // Define a request handler\n        server.start(); // Start the server\n        server.join();  // Waits until server is ready to handle requests\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipsetter.server.RequestHandler"
+                ],
+                "correct_FQN_predictions": [
+                    "org.eclipse.jetty.server.Server"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.eclipsetter.server.RequestHandler"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.4635602831840515,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,30] package org.eclipsetter.server does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_3/Wrapper/src/main/java/org/example/Main.java:[10,31] cannot find symbol\n  symbol:   class RequestHandler\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.730 s\n[INFO] Finished at: 2024-04-16T20:51:17-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,30] package org.eclipsetter.server does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_3/Wrapper/src/main/java/org/example/Main.java:[10,31] cannot find symbol\n[ERROR]   symbol:   class RequestHandler\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 31,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 30,
+                                "message": "package org.eclipsetter.server does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Server\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nFor this task, we need to setup a Java web server using the Jetty Server API. You can achieve this by following the steps below:\n\n1. Add the dependencies and libraries to your pom.xml file:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.eclipse.jetty</groupId>\n        <artifactId>jetty-server</artifactId>\n        <version>12.0.6</version>\n    </dependency>\n    <dependency>\n        <groupId>org.eclipse.jetty</groupId>\n        <artifactId>jetty-servlet</artifactId>\n        <version>12.0.6</version>\n    </dependency>\n    <dependency>\n        <groupId>org.eclipse.jetty</groupId>\n        <artifactId>jetty-webapp</artifactId>\n        <version>12.0.6</version>\n    </dependency>\n    <dependency>\n        <groupId>org.eclipse.jetty</groupId>\n        <artifactId>jetty-security</artifactId>\n        <version>12.0.6</version>\n    </dependency>\n    <dependency>\n        <groupId>org.eclipse.jetty</groupId>\n        <artifactId>jetty-jsp</artifactId>\n        <version>12.0.6</version>\n    </dependency>\n    <dependency>\n        <groupId>org.eclipse.jetty</groupId>\n        <artifactId>jetty-annotations</artifactId>\n        <version>12.0.6</version>\n    </dependency>\n</dependencies>\n```\n\nNote: The version in the pom.xml file might change depending on the latest version. Always replace the version number with the most recent available version.\n\n2. Import required libraries in your Main.java file:\n\n```java\nimport org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.servlet.ServletContextHandler;\nimport org.eclipse.jetty.servlet.ServletHolder;\nimport org.eclipse.jetty.webapp.WebAppContext;\n```\n\n3. Define a servlet (e.g., HelloServlet.java) that serves a response to / requests:\n\n```java\npublic class HelloServlet extends HttpServlet {\n    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n        response.setContentType(\"text/html; charset=utf-8\");\n        PrintWriter writer = response.getWriter();\n        writer.println(\"<h1>Hello, World!</h1>\");\n    }\n}\n```\n\n4. Create a main method in Main.java that launches Jetty with your application:\n\n```java\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080);\n        WebAppContext webapp = new WebAppContext();\n        webapp.setContextPath(\"/\");\n        webapp.setResourceBase(\"src/main/webapp\"); // specify your webapp directory here\n        webapp.setClassLoader(Main.class.getClassLoader());\n        ServletContextHandler handler = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);\n        handler.setContextPath(\"/\");\n        handler.addServlet(new ServletHolder(new HelloServlet()), \"/*\");\n        handler.setWelcomeServlets(new String[]{\"default\"});\n        webapp.addEventListener(handler);\n        server.setHandler(webapp);\n        server.start();\n        server.join();\n    }\n}\n```\n\nThe main method starts a new server, sets it to use the web application context defined in `src/main/webapp` directory and serves a simple \"Hello, World!\" response to all requests at the root path (\"/\"). The server will listen for incoming requests on port 8080.",
+                "extracted_java_code_from_prediction": "import org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.servlet.ServletContextHandler;\nimport org.eclipse.jetty.servlet.ServletHolder;\nimport org.eclipse.jetty.webapp.WebAppContext;",
+                "extracted_FQNs_from_prediction": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.servlet.ServletContextHandler",
+                    "org.eclipse.jetty.servlet.ServletHolder",
+                    "org.eclipse.jetty.webapp.WebAppContext"
+                ],
+                "correct_FQN_predictions": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.servlet.ServletContextHandler",
+                    "org.eclipse.jetty.servlet.ServletHolder"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.eclipse.jetty.webapp.WebAppContext"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.7778757810592651,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Server\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSince the question does not specify any specific functionality that needs to be achieved, here is a generic example of how to start a server in Jetty.\n\nFirstly, you have to add Jetty to your classpath. You can do this in a Maven project using the following dependency:\n\n```xml\n<dependency>\n  <groupId>org.eclipse.jetty</groupId>\n  <artifactId>jetty-server</artifactId>\n  <version>12.0.6</version>\n</dependency>\n```\n\nThis will download and compile Jetty for you. Here is a simple servlet container using Jetty:\n\n```java\npackage jetty;\n\nimport org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.servlet.ServletHandler;\nimport javax.servlet.http.HttpServlet;\nimport javax.servlet.http.HttpServletRequest;\nimport javax.servlet.http;\nimport javax.servlet.http.HttpServletResponse;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080);\n        ServletHandler handler = new ServletHandler();\n        server.setHandler(handler);\n        \n        handler.addServletWithMapping(HelloServlet.class, \"/hello\");\n        \n        server.start();\n        server.join();\n    }\n    \n    public static class HelloServlet extends HttpServlet {\n        protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n            response.setContentType(\"text/html;charset=utf-8\");\n            response.getWriter().println(\"<h1>Hello, World!</h1>\");\n        }\n    }\n}\n```\n\nThis is a basic example of a Jetty server with one servlet at \"/hello\". It prints \"Hello, World!\" when you navigate to \"http://localhost:8080/hello\".\n\nThis code needs to be run in a Java environment.",
+                "extracted_java_code_from_prediction": "package jetty;\n\nimport org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.servlet.ServletHandler;\nimport javax.servlet.http.HttpServlet;\nimport javax.servlet.http.HttpServletRequest;\nimport javax.servlet.http;\nimport javax.servlet.http.HttpServletResponse;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080);\n        ServletHandler handler = new ServletHandler();\n        server.setHandler(handler);\n        \n        handler.addServletWithMapping(HelloServlet.class, \"/hello\");\n        \n        server.start();\n        server.join();\n    }\n    \n    public static class HelloServlet extends HttpServlet {\n        protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {\n            response.setContentType(\"text/html;charset=utf-8\");\n            response.getWriter().println(\"<h1>Hello, World!</h1>\");\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.servlet.ServletHandler",
+                    "javax.servlet.http.HttpServlet",
+                    "javax.servlet.http.HttpServletRequest",
+                    "javax.servlet.http",
+                    "javax.servlet.http.HttpServletResponse",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.servlet.ServletHandler",
+                    "javax.servlet.http.HttpServlet",
+                    "javax.servlet.http.HttpServletRequest",
+                    "javax.servlet.http.HttpServletResponse"
+                ],
+                "wrong_FQN_predictions": [
+                    "javax.servlet.http",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.2857142857142857,
+                "model_confidence": 0.5746847987174988,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,21] package javax.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[9,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[24,46] cannot find symbol\n  symbol:   class HttpServlet\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,30] cannot find symbol\n  symbol:   class HttpServletRequest\n  location: class org.example.Main.HelloServlet\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,58] cannot find symbol\n  symbol:   class HttpServletResponse\n  location: class org.example.Main.HelloServlet\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,95] cannot find symbol\n  symbol:   class ServletException\n  location: class org.example.Main.HelloServlet\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n  symbol:   class ServletHandler\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,38] cannot find symbol\n  symbol:   class ServletHandler\n  location: class org.example.Main\n[INFO] 11 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.766 s\n[INFO] Finished at: 2024-04-16T20:51:18-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,21] package javax.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[9,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[24,46] cannot find symbol\n[ERROR]   symbol:   class HttpServlet\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,30] cannot find symbol\n[ERROR]   symbol:   class HttpServletRequest\n[ERROR]   location: class org.example.Main.HelloServlet\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,58] cannot find symbol\n[ERROR]   symbol:   class HttpServletResponse\n[ERROR]   location: class org.example.Main.HelloServlet\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,95] cannot find symbol\n[ERROR]   symbol:   class ServletException\n[ERROR]   location: class org.example.Main.HelloServlet\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n[ERROR]   symbol:   class ServletHandler\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,38] cannot find symbol\n[ERROR]   symbol:   class ServletHandler\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 33,
+                                "message": "package org.eclipse.jetty.servlet does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 26,
+                                "message": "package javax.servlet.http does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 26,
+                                "message": "package javax.servlet.http does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 95,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 30,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 26,
+                                "message": "package javax.servlet.http does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 21,
+                                "message": "package javax.servlet does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 58,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 38,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/Server/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 24,
+                                "column": 46,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "ServerConnector": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"ServerConnector\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ServerConnector\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a sample Java code snippet that makes use of \"ServerConnector\" from the \"jetty-server-12.0.6\" project. Please note that you need to replace \"YourOwnServer\" with the actual class name that extends AbstractServer.\n\n```java\nimport org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.server.ServerConnector;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080);\n\n        ServerConnector connector = new ServerConnector(server);\n        connector.setPort(8080);\n\n        server.addConnector(connector);\n\n        server.start();\n        server.join();\n    }\n}\n```\nReplace the import for ServerConnector with this one, if jetty-server-12.0.6 is not added as an external dependency:\n```java\nimport org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.server.ServerConnector;\n```\nAlso, note that to run this code, you need to include the Jetty server library into your classpath. If you are using Maven, you could define a dependency on Jetty server in your pom.xml:\n```xml\n<dependencies>\n  <dependency>\n    <groupId>org.eclipse.jetty</groupId>\n    <artifactId>jetty-server</artifactId>\n    <version>12.0.6</version>\n  </dependency>\n</dependencies>\n```\nRemember to replace the version number with the actual version of the Jetty server library you are using.\n\nPlease be aware that running HTTP servers on ports below 1024 requires special privileges, and you may encounter issues if running the JVM as a normal user.",
+                "extracted_java_code_from_prediction": "import org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.server.ServerConnector;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080);\n\n        ServerConnector connector = new ServerConnector(server);\n        connector.setPort(8080);\n\n        server.addConnector(connector);\n\n        server.start();\n        server.join();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.server.ServerConnector"
+                ],
+                "correct_FQN_predictions": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.server.ServerConnector"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5744634866714478,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ServerConnector\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe Java code below is a simple demonstration on how to use ServerConnector API from Jetty project, which is already assumed to be added as a Maven dependency.\n\n1. Create a class in your project:\n\n```java\npublic class Main {\n   public static void main(String[] args) throws Exception {\n      try {\n         int port = 8080;\n         Server server = new Server(port);\n         \n         ServerConnector connector = new ServerConnector(server);\n         server.addConnector(connector);\n         \n         // Start the server\n         server.start();\n\n         // Now stop the server after some time.\n         Thread.sleep(5000);\n         server.stop();\n         \n         System.out.println(\"Server Stopped\");\n\n      } catch (Throwable t) {\n         System.err.println(t.toString());\n      }\n   }\n}\n```\nNote: This simple example uses Jetty's core API. For production use cases, you might want to use other APIs for things such as setting up endpoints, managing sessions, processing requests etc.\n\n2. Make sure to add the Jetty server library as a dependency. For Maven, that can be done as follows in pom.xml:\n\n```xml\n<dependency>\n   <groupId>org.eclipse.jetty</groupId>\n   <artifactId>jetty-server</artifactId>\n   <version>12.0.6</version>\n</dependency>\n```\n\n3. Also, note that the code does not handle any exceptions that might happen during the server operations, and for the sake of simplicity, it directly throws them. In production code, you would want to handle such exceptions more gracefully. For example, you might want to catch IOException to handle cases when server is not available, and catch ServletException to handle other server-related exceptions.",
+                "extracted_java_code_from_prediction": "public class Main {\n   public static void main(String[] args) throws Exception {\n      try {\n         int port = 8080;\n         Server server = new Server(port);\n         \n         ServerConnector connector = new ServerConnector(server);\n         server.addConnector(connector);\n         \n         // Start the server\n         server.start();\n\n         // Now stop the server after some time.\n         Thread.sleep(5000);\n         server.stop();\n         \n         System.out.println(\"Server Stopped\");\n\n      } catch (Throwable t) {\n         System.err.println(t.toString());\n      }\n   }\n}",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5257835388183594,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ServerConnector\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of how to use the ServerConnector in the Jetty server:\n\n```java\nimport org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.server.ServerConnector;\nimport org.eclipse.jetty.server.handler.HandlerList;\nimport org.eclipse.jetty.server.handler.ResourceHandler;\nimport org.eclipse.jetty.servlet.ServletContextHandler;\nimport org.eclipse.jetty.servlet.ServletHolder;\nimport org.eclipse.jetty.util.thread.QueuedThreadPool;\nimport java.net.InetAddress;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server();\n        QueuedThreadPool threadPool = new QueuedThreadPool();\n\n        threadPool.setName(\"ThreadPool\");\n        threadPool.setMaxThreads(100);\n        threadPool.setMinThreads(10);\n\n        server.setThreadPool(threadPool);\n\n        ServerConnector serverConnector = new ServerConnector(server, InetAddress.getByName(\"localhost\"), 8080);\n        serverConnector.setHost(\"localhost\");\n        serverConnector.setPort(8080);\n\n        server.addConnector(serverConnector);\n\n        ResourceHandler resource_handler = new ResourceHandler();\n        resource_handler.setDirectoriesListed(true);\n        resource_handler.setWelcomeFiles(new String[]{ \"index.html\" });\n        \n        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);\n        context.setContextPath(\"/\");\n        server.setHandler(context);\n        \n        server.start();\n        server.join();\n    }\n}\n```\n\nThis code starts a simple web server on localhost port 8080 and accepts maximum of 100 and minimum of 10 threads. It also sets the base directory of the resources for the server, and serves a welcome page when the server is launched.\n\nThis code does not require any additional dependencies but note that you need to have Jetty 12.0.6 in your classpath to compile and run it successfully.",
+                "extracted_java_code_from_prediction": "import org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.server.ServerConnector;\nimport org.eclipse.jetty.server.handler.HandlerList;\nimport org.eclipse.jetty.server.handler.ResourceHandler;\nimport org.eclipse.jetty.servlet.ServletContextHandler;\nimport org.eclipse.jetty.servlet.ServletHolder;\nimport org.eclipse.jetty.util.thread.QueuedThreadPool;\nimport java.net.InetAddress;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server();\n        QueuedThreadPool threadPool = new QueuedThreadPool();\n\n        threadPool.setName(\"ThreadPool\");\n        threadPool.setMaxThreads(100);\n        threadPool.setMinThreads(10);\n\n        server.setThreadPool(threadPool);\n\n        ServerConnector serverConnector = new ServerConnector(server, InetAddress.getByName(\"localhost\"), 8080);\n        serverConnector.setHost(\"localhost\");\n        serverConnector.setPort(8080);\n\n        server.addConnector(serverConnector);\n\n        ResourceHandler resource_handler = new ResourceHandler();\n        resource_handler.setDirectoriesListed(true);\n        resource_handler.setWelcomeFiles(new String[]{ \"index.html\" });\n        \n        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);\n        context.setContextPath(\"/\");\n        server.setHandler(context);\n        \n        server.start();\n        server.join();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.server.ServerConnector",
+                    "org.eclipse.jetty.server.handler.HandlerList",
+                    "org.eclipse.jetty.server.handler.ResourceHandler",
+                    "org.eclipse.jetty.servlet.ServletContextHandler",
+                    "org.eclipse.jetty.servlet.ServletHolder",
+                    "org.eclipse.jetty.util.thread.QueuedThreadPool",
+                    "java.net.InetAddress"
+                ],
+                "correct_FQN_predictions": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.server.ServerConnector",
+                    "org.eclipse.jetty.server.handler.HandlerList",
+                    "org.eclipse.jetty.server.handler.ResourceHandler",
+                    "org.eclipse.jetty.servlet.ServletContextHandler",
+                    "org.eclipse.jetty.servlet.ServletHolder"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.eclipse.jetty.util.thread.QueuedThreadPool",
+                    "java.net.InetAddress"
+                ],
+                "number_of_correct_FQNs": 6,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.7280572652816772,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[6,40] cannot find symbol\n  symbol:   class HandlerList\n  location: package org.eclipse.jetty.server.handler\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[22,15] cannot find symbol\n  symbol:   method setThreadPool(org.eclipse.jetty.util.thread.QueuedThreadPool)\n  location: variable server of type org.eclipse.jetty.server.Server\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[24,43] no suitable constructor found for ServerConnector(org.eclipse.jetty.server.Server,java.net.InetAddress,int)\n    constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,int,int) is not applicable\n      (argument mismatch; java.net.InetAddress cannot be converted to int)\n    constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,int,int,org.eclipse.jetty.server.ConnectionFactory...) is not applicable\n      (argument mismatch; java.net.InetAddress cannot be converted to int)\n    constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.server.ConnectionFactory...) is not applicable\n      (varargs mismatch; java.net.InetAddress cannot be converted to org.eclipse.jetty.server.ConnectionFactory)\n    constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.util.ssl.SslContextFactory.Server,org.eclipse.jetty.server.ConnectionFactory...) is not applicable\n      (argument mismatch; java.net.InetAddress cannot be converted to org.eclipse.jetty.util.ssl.SslContextFactory.Server)\n    constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,java.util.concurrent.Executor,org.eclipse.jetty.util.thread.Scheduler,org.eclipse.jetty.io.ByteBufferPool,int,int,org.eclipse.jetty.server.ConnectionFactory...) is not applicable\n      (argument mismatch; java.net.InetAddress cannot be converted to java.util.concurrent.Executor)\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[31,25] cannot find symbol\n  symbol:   method setDirectoriesListed(boolean)\n  location: variable resource_handler of type org.eclipse.jetty.server.handler.ResourceHandler\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,9] cannot find symbol\n  symbol:   class ServletContextHandler\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,45] cannot find symbol\n  symbol:   class ServletContextHandler\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,67] cannot find symbol\n  symbol:   variable ServletContextHandler\n  location: class org.example.Main\n[INFO] 9 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.856 s\n[INFO] Finished at: 2024-04-16T20:51:48-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[6,40] cannot find symbol\n[ERROR]   symbol:   class HandlerList\n[ERROR]   location: package org.eclipse.jetty.server.handler\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,33] package org.eclipse.jetty.servlet does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[22,15] cannot find symbol\n[ERROR]   symbol:   method setThreadPool(org.eclipse.jetty.util.thread.QueuedThreadPool)\n[ERROR]   location: variable server of type org.eclipse.jetty.server.Server\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[24,43] no suitable constructor found for ServerConnector(org.eclipse.jetty.server.Server,java.net.InetAddress,int)\n[ERROR]     constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,int,int) is not applicable\n[ERROR]       (argument mismatch; java.net.InetAddress cannot be converted to int)\n[ERROR]     constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,int,int,org.eclipse.jetty.server.ConnectionFactory...) is not applicable\n[ERROR]       (argument mismatch; java.net.InetAddress cannot be converted to int)\n[ERROR]     constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.server.ConnectionFactory...) is not applicable\n[ERROR]       (varargs mismatch; java.net.InetAddress cannot be converted to org.eclipse.jetty.server.ConnectionFactory)\n[ERROR]     constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,org.eclipse.jetty.util.ssl.SslContextFactory.Server,org.eclipse.jetty.server.ConnectionFactory...) is not applicable\n[ERROR]       (argument mismatch; java.net.InetAddress cannot be converted to org.eclipse.jetty.util.ssl.SslContextFactory.Server)\n[ERROR]     constructor org.eclipse.jetty.server.ServerConnector.ServerConnector(org.eclipse.jetty.server.Server,java.util.concurrent.Executor,org.eclipse.jetty.util.thread.Scheduler,org.eclipse.jetty.io.ByteBufferPool,int,int,org.eclipse.jetty.server.ConnectionFactory...) is not applicable\n[ERROR]       (argument mismatch; java.net.InetAddress cannot be converted to java.util.concurrent.Executor)\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[31,25] cannot find symbol\n[ERROR]   symbol:   method setDirectoriesListed(boolean)\n[ERROR]   location: variable resource_handler of type org.eclipse.jetty.server.handler.ResourceHandler\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,9] cannot find symbol\n[ERROR]   symbol:   class ServletContextHandler\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,45] cannot find symbol\n[ERROR]   symbol:   class ServletContextHandler\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,67] cannot find symbol\n[ERROR]   symbol:   variable ServletContextHandler\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 33,
+                                "message": "package org.eclipse.jetty.servlet does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 34,
+                                "column": 45,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 40,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 24,
+                                "column": 43,
+                                "message": "no suitable constructor found for ServerConnector(org.eclipse.jetty.server.Server,java.net.InetAddress,int)"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 34,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 33,
+                                "message": "package org.eclipse.jetty.servlet does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 31,
+                                "column": 25,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 34,
+                                "column": 67,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jetty-server-12.0.6/ServerConnector/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 22,
+                                "column": 15,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ServerConnector\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe API you're asking for doesn't seem to exist. However, we can create a simple, compilable Java code snippet for you. \n\nPlease provide more information to provide a more specific and correct answer.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.23580104112625122,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ServerConnector\" API from \"jetty-server-12.0.6\" project along with other necessary APIs. The dependency is already added for \"jetty-server-12.0.6\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, the provided context doesn't specify any specific action or functionality of the ServerConnector API that needs to be implemented. Nevertheless, here's an example of how you could use the ServerConnector API from the \"jetty-server-12.0.6\" project along with other necessary APIs. \n\nThis example listens for connections on port 8080, then prints a message when a new connection is established. \n\nThe code requires Jetty framework for its Server and ServerConnector. Jetty framework can be found in Maven repositories, so you don't have to add new dependencies for it.\n\n```java\nimport org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.server.ServerConnector;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080);\n        ServerConnector connector = new ServerConnector(server);\n        server.addConnector(connector);\n        server.start();\n        server.dumpStdErr();\n        server.join();\n    }\n}\n```\nIn this example, a Server instance is created on port 8080 and a ServerConnector is attached to the server. The server is started, and the program is joined to the current thread until the server's main thread exits. Upon executing the start() method, the Server is prepared for connections. The println() method outputs a confirmation message to the standard error stream. \n\nRemember, to compile and run this example you will also need the Jetty framework in your project classpath, and you can achieve this by adding the following dependency in your pom.xml file:\n\n```xml\n<dependency>\n    <groupId>org.eclipse.jetty</groupId>\n    <artifactId>jetty-server</artifactId>\n    <version>12.0.6</version>\n</dependency>\n```\nThis is the simplest example of using Jetty's ServerConnector. You could expand on it according to your needs.",
+                "extracted_java_code_from_prediction": "import org.eclipse.jetty.server.Server;\nimport org.eclipse.jetty.server.ServerConnector;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Server server = new Server(8080);\n        ServerConnector connector = new ServerConnector(server);\n        server.addConnector(connector);\n        server.start();\n        server.dumpStdErr();\n        server.join();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.server.ServerConnector"
+                ],
+                "correct_FQN_predictions": [
+                    "org.eclipse.jetty.server.Server",
+                    "org.eclipse.jetty.server.ServerConnector"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5722849369049072,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        }
+    }
+}

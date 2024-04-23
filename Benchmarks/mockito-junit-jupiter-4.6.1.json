@@ -1,0 +1,351 @@
+{
+    "jar_name": "mockito-junit-jupiter-4.6.1.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from mockito-junit-jupiter-4.6.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from mockito-junit-jupiter-4.6.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the code or project files. However, I can provide you with a general idea of what classes might be present in the Mockito library.\n\nHere are some of the classes that might be present in the Mockito library:\n\n1. Mockito\n2. MockitoAnnotations\n3. MockitoExtension\n4. MockitoJUnitRunner\n5. Captor\n6. InOrder\n7. InjectMocks\n8. Mock\n9. Spy\n10. ArgumentCaptor\n11. ArgumentMatchers\n12. BDDMockito\n13. BDDSoftDeletes\n14. BDDSoftUpdates\n15. BDDSoftUpdates\n16. BDDSoftUpdates\n17. BDDSoftUpdates\n18. BDDSoftUpdates\n19. BDDSoftUpdates\n20. BDDSoftUpdates\n21. BDDSoftUpdates\n22. BDDSoftUpdates\n23. BDDSoftUpdates\n24. BDDSoftUpdates\n25. BDDSoftUpdates\n26. BDDSoftUpdates\n27. BDDSoftUpdates\n28. BDDSoftUpdates\n29. BDDSoftUpdates\n30. BDDSoftUpdates\n31. BDDSoftUpdates\n32. BDDSoftUpdates\n33. BDDSoftUpdates\n34. BDDSoftUpdates\n35. BDDSoftUpdates\n36. BDDSoftUpdates\n37. BDDSoftUpdates\n38. BDDSoftUpdates\n39. BDDSoftUpdates\n40. BDDSoftUpdates\n41. BDDSoftUpdates\n42. BDDSoftUpdates\n43. BDDSoftUpdates\n44. BDDSoftUpdates\n45. BDDSoftUpdates\n46. BDDSoftUpdates\n47. BDDSoftUpdates\n48. BDDSoftUpdates\n49. BDDSoftUpdates\n50. BDDSoftUpdates\n\nPlease note that the actual classes might be different based on the version of the library you are using.",
+        "extracted_APIs_from_prediction": [
+            "Mockito",
+            "MockitoAnnotations",
+            "MockitoExtension",
+            "MockitoJUnitRunner",
+            "Captor",
+            "InOrder",
+            "InjectMocks",
+            "Mock",
+            "Spy",
+            "ArgumentCaptor",
+            "ArgumentMatchers",
+            "BDDMockito",
+            "BDDSoftDeletes",
+            "BDDSoftUpdates"
+        ],
+        "correct_API_predictions": [
+            "MockitoExtension"
+        ],
+        "wrong_API_predictions": [
+            "Mockito",
+            "MockitoAnnotations",
+            "MockitoJUnitRunner",
+            "Captor",
+            "InOrder",
+            "InjectMocks",
+            "Mock",
+            "Spy",
+            "ArgumentCaptor",
+            "ArgumentMatchers",
+            "BDDMockito",
+            "BDDSoftDeletes",
+            "BDDSoftUpdates"
+        ],
+        "number_of_correct_APIs": 1,
+        "number_of_wrong_APIs": 13,
+        "failure_rate_for_APIs": 0.9285714285714286,
+        "model_confidence": 0.8075899481773376,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "MockitoExtension": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"MockitoExtension\" API from \"mockito-junit-jupiter-4.6.1\" project along with other necessary APIs. The dependency is already added for \"mockito-junit-jupiter-4.6.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoExtension\" API from \"mockito-junit-jupiter-4.6.1\" project along with other necessary APIs. The dependency is already added for \"mockito-junit-jupiter-4.6.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of a unit test with Java and Mockito. Please note that the actual code would depend on your requirements, but I've created a `Calculator` interface and a class implementing that interface (`CalculatorImpl`), and tests for each method in the `CalculatorImpl` class.\n\nI used the `@ExtendWith(MockitoExtension.class)` annotation to enable the use of Mockito.\n\n```java\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.mockito.Mockito.when;\n\npublic class Main {\n\n    public interface Calculator {\n        int add(int a, int b);\n        int subtract(int a, int b);\n        int multiply(int a, int b);\n        int divide(int a, int b);\n    }\n\n    public static class CalculatorImpl implements Calculator {\n\n        @Override\n        public int add(int a, int b) {\n            return a + b;\n        }\n\n        @Override\n        public int subtract(int a, int b) {\n            return a - b;\n        }\n\n        @Override\n        public int multiply(int a, int b) {\n            return a * b;\n        }\n\n        @Override\n        public int divide(int a, int b) {\n            return a / b;\n        }\n    }\n\n    @ExtendWith(MockitoExtension.class)\n    public static class TestCalculator {\n\n        @Mock\n        private CalculatorImpl calculator;\n\n        @Test\n        void testAdd() {\n            when(calculator.add(2, 3)).thenReturn(5);\n            assertEquals(5, calculator.add(2, 3));\n        }\n\n        @Test\n        void testSubtract() {\n            when(calculator.subtract(2, 3)).thenReturn(-1);\n            assertEquals(-1, calculator.subtract(2, 3));\n        }\n\n        @Test\n        void testMultiply() {\n            when(calculator.multiply(2, 3)).thenReturn(6);\n            assertEquals(6, calculator.multiply(2, 3));\n        }\n\n        @Test\n        void testDivide() {\n            when(calculator.divide(6, 3)).thenReturn(2);\n            assertEquals(2, calculator.divide(6, 3));\n        }\n    }\n}\n```",
+                "extracted_java_code_from_prediction": "import org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\n\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.mockito.Mockito.when;\n\npublic class Main {\n\n    public interface Calculator {\n        int add(int a, int b);\n        int subtract(int a, int b);\n        int multiply(int a, int b);\n        int divide(int a, int b);\n    }\n\n    public static class CalculatorImpl implements Calculator {\n\n        @Override\n        public int add(int a, int b) {\n            return a + b;\n        }\n\n        @Override\n        public int subtract(int a, int b) {\n            return a - b;\n        }\n\n        @Override\n        public int multiply(int a, int b) {\n            return a * b;\n        }\n\n        @Override\n        public int divide(int a, int b) {\n            return a / b;\n        }\n    }\n\n    @ExtendWith(MockitoExtension.class)\n    public static class TestCalculator {\n\n        @Mock\n        private CalculatorImpl calculator;\n\n        @Test\n        void testAdd() {\n            when(calculator.add(2, 3)).thenReturn(5);\n            assertEquals(5, calculator.add(2, 3));\n        }\n\n        @Test\n        void testSubtract() {\n            when(calculator.subtract(2, 3)).thenReturn(-1);\n            assertEquals(-1, calculator.subtract(2, 3));\n        }\n\n        @Test\n        void testMultiply() {\n            when(calculator.multiply(2, 3)).thenReturn(6);\n            assertEquals(6, calculator.multiply(2, 3));\n        }\n\n        @Test\n        void testDivide() {\n            when(calculator.divide(6, 3)).thenReturn(2);\n            assertEquals(2, calculator.divide(6, 3));\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.jupiter.api.Test",
+                    "org.junit.jupiter.api.extension.ExtendWith",
+                    "org.mockito.InjectMocks",
+                    "org.mockito.Mock",
+                    "static org.junit.jupiter.api.Assertions.assertEquals",
+                    "static org.mockito.Mockito.when"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.jupiter.api.Test",
+                    "org.junit.jupiter.api.extension.ExtendWith",
+                    "org.mockito.Mock"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.mockito.InjectMocks",
+                    "static org.junit.jupiter.api.Assertions.assertEquals",
+                    "static org.mockito.Mockito.when"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.8104715347290039,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,39] package org.junit.jupiter.api.extension does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,36] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[42,6] cannot find symbol\n  symbol:   class ExtendWith\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[42,17] cannot find symbol\n  symbol:   class MockitoExtension\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[48,10] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[54,10] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[60,10] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[66,10] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[51,13] cannot find symbol\n  symbol:   method assertEquals(int,int)\n  location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[57,13] cannot find symbol\n  symbol:   method assertEquals(int,int)\n  location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[63,13] cannot find symbol\n  symbol:   method assertEquals(int,int)\n  location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[69,13] cannot find symbol\n  symbol:   method assertEquals(int,int)\n  location: class org.example.Main.TestCalculator\n[INFO] 14 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  2.703 s\n[INFO] Finished at: 2024-04-16T23:50:49-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,39] package org.junit.jupiter.api.extension does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,36] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[42,6] cannot find symbol\n[ERROR]   symbol:   class ExtendWith\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[42,17] cannot find symbol\n[ERROR]   symbol:   class MockitoExtension\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[48,10] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[54,10] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[60,10] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[66,10] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[51,13] cannot find symbol\n[ERROR]   symbol:   method assertEquals(int,int)\n[ERROR]   location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[57,13] cannot find symbol\n[ERROR]   symbol:   method assertEquals(int,int)\n[ERROR]   location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[63,13] cannot find symbol\n[ERROR]   symbol:   method assertEquals(int,int)\n[ERROR]   location: class org.example.Main.TestCalculator\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java:[69,13] cannot find symbol\n[ERROR]   symbol:   method assertEquals(int,int)\n[ERROR]   location: class org.example.Main.TestCalculator\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 69,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 66,
+                                "column": 10,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 42,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 42,
+                                "column": 17,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 39,
+                                "message": "package org.junit.jupiter.api.extension does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 48,
+                                "column": 10,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 54,
+                                "column": 10,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 51,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 29,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 60,
+                                "column": 10,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 63,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 1,
+                                "message": "static import only from classes and interfaces"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 36,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 57,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoExtension\" API from \"mockito-junit-jupiter-4.6.1\" project along with other necessary APIs. The dependency is already added for \"mockito-junit-jupiter-4.6.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIt's hard to provide a complete, compilable Java code without details about what Mockito should do, but we will create a simple example demonstrating how to use MockitoExtension. Let's consider a simple MathUtils class with a method \"add\", which does addition of two integers and we want to mock this method using Mockito:\n\n```java\npublic class Main {\n\n    public static void main(String[] args) {\n        MockMathUtils mathUtils = new MockMathUtils();\n        int result = mathUtils.add(10, 20);\n        System.out.println(\"Result: \" + result);\n    }\n}\n```\n\nThe `MockMathUtils` will be the mock class.\n\n```java\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.junit.jupiter.MockitoExtension;\nimport static org.mockito.Mockito.mock;\nimport static org.mockito.Mockito.when;\n\n@ExtendWith(MockitoExtension.class)\npublic class MockMathUtils {\n    public int add(int a, int b) {\n        return a + b;\n    }\n}\n```\n\nHere we are using `@ExtendWith` annotation provided by JUnit5 with MockitoExtension to tell JUnit to load the extension. The `mock` function is used to create the mock object, and `when` function is used to configure the mock object (stubbing). Mockito.mock() will return a mock instance of MathUtils. The `when` function defines what should happen when a method of a mock object is invoked. Here we are using `when(mockMathUtils.add(10, 20)).thenReturn(30);`. This means when the add method of the mockMathUtils with arguments 10 and 20 is called, it will return 30.",
+                "extracted_java_code_from_prediction": "public class Main {\n\n    public static void main(String[] args) {\n        MockMathUtils mathUtils = new MockMathUtils();\n        int result = mathUtils.add(10, 20);\n        System.out.println(\"Result: \" + result);\n    }\n}",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5479246973991394,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoExtension\" API from \"mockito-junit-jupiter-4.6.1\" project along with other necessary APIs. The dependency is already added for \"mockito-junit-jupiter-4.6.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a sample Java code using Mockito library along with JUnit 5 for testing. \n\nFor this example, a class `Calculator` with method `add` to perform addition of two integers and `subtract` for subtraction is used. \n\n```java\n// Calculator class\npublic class Calculator {\n    public int add(int num1, int num2) {\n        return num1 + num2;\n    }\n\n    public int subtract(int num1, int num2) {\n        return num1 - num2;\n    }\n}\n```\n\nMockito tests for this `Calculator` class can be written as follows:\n\n```java\n// Test for the Calculator class\n\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.junit.jupiter.api.Test;\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.mockito.Mockito.mock;\nimport static org.mockito.Mockito.when;\n\n@ExtendWith(MockitoExtension.class)\nclass Main {\n    private Calculator calculator;\n\n    @BeforeEach\n    public void setup() {\n        calculator = mock(Calculator.class);\n    }\n\n    @Test\n    void addTest() {\n        when(calculator.add(2, 3)).thenReturn(5);\n        assertEquals(5, calculator.add(2, 3));\n    }\n\n    @Test\n    void subtractTest() {\n        when(calculator.subtract(5, 3)).thenReturn(2);\n        assertEquals(2, calculator.subtract(5, 3));\n    }\n}\n```\n\nIn the code above, `MockitoExtension` allows JUnit 5 to run tests with mocking capabilities and the `@ExtendWith` annotation indicates that we will use `MockitoExtension` for these tests. The `@BeforeEach` method is used to create a mock instance of `Calculator`.\n\nThese tests mock two methods of the `Calculator` class, `add` and `subtract`, and then check if they return the expected values.",
+                "extracted_java_code_from_prediction": "// Calculator class\npublic class Calculator {\n    public int add(int num1, int num2) {\n        return num1 + num2;\n    }\n\n    public int subtract(int num1, int num2) {\n        return num1 - num2;\n    }\n}",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6107456088066101,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoExtension\" API from \"mockito-junit-jupiter-4.6.1\" project along with other necessary APIs. The dependency is already added for \"mockito-junit-jupiter-4.6.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a Java code that uses Mockito and other APIs. This example will check if a list contains a certain element. Please replace 'YourClass' with your real class and add methods according to your needs.\n\n```java\nimport org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport java.util.Arrays;\nimport java.util.List;\n\nimport static org.junit.jupiter.api.Assertions.assertTrue;\nimport static org.mockito.Mockito.when;\n\n@ExtendWith(MockitoExtension.class)\nclass Main {\n\n    @Mock\n    private List<String> mockedList;\n\n    @InjectMocks\n    private YourClass yourClass;\n\n    @Test\n    void test() {\n        when(mockedList.contains(\"two\")).thenReturn(true);\n        assertTrue(yourClass.checkIfListContainsElement(mockedList, \"two\"));\n    }\n\n    static class YourClass {\n        public boolean checkIfListContainsElement(List<String> list, String element) {\n            return list.contains(element);\n        }\n    }\n}\n```\n\nIn this case, we're using `Mockito` to create a mock `List` and `InjectMocks` to inject mock `List` into `YourClass`. Then, we're setting the behavior of the `contains` method of our mock `List` for the case when the `\"two\"` is in our mock `List`. After that, we check if `YourClass` actually returns `true` when calling the `checkIfListContainsElement` method with our mocked `List` and the `\"two\"`. This is the example of how to set up unit test for a specific method using `Mockito`. The `ExtendWith` annotation specifies that the test should use the extension `MockitoExtension` from `mockito-junit-jupiter-4.6.1`. \n\nYou can replace `YourClass` and `checkIfListContainsElement` with your class and methods according to your needs and the behavior of your class.",
+                "extracted_java_code_from_prediction": "import org.junit.jupiter.api.Test;\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\n\nimport java.util.Arrays;\nimport java.util.List;\n\nimport static org.junit.jupiter.api.Assertions.assertTrue;\nimport static org.mockito.Mockito.when;\n\n@ExtendWith(MockitoExtension.class)\nclass Main {\n\n    @Mock\n    private List<String> mockedList;\n\n    @InjectMocks\n    private YourClass yourClass;\n\n    @Test\n    void test() {\n        when(mockedList.contains(\"two\")).thenReturn(true);\n        assertTrue(yourClass.checkIfListContainsElement(mockedList, \"two\"));\n    }\n\n    static class YourClass {\n        public boolean checkIfListContainsElement(List<String> list, String element) {\n            return list.contains(element);\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.jupiter.api.Test",
+                    "org.junit.jupiter.api.extension.ExtendWith",
+                    "org.mockito.InjectMocks",
+                    "org.mockito.Mock",
+                    "org.mockito.junit.jupiter.MockitoExtension",
+                    "java.util.Arrays",
+                    "java.util.List",
+                    "static org.junit.jupiter.api.Assertions.assertTrue",
+                    "static org.mockito.Mockito.when"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.jupiter.api.Test",
+                    "org.junit.jupiter.api.extension.ExtendWith",
+                    "org.mockito.Mock",
+                    "org.mockito.junit.jupiter.MockitoExtension"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.mockito.InjectMocks",
+                    "java.util.Arrays",
+                    "java.util.List",
+                    "static org.junit.jupiter.api.Assertions.assertTrue",
+                    "static org.mockito.Mockito.when"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 5,
+                "failure_rate_for_FQNs": 0.5555555555555556,
+                "model_confidence": 0.605099618434906,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,39] package org.junit.jupiter.api.extension does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,36] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[24,9] cannot find symbol\n  symbol:   method assertTrue(boolean)\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  2.913 s\n[INFO] Finished at: 2024-04-16T23:50:55-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,39] package org.junit.jupiter.api.extension does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,36] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java:[24,9] cannot find symbol\n[ERROR]   symbol:   method assertTrue(boolean)\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 29,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 24,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 39,
+                                "message": "package org.junit.jupiter.api.extension does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 1,
+                                "message": "static import only from classes and interfaces"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 36,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoExtension\" API from \"mockito-junit-jupiter-4.6.1\" project along with other necessary APIs. The dependency is already added for \"mockito-junit-jupiter-4.6.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple example of a test case written with MockitoExtension from \"mockito-junit-jupiter-4.6.1\" project:\n\n```java\nimport org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\nimport org.junit.jupiter.api.Assertions;\nimport org.junit.jupiter.api.Test;\n\nimport java.util.List;\n\n@ExtendWith(MockitoExtension.class)\npublic class Main {\n\n    @Mock\n    private List<String> mockedList;\n\n    @Test\n    void testMock() {\n        Assertions.assertTrue(mockedList.isEmpty());\n    }\n}\n```\n\nNote: Please replace the version number in the dependency with the one you are currently using, and also ensure your JDK version is 11 or higher as Mockito extensions require Java 8 or higher. This is a simple example, replace it with your requirements.\n\nAlso, you need to be careful about using APIs that are not compatible with the version of the MockitoExtension in your project. The compatibility is usually handled by Mockito and should not interfere with each other.\n\nHere are the important dependencies required for the project:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.mockito</groupId>\n        <artifactId>mockito-junit-jupiter</artifactId>\n        <version>4.6.1</version>\n        <scope>test</scope>\n    </dependency>\n    <dependency>\n        <groupId>org.junit.jupiter</groupId>\n        <artifactId>junit-jupiter-api</artifactId>\n        <version>5.9.0</version>\n        <scope>test</scope>\n    </dependency>\n    <dependency>\n        <groupId>org.junit.jupiter</groupId>\n        <artifactId>junit-jupiter-engine</artifactId>\n        <version>5.9.0</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "import org.junit.jupiter.api.extension.ExtendWith;\nimport org.mockito.Mock;\nimport org.mockito.junit.jupiter.MockitoExtension;\nimport org.junit.jupiter.api.Assertions;\nimport org.junit.jupiter.api.Test;\n\nimport java.util.List;\n\n@ExtendWith(MockitoExtension.class)\npublic class Main {\n\n    @Mock\n    private List<String> mockedList;\n\n    @Test\n    void testMock() {\n        Assertions.assertTrue(mockedList.isEmpty());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.jupiter.api.extension.ExtendWith",
+                    "org.mockito.Mock",
+                    "org.mockito.junit.jupiter.MockitoExtension",
+                    "org.junit.jupiter.api.Assertions",
+                    "org.junit.jupiter.api.Test",
+                    "java.util.List"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.jupiter.api.extension.ExtendWith",
+                    "org.mockito.Mock",
+                    "org.mockito.junit.jupiter.MockitoExtension",
+                    "org.junit.jupiter.api.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.junit.jupiter.api.Assertions",
+                    "java.util.List"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.5970930457115173,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[3,39] package org.junit.jupiter.api.extension does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[17,9] cannot find symbol\n  symbol:   variable Assertions\n  location: class org.example.Main\n[INFO] 5 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  2.744 s\n[INFO] Finished at: 2024-04-16T23:51:00-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[3,39] package org.junit.jupiter.api.extension does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java:[17,9] cannot find symbol\n[ERROR]   symbol:   variable Assertions\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 29,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 29,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-junit-jupiter-4.6.1/MockitoExtension/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 39,
+                                "message": "package org.junit.jupiter.api.extension does not exist"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

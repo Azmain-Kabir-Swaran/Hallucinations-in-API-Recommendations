@@ -1,0 +1,16 @@
+{
+    "jar_name": "lombok-1.18.30.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from lombok-1.18.30 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from lombok-1.18.30 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of a project to extract the class names. However, I can provide you with a general idea of how to do it.\n\nIn Java, you can use the Java Reflection API to get the names of all classes in a package. Here's a simple example:\n\n```java\nimport java.lang.reflect.Modifier;\n\npublic class Main {\n    public static void main(String[] args) {\n        String packageName = \"lombok.core\";\n        try {\n            ClassLoader classLoader = Thread.currentThread().getContextClassLoader();\n            assert classLoader != null;\n            java.util.stream.Stream.of(classLoader.getDefinedPackages())\n                    .filter(pkg -> pkg.getName().startsWith(packageName))\n                    .flatMap(pkg -> {\n                        try {\n                            return java.util.of(pkg.getClasses());\n                        } catch (Exception e) {\n                            return java.util.empty();\n                        }\n                    })\n                    .filter(clazz -> !Modifier.isAbstract(clazz.getModifiers()))\n                    .limit(50)\n                    .forEach(clazz -> System.out.println(clazz.getName()));\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code will print the names of the first 50 non-abstract classes in the `lombok.core` package.\n\nPlease note that this is a general idea and may not work as expected in your specific case due to the complexity of the project and the specifics of the Lombok library. You would need to adjust the code to fit your specific needs.",
+        "extracted_APIs_from_prediction": [],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 0,
+        "model_confidence": 0.7322283983230591,
+        "failure_rate_for_APIs": 1,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

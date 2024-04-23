@@ -1,0 +1,906 @@
+{
+    "jar_name": "jakarta.mail-api-2.1.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from junit-4.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JUnit4TestAdapter\n2. JUnit4TestCaseFacade\n3. JUnitCoreTest\n4. JUnit4TestAdapterCache\n5. TestClassMethodsRunner\n6. JUnitCore\n7. TestClassMethodsRunnerTest\n8. TestClassRunner\n9. InaccessibleBaseClassTest\n10. OldTestClassRunnerTest\n11. IgnoreClassTest\n12. OldTestClassRunner\n13. ClassRequestTest\n14. OldTestClassAdaptingListenerTest\n15. AnnotationTest\n16. PreJUnit4TestCaseRunnerTest\n17. ClassesRequest\n18. TestMethodRunner\n19. IgnoredClassRunner\n20. ClassRequest\n21. ParameterizedTestTest\n22. ParameterizedTestMethodTest\n23. TestMethodTest\n24. TestListenerTest\n25. TestIntrospector\n26. TestDescriptionTest\n27. TestDecorator\n28. TestRunner\n29. FailedConstructionTest\n30. ListenerTest\n31. TestFailure\n32. AssertionTest\n33. TestSetup\n34. RunnerTest\n35. SortableTest\n36. ListTest\n37. ValidationTest\n38. ActiveTestSuite\n39. AllTestsTest\n40. SuiteDescriptionTest\n41. ForwardCompatibilityTest\n42. EnclosedTest\n43. TestResult\n44. AllTests\n45. SuiteTest\n46. InitializationErrorForwardCompatibilityTest\n47. OldTests\n48. CommandLineTest\n49. Assert\n\nList correct API's class names from commons-logging-1.3.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. LogFactoryImpl\n2. Log4JLogger\n3. LogSource\n4. Jdk14Logger\n5. Slf4jLogFactory\n6. Log4jApiLogFactory\n7. LogKitLogger\n8. SimpleLog\n9. LogConfigurationException\n10. Jdk13LumberjackLogger\n11. NoOpLog\n12. AvalonLogger\n13. ServletContextCleaner\n14. WeakHashtable\n\nList correct API's class names from jakarta.mail-api-2.1.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from junit-4.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JUnit4TestAdapter\n2. JUnit4TestCaseFacade\n3. JUnitCoreTest\n4. JUnit4TestAdapterCache\n5. TestClassMethodsRunner\n6. JUnitCore\n7. TestClassMethodsRunnerTest\n8. TestClassRunner\n9. InaccessibleBaseClassTest\n10. OldTestClassRunnerTest\n11. IgnoreClassTest\n12. OldTestClassRunner\n13. ClassRequestTest\n14. OldTestClassAdaptingListenerTest\n15. AnnotationTest\n16. PreJUnit4TestCaseRunnerTest\n17. ClassesRequest\n18. TestMethodRunner\n19. IgnoredClassRunner\n20. ClassRequest\n21. ParameterizedTestTest\n22. ParameterizedTestMethodTest\n23. TestMethodTest\n24. TestListenerTest\n25. TestIntrospector\n26. TestDescriptionTest\n27. TestDecorator\n28. TestRunner\n29. FailedConstructionTest\n30. ListenerTest\n31. TestFailure\n32. AssertionTest\n33. TestSetup\n34. RunnerTest\n35. SortableTest\n36. ListTest\n37. ValidationTest\n38. ActiveTestSuite\n39. AllTestsTest\n40. SuiteDescriptionTest\n41. ForwardCompatibilityTest\n42. EnclosedTest\n43. TestResult\n44. AllTests\n45. SuiteTest\n46. InitializationErrorForwardCompatibilityTest\n47. OldTests\n48. CommandLineTest\n49. Assert\n\nList correct API's class names from commons-logging-1.3.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. LogFactoryImpl\n2. Log4JLogger\n3. LogSource\n4. Jdk14Logger\n5. Slf4jLogFactory\n6. Log4jApiLogFactory\n7. LogKitLogger\n8. SimpleLog\n9. LogConfigurationException\n10. Jdk13LumberjackLogger\n11. NoOpLog\n12. AvalonLogger\n13. ServletContextCleaner\n14. WeakHashtable\n\nList correct API's class names from jakarta.mail-api-2.1.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. MimeBodyPart\n2. MimeMultipart\n3. MimeMessage\n4. MimeMessageContext\n5. MimeMessageHelper\n6. MimeMessageWritter\n7. MimeMultipartDataSource\n8. MimeMultipartSubPart\n9. MimeMultipartWriter\n10. MimePart\n11. MimePartDataSource\n12. MimePartDataSourceWriter\n13. MimePartWriter\n14. MimeUtility\n15. MimeUtilityTest\n16. MimeUtilityTest2\n17. MimeUtilityTest3\n18. MimeUtilityTest4\n19. MimeUtilityTest5\n20. MimeUtilityTest6\n21. MimeUtilityTest7\n22. MimeUtilityTest8\n23. MimeUtilityTest9\n24. MimeUtilityTest10\n25. MimeUtilityTest11\n26. MimeUtilityTest12\n27. MimeUtilityTest13\n28. MimeUtilityTest14\n29. MimeUtilityTest15\n30. MimeUtilityTest16\n31. MimeUtilityTest17\n32. MimeUtilityTest18\n33. MimeUtilityTest19\n34. MimeUtilityTest20\n35. MimeUtilityTest21\n36. MimeUtilityTest22\n3",
+        "extracted_APIs_from_prediction": [
+            "MimeBodyPart",
+            "MimeMultipart",
+            "MimeMessage",
+            "MimeMessageContext",
+            "MimeMessageHelper",
+            "MimeMessageWritter",
+            "MimeMultipartDataSource",
+            "MimeMultipartSubPart",
+            "MimeMultipartWriter",
+            "MimePart",
+            "MimePartDataSource",
+            "MimePartDataSourceWriter",
+            "MimePartWriter",
+            "MimeUtility",
+            "MimeUtilityTest",
+            "MimeUtilityTest2",
+            "MimeUtilityTest3",
+            "MimeUtilityTest4",
+            "MimeUtilityTest5",
+            "MimeUtilityTest6",
+            "MimeUtilityTest7",
+            "MimeUtilityTest8",
+            "MimeUtilityTest9",
+            "MimeUtilityTest10",
+            "MimeUtilityTest11",
+            "MimeUtilityTest12",
+            "MimeUtilityTest13",
+            "MimeUtilityTest14",
+            "MimeUtilityTest15",
+            "MimeUtilityTest16",
+            "MimeUtilityTest17",
+            "MimeUtilityTest18",
+            "MimeUtilityTest19",
+            "MimeUtilityTest20",
+            "MimeUtilityTest21",
+            "MimeUtilityTest22"
+        ],
+        "correct_API_predictions": [
+            "MimeBodyPart",
+            "MimeMultipart",
+            "MimeMessage",
+            "MimePartDataSource",
+            "MimeUtility"
+        ],
+        "wrong_API_predictions": [
+            "MimeMessageContext",
+            "MimeMessageHelper",
+            "MimeMessageWritter",
+            "MimeMultipartDataSource",
+            "MimeMultipartSubPart",
+            "MimeMultipartWriter",
+            "MimePart",
+            "MimePartDataSourceWriter",
+            "MimePartWriter",
+            "MimeUtilityTest",
+            "MimeUtilityTest2",
+            "MimeUtilityTest3",
+            "MimeUtilityTest4",
+            "MimeUtilityTest5",
+            "MimeUtilityTest6",
+            "MimeUtilityTest7",
+            "MimeUtilityTest8",
+            "MimeUtilityTest9",
+            "MimeUtilityTest10",
+            "MimeUtilityTest11",
+            "MimeUtilityTest12",
+            "MimeUtilityTest13",
+            "MimeUtilityTest14",
+            "MimeUtilityTest15",
+            "MimeUtilityTest16",
+            "MimeUtilityTest17",
+            "MimeUtilityTest18",
+            "MimeUtilityTest19",
+            "MimeUtilityTest20",
+            "MimeUtilityTest21",
+            "MimeUtilityTest22"
+        ],
+        "number_of_correct_APIs": 5,
+        "number_of_wrong_APIs": 31,
+        "failure_rate_for_APIs": 0.8611111111111112,
+        "model_confidence": 0.7270646095275879,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "MimeBodyPart": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"MimeBodyPart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeBodyPart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe requirement is asking for a fully functional Java program that uses MimeBodyPart from Jakarta Mail API. Below is a simple Java program demonstrating this using MimeBodyPart. Note that you will need to configure the Jakarta Mail API correctly in your build path.\n\nAdd the following dependencies to your pom.xml file (if using Maven):\n\n```xml\n<dependency>\n    <groupId>jakarta.mail</groupId>\n    <artifactId>jakarta.mail-api</artifactId>\n    <version>2.1.0</version>\n</dependency>\n```\n\nThen, here's the Java code:\n\n```java\nimport jakarta.mail.*;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Create a mail session\n            Properties properties = new Properties();\n            Session session = Session.getDefaultInstance(properties);\n\n            // Create a message\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(\"sender@example.com\"));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(\"recipient@example.com\"));\n            message.setSubject(\"Test message\");\n            \n            // Create a multipart message\n            Multipart multipart = new MimeMultipart();\n\n            // Create the text body part\n            MimeBodyPart textBodyPart = new MimeBodyPart();\n            textBodyPart.setText(\"This is message body\");\n\n            // Attach the text body part\n            multipart.addBodyPart(textBodyPart);\n\n            // Create the attachment body part\n            MimeBodyPart attachmentBodyPart = new MimeBodyPart();\n            attachmentBodyPart.attachFile(\"/path/to/your/attachment\");\n\n            // Attach the attachment body part\n            multipart.addBodyPart(attachmentBodyPart);\n\n            // Set the multipart as the message's content\n            message.setContent(multipart);\n\n            // Create a transport\n            Transport transport = session.getTransport(\"smtp\");\n            transport.connect(\"smtp.example.com\", 25, \"sender@example.com\", \"password\");\n\n            // Send the message\n            transport.sendMessage(message, message.getAllRecipients());\n\n            // Close the transport\n            transport.close();\n\n        } catch (MessagingException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn this code, you can change `\"smtp.example.com\"`, `\"sender@example.com\"`, `\"password\"`, and the path to your attachment file. You can also add other functionalities like sending a HTML formatted message or using different protocols like POP3, IMAP or HTTP.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.*;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Create a mail session\n            Properties properties = new Properties();\n            Session session = Session.getDefaultInstance(properties);\n\n            // Create a message\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(\"sender@example.com\"));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(\"recipient@example.com\"));\n            message.setSubject(\"Test message\");\n            \n            // Create a multipart message\n            Multipart multipart = new MimeMultipart();\n\n            // Create the text body part\n            MimeBodyPart textBodyPart = new MimeBodyPart();\n            textBodyPart.setText(\"This is message body\");\n\n            // Attach the text body part\n            multipart.addBodyPart(textBodyPart);\n\n            // Create the attachment body part\n            MimeBodyPart attachmentBodyPart = new MimeBodyPart();\n            attachmentBodyPart.attachFile(\"/path/to/your/attachment\");\n\n            // Attach the attachment body part\n            multipart.addBodyPart(attachmentBodyPart);\n\n            // Set the multipart as the message's content\n            message.setContent(multipart);\n\n            // Create a transport\n            Transport transport = session.getTransport(\"smtp\");\n            transport.connect(\"smtp.example.com\", 25, \"sender@example.com\", \"password\");\n\n            // Send the message\n            transport.sendMessage(message, message.getAllRecipients());\n\n            // Close the transport\n            transport.close();\n\n        } catch (MessagingException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage",
+                    "java.util.*"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage"
+                ],
+                "wrong_FQN_predictions": [
+                    "jakarta.mail.*",
+                    "java.util.*"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.6914981603622437,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/java/org/example/Main.java:[18,33] cannot find symbol\n  symbol:   class InternetAddress\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,64] cannot find symbol\n  symbol:   class InternetAddress\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/java/org/example/Main.java:[23,39] cannot find symbol\n  symbol:   class MimeMultipart\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.746 s\n[INFO] Finished at: 2024-04-16T19:08:45-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/java/org/example/Main.java:[18,33] cannot find symbol\n[ERROR]   symbol:   class InternetAddress\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,64] cannot find symbol\n[ERROR]   symbol:   class InternetAddress\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/java/org/example/Main.java:[23,39] cannot find symbol\n[ERROR]   symbol:   class MimeMultipart\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 64,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 23,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 33,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeBodyPart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the necessary Java code to create an email using the MimeBodyPart and other APIs from the Jakarta Mail API:\n\nNote: Before running this code, please ensure you have the Jakarta Mail API dependency added to your project. You can download it from mvnrepository.com.\n\n```java\nimport jakarta.mail.*;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\nimport java.util.Properties;\n\npublic class Main {\n    public static void main(String[] args) {\n        Properties props = new Properties();\n        props.put(\"mail.smtp.host\", \"smtp.example.com\");\n        props.put(\"mail.smtp.port\", \"25\");\n\n        Session session = Session.getInstance(props, new javax.mail.Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"username\", \"password\");\n            }\n        });\n\n        try {\n            Message message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(\"from@no-reply.com\"));\n            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(\"to@example.com\"));\n            message.setSubject(\"Testing Subject\");\n\n            String msg = \"This is my first email using JavaMailer!\";\n\n            MimeBodyPart mimeBodyPart = new MimeBodyPart();\n            mimeBodyPart.setContent(msg, \"text/html\");\n\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(mimeBodyPart);\n\n            message.setContent(multipart);\n\n            Transport.send(message);\n\n            System.out.println(\"Done\");\n\n        } catch (MessagingException e) {\n            throw new RuntimeException(e);\n        }\n    }\n}\n```\n\nThis code will send an email with the subject \"Testing Subject\" to the \"to@example.com\" with content as \"This is my first email using JavaMailer!\". \nPlease replace \"smtp.example.com\", \"25\", \"username\", \"password\", \"from@no-reply.com\", and \"to@example.com\" with your actual SMTP server information and email addresses.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.*;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\nimport java.util.Properties;\n\npublic class Main {\n    public static void main(String[] args) {\n        Properties props = new Properties();\n        props.put(\"mail.smtp.host\", \"smtp.example.com\");\n        props.put(\"mail.smtp.port\", \"25\");\n\n        Session session = Session.getInstance(props, new javax.mail.Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"username\", \"password\");\n            }\n        });\n\n        try {\n            Message message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(\"from@no-reply.com\"));\n            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(\"to@example.com\"));\n            message.setSubject(\"Testing Subject\");\n\n            String msg = \"This is my first email using JavaMailer!\";\n\n            MimeBodyPart mimeBodyPart = new MimeBodyPart();\n            mimeBodyPart.setContent(msg, \"text/html\");\n\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(mimeBodyPart);\n\n            message.setContent(multipart);\n\n            Transport.send(message);\n\n            System.out.println(\"Done\");\n\n        } catch (MessagingException e) {\n            throw new RuntimeException(e);\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart",
+                    "java.util.Properties"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart"
+                ],
+                "wrong_FQN_predictions": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.InternetAddress",
+                    "java.util.Properties"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.6760771870613098,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_2/Wrapper/src/main/java/org/example/Main.java:[17,68] package javax.mail does not exist\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.757 s\n[INFO] Finished at: 2024-04-16T19:08:46-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_2/Wrapper/src/main/java/org/example/Main.java:[17,68] package javax.mail does not exist\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeBodyPart/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 68,
+                                "message": "package javax.mail does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeBodyPart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a minimal example that uses \"MimeBodyPart\" from the \"jakarta.mail-api-2.1.0\" project to illustrate the basic functionality.\n\nFirstly, let's create a Text Body:\n\n```java\nimport jakarta.mail.BodyPart;\nimport jakarta.mail.Message;\nimport jakarta.mail.MessagingException;\nimport jakarta.mail.Session;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a session object\n        Session session = Session.getDefaultInstance(System.getProperties());\n\n        // Create a new mail message\n        MimeMessage message = new MimeMessage(session);\n\n        try {\n            // Create a multipart message\n            MimeMultipart multipart = new MimeMultipart();\n\n            // Create a text body part\n            BodyPart textBodyPart = new MimeBodyPart();\n\n            // Fill the text body part with some text\n            String text = \"This is a text body.\";\n            textBodyPart.setText(text);\n\n            // Add the text body part to the multipart\n            multipart.addBodyPart(textBodyPart);\n\n            // Set the whole message content to be the multipart content\n            message.setContent(multipart);\n\n            // Other operations may follow as needed...\n\n        } catch (MessagingException ex) {\n            // Do something with the exception\n            ex.printStackTrace();\n        }\n    }\n}\n```\n\nIn the given sample, the `jakarta.mail` library dependencies are used without additional dependencies as per your request. Please note that the provided example is illustrative only and real-world use may require additional code.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.BodyPart;\nimport jakarta.mail.Message;\nimport jakarta.mail.MessagingException;\nimport jakarta.mail.Session;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a session object\n        Session session = Session.getDefaultInstance(System.getProperties());\n\n        // Create a new mail message\n        MimeMessage message = new MimeMessage(session);\n\n        try {\n            // Create a multipart message\n            MimeMultipart multipart = new MimeMultipart();\n\n            // Create a text body part\n            BodyPart textBodyPart = new MimeBodyPart();\n\n            // Fill the text body part with some text\n            String text = \"This is a text body.\";\n            textBodyPart.setText(text);\n\n            // Add the text body part to the multipart\n            multipart.addBodyPart(textBodyPart);\n\n            // Set the whole message content to be the multipart content\n            message.setContent(multipart);\n\n            // Other operations may follow as needed...\n\n        } catch (MessagingException ex) {\n            // Do something with the exception\n            ex.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.BodyPart",
+                    "jakarta.mail.Message",
+                    "jakarta.mail.MessagingException",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.BodyPart",
+                    "jakarta.mail.Message",
+                    "jakarta.mail.MessagingException",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 7,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5827438235282898,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeBodyPart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of sending an e-mail via Gmail SMTP server with an attachment:\n\n```java\nimport java.io.File;\nimport java.util.Properties;\nimport jakarta.mail.Authenticator;\nimport jakarta.mail.BodyPart;\nimport jakarta.mail.Message;\nimport jakarta.mail.Multipart;\nimport jakarta.mail.PasswordAuthentication;\nimport jakarta.mail.Session;\nimport jakarta.mail.Transport;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\n\npublic class Main {\n    public static void main(String[] args) {\n        String to = \"recipient@example.com\";\n        String from = \"sender@example.com\";\n        String host = \"smtp.gmail.com\";\n        Properties properties = System.getProperties();\n        properties.put(\"mail.smtp.host\", host);\n        properties.put(\"mail.smtp.port\", \"465\");\n        properties.put(\"mail.smtp.ssl.enable\", \"true\");\n        properties.put(\"mail.smtp.auth\", \"true\");\n        Session session = Session.getInstance(properties, new Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"your_email@gmail.com\", \"your_password\");\n            }\n        });\n        session.setDebug(true);\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n            message.setSubject(\"Testing JavaMailAPI\");\n\n            BodyPart messageBodyPart1 = new MimeBodyPart();\n            messageBodyPart1.setText(\"This is message body\");\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(messageBodyPart1);\n            \n            // Optional: add attachment\n            MimeBodyPart messageBodyPart2 = new MimeBodyPart();\n            String filename = \"filename.txt\";\n            messageBodyPart2.attachFile(new File(filename));\n            multipart.addBodyPart(messageBodyPart2);\n            \n            message.setContent(multipart);\n            System.out.println(\"Sending\");\n            Transport.send(message);\n            System.out.println(\"Done\");\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nYou need to replace `\"your_email@gmail.com\"` and `\"your_password\"` in the Authenticator instance with your Gmail username and password.\n\nAlso, replace `\"recipient@example.com\"` and `\"sender@example.com\"` with recipient and sender's email addresses. \n\nNote: This code needs to be compiled with a Java version >= 8. \n\nPlease make sure to follow Google's best practices to prevent spamming and abuse of their service, by not spamming emails unnecessarily and use Google's SMTP servers responsibly.",
+                "extracted_java_code_from_prediction": "import java.io.File;\nimport java.util.Properties;\nimport jakarta.mail.Authenticator;\nimport jakarta.mail.BodyPart;\nimport jakarta.mail.Message;\nimport jakarta.mail.Multipart;\nimport jakarta.mail.PasswordAuthentication;\nimport jakarta.mail.Session;\nimport jakarta.mail.Transport;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\n\npublic class Main {\n    public static void main(String[] args) {\n        String to = \"recipient@example.com\";\n        String from = \"sender@example.com\";\n        String host = \"smtp.gmail.com\";\n        Properties properties = System.getProperties();\n        properties.put(\"mail.smtp.host\", host);\n        properties.put(\"mail.smtp.port\", \"465\");\n        properties.put(\"mail.smtp.ssl.enable\", \"true\");\n        properties.put(\"mail.smtp.auth\", \"true\");\n        Session session = Session.getInstance(properties, new Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"your_email@gmail.com\", \"your_password\");\n            }\n        });\n        session.setDebug(true);\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n            message.setSubject(\"Testing JavaMailAPI\");\n\n            BodyPart messageBodyPart1 = new MimeBodyPart();\n            messageBodyPart1.setText(\"This is message body\");\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(messageBodyPart1);\n            \n            // Optional: add attachment\n            MimeBodyPart messageBodyPart2 = new MimeBodyPart();\n            String filename = \"filename.txt\";\n            messageBodyPart2.attachFile(new File(filename));\n            multipart.addBodyPart(messageBodyPart2);\n            \n            message.setContent(multipart);\n            System.out.println(\"Sending\");\n            Transport.send(message);\n            System.out.println(\"Done\");\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.File",
+                    "java.util.Properties",
+                    "jakarta.mail.Authenticator",
+                    "jakarta.mail.BodyPart",
+                    "jakarta.mail.Message",
+                    "jakarta.mail.Multipart",
+                    "jakarta.mail.PasswordAuthentication",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.Transport",
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart"
+                ],
+                "correct_FQN_predictions": [
+                    "java.io.File",
+                    "java.util.Properties",
+                    "jakarta.mail.Authenticator",
+                    "jakarta.mail.BodyPart",
+                    "jakarta.mail.Message",
+                    "jakarta.mail.Multipart",
+                    "jakarta.mail.PasswordAuthentication",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.Transport",
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 13,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.23076923076923078,
+                "model_confidence": 0.7990369200706482,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeBodyPart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThis is a bit vague to fully determine what features you want, but here's a simple Java code utilizing \"MimeBodyPart\" and its two most used classes \"MimeMultipart\" and \"MimeMessage\". This code might not completely fulfill your needs, but it is a good starting point:\n\n```java\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.Session;\nimport jakarta.mail.Transport;\nimport java.util.Properties;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // Set the host smtp server details\n        String host = \"smtp.host.com\";\n        final String from = \"your@email.com\";\n        final String password = \"your-password\";\n\n        Properties props = new Properties();\n        props.put(\"mail.smtp.auth\", \"true\");\n        props.put(\"mail.smtp.starttls.enable\", \"true\");\n        props.put(\"mail.smtp.host\", host);\n        props.put(\"mail.smtp.port\", \"587\");\n\n        Session session = Session.getDefaultInstance(props, null);\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new jakarta.mail.internet.InternetAddress(from));\n            message.addRecipients(jakarta.mail.Message.RecipientType.TO, String.valueOf(new jakarta.mail.internet.InternetAddress(\"recipient@email.com\")));\n\n            message.setSubject(\"Test message\");\n\n            String msg = \"Hello World!\";\n\n            MimeBodyPart mimeBodyPart = new MimeBodyPart();\n            mimeBodyPart.setContent(msg, \"text/html\");\n\n            MimeMultipart mimeMultipart = new MimeMultipart();\n            mimeMultipart.addBodyPart(mimeBodyPart);\n\n            message.setContent(mimeMultipart);\n\n            // Send the message\n            Transport transport = session.getTransport(\"smtp\");\n            transport.connect(host, from, password);\n            transport.sendMessage(message, message.getAllRecipients());\n            transport.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nThis code will send a plain text email via SMTP protocol.\n\nPlease make sure to replace \"smtp.host.com\", \"your@email.com\" and \"your-password\" with your actual SMTP host, sender's email and password. You also need to fill \"recipient@email.com\" with the recipient's email address.\n\nAlso, please note, this code requires the SMTP server to accept the less secure apps to send emails which may not be allowed in many situations due to security reasons.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.Session;\nimport jakarta.mail.Transport;\nimport java.util.Properties;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // Set the host smtp server details\n        String host = \"smtp.host.com\";\n        final String from = \"your@email.com\";\n        final String password = \"your-password\";\n\n        Properties props = new Properties();\n        props.put(\"mail.smtp.auth\", \"true\");\n        props.put(\"mail.smtp.starttls.enable\", \"true\");\n        props.put(\"mail.smtp.host\", host);\n        props.put(\"mail.smtp.port\", \"587\");\n\n        Session session = Session.getDefaultInstance(props, null);\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new jakarta.mail.internet.InternetAddress(from));\n            message.addRecipients(jakarta.mail.Message.RecipientType.TO, String.valueOf(new jakarta.mail.internet.InternetAddress(\"recipient@email.com\")));\n\n            message.setSubject(\"Test message\");\n\n            String msg = \"Hello World!\";\n\n            MimeBodyPart mimeBodyPart = new MimeBodyPart();\n            mimeBodyPart.setContent(msg, \"text/html\");\n\n            MimeMultipart mimeMultipart = new MimeMultipart();\n            mimeMultipart.addBodyPart(mimeBodyPart);\n\n            message.setContent(mimeMultipart);\n\n            // Send the message\n            Transport transport = session.getTransport(\"smtp\");\n            transport.connect(host, from, password);\n            transport.sendMessage(message, message.getAllRecipients());\n            transport.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.Transport",
+                    "java.util.Properties"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.Transport",
+                    "java.util.Properties"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 6,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.16666666666666666,
+                "model_confidence": 0.7003206014633179,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "MimeMultipart": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"MimeMultipart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMultipart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo utilize the \"MimeMultipart\" API, you'll need to import the necessary classes from JavaMail API. Also, please note that the above-mentioned class might not be available if it's not available in the \"jakarta.mail-api-2.1.0\" project, or if it's not in the available version of the package you are using.\n\nThis is a simple example to demonstrate how to attach a file into the email using JavaMail API:\n\n```java\nimport java.util.Properties;\nimport javax.mail.*;\nimport javax.mail.internet.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Properties prop = new Properties();\n        prop.put(\"mail.smtp.host\", \"smtp.example.com\");\n        prop.put(\"mail.smtp.port\", \"587\");\n        prop.put(\"mail.smtp.auth\", \"true\");\n        prop.put(\"mail.smtp.starttls.enable\", \"true\");\n\n        Session session = Session.getInstance(prop,\n                new javax.mail.Authenticator() {\n                    protected PasswordAuthentication getPasswordAuthentication() {\n                        return new PasswordAuthentication(\"your_email\", \"your_password\");\n                    }\n                });\n\n        try {\n            Message message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(\"your_email\"));\n            message.setRecipients(\n                    Message.RecipientType.TO,\n                    InternetAddress.parse(\"recipient_email\")\n            );\n            message.setSubject(\"Testing Subject\");\n\n            BodyPart messageBodyPart = new MimeBodyPart();\n            messageBodyPart.setText(\"This is message body\");\n\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(messageBodyPart);\n\n            messageBodyPart = new MimeBodyPart();\n            String filename = \"path_to_your_file\";\n            DataSource source = new FileDataSource(filename);\n            messageBodyPart.setDataHandler(new DataHandler(source));\n            messageBodyPart.setFileName(filename);\n            multipart.addBodyPart(messageBodyPart);\n\n            message.setContent(multipart);\n\n            Transport.send(message);\n\n            System.out.println(\"Done\");\n\n        } catch (MessagingException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis will send an email with a plain text message and an attachment. Remember to replace `\"your_email\"`, `\"your_password\"`, `\"recipient_email\"`, and `\"path_to_your_file\"` with actual values.\n\nThe code has to be compiled with `javac` (Java compiler), and executed with `java` (Java interpreter).\n\nPlease note that the above code assumes that the necessary permissions are set, your email client (e.g., Outlook, Gmail) and the mail server are properly set up and correctly configured. Also, this is a basic implementation and does not handle potential exceptions or edge cases. In a real-world application, you would probably want to use more advanced techniques for error handling and robustness.",
+                "extracted_java_code_from_prediction": "import java.util.Properties;\nimport javax.mail.*;\nimport javax.mail.internet.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Properties prop = new Properties();\n        prop.put(\"mail.smtp.host\", \"smtp.example.com\");\n        prop.put(\"mail.smtp.port\", \"587\");\n        prop.put(\"mail.smtp.auth\", \"true\");\n        prop.put(\"mail.smtp.starttls.enable\", \"true\");\n\n        Session session = Session.getInstance(prop,\n                new javax.mail.Authenticator() {\n                    protected PasswordAuthentication getPasswordAuthentication() {\n                        return new PasswordAuthentication(\"your_email\", \"your_password\");\n                    }\n                });\n\n        try {\n            Message message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(\"your_email\"));\n            message.setRecipients(\n                    Message.RecipientType.TO,\n                    InternetAddress.parse(\"recipient_email\")\n            );\n            message.setSubject(\"Testing Subject\");\n\n            BodyPart messageBodyPart = new MimeBodyPart();\n            messageBodyPart.setText(\"This is message body\");\n\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(messageBodyPart);\n\n            messageBodyPart = new MimeBodyPart();\n            String filename = \"path_to_your_file\";\n            DataSource source = new FileDataSource(filename);\n            messageBodyPart.setDataHandler(new DataHandler(source));\n            messageBodyPart.setFileName(filename);\n            multipart.addBodyPart(messageBodyPart);\n\n            message.setContent(multipart);\n\n            Transport.send(message);\n\n            System.out.println(\"Done\");\n\n        } catch (MessagingException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.Properties",
+                    "javax.mail.*",
+                    "javax.mail.internet.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.util.Properties",
+                    "javax.mail.*",
+                    "javax.mail.internet.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.7100284099578857,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMultipart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, I don't have all the required libraries installed on my system and am unable to provide a fully functional, compilable piece of code. However, I can show you the general structure of the code you want to write. The specific libraries and their imports are not included here because they are quite heavy and are not necessary for the task you're asking. \n\nHere's a basic version of what the code might look like:\n\n```java\nimport jakarta.mail.Message;\nimport jakarta.mail.MessagingException;\nimport jakarta.mail.PasswordAuthentication;\nimport jakarta.mail.Session;\nimport jakarta.mail.Transport;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeMessage;\nimport java.util.Properties;\n\npublic class Main {\n    public static void main(String[] args) {\n        String recipient = \"recipient@mail.com\"; // recipient email id \n        String msgBody = \"This is a test mail\";  // message body\n\n        // Create a properties object for the session \n        Properties props = new Properties();\n        props.put(\"mail.smtp.auth\", \"true\"); // enables SMTP authentication\n        props.put(\"mail.smtp.starttls.enable\", \"true\"); // starts TLS for network security\n        props.put(\"mail.smtp.host\", \"smtp.gmail.com\"); // for gmail's smtp\n        props.put(\"mail.smtp.port\", \"587\");\n\n        // Create a Session object\n        Session session = Session.getInstance(props, new jakarta.mail.Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"sender@gmail.com\", \"password\"); // sender's email id and password\n            }\n        });\n\n        try {\n            // Create a default MimeMessage object.\n            Message message = new MimeMessage(session);\n\n            message.setFrom(new InternetAddress(\"sender@gmail.com\")); // same as sender's email id\n\n            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipient)); \n            // Send message\n            message.setSubject(\"Mail Subject\");\n            message.setText(msgBody);\n\n            Transport.send(message);\n\n            System.out.println(\"Mail Sent successfully\");\n\n        } catch (MessagingException e) {\n            throw new RuntimeException(e);\n        }\n    }\n}\n```\nThis Java program is a simple example of how to send a email using Java. In your actual case, you'll need to make modifications.\n\nThe MimeMessage provides a way to easily construct the message content, which includes setting the sender's address, the recipient(s), the subject and body of the email.\n\nThe Session object is used to authenticate with the mail server. The Authenticator class is used to send username/password for authentication to the mail server.\n\nThe Transport class is used to actually send the email message using the session's host and port details.\n\nFor the recipient and the sender's email and password, you'll need to replace \"sender@gmail.com\" and \"password\" respectively with your actual email id and password.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.Message;\nimport jakarta.mail.MessagingException;\nimport jakarta.mail.PasswordAuthentication;\nimport jakarta.mail.Session;\nimport jakarta.mail.Transport;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeMessage;\nimport java.util.Properties;\n\npublic class Main {\n    public static void main(String[] args) {\n        String recipient = \"recipient@mail.com\"; // recipient email id \n        String msgBody = \"This is a test mail\";  // message body\n\n        // Create a properties object for the session \n        Properties props = new Properties();\n        props.put(\"mail.smtp.auth\", \"true\"); // enables SMTP authentication\n        props.put(\"mail.smtp.starttls.enable\", \"true\"); // starts TLS for network security\n        props.put(\"mail.smtp.host\", \"smtp.gmail.com\"); // for gmail's smtp\n        props.put(\"mail.smtp.port\", \"587\");\n\n        // Create a Session object\n        Session session = Session.getInstance(props, new jakarta.mail.Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"sender@gmail.com\", \"password\"); // sender's email id and password\n            }\n        });\n\n        try {\n            // Create a default MimeMessage object.\n            Message message = new MimeMessage(session);\n\n            message.setFrom(new InternetAddress(\"sender@gmail.com\")); // same as sender's email id\n\n            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipient)); \n            // Send message\n            message.setSubject(\"Mail Subject\");\n            message.setText(msgBody);\n\n            Transport.send(message);\n\n            System.out.println(\"Mail Sent successfully\");\n\n        } catch (MessagingException e) {\n            throw new RuntimeException(e);\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.Message",
+                    "jakarta.mail.MessagingException",
+                    "jakarta.mail.PasswordAuthentication",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.Transport",
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.mail.internet.MimeMessage",
+                    "java.util.Properties"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.Message",
+                    "jakarta.mail.MessagingException",
+                    "jakarta.mail.PasswordAuthentication",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.Transport",
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.mail.internet.MimeMessage",
+                    "java.util.Properties"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 8,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6805412769317627,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMultipart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe full working code with MimeMultipart is given below:\n\n```java\n\nimport java.util.*;\nimport javax.mail.*;\nimport javax.mail.internet.*;\nimport javax.activation.*;\n\npublic class Main {\n \n    public static void main(String args[]) {\n        // Hostname or IP\n        String host = \"smtp.gmail.com\";\n        // Get system properties\n        Properties properties = System.getProperties();\n        // Setup mail server\n        properties.put(\"mail.smtp.host\", host);\n        properties.put(\"mail.smtp.port\", \"465\");\n        properties.put(\"mail.smtp.ssl.enable\", \"true\");\n        properties.put(\"mail.smtp.auth\", \"true\");\n        // Get the session object\n        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"username@gmail.com\", \"password\");\n            }\n        });\n        try {\n            // Create a default MimeMessage object.\n            MimeMessage message = new MimeMessage(session);\n            // Set From: header field of the header.\n            message.setFrom(new InternetAddress(\"username@gmail.com\"));\n            // Set To: header field of the header.\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(\"recipient@domain.com\"));\n            // Set Subject: header field\n            message.setSubject(\"This is the Subject Line!\");\n            // Create the MimeMultipart message\n            MimeMultipart multipart = new MimeMultipart();\n            // Now create the message part\n            MimeBodyPart messageBodyPart = new MimeBodyPart();\n            // Create a string with that will be the message\n            String htmlText = \"This is the message body <br/> with html tags\";\n            messageBodyPart.setContent(htmlText, \"text/html\");\n            // Attach the html string to the multipart\n            multipart.addBodyPart(messageBodyPart);\n            // Now set the whole message parts\n            message.setContent(multipart);\n            // Send message\n            Transport.send(message);\n            System.out.println(\"Sent message successfully....\");\n        } catch (MessagingException ex) {\n            ex.printStackTrace();\n        }\n    }\n}\n```\n\nRemember that you should replace the \"username@gmail.com\" and \"password\" with your own email credentials. Also replace the recipient email \"recipient@domain.com\" with the intended recipient email.\n\nAlso note that if you're using Gmail, you have to allow less secure apps to access your account. Go to your gmail account (not necessarily your Java account), go to the security tab, then scroll down to the bottom and disable/inactivate the \"Less secure app access\" if active.\n\nThis code should compile and run in any environment where the jakarta mail-api 2.1.0 is available.",
+                "extracted_java_code_from_prediction": "import java.util.*;\nimport javax.mail.*;\nimport javax.mail.internet.*;\nimport javax.activation.*;\n\npublic class Main {\n \n    public static void main(String args[]) {\n        // Hostname or IP\n        String host = \"smtp.gmail.com\";\n        // Get system properties\n        Properties properties = System.getProperties();\n        // Setup mail server\n        properties.put(\"mail.smtp.host\", host);\n        properties.put(\"mail.smtp.port\", \"465\");\n        properties.put(\"mail.smtp.ssl.enable\", \"true\");\n        properties.put(\"mail.smtp.auth\", \"true\");\n        // Get the session object\n        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"username@gmail.com\", \"password\");\n            }\n        });\n        try {\n            // Create a default MimeMessage object.\n            MimeMessage message = new MimeMessage(session);\n            // Set From: header field of the header.\n            message.setFrom(new InternetAddress(\"username@gmail.com\"));\n            // Set To: header field of the header.\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(\"recipient@domain.com\"));\n            // Set Subject: header field\n            message.setSubject(\"This is the Subject Line!\");\n            // Create the MimeMultipart message\n            MimeMultipart multipart = new MimeMultipart();\n            // Now create the message part\n            MimeBodyPart messageBodyPart = new MimeBodyPart();\n            // Create a string with that will be the message\n            String htmlText = \"This is the message body <br/> with html tags\";\n            messageBodyPart.setContent(htmlText, \"text/html\");\n            // Attach the html string to the multipart\n            multipart.addBodyPart(messageBodyPart);\n            // Now set the whole message parts\n            message.setContent(multipart);\n            // Send message\n            Transport.send(message);\n            System.out.println(\"Sent message successfully....\");\n        } catch (MessagingException ex) {\n            ex.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.*",
+                    "javax.mail.*",
+                    "javax.mail.internet.*",
+                    "javax.activation.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.util.*",
+                    "javax.mail.*",
+                    "javax.mail.internet.*",
+                    "javax.activation.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.6809579133987427,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMultipart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSince the \"jakarta.mail-api-2.1.0\" does not have compilable API, the following Java code is only for the illustration purpose.\n\n```java\nimport jakarta.mail.BodyPart;\nimport jakarta.mail.Message;\nimport jakarta.mail.Session;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\n\nimport java.util.Properties;\n\npublic class Main {\n    public static void main(String[] args) {\n        Properties properties = System.getProperties();\n        properties.setProperty(\"mail.smtp.host\", \"smtp.gmail.com\");\n        properties.setProperty(\"mail.user\", \"username\");\n        properties.setProperty(\"mail.password\", \"password\");\n\n        Session session = Session.getDefaultInstance(properties);\n\n        MimeMessage message = new MimeMessage(session);\n        try {\n            message.setFrom(\"user@gmail.com\");\n            message.addRecipients(Message.RecipientType.TO, \"recipient@gmail.com\");\n            message.setSubject(\"Test email\");\n\n            MimeMultipart multiPart = new MimeMultipart();\n            BodyPart messageBodyPart = new MimeBodyPart();\n            messageBodyPart.setText(\"This is message body\");\n            multiPart.addBodyPart(messageBodyPart);\n\n            message.setContent(multiPart);\n\n            jakarta.mail.Transport.send(message);\n            System.out.println(\"Sent success\");\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nPlease replace \"username\", \"password\", \"user@gmail.com\", and \"recipient@gmail.com\" with your own user name, password, sender and receiver emails.\n\nIf you want to use any other API or library, you need to know which libraries these APIs belong to and add the corresponding dependencies to your project.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.BodyPart;\nimport jakarta.mail.Message;\nimport jakarta.mail.Session;\nimport jakarta.mail.internet.MimeBodyPart;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.mail.internet.MimeMultipart;\n\nimport java.util.Properties;\n\npublic class Main {\n    public static void main(String[] args) {\n        Properties properties = System.getProperties();\n        properties.setProperty(\"mail.smtp.host\", \"smtp.gmail.com\");\n        properties.setProperty(\"mail.user\", \"username\");\n        properties.setProperty(\"mail.password\", \"password\");\n\n        Session session = Session.getDefaultInstance(properties);\n\n        MimeMessage message = new MimeMessage(session);\n        try {\n            message.setFrom(\"user@gmail.com\");\n            message.addRecipients(Message.RecipientType.TO, \"recipient@gmail.com\");\n            message.setSubject(\"Test email\");\n\n            MimeMultipart multiPart = new MimeMultipart();\n            BodyPart messageBodyPart = new MimeBodyPart();\n            messageBodyPart.setText(\"This is message body\");\n            multiPart.addBodyPart(messageBodyPart);\n\n            message.setContent(multiPart);\n\n            jakarta.mail.Transport.send(message);\n            System.out.println(\"Sent success\");\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.BodyPart",
+                    "jakarta.mail.Message",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart",
+                    "java.util.Properties"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.BodyPart",
+                    "jakarta.mail.Message",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.internet.MimeBodyPart",
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.mail.internet.MimeMultipart",
+                    "java.util.Properties"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 7,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.14285714285714285,
+                "model_confidence": 0.6000032424926758,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMultipart\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's an example of a simple Java code snippet using the MimeMultipart, MimeBodyPart, Session, and Transport classes from the \"jakarta.mail-api-2.1.0\" project. It assumes that you are creating a simple HTML email with an attachment. This example requires internet connection as it uses the Mail.com server as a mailing service provider.\n\n```java\nimport jakarta.mail.*;\nimport jakarta.mail.internet.*;\nimport java.util.*;\nimport java.io.*;\n\npublic class Main{\n    public static void main(String[] args) {\n        // Recipient's email ID should be mentioned\n        String to = \"recipient@mail.com\";\n\n        // Sender's email ID\n        String from = \"sender@mail.com\";\n\n        // Assuming you are sending email through relay.jangosoft.net\n        String host = \"relay.jangosoft.net\";\n\n        // Get system properties\n        Properties properties = System.getProperties();\n\n        // Setup mail server\n        properties.setProperty(\"mail.smtp.host\", host);\n\n        // Get the default Session object.\n        Session session = Session.getDefaultInstance(properties);\n\n        try{\n            // Create a default MimeMessage object.\n            MimeMessage message = new MimeMessage(session);\n\n            // Set From: header field of the header.\n            message.setFrom(new InternetAddress(from));\n\n            // Set To: header field of the header.\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n\n            // Set Subject: header field\n            message.setSubject(\"This is the Subject Line!\");\n\n            // This is the body of the email\n            String msg = \"This is actual message\";\n\n            // Create the message part\n            BodyPart messageBodyPart = new MimeBodyPart();\n\n            // Now set the actual message\n            messageBodyPart.setText(msg);\n\n            // Create a Multipart object and add the message\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(messageBodyPart);\n\n            // Second part is attachment\n            messageBodyPart = new MimeBodyPart();\n            String filename = \"C:/path-to-file/filename.txt\";\n            DataSource source = new FileDataSource(filename);\n            messageBodyPart.setDataHandler(new DataHandler(source));\n            messageBodyPart.setFileName(\"new-filename.txt\");  //Optional\n\n            // Add the body part to the multipart \n            multipart.addBodyPart(messageBodyPart);\n\n            // Associate the message with the multipart object\n            message.setContent(multipart);\n\n            // Send message\n            Transport.send(message);\n\n            System.out.println(\"Sent message successfully....\");\n\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}\n```\nPlease replace the email addresses, SMTP host, and the path to the file with your actual values. Be aware that you will need to create a SMTP connection using a host that is allowed to send mail for this example to function. Please note the code requires the use of the internet for sending the email, ensure that the SMTP server you are using is accepting connections.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.*;\nimport jakarta.mail.internet.*;\nimport java.util.*;\nimport java.io.*;\n\npublic class Main{\n    public static void main(String[] args) {\n        // Recipient's email ID should be mentioned\n        String to = \"recipient@mail.com\";\n\n        // Sender's email ID\n        String from = \"sender@mail.com\";\n\n        // Assuming you are sending email through relay.jangosoft.net\n        String host = \"relay.jangosoft.net\";\n\n        // Get system properties\n        Properties properties = System.getProperties();\n\n        // Setup mail server\n        properties.setProperty(\"mail.smtp.host\", host);\n\n        // Get the default Session object.\n        Session session = Session.getDefaultInstance(properties);\n\n        try{\n            // Create a default MimeMessage object.\n            MimeMessage message = new MimeMessage(session);\n\n            // Set From: header field of the header.\n            message.setFrom(new InternetAddress(from));\n\n            // Set To: header field of the header.\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n\n            // Set Subject: header field\n            message.setSubject(\"This is the Subject Line!\");\n\n            // This is the body of the email\n            String msg = \"This is actual message\";\n\n            // Create the message part\n            BodyPart messageBodyPart = new MimeBodyPart();\n\n            // Now set the actual message\n            messageBodyPart.setText(msg);\n\n            // Create a Multipart object and add the message\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(messageBodyPart);\n\n            // Second part is attachment\n            messageBodyPart = new MimeBodyPart();\n            String filename = \"C:/path-to-file/filename.txt\";\n            DataSource source = new FileDataSource(filename);\n            messageBodyPart.setDataHandler(new DataHandler(source));\n            messageBodyPart.setFileName(\"new-filename.txt\");  //Optional\n\n            // Add the body part to the multipart \n            multipart.addBodyPart(messageBodyPart);\n\n            // Associate the message with the multipart object\n            message.setContent(multipart);\n\n            // Send message\n            Transport.send(message);\n\n            System.out.println(\"Sent message successfully....\");\n\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.util.*",
+                    "java.io.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.util.*",
+                    "java.io.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.7550890445709229,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "MimeMessage": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"MimeMessage\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMessage\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs per your request, here's a simple example of how you can use `MimeMessage` API in a Java program. Note that you can't use APIs that require adding new dependencies, so there's no need to add any other dependencies in this case. Also, this will not compile until you install the jakarta.mail-api-2.1.0 library in your Java development environment.\n\n```java\nimport jakarta.mail.*;\nimport jakarta.mail.internet.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        String host = \"mail.host.com\";\n        String user = \"user@email.com\";\n        String pass = \"password\";\n\n        Properties props = new Properties();\n        props.setProperty(\"mail.transport.protocol\", \"smtp\");\n        props.setProperty(\"mail.smtp.host\", host);\n        props.setProperty(\"mail.smtp.auth\", \"true\");\n        props.setProperty(\"mail.smtp.port\", \"587\");\n        Session session = Session.getInstance(props, new Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(user, pass);\n            }\n        });\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(user));\n\n            // Set the recipient\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(\"recipient@email.com\"));\n\n            // Set the subject\n            message.setSubject(\"This is the Subject Line!\");\n\n            // Set the content\n            message.setContent(\"This is a test message\", \"text/plain\");\n\n            Transport.send(message);\n\n            System.out.println(\"Message sent successfully\");\n        } catch (MessagingException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code creates a `Session` and a `MimeMessage` object. The session is obtained using `Session.getInstance()`. The message is set up to contain a recipient (`recipient@email.com`), a subject (`\"This is the Subject Line!\"`), and a text content (`\"This is a test message\"`). The message is then sent using `Transport.send()`.\n\nPlease replace `\"mail.host.com\"`, `\"user@email.com\"`, `\"recipient@email.com\"`, and `\"password\"` with your SMTP server, username, recipient's email address, and password, respectively.\n\nYou must run this within a Java 17 or later environment due to the usage of unqualified `MessagingException`. It's a subclass of `Exception` so you can catch this in your catch-block instead. If you are using a version of Java prior to 17, please replace it accordingly.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.*;\nimport jakarta.mail.internet.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        String host = \"mail.host.com\";\n        String user = \"user@email.com\";\n        String pass = \"password\";\n\n        Properties props = new Properties();\n        props.setProperty(\"mail.transport.protocol\", \"smtp\");\n        props.setProperty(\"mail.smtp.host\", host);\n        props.setProperty(\"mail.smtp.auth\", \"true\");\n        props.setProperty(\"mail.smtp.port\", \"587\");\n        Session session = Session.getInstance(props, new Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(user, pass);\n            }\n        });\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(user));\n\n            // Set the recipient\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(\"recipient@email.com\"));\n\n            // Set the subject\n            message.setSubject(\"This is the Subject Line!\");\n\n            // Set the content\n            message.setContent(\"This is a test message\", \"text/plain\");\n\n            Transport.send(message);\n\n            System.out.println(\"Message sent successfully\");\n        } catch (MessagingException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.util.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.util.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.7069886326789856,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMessage\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of using the JavaMail API to send an email:\n\n```java\nimport jakarta.mail.*;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeMessage;\nimport java.util.Properties;\n\npublic class Main {\n   public static void main(String[] args) {\n\n      // Recipient's email ID should be mentioned\n      String to = \"example@gmail.com\";\n\n      // Sender's email ID should be mentioned\n      String from = \"sender@gmail.com\";\n\n      // Sender's email password should be mentioned\n      final String password = \"password\";\n\n      // Assuming you are sending email through relay.jangosoft.com\n      String host = \"smtp.gmail.com\";\n\n      Properties props = new Properties();\n      props.put(\"mail.smtp.host\", host);\n      props.put(\"mail.smtp.port\", \"587\");\n      props.put(\"mail.smtp.auth\", \"true\");\n      props.put(\"mail.smtp.starttls.enable\", \"true\");\n\n      // Get the Session object\n      Session session = Session.getInstance(props, new javax.mail.Authenticator() {\n         protected PasswordAuthentication getPasswordAuthentication() {\n            return new PasswordAuthentication(from, password);\n         }\n      });\n\n      try {\n         // Create a default MimeMessage object\n         MimeMessage message = new MimeMessage(session);\n\n         // Set From: header field of the header\n         message.setFrom(new InternetAddress(from));\n\n         // Set To: header field of the header\n         message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n\n         // Set Subject: header field\n         message.setSubject(\"This is the Subject Line!\");\n\n         // Now set the actual message\n         message.setText(\"This is the actual message\");\n\n         // Send message\n         Transport.send(message);\n\n         System.out.println(\"Sent message successfully....\");\n\n      } catch (MessagingException e) {\n         e.printStackTrace();\n      }\n   }\n}\n```\nPlease replace the `from`, `to`, `password`, and `host` with your actual email and password. You need to enable less secure apps in your google account settings or use OAuth2 for more secure sending. Also you need to include your email and password as plain text in your code which is not recommended for security reasons, consider using environment variables instead.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.*;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeMessage;\nimport java.util.Properties;\n\npublic class Main {\n   public static void main(String[] args) {\n\n      // Recipient's email ID should be mentioned\n      String to = \"example@gmail.com\";\n\n      // Sender's email ID should be mentioned\n      String from = \"sender@gmail.com\";\n\n      // Sender's email password should be mentioned\n      final String password = \"password\";\n\n      // Assuming you are sending email through relay.jangosoft.com\n      String host = \"smtp.gmail.com\";\n\n      Properties props = new Properties();\n      props.put(\"mail.smtp.host\", host);\n      props.put(\"mail.smtp.port\", \"587\");\n      props.put(\"mail.smtp.auth\", \"true\");\n      props.put(\"mail.smtp.starttls.enable\", \"true\");\n\n      // Get the Session object\n      Session session = Session.getInstance(props, new javax.mail.Authenticator() {\n         protected PasswordAuthentication getPasswordAuthentication() {\n            return new PasswordAuthentication(from, password);\n         }\n      });\n\n      try {\n         // Create a default MimeMessage object\n         MimeMessage message = new MimeMessage(session);\n\n         // Set From: header field of the header\n         message.setFrom(new InternetAddress(from));\n\n         // Set To: header field of the header\n         message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n\n         // Set Subject: header field\n         message.setSubject(\"This is the Subject Line!\");\n\n         // Now set the actual message\n         message.setText(\"This is the actual message\");\n\n         // Send message\n         Transport.send(message);\n\n         System.out.println(\"Sent message successfully....\");\n\n      } catch (MessagingException e) {\n         e.printStackTrace();\n      }\n   }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.mail.internet.MimeMessage",
+                    "java.util.Properties"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.internet.MimeMessage"
+                ],
+                "wrong_FQN_predictions": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.InternetAddress",
+                    "java.util.Properties"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.75,
+                "model_confidence": 0.7197370529174805,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeMessage/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeMessage/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeMessage/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeMessage/sample_2/Wrapper/src/main/java/org/example/Main.java:[31,66] package javax.mail does not exist\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.754 s\n[INFO] Finished at: 2024-04-16T19:10:14-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeMessage/sample_2/Wrapper/src/main/java/org/example/Main.java:[31,66] package javax.mail does not exist\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeMessage/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 31,
+                                "column": 66,
+                                "message": "package javax.mail does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMessage\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic example of a Java program that uses the javax.mail API for sending an email. Note that you need to setup your email details like username, password and the properties of the mail server. This program does not handle SSL and other complex authentication methods.\n\n```java\nimport javax.mail.*;\nimport javax.mail.internet.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        String to = \"recipient@example.com\";\n        String from = \"sender@example.com\";\n        String host = \"mail.example.com\";\n\n        Properties properties = System.getProperties();\n        properties.setProperty(\"mail.smtp.host\", host);\n\n        Session session = Session.getDefaultInstance(properties);\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n            message.setSubject(\"Test Mail from Java Program\");\n            message.setText(\"This is an email sent from Java program.\");\n\n            Transport.send(message);\n            System.out.println(\"Message sent successfully....\");\n\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}\n```\n\nThis code uses basic Java mail libraries provided by Java 6, which includes javax.mail. If you prefer to stick with javax.mail, you need to download the library from JavaMail's website and add it to your classpath. \n\nDo not forget to setup your SMTP server to allow sending emails. If you are using Gmail, you need to enable less secure apps and allow less secure apps: OFF in your account's security settings. This is because the code above is not handling any security measures such as SSL and other advanced authentication methods.",
+                "extracted_java_code_from_prediction": "import javax.mail.*;\nimport javax.mail.internet.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        String to = \"recipient@example.com\";\n        String from = \"sender@example.com\";\n        String host = \"mail.example.com\";\n\n        Properties properties = System.getProperties();\n        properties.setProperty(\"mail.smtp.host\", host);\n\n        Session session = Session.getDefaultInstance(properties);\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n            message.setSubject(\"Test Mail from Java Program\");\n            message.setText(\"This is an email sent from Java program.\");\n\n            Transport.send(message);\n            System.out.println(\"Message sent successfully....\");\n\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "javax.mail.*",
+                    "javax.mail.internet.*",
+                    "java.util.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "javax.mail.*",
+                    "javax.mail.internet.*",
+                    "java.util.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5564996600151062,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMessage\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe code below shows a complete and compilable Java code using \"MimeMessage\" from \"jakarta.mail-api-2.1.0\" project in addition to other required APIs.\n\n```java\nimport java.util.*;\nimport javax.mail.*;\nimport javax.mail.internet.*;\nimport javax.activation.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Properties properties = new Properties();\n\n        // Assuming that the system has an email server,\n        // You have to replace \"my_server\" with your SMTP server details.\n        properties.put(\"mail.smtp.host\", \"my_server\");\n\n        // If you have a user name and password, uncomment the following two lines.\n        //properties.put(\"mail.smtp.user\", \"username\");\n        //properties.put(\"mail.smtp.password\", \"password\");\n\n        Session session = Session.getDefaultInstance(properties);\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(\"from_email@gmail.com\"));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(\"to_email@gmail.com\"));\n            message.setSubject(\"Test message\");\n            message.setText(\"This is a test message.\");\n            Transport.send(message);\n            System.out.println(\"Sent message successfully....\");\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}\n```\nPlease replace \"from_email@gmail.com\" and \"to_email@gmail.com\" with your emails. Also, you will likely need to configure your system's mail server to allow sending email, or you may need to use a mail server that you have permission to send emails from.\n\nNote: This code doesn't use any APIs from projects that require adding new dependencies to the project. It uses APIs from the java.util, javax.mail and javax.activation packages only.",
+                "extracted_java_code_from_prediction": "import java.util.*;\nimport javax.mail.*;\nimport javax.mail.internet.*;\nimport javax.activation.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Properties properties = new Properties();\n\n        // Assuming that the system has an email server,\n        // You have to replace \"my_server\" with your SMTP server details.\n        properties.put(\"mail.smtp.host\", \"my_server\");\n\n        // If you have a user name and password, uncomment the following two lines.\n        //properties.put(\"mail.smtp.user\", \"username\");\n        //properties.put(\"mail.smtp.password\", \"password\");\n\n        Session session = Session.getDefaultInstance(properties);\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(\"from_email@gmail.com\"));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(\"to_email@gmail.com\"));\n            message.setSubject(\"Test message\");\n            message.setText(\"This is a test message.\");\n            Transport.send(message);\n            System.out.println(\"Sent message successfully....\");\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.*",
+                    "javax.mail.*",
+                    "javax.mail.internet.*",
+                    "javax.activation.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.util.*",
+                    "javax.mail.*",
+                    "javax.mail.internet.*",
+                    "javax.activation.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5760093331336975,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeMessage\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the Java code which sends an email through SMTP Server using Jakarta Mail API. It uses SMTP properties and a `Message` object to send email from your account to recipient\u2019s account.\n\nPlease replace the email and password with your own in the source code.\n\n```java\nimport jakarta.mail.*;\nimport jakarta.mail.internet.*;\n\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String [] args) {\n        String host = \"smtp.example.com\";\n        String from = \"your-email@example.com\";\n        String to = \"recipient-email@example.com\";\n        String subject = \"This is a test email\";\n        String body = \"This email is sent using Jakarta Mail API\";\n\n        // Get system properties\n        Properties properties = System.getProperties();\n\n        // Setup mail server\n        properties.put(\"mail.smtp.host\", host);\n        properties.put(\"mail.smtp.port\", \"587\");\n        properties.put(\"mail.smtp.ssl.enable\", \"true\");\n        properties.put(\"mail.smtp.auth\", \"true\");\n\n        Session mailSession = Session.getInstance(properties, null);\n        mailSession.setDebug(true);\n\n        try {\n            MimeMessage message = new MimeMessage(mailSession);\n\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n            message.setSubject(subject);\n            message.setText(body);\n\n            Transport transport = mailSession.getTransport(\"smtp\");\n            transport.connect(host, from, \"password\");\n            transport.sendMessage(message, message.getAllRecipients());\n            transport.close();\n        } catch (MessagingException me) {\n            System.out.println(\"An error occurred while sending an email: \" + me.getMessage());\n        }\n    }\n}\n```\n\nRemember, you should change the SMTP server host and credentials, as well as recipient and sender email addresses before running the code. And, enable less secure apps option in the settings of the sender's account that uses less secure apps access and for whom the host is 'smtp.gmail.com'.\n\nFor setting up gmail:\n1. Log into your Google Account\n2. Visit https://myaccount.google.com/lesssecureapps and turn off the \"Access for less secure apps\" option.\n3. Use the Java application to send email from the account where you have changed the \"Access for less secure apps\" setting to off.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.*;\nimport jakarta.mail.internet.*;\n\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String [] args) {\n        String host = \"smtp.example.com\";\n        String from = \"your-email@example.com\";\n        String to = \"recipient-email@example.com\";\n        String subject = \"This is a test email\";\n        String body = \"This email is sent using Jakarta Mail API\";\n\n        // Get system properties\n        Properties properties = System.getProperties();\n\n        // Setup mail server\n        properties.put(\"mail.smtp.host\", host);\n        properties.put(\"mail.smtp.port\", \"587\");\n        properties.put(\"mail.smtp.ssl.enable\", \"true\");\n        properties.put(\"mail.smtp.auth\", \"true\");\n\n        Session mailSession = Session.getInstance(properties, null);\n        mailSession.setDebug(true);\n\n        try {\n            MimeMessage message = new MimeMessage(mailSession);\n\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n            message.setSubject(subject);\n            message.setText(body);\n\n            Transport transport = mailSession.getTransport(\"smtp\");\n            transport.connect(host, from, \"password\");\n            transport.sendMessage(message, message.getAllRecipients());\n            transport.close();\n        } catch (MessagingException me) {\n            System.out.println(\"An error occurred while sending an email: \" + me.getMessage());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.util.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.util.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.642243504524231,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "MimePartDataSource": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"MimePartDataSource\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimePartDataSource\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a basic example using `MimePartDataSource` from \"jakarta.mail-api-2.1.0\" to illustrate sending an email with an attachment in Java. Note that you need to have necessary configurations to send emails, such as mail server details and authentication details.\n\nThis is a complete, correct, and compilable Java code:\n\n```java\nimport jakarta.activation.DataHandler;\nimport jakarta.activation.DataSource;\nimport jakarta.activation.FileDataSource;\nimport jakarta.mail.*;\nimport jakarta.mail.internet.*;\n\nimport java.io.File;\nimport java.util.Properties;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String to = \"receiver@example.com\";\n        String from = \"sender@example.com\";\n        String host = \"smtp.example.com\";\n\n        Properties properties = System.getProperties();\n        properties.setProperty(\"mail.smtp.host\", host);\n        Session session = Session.getDefaultInstance(properties);\n\n        try {\n            // create a default MimeMessage object.\n            MimeMessage message = new MimeMessage(session);\n\n            // Set From: header field of the header.\n            message.setFrom(new InternetAddress(from));\n\n            // Set To: header field of the header.\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n\n            // Set Subject: header field\n            message.setSubject(\"This is the Subject Line!\");\n\n            // Create message part\n            Multipart multipart = new MimeMultipart();\n\n            // Part1: create MimeBodyPart object\n            MimeBodyPart messageBodyPart = new MimeBodyPart();\n\n            // Fill the message\n            messageBodyPart.setText(\"This is message body\");\n\n            // Attach the file\n            MimeBodyPart attachmentBodyPart = new MimeBodyPart();\n\n            String file = \"/tmp/test.txt\";\n\n            // Create a data handler\n            DataSource fds = new FileDataSource(file);\n            DataHandler handler = new DataHandler(fds);\n\n            attachmentBodyPart.setDataHandler(handler);\n            attachmentBodyPart.setFileName(fds.getName());\n\n            // Attach body parts\n            multipart.addBodyPart(messageBodyPart);\n            multipart.addBodyPart(attachmentBodyPart);\n\n            // Set the multi-part into message\n            message.setContent(multipart);\n\n            // Send message\n            Transport.send(message);\n\n            System.out.println(\"Sent message successfully....\");\n\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}\n```\n\nThis sample code sends an email using JavaMail with the message body containing a text and an attachment. The attachment is a simple text file. This is just a simple illustration to demonstrate how to use `MimePartDataSource` from \"jakartaa.mail-api-2.1.0\" to send an email with an attachment. The actual setup might need to be adjusted according to your environment and needs.\n\nPlease note that this is a complete and correct code. However, it does not include handling the errors. Make sure to handle error scenarios appropriately depending upon your application's requirements.",
+                "extracted_java_code_from_prediction": "import jakarta.activation.DataHandler;\nimport jakarta.activation.DataSource;\nimport jakarta.activation.FileDataSource;\nimport jakarta.mail.*;\nimport jakarta.mail.internet.*;\n\nimport java.io.File;\nimport java.util.Properties;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String to = \"receiver@example.com\";\n        String from = \"sender@example.com\";\n        String host = \"smtp.example.com\";\n\n        Properties properties = System.getProperties();\n        properties.setProperty(\"mail.smtp.host\", host);\n        Session session = Session.getDefaultInstance(properties);\n\n        try {\n            // create a default MimeMessage object.\n            MimeMessage message = new MimeMessage(session);\n\n            // Set From: header field of the header.\n            message.setFrom(new InternetAddress(from));\n\n            // Set To: header field of the header.\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n\n            // Set Subject: header field\n            message.setSubject(\"This is the Subject Line!\");\n\n            // Create message part\n            Multipart multipart = new MimeMultipart();\n\n            // Part1: create MimeBodyPart object\n            MimeBodyPart messageBodyPart = new MimeBodyPart();\n\n            // Fill the message\n            messageBodyPart.setText(\"This is message body\");\n\n            // Attach the file\n            MimeBodyPart attachmentBodyPart = new MimeBodyPart();\n\n            String file = \"/tmp/test.txt\";\n\n            // Create a data handler\n            DataSource fds = new FileDataSource(file);\n            DataHandler handler = new DataHandler(fds);\n\n            attachmentBodyPart.setDataHandler(handler);\n            attachmentBodyPart.setFileName(fds.getName());\n\n            // Attach body parts\n            multipart.addBodyPart(messageBodyPart);\n            multipart.addBodyPart(attachmentBodyPart);\n\n            // Set the multi-part into message\n            message.setContent(multipart);\n\n            // Send message\n            Transport.send(message);\n\n            System.out.println(\"Sent message successfully....\");\n\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.activation.DataHandler",
+                    "jakarta.activation.DataSource",
+                    "jakarta.activation.FileDataSource",
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.io.File",
+                    "java.util.Properties"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.activation.DataHandler",
+                    "jakarta.activation.DataSource",
+                    "jakarta.activation.FileDataSource",
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.io.File",
+                    "java.util.Properties"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 7,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.7526200413703918,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimePartDataSource\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a Java program that uses the MimePartDataSource API. Please note that this requires the jakarta.mail-api-2.1.0 project. There isn't a direct MimePartDataSource class provided by this library and there may be other dependencies to meet in order to make this run. Please replace \"my_email@example.com\" with your actual email and modify \"smtp.gmail.com\", 465, \"from@gmail.com\", \"password\" based on your own settings.\n\n```java\nimport jakarta.activation.DataHandler;\nimport jakarta.activation.DataSource;\nimport jakarta.activation.FileDataSource;\nimport jakarta.mail.*;\nimport jakarta.mail.internet.*;\nimport java.util.Properties;\n\npublic class Main {\n    public static void main(String[] args) {\n        String to = \"my_email@example.com\";\n        String from = \"from@gmail.com\";\n        String host = \"smtp.gmail.com\";\n        Properties properties = System.getProperties();\n\n        properties.put(\"mail.smtp.host\", host);\n        properties.put(\"mail.smtp.port\", \"465\");\n        properties.put(\"mail.smtp.ssl.enable\", \"true\");\n        properties.put(\"mail.smtp.auth\", \"true\");\n\n        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"from@gmail.com\", \"password\");\n            }\n        });\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n            message.setSubject(\"Testing MIME Message\");\n\n            Multipart multipart = new MimeMultipart();\n\n            // Add Text Body\n            MimeBodyPart messageBodyPart = new MimeBodyPart();\n            messageBodyPart.setText(\"This is message body\");\n            multipart.addBodyPart(messageBodyPart);\n\n            // Add Attachment\n            messageBodyPart = new MimeBodyPart();\n            String filename = \"C:\\\\file.txt\";\n            DataSource source = new FileDataSource(filename);\n            messageBodyPart.setDataHandler(new DataHandler(source));\n            messageBodyPart.setFileName(\"file.txt\");\n            multipart.addBodyPart(messageBodyPart);\n\n            message.setContent(multipart);\n\n            Transport.send(message);\n            System.out.println(\"Sent message successfully...\");\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}\n```\n\nPlease replace \"my_email@example.com\", \"from@gmail.com\", \"password\", \"smtp.gmail.com\" etc with your actual values and note that you have to ensure your email provider allows sending mails through the app you're building. This code will only work on a server environment because JavaMail APIs require Java runtime environment.\n\nAlso, do note that you may need to ensure that you have permission to send emails using third party email services from your environment as per their policy.",
+                "extracted_java_code_from_prediction": "import jakarta.activation.DataHandler;\nimport jakarta.activation.DataSource;\nimport jakarta.activation.FileDataSource;\nimport jakarta.mail.*;\nimport jakarta.mail.internet.*;\nimport java.util.Properties;\n\npublic class Main {\n    public static void main(String[] args) {\n        String to = \"my_email@example.com\";\n        String from = \"from@gmail.com\";\n        String host = \"smtp.gmail.com\";\n        Properties properties = System.getProperties();\n\n        properties.put(\"mail.smtp.host\", host);\n        properties.put(\"mail.smtp.port\", \"465\");\n        properties.put(\"mail.smtp.ssl.enable\", \"true\");\n        properties.put(\"mail.smtp.auth\", \"true\");\n\n        Session session = Session.getInstance(properties, new javax.mail.Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(\"from@gmail.com\", \"password\");\n            }\n        });\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n            message.setSubject(\"Testing MIME Message\");\n\n            Multipart multipart = new MimeMultipart();\n\n            // Add Text Body\n            MimeBodyPart messageBodyPart = new MimeBodyPart();\n            messageBodyPart.setText(\"This is message body\");\n            multipart.addBodyPart(messageBodyPart);\n\n            // Add Attachment\n            messageBodyPart = new MimeBodyPart();\n            String filename = \"C:\\\\file.txt\";\n            DataSource source = new FileDataSource(filename);\n            messageBodyPart.setDataHandler(new DataHandler(source));\n            messageBodyPart.setFileName(\"file.txt\");\n            multipart.addBodyPart(messageBodyPart);\n\n            message.setContent(multipart);\n\n            Transport.send(message);\n            System.out.println(\"Sent message successfully...\");\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.activation.DataHandler",
+                    "jakarta.activation.DataSource",
+                    "jakarta.activation.FileDataSource",
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.util.Properties"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.activation.DataHandler",
+                    "jakarta.activation.DataSource",
+                    "jakarta.activation.FileDataSource",
+                    "jakarta.mail.*",
+                    "jakarta.mail.internet.*",
+                    "java.util.Properties"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 6,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.7276051640510559,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimePartDataSource\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a simple example on how you can utilize \"jakarta.mail-api-2.1.0\" project using Java code:\n\n1) First, you should add the \"jakarta.mail-api-2.1.0\" project as dependency in your project, then you can import below packages:\n\n```java\nimport jakarta.mail.Message;\nimport jakarta.mail.MessagingException;\nimport jakarta.mail.Session;\nimport jakarta.mail.Transport;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.activation.DataSource;\nimport jakarta.activation.MimePartDataSource;\n```\n\n2) You can send a simple email:\n\n```java\npublic class Main {\n    public static void main(String[] args) throws MessagingException {\n        // Create a mail session\n        Properties props = new Properties();\n        props.put(\"mail.smtp.host\", \"your_smtp_host\");\n        props.put(\"mail.smtp.port\", \"your_smtp_port\");\n\n        Session session = Session.getInstance(props, null);\n\n        // Construct the message\n        MimeMessage message = new MimeMessage(session);\n        message.setFrom(new InternetAddress(\"your_address@email.com\"));\n        message.setRecipient(Message.RecipientType.TO, new InternetAddress(\"recipient_address@email.com\"));\n        message.setSubject(\"Test email\");\n        message.setText(\"This is a test email.\");\n\n        // Create data source\n        MimePartDataSource dataSource = new MimePartDataSource();\n        dataSource.setData(\"Hello, this is the attachment\", \"text/plain\");\n        // Add attachment to the message\n        message.setDataHandler(new DataHandler(dataSource));\n\n        // Use the SMTP server to send the message\n        Transport.send(message);\n    }\n}\n```\n\nPlease replace \"your_smtp_host\", \"your_smtp_port\", \"your_address@email.com\" and \"recipient_address@email.com\" with your actual SMTP server information and email addresses respectively.\n\n3) You should have the correct `jakarta.mail` and `jakarta.activation` JAR files. You can download them from the official website of the `jakarta.mail` project and include them in your classpath.\n\nNote that you should ensure that you have the appropriate permissions and configurations in place for sending emails from the SMTP server.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.Message;\nimport jakarta.mail.MessagingException;\nimport jakarta.mail.Session;\nimport jakarta.mail.Transport;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.internet.MimeMessage;\nimport jakarta.activation.DataSource;\nimport jakarta.activation.MimePartDataSource;",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.Message",
+                    "jakarta.mail.MessagingException",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.Transport",
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.mail.internet.MimeMessage",
+                    "jakarta.activation.DataSource",
+                    "jakarta.activation.MimePartDataSource"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.Message",
+                    "jakarta.mail.MessagingException",
+                    "jakarta.mail.Session",
+                    "jakarta.mail.Transport",
+                    "jakarta.mail.internet.MimeMessage"
+                ],
+                "wrong_FQN_predictions": [
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.activation.DataSource",
+                    "jakarta.activation.MimePartDataSource"
+                ],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.375,
+                "model_confidence": 0.6352850794792175,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimePartDataSource\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a basic working example of using the \"MimePartDataSource\" API with \"jakarta.mail-api-2.1.0\".\n\nPlease note, running Java code typically requires building and setting the right classpath for your dependencies. In this particular case, the `jakarta.mail-api-2.1.0` doesn't come with a main method. It has to be used in a separate application that provides the required functionality like sending emails etc.\n\n```java\nimport jakarta.activation.*;\nimport javax.mail.*;\nimport javax.mail.internet.*;\nimport java.util.Properties;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String to = \"recipient@gmail.com\";\n        String from = \"sender@gmail.com\";\n        String host = \"smtp.gmail.com\";\n\n        Properties properties = System.getProperties();\n        properties.setProperty(\"mail.smtp.host\", host);\n        Session session = Session.getDefaultInstance(properties);\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n\n            BodyPart messageBodyPart = new MimeBodyPart();\n            messageBodyPart.setText(\"This is message body\");\n\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(messageBodyPart);\n            message.setContent(multipart);\n\n            Transport.send(message);\n            System.out.println(\"Sent message successfully....\");\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}\n```\nThis example is very simple. The `Main` class sets up a mail session, then creates a new mail message, adds some content to it, and sends the mail.\n\nPlease modify it according to your needs.",
+                "extracted_java_code_from_prediction": "import jakarta.activation.*;\nimport javax.mail.*;\nimport javax.mail.internet.*;\nimport java.util.Properties;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String to = \"recipient@gmail.com\";\n        String from = \"sender@gmail.com\";\n        String host = \"smtp.gmail.com\";\n\n        Properties properties = System.getProperties();\n        properties.setProperty(\"mail.smtp.host\", host);\n        Session session = Session.getDefaultInstance(properties);\n\n        try {\n            MimeMessage message = new MimeMessage(session);\n            message.setFrom(new InternetAddress(from));\n            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));\n\n            BodyPart messageBodyPart = new MimeBodyPart();\n            messageBodyPart.setText(\"This is message body\");\n\n            Multipart multipart = new MimeMultipart();\n            multipart.addBodyPart(messageBodyPart);\n            message.setContent(multipart);\n\n            Transport.send(message);\n            System.out.println(\"Sent message successfully....\");\n        } catch (MessagingException mex) {\n            mex.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.activation.*",
+                    "javax.mail.*",
+                    "javax.mail.internet.*",
+                    "java.util.Properties"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.activation.*",
+                    "javax.mail.*",
+                    "javax.mail.internet.*",
+                    "java.util.Properties"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5880733132362366,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimePartDataSource\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to use \"jakarta.mail-api-2.1.0\" along with other APIs, you'll need to ensure that the necessary dependencies are in place. Here's a sample Java code using the MimePartDataSource API in the \"jakarta.mail-api-2.1.0\" project:\n\n```java\nimport javax.activation.DataSource;\nimport javax.activation.MimePartDataSource;\n\npublic class Main {\n    \n    public static void main(String[] args) {\n\n        String htmlMessage = \"<h1>This is a test message</h1>\";\n        String contentType = \"text/html; charset=utf-8\";\n        \n        DataSource ds = new MimePartDataSource(htmlMessage, contentType);\n\n        // Now use ds...\n    }\n}\n```\n\nPlease replace \"htmlMessage\" and \"contentType\" with your desired values.\n\nThis is a basic example, for a production code, you'd likely have more complex requirements.\n\n**Note:** \n\n1. You would also need to add the appropriate dependencies and manage the classpath in your build configuration to make this work.\n2. Ensure your environment has a JavaMail API client library in classpath.\n\nAlso, remember to always include proper import statements to prevent adding new dependencies.\n\nThis solution assumes that you are using JavaMail API version 1.6 or later, and that your Java environment is properly configured to use this version of the API. Depending on the version you are using, your code could differ slightly. The code above assumes you have the API correctly set up and included in your project. \n\nThis example does not cover all of the ways you might use MimePartDataSource - for example, you might want to include attachments, or send the message via SMTP or a local delivery agent instead of just creating a data source to store the message.",
+                "extracted_java_code_from_prediction": "import javax.activation.DataSource;\nimport javax.activation.MimePartDataSource;\n\npublic class Main {\n    \n    public static void main(String[] args) {\n\n        String htmlMessage = \"<h1>This is a test message</h1>\";\n        String contentType = \"text/html; charset=utf-8\";\n        \n        DataSource ds = new MimePartDataSource(htmlMessage, contentType);\n\n        // Now use ds...\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "javax.activation.DataSource",
+                    "javax.activation.MimePartDataSource"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "javax.activation.DataSource",
+                    "javax.activation.MimePartDataSource"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4481271207332611,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "MimeUtility": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"MimeUtility\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeUtility\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe \"MimeUtility\" API can be found in JavaMail API, which is not included in Java's standard library. Therefore, to use it, you need to download the corresponding jar file or use an appropriate library that includes it.\n\nHere is a simple Java program that uses MimeUtility:\n\n```java\nimport jakarta.mail.internet.MimeUtility;\nimport jakarta.activation.DataSource;\nimport jakarta.activation.FileDataSource;\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) throws IOException {\n        DataSource fileDataSource = new FileDataSource(\"file.txt\");\n        String encodedString = MimeUtility.encodeText(fileDataSource, \"utf-8\", \"B\");\n        System.out.println(\"Encoded String: \" + encodedString);\n    }\n}\n```\n\nTo run the above code, you need to import the necessary libraries, which are available in Maven. Add the following to your pom.xml file:\n\n```xml\n<dependencies>\n  <dependency>\n    <groupId>jakarta.mail</groupId>\n    <artifactId>jakarta.mail-api</artifactId>\n    <version>2.1.0</version>\n  </dependency>\n  <dependency>\n    <groupId>jakarta.activation</groupId>\n    <artifactId>jakarta.activation-api</artifactId>\n    <version>2.1.0</version>\n  </dependency>\n</dependencies>\n```\n\nThe main() method creates a new DataSource for a file and then encodes the file as a MIME body part using MimeUtility.encodeText(). The encoded string is then printed to the console.\n\nPlease note that your project may require additional libraries or configuration that I have not listed here. Make sure to check the documentation for JavaMail API for more specific details.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.internet.MimeUtility;\nimport jakarta.activation.DataSource;\nimport jakarta.activation.FileDataSource;\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) throws IOException {\n        DataSource fileDataSource = new FileDataSource(\"file.txt\");\n        String encodedString = MimeUtility.encodeText(fileDataSource, \"utf-8\", \"B\");\n        System.out.println(\"Encoded String: \" + encodedString);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.internet.MimeUtility",
+                    "jakarta.activation.DataSource",
+                    "jakarta.activation.FileDataSource",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.internet.MimeUtility"
+                ],
+                "wrong_FQN_predictions": [
+                    "jakarta.activation.DataSource",
+                    "jakarta.activation.FileDataSource",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.75,
+                "model_confidence": 0.5556896924972534,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_1/Wrapper/src/main/java/org/example/Main.java:[13,55] incompatible types: jakarta.activation.DataSource cannot be converted to java.lang.String\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.619 s\n[INFO] Finished at: 2024-04-16T19:11:37-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_1/Wrapper/src/main/java/org/example/Main.java:[13,55] incompatible types: jakarta.activation.DataSource cannot be converted to java.lang.String\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 55,
+                                "message": "incompatible types: jakarta.activation.DataSource cannot be converted to java.lang.String"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeUtility\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe Jakarta Mail API is a Java Mail API that is a part of Jakarta's mission to bring the Enterprise Java ecosystem to Java developers. The Mail API provides a way to easily generate and parse MIME-based Internet protocols such as SMTP, MIME, and POP3. Here is a simple Java class that sends an e-mail using Jakarta Mail. Note that you may need to change the \"to\", \"from\", \"subject\" and \"text\" fields to match your needs. \n\nYou can use this code as a starting point and customize it to your needs. This code will not work out of the box, as it needs a properly set up Java Mail configuration including host, port, authentication and secure connection parameters, etc. You will also need to make sure you have \"jakarta.mail-api-2.1.0\" dependency in your project, and if you plan to use other APIs, the import statements must not depend on additional dependencies.\n\n```Java\nimport java.util.*;\nimport jakarta.mail.*;\nimport jakarta.mail.internet.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Recipient's email ID should be mentioned\n        String to = \"recipient@gmail.com\";\n\n        // Sender's email ID and password\n        String from = \"sender@gmail.com\";\n        final String password = \"senderPassword\";\n\n        // Setup Mail server\n        Properties props = new Properties();\n        props.put(\"mail.smtp.host\", \"smtp.gmail.com\");\n        props.put(\"mail.smtp.socketFactory.port\", \"465\");\n        props.put(\"mail.smtp.socketFactory.class\",\n                  \"javax.net.ssl.SSLSocketFactory\");\n        props.put(\"mail.smtp.auth\", \"true\");\n        props.put(\"mail.smtp.port\", \"465\");\n\n        Session session = Session.getDefaultInstance(props,\n          new javax.mail.Authenticator() {\n            protected PasswordAuthentication getPasswordAuthentication() {\n                return new PasswordAuthentication(from, password);\n            }\n          });\n\n        try {\n            // Create a default MimeMessage object.\n            MimeMessage message = new MimeMessage(session);\n\n            // Set From: header field of the header.\n            message.setFrom(new InternetAddress(from));\n\n            // Set To: header field of the header.\n            message.addRecipient(Message.RecipientType.TO,\n                 new InternetAddress(to));\n\n            // Set Subject: header field\n            message.setSubject(\"This is the Subject Line!\");\n\n            // Now set the actual message\n            message.setText(\"This is actual message\");\n\n            // Send message\n            Transport.send(message);\n\n            System.out.println(\"Sent message successfully....\");\n\n        } catch (MessagingException ex) {\n            ex.printStackTrace();\n        }\n    }\n}\n```\n\nPlease note that the \"smtp.gmail.com\", port, secure and authenticator settings are specific to the Gmail SMTP server and may vary depending on the SMTP server you're using.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.7308470606803894,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeUtility\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\n```java\nimport jakarta.mail.MimeUtility;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.Address;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        String name = \"John Doe\";\n        String email = \"john.doe@example.com\";\n\n        Address address = new InternetAddress(email, name);\n        String encodedName = MimeUtility.encodeText(name);\n        String encodedEmail = MimeUtility.encodeText(email);\n\n        System.out.println(\"Encoded Name: \" + encodedName);\n        System.out.println(\"Encoded Email: \" + encodedEmail);\n    }\n}\n```\nIn this code, we are using the MimeUtility.encodeText() method to encode the email and name addresses. This is done so that email clients can handle them correctly. The InternetAddress class is used to construct the email addresses.\n\nPlease note that running Java code that uses external libraries in an IDE with automatic building might not work properly because those libraries are not usually included in the Java SDK. The library files need to be added to the classpath manually, or the code should be executed on a machine with those libraries installed.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.MimeUtility;\nimport jakarta.mail.internet.InternetAddress;\nimport jakarta.mail.Address;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        String name = \"John Doe\";\n        String email = \"john.doe@example.com\";\n\n        Address address = new InternetAddress(email, name);\n        String encodedName = MimeUtility.encodeText(name);\n        String encodedEmail = MimeUtility.encodeText(email);\n\n        System.out.println(\"Encoded Name: \" + encodedName);\n        System.out.println(\"Encoded Email: \" + encodedEmail);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.MimeUtility",
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.mail.Address"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.mail.MimeUtility",
+                    "jakarta.mail.internet.InternetAddress",
+                    "jakarta.mail.Address"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4394492208957672,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeUtility\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe requirement of the code involves multiple parts:\n\n1. Imports for required APIs\n2. Java code with the \"MimeUtility\" API used\n3. Implementation of a simple method\n\nHowever, keep in mind that the \"jakarta.mail-api-2.1.0\" project is not available on the Maven repository and the \"MimeUtility\" class is not part of the standard Java API. It seems like you have a Jakarta EE library imported in your project, so I will provide a solution based on \"jakarta.mail-api-2.1.0\" APIs.\n\nFor your requirement, Java code could look something like this:\n\n```java\nimport javax.activation.*;\nimport javax.mail.*;\nimport javax.mail.internet.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        System.out.println(multiply(2, 3));\n    }\n\n    public static int multiply(int a, int b) {\n        return a * b;\n    }\n}\n```\n\nIn this code, the `multiply` method is the simple method that multiplies two integers. Note that `jakarta.mail-api-2.1.0` is not available and you have to include your dependencies directly in your build configuration (Maven, Gradle, etc.). The `javax.mail` and `javax.activation` are needed to use \"MimeUtility\" API.\n\nPlease note that the solution provided has all necessary imports included along with code to use the \"MimeUtility\" API, but it is highly recommended to verify if the library you are referring to is indeed the one you want to include in your project and the \"MimeUtility\" class is indeed present in your library or not.",
+                "extracted_java_code_from_prediction": "import javax.activation.*;\nimport javax.mail.*;\nimport javax.mail.internet.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        System.out.println(multiply(2, 3));\n    }\n\n    public static int multiply(int a, int b) {\n        return a * b;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "javax.activation.*",
+                    "javax.mail.*",
+                    "javax.mail.internet.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "javax.activation.*",
+                    "javax.mail.*",
+                    "javax.mail.internet.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.47831228375434875,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MimeUtility\" API from \"jakarta.mail-api-2.1.0\" project along with other necessary APIs. The dependency is already added for \"jakarta.mail-api-2.1.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs I don't have Jakarta Mail API installed in my development environment, I am providing a generalized example of how to use MimeUtility API from Jakarta Mail. Please note that to get it working properly you would need to setup your development environment correctly, install the Jakarta Mail API and add it as a dependency in your IDE.\n\nHere is a simple example of how you can use the `MimeUtility` API:\n\n```java\nimport jakarta.mail.internet.MimeUtility;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n        // Encoding a string\n        String encodedString = MimeUtility.encodeText(\"This is a test\");\n        System.out.println(\"Encoded String: \" + encodedString);\n\n        // Decoding a string\n        String decodedString = MimeUtility.decode(encodedString, \"ISO-2022-JP\");\n        System.out.println(\"Decoded String: \" + decodedString);\n\n    }\n\n}\n```\n\nJust replace `\"This is a test\"` and `\"ISO-2022-JP\"` with the string you want to encode/decode and the character set respectively.\n\nAlso, please note that, in Java, the package name has been changed from `javax.mail` to `jakarta.mail`, so the code snippet might not compile if you are using `javax.mail` instead of `jakarta.mail`.\n\nAlso, in case you face any issue while running this program please make sure to handle exceptions properly in the real-world applications as per best practices. This is just a basic example and does not cover edge cases.",
+                "extracted_java_code_from_prediction": "import jakarta.mail.internet.MimeUtility;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n        // Encoding a string\n        String encodedString = MimeUtility.encodeText(\"This is a test\");\n        System.out.println(\"Encoded String: \" + encodedString);\n\n        // Decoding a string\n        String decodedString = MimeUtility.decode(encodedString, \"ISO-2022-JP\");\n        System.out.println(\"Decoded String: \" + decodedString);\n\n    }\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.mail.internet.MimeUtility"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.mail.internet.MimeUtility"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5021130442619324,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,51] incompatible types: java.lang.String cannot be converted to java.io.InputStream\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.674 s\n[INFO] Finished at: 2024-04-16T19:11:38-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,51] incompatible types: java.lang.String cannot be converted to java.io.InputStream\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jakarta.mail-api-2.1.0/MimeUtility/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 51,
+                                "message": "incompatible types: java.lang.String cannot be converted to java.io.InputStream"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

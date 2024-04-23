@@ -1,0 +1,658 @@
+{
+    "jar_name": "junit-4.1.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from junit-4.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from junit-4.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the JUnit project or its source code. However, I can provide you with a general idea of what the classes might be named in JUnit.\n\nHere are some possible class names for non-abstract classes in JUnit:\n\n1. TestCase\n2. Suite\n3. TestSuite\n4. Test\n5. TestCaseWithAssumption\n6. TestCaseWithAssumptionViolated\n7. TestCaseWithAssumptionViolatedBy\n8. TestCaseWithAssumptionViolatedByWithMessage\n9. TestCaseWithAssumptionViolatedByWithMessage\n10. TestCaseWithAssumptionViolatedByWithMessageAndLocation\n11. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTrace\n12. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowable\n13. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumption\n14. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolated\n15. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedBy\n16. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessage\n17. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocation\n18. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTrace\n19. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowable\n20. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumption\n21. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolated\n22. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedBy\n23. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessage\n24. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocation\n25. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTrace\n26. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowable\n27. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumption\n28. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolated\n29. TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAnd",
+        "extracted_APIs_from_prediction": [
+            "TestCase",
+            "Suite",
+            "TestSuite",
+            "Test",
+            "TestCaseWithAssumption",
+            "TestCaseWithAssumptionViolated",
+            "TestCaseWithAssumptionViolatedBy",
+            "TestCaseWithAssumptionViolatedByWithMessage",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocation",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTrace",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowable",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumption",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolated",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedBy",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessage",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocation",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTrace",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowable",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumption",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolated",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedBy",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessage",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocation",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTrace",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowable",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumption",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolated",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAnd"
+        ],
+        "correct_API_predictions": [
+            "Suite",
+            "TestSuite"
+        ],
+        "wrong_API_predictions": [
+            "TestCase",
+            "Test",
+            "TestCaseWithAssumption",
+            "TestCaseWithAssumptionViolated",
+            "TestCaseWithAssumptionViolatedBy",
+            "TestCaseWithAssumptionViolatedByWithMessage",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocation",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTrace",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowable",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumption",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolated",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedBy",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessage",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocation",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTrace",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowable",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumption",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolated",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedBy",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessage",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocation",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTrace",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowable",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumption",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolated",
+            "TestCaseWithAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAndLocationAndStackTraceAndThrowableAndAssumptionViolatedByWithMessageAnd"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 26,
+        "failure_rate_for_APIs": 0.9285714285714286,
+        "model_confidence": 0.8942203521728516,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "Suite": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Suite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Suite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simple example of JUnit testing using Suite API from \"junit-4.1\" project:\n\n```java\nimport org.junit.Test;\nimport org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\nimport org.junit.runners.Suite.SuiteClasses;\n\n@RunWith(Suite.class)\n\n@SuiteClasses({\n   TestCase1.class,\n   TestCase2.class,\n   TestCase3.class\n})\n\npublic class TestSuite {   \n}\n\nclass TestCase1{\n   @Test\n   public void testMethod1(){\n       System.out.println(\"Running test method 1\");\n   }\n}\n\nclass TestCase2{\n   @Test\n   public void testMethod2(){\n       System.out.println(\"Running test method 2\");\n   }\n}\n\nclass TestCase3{\n   @Test\n   public void testMethod3(){\n       System.out.println(\"Running test method 3\");\n   }\n}\n```\n\nIn this example, we have three test cases: TestCase1, TestCase2, and TestCase3. The TestSuite class is a Test suite that uses the Suite runner to run these test cases. Note that @Test, @RunWith, and @SuiteClasses annotations are used in their respective classes.\n\nThe run configuration should include the JUnit4TestAdapter and the TestSuite. This is because JUnit4 provides a run configuration for suites, i.e., classes annotated with @RunWith(Suite.class). In Eclipse, right click on your project, click on Run As > Run Configurations. Under \"JUnit\" section, add the fully qualified name of your TestSuite class in the \"Bundle\" field. The JUnit4 TestAdapter should be selected for the \"Test runner\" field. Make sure your dependencies are resolved and the TestSuite class is public.",
+                "extracted_java_code_from_prediction": "import org.junit.Test;\nimport org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\nimport org.junit.runners.Suite.SuiteClasses;\n\n@RunWith(Suite.class)\n\n@SuiteClasses({\n   TestCase1.class,\n   TestCase2.class,\n   TestCase3.class\n})\n\npublic class TestSuite {   \n}\n\nclass TestCase1{\n   @Test\n   public void testMethod1(){\n       System.out.println(\"Running test method 1\");\n   }\n}\n\nclass TestCase2{\n   @Test\n   public void testMethod2(){\n       System.out.println(\"Running test method 2\");\n   }\n}\n\nclass TestCase3{\n   @Test\n   public void testMethod3(){\n       System.out.println(\"Running test method 3\");\n   }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Test",
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite",
+                    "org.junit.runners.Suite.SuiteClasses"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Test",
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.junit.runners.Suite.SuiteClasses"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6527337431907654,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 5 source files to /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[5,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[6,31] package org.junit.runners.Suite does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[5,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[6,31] package org.junit.runners.Suite does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[5,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[6,31] package org.junit.runners.Suite does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java:[5,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java:[6,31] package org.junit.runners.Suite does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[9,5] cannot find symbol\n  symbol:   class Test\n  location: class org.example.TestCase1\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[9,5] cannot find symbol\n  symbol:   class Test\n  location: class org.example.TestCase3\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[9,5] cannot find symbol\n  symbol:   class Test\n  location: class org.example.TestCase2\n[INFO] 19 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.810 s\n[INFO] Finished at: 2024-04-16T22:22:13-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[5,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[6,31] package org.junit.runners.Suite does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[5,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[6,31] package org.junit.runners.Suite does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[5,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[6,31] package org.junit.runners.Suite does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java:[5,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java:[6,31] package org.junit.runners.Suite does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java:[9,5] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.TestCase1\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java:[9,5] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.TestCase3\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java:[9,5] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.TestCase2\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java",
+                                "line": 5,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java",
+                                "line": 9,
+                                "column": 5,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java",
+                                "line": 9,
+                                "column": 5,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java",
+                                "line": 3,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java",
+                                "line": 3,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java",
+                                "line": 5,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java",
+                                "line": 3,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java",
+                                "line": 6,
+                                "column": 31,
+                                "message": "package org.junit.runners.Suite does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java",
+                                "line": 6,
+                                "column": 31,
+                                "message": "package org.junit.runners.Suite does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java",
+                                "line": 6,
+                                "column": 31,
+                                "message": "package org.junit.runners.Suite does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 3,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 6,
+                                "column": 31,
+                                "message": "package org.junit.runners.Suite does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 5,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase2.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase1.java",
+                                "line": 5,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_1/Wrapper/src/main/java/org/example/TestCase3.java",
+                                "line": 9,
+                                "column": 5,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Suite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here's a simple Java code using \"junit-4.1\" project with the necessary APIs, and we'll create a test suite with a single test case for a hypothetical class named \"Calculator\":\n\n```java\nimport org.junit.*;\n\npublic class Main {\n    \n    public static void main(String[] args) {\n        JUnitCore.runClasses(TestSuite.class);\n    }\n}\n\nimport static org.junit.Assert.*;\n\npublic class Calculator {\n    public int add(int a, int b) {\n        return a + b;\n    }\n}\n\nimport org.junit.Test;\n\npublic class TestSuite {\n\n    @Test\n    public void testAdd() {\n        Calculator calculator = new Calculator();\n        int result = calculator.add(2, 2);\n        assertEquals(4, result);\n    }\n}\n```\nThis code creates two main classes - `Main` and `Calculator` - and uses `TestSuite` as the test class for the Calculator class. It also includes `org.junit.Assert.assertEquals` to test if the sum of two numbers equals the expected result, which you can see in the `TestSuite` class. \n\nJust remember that these tests are run in a separate JVM from your application. And they can only import packages and classes that are part of the \"junit\" package, and \"org.junit\" package. \n\nIf you need to use other APIs, then you can't import them without adding new dependencies. In such cases, you will have to handle the dependencies manually (if they are available as .jar files, for example).",
+                "extracted_java_code_from_prediction": "import org.junit.*;\n\npublic class Main {\n    \n    public static void main(String[] args) {\n        JUnitCore.runClasses(TestSuite.class);\n    }\n}\n\nimport static org.junit.Assert.*;\n\npublic class Calculator {\n    public int add(int a, int b) {\n        return a + b;\n    }\n}\n\nimport org.junit.Test;\n\npublic class TestSuite {\n\n    @Test\n    public void testAdd() {\n        Calculator calculator = new Calculator();\n        int result = calculator.add(2, 2);\n        assertEquals(4, result);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.*",
+                    "static org.junit.Assert.*",
+                    "org.junit.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.junit.*",
+                    "static org.junit.Assert.*"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.5181119441986084,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 3 source files to /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[4,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[3,1] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Calculator.java:[4,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Calculator.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Calculator.java:[3,1] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,1] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[9,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.TestSuite\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[13,9] cannot find symbol\n  symbol:   method assertEquals(int,int)\n  location: class org.example.TestSuite\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n  symbol:   variable JUnitCore\n  location: class org.example.Main\n[INFO] 12 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.724 s\n[INFO] Finished at: 2024-04-16T22:22:14-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[4,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[3,1] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Calculator.java:[4,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Calculator.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Calculator.java:[3,1] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,1] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[9,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.TestSuite\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java:[13,9] cannot find symbol\n[ERROR]   symbol:   method assertEquals(int,int)\n[ERROR]   location: class org.example.TestSuite\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n[ERROR]   symbol:   variable JUnitCore\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 1,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 24,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 13,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 5,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Calculator.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 3,
+                                "column": 1,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Calculator.java",
+                                "line": 3,
+                                "column": 1,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/Calculator.java",
+                                "line": 5,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_2/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 9,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Suite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSince the question doesn't specify the exact requirement, I will give an example of a simple test case in JUnit 4.1:\n\n```java\nimport org.junit.*;\n\npublic class Main {\n    @Test\n    public void test() {\n        Assert.assertEquals(\"Error Message\", 2, 1+1);\n    }\n\n    public static junit.framework.Test suite() {\n        return new junit.framework.JUnit41TestCase() {\n            protected void setUp() throws Exception {\n                super.setUp();\n                // additional setup code if needed\n            }\n\n            protected void tearDown() throws Exception {\n                super.tearDown();\n                // additional teardown code if needed\n            }\n        };\n    }\n}\n```\n\nThis is a very basic test case. Please make sure to include the actual tests according to your requirements. The code for the Test Suite is not shown here, you'd have to create one as specified in the Suite API documentation.\nPlease remember, running JUnit tests doesn't require adding new dependencies. JUnit is actually part of the JDK so you don't need to add a new dependency for it. In fact, it should be noted that you can run JUnit tests from command-line (e.g., `java org.junit.runner.JUnitCore Main`), and the JUnit tests do not require any external library to be added to your project. The Test cases can be run from your IDE (Eclipse, NetBeans, IntelliJ) just by marking the JUnit version and writing a main method.",
+                "extracted_java_code_from_prediction": "import org.junit.*;\n\npublic class Main {\n    @Test\n    public void test() {\n        Assert.assertEquals(\"Error Message\", 2, 1+1);\n    }\n\n    public static junit.framework.Test suite() {\n        return new junit.framework.JUnit41TestCase() {\n            protected void setUp() throws Exception {\n                super.setUp();\n                // additional setup code if needed\n            }\n\n            protected void tearDown() throws Exception {\n                super.tearDown();\n                // additional teardown code if needed\n            }\n        };\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.junit.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4745613634586334,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Suite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe \"Suite\" API from \"junit-4.1\" project allows us to run multiple test classes as a suite of tests. For example, if you have two test classes - TestA and TestB - you can use the Suite API to run both of them as a single suite of tests.\n\nLet's write a simple JUnit test case using the Suite API. Here are the necessary classes:\n\n```java\nimport org.junit.Test;\nimport org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n@Suite.SuiteClasses({\n    TestA.class,\n    TestB.class\n})\n\npublic class TestSuite {\n    // This class remains empty, it's used only as a holder for the above annotations\n}\n```\n\nAnd here are two simple test cases that should be run as part of this suite:\n\n```java\npublic class TestA {\n    @Test\n    public void testMethodA1(){\n        // Your test code for testMethodA1\n    }\n\n    @Test\n    public void testMethodA2(){\n        // Your test code for testMethodA2\n    }\n}\n```\n\n```java\npublic class TestB {\n    @Test\n    public void testMethodB1(){\n        // Your test code for testMethodB1\n    }\n\n    @Test\n    public void testMethodB2(){\n        // Your test code for testMethodB2\n    }\n}\n```\n\nYou should be able to run all tests in TestA and TestB at once with this suite of tests. This is because the \"@RunWith(Suite.class)\" annotation indicates that the test cases are to be run using the \"Suite\" runner class.",
+                "extracted_java_code_from_prediction": "import org.junit.Test;\nimport org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n@Suite.SuiteClasses({\n    TestA.class,\n    TestB.class\n})\n\npublic class TestSuite {\n    // This class remains empty, it's used only as a holder for the above annotations\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Test",
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Test",
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6298567652702332,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/java/org/example/TestSuite.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/java/org/example/TestSuite.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/java/org/example/TestSuite.java:[5,25] package org.junit.runners does not exist\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.696 s\n[INFO] Finished at: 2024-04-16T22:22:15-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/java/org/example/TestSuite.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/java/org/example/TestSuite.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/java/org/example/TestSuite.java:[5,25] package org.junit.runners does not exist\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 5,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 3,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/Suite/sample_4/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Suite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs an AI language model, I need more information or context to provide specific Java code. If you require a complete, correct and compilable Java code using \"Suite\" API from \"junit-4.1\" project, please provide more details about the specific functionalities or the tests that you'd like to implement. Please include any other APIs or classes that you are planning to use, and I'll do my best to assist you based on your requirements.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.25944051146507263,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "TestSuite": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"TestSuite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestSuite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo create a JUnit test using the \"TestSuite\" API, you'll need to follow the JUnit testing structure.\n\nHere is a simple Java code using JUnit test:\n\n```java\nimport org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n@Suite.SuiteClasses({\n   FirstTest.class,\n   SecondTest.class\n})\n\npublic class Main {\n    // No need to define a main method for SuiteRunner\n}\n```\n\nIn the above code, you are importing necessary classes and setting up the test suite using `@SuiteClasses` annotation. `@SuiteClasses` is used to define the test classes to be included in the test suite.\n\nNote: Replace `FirstTest.class` and `SecondTest.class` with the actual classes you want to test.\n\nYou also need to have JUnit library added to your project. If you are using Maven add the following dependency in your pom.xml:\n\n```xml\n<dependency>\n   <groupId>junit</groupId>\n   <artifactId>junit</artifactId>\n   <version>4.12</version>\n   <scope>test</scope>\n</dependency>\n```\n\nIf you are using Gradle, you can add this dependency in your build.gradle:\n\n```groovy\ntestImplementation 'junit:junit:4.12'\n```\n\nFor a full example to include other libraries in your project, you would have to add those libraries in a similar way. For example, to include log4j you would add the following to your pom.xml:\n\n```xml\n<dependency>\n    <groupId>org.apache.logging.log4j</groupId>\n    <artifactId>log4j-api</artifactId>\n    <version>2.17.1</version>\n</dependency>\n```\n\nOr your gradle:\n\n```groovy\nimplementation 'org.apache.logging.log4j:log4j-api:2.17.1'\n```\n\nRemember, libraries should only be included if you need the classes and methods provided by the libraries to perform your tests. If the library isn't needed for your code's execution, adding it as a dependency will cause an increased build size, as the entire library is included in the build. This adds unnecessary bloat and can decrease performance.",
+                "extracted_java_code_from_prediction": "import org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n@Suite.SuiteClasses({\n   FirstTest.class,\n   SecondTest.class\n})\n\npublic class Main {\n    // No need to define a main method for SuiteRunner\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6379792094230652,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_1/Wrapper/src/main/java/org/example/Main.java:[3,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,25] package org.junit.runners does not exist\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.648 s\n[INFO] Finished at: 2024-04-16T22:22:46-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_1/Wrapper/src/main/java/org/example/Main.java:[3,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,25] package org.junit.runners does not exist\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestSuite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simple example of how you might use the TestSuite and JUnit APIs:\n\n```java\nimport org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n@Suite.SuiteClasses({\n    TestClass1.class,\n    TestClass2.class\n})\n\npublic class Main {\n   // No additional code needed here\n}\n```\n\nThe classes `TestClass1` and `TestClass2` are assumed to be actual test classes that extend from `junit.framework.TestCase`.\n\nIn this scenario, the Main class is the entry point of the test suite. When you run this class, JUnit will execute both TestClass1 and TestClass2 in one go.\n\nPlease note that this is a very simplified example and you would need to replace `TestClass1` and `TestClass2` with your actual test classes. You will also need to have the necessary import statements for JUnit and any other APIs you are using.\n\nAlso, it is important to note that this code will only run if you are using an IDE like Eclipse or IntelliJ IDEA with configured plugins to handle JUnit tests and if you've properly defined your project as a Maven project (if applicable).",
+                "extracted_java_code_from_prediction": "import org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n@Suite.SuiteClasses({\n    TestClass1.class,\n    TestClass2.class\n})\n\npublic class Main {\n   // No additional code needed here\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.45538049936294556,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_2/Wrapper/src/main/java/org/example/Main.java:[3,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,25] package org.junit.runners does not exist\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.685 s\n[INFO] Finished at: 2024-04-16T22:22:47-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_2/Wrapper/src/main/java/org/example/Main.java:[3,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,25] package org.junit.runners does not exist\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestSuite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of the Java code with Junit 4.1 TestSuite:\n\n```java\nimport org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n\n@Suite.SuiteClasses({\n   TestCase1.class,\n   TestCase2.class,\n   TestCase3.class\n})\n\npublic class TestSuite {\n\n}\n```\n\nAnd the TestCase classes would look like this:\n\n```java\nimport org.junit.Assert;\nimport org.junit.Test;\n\npublic class TestCase1 {\n    @Test\n    public void testMethod() {\n        Assert.assertEquals(\"Test case 1\", true, true);\n    }\n}\n```\n\nJust replace `TestCase1`, `TestCase2`, and `TestCase3` with the actual classes you have written for the tests. These classes would contain real tests for your project and should extend `TestCase` (or use annotations `@Test` and `@Test(expected = Exception.class)`). If your classes require additional imports or any dependency management, they should be done within the test classes themselves, not here.\n\nHere, we used the JUnit `@Test` annotation for identifying methods as a test case and the JUnit `Assert` class for evaluating the result of the test case. \n\nThe `TestCase` classes are the individual test cases that will be run as a part of this test suite.\n\nIn this example, our `TestCase1` is an actual JUnit test class with a single test method `testMethod()` that is expecting two parameters - strings with a description of the test and an expected result and an actual result, which are both true in this case.\n\nPlease note that the provided code does not compile out-of-the-box, because we don't have the test cases' implementations yet. Replace the `TestCase1` classes with actual implementation of your test cases. The dependencies are already provided.",
+                "extracted_java_code_from_prediction": "import org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n\n@Suite.SuiteClasses({\n   TestCase1.class,\n   TestCase2.class,\n   TestCase3.class\n})\n\npublic class TestSuite {\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4912431836128235,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_3/Wrapper/src/main/java/org/example/TestSuite.java:[3,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_3/Wrapper/src/main/java/org/example/TestSuite.java:[4,25] package org.junit.runners does not exist\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.666 s\n[INFO] Finished at: 2024-04-16T22:22:48-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_3/Wrapper/src/main/java/org/example/TestSuite.java:[3,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_3/Wrapper/src/main/java/org/example/TestSuite.java:[4,25] package org.junit.runners does not exist\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_3/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 3,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_3/Wrapper/src/main/java/org/example/TestSuite.java",
+                                "line": 4,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestSuite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple example of creating a JUnit test suite using the \"TestSuite\" class from the \"junit-4.1\" project:\n\n```java\nimport junit.framework.Test;\nimport junit.framework.TestResult;\nimport junit.framework.TestSuite;\nimport junit.textui.TestRunner;\n\npublic class CalculatorTest extends TestSuite {\n    public CalculatorTest(String name) {\n        super(name);\n        addTest(new TestSuite(CalculatorTestCase.class));\n    }\n\n    public static void main(String[] args) {\n        TestRunner.run(CalculatorTest.class);\n    }\n}\n```\nIn the above code, `CalculatorTest` is a test suite class that extends TestSuite. The constructor of the class is using super to initialize the test suite with the name passed to it. `addTest` method is used to add a new test to the suite.\n\nNext, create a simple test class for testing the functionality of our calculator.\n\n```java\nimport junit.framework.TestCase;\n\npublic class CalculatorTestCase extends TestCase {\n    public CalculatorTestCase(String name) {\n        super(name);\n    }\n\n    public void testAddition() {\n        assertEquals(5, 2 + 3);\n    }\n}\n```\n\nIn the above code, the test case class extends TestCase. The test method is using assertEquals to verify if the result of 2 + 3 equals to 5.\n\nPlease note that this example is using the old JUnit 4.x framework, which has been deprecated and replaced by JUnit 5 in newer versions of Java.",
+                "extracted_java_code_from_prediction": "import junit.framework.Test;\nimport junit.framework.TestResult;\nimport junit.framework.TestSuite;\nimport junit.textui.TestRunner;\n\npublic class CalculatorTest extends TestSuite {\n    public CalculatorTest(String name) {\n        super(name);\n        addTest(new TestSuite(CalculatorTestCase.class));\n    }\n\n    public static void main(String[] args) {\n        TestRunner.run(CalculatorTest.class);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "junit.framework.Test",
+                    "junit.framework.TestResult",
+                    "junit.framework.TestSuite",
+                    "junit.textui.TestRunner"
+                ],
+                "correct_FQN_predictions": [
+                    "junit.framework.Test",
+                    "junit.framework.TestResult",
+                    "junit.framework.TestSuite",
+                    "junit.textui.TestRunner"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5510531663894653,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[9,8] class CalculatorTest is public, should be declared in a file named CalculatorTest.java\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,23] package junit.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,23] package junit.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,23] package junit.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[7,20] package junit.textui does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[9,37] cannot find symbol\n  symbol: class TestSuite\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,21] cannot find symbol\n  symbol:   class TestSuite\n  location: class org.example.CalculatorTest\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,31] cannot find symbol\n  symbol:   class CalculatorTestCase\n  location: class org.example.CalculatorTest\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,9] cannot find symbol\n  symbol:   variable TestRunner\n  location: class org.example.CalculatorTest\n[INFO] 9 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.684 s\n[INFO] Finished at: 2024-04-16T22:22:49-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[9,8] class CalculatorTest is public, should be declared in a file named CalculatorTest.java\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,23] package junit.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,23] package junit.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,23] package junit.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[7,20] package junit.textui does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[9,37] cannot find symbol\n[ERROR]   symbol: class TestSuite\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,21] cannot find symbol\n[ERROR]   symbol:   class TestSuite\n[ERROR]   location: class org.example.CalculatorTest\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,31] cannot find symbol\n[ERROR]   symbol:   class CalculatorTestCase\n[ERROR]   location: class org.example.CalculatorTest\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,9] cannot find symbol\n[ERROR]   symbol:   variable TestRunner\n[ERROR]   location: class org.example.CalculatorTest\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 23,
+                                "message": "package junit.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 23,
+                                "message": "package junit.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 37,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 21,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 20,
+                                "message": "package junit.textui does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 23,
+                                "message": "package junit.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 31,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 8,
+                                "message": "class CalculatorTest is public, should be declared in a file named CalculatorTest.java"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"TestSuite\" API from \"junit-4.1\" project along with other necessary APIs. The dependency is already added for \"junit-4.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a complete, correct, and compilable Java code using \"TestSuite\" API from \"junit-4.1\" project. The other necessary APIs are included in \"junit-4.1\" project so no additional dependencies are required. \n\n```java\nimport org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n@Suite.SuiteClasses({\n   Test1.class,\n   Test2.class\n})\npublic class TestSuiteRunner {\n\n}\n```\nThis is a sample test suite runner class with two test classes \"Test1\" and \"Test2\" included in the suite.\n\nPlease replace Test1 and Test2 with the actual names of your test classes. \n\n```java\nimport org.junit.*;\n\npublic class Test1 {\n    @Test\n    public void testMethod1() {\n        Assert.assertEquals(\"test 1\", \"test 1\");\n    }\n}\n```\nThis is a simple test class that includes a test method.\n\n```java\nimport org.junit.*;\n\npublic class Test2 {\n    @Test\n    public void testMethod2() {\n        Assert.assertEquals(\"test 2\", \"test 2\");\n    }\n}\n```\nThis is another simple test class that also includes a test method.\n\nThe class with the main method named as Main should be like this:\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        org.junit.runner.JUnitCore.main(\"TestSuiteRunner\");\n    }\n}\n```\nThis is the \"main\" class where the \"JUnitCore.main\" method is called with the name of the TestSuiteRunner class as argument.\n\nThese classes do not import any additional dependencies so you can modify or extend them as per your requirements and requirements for test classes you have.",
+                "extracted_java_code_from_prediction": "import org.junit.runner.RunWith;\nimport org.junit.runners.Suite;\n\n@RunWith(Suite.class)\n@Suite.SuiteClasses({\n   Test1.class,\n   Test2.class\n})\npublic class TestSuiteRunner {\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.Suite"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5742183923721313,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_5/Wrapper/src/main/java/org/example/TestSuiteRunner.java:[3,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_5/Wrapper/src/main/java/org/example/TestSuiteRunner.java:[4,25] package org.junit.runners does not exist\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.686 s\n[INFO] Finished at: 2024-04-16T22:22:51-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_5/Wrapper/src/main/java/org/example/TestSuiteRunner.java:[3,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_5/Wrapper/src/main/java/org/example/TestSuiteRunner.java:[4,25] package org.junit.runners does not exist\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_5/Wrapper/src/main/java/org/example/TestSuiteRunner.java",
+                                "line": 4,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/junit-4.1/TestSuite/sample_5/Wrapper/src/main/java/org/example/TestSuiteRunner.java",
+                                "line": 3,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

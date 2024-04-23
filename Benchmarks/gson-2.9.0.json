@@ -1,0 +1,1071 @@
+{
+    "jar_name": "gson-2.9.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from gson-2.9.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from gson-2.9.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the Gson-2.9.0 project or its source code. However, based on the information provided, I can provide you with a list of some of the classes that are likely to be part of the Gson library and are not abstract.\n\n1. JsonArray\n2. JsonObject\n3. JsonPrimitive\n4. JsonNull\n5. JsonParser\n6. JsonElement\n7. JsonSerializationContext\n8. JsonSerializer\n9. JsonDeserializationContext\n10. JsonDeserializer\n11. JsonObjectWrapper\n12. JsonWriter\n13. JsonReader\n14. JsonElementType\n15. JsonArrayTypeAdapter\n16. JsonObjectTypeAdapter\n17. JsonPrimitiveTypeAdapter\n18. JsonNullTypeAdapter\n19. JsonParserDelegate\n20. JsonElementWrapper\n21. JsonSerializationContextImpl\n22. JsonSerializerContextImpl\n23. JsonDeserializationContextImpl\n24. JsonDeserializerContextImpl\n25. JsonObjectWrapperImpl\n26. JsonWriterImpl\n27. JsonReaderImpl\n28. JsonElementTypeImpl\n29. JsonArrayTypeAdapterImpl\n30. JsonObjectTypeAdapterImpl\n31. JsonPrimitiveTypeAdapterImpl\n32. JsonNullTypeAdapterImpl\n33. JsonParserDelegateImpl\n34. JsonElementWrapperImpl\n35. JsonSerializationContextImpl$1\n36. JsonSerializerContextImpl$1\n37. JsonDeserializationContextImpl$1\n38. JsonDeserializerContextImpl$1\n39. JsonObjectWrapperImpl$1\n40. JsonWriterImpl$1\n41. JsonReaderImpl$1\n42. JsonElementTypeImpl$1\n43. JsonArrayTypeAdapterImpl$1\n44. JsonObjectTypeAdapterImpl$1\n45. JsonPrimitiveTypeAdapterImpl$1\n46. JsonNullTypeAdapterImpl$1\n47. JsonParserDelegateImpl$1\n48. JsonElementWrapperImpl$1\n49. JsonSerializationContextImpl$1$1\n50. JsonSerializerContextImpl$1$1\n\nPlease note that this list is based on the assumption that the classes you're looking for are not abstract and are part of the Gson library. The actual list may vary depending on the specific version of the Gson library you're referring to.",
+        "extracted_APIs_from_prediction": [
+            "JsonArray",
+            "JsonObject",
+            "JsonPrimitive",
+            "JsonNull",
+            "JsonParser",
+            "JsonElement",
+            "JsonSerializationContext",
+            "JsonSerializer",
+            "JsonDeserializationContext",
+            "JsonDeserializer",
+            "JsonObjectWrapper",
+            "JsonWriter",
+            "JsonReader",
+            "JsonElementType",
+            "JsonArrayTypeAdapter",
+            "JsonObjectTypeAdapter",
+            "JsonPrimitiveTypeAdapter",
+            "JsonNullTypeAdapter",
+            "JsonParserDelegate",
+            "JsonElementWrapper",
+            "JsonSerializationContextImpl",
+            "JsonSerializerContextImpl",
+            "JsonDeserializationContextImpl",
+            "JsonDeserializerContextImpl",
+            "JsonObjectWrapperImpl",
+            "JsonWriterImpl",
+            "JsonReaderImpl",
+            "JsonElementTypeImpl",
+            "JsonArrayTypeAdapterImpl",
+            "JsonObjectTypeAdapterImpl",
+            "JsonPrimitiveTypeAdapterImpl",
+            "JsonNullTypeAdapterImpl",
+            "JsonParserDelegateImpl",
+            "JsonElementWrapperImpl",
+            "JsonSerializationContextImpl$1",
+            "JsonSerializerContextImpl$1",
+            "JsonDeserializationContextImpl$1",
+            "JsonDeserializerContextImpl$1",
+            "JsonObjectWrapperImpl$1",
+            "JsonWriterImpl$1",
+            "JsonReaderImpl$1",
+            "JsonElementTypeImpl$1",
+            "JsonArrayTypeAdapterImpl$1",
+            "JsonObjectTypeAdapterImpl$1",
+            "JsonPrimitiveTypeAdapterImpl$1",
+            "JsonNullTypeAdapterImpl$1",
+            "JsonParserDelegateImpl$1",
+            "JsonElementWrapperImpl$1",
+            "JsonSerializationContextImpl$1$1",
+            "JsonSerializerContextImpl$1$1"
+        ],
+        "correct_API_predictions": [
+            "JsonArray",
+            "JsonObject",
+            "JsonPrimitive",
+            "JsonNull",
+            "JsonParser",
+            "JsonWriter",
+            "JsonReader"
+        ],
+        "wrong_API_predictions": [
+            "JsonElement",
+            "JsonSerializationContext",
+            "JsonSerializer",
+            "JsonDeserializationContext",
+            "JsonDeserializer",
+            "JsonObjectWrapper",
+            "JsonElementType",
+            "JsonArrayTypeAdapter",
+            "JsonObjectTypeAdapter",
+            "JsonPrimitiveTypeAdapter",
+            "JsonNullTypeAdapter",
+            "JsonParserDelegate",
+            "JsonElementWrapper",
+            "JsonSerializationContextImpl",
+            "JsonSerializerContextImpl",
+            "JsonDeserializationContextImpl",
+            "JsonDeserializerContextImpl",
+            "JsonObjectWrapperImpl",
+            "JsonWriterImpl",
+            "JsonReaderImpl",
+            "JsonElementTypeImpl",
+            "JsonArrayTypeAdapterImpl",
+            "JsonObjectTypeAdapterImpl",
+            "JsonPrimitiveTypeAdapterImpl",
+            "JsonNullTypeAdapterImpl",
+            "JsonParserDelegateImpl",
+            "JsonElementWrapperImpl",
+            "JsonSerializationContextImpl$1",
+            "JsonSerializerContextImpl$1",
+            "JsonDeserializationContextImpl$1",
+            "JsonDeserializerContextImpl$1",
+            "JsonObjectWrapperImpl$1",
+            "JsonWriterImpl$1",
+            "JsonReaderImpl$1",
+            "JsonElementTypeImpl$1",
+            "JsonArrayTypeAdapterImpl$1",
+            "JsonObjectTypeAdapterImpl$1",
+            "JsonPrimitiveTypeAdapterImpl$1",
+            "JsonNullTypeAdapterImpl$1",
+            "JsonParserDelegateImpl$1",
+            "JsonElementWrapperImpl$1",
+            "JsonSerializationContextImpl$1$1",
+            "JsonSerializerContextImpl$1$1"
+        ],
+        "number_of_correct_APIs": 7,
+        "number_of_wrong_APIs": 43,
+        "failure_rate_for_APIs": 0.86,
+        "model_confidence": 0.7966674566268921,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "JsonArray": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonArray\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonArray\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a Java code snippet which uses the \"gson-2.9.0\" and \"Apache Commons Lang 3.12.0\" libraries to parse a JsonArray. You will need to add \"gson-2.9.0\" and \"apache-commons-lang3\" as dependencies to your project. Note that the GSON library version might change depending on your specific environment setup.\n\nFirst, you should include these libraries as Maven dependencies in your pom.xml file:\n\n```xml\n<dependency>\n    <groupId>com.google.code.gson</groupId>\n    <artifactId>gson</artifactId>\n    <version>2.9.0</version>\n</dependency>\n<dependency>\n    <groupId>org.apache.commons</groupId>\n    <artifactId>commons-lang3</artifactId>\n    <version>3.12.0</version>\n</dependency>\n```\nAfter that, the Java class that has the main method would look like this:\n\n```java\nimport com.google.gson.JsonArray;\nimport com.google.gson.JsonElement;\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;\n\nimport org.apache.commons.lang3.StringUtils;\n\nimport java.util.Iterator;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String jsonString = \"[{\\\"name\\\":\\\"John\\\"}, {\\\"name\\\":\\\"Jane\\\"}, {\\\"name\\\":\\\"Doe\\\"}]\";\n        JsonParser parser = new JsonParser();\n        JsonArray jsonArray = parser.parse(jsonString).getAsJsonArray();\n        \n        Iterator<JsonElement> iterator = jsonArray.iterator();\n        while (iterator.hasNext()) {\n            JsonObject jsonObject = iterator.next().getAsJsonObject();\n            String name = jsonObject.get(\"name\").getAsString();\n            System.out.println(StringUtils.capitalize(name));\n        }\n    }\n}\n```\nThis Java code creates a simple application that uses the JsonParser of GSON to parse a JSON array. It then retrieves the names from the JsonObject and capitalizes them before printing them. It is important to note that GSON is not a requirement to use this code. You could write the same functionality using different libraries or programming practices without using GSON, depending on what you need it for.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonArray;\nimport com.google.gson.JsonElement;\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;\n\nimport org.apache.commons.lang3.StringUtils;\n\nimport java.util.Iterator;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String jsonString = \"[{\\\"name\\\":\\\"John\\\"}, {\\\"name\\\":\\\"Jane\\\"}, {\\\"name\\\":\\\"Doe\\\"}]\";\n        JsonParser parser = new JsonParser();\n        JsonArray jsonArray = parser.parse(jsonString).getAsJsonArray();\n        \n        Iterator<JsonElement> iterator = jsonArray.iterator();\n        while (iterator.hasNext()) {\n            JsonObject jsonObject = iterator.next().getAsJsonObject();\n            String name = jsonObject.get(\"name\").getAsString();\n            System.out.println(StringUtils.capitalize(name));\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonElement",
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser",
+                    "org.apache.commons.lang3.StringUtils",
+                    "java.util.Iterator"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonElement",
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.apache.commons.lang3.StringUtils",
+                    "java.util.Iterator"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.7008622884750366,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/java/org/example/Main.java: /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/java/org/example/Main.java uses or overrides a deprecated API.\n[WARNING] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/java/org/example/Main.java: Recompile with -Xlint:deprecation for details.\n[INFO] 2 warnings \n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/java/org/example/Main.java:[8,32] package org.apache.commons.lang3 does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/java/org/example/Main.java:[22,32] cannot find symbol\n  symbol:   variable StringUtils\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.727 s\n[INFO] Finished at: 2024-04-16T23:52:11-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/java/org/example/Main.java:[8,32] package org.apache.commons.lang3 does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/java/org/example/Main.java:[22,32] cannot find symbol\n[ERROR]   symbol:   variable StringUtils\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 32,
+                                "message": "package org.apache.commons.lang3 does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 22,
+                                "column": 32,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonArray\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java program using the \"JsonArray\" API from the \"gson-2.9.0\" project. In this example, a JsonArray is created, and then a string representation of the array is printed to the console:\n\n```java\nimport com.google.gson.JsonArray;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonArray\n        JsonArray jsonArray = new JsonArray();\n        \n        // Add elements to the JsonArray\n        jsonArray.add(\"Element 1\");\n        jsonArray.add(\"Element 2\");\n        jsonArray.add(\"Element 3\");\n        \n        // Print the JsonArray as a string\n        System.out.println(jsonArray.toString());\n    }\n}\n```\nNote: In this case, we only needed the \"com.google.gson.JsonArray\" API from the Gson library, and there were no external dependencies or other APIs which would have made it necessary to add new dependencies. This will compile and run successfully without any issues assuming the Gson library is properly added as a dependency.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonArray;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonArray\n        JsonArray jsonArray = new JsonArray();\n        \n        // Add elements to the JsonArray\n        jsonArray.add(\"Element 1\");\n        jsonArray.add(\"Element 2\");\n        jsonArray.add(\"Element 3\");\n        \n        // Print the JsonArray as a string\n        System.out.println(jsonArray.toString());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonArray"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonArray"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4876408278942108,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonArray\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the Java code for a simple program that uses the JsonArray API from the gson-2.9.0 project. I'll create a class named Main with the main method, and then use JsonArray from the \"gson\" library.\n\nFirstly, you need to add the gson library to your project by adding the below dependency to your pom.xml file if your project is a Maven project.\n\n```xml\n<dependency>\n  <groupId>com.google.code.gson</groupId>\n  <artifactId>gson</artifactId>\n  <version>2.9.0</version>\n</dependency>\n```\n\nThe Java code would be:\n\n```java\nimport com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonArray\n        JsonArray jsonArray = new JsonArray();\n\n        // Add elements to the JsonArray\n        jsonArray.add(\"Element 1\");\n        jsonArray.add(\"Element 2\");\n\n        // Print elements of the JsonArray\n        for (int i = 0; i < jsonArray.size(); i++) {\n            System.out.println(jsonArray.get(i));\n        }\n    }\n}\n```\n\nIn this code, we first import the necessary classes from the gson library. We then define a public class Main with a public static void main method. This method creates a new JsonArray and adds two strings (\"Element 1\" and \"Element 2\") to it. The JsonArray is then printed to the console by iterating through its elements and printing each one.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonArray\n        JsonArray jsonArray = new JsonArray();\n\n        // Add elements to the JsonArray\n        jsonArray.add(\"Element 1\");\n        jsonArray.add(\"Element 2\");\n\n        // Print elements of the JsonArray\n        for (int i = 0; i < jsonArray.size(); i++) {\n            System.out.println(jsonArray.get(i));\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonObject"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonObject"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5763633847236633,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonArray\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of Java code using the Gson library for parsing and manipulating JSON data:\n\n```java\nimport com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonArray\n        JsonArray jsonArray = new JsonArray();\n\n        // Add elements to the JsonArray\n        jsonArray.add(\"value1\");\n        jsonArray.add(\"value2\");\n        jsonArray.add(\"value3\");\n\n        // Print the JsonArray\n        System.out.println(jsonArray);\n\n        // Check if the JsonArray contains a specific value\n        boolean containsValue = jsonArray.contains(\"value2\");\n        System.out.println(\"JsonArray contains 'value2': \" + containsValue);\n\n        // Remove an element from the JsonArray\n        jsonArray.remove(\"value1\");\n\n        // Print the JsonArray after removing an element\n        System.out.println(\"JsonArray after removing 'value1': \" + jsonArray);\n\n        // Parse a JSON string to a JsonObject\n        JsonObject jsonObject = new JsonObject();\n        jsonObject.addProperty(\"key1\", \"value1\");\n        jsonObject.addProperty(\"key2\", \"value2\");\n\n        // Print the JsonObject\n        System.out.println(jsonObject);\n\n        // Get a value from the JsonObject\n        String value = jsonObject.get(\"key1\").getAsString();\n        System.out.println(\"Value for 'key1': \" + value);\n    }\n}\n```\n\nIn the given code, we create a JsonArray and add some elements to it, and then manipulate the JsonArray in various ways using the Gson library's methods. We also parse a JsonObject from a JSON string and get and print values from it. Note that this is a very basic example; in a real-world scenario you'd probably want to do much more than what this example does.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonArray\n        JsonArray jsonArray = new JsonArray();\n\n        // Add elements to the JsonArray\n        jsonArray.add(\"value1\");\n        jsonArray.add(\"value2\");\n        jsonArray.add(\"value3\");\n\n        // Print the JsonArray\n        System.out.println(jsonArray);\n\n        // Check if the JsonArray contains a specific value\n        boolean containsValue = jsonArray.contains(\"value2\");\n        System.out.println(\"JsonArray contains 'value2': \" + containsValue);\n\n        // Remove an element from the JsonArray\n        jsonArray.remove(\"value1\");\n\n        // Print the JsonArray after removing an element\n        System.out.println(\"JsonArray after removing 'value1': \" + jsonArray);\n\n        // Parse a JSON string to a JsonObject\n        JsonObject jsonObject = new JsonObject();\n        jsonObject.addProperty(\"key1\", \"value1\");\n        jsonObject.addProperty(\"key2\", \"value2\");\n\n        // Print the JsonObject\n        System.out.println(jsonObject);\n\n        // Get a value from the JsonObject\n        String value = jsonObject.get(\"key1\").getAsString();\n        System.out.println(\"Value for 'key1': \" + value);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonObject"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonObject"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6179118752479553,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,52] incompatible types: java.lang.String cannot be converted to com.google.gson.JsonElement\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_4/Wrapper/src/main/java/org/example/Main.java:[25,18] no suitable method found for remove(java.lang.String)\n    method com.google.gson.JsonArray.remove(com.google.gson.JsonElement) is not applicable\n      (argument mismatch; java.lang.String cannot be converted to com.google.gson.JsonElement)\n    method com.google.gson.JsonArray.remove(int) is not applicable\n      (argument mismatch; java.lang.String cannot be converted to int)\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.690 s\n[INFO] Finished at: 2024-04-16T23:52:16-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,52] incompatible types: java.lang.String cannot be converted to com.google.gson.JsonElement\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_4/Wrapper/src/main/java/org/example/Main.java:[25,18] no suitable method found for remove(java.lang.String)\n[ERROR]     method com.google.gson.JsonArray.remove(com.google.gson.JsonElement) is not applicable\n[ERROR]       (argument mismatch; java.lang.String cannot be converted to com.google.gson.JsonElement)\n[ERROR]     method com.google.gson.JsonArray.remove(int) is not applicable\n[ERROR]       (argument mismatch; java.lang.String cannot be converted to int)\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 18,
+                                "message": "no suitable method found for remove(java.lang.String)"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonArray/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 52,
+                                "message": "incompatible types: java.lang.String cannot be converted to com.google.gson.JsonElement"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonArray\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's an example of how you could utilize the Gson library to parse a JSON array:\n\n```java\nimport com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonParser parser = new JsonParser();\n        String json = \"[1, 2, 3, 4, 5]\";\n        JsonArray jsonArray = parser.parse(json).getAsJsonArray();\n\n        for (int i = 0; i < jsonArray.size(); i++) {\n            System.out.println(jsonArray.get(i).getAsInt());\n        }\n    }\n}\n```\n\nIn this example:\n\n1. We have imported the necessary dependencies.\n2. We then create a main method in a class named \"Main\".\n3. Inside the main method, we create a JsonParser object using which we can parse JSON from a JSON string.\n4. Next, we parse a JSON array and save it as a JsonArray object.\n5. We then iterate through the array and print out the integer values contained in each item. \n\nNote: \n- The \"getAsInt()\" method will throw an exception if the element is not of Int type. This is a safer way to handle potential exceptions than using a try/catch block.\n- Make sure to replace \"s\" with \".\" in import statements if your code does not require adding new dependencies.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonParser parser = new JsonParser();\n        String json = \"[1, 2, 3, 4, 5]\";\n        JsonArray jsonArray = parser.parse(json).getAsJsonArray();\n\n        for (int i = 0; i < jsonArray.size(); i++) {\n            System.out.println(jsonArray.get(i).getAsInt());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.505104124546051,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "JsonObject": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonObject\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonObject\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to answer your question, I need to know the specific requirements of the code you want to create. However, here is a simple example of how to create and print a JSON object using the \"JsonObject\" class from the \"gson\" library.\n\n```java\nimport com.google.gson.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a new JsonObject\n        JsonObject jsonObject = new JsonObject();\n        \n        // Add properties to the JsonObject\n        jsonObject.addProperty(\"name\", \"John Doe\");\n        jsonObject.addProperty(\"age\", 30);\n        \n        // Print the JsonObject\n        System.out.println(jsonObject);\n    }\n}\n```\n\nThis code does not use any external API except for the \"gson\" library. The \"main\" method creates a new \"JsonObject\", adds two properties (\"name\" and \"age\") to it, and then prints the object to the console.\n\nPlease, replace this code with the one that would be more appropriate to your specific needs. Please specify any further details about the code you want to generate.",
+                "extracted_java_code_from_prediction": "import com.google.gson.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a new JsonObject\n        JsonObject jsonObject = new JsonObject();\n        \n        // Add properties to the JsonObject\n        jsonObject.addProperty(\"name\", \"John Doe\");\n        jsonObject.addProperty(\"age\", 30);\n        \n        // Print the JsonObject\n        System.out.println(jsonObject);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.google.gson.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5086344480514526,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonObject\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is an example of a Java program using the Gson library to parse a JSON string:\n\n1. Import required classes: \n```java\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;\n```\n\n2. Now, in the Main Class, you can perform below mentioned operations:\n```java\npublic class Main {\n    public static void main(String[] args) {\n        // Define JSON String\n        String json = \"{'name':'John','age':30, 'city':'New York'}\";\n        \n        // Create JsonElement from the JSON String\n        JsonElement jsonElement = JsonParser.parseString(json);\n        \n        // Cast it to JsonObject\n        JsonObject jsonObject = jsonElement.getAsJsonObject();\n\n        // Get the values from the JsonObject\n        String name = jsonObject.get(\"name\").getAsString();\n        int age = jsonObject.get(\"age\").getAsInt();\n        String city = jsonObject.get(\"city\").getAsString();\n\n        // Print the values\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"City: \" + city);\n    }\n}\n```\n\nThe above code creates a JSON string, then converts that string to a JsonElement, which can then be cast to a JsonObject for access. The values are then retrieved from the JsonObject by their keys.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5172437429428101,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonObject\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo give you a specific example, let's consider a Java code that uses the \"gson\" library to convert a JSON string into a Java object. This may look something like the following:\n\n```java\nimport com.google.gson.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        Gson gson = new Gson();\n        Person person = gson.fromJson(json, Person.class);\n        \n        System.out.println(\"Name: \" + person.getName());\n        System.outem.println(\"Age: \" + person.getAge());\n        System.out.println(\"City: \" + person.getCity());\n    }\n}\n\nclass Person {\n    private String name;\n    private int age;\n    private String city;\n\n    public String getName() {\n        return name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n\n    public String getCity() {\n        return city;\n    }\n}\n```\n\nThis Java program creates a JSON string representation of a person. The Gson library is used to convert this JSON string into a Person object. The resulting Person object is then printed out to the console. The Person object has three properties: name, age and city.\n\nThe class for Person isn't provided here as the question asks for only the Main class with the necessary libraries. The class would typically look something like this.\n\n```java\nclass Person {\n    private String name;\n    private int age;\n    private String city;\n\n    public String getName() {\n        return name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n\n    public String getCity() {\n        return city;\n    }\n}\n```\n\nPlease replace the json string and Person class according to your needs.\n\nPlease note, if any dependency is required you can add it as mentioned.\n\nAnd you may need to include necessary dependencies in your build script which is not covered in this answer.",
+                "extracted_java_code_from_prediction": "import com.google.gson.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        Gson gson = new Gson();\n        Person person = gson.fromJson(json, Person.class);\n        \n        System.out.println(\"Name: \" + person.getName());\n        System.outem.println(\"Age: \" + person.getAge());\n        System.out.println(\"City: \" + person.getCity());\n    }\n}\n\nclass Person {\n    private String name;\n    private int age;\n    private String city;\n\n    public String getName() {\n        return name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n\n    public String getCity() {\n        return city;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.google.gson.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.6820565462112427,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonObject\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nFor this problem, you need two APIs: Gson for JSON manipulation and java.time for date manipulation. Here's an example of how you can use them.\n\nIn your case, since you mentioned the \"gson-2.9.0\" project as the dependency, it seems that Gson is already handled within the provided project. So, we need to add the date-time API for this purpose:\n\n```java\nimport java.time.LocalDateTime;\nimport com.google.gson.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonObject\n        JsonObject jsonObject = new JsonObject();\n\n        // Set values in JsonObject\n        jsonObject.addProperty(\"name\", \"John Doe\");\n        jsonObject.addProperty(\"age\", 30);\n        jsonObject.addProperty(\"createdAt\", LocalDateTime.now().toString());\n        \n        // Print JsonObject\n        System.out.println(jsonObject);\n    }\n}\n```\n\nThis code creates a JsonObject, sets values in it and prints it. The LocalDateTime.now().toString() gets the current date and time and adds it to the JsonObject as a property. Please replace the package and class names according to your project setup.",
+                "extracted_java_code_from_prediction": "import java.time.LocalDateTime;\nimport com.google.gson.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonObject\n        JsonObject jsonObject = new JsonObject();\n\n        // Set values in JsonObject\n        jsonObject.addProperty(\"name\", \"John Doe\");\n        jsonObject.addProperty(\"age\", 30);\n        jsonObject.addProperty(\"createdAt\", LocalDateTime.now().toString());\n        \n        // Print JsonObject\n        System.out.println(jsonObject);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.time.LocalDateTime",
+                    "com.google.gson.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.time.LocalDateTime",
+                    "com.google.gson.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.49546918272972107,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonObject\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic example of a class named Main using the Gson library:\n\n```java\nimport com.google.gson.JsonObject;\nimport java.io.FileWriter;\nimport java.io.IOException;\nimport java.io.Writer;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        JsonObject obj = new JsonObject();\n\n        obj.addProperty(\"name\", \"John\");\n        obj.addProperty(\"age\", 30);\n        obj.addProperty(\"country\", \"USA\");\n\n        try (Writer writer = new FileWriter(\"output.json\")) {\n            com.google.gson.JsonParser.parseString(obj.toString()).getAsJsonObject().writeTo(writer);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn this example, we are creating a JsonObject, adding properties to it, then writing it to a file named \"output.json\".\n\nNote: This requires Gson library to be in classpath. If not available, you might need to add maven shade plugin and shade the project and then you can simply add the shade jar in classpath while compiling. Make sure to replace \"output.json\" with the actual file you want to output the json data. \n\nYou can also add, remove, and access properties directly from a JsonObject in a similar way:\n\n```java\nobj.addProperty(\"fav color\", \"blue\");\nSystem.out.println(obj.get(\"fav color\")); // This will print \"blue\"\n```",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonObject;\nimport java.io.FileWriter;\nimport java.io.IOException;\nimport java.io.Writer;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        JsonObject obj = new JsonObject();\n\n        obj.addProperty(\"name\", \"John\");\n        obj.addProperty(\"age\", 30);\n        obj.addProperty(\"country\", \"USA\");\n\n        try (Writer writer = new FileWriter(\"output.json\")) {\n            com.google.gson.JsonParser.parseString(obj.toString()).getAsJsonObject().writeTo(writer);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonObject",
+                    "java.io.FileWriter",
+                    "java.io.IOException",
+                    "java.io.Writer"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonObject"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.FileWriter",
+                    "java.io.IOException",
+                    "java.io.Writer"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.75,
+                "model_confidence": 0.5429549217224121,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonObject/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonObject/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonObject/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonObject/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,85] cannot find symbol\n  symbol:   method writeTo(java.io.Writer)\n  location: class com.google.gson.JsonObject\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.720 s\n[INFO] Finished at: 2024-04-16T23:52:45-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonObject/sample_5/Wrapper/src/main/java/org/example/Main.java:[19,85] cannot find symbol\n[ERROR]   symbol:   method writeTo(java.io.Writer)\n[ERROR]   location: class com.google.gson.JsonObject\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonObject/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 85,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "JsonPrimitive": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonPrimitive\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonPrimitive\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a simple Java code that uses \"JsonPrimitive\" API from \"gson-2.9.0\" project. As the dependency for \"gson-2.9.0\" project is already added, no additional dependencies are needed here.\n\n```Java\nimport com.google.gson.JsonPrimitive;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // Create a JsonPrimitive object\n        JsonPrimitive jsonPrimitive = new JsonPrimitive(123);\n\n        // Print the value of the JsonPrimitive object\n        System.out.println(jsonPrimitive.getAsInt());\n    }\n}\n```\nThis code creates a `JsonPrimitive` object and prints the value obtained using the `getAsInt()` method. The `JsonPrimitive` object is initialized with an integer, but the same method can be used with different data types as required.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5181673169136047,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonPrimitive\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSince your request asks for a complete Java code using the necessary APIs, I will show an example that includes the creation of a `JsonObject` with a `JsonPrimitive`. Please note that the complete Gson library is not needed.\n\n```java\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonPrimitive;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonObject\n        JsonObject jsonObject = new JsonObject();\n        \n        // Add a string value to the object\n        jsonObject.add(\"key1\", new JsonPrimitive(\"value1\"));\n\n        // Add an integer value to the object\n        jsonObject.addProperty(\"key2\", 2);\n        \n        // Now the jsonObject object should look like this: {\"key1\": \"value1\", \"key2\": 2}\n        \n        // You can now print the JSON String\n        System.out.println(jsonObject.toString());\n    }\n}\n```\nIn the code above, we create a `JsonObject` and add two properties: a string and an integer. Then we just print out the resulting JSON String.\n\nPlease note, the dependencies and other necessary libraries are already taken care of in the provided dependency.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonObject;\nimport com.google.gson.JsonPrimitive;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonObject\n        JsonObject jsonObject = new JsonObject();\n        \n        // Add a string value to the object\n        jsonObject.add(\"key1\", new JsonPrimitive(\"value1\"));\n\n        // Add an integer value to the object\n        jsonObject.addProperty(\"key2\", 2);\n        \n        // Now the jsonObject object should look like this: {\"key1\": \"value1\", \"key2\": 2}\n        \n        // You can now print the JSON String\n        System.out.println(jsonObject.toString());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonPrimitive"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonPrimitive"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6003060936927795,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonPrimitive\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of using JsonPrimitive from the Gson library in Java. This code creates a JSON object with a primitive integer value.\n\nFirst, add the Maven dependency to your `pom.xml`:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>com.google.code.gson</groupId>\n        <artifactId>gson</artifactId>\n        <version>2.9.0</version>\n    </dependency>\n</dependencies>\n```\n\nThen, in your Java main method, you can create a JsonPrimitive instance like this:\n\n```java\nimport com.google.gson.JsonPrimitive;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonPrimitive json = new JsonPrimitive(12345);\n        System.out.println(json); // Prints: 12345\n    }\n}\n```\n\nThis code creates a new JsonPrimitive with the value `12345` and then prints it out using the `System.out.println` statement. You can replace the integer `12345` with any other primitive type like a string or a boolean, and it will create a corresponding JsonPrimitive.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonPrimitive;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonPrimitive json = new JsonPrimitive(12345);\n        System.out.println(json); // Prints: 12345\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonPrimitive"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonPrimitive"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6456148028373718,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonPrimitive\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe example given is quite broad. However, I will provide you with a simple example of how you might use \"JsonPrimitive\" from \"gson-2.9.0\" project. Here, we'll create a JsonPrimitive of the string \"Hello, World!\" and print it:\n\nFirst, make sure that your project includes the gson-2.9.0 dependency. If you are using Maven, you would include the following dependency in your pom.xml:\n\n```xml\n<dependency>\n  <groupId>com.google.code.gson</groupId>\n  <artifactId>gson</artifactId>\n  <version>2.9.0</version>\n</dependency>\n```\n\nThen you can create a class named Main with a main method like this:\n\n```java\nimport com.google.gson.JsonPrimitive;\n\npublic class Main {\n  public static void main(String[] args) {\n    JsonPrimitive jsonPrimitive = new JsonPrimitive(\"Hello, World!\");\n    System.out.println(jsonPrimitive);\n  }\n}\n```\n\nWhen this class is compiled and run, it will print the JsonPrimitive of the string \"Hello, World!\" to the standard output.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonPrimitive;\n\npublic class Main {\n  public static void main(String[] args) {\n    JsonPrimitive jsonPrimitive = new JsonPrimitive(\"Hello, World!\");\n    System.out.println(jsonPrimitive);\n  }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonPrimitive"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonPrimitive"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6207008361816406,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonPrimitive\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a complete Java code that makes use of the \"JsonPrimitive\" API from the \"gson-2.9.0\" project:\n\n```java\nimport com.google.gson.JsonPrimitive;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonPrimitive jsonPrimitive = new JsonPrimitive(123); \n        System.out.println(jsonPrimitive);\n    }\n}\n```\n\nIn this program, we import the necessary API, `JsonPrimitive`, from the Google's Gson library. We then create a new instance of `JsonPrimitive` with an integer (123) as an argument. Finally, we print the resulting JsonPrimitive object using the `System.out.println()` method.\n\nPlease note that you need to have Gson library in your classpath. You can get the jar file from Maven Central repository and add it in your classpath. \n\nAnd remember, the main method should be in a class that starts with a capital letter. It usually follows the convention where the class name and the filename are the same. So, in this case the class should be named Main and the filename should be Main.java.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonPrimitive;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonPrimitive jsonPrimitive = new JsonPrimitive(123); \n        System.out.println(jsonPrimitive);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonPrimitive"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonPrimitive"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5676165819168091,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "JsonNull": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonNull\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNull\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, you haven't mentioned what specific task or requirement you want me to perform, but based on your question, it doesn't look like a complete, correct and compilable Java code has been provided. Please provide more information about what kind of code you are looking to generate based on the project requirements.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.2423248291015625,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNull\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe requirement suggests that you are to use the JsonNull API from the gson-2.9.0 project along with other APIs but the dependency to the project is already mentioned in the description, so the code example must not include a new import statement referring to the gson-2.9.0.\n\nTo work correctly with \"JsonNull\" API, you can import \"com.google.gson.JsonNull\", as the JsonNull class is provided by the Gson library. \n\nHere is an example of Java code using JsonNull:\n\n```java\nimport com.google.gson.JsonNull;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating a JsonNull object\n        JsonNull nullValue = JsonNull.INSTANCE;\n        \n        // Using the nullValue object\n        if (nullValue.equals(nullValue)) {\n            System.out.println(\"nullValue is equals null\");\n        }\n        else {\n            System.outa.out.println(\"nullValue is not equals null\");\n        }\n    }\n}\n```\n\nThis code will print: \"nullValue is equals null\".\n\nPlease note: Be sure to have gson dependency in your pom.xml file:\n\n```xml\n<dependency>\n  <groupId>com.google.code.gson</groupId>\n  <artifactId>gson</artifactId>\n  <version>2.8.2</version>\n</dependency>\n```\n\nAlso, remember to enable Java 8+ or later version to compile your application.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonNull;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating a JsonNull object\n        JsonNull nullValue = JsonNull.INSTANCE;\n        \n        // Using the nullValue object\n        if (nullValue.equals(nullValue)) {\n            System.out.println(\"nullValue is equals null\");\n        }\n        else {\n            System.outa.out.println(\"nullValue is not equals null\");\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonNull"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.google.gson.JsonNull"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5337339043617249,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNull\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe `JsonNull` is actually part of the `com.google.gson` package in the Gson library that we included as a dependency. We can use this `JsonNull` in the following manner:\n\nAdd these import statements on top of your `Main.java` file:\n\n```java\nimport com.google.gson.*;\n```\n\nNow, you can use JsonNull like this:\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        JsonNull jsonNull = JsonNull.INSTANCE;\n\n        // jsonNull will print: null\n        System.out.println(jsonNull);\n    }\n}\n```\n\nIn this code, `JsonNull` is an enumeration that contains a single value: `INSTANCE`. It is used when you want to represent the JSON null value using the Gson library.\n\nPlease note, the `JsonNull` class and its `INSTANCE` field is not part of the Java SE standard library and it's a part of Gson library. It's not possible to provide a compilable code without including dependencies. Also note that we used the `INSTANCE` field since `JsonNull` is an enumeration that contains a single instance. \n\nMake sure that your `pom.xml` or `build.gradle` file includes the dependency to `gson` library, like this:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>com.google.code.gson</groupId>\n        <artifactId>gson</artifactId>\n        <version>2.9.0</version>\n    </dependency>\n</dependencies>\n```\n\nor, using Gradle:\n\n```groovy\ndependencies {\n    implementation 'com.google.code.gson:gson:2.9.0'\n}\n```",
+                "extracted_java_code_from_prediction": "import com.google.gson.*;",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.google.gson.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.6309069395065308,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNull\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYour problem seems to be a little bit vague, as there is no specific requirement you've specified which JsonNull API should be used. But here's a basic example of how you can use JsonNull API in Gson library:\n\nYou need to include the following Maven dependency to use Gson library in your project:\n\n```xml\n<dependency>\n    <groupId>com.google.code.gson</groupId>\n    <artifactId>gson</artifactId>\n    <version>2.9.0</version>\n</dependency>\n```\n\nAnd here is a simple Java code using JsonNull API from \"gson-2.9.0\" project.\n\n```java\nimport com.google.gson.JsonNull;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonNull object\n        JsonNull jsonNull = JsonNull.INSTANCE;\n\n        // Print out JsonNull object\n        System.out.println(jsonNull);\n    }\n}\n```\n\nThis code creates a JsonNull object and then prints it out. JsonNull is a special kind of JSON null value that is different from null pointer in Java. JsonNull is a part of Gson library's JsonNull API that allows you to represent a JSON null value. It is used when you want to include a null value in your JSON data but without including any more data.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonNull;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create a JsonNull object\n        JsonNull jsonNull = JsonNull.INSTANCE;\n\n        // Print out JsonNull object\n        System.out.println(jsonNull);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonNull"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.google.gson.JsonNull"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5041587948799133,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNull\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a sample program that uses the \"gson-2.9.0\" library along with the \"JsonNull\" API. It simply includes necessary import statements and then uses the \"JsonNull\" API to create a null Json element. \n\nPlease ensure that your development environment is correctly set up to include gson library for your Java project. \n\n```java\nimport com.google.gson.JsonNull;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonNull nullJsonElement = JsonNull.INSTANCE;\n        \n        // You can now use nullJsonElement as you would use any other JsonElement\n    }\n}\n```\nThis is a straightforward example where you have used a JsonNull element to represent a JSON null literal (null). However, if you need more complex scenarios, you may also need to use other Google Gson classes such as JsonObject, JsonArray, JsonPrimitive, etc. which are part of the \"gson-2.9.0\" library and do not require any additional dependencies. \n\nPlease note, the 'JsonNull' API is a singleton, and you should treat it as such, as 'JsonNull.INSTANCE' will always return the same instance. So, there's no need to worry about creating a ton of JsonNull instances.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonNull;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonNull nullJsonElement = JsonNull.INSTANCE;\n        \n        // You can now use nullJsonElement as you would use any other JsonElement\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonNull"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.google.gson.JsonNull"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4450947344303131,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "JsonParser": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonParser\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParser\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of how you can use the JsonParser API from the \"gson-2.9.0\" project in a Java program:\n\n```java\nimport com.google.gson.JsonParser;\nimport com.google.gson.JsonElement;\nimport com.google.gson.JsonObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        String json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\";\n        \n        JsonParser parser = new JsonParser();\n        JsonElement jsonElement = parser.parse(json);\n        \n        JsonObject jsonObject = jsonElement.getAsJsonObject();\n        \n        String name = jsonObject.get(\"name\").getAsString();\n        int age = jsonObject.get(\"age\").getAsInt();\n        String city = jsonObject.get(\"city\").getAsString();\n        \n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"City: \" + city);\n    }\n}\n```\n\nThis program first creates a JSON string and then uses the JsonParser to parse this JSON string to a JsonElement. The JsonElement can then be converted into a JsonObject using the `getAsJsonObject()` method. This JsonObject can then be used to access individual properties using the `get()` method. The `getAs<Type>()` methods are used to get the value of a property and convert it into the appropriate Java type.\n\nYou can run this program by saving it to a file named Main.java and then compiling and running it.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonParser;\nimport com.google.gson.JsonElement;\nimport com.google.gson.JsonObject;\n\npublic class Main {\n    public static void main(String[] args) {\n        String json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\";\n        \n        JsonParser parser = new JsonParser();\n        JsonElement jsonElement = parser.parse(json);\n        \n        JsonObject jsonObject = jsonElement.getAsJsonObject();\n        \n        String name = jsonObject.get(\"name\").getAsString();\n        int age = jsonObject.get(\"age\").getAsInt();\n        String city = jsonObject.get(\"city\").getAsString();\n        \n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"City: \" + city);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonParser",
+                    "com.google.gson.JsonElement",
+                    "com.google.gson.JsonObject"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonParser",
+                    "com.google.gson.JsonElement",
+                    "com.google.gson.JsonObject"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5981645584106445,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParser\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here's an example of how to utilize JsonParser and JsonElement in Java. This example uses Gson library which you have already added as dependency.\n\nMain.java\n```java\nimport com.google.gson.*;\nimport java.lang.*;\n\npublic class Main {\n    public static void main(String[] args) {\n\n        // Create a JsonParser object\n        JsonParser parser = new JsonParser();\n\n        // Create a JsonObject from a Json String\n        JsonObject json = (JsonObject) parser.parse(\n                \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\");\n\n        // Get the value of a key\n        String name = json.get(\"name\").getAsString();\n        int age = json.get(\"age\").getAsInt();\n        String city = json.get(\"city\").getAsString();\n\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"City: \" + city);\n\n    }\n}\n```\nPlease replace the json string \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\" to the json string you want to parse.",
+                "extracted_java_code_from_prediction": "import com.google.gson.*;\nimport java.lang.*;\n\npublic class Main {\n    public static void main(String[] args) {\n\n        // Create a JsonParser object\n        JsonParser parser = new JsonParser();\n\n        // Create a JsonObject from a Json String\n        JsonObject json = (JsonObject) parser.parse(\n                \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\");\n\n        // Get the value of a key\n        String name = json.get(\"name\").getAsString();\n        int age = json.get(\"age\").getAsInt();\n        String city = json.get(\"city\").getAsString();\n\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"City: \" + city);\n\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.*",
+                    "java.lang.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.google.gson.*",
+                    "java.lang.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5487820506095886,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParser\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a Java code using \"JsonParser\" API from \"gson-2.9.0\" project:\n\n```java\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser; // replace <s> with your necessary API import \n\npublic class Main {\n    public static void main(String[] args) {\n        JsonParser parser = new JsonParser();\n        String json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\";\n        JsonObject jsonObject = parser.parse(json).getAsJsonObject();\n        System.out.println(\"Name: \" + jsonObject.get(\"name\").getAsString());\n        System.out.println(\"Age: \" + jsonObject.get(\"age\").getAsInt());\n    }\n}\n```\n\nThis is just a simple code snippet which demonstrates how to use the JsonParser from the gson-2.9.0 library to parse a JSON string and then extract the data. \n\nPlease note that you should replace `<s>` with your necessary API imports as per your requirements. \n\nAlso, you should make sure your project is configured to include the gson-2.9.0 in your classpath before you can compile and run this code.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonObject;\nimport com.google.gson.JsonParser; // replace <s> with your necessary API import \n\npublic class Main {\n    public static void main(String[] args) {\n        JsonParser parser = new JsonParser();\n        String json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\";\n        JsonObject jsonObject = parser.parse(json).getAsJsonObject();\n        System.out.println(\"Name: \" + jsonObject.get(\"name\").getAsString());\n        System.out.println(\"Age: \" + jsonObject.get(\"age\").getAsInt());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5191141366958618,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParser\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe complete Java code including \"JsonParser\" API from \"gson-2.9.0\" project should look something like this:\n\n```java\nimport com.google.gson.JsonParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        JsonParser parser = new JsonParser();\n        com.google.gson.JsonElement jsonElement = parser.parse(json);\n        com.google.gson.JsonObject jsonObject = jsonElement.getAsJsonObject();\n\n        String name = jsonObject.get(\"name\").getAsString();\n        int age = jsonObject.get(\"age\").getAsInt();\n        String city = jsonObject.get(\"city\").getAsString();\n\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"City: \" + city);\n    }\n}\n```\n\nThis is a simple example showing how to use \"JsonParser\" API in Java, but doesn't use any other APIs from external dependencies that require adding new dependencies. It assumes that you have included the Gson API as a Maven dependency. Here is a basic Maven pom.xml file that can be used to run this code:\n\n```xml\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n\n    <groupId>com.example</groupId>\n    <artifactId>my-app</artifactId>\n    <version>1.0</version>\n\n    <dependencies>\n        <dependency>\n            <groupId>com.google.code.gson</groupId>\n            <artifactId>gson</artifactId>\n            <version>2.9.0</version>\n        </dependency>\n    </dependencies>\n</project>\n```\n\nTo compile and run the code, you would use the Maven command line to compile and run the code like this:\n```bash\nmvn compile\nmvn exec:java -Dexec.mainClass=\"Main\"\n```\nRemember to use the correct package or class name \"Main\" according to your project structure.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        JsonParser parser = new JsonParser();\n        com.google.gson.JsonElement jsonElement = parser.parse(json);\n        com.google.gson.JsonObject jsonObject = jsonElement.getAsJsonObject();\n\n        String name = jsonObject.get(\"name\").getAsString();\n        int age = jsonObject.get(\"age\").getAsInt();\n        String city = jsonObject.get(\"city\").getAsString();\n\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"City: \" + city);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonParser"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonParser"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.7673538327217102,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParser\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java code using the Gson library to create and parse a JSON file.\n\nFirstly, you will need to create a Maven or Gradle dependency for Gson:\n\n```java\n<dependencies>\n  <dependency>\n    <groupId>com.google.code.gson</groupId>\n    <artifactId>gson</artifactId>\n    <version>2.9.0</version>\n  </dependency>\n</dependencies>\n```\n\nThen, you can use the Gson library to create a JSON object and convert that object back to a Java object. Here's a code sample to show this:\n\n```java\nimport com.google.gson.Gson;\nimport com.google.gson.JsonObject;\n\npublic class Main {\n  public static void main(String[] args) {\n    Gson gson = new Gson();\n\n    // Create a Json object\n    JsonObject jsonObject = new JsonObject();\n    jsonObject.addProperty(\"Name\", \"John\");\n    jsonObject.addProperty(\"Age\", \"25\");\n\n    // Converting the JsonObject to a json formatted string\n    String json = gson.toJson(jsonObject);\n    System.out.println(\"Json: \" + json);\n\n    // Parsing json back to a JsonObject\n    JsonObject jsonObjectParsed = gson.fromJson(json, JsonObject.class);\n    System.out.println(\"JsonObject parsed: \" + jsonObjectParsed);\n  }\n}\n```\nIn the above code: \n- First, a Gson object named `gson` is created.\n- A `JsonObject` `jsonObject` is created with two properties: `Name` and `Age`.\n- The `jsonObject` is then converted into a JSON string with `gson.toJson(jsonObject)` and printed.\n- The string is parsed back into a `JsonObject` with `gson.fromJson(json, JsonObject.class)` and the result is printed.\n\nThe `JsonObject` class is a built-in class provided by Gson library. It's useful to build JSON structures in Java.\n\nReplace \"John\" and \"25\" with desired values.\n\nRemember, the above code requires Gson library to be included in the classpath as a dependency.",
+                "extracted_java_code_from_prediction": "<dependencies>\n  <dependency>\n    <groupId>com.google.code.gson</groupId>\n    <artifactId>gson</artifactId>\n    <version>2.9.0</version>\n  </dependency>\n</dependencies>",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.608547031879425,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "JsonWriter": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonWriter\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonWriter\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java program using \"JsonWriter\" API from the \"gson-2.9.0\" project:\n\n```java\nimport com.google.gson.stream.JsonWriter;\nimport java.io.FileWriter;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n\n        String fileName = \"JsonOutput.json\";\n        try (FileWriter writer = new FileWriter(fileName);\n             JsonWriter jsonWriter = new JsonWriter(writer)) {\n\n            // Starting the document\n            jsonWriter.beginObject();\n            // Write name value\n            jsonWriter.name(\"name\");\n            jsonWriter.value(\"John Doe\");\n\n            // Write address object\n            jsonWriter.name(\"address\");\n            jsonWriter.beginObject();\n\n            // Write street and number\n            jsonWriter.name(\"street\");\n            jsonWriter.value(\"123 Main St\");\n            jsonWriter.name(\"number\");\n            jsonWriter.value(123);\n\n            // Closing the address object\n            jsonWriter.endObject();\n\n            // Closing the document\n            jsonWriter.endObject();\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis Java program creates a simple JSON string with the name \"John Doe\" and address object that contains street and number. The JSON string is then written to a file named \"JsonOutput.json\" using JsonWriter API.",
+                "extracted_java_code_from_prediction": "import com.google.gson.stream.JsonWriter;\nimport java.io.FileWriter;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n\n        String fileName = \"JsonOutput.json\";\n        try (FileWriter writer = new FileWriter(fileName);\n             JsonWriter jsonWriter = new JsonWriter(writer)) {\n\n            // Starting the document\n            jsonWriter.beginObject();\n            // Write name value\n            jsonWriter.name(\"name\");\n            jsonWriter.value(\"John Doe\");\n\n            // Write address object\n            jsonWriter.name(\"address\");\n            jsonWriter.beginObject();\n\n            // Write street and number\n            jsonWriter.name(\"street\");\n            jsonWriter.value(\"123 Main St\");\n            jsonWriter.name(\"number\");\n            jsonWriter.value(123);\n\n            // Closing the address object\n            jsonWriter.endObject();\n\n            // Closing the document\n            jsonWriter.endObject();\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.stream.JsonWriter",
+                    "java.io.FileWriter",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.stream.JsonWriter",
+                    "java.io.FileWriter",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.5853615999221802,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonWriter\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's an example of how to write to a JSON file using the Gson library:\n\n```java\nimport com.google.gson.Gson;\nimport com.google.gson.GsonBuilder;\nimport com.google.gson.stream.JsonWriter;\nimport java.io.FileWriter;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        User user = new User();\n        user.setName(\"John Doe\");\n        user.setAge(30);\n\n        Gson gson = new GsonBuilder().setPrettyPrinting().create();\n        \n        try (JsonWriter writer = new JsonWriter(new FileWriter(\"user.json\"))) {\n            writer.beginObject();\n            writer.name(\"user\");\n            writer.beginObject();\n            \n            writer.name(\"name\").value(user.getName());\n            writer.name(\"age\").value(user.getAge());\n            \n            writer.endObject();\n            writer.endObject();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n\nclass User {\n    private String name;\n    private int age;\n\n    public String getName() {\n        return name;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n\n    public void setAge(int age) {\n        this.age = age;\n    }\n}\n```\n\nThis creates a JSON object that looks like this:\n\n```json\n{\n  \"user\": {\n    \"name\": \"John Doe\",\n    \"age\": 30\n  }\n}\n```\n\nIn this code, we define a User class that is serialized into the JSON object. The JsonWriter is used to write the serialized User object to a JSON file. Note that the com.google.gson library is already imported and used.",
+                "extracted_java_code_from_prediction": "import com.google.gson.Gson;\nimport com.google.gson.GsonBuilder;\nimport com.google.gson.stream.JsonWriter;\nimport java.io.FileWriter;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        User user = new User();\n        user.setName(\"John Doe\");\n        user.setAge(30);\n\n        Gson gson = new GsonBuilder().setPrettyPrinting().create();\n        \n        try (JsonWriter writer = new JsonWriter(new FileWriter(\"user.json\"))) {\n            writer.beginObject();\n            writer.name(\"user\");\n            writer.beginObject();\n            \n            writer.name(\"name\").value(user.getName());\n            writer.name(\"age\").value(user.getAge());\n            \n            writer.endObject();\n            writer.endObject();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n\nclass User {\n    private String name;\n    private int age;\n\n    public String getName() {\n        return name;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n\n    public void setAge(int age) {\n        this.age = age;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.Gson",
+                    "com.google.gson.GsonBuilder",
+                    "com.google.gson.stream.JsonWriter",
+                    "java.io.FileWriter",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.Gson",
+                    "com.google.gson.GsonBuilder",
+                    "com.google.gson.stream.JsonWriter",
+                    "java.io.FileWriter",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.4,
+                "model_confidence": 0.7713623642921448,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonWriter\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, I'll provide a complete example in java on how to use Gson's JsonWriter with the following imports:\n\n```java\nimport java.io.IOException;\nimport java.io.StringWriter;\nimport com.google.gson.stream.JsonWriter;\n```\n\nHere is the java code that creates JSON output using JsonWriter:\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            StringWriter writer = new StringWriter();\n            JsonWriter jsonWriter = new JsonWriter(writer);\n\n            jsonWriter.beginObject(); // Start the JSON Object\n\n            jsonWriter.name(\"Name\");\n            jsonWriter.value(\"John\");\n\n            jsonWriter.name(\"Age\");\n            jsonWriter.value(30);\n\n            jsonWriter.name(\"Country\");\n            jsonWriter.value(\"USA\");\n\n            jsonWriter.endObject(); // End the JSON Object\n\n            jsonWriter.close();\n\n            System.out.println(writer);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn this code, JsonWriter is used to write JSON data in the form of a writer object which is then converted into a string using StringWriter. The data that we are writing here is a JSON object representing a person. You can replace the values with whatever you want the JSON to represent. Also note that this code should run properly if you're using the mentioned packages without needing additional dependencies. If you are facing difficulty compiling, make sure to properly configure your Java project or environment setup to use the correct libraries/frameworks (like Gson).\n\nThis code snippet should compile as provided with the right version of the Gson library. It does require a version of the library that includes the JsonWriter class. The exact details on setting up and compiling the Java project will depend on your specific environment/build tooling, but hopefully this code will illustrate the key points.",
+                "extracted_java_code_from_prediction": "import java.io.IOException;\nimport java.io.StringWriter;\nimport com.google.gson.stream.JsonWriter;",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.IOException",
+                    "java.io.StringWriter",
+                    "com.google.gson.stream.JsonWriter"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.stream.JsonWriter"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException",
+                    "java.io.StringWriter"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.551110029220581,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonWriter\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the complete Java code that uses \"JsonWriter\" from \"gson-2.9.0\" project.\n\nPlease ensure that you have the necessary \"gson\" library jar file added in your build path.\n\n```Java\nimport com.google.gson.stream.JsonWriter;\nimport java.io.FileWriter;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            FileWriter writer = new FileWriter(\"output.json\");\n            JsonWriter jsonWriter = new JsonWriter(writer);\n\n            jsonWriter.beginObject(); // start JSON object\n            \n            jsonWriter.name(\"Name\");  // JSON member name\n            jsonWriter.value(\"John\");  // JSON member value\n\n            jsonWriter.name(\"Age\");  // JSON member name\n            jsonWriter.value(30);  // JSON member value\n            \n            jsonWriter.endObject();  // end JSON object\n            \n            jsonWriter.close(); // close the writer\n            \n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code will create a JSON file named \"output.json\" with the content: {\"Name\":\"John\",\"Age\":30}.\n\nEnsure you install the necessary 'gson' library using Maven or Gradle (if you are using a build tool) or download the Jar file from Maven Central directly in your local repository, and then add it to your build path or classpath if using an IDE. Here is the Maven dependency for 'gson':\n\n```\n<dependency>\n    <groupId>com.google.code.gson</groupId>\n    <artifactId>gson</artifactId>\n    <version>2.9.0</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6251466274261475,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonWriter\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to generate the JSON output, we use a JSON writer from the Gson library which will help us to create the JSON. The program in java would look something like this.\n\nWe are assuming that you are using Gson library for writing JSON. You can add the required dependencies in your project. For instance, gson library can be added by declaring the dependency in your pom.xml file as follows:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>com.google.code.gson</groupId>\n        <artifactId>gson</artifactId>\n        <version>2.9.0</version>\n    </dependency>\n</dependencies>\n```\n\nHere is a simple Java program that uses Gson's JsonWriter to output JSON data:\n\n```java\nimport com.google.gson.stream.JsonWriter;\nimport java.io.FileWriter;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            JsonWriter writer = new JsonWriter(new FileWriter(\"output.json\"));\n            writer.beginObject();  // Start of JSON object\n\n            // Write key-value pair\n            writer.name(\"name\");\n            writer.value(\"John Doe\");\n\n            // Write another key-value pair\n            writer.name(\"age\");\n            writer.value(30);\n\n            writer.endObject();  // End of JSON object\n            writer.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code will create a new file named `output.json` and write the following JSON object to it: `{\"name\":\"John Doe\", \"age\":30}`. The code assumes that the class that contains the `main` method has a name of `Main`.",
+                "extracted_java_code_from_prediction": "import com.google.gson.stream.JsonWriter;\nimport java.io.FileWriter;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            JsonWriter writer = new JsonWriter(new FileWriter(\"output.json\"));\n            writer.beginObject();  // Start of JSON object\n\n            // Write key-value pair\n            writer.name(\"name\");\n            writer.value(\"John Doe\");\n\n            // Write another key-value pair\n            writer.name(\"age\");\n            writer.value(30);\n\n            writer.endObject();  // End of JSON object\n            writer.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.stream.JsonWriter",
+                    "java.io.FileWriter",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.stream.JsonWriter",
+                    "java.io.FileWriter",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.6161609888076782,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "JsonReader": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonReader\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonReader\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe use of Gson API requires dependencies to be added in your project. Here are the main steps to follow:\n\n1. Add \"gson-2.9.0\" dependency in your `build.gradle` file.\n\n2. Include necessary imports in your class:\n```\nimport com.google.gson.JsonReader;\nimport com.googlename.yourClass;\n```\n3. Now, the Main method:\n```java\nimport com.google.gson.Gson;\nimport com.google.gson.stream.JsonReader;\nimport java.io.FileReader;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Gson gson = new Gson();\n        \n        try (JsonReader reader = new JsonReader(new FileReader(\"sample.json\"))) {\n            YourClass obj = gson.fromJson(reader, YourClass.class);\n            // your code...\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n4. Replace `YourClass` with the exact name of your class that you are parsing the JSON data into.\n\n5. Replace `\"sample.json\"` with the path to your JSON file.\n\nRemember that `YourClass` should have appropriate fields that match the JSON attributes.\n\nHere's a complete example:\n```java\nimport com.google.gson.Gson;\nimport com.google.gson.stream.JsonReader;\nimport java.io.FileReader;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Gson gson = new Gson();\n\n        try (JsonReader reader = new JsonReader(new FileReader(\"sample.json\"))) {\n            // Assuming the JSON file is in this format: {\"name\": \"John\", \"age\": 30}\n            Person person = gson.fromJson(reader, Person.class);\n            System.out.println(\"Name: \" + person.getName() + \", Age: \" + person.getAge());\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n\nclass Person {\n    private String name;\n    private int age;\n\n    public String getName() {\n        return name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n}\n```\nIn this example, the \"sample.json\" file contains {\"name\": \"John\", \"age\": 30}. The \"Person\" class is a placeholder class representing the structure of JSON object that is being parsed. In a real use case scenario, you will most likely define your own classes to represent JSON objects.",
+                "extracted_java_code_from_prediction": "import com.google.gson.Gson;\nimport com.google.gson.stream.JsonReader;\nimport java.io.FileReader;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Gson gson = new Gson();\n        \n        try (JsonReader reader = new JsonReader(new FileReader(\"sample.json\"))) {\n            YourClass obj = gson.fromJson(reader, YourClass.class);\n            // your code...\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.Gson",
+                    "com.google.gson.stream.JsonReader",
+                    "java.io.FileReader"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.Gson",
+                    "com.google.gson.stream.JsonReader"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.FileReader"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.7186877727508545,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,13] cannot find symbol\n  symbol:   class YourClass\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,51] cannot find symbol\n  symbol:   class YourClass\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.681 s\n[INFO] Finished at: 2024-04-16T23:55:07-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,13] cannot find symbol\n[ERROR]   symbol:   class YourClass\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,51] cannot find symbol\n[ERROR]   symbol:   class YourClass\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 51,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonReader\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simple Java program using JsonReader from the \"gson-2.9.0\" project. \n\n```java\nimport com.google.gson.stream.JsonReader;\nimport java.io.FileNotFoundException;\nimport java.io.FileReader;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            JsonReader jsonReader = new JsonReader(new FileReader(\"file.json\"));\n\n            // your code here\n\n            jsonReader.close();\n        } catch (FileNotFoundException e) {\n            System.out.println(\"File not found\");\n        } catch (IOException e) {\n            System.out.println(\"Error reading file\");\n        }\n    }\n}\n```\n\nThis simple program attempts to read a json file. You will need to add your implementation within the try-catch blocks. Please replace \"file.json\" with your JSON file path or URL.\n\nIn order to run this, you must have Gson installed and properly included in your CLASSPATH. \n\nThe code uses try-catch blocks to handle exceptions when opening and reading a file. \n\nDo note that the imports you're allowed to use in this case are those provided by Java's standard library.",
+                "extracted_java_code_from_prediction": "import com.google.gson.stream.JsonReader;\nimport java.io.FileNotFoundException;\nimport java.io.FileReader;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            JsonReader jsonReader = new JsonReader(new FileReader(\"file.json\"));\n\n            // your code here\n\n            jsonReader.close();\n        } catch (FileNotFoundException e) {\n            System.out.println(\"File not found\");\n        } catch (IOException e) {\n            System.out.println(\"Error reading file\");\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.stream.JsonReader",
+                    "java.io.FileNotFoundException",
+                    "java.io.FileReader",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.stream.JsonReader",
+                    "java.io.FileNotFoundException",
+                    "java.io.FileReader",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.75,
+                "model_confidence": 0.49590003490448,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonReader\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, but I need more context. Could you please specify what kind of functionality you want your Java code to have? For example, if it's reading or parsing JSON data, you can write some sample JSON data, and the parser should be capable of handling and parsing that JSON data. Let's consider the scenario you want to parse JSON.\n\nFirstly, you need to ensure you have the Gson library imported properly. You can add the following import statement to your code:\n\n```java\nimport com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;\n```\n\nNow, let's suppose we have the following JSON data:\n\n```json\n{\n  \"name\": \"John\",\n  \"age\": 30,\n  \"cars\": [\"Ford\", \"BMW\", \"Fiat\"]\n}\n```\n\nIn this context, you can write the following code in the `Main` class:\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        JsonParser parser = new JsonParser();\n        \n        String jsonString = \"{\\\"name\\\": \\\"John\\\", \\\"age\\\": 30, \\\"cars\\\": [\\\"Ford\\\", \\\"BMW\\\", \\\"Fiat\\\"]}\";\n        \n        JsonObject jsonObject = parser.parse(jsonString).getAsJsonObject();\n        \n        String name = jsonObject.get(\"name\").getAsString();\n        int age = jsonObject.get(\"age\").getAsInt();\n        JsonArray cars = jsonObject.get(\"cars\").getAsJsonArray();\n        \n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"Cars: \");\n        for(int i=0; i<cars.size(); i++) {\n            System.out.println(cars.get(i).getAsString());\n        }\n    }\n}\n```\n\nThe code above imports the necessary classes and creates a parser. It then parses the input JSON string and extracts the `name`, `age`, and `cars` values from the JSON object. Finally, it prints these values.",
+                "extracted_java_code_from_prediction": "import com.google.gson.JsonArray;\nimport com.google.gson.JsonObject;\nimport com.google.gson.JsonParser;",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.JsonArray",
+                    "com.google.gson.JsonObject",
+                    "com.google.gson.JsonParser"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6204979419708252,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonReader\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nCertainly, here is a basic Java program that uses the `JsonReader` from the \"gson-2.9.0\" project:\n\n```java\nimport com.google.gson.stream.JsonReader;\nimport com.google.a.b.c.e.f.G;\nimport java.io.FileNotFoundException;\nimport java.io.FileReader;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            JsonReader reader = new JsonReader(new FileReader(\"path_to_your_file.json\"));\n            G g = new G(); // Here is where you can use other classes from other APIs but not new dependencies\n            \n            // Read and print JSON value\n            reader.beginArray();\n            while (reader.hasNext()) {\n                System.out.println(reader.nextString());\n            }\n            reader.endArray();\n            \n        } catch (FileNotFoundException e) {\n            e.printStackTrace();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nPlease replace `\"path_to_your_file.json\"` and `com.google.a.b.c.e.f.G` according to your own file path and class.\n\nRemember, to be able to use other classes like `G`, you need to import those classes in your project manually (i.e., there's no need for adding new dependencies when importing other classes).\n\nAlso please note that classes in the `com.google.gson.stream` package cannot be imported as these classes belong to the gson library and you cannot use them outside of the gson library as per the rules of the Google APIs. So you would need to replace `com.google.gson.stream` and `com.google.a.b.c.e.f.G` with your own project\u2019s namespace (package name) or the namespace of a library you're using.\n\nLastly, please replace \"Main\" with the actual name of your class or function if it differs.",
+                "extracted_java_code_from_prediction": "import com.google.gson.stream.JsonReader;\nimport com.google.a.b.c.e.f.G;\nimport java.io.FileNotFoundException;\nimport java.io.FileReader;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            JsonReader reader = new JsonReader(new FileReader(\"path_to_your_file.json\"));\n            G g = new G(); // Here is where you can use other classes from other APIs but not new dependencies\n            \n            // Read and print JSON value\n            reader.beginArray();\n            while (reader.hasNext()) {\n                System.out.println(reader.nextString());\n            }\n            reader.endArray();\n            \n        } catch (FileNotFoundException e) {\n            e.printStackTrace();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.stream.JsonReader",
+                    "com.google.a.b.c.e.f.G",
+                    "java.io.FileNotFoundException",
+                    "java.io.FileReader",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.google.gson.stream.JsonReader"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.google.a.b.c.e.f.G",
+                    "java.io.FileNotFoundException",
+                    "java.io.FileReader",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 0.8,
+                "model_confidence": 0.5267482995986938,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,28] package com.google.a.b.c.e.f does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[14,13] cannot find symbol\n  symbol:   class G\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[14,23] cannot find symbol\n  symbol:   class G\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.663 s\n[INFO] Finished at: 2024-04-16T23:55:10-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,28] package com.google.a.b.c.e.f does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[14,13] cannot find symbol\n[ERROR]   symbol:   class G\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[14,23] cannot find symbol\n[ERROR]   symbol:   class G\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 28,
+                                "message": "package com.google.a.b.c.e.f does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/gson-2.9.0/JsonReader/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonReader\" API from \"gson-2.9.0\" project along with other necessary APIs. The dependency is already added for \"gson-2.9.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThis solution won't provide a complete implementation due to lack of information. But, I can give you a basic template with which you can get started. This example is using JsonReader from the Gson library along with Java's BufferedReader and FileReader:\n\n```java\nimport com.google.gson.*;\nimport java.io.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        try {\n            JsonReader reader = new JsonReader(new FileReader(\"/path/to/your/file.json\"));\n            reader.beginObject();\n            while (reader.hasNext()) {\n                String name = reader.nextName();\n                switch (name) {\n                    case \"your_property_name\":\n                        System.out.println(reader.nextString());\n                        break;\n                    // add cases here for all your JSON properties\n                    // and do something with them\n                    default:\n                        reader.skipValue();\n                }\n            }\n            reader.endObject();\n            reader.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nReplace \"/path/to/your/file.json\" with the path to the JSON file you want to read and modify the case statements inside the while loop as per your JSON structure.\n\nMake sure to handle exceptions and perform error checking accordingly. This is a simple example, and you might need to modify it based on the actual structure of your JSON files.",
+                "extracted_java_code_from_prediction": "import com.google.gson.*;\nimport java.io.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        try {\n            JsonReader reader = new JsonReader(new FileReader(\"/path/to/your/file.json\"));\n            reader.beginObject();\n            while (reader.hasNext()) {\n                String name = reader.nextName();\n                switch (name) {\n                    case \"your_property_name\":\n                        System.out.println(reader.nextString());\n                        break;\n                    // add cases here for all your JSON properties\n                    // and do something with them\n                    default:\n                        reader.skipValue();\n                }\n            }\n            reader.endObject();\n            reader.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.google.gson.*",
+                    "java.io.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.google.gson.*",
+                    "java.io.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5243797302246094,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        }
+    }
+}

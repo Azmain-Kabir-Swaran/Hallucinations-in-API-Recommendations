@@ -1,0 +1,584 @@
+{
+    "jar_name": "mockito-core-4.6.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from mockito-core-4.6.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from mockito-core-4.6.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the code or project files. However, I can provide you with a general idea of what classes you might be looking for.\n\nHere are some potential classes you might find in the Mockito project:\n\n1. Mockito\n2. ArgumentCaptor\n3. Captor\n4. InOrder\n5. InOrderLogging\n6. Mock\n7. MockSettings\n8. MockitoAnnotations\n9. MockitoSession\n10. OngoingStubbing\n11. Sessions\n12. Stubber\n13. VerificationInOrder\n14. VerificationMode\n15. VerificationReport\n16. When\n17. WhenSettings\n18. InOrderVerification\n19. InOrderVerificationCollector\n20. InOrderVerificationMode\n21. InOrderVerificationReport\n22. InOrderVerificationReportBuilder\n23. InOrderVerificationReportBuilderFactory\n24. InOrderVerificationReportFactory\n25. InOrderVerificationReportFactoryImpl\n26. InOrderVerificationReportImpl\n27. InOrderVerificationReportImplBuilder\n28. InOrderVerificationReportImplBuilderFactory\n29. InOrderVerificationReportImplFactory\n30. InOrderVerificationReportImplFactoryImpl\n31. InOrderVerificationReportImplFactoryImplImpl\n32. InOrderVerificationReportImplFactoryImplImplImpl\n33. InOrderVerificationReportImplFactoryImplImplImplImpl\n34. InOrderVerificationReportImplFactoryImplImplImplImplImpl\n35. InOrderVerificationReportImplFactoryImplImplImplImplImplImpl\n36. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImpl\n37. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImpl\n38. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImpl\n39. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImpl\n40. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImpl\n41. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImpl\n42. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImpl\n43. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImpl\n44. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl\n45. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl\n46. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl\n47. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl\n48. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl\n49. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl\n50. InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl\n\nPlease note that these are just potential class names and may not be exact or complete. Also, the number of classes can vary depending on the version of Mockito you are using.",
+        "extracted_APIs_from_prediction": [
+            "Mockito",
+            "ArgumentCaptor",
+            "Captor",
+            "InOrder",
+            "InOrderLogging",
+            "Mock",
+            "MockSettings",
+            "MockitoAnnotations",
+            "MockitoSession",
+            "OngoingStubbing",
+            "Sessions",
+            "Stubber",
+            "VerificationInOrder",
+            "VerificationMode",
+            "VerificationReport",
+            "When",
+            "WhenSettings",
+            "InOrderVerification",
+            "InOrderVerificationCollector",
+            "InOrderVerificationMode",
+            "InOrderVerificationReport",
+            "InOrderVerificationReportBuilder",
+            "InOrderVerificationReportBuilderFactory",
+            "InOrderVerificationReportFactory",
+            "InOrderVerificationReportFactoryImpl",
+            "InOrderVerificationReportImpl",
+            "InOrderVerificationReportImplBuilder",
+            "InOrderVerificationReportImplBuilderFactory",
+            "InOrderVerificationReportImplFactory",
+            "InOrderVerificationReportImplFactoryImpl",
+            "InOrderVerificationReportImplFactoryImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl"
+        ],
+        "correct_API_predictions": [
+            "Mockito",
+            "MockitoAnnotations"
+        ],
+        "wrong_API_predictions": [
+            "ArgumentCaptor",
+            "Captor",
+            "InOrder",
+            "InOrderLogging",
+            "Mock",
+            "MockSettings",
+            "MockitoSession",
+            "OngoingStubbing",
+            "Sessions",
+            "Stubber",
+            "VerificationInOrder",
+            "VerificationMode",
+            "VerificationReport",
+            "When",
+            "WhenSettings",
+            "InOrderVerification",
+            "InOrderVerificationCollector",
+            "InOrderVerificationMode",
+            "InOrderVerificationReport",
+            "InOrderVerificationReportBuilder",
+            "InOrderVerificationReportBuilderFactory",
+            "InOrderVerificationReportFactory",
+            "InOrderVerificationReportFactoryImpl",
+            "InOrderVerificationReportImpl",
+            "InOrderVerificationReportImplBuilder",
+            "InOrderVerificationReportImplBuilderFactory",
+            "InOrderVerificationReportImplFactory",
+            "InOrderVerificationReportImplFactoryImpl",
+            "InOrderVerificationReportImplFactoryImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl",
+            "InOrderVerificationReportImplFactoryImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImplImpl"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 48,
+        "failure_rate_for_APIs": 0.96,
+        "model_confidence": 0.8295753598213196,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "Mockito": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Mockito\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Mockito\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, I am an artificial intelligence system and I am not equipped to execute or debug any Java code. However, I can provide an example of how you might use the \"Mockito\" library in a Java program. Here's an example of a simple unit test using Mockito:\n\n```java\nimport org.junit.Test;\nimport static org.mockito.Mockito.*;\n\npublic class Main {\n    @Test\n    public void testMock() {\n        // You mock classes or interfaces here\n        List mockedList = mock(List.class);\n\n        // Stubbing: define behavior of the mock\n        when(mockedList.size()).thenReturn(100);\n\n        // Using mock in the test.\n        mockedList.clear();\n\n        // Following calls do nothing, since the list is mocked and did not define behavior for these calls.\n        mockedList.add(\"some\");\n        mockedList.add(\"element\");\n\n        // Verification: check that methods were called as expected\n        verify(mockedList).add(\"some\");\n        verify(mockedList).add(\"element\");\n\n        // Verification using stubs\n        verify(mockedList, never()).add(\"some other element\");\n    }\n}\n```\n\nPlease note that you need to have JUnit framework and Mockito library for the above example to work. The dependencies can be added in your \"pom.xml\" file in case you are using Maven:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>junit</groupId>\n        <artifactId>junit</artifactId>\n        <version>4.12</version>\n        <scope>test</scope>\n    </dependency>\n    <dependency>\n        <groupId>org.mockito</groupId>\n        <artifactId>mockito-core</artifactId>\n        <version>2.23.0</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "import org.junit.Test;\nimport static org.mockito.Mockito.*;\n\npublic class Main {\n    @Test\n    public void testMock() {\n        // You mock classes or interfaces here\n        List mockedList = mock(List.class);\n\n        // Stubbing: define behavior of the mock\n        when(mockedList.size()).thenReturn(100);\n\n        // Using mock in the test.\n        mockedList.clear();\n\n        // Following calls do nothing, since the list is mocked and did not define behavior for these calls.\n        mockedList.add(\"some\");\n        mockedList.add(\"element\");\n\n        // Verification: check that methods were called as expected\n        verify(mockedList).add(\"some\");\n        verify(mockedList).add(\"element\");\n\n        // Verification using stubs\n        verify(mockedList, never()).add(\"some other element\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Test",
+                    "static org.mockito.Mockito.*"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "static org.mockito.Mockito.*"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5946938395500183,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n  symbol:   class List\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,32] cannot find symbol\n  symbol:   class List\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.757 s\n[INFO] Finished at: 2024-04-17T00:27:55-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n[ERROR]   symbol:   class List\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,32] cannot find symbol\n[ERROR]   symbol:   class List\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 32,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Mockito\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo create a Java program using \"mockito-core-4.6.0\" and other necessary APIs, we would need to create a Java class and import the necessary libraries.\n\nHere is a simple example of a Java program using \"mockito-core-4.6.0\", a Java library for mock objects, the class to be tested has an interface that is to be mocked, and some assertions are used to verify that the mock object is called correctly.\n\n```java\nimport static org.junit.Assert.assertEquals;\nimport static org.mockito.Mockito.*;\nimport org.junit.Test;\n\n// Let's say we have this interface\npublic interface MyInterface {\n    void myMethod();\n}\n\n// In our test class, we will mock an object\npublic class TestClass {\n    @Test\n    public void testMyMethod() {\n        // Create a mock object implementing MyInterface\n        MyInterface myMock = mock(MyInterface.class);\n        \n        // Use the mock\n        myMock.myMethod();\n\n        // Verify that myMethod was called on the mock object\n        verify(myMock, times(1)).myMethod();\n    }\n}\n```\n\nThis program tests the class that contains the myMethod method. MyInterface is mocked, the myMethod method is called, and then the mock is verified that the method was called exactly once. This is a simple example of how you can use Mockito.\n\nNote: Make sure that the \"Mockito\" and other necessary APIs are correctly imported in your java file and that they are all correctly installed and set up to use correctly.",
+                "extracted_java_code_from_prediction": "import static org.junit.Assert.assertEquals;\nimport static org.mockito.Mockito.*;\nimport org.junit.Test;\n\n// Let's say we have this interface\npublic interface MyInterface {\n    void myMethod();\n}\n\n// In our test class, we will mock an object\npublic class TestClass {\n    @Test\n    public void testMyMethod() {\n        // Create a mock object implementing MyInterface\n        MyInterface myMock = mock(MyInterface.class);\n        \n        // Use the mock\n        myMock.myMethod();\n\n        // Verify that myMethod was called on the mock object\n        verify(myMock, times(1)).myMethod();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "static org.junit.Assert.assertEquals",
+                    "static org.mockito.Mockito.*",
+                    "org.junit.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "static org.junit.Assert.assertEquals",
+                    "static org.mockito.Mockito.*"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.4794323444366455,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[3,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[3,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[8,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.TestClass\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[11,9] cannot find symbol\n  symbol:   class MyInterface\n  location: class org.example.TestClass\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[11,35] cannot find symbol\n  symbol:   class MyInterface\n  location: class org.example.TestClass\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.731 s\n[INFO] Finished at: 2024-04-17T00:27:56-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[3,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[3,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[8,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.TestClass\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[11,9] cannot find symbol\n[ERROR]   symbol:   class MyInterface\n[ERROR]   location: class org.example.TestClass\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java:[11,35] cannot find symbol\n[ERROR]   symbol:   class MyInterface\n[ERROR]   location: class org.example.TestClass\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java",
+                                "line": 3,
+                                "column": 24,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java",
+                                "line": 3,
+                                "column": 1,
+                                "message": "static import only from classes and interfaces"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java",
+                                "line": 5,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java",
+                                "line": 8,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java",
+                                "line": 11,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_2/Wrapper/src/main/java/org/example/TestClass.java",
+                                "line": 11,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Mockito\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe following Java code uses \"Mockito\" to verify a method call:\n\n```java\nimport org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport org.mockito.*;\nimport static org.mockito.Mockito.*;\n\npublic class Main {\n    @Mock\n    List mockedList;\n\n    @BeforeEach\n    public void setUp() {\n        MockitoAnnotations.openMocks(this);\n    }\n\n    @Test\n    public void testMethod() {\n        //using mock object - no need to mock a list here\n        mockedList.add(\"some\");\n        mockedList.add(\"elements\");\n        verify(mockedList).add(\"some\");\n        verify(mockedList).add(\"elements\");\n    }\n}\n```\nIn this case, the main functionality provided by the code is the verification of certain method calls on a mocked object. The \"verify()\" method from Mockito verifies if certain method calls were made on the mocked object or not. \n\nImportantly, the \"MockitoAnnotations.openMocks(this);\" line is needed to tell Mockito to process the annotations in the test class. It is assumed that your test class extends \"junit.framework.TestCase\" or \"junit.jupiter.api.Assertions\" to have access to the necessary annotations.",
+                "extracted_java_code_from_prediction": "import org.junit.jupiter.api.BeforeEach;\nimport org.junit.jupiter.api.Test;\nimport org.mockito.*;\nimport static org.mockito.Mockito.*;\n\npublic class Main {\n    @Mock\n    List mockedList;\n\n    @BeforeEach\n    public void setUp() {\n        MockitoAnnotations.openMocks(this);\n    }\n\n    @Test\n    public void testMethod() {\n        //using mock object - no need to mock a list here\n        mockedList.add(\"some\");\n        mockedList.add(\"elements\");\n        verify(mockedList).add(\"some\");\n        verify(mockedList).add(\"elements\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.jupiter.api.BeforeEach",
+                    "org.junit.jupiter.api.Test",
+                    "org.mockito.*",
+                    "static org.mockito.Mockito.*"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.jupiter.api.BeforeEach",
+                    "org.junit.jupiter.api.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.mockito.*",
+                    "static org.mockito.Mockito.*"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5026308298110962,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[10,5] cannot find symbol\n  symbol:   class List\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,6] cannot find symbol\n  symbol:   class BeforeEach\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[17,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[INFO] 5 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.697 s\n[INFO] Finished at: 2024-04-17T00:27:57-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[10,5] cannot find symbol\n[ERROR]   symbol:   class List\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,6] cannot find symbol\n[ERROR]   symbol:   class BeforeEach\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java:[17,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 29,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 5,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/Mockito/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 29,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Mockito\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a simple Java class that uses Mockito's API:\n\n```java\nimport org.mockito.*;\nimport static org.mockito.Mockito.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Create a mock object using Mockito.mock() method\n        List mockedList = mock(ArrayList.class);\n\n        // Stubbing using when() and thenReturn()\n        when(mockedList.size()).thenReturn(100);\n\n        // Using the stubbed object\n        System.out.println(\"Size: \" + mockedList.size()); // Output: Size: 100\n    }\n}\n```\n\nThis code will compile and run without any additional dependencies or import statements. Mockito is a popular testing tool and the provided example is using its basic usage in Java. The program will print \"Size: 100\" to the console. This is a simple example where a stubbed list is given a size of 100 for the sake of testing, though in a typical situation, Mockito could be used for much more advanced stubbing, verification, and spying.",
+                "extracted_java_code_from_prediction": "import org.mockito.*;\nimport static org.mockito.Mockito.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Create a mock object using Mockito.mock() method\n        List mockedList = mock(ArrayList.class);\n\n        // Stubbing using when() and thenReturn()\n        when(mockedList.size()).thenReturn(100);\n\n        // Using the stubbed object\n        System.out.println(\"Size: \" + mockedList.size()); // Output: Size: 100\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.mockito.*",
+                    "static org.mockito.Mockito.*",
+                    "java.util.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.mockito.*",
+                    "static org.mockito.Mockito.*",
+                    "java.util.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4645727276802063,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Mockito\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nGiven the constraints in the problem statement, it would be impossible to write a full-fledged Java program using Mockito and no other libraries. However, the following is a simple code example demonstrating the basic usage of Mockito:\n\nIn this example, there is a service class that contains a method we are testing, and a test class that creates a mock of that service class and tests it.\n\nNote: You need to add your dependencies on Maven to be able to compile this example.\n\nService class:\n\n```java\npublic class ServiceClass {\n    public int doSomething() {\n        System.out.println(\"Doing something.\");\n        return 42;\n    }\n}\n```\n\nTest class:\n\n```java\nimport org.junit.jupiter.api.Test;\nimport static org.mockito.Mockito.*;\n\npublic class TestClass {\n    @Test\n    public void testDoSomething() {\n        ServiceClass serviceClass = mock(ServiceClass.class);\n        when(serviceClass.doSomething()).thenReturn(100);\n\n        int result = serviceClass.doSomething();\n\n        verify(serviceClass, times(1)).doSomething();\n\n        //asserts that result is 100\n        assert result == 100;\n    }\n}\n```\nIn the above code, we're creating a mock of ServiceClass, telling the mock to respond to the call to doSomething() with 100, and then invoking the doSomething method. After invoking the method, we are verifying that the method was indeed called once on the mock.\n\nRemember, the real work done by the method `doSomething` may be implemented elsewhere in your application, and thus, we might want to mock it out for the purpose of isolating our unit test from the rest of the application.\n\nTo run the above JUnit test, you must ensure that the Mockito JUnit Jupiter (JUnit5) engine is added as a dependency and as a test scope in your project. Here's how to do this with Maven:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.mockito</groupId>\n        <artifactId>mockito-junit-jupiter</artifactId>\n        <version>3.11.2</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "public class ServiceClass {\n    public int doSomething() {\n        System.out.println(\"Doing something.\");\n        return 42;\n    }\n}",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6145282983779907,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "MockitoAnnotations": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"MockitoAnnotations\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoAnnotations\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYou can use Mockito library to create test doubles, mock objects, spies and stubs in your Java code. Here is a simple example of how you can use Mockito library:\n\n```Java\nimport org.mockito.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Set up mock\n        List<String> mockedList = Mockito.mock(ArrayList.class);\n        \n        // Configure the mock\n        Mockito.when(mockedList.get(0)).thenReturn(\"hello\");\n        \n        // Use the mock\n        System.out.println(mockedList.get(0)); \n        \n        //Verify the mock usage\n        Mockito.verify(mockedList).get(0);\n        \n        // Reset the mock\n        MockitoAnnotations.initMocks(this);\n    }\n}\n```\n\nThis example shows how to create mock object and test it using \"Mockito.when\", \"Mockito.verify\", and \"MockitoAnnotations.initMocks\". You can replace \"ArrayList\" with any class that has the behavior you want to replicate for testing purposes.\n\nRemember that you need to add the following dependency to your pom.xml file to use Mockito.\n\n```XML\n<dependency>\n    <groupId>org.mockito</groupId>\n    <artifactId>mockito-core</artifactId>\n    <version>2.23.4</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5337419509887695,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoAnnotations\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThis is how you can use Mockito annotations in your class.\n\n```java\nimport org.junit.runner.RunWith;\nimport org.mockito.Mock;\nimport org.mockito.MockitoAnnotations;\nimport org.mockito.junit.MockitoJUnitRunner;\n\n@RunWith(MockitoJUnitRunner.class)\npublic class Main {\n\n    @Mock\n    private Foo foo;\n\n    public static void main(String[] args) {\n        Main main = new Main();\n        MockitoAnnotations.initMocks(main);\n        // Write your main function\n    }\n}\n```\nThe @Mock annotation is used to create mock objects, while MockitoAnnotations.initMocks(...) is used to initialize the mock objects. \n\nMake sure that you have a correct import statement for the dependencies that you are using. \n\nThis example uses the dependencies provided by the MockitoJUnitRunner class from \"mockito-core-4.6.0\" project.",
+                "extracted_java_code_from_prediction": "import org.junit.runner.RunWith;\nimport org.mockito.Mock;\nimport org.mockito.MockitoAnnotations;\nimport org.mockito.junit.MockitoJUnitRunner;\n\n@RunWith(MockitoJUnitRunner.class)\npublic class Main {\n\n    @Mock\n    private Foo foo;\n\n    public static void main(String[] args) {\n        Main main = new Main();\n        MockitoAnnotations.initMocks(main);\n        // Write your main function\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.runner.RunWith",
+                    "org.mockito.Mock",
+                    "org.mockito.MockitoAnnotations",
+                    "org.mockito.junit.MockitoJUnitRunner"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.runner.RunWith",
+                    "org.mockito.Mock",
+                    "org.mockito.junit.MockitoJUnitRunner"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.mockito.MockitoAnnotations"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.4115533232688904,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/java/org/example/Main.java: /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/java/org/example/Main.java uses or overrides a deprecated API.\n[WARNING] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/java/org/example/Main.java: Recompile with -Xlint:deprecation for details.\n[INFO] 2 warnings \n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,13] cannot find symbol\n  symbol:   class Foo\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.806 s\n[INFO] Finished at: 2024-04-17T00:28:33-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,13] cannot find symbol\n[ERROR]   symbol:   class Foo\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoAnnotations\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo be able to use Mockito in your Java project you'll need to add the following dependencies to your project. These dependencies are available on the Maven repository.\n\n```xml\n<!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->\n<dependency>\n    <groupId>org.mockito</groupId>\n    <artifactId>mockito-core</artifactId>\n    <version>4.6.0</version>\n    <scope>test</scope>\n</dependency>\n```\n\nHere is an example code where we are mocking the java.time.LocalDate class in the java.time package, and we're using Mockito annotations and methods to verify the behavior.\n\nNote that I don't use any dependency that requires additional dependencies, so the code is clean and doesn't bloat with unnecessary imports.\n\n```java\nimport org.junit.jupiter.api.Test;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\nimport org.mockito.MockitoAnnotations;\nimport java.time.LocalDate;\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.mockito.Mockito.verify;\nimport static org.mockito.Mockito.when;\n\npublic class Main {\n\n    @Mock\n    private LocalDate localDate;\n\n    @InjectMocks\n    private MyClass myClass;\n\n    @Test\n    public void testMain() {\n        // Initialize mockito annotations\n        MockitoAnnotations.initMocks(this);\n\n        // Configure mock behavior\n        when(localDate.plusDays(5)).thenReturn(LocalDate.now().plusDays(10));\n\n        // Call method which uses localDate\n        myClass.callMethod();\n\n        // Verify if method was called with appropriate parameters\n        verify(localDate).plusDays(5);\n\n        assertEquals(myClass.getSomeProperty(), 10);\n    }\n\n}\n\nclass MyClass {\n    private LocalDate localDate;\n    private int someProperty;\n\n    public MyClass(LocalDate localDate) {\n        this.localDate = localDate;\n    }\n\n    public void callMethod() {\n        someProperty = localDate.plusDays(5).getDayOfMonth();\n    }\n\n    public int getSomeProperty() {\n        return someProperty;\n    }\n}\n```\n\nRemember to add `junit-jupiter-api` to your project. You can do this either by adding it via the `dependencyManagement` section in your parent `pom.xml` or you can add it as a `dependency` inside your `pom.xml`.",
+                "extracted_java_code_from_prediction": "import org.junit.jupiter.api.Test;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\nimport org.mockito.MockitoAnnotations;\nimport java.time.LocalDate;\nimport static org.junit.jupiter.api.Assertions.assertEquals;\nimport static org.mockito.Mockito.verify;\nimport static org.mockito.Mockito.when;\n\npublic class Main {\n\n    @Mock\n    private LocalDate localDate;\n\n    @InjectMocks\n    private MyClass myClass;\n\n    @Test\n    public void testMain() {\n        // Initialize mockito annotations\n        MockitoAnnotations.initMocks(this);\n\n        // Configure mock behavior\n        when(localDate.plusDays(5)).thenReturn(LocalDate.now().plusDays(10));\n\n        // Call method which uses localDate\n        myClass.callMethod();\n\n        // Verify if method was called with appropriate parameters\n        verify(localDate).plusDays(5);\n\n        assertEquals(myClass.getSomeProperty(), 10);\n    }\n\n}\n\nclass MyClass {\n    private LocalDate localDate;\n    private int someProperty;\n\n    public MyClass(LocalDate localDate) {\n        this.localDate = localDate;\n    }\n\n    public void callMethod() {\n        someProperty = localDate.plusDays(5).getDayOfMonth();\n    }\n\n    public int getSomeProperty() {\n        return someProperty;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.jupiter.api.Test",
+                    "org.mockito.InjectMocks",
+                    "org.mockito.Mock",
+                    "org.mockito.MockitoAnnotations",
+                    "java.time.LocalDate",
+                    "static org.junit.jupiter.api.Assertions.assertEquals",
+                    "static org.mockito.Mockito.verify",
+                    "static org.mockito.Mockito.when"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.jupiter.api.Test",
+                    "org.mockito.Mock"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.mockito.InjectMocks",
+                    "org.mockito.MockitoAnnotations",
+                    "java.time.LocalDate",
+                    "static org.junit.jupiter.api.Assertions.assertEquals",
+                    "static org.mockito.Mockito.verify",
+                    "static org.mockito.Mockito.when"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 6,
+                "failure_rate_for_FQNs": 0.75,
+                "model_confidence": 0.7130414247512817,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java: /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java uses or overrides a deprecated API.\n[WARNING] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java: Recompile with -Xlint:deprecation for details.\n[INFO] 2 warnings \n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,36] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/MyClass.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/MyClass.java:[8,36] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/MyClass.java:[8,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[20,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,9] cannot find symbol\n  symbol:   method assertEquals(int,int)\n  location: class org.example.Main\n[INFO] 8 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.825 s\n[INFO] Finished at: 2024-04-17T00:28:35-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,36] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/MyClass.java:[3,29] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/MyClass.java:[8,36] package org.junit.jupiter.api does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/MyClass.java:[8,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[20,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,9] cannot find symbol\n[ERROR]   symbol:   method assertEquals(int,int)\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 36,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/MyClass.java",
+                                "line": 3,
+                                "column": 29,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 1,
+                                "message": "static import only from classes and interfaces"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 34,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/MyClass.java",
+                                "line": 8,
+                                "column": 1,
+                                "message": "static import only from classes and interfaces"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 29,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/MyClass.java",
+                                "line": 8,
+                                "column": 36,
+                                "message": "package org.junit.jupiter.api does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoAnnotations\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a sample Java code using \"Mockito\" and \"MockitoAnnotations\".\n\n```java\nimport org.junit.Before;\nimport org.junit.Test;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\nimport org.mockito.MockitoAnnotations;\n\nimport java.util.List;\n\npublic class Main {\n\n    @Mock\n    List<String> mockedList;\n\n    @InjectMocks\n    ListContainer listContainer;\n\n    @Before\n    public void init(){\n        MockitoAnnotations.initMocks(this);\n    }\n\n    @Test\n    public void testMockCreation(){\n        mockedList.add(\"one\");\n        mockedList.add(\"two\");\n\n        listContainer.setList(mockedList);\n\n        assertTrue(listContainer.getList().contains(\"one\"));\n        assertTrue(listContainer.getList().contains(\"two\"));\n        assertEquals(2, listContainer.getList().size());\n    }\n\n}\n```\n\nPlease note that the `@Mock` annotation will tell Mockito to create a mock instance of the List<String>, inject it using the `@InjectMocks` annotation, and initialize it with `@Before` annotation. Then we are verifying the behavior of the application under test.\n\nRemember to always place the \"Mockito\" and \"JUnit\" testing framework dependencies in your project's POM file if you're using Maven:\n\n```xml\n<dependencies>\n  <dependency>\n    <groupId>org.mockito</groupId>\n    <artifactId>mockito-core</artifactId>\n    <version>3.5.2</version>\n  </dependency>\n  <dependency>\n    <groupId>junit</groupId>\n    <artifactId>junit</artifactId>\n    <version>4.12</version>\n  </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "import org.junit.Before;\nimport org.junit.Test;\nimport org.mockito.InjectMocks;\nimport org.mockito.Mock;\nimport org.mockito.MockitoAnnotations;\n\nimport java.util.List;\n\npublic class Main {\n\n    @Mock\n    List<String> mockedList;\n\n    @InjectMocks\n    ListContainer listContainer;\n\n    @Before\n    public void init(){\n        MockitoAnnotations.initMocks(this);\n    }\n\n    @Test\n    public void testMockCreation(){\n        mockedList.add(\"one\");\n        mockedList.add(\"two\");\n\n        listContainer.setList(mockedList);\n\n        assertTrue(listContainer.getList().contains(\"one\"));\n        assertTrue(listContainer.getList().contains(\"two\"));\n        assertEquals(2, listContainer.getList().size());\n    }\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Before",
+                    "org.junit.Test",
+                    "org.mockito.InjectMocks",
+                    "org.mockito.Mock",
+                    "org.mockito.MockitoAnnotations",
+                    "java.util.List"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Before",
+                    "org.junit.Test",
+                    "org.mockito.Mock"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.mockito.InjectMocks",
+                    "org.mockito.MockitoAnnotations",
+                    "java.util.List"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5805091261863708,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java: /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java uses or overrides a deprecated API.\n[WARNING] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java: Recompile with -Xlint:deprecation for details.\n[INFO] 2 warnings \n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,5] cannot find symbol\n  symbol:   class ListContainer\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[18,6] cannot find symbol\n  symbol:   class Before\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[23,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[INFO] 5 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.765 s\n[INFO] Finished at: 2024-04-17T00:28:36-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,5] cannot find symbol\n[ERROR]   symbol:   class ListContainer\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[18,6] cannot find symbol\n[ERROR]   symbol:   class Before\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java:[23,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 23,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 5,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/mockito-core-4.6.0/MockitoAnnotations/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"MockitoAnnotations\" API from \"mockito-core-4.6.0\" project along with other necessary APIs. The dependency is already added for \"mockito-core-4.6.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a basic compilable Java code that uses the MockitoAnnotations API along with other necessary APIs:\n\n```Java\nimport org.junit.Test;\nimport org.junit.runner.RunWith;\nimport org.junit.runners.JUnit4;\nimport org.mockito.*;\n\n@RunWith(JUnit4.class)\npublic class Main {\n\n    @Mock\n    private List mockedList;\n\n    @Captor\n    private ArgumentCaptor argumentCaptor;\n\n    public static void main(String[] args) {\n        // This code will run when it's called from the JUnit test runner.\n    }\n\n    @Test\n    public void testMethod() {\n        // Use the mock in the test cases\n        MockitoAnnotations.initMocks(this);\n\n        // ... your test code here ...\n\n        Mockito.verify(mockedList).size(); // make sure the size() method is called\n    }\n}\n```\n\nIn this code:\n\n- `@RunWith(JUnit4.class)` is used to configure the test runner for JUnit 4.\n\n- `@Mock` is used to create a mock object that will simulate the behavior of the real object in unit testing.\n\n- `@Captor` annotation provides the instance of the ArgumentCaptor class which could be used to capture arguments in a method call.\n\n- `main()` is the main method where you put the code that you want to test with the mock object.\n\n- `@Test` is used to mark a method as a test method in a test class.\n\n- `MockitoAnnotations.initMocks(this)` is used to initialize mock objects.\n\n- `Mockito.verify()` is used to verify that a certain method call was made on the mock.\n\nPlease note that this is a simple example and might not work as expected or compile as is unless there's a specific task in mind for which you use these APIs. It's always a good idea to consult the Mockito documentation for more detailed usage and examples.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5291363000869751,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        }
+    }
+}

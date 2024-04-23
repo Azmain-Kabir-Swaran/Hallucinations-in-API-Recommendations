@@ -1,0 +1,349 @@
+{
+    "jar_name": "jakarta.validation-api-3.0.2.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from jakarta.validation-api-3.0.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from jakarta.validation-api-3.0.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the Jakarta Validation API project to extract the class names. However, based on the project description and the Jakarta Validation API documentation, the classes that are non-abstract and not more than 50 in number are:\n\n1. ConstraintDeclaration\n2. ConstraintDefinition\n3. ConstraintValidator\n4. ConstraintValidatorContext\n5. ConstraintValidatorFactory\n6. Payload\n7. ReportAsSingleViolation\n8. ValidationTarget\n9. Validator\n10. ValidatorContext\n11. ValidatorFactory\n12. ValidatorPayload\n13. ValidatorPayloads\n14. ValidatorReport\n15. ValidatorResult\n16. ValidatorResults\n17. ValidatorType\n18. ValidationException\n19. ValidationMessage\n20. ValidationMessageInterpolator\n21. ValidationMessageTemplate\n22. ValidationProviderResolver\n23. ValidationReport\n24. ValidationTarget\n25. ValidationTargetDiscovery\n26. ValidationViolation\n27. Validator\n28. ValidatorContext\n29. ValidatorFactory\n30. ValidatorPayload\n31. ValidatorPayloads\n32. ValidatorReport\n33. ValidatorResult\n34. ValidatorResults\n35. ValidatorType\n36. ValidationException\n37. ValidationMessage\n38. ValidationMessageInterpolator\n39. ValidationMessageTemplate\n40. ValidationProviderResolver\n41. ValidationReport\n42. ValidationTarget\n43. ValidationTargetDiscovery\n44. ValidationViolation\n45. Validator\n46. ValidatorContext\n47. ValidatorFactory\n48. ValidatorPayload\n49. ValidatorPayloads\n50. ValidatorReport\n\nPlease note that the actual class names may vary based on the specific version and implementation of the Jakarta Validation API.",
+        "extracted_APIs_from_prediction": [
+            "ConstraintDeclaration",
+            "ConstraintDefinition",
+            "ConstraintValidator",
+            "ConstraintValidatorContext",
+            "ConstraintValidatorFactory",
+            "Payload",
+            "ReportAsSingleViolation",
+            "ValidationTarget",
+            "Validator",
+            "ValidatorContext",
+            "ValidatorFactory",
+            "ValidatorPayload",
+            "ValidatorPayloads",
+            "ValidatorReport",
+            "ValidatorResult",
+            "ValidatorResults",
+            "ValidatorType",
+            "ValidationException",
+            "ValidationMessage",
+            "ValidationMessageInterpolator",
+            "ValidationMessageTemplate",
+            "ValidationProviderResolver",
+            "ValidationReport",
+            "ValidationTargetDiscovery",
+            "ValidationViolation"
+        ],
+        "correct_API_predictions": [
+            "ValidationTarget",
+            "ValidationException"
+        ],
+        "wrong_API_predictions": [
+            "ConstraintDeclaration",
+            "ConstraintDefinition",
+            "ConstraintValidator",
+            "ConstraintValidatorContext",
+            "ConstraintValidatorFactory",
+            "Payload",
+            "ReportAsSingleViolation",
+            "Validator",
+            "ValidatorContext",
+            "ValidatorFactory",
+            "ValidatorPayload",
+            "ValidatorPayloads",
+            "ValidatorReport",
+            "ValidatorResult",
+            "ValidatorResults",
+            "ValidatorType",
+            "ValidationMessage",
+            "ValidationMessageInterpolator",
+            "ValidationMessageTemplate",
+            "ValidationProviderResolver",
+            "ValidationReport",
+            "ValidationTargetDiscovery",
+            "ValidationViolation"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 23,
+        "failure_rate_for_APIs": 0.92,
+        "model_confidence": 0.7721765637397766,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "ValidationTarget": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"ValidationTarget\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationTarget\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, please find the provided code snippet below which uses `ValidationTarget` from `jakarta.validation-api-3.0.2` project. \n\nFirstly, make sure your build automation tool (like Maven or Gradle) is configured to include the correct jakarta.validation-api in your dependencies.\n\nBelow is an example of such Java class:\n\n```java\nimport jakarta.validation.ConstraintViolation;\nimport jakarta.validation.Validation;\nimport jakarta.validation.Validator;\nimport jakarta.validation.ValidatorFactory;\n\nclass Main {\n    public static void main(String[] args) {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n        Person person = new Person(\"\", 19);  // person is invalid\n        String message = validator.validateProperty(person, \"name\").get(0).getMessage();\n        System.out.println(message);  // Output: name must not be empty\n    }\n}\n\nclass Person {\n    @NotEmpty\n    String name;\n    int age;\n\n    public Person(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n\n    public String getName() {\n        return name;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n\n    public void setAge(int age) {\n        this.age = age;\n    }\n}\n```\n\nIn the above code, we have a class named `Main` which creates an instance of a class named `Person` with invalid values for properties `name` and `age`. We then create a `Validator` and validate the instance of `Person`. The result of the validation is captured in a `Set` of `ConstraintViolation` objects and is accessed to extract the error message.\n\nIn the `Person` class, we have a String property named `name` and annotated with `@NotEmpty`, which means the `name` property must not be empty.\n\nPlease note that this example assumes that you have the Jakarta Validation API available as a dependency in your project. If you're working with Maven, this would typically be done by including the following lines in your `pom.xml` file:\n\n```xml\n<dependencies>\n  <dependency>\n    <groupId>jakarta.validation</groupId>\n    <artifactId>jakarta.validation-api</artifactId>\n    <version>3.0.2</version>\n  </dependency>\n</dependencies>\n```\n\nEnsure to have Jakarta Validation library properly imported in your program by adding the appropriate import statement at the beginning of your Java source file.",
+                "extracted_java_code_from_prediction": "import jakarta.validation.ConstraintViolation;\nimport jakarta.validation.Validation;\nimport jakarta.validation.Validator;\nimport jakarta.validation.ValidatorFactory;\n\nclass Main {\n    public static void main(String[] args) {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n        Person person = new Person(\"\", 19);  // person is invalid\n        String message = validator.validateProperty(person, \"name\").get(0).getMessage();\n        System.out.println(message);  // Output: name must not be empty\n    }\n}\n\nclass Person {\n    @NotEmpty\n    String name;\n    int age;\n\n    public Person(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n\n    public String getName() {\n        return name;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n\n    public void setAge(int age) {\n        this.age = age;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.validation.ConstraintViolation",
+                    "jakarta.validation.Validation",
+                    "jakarta.validation.Validator",
+                    "jakarta.validation.ValidatorFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.validation.ConstraintViolation",
+                    "jakarta.validation.Validation",
+                    "jakarta.validation.Validator",
+                    "jakarta.validation.ValidatorFactory"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.7024990916252136,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationTarget/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationTarget/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationTarget/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationTarget/sample_1/Wrapper/src/main/java/org/example/Person.java:[9,6] cannot find symbol\n  symbol:   class NotEmpty\n  location: class org.example.Person\n[ERROR] /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationTarget/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,68] cannot find symbol\n  symbol:   method get(int)\n  location: interface java.util.Set<jakarta.validation.ConstraintViolation<org.example.Person>>\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.733 s\n[INFO] Finished at: 2024-04-17T00:54:52-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationTarget/sample_1/Wrapper/src/main/java/org/example/Person.java:[9,6] cannot find symbol\n[ERROR]   symbol:   class NotEmpty\n[ERROR]   location: class org.example.Person\n[ERROR] /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationTarget/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,68] cannot find symbol\n[ERROR]   symbol:   method get(int)\n[ERROR]   location: interface java.util.Set<jakarta.validation.ConstraintViolation<org.example.Person>>\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationTarget/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 68,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationTarget/sample_1/Wrapper/src/main/java/org/example/Person.java",
+                                "line": 9,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationTarget\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo provide a correct Java code using \"ValidationTarget\" API from \"jakarta.validation-api-3.0.2\" project, it is necessary to use additional APIs as well. The \"jakarta.validation-api-3.0.2\" project is a part of the Hibernate Validator project, which includes several validation constraints and infrastructure to create and use validation metadata. Below is an example of a simple class that uses this API:\n\n```Java\nimport jakarta.validation.ConstraintViolation;\nimport jakarta.validation.Validation;\nimport jakarta.validation.Validator;\nimport jakarta.validation.ValidatorFactory;\nimport java.util.Set;\n\nclass User {\n    @jakarta.validation.constraints.NotBlank\n    String name;\n\n    @jakarta.validation.constraints.Min(18)\n    int age;\n\n    public User(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        User user = new User(\"John\", 12);\n\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n        Set<ConstraintViolation<User>> violations = validator.validate(user);\n\n        for (ConstraintViolation<User> violation : violations) {\n            System.out.println(violation.getMessage());\n        }\n    }\n}\n```\n\nThis code creates a User object with an invalid value for \"age\". It then creates a ValidatorFactory and a Validator, validates the User object, and prints any ConstraintViolation messages to the console. In this case, a ConstraintViolation message will be \"must be at least 18\" because the age is less than 18.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.617652177810669,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationTarget\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, Here is a simple example of usage of Validation API:\n\n1. Firstly, import required classes and annotate class with `@javax.validation.Constraint`, `@Documented` and `@Target({ElementType.FIELD, ElementType.PARAMETER, ElementType.LOCAL_VARIABLE})` annotations.\n\n```java\nimport javax.validation.Constraint;\nimport java.lang.annotation.Documented;\nimport java.lang.annotation.ElementType;\nimport java.lang.annotation.Retention;\nimport java.lang.annotation.Target;\nimport static java.lang.annotation.RetentionPolicy.RUNTIME;\n\n@Documented\n@Constraint(validatedBy = {})\n@Target({ElementType.FIELD, ElementType.PARAMETER, ElementType.LOCAL_VARIABLE})\n@Retention(RUNTIME)\n@interface NotEmpty {}\n```\n\n2. Secondly, create a `Validator` for the annotation.\n\n```java\nimport javax.validation.ConstraintValidator;\nimport javax.validation.ConstraintValidatorContext;\n\nclass NotEmptyValidator implements ConstraintValidator<NotEmpty, String> {\n\n    @Override\n    public void initialize(NotEmpty constraintAnnotation) {\n    }\n\n    @Override\n    public boolean isValid(String value, ConstraintValidatorContext context) {\n        return value != null && !value.isEmpty();\n    }\n}\n```\n\n3. Then, use the annotation in your main class:\n\n```java\npublic class Main {\n\n    @NotEmpty\n    private String someField;\n\n    public Main(String someField) {\n        this.someField = someField;\n    }\n\n    public static void main(String[] args) {\n        Main myObject = new Main(null);\n\n        // Instantiate Validator\n        javax.validation.Validator validator = javax.validation.Validation.buildDefaultValidatorFactory().getValidator();\n        \n        // Validate object\n        javax.validation.ConstraintViolation<Main> violation = validator.validate(myObject).iterator().next();\n        System.out.println(violation.getMessage()); // Print error message\n    }\n}\n```\n\nPlease note that I am assuming you are trying to create a simple program which validates the input string is not empty, it won't do anything more than that. You can expand on this by adding more constraints and creating other annotations. You would also need to handle exceptions in a real-world program.",
+                "extracted_java_code_from_prediction": "import javax.validation.Constraint;\nimport java.lang.annotation.Documented;\nimport java.lang.annotation.ElementType;\nimport java.lang.annotation.Retention;\nimport java.lang.annotation.Target;\nimport static java.lang.annotation.RetentionPolicy.RUNTIME;\n\n@Documented\n@Constraint(validatedBy = {})\n@Target({ElementType.FIELD, ElementType.PARAMETER, ElementType.LOCAL_VARIABLE})\n@Retention(RUNTIME)\n@interface NotEmpty {}",
+                "extracted_FQNs_from_prediction": [
+                    "javax.validation.Constraint",
+                    "java.lang.annotation.Documented",
+                    "java.lang.annotation.ElementType",
+                    "java.lang.annotation.Retention",
+                    "java.lang.annotation.Target",
+                    "static java.lang.annotation.RetentionPolicy.RUNTIME"
+                ],
+                "correct_FQN_predictions": [
+                    "javax.validation.Constraint"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.lang.annotation.Documented",
+                    "java.lang.annotation.ElementType",
+                    "java.lang.annotation.Retention",
+                    "java.lang.annotation.Target",
+                    "static java.lang.annotation.RetentionPolicy.RUNTIME"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 5,
+                "failure_rate_for_FQNs": 0.8333333333333334,
+                "model_confidence": 0.6385366916656494,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationTarget\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo compile this code in Java, you need to add jakarta validation-api library in your classpath. If you do not have maven in your project and your project does not have an external dependency manager (like Gradle or Ant), you may not be able to compile the code right away without it.\n\nHowever, there is no specific code provided that fits the requirements. If you wish to validate an object using the jakarta.validation-api, you may need an object to validate, a constraint and constraints annotation and a constraint validator. Here is a simplified example:\n\n```java\nimport jakarta.validation.*;\nimport jakarta.validation.constraints.*;\n\nclass Person {\n    @NotNull\n    @Size(min = 2, max = 30)\n    private String name;\n\n    @Min(18)\n    private int age;\n\n    // getters and setters\n}\n\nclass PersonValidator implements ConstraintValidator<ValidPerson, Person> {\n    public void initialize(ValidPerson constraint) { }\n\n    public boolean isValid(Person person, ConstraintValidatorContext context) {\n        return person.getName() != null && person.getAge() >= 18;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n        Person person = new Person();\n\n        person.setName(\"test\");\n        person.setAge(17);\n\n        System.out.println(validator.validate(person));\n\n        factory.close();\n    }\n}\n```\nPlease note that this example only checks whether a person's age is greater than or equal to 18. If you want to check more than one thing, you'd need to create multiple methods with @ValidPerson annotation. Also please make sure that your project and the code are correctly referencing the jakarta validation-api library.",
+                "extracted_java_code_from_prediction": "import jakarta.validation.*;\nimport jakarta.validation.constraints.*;\n\nclass Person {\n    @NotNull\n    @Size(min = 2, max = 30)\n    private String name;\n\n    @Min(18)\n    private int age;\n\n    // getters and setters\n}\n\nclass PersonValidator implements ConstraintValidator<ValidPerson, Person> {\n    public void initialize(ValidPerson constraint) { }\n\n    public boolean isValid(Person person, ConstraintValidatorContext context) {\n        return person.getName() != null && person.getAge() >= 18;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n        Person person = new Person();\n\n        person.setName(\"test\");\n        person.setAge(17);\n\n        System.out.println(validator.validate(person));\n\n        factory.close();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.validation.*",
+                    "jakarta.validation.constraints.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.validation.*",
+                    "jakarta.validation.constraints.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5471138954162598,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationTarget\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo run the code correctly, you have to take some decisions regarding the code that needs to be implemented. The most essential aspect of this task is to perform some validations on the data input by the user. In this context, the code will be based on the validation target API, which was previously included in your project dependencies. \n\nHere is a simple implementation of a class validating an input string and returning the result as a response:\n\n```java\nimport jakarta.validation.ConstraintViolation;\nimport jakarta.validation.Validation;\nimport jakarta.validation.Validator;\nimport jakarta.validation.ValidatorFactory;\nimport java.util.Set;\n\nclass Main {\n\n    // Simple POJO for validation\n    public static class Employee {\n        @jakarta.validation.constraints.NotBlank(message = \"Employee Name can not be Blank\")\n        private String name;\n\n        public String getName() {\n            return name;\n        }\n\n        public void setName(String name) {\n            this.name = name;\n        }\n    }\n\n    public static void main(String[] args) {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n        \n        Employee employee = new Employee();\n        employee.setName(\"John\"); // Set a valid input\n\n        Set<ConstraintViolation<Employee>> violations = validator.validate(employee);\n        \n        for (ConstraintViolation<Employee> violation : violations) {\n            System.out.println(violation.getMessage());\n        }\n    }\n}\n```\n\nIn this code, a validation is carried out against a simple POJO `Employee` which requires that `name` is not blank. If the `name` is set with a blank value, a validation violation message is printed.\n\nPlease remember, this will not return a compile-time error, but will need to be run from a context that has the `jakarta.validation-api` dependency included. You can run this code in an environment that has a JDK installed.",
+                "extracted_java_code_from_prediction": "import jakarta.validation.ConstraintViolation;\nimport jakarta.validation.Validation;\nimport jakarta.validation.Validator;\nimport jakarta.validation.ValidatorFactory;\nimport java.util.Set;\n\nclass Main {\n\n    // Simple POJO for validation\n    public static class Employee {\n        @jakarta.validation.constraints.NotBlank(message = \"Employee Name can not be Blank\")\n        private String name;\n\n        public String getName() {\n            return name;\n        }\n\n        public void setName(String name) {\n            this.name = name;\n        }\n    }\n\n    public static void main(String[] args) {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n        \n        Employee employee = new Employee();\n        employee.setName(\"John\"); // Set a valid input\n\n        Set<ConstraintViolation<Employee>> violations = validator.validate(employee);\n        \n        for (ConstraintViolation<Employee> violation : violations) {\n            System.out.println(violation.getMessage());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.validation.ConstraintViolation",
+                    "jakarta.validation.Validation",
+                    "jakarta.validation.Validator",
+                    "jakarta.validation.ValidatorFactory",
+                    "java.util.Set"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.validation.ConstraintViolation",
+                    "jakarta.validation.Validation",
+                    "jakarta.validation.Validator",
+                    "jakarta.validation.ValidatorFactory",
+                    "java.util.Set"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.5489924550056458,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "ValidationException": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"ValidationException\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationException\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, I can't provide complete Java code with specific dependencies because Jakarta Validation is a specification, and implementations can vary by vendors (e.g. Hibernate Validator, Bean Validation Provider of EclipseLink, etc). Also, it's important to note that some dependencies, like Hibernate Validator, have different licenses and may require additional permissions.\n\nHowever, I can provide a simple example of using Hibernate Validator along with some standard APIs like Collections and Arrays. Also, please note that you need to include 'hibernate-validator' dependency to use Hibernate Validator APIs:\n\n```java\nimport jakarta.validation.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws ValidationException {\n\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n\n        TestObject testObject = new TestObject();\n        // Set testObject properties here\n\n        Set<ConstraintViolation<TestObject>> constraintViolations = validator.validate(testObject);\n\n        if (!constraintViolations.isEmpty()) {\n            System.out.println(\"Validation Error(s)\");\n            constraintViolations.forEach(violation -> System.out.println(violation.getMessage()));\n        } else {\n            System.out.println(\"Validation success\");\n        }\n    }\n\n    private static class TestObject {\n        @NotNull\n        private String stringProperty;\n        @Min(1)\n        private int integerProperty;\n\n        public String getStringProperty() {\n            return stringProperty;\n        }\n\n        public void setStringProperty(String stringProperty) {\n            this.stringProperty = stringProperty;\n        }\n\n        public int getIntegerProperty() {\n            return integerProperty;\n        }\n\n        public void setIntegerProperty(int integerProperty) {\n            this.integerProperty = integerProperty;\n        }\n    }\n}\n```\n\nHere we use `@NotNull` from Jakarta Validation (which is basically Java Bean Validation) annotations. `@NotNull` ensures that the string property isn't null or empty, and `@Min(1)` ensures that the integer property isn't less than 1. The code then validates our test object using the validator, checks if there are any validation errors, and prints them if there are any. If the object is valid, it prints a success message. Note also, Hibernate Validator must be added as a dependency, if your project is Maven-based you may use this dependency:\n\n```xml\n<dependency>\n    <groupId>org.hibernate</groupId>\n    <artifactId>hibernate-validator</artifactId>\n    <version>8.0.0.Final</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "import jakarta.validation.*;\nimport java.util.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws ValidationException {\n\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n\n        TestObject testObject = new TestObject();\n        // Set testObject properties here\n\n        Set<ConstraintViolation<TestObject>> constraintViolations = validator.validate(testObject);\n\n        if (!constraintViolations.isEmpty()) {\n            System.out.println(\"Validation Error(s)\");\n            constraintViolations.forEach(violation -> System.out.println(violation.getMessage()));\n        } else {\n            System.out.println(\"Validation success\");\n        }\n    }\n\n    private static class TestObject {\n        @NotNull\n        private String stringProperty;\n        @Min(1)\n        private int integerProperty;\n\n        public String getStringProperty() {\n            return stringProperty;\n        }\n\n        public void setStringProperty(String stringProperty) {\n            this.stringProperty = stringProperty;\n        }\n\n        public int getIntegerProperty() {\n            return integerProperty;\n        }\n\n        public void setIntegerProperty(int integerProperty) {\n            this.integerProperty = integerProperty;\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.validation.*",
+                    "java.util.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.validation.*",
+                    "java.util.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.6857955455780029,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationException\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to use APIs from libraries such as Jakarta Validation, they typically need to be added as dependencies to your Maven project. In this case, we can utilize the Jakarta Validation API by adding it as a dependency:\n\nHere is an example of a simple Java class that validates an input string based on a length constraint. It also includes a custom exception handling.\n\n```java\nimport jakarta.validation.ConstraintViolation;\nimport jakarta.validation.Validation;\nimport jakarta.validation.Validator;\nimport jakarta.validation.ValidatorFactory;\n\nimport java.util.Set;\n\nclass ValidationException extends Exception {\n    ValidationException(String errorMessage) {\n        super(errorMessage);\n    }\n}\n\nclass Main {\n    public static void main(String[] args) {\n        try {\n            validateInput(\"Hello\");\n        } catch (ValidationException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n\n    public static void validateInput(String input) throws ValidationException {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n\n        Set<ConstraintViolation<String>> violations = validator.validate(input, MaxLength.class);\n\n        if(!violations.isEmpty()) {\n            throw new ValidationException(\"Input validation failed. Input exceeds max length\");\n        }\n    }\n}\n\n@jakarta.validation.constraints.Size(max = 5)\nclass MaxLength {}\n```\n\nNote: Ensure that you have Jakarta Validation API jar in your classpath or your build tool is using Jakarta Validation API if you're using Maven or Gradle.\n\nIn this code:\n\nThe `ValidationException` class extends the `Exception` class.\n\nThe `Main` class has a `main` method that validates an input string using `validateInput()` method and handles it via a `ValidationException`.\n\nThe `validateInput` method creates a `ValidatorFactory`, gets a `Validator` from it, and validates the input with `validate()` method, which returns a set of `ConstraintViolation` instances. It then checks if the set is empty. If it's not, it throws a `ValidationException` saying \"Input validation failed. Input exceeds max length\".\n\nThe `MaxLength` class is a constraint annotation and it is used to validate the size of the input string. It is annotated with `@jakarta.validation.constraints.Size(max = 5)`, which specifies that the size of the string should not exceed 5 characters.\n\nAlso note that you need to replace `5` with the max input length you desire.",
+                "extracted_java_code_from_prediction": "import jakarta.validation.ConstraintViolation;\nimport jakarta.validation.Validation;\nimport jakarta.validation.Validator;\nimport jakarta.validation.ValidatorFactory;\n\nimport java.util.Set;\n\nclass ValidationException extends Exception {\n    ValidationException(String errorMessage) {\n        super(errorMessage);\n    }\n}\n\nclass Main {\n    public static void main(String[] args) {\n        try {\n            validateInput(\"Hello\");\n        } catch (ValidationException e) {\n            System.out.println(e.getMessage());\n        }\n    }\n\n    public static void validateInput(String input) throws ValidationException {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n\n        Set<ConstraintViolation<String>> violations = validator.validate(input, MaxLength.class);\n\n        if(!violations.isEmpty()) {\n            throw new ValidationException(\"Input validation failed. Input exceeds max length\");\n        }\n    }\n}\n\n@jakarta.validation.constraints.Size(max = 5)\nclass MaxLength {}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.validation.ConstraintViolation",
+                    "jakarta.validation.Validation",
+                    "jakarta.validation.Validator",
+                    "jakarta.validation.ValidatorFactory",
+                    "java.util.Set"
+                ],
+                "correct_FQN_predictions": [
+                    "jakarta.validation.ConstraintViolation",
+                    "jakarta.validation.Validation",
+                    "jakarta.validation.Validator",
+                    "jakarta.validation.ValidatorFactory"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.util.Set"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.667380154132843,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationException/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationException/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationException/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationException/sample_2/Wrapper/src/main/java/org/example/Main.java:[23,81] cannot find symbol\n  symbol:   class MaxLength\n  location: class org.example.Main\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.680 s\n[INFO] Finished at: 2024-04-17T00:55:31-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationException/sample_2/Wrapper/src/main/java/org/example/Main.java:[23,81] cannot find symbol\n[ERROR]   symbol:   class MaxLength\n[ERROR]   location: class org.example.Main\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/jakarta.validation-api-3.0.2/ValidationException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 23,
+                                "column": 81,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationException\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nI'm sorry for any confusion but it is not possible to provide a complete compilable Java code just by specifying it needs jakarta.validation-api-3.0.2 library, no imports from other libraries or APIs. The jakarta.validation-api-3.0.2 library doesn't include a class called ValidationException.\n\nHowever, I can provide you a code snippet which uses Jakarta Validation API to validate an object, however without a complete, correct compilable Java code that includes all the necessary import statements.\n\nHere's a simple example of a validation setup that uses Jakarta Validation API:\n\n```java\nimport jakarta.validation.*;\nimport jakarta.validation.constraints.*;\n\nclass Person {\n    @NotNull\n    @Size(min = 2)\n    private String name;\n\n    @Min(18)\n    private int age;\n\n    // Getters, setters and constructors not shown\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n        \n        Person person = new Person(\"\", 17);\n        Set<ConstraintViolation<Person>> violations = validator.validate(person);\n        \n        for (ConstraintViolation<Person> violation : violations) {\n            System.out.println(violation.getMessage());\n        }\n    }\n}\n```\n\nRemember, this code may not compile on its own, as it may depend on specific classes and libraries that aren't provided here, specifically the \"jakarta.validation-api-3.0.2\" library.\n\nTo run this code properly, please make sure you have the necessary Jakarta Validation API setup in your project. The full implementation might require you to setup a Java application using Maven or Gradle, add the correct dependencies in your pom.xml or build.gradle file, and compile and run it.\n\nKeep in mind that the jakarta.validation-api-3.0.2 and related classes or libraries, specifically \"ValidationException\" and the annotations @NotNull, @Size, @Min, etc., required here, are not included in the standard Jakarta Validation API. They are likely part of a specific version or library you are using which must also be referenced in your project.",
+                "extracted_java_code_from_prediction": "import jakarta.validation.*;\nimport jakarta.validation.constraints.*;\n\nclass Person {\n    @NotNull\n    @Size(min = 2)\n    private String name;\n\n    @Min(18)\n    private int age;\n\n    // Getters, setters and constructors not shown\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n        \n        Person person = new Person(\"\", 17);\n        Set<ConstraintViolation<Person>> violations = validator.validate(person);\n        \n        for (ConstraintViolation<Person> violation : violations) {\n            System.out.println(violation.getMessage());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "jakarta.validation.*",
+                    "jakarta.validation.constraints.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "jakarta.validation.*",
+                    "jakarta.validation.constraints.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5511942505836487,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationException\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIt seems like you're looking for an example code that uses the `ValidationException` API from `jakarta.validation-api-3.0.2` project in a compilable manner. However, as the dependency `jakarta.validation-api-3.0.2` doesn't directly provide such an API. It's likely the `ValidationException` comes from some other framework that you may need to import first.\n\nWithout knowing more about your application requirements, it is not possible to provide an exact Java program that uses the `ValidationException`. However, I can provide a basic program that uses core Java APIs for string processing:\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        // Assuming string to be processed in the program\n        String str = \"Hello, world!\";\n        // Check if str is null\n        if (str == null) {\n            try {\n                throw new Exception(\"String is null\");\n            } catch (Exception e) {\n                // Handle exception\n                System.out.println(\"Error message: \" + e.getMessage());\n            }\n        }\n\n        // If str is not null, check if it's empty\n        if (str.isEmpty()) {\n            try {\n                throw new Exception(\"String is empty\");\n            } catch (Exception e) {\n                // Handle exception\n                System.out.println(\"Error message: \" + e.getMessage());\n            }\n        }\n\n        // If str is not null or empty, count the number of words\n        int numOfWords = str.split(\" \").length;\n        System.out.println(\"Number of words in the string: \" + numOfWords);\n    }\n}\n```\nIn this example, the program first checks if the `str` string is null or empty. If it is, the program throws an exception with an appropriate error message. It then counts the number of words in the string by splitting the string based on whitespace, and prints this number to the console.\n\nIf you need to use other APIs, you must first add the necessary dependencies in your Maven pom.xml file and add the necessary import statements to your class files to use those APIs. Here's an example of how you would import and use the `java.util.Date` class from the `java.util` package:\n\n```java\nimport java.util.Date;\n\npublic class Main {\n    public static void main(String[] args) {\n        Date currentDate = new Date();\n        System.out.println(\"Current date: \" + currentDate);\n    }\n}\n```\nThis program creates a new `Date` object, prints it out, and then exits. It depends on Java's built-in `java.util.Date` class to provide the current date and time.\n\nRemember, this is only a simple example to illustrate the process and might need to be modified according to your specific needs.",
+                "extracted_java_code_from_prediction": "public class Main {\n    public static void main(String[] args) {\n        // Assuming string to be processed in the program\n        String str = \"Hello, world!\";\n        // Check if str is null\n        if (str == null) {\n            try {\n                throw new Exception(\"String is null\");\n            } catch (Exception e) {\n                // Handle exception\n                System.out.println(\"Error message: \" + e.getMessage());\n            }\n        }\n\n        // If str is not null, check if it's empty\n        if (str.isEmpty()) {\n            try {\n                throw new Exception(\"String is empty\");\n            } catch (Exception e) {\n                // Handle exception\n                System.out.println(\"Error message: \" + e.getMessage());\n            }\n        }\n\n        // If str is not null or empty, count the number of words\n        int numOfWords = str.split(\" \").length;\n        System.out.println(\"Number of words in the string: \" + numOfWords);\n    }\n}",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6565155982971191,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ValidationException\" API from \"jakarta.validation-api-3.0.2\" project along with other necessary APIs. The dependency is already added for \"jakarta.validation-api-3.0.2\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example Java code using \"ValidationException\" API:\n\n```Java\npackage com.package; // Replace \"com.package\" with the actual package name\n\nimport jakarta.validation.ConstraintViolation;\nimport jakarta.validation.Validation;\nimport jakarta.validation.Validator;\nimport jakarta.validation.ValidatorFactory;\nimport java.util.Set;\nimport java.util.HashSet;\n\nclass MyClass {\n    // add some validation annotations\n    @jakarta.validation.constraints.NotEmpty\n    private String stringField;\n\n    public String getStringField() {\n        return stringField;\n    }\n\n    public void setStringField(String stringField) {\n        this.stringField = stringField;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();\n        Validator validator = factory.getValidator();\n\n        MyClass myObject = new MyClass();\n        Set<ConstraintViolation<MyClass>> violations = new HashSet<>();\n\n        violations = validator.validate(myObject);\n        if (!violations.isEmpty()) {\n            for (ConstraintViolation<MyClass> violation : violations) {\n                System.out.println(violation.getMessage());\n            }\n        }\n    }\n}\n```\n\nIn this code, we create a validation factory and a validator. A new `MyClass` object is instantiated and the `validate` method is used to return a `Set` of `ConstraintViolation` objects. If the `Set` is not empty, we iterate through the `ConstraintViolation` objects and print their messages. If the `Set` is empty, there are no validation violations.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6237812042236328,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        }
+    }
+}

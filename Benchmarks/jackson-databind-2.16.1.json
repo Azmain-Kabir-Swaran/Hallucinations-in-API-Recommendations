@@ -1,0 +1,215 @@
+{
+    "jar_name": "jackson-databind-2.16.1.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from jackson-databind-2.16.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from jackson-databind-2.16.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the code or project files. However, based on the information provided, I can provide a general answer.\n\nIn the Jackson library, the classes that are not abstract and are part of the jackson-databind-2.16.1 project are:\n\n1. `JsonNodeFactory`\n2. `JsonParser`\n3. `JsonFactory`\n4. `JsonGenerator`\n5. `JsonParserFactory`\n6. `JsonFactoryFactory`\n7. `JsonGeneratorFactory`\n8. `JsonParserFactory`\n9. `JsonFactoryFactory`\n10. `JsonGeneratorFactory`\n11. `JsonParserFactory`\n12. `JsonFactoryFactory`\n13. `JsonGeneratorFactory`\n14. `JsonParserFactory`\n15. `JsonFactoryFactory`\n16. `JsonGeneratorFactory`\n17. `JsonParserFactory`\n18. `JsonFactoryFactory`\n19. `JsonGeneratorFactory`\n20. `JsonParserFactory`\n21. `JsonFactoryFactory`\n22. `JsonGeneratorFactory`\n23. `JsonParserFactory`\n24. `JsonFactoryFactory`\n25. `JsonGeneratorFactory`\n26. `JsonParserFactory`\n27. `JsonFactoryFactory`\n28. `JsonGeneratorFactory`\n29. `JsonParserFactory`\n30. `JsonFactoryFactory`\n31. `JsonGeneratorFactory`\n32. `JsonParserFactory`\n33. `JsonFactoryFactory`\n34. `JsonGeneratorFactory`\n35. `JsonParserFactory`\n36. `JsonFactoryFactory`\n37. `JsonGeneratorFactory`\n38. `JsonParserFactory`\n39. `JsonFactoryFactory`\n40. `JsonGeneratorFactory`\n41. `JsonParserFactory`\n42. `JsonFactoryFactory`\n43. `JsonGeneratorFactory`\n44. `JsonParserFactory`\n45. `JsonFactoryFactory`\n46. `JsonGeneratorFactory`\n47. `JsonParserFactory`\n48. `JsonFactoryFactory`\n49. `JsonGeneratorFactory`\n50. `JsonParserFactory`\n\nPlease note that this list is based on the assumption that the Jackson library is used in the context of the jackson-databind-2.16.1 project. The actual list may vary depending on the specific project and its dependencies.",
+        "extracted_APIs_from_prediction": [
+            "JsonNodeFactory",
+            "JsonParser",
+            "JsonFactory",
+            "JsonGenerator",
+            "JsonParserFactory",
+            "JsonFactoryFactory",
+            "JsonGeneratorFactory"
+        ],
+        "correct_API_predictions": [
+            "JsonNodeFactory"
+        ],
+        "wrong_API_predictions": [
+            "JsonParser",
+            "JsonFactory",
+            "JsonGenerator",
+            "JsonParserFactory",
+            "JsonFactoryFactory",
+            "JsonGeneratorFactory"
+        ],
+        "number_of_correct_APIs": 1,
+        "number_of_wrong_APIs": 6,
+        "failure_rate_for_APIs": 0.8571428571428571,
+        "model_confidence": 0.8278038501739502,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "JsonNodeFactory": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonNodeFactory\" API from \"jackson-databind-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-databind-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNodeFactory\" API from \"jackson-databind-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-databind-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSince you are asking for a complete, correct and compilable Java code, here it is. In this example, it is used to build and print a JSON string that contains some key-value pairs using the JsonNodeFactory API from \"jackson-databind\" project:\n\n```java\nimport com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxmlNodeFactory;\nimport com.fasterxml.jackson.core.JsonProcessingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n    public static void main(String[] args) throws JsonProcessingException {\n        // Create an instance of JsonNodeFactory\n        JsonNodeFactory jsonNodeFactory = JsonNodeFactory.instance;\n\n        // Create a JSON object with the key-value pairs using JsonNodeFactory\n        JsonNode jsonNode = jsonNodeFactory.objectNode()\n                .put(\"name\", \"John Doe\")\n                .put(\"age\", 30)\n                .put(\"city\", \"New York\");\n\n        // Convert the JsonNode to a JSON string\n        String jsonString = new ObjectMapper().writeValueAsString(jsonNode);\n\n        // Print the JSON string\n        System.out.println(jsonString);\n    }\n}\n```\n\nIn this code, we start by importing the necessary classes from the \"jackson-databind\" project. Then, we create an instance of the JsonNodeFactory using the `instance` property. Afterwards, we create a JSON object with the key-value pairs using the `objectNode` method and the `put` method. Finally, we convert the JsonNode to a JSON string using the `writeValueAsString` method of the ObjectMapper class and print it.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxmlNodeFactory;\nimport com.fasterxml.jackson.core.JsonProcessingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n    public static void main(String[] args) throws JsonProcessingException {\n        // Create an instance of JsonNodeFactory\n        JsonNodeFactory jsonNodeFactory = JsonNodeFactory.instance;\n\n        // Create a JSON object with the key-value pairs using JsonNodeFactory\n        JsonNode jsonNode = jsonNodeFactory.objectNode()\n                .put(\"name\", \"John Doe\")\n                .put(\"age\", 30)\n                .put(\"city\", \"New York\");\n\n        // Convert the JsonNode to a JSON string\n        String jsonString = new ObjectMapper().writeValueAsString(jsonNode);\n\n        // Print the JSON string\n        System.out.println(jsonString);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxmlNodeFactory",
+                    "com.fasterxml.jackson.core.JsonProcessingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxml.jackson.core.JsonProcessingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.fasterxmlNodeFactory"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6409395933151245,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,11] cannot find symbol\n  symbol:   class fasterxmlNodeFactory\n  location: package com\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n  symbol:   class JsonNodeFactory\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,43] cannot find symbol\n  symbol:   variable JsonNodeFactory\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.888 s\n[INFO] Finished at: 2024-04-16T23:27:30-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,11] cannot find symbol\n[ERROR]   symbol:   class fasterxmlNodeFactory\n[ERROR]   location: package com\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n[ERROR]   symbol:   class JsonNodeFactory\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,43] cannot find symbol\n[ERROR]   symbol:   variable JsonNodeFactory\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 43,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNodeFactory\" API from \"jackson-databind-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-databind-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here's an example Java code that uses the `JsonNodeFactory` from the \"jackson-databind-2.16.1\" project. The example does not use any other APIs, other than the `JsonNodeFactory` which is part of \"jackson-databind-2.16.1\".\n\n```java\nimport com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml.jackson.databind.node.JsonNodeFactory;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonNodeFactory factory = JsonNodeFactory.instance;\n        JsonNode node = factory.objectNode()\n                    .put(\"Name\", \"John Doe\")\n                    .put(\"age\", 30)\n                    .put(\"city\", \"New York\");\n        System.out.println(node.toPrettyString());\n    }\n}\n```\n\nThis code creates a JSON object with a `Name`, `age` and `city` fields using the `JsonNodeFactory`. The `JsonNodeFactory` is used to create JsonNode objects that have these specific fields and values. Then the pretty print of this JSON object is printed out to the console. \n\nRemember to replace \"s\" with your current version of `jackson-databind`.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml.jackson.databind.node.JsonNodeFactory;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonNodeFactory factory = JsonNodeFactory.instance;\n        JsonNode node = factory.objectNode()\n                    .put(\"Name\", \"John Doe\")\n                    .put(\"age\", 30)\n                    .put(\"city\", \"New York\");\n        System.out.println(node.toPrettyString());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxml.jackson.databind.node.JsonNodeFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxml.jackson.databind.node.JsonNodeFactory"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.49591752886772156,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNodeFactory\" API from \"jackson-databind-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-databind-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of how you can use the provided libraries and APIs to make JSON objects in Java. For simplicity, we will just create a simple JSON object containing a name and an age.\n\n```java\nimport com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml2.16.1.databind.node.JsonNodeFactory;\n\npublic class Main {\n\n  public static void main(String[] args) {\n    JsonNodeFactory factory = JsonNodeFactory.instance;\n    JsonNode node = factory.objectNode()\n                        .put(\"name\", \"John Doe\")\n                        .put(\"age\", 30);\n    System.out.println(node.toString());\n  }\n}\n```\n\nThis code creates a JsonNodeFactory instance and use it to create a JSON object with a \"name\" attribute set to \"John Doe\" and an \"age\" attribute set to 30. The JsonNodeFactory instance used here is the static member instance of class JsonNodeFactory that returns a new JsonNodeFactory instance that can be reused as needed.\n\nYou can run this code in an environment where the JsonNodeFactory can access the com.fasterxml.jackson.databind.JsonNode API from the \"jackson-databind-2.16.1\" project. This API is used to create a JsonNode object which can represent a JSON value.\n\nThis code will print:\n\n```json\n{\"name\":\"John Doe\",\"age\":30}\n```\n\nAs per the constraints mentioned in the problem statement, it is assumed that there is no need for using APIs from other projects and we are required to use the `JsonNodeFactory` API from \"jackson-databind-2.16.1\" project.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml2.16.1.databind.node.JsonNodeFactory;\n\npublic class Main {\n\n  public static void main(String[] args) {\n    JsonNodeFactory factory = JsonNodeFactory.instance;\n    JsonNode node = factory.objectNode()\n                        .put(\"name\", \"John Doe\")\n                        .put(\"age\", 30);\n    System.out.println(node.toString());\n  }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxml2.16.1.databind.node.JsonNodeFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.databind.JsonNode"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.fasterxml2.16.1.databind.node.JsonNodeFactory"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5644983649253845,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,22] ';' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.707 s\n[INFO] Finished at: 2024-04-16T23:27:34-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,22] ';' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 22,
+                                "message": "';' expected"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNodeFactory\" API from \"jackson-databind-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-databind-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo be honest, I am unable to actually compile and run code provided without a specific request for a problem/scenario to solve. The Jackson library depends upon several other libraries which need to be downloaded separately from the Maven repository and imported for usage in a project. \n\nHowever, I can give you an example of how you might utilize JsonNodeFactory to create a JsonNode for a simple JSON object. Let's say you have a JSON string such as '{\"name\":\"John\", \"age\":30, \"city\":\"New York\"}':\n\n```java\nimport com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml.jackson.databind.node.JsonNodeFactory;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n\n  public static void main(String[] args) {\n    // Creating ObjectMapper instance\n    ObjectMapper objectMapper = new ObjectMapper();\n\n    // Creating JsonNodeFactory instance\n    JsonNodeFactory jsonNodeFactory = new JsonNodeFactory(objectMapper.getNodeFactory());\n\n    // Parsing JSON String to JsonNode\n    JsonNode jsonNode = jsonNodeFactory.textNode(\"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\");\n\n    System.out.println(jsonNode);\n  }\n}\n```\n\nNote: The code above uses the com.fasterxml.jackson.core.JsonProcessingException exception which is used to handle a JSON processing error. This is not compilable because there is no such exception.\n\nKeep in mind that to use these libraries or any API with import statements requiring adding new dependencies, you need to download or import the required jar files in your project.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml.jackson.databind.node.JsonNodeFactory;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n\n  public static void main(String[] args) {\n    // Creating ObjectMapper instance\n    ObjectMapper objectMapper = new ObjectMapper();\n\n    // Creating JsonNodeFactory instance\n    JsonNodeFactory jsonNodeFactory = new JsonNodeFactory(objectMapper.getNodeFactory());\n\n    // Parsing JSON String to JsonNode\n    JsonNode jsonNode = jsonNodeFactory.textNode(\"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\");\n\n    System.out.println(jsonNode);\n  }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxml.jackson.databind.node.JsonNodeFactory",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxml.jackson.databind.node.JsonNodeFactory",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5566840767860413,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_4/Wrapper/src/main/java/org/example/Main.java:[15,86] incompatible types: com.fasterxml.jackson.databind.node.JsonNodeFactory cannot be converted to boolean\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.100 s\n[INFO] Finished at: 2024-04-16T23:27:36-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_4/Wrapper/src/main/java/org/example/Main.java:[15,86] incompatible types: com.fasterxml.jackson.databind.node.JsonNodeFactory cannot be converted to boolean\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 86,
+                                "message": "incompatible types: com.fasterxml.jackson.databind.node.JsonNodeFactory cannot be converted to boolean"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonNodeFactory\" API from \"jackson-databind-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-databind-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic example of a Java program that uses the JsonNodeFactory from \"jackson-databind-2.16.1\" project.\n\nNote: \"jackson-databind-2.16.1\" is an open-source library that provides extensive data-binding features for Jackson, including the JsonNodeFactory. Including this library is like adding a new dependency, but it isn't necessary as long as your program doesn't include any code that would require it.\n\n```java\nimport com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxmlckage com.fasterxml.jackson.databind.node.JsonNodeFactory;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Create a new JsonNodeFactory\n        JsonNodeFactory factory = JsonNodeFactory.instance;\n\n        // Create a new JsonNode\n        JsonNode node = factory.objectNode()\n            .put(\"name\", \"John\")\n            .put(\"age\", 30)\n            .put(\"city\", \"New York\");\n\n        System.out.println(node.toPrettyString());\n    }\n}\n```\nThis program creates a new JsonNode using the JsonNodeFactory instance. The node is populated with a few properties and then printed out in a pretty format using the toPrettyString() method. Note that the JsonNodeFactory is part of the \"jackson-databind\" library which provides functionality to create JsonNodes in Java programs.\n\nRemember to include the correct Maven dependency in your project if you are using a Maven build system. This could be added to the dependencies section in your pom.xml:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>com.fasterxml.jackson.core</groupId>\n        <artifactId>jackson-databind</artifactId>\n        <version>2.16.1</version>\n    </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxmlckage com.fasterxml.jackson.databind.node.JsonNodeFactory;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Create a new JsonNodeFactory\n        JsonNodeFactory factory = JsonNodeFactory.instance;\n\n        // Create a new JsonNode\n        JsonNode node = factory.objectNode()\n            .put(\"name\", \"John\")\n            .put(\"age\", 30)\n            .put(\"city\", \"New York\");\n\n        System.out.println(node.toPrettyString());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxmlckage com.fasterxml.jackson.databind.node.JsonNodeFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.databind.JsonNode"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.fasterxmlckage com.fasterxml.jackson.databind.node.JsonNodeFactory"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.6670924425125122,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,26] ';' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.707 s\n[INFO] Finished at: 2024-04-16T23:27:38-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,26] ';' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/jackson-databind-2.16.1/JsonNodeFactory/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 26,
+                                "message": "';' expected"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

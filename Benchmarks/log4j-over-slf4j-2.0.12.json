@@ -1,0 +1,387 @@
+{
+    "jar_name": "log4j-over-slf4j-2.0.12.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from log4j-over-slf4j-2.0.12 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from log4j-over-slf4j-2.0.12 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the code or project files. However, based on the information provided, I can provide you with a list of possible API class names from the log4j-over-slf4j-2.0.12 project.\n\n1. Logger\n2. Level\n3. Marker\n4. LoggerContext\n5. LoggerContextFactory\n6. LoggerFactory\n7. LoggerFactoryDelegate\n8. LoggerFactoryDelegateFactory\n9. LoggerFactoryImpl\n10. LoggerFactoryWrapper\n11. LoggerImpl\n12. LoggerWrapper\n13. MDCAdapter\n14. MDCAdapterMDCAdapterMDCAdapter\n15. MDCAdapterMDCAdapterMDCAdapter\n16. MDCAdapterMDCAdapterMDCAdapter\n17. MDCAdapterMDCAdapterMDCAdapter\n18. MDCAdapterMDCAdapterMDCAdapter\n19. MDCAdapterMDCAdapterMDCAdapter\n20. MDCAdapterMDCAdapterMDCAdapter\n21. MDCAdapterMDCAdapterMDCAdapter\n22. MDCAdapterMDCAdapterMDCAdapter\n23. MDCAdapterMDCAdapterMDCAdapter\n24. MDCAdapterMDCAdapterMDCAdapter\n25. MDCAdapterMDCAdapterMDCAdapter\n26. MDCAdapterMDCAdapterMDCAdapter\n27. MDCAdapterMDCAdapterMDCAdapter\n28. MDCAdapterMDCAdapterMDCAdapter\n29. MDCAdapterMDCAdapterMDCAdapter\n30. MDCAdapterMDCAdapterMDCAdapter\n31. MDCAdapterMDCAdapterMDCAdapter\n32. MDCAdapterMDCAdapterMDCAdapter\n33. MDCAdapterMDCAdapterMDCAdapter\n34. MDCAdapterMDCAdapterMDCAdapter\n35. MDCAdapterMDCAdapterMDCAdapter\n36. MDCAdapterMDCAdapterMDCAdapter\n37. MDCAdapterMDCAdapterMDCAdapter\n38. MDCAdapterMDCAdapterMDCAdapter\n39. MDCAdapterMDCAdapterMDCAdapter\n40. MDCAdapterMDCAdapterMDCAdapter\n41. MDCAdapterMDCAdapterMDCAdapter\n42. MDCAdapterMDCAdapterMDCAdapter\n43. MDCAdapterMDCAdapterMDCAdapter\n44. MDCAdapterMDCAdapterMDCAdapter\n45. MDCAdapterMDCAdapterMDCAdapter\n46. MDCAdapterMDCAdapterMDCAdapter\n47. MDCAdapterMDCAdapterMDCAdapter\n48. MDCAdapterMDCAdapterMDCAdapter\n49. MDCAdapterMDCAdapterMDCAdapter\n50. MDCAdapterMDCAdapterMDCAdapter\n\nPlease note that this list is based on the assumption that the project is using the Log4j and SLF4j libraries. If the project is using a different logging framework, the list will be different.",
+        "extracted_APIs_from_prediction": [
+            "Logger",
+            "Level",
+            "Marker",
+            "LoggerContext",
+            "LoggerContextFactory",
+            "LoggerFactory",
+            "LoggerFactoryDelegate",
+            "LoggerFactoryDelegateFactory",
+            "LoggerFactoryImpl",
+            "LoggerFactoryWrapper",
+            "LoggerImpl",
+            "LoggerWrapper",
+            "MDCAdapter",
+            "MDCAdapterMDCAdapterMDCAdapter"
+        ],
+        "correct_API_predictions": [
+            "Logger",
+            "Level"
+        ],
+        "wrong_API_predictions": [
+            "Marker",
+            "LoggerContext",
+            "LoggerContextFactory",
+            "LoggerFactory",
+            "LoggerFactoryDelegate",
+            "LoggerFactoryDelegateFactory",
+            "LoggerFactoryImpl",
+            "LoggerFactoryWrapper",
+            "LoggerImpl",
+            "LoggerWrapper",
+            "MDCAdapter",
+            "MDCAdapterMDCAdapterMDCAdapter"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 12,
+        "failure_rate_for_APIs": 0.8571428571428571,
+        "model_confidence": 0.840560793876648,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "Logger": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Logger\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Logger\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple \"Hello World\" Java program that uses the `log4j-over-slf4j-2.0.12` API:\n\nFirst, you need to have log4j-over-slf4j-2.0.12 in your project. You can add it by adding following dependencies to your pom.xml if you are using Maven:\n\n```xml\n<!-- https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j -->\n<dependency>\n    <groupId>org.slf4j</groupId>\n    <artifactId>log4j-over-slf4j</artifactId>\n    <version>2.0.12</version>\n</dependency>\n```\n\nAfter that, you can use log4j-over-slf4j in your java program like this:\n\n```java\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Logger logger = LoggerFactory.getLogger(Main.class);\n        logger.info(\"Hello World!\");\n    }\n}\n```\n\nThis will create an instance of `Logger` and use it to write messages to the log. You can change the log level at runtime based on your needs.\n\nThis program is compiled and run in Java 8 and later versions and requires a Maven build if you want to use `LoggerFactory` to get instances of `Logger`.\n\nNote: This is only one of many possible implementations of logging. It uses the `log4j-over-slf4j` binding which does not support SLF4J's markers, MDC (Mapped Diagnostic Contexts), and parameter-style messages. If these features are required, consider using SLF4J directly.",
+                "extracted_java_code_from_prediction": "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        Logger logger = LoggerFactory.getLogger(Main.class);\n        logger.info(\"Hello World!\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5620520710945129,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Logger\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo create a complete, correct and compilable Java program using \"Logger\" API from \"log4j-over-slf4j-2.0.12\" project, you need to add log4j-over-slf4j-2.0.12 as a Maven dependency and then import the Logger class.\n\nHere is the Java program:\n\n```java\npackage yourpackage; //replace 'yourpackage' with your package name\n\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n  \n    private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        LOGGER.debug(\"Debugging log\");\n        LOGGER.info(\"Info log\");\n        LOGGER.warn(\"Warning log\");\n        LOGGER.error(\"Error log\");\n    }\n}\n```\n\nIn this code, replace 'yourpackage' with the actual package where the Main class is going to be created.\n\nPlease note, this is a very basic example of using SLF4J with Log4j as a logging provider. You would need to configure log4j to make it actually do something. A typical log4j.properties file might look like:\n\n```\nlog4j.rootLogger=DEBUG, stdout\nlog4j.appender.stdout=org.apache.log4j.ConsoleAppender\nlog4j.appender.stdout.layout=org.apache.log4j.PatternLayout\nlog4j.appender.stdout.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n\n```\n\nTo run the program you should build it with a build tool like Maven (if you have Maven installed). Add the following dependency to your Maven pom.xml:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.slf4j</groupId>\n        <artifactId>slf4j-api</artifactId>\n        <version>2.0.12</version>\n    </dependency>\n    <dependency>\n        <groupId>org.slf4j</groupId>\n        <artifactId>slf4j-log4j12</artifactId>\n        <version>2.0.12</version>\n    </dependency>\n</dependencies>\n```\n\nOnce you have your log4j.properties file in your classpath and your Main class set up correctly, you can run your program. You should see the logs being printed to the console as defined by the configuration.",
+                "extracted_java_code_from_prediction": "package yourpackage; //replace 'yourpackage' with your package name\n\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n  \n    private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        LOGGER.debug(\"Debugging log\");\n        LOGGER.info(\"Info log\");\n        LOGGER.warn(\"Warning log\");\n        LOGGER.error(\"Error log\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.7136409282684326,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Logger\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a Java program that uses Log4j, which is an alternative to SLF4J for logging:\n\nDependencies:\n\n- log4j-over-slf4j-2.0.12\n\nProgram:\n\n```java\npackage example;\n\nimport org.apache.log4j.Logger;\n\npublic class Main {\n    private static final Logger logger = Logger.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.info(\"Application started\");\n        logger.debug(\"This is a debug message\");\n        logger.error(\"Something went wrong\", new Exception(\"testing\"));\n    }\n}\n```\n\nThis code creates a log instance named logger and uses it to log messages. The message will be shown only if logger is configured to log at the corresponding level (in this case, the info() call will only appear if logger is set to log at info level or above). If you want to see the debug message, configure the logger accordingly.\n\nRemember that SLF4J (Simple Logging Facade for Java) is a more general-purpose logging interface, and some logging systems support SLF4J. However, Log4j is a more comprehensive, with many more features, and is more well known.\n\nNote:\n\nAs Log4j is deprecated now, the correct library to use is 'log4j-slf4j-impl' instead of 'log4j-over-slf4j-2.0.12'. The correct dependencies for it should be:\n\n```\n<dependency>\n  <groupId>org.apache.logging.log4j</groupId>\n  <artifactId>log4j-api</artifactId>\n  <version>2.17.1</version>\n</dependency>\n<dependency>\n  <groupId>org.apache.logging.log4j</groupId>\n  <artifactId>log4j-core</artifactId>\n  <version>2.17.1</version>\n</dependency>\n<dependency>\n  <groupId>org.apache.logging.log4j</groupId>\n  <artifactId>log4j-slf4j-impl</artifactId>\n  <version>2.17.1</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "package example;\n\nimport org.apache.log4j.Logger;\n\npublic class Main {\n    private static final Logger logger = Logger.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.info(\"Application started\");\n        logger.debug(\"This is a debug message\");\n        logger.error(\"Something went wrong\", new Exception(\"testing\"));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.log4j.Logger"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.log4j.Logger"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6038764715194702,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Logger\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYou can use the following complete, compilable Java code. It uses \"log4j-over-slf4j-2.0.12\" project and uses \"org.slf4j.Logger\" and \"org.slf4j.LoggerFactory\" for logging purposes.\n\n```java\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n    private static Logger logger = LoggerFactory.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.info(\"Hello World!\");\n    }\n}\n```\n\nIn this code, we first import necessary classes from \"log4j-over-slf4j-2.0.12\" project. Then, we define the \"logger\" field that we use to create the logger for our class. In the main method, we log a string message using the \"info\" level, which is a standard SLF4J level and is not tied to the Log4j Logger API.\n\nMake sure to install log4j-over-slf4j-2.0.12 and any necessary dependencies in your classpath before compilation. The code is written in a way to be executed without a problem and to be compiled as it is, without the need to add new dependencies or import other APIs that don't have dependencies or imports of their own.",
+                "extracted_java_code_from_prediction": "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n    private static Logger logger = LoggerFactory.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.info(\"Hello World!\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.47887930274009705,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Logger\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a simple Java code using Logger API from the project \"log4j-over-slf4j-2.0.12\". The log4j-over-slf4j-2.0.12 is a bridge from Log4j to SLF4J and doesn't require any additional dependencies aside from the log4j and slf4j dependencies themselves.\n\n```java\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n\n    private static final Logger logger = LoggerFactory.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.info(\"This is a test message using Log4j and SLF4J\");\n    }\n}\n```\n\nTo use this Java code, you also need to have the log4j and slf4j jars in your project's classpath. If you are using a build tool like Maven, add the below dependency in your pom.xml file:\n\n```xml\n<dependencies>\n  <dependency>\n    <groupId>org.apache.logging.log4j</groupId>\n    <artifactId>log4j-api</artifactId>\n    <version>2.11.1</version>\n  </dependency>\n  <dependency>\n    <groupId>org.apache.logging.log4j</groupId>\n    <artifactId>log4j-slf4j-impl</artifactId>\n    <version>2.11.1</version>\n  </dependency>\n</dependencies>\n```\n\nReplace the version with the appropriate versions available on Maven Central. You can find the latest version of the log4j jars on Maven Central:\nhttps://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl\n\nMake sure that your build tool has been configured to use these dependencies and your IDE (Eclipse, IntelliJ IDEA, etc.) has been properly set up to support your project.",
+                "extracted_java_code_from_prediction": "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n\n    private static final Logger logger = LoggerFactory.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.info(\"This is a test message using Log4j and SLF4J\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5933098196983337,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "Level": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Level\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Level\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of how to use the \"log4j-over-slf4j-2.0.12\" project, you'll need to import the right dependencies and classes to use the APIs in that library.\n\nI'm assuming that you are looking to set up a very basic logger in Java using the log4j library.\n\nHere is the Main Class:\n```java\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n\n    private static final Logger logger = LoggerFactory.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.debug(\"Debug message\");\n        logger.info(\"Info message\");\n        logger.warn(\"Warning message\");\n        logger.error(\"Error message\");\n    }\n}\n```\n\nThis will create a log file \"main.log\" in the same directory as your compiled classes. This log file will contain the messages sent by the logger in the Main class. The logger is configured to log DEBUG, INFO, WARN, ERROR and FATAL messages.\n\nRemember to include the log4j and slf4j dependencies in your maven pom.xml, like this:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.slf4j</groupId>\n        <artifactId>slf4j-log4j12</artifactId>\n        <version>1.7.25</version>\n    </dependency>\n    <dependency>\n        <groupId>log4j</groupId>\n        <artifactId>log4j</artifactId>\n        <version>1.2.17</version>\n    </dependency>\n</dependencies>\n```\nNote: You need to make sure your project's logging configuration (often specified in a file called log4j.properties) is properly set up. An example of log4j.properties:\n```\nlog4j.rootCategory=WARN, A1\n\n#log4j.logger.com.xyz=INFO\n\nlog4j.appender.A1=org.apache.log4j.FileAppender\nlog4j.appender.A1.File=main.log\nlog4j.appender.A1.layout=org.apache.log4j.PatternLayout\nlog4j.appender.A1.layout.ConversionPattern=%-4r [%t] %-5p %c - %m%n\n```\nIn this example, the root logger is set to write warnings and higher to a file named \"main.log\". All log messages will be printed in a formatted manner to the log file.\n\nAlso, you can add other necessary dependencies as required by your project. Please remember to replace \"com.xyz\" with your package name in logger.logger.com.xyz=INFO. This is only an example. Please replace accordingly based on your requirement.",
+                "extracted_java_code_from_prediction": "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n\n    private static final Logger logger = LoggerFactory.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.debug(\"Debug message\");\n        logger.info(\"Info message\");\n        logger.warn(\"Warning message\");\n        logger.error(\"Error message\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6770000457763672,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Level\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs you have requested a complete, correct, and compilable Java code with the use of the \"log4j-over-slf4j-2.0.12\" Level API, I will provide a simple example that logs at an INFO level, however bear in mind that log4j is quite a heavy library and you'd probably want to tweak the configuration more than this:\n\n```java\nimport org.apache.logging.log4j.Level;\nimport org.apache.logging.log4j.LogManager;\nimport org.apache.logging.log4j.Logger;\n\npublic class Main {\n    private static final Logger logger = LogManager.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.log(Level.INFO, \"This is an info message\");\n    }\n}\n```\nThis code includes only the necessary imports (org.apache.logging.log4j.Level and org.apache.logging.log4j.Logger) and uses only those libraries that come with the Log4j project. You won't need to add any additional dependencies since everything you need is already included within the project.\n\nMake sure your code is compiling from the command line with `javac Main.java`, and running it with `java Main`, to test this simple example.\n\nRemember, in order to run and test these codes, you have to make sure your IDE or your environment is properly configured and setup to use the SLF4j and Log4j libraries. You should also have the log4j-core.jar in your classpath, and make sure that your IDE's classpath contains this jar too.",
+                "extracted_java_code_from_prediction": "import org.apache.logging.log4j.Level;\nimport org.apache.logging.log4j.LogManager;\nimport org.apache.logging.log4j.Logger;\n\npublic class Main {\n    private static final Logger logger = LogManager.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.log(Level.INFO, \"This is an info message\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.logging.log4j.Level",
+                    "org.apache.logging.log4j.LogManager",
+                    "org.apache.logging.log4j.Logger"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.logging.log4j.LogManager",
+                    "org.apache.logging.log4j.Logger"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.apache.logging.log4j.Level"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.47502198815345764,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,32] package org.apache.logging.log4j does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,32] package org.apache.logging.log4j does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,32] package org.apache.logging.log4j does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,26] cannot find symbol\n  symbol:   class Logger\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,42] cannot find symbol\n  symbol:   variable LogManager\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,20] cannot find symbol\n  symbol:   variable Level\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.708 s\n[INFO] Finished at: 2024-04-17T01:12:06-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,32] package org.apache.logging.log4j does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,32] package org.apache.logging.log4j does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,32] package org.apache.logging.log4j does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,26] cannot find symbol\n[ERROR]   symbol:   class Logger\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,42] cannot find symbol\n[ERROR]   symbol:   variable LogManager\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,20] cannot find symbol\n[ERROR]   symbol:   variable Level\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 32,
+                                "message": "package org.apache.logging.log4j does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 32,
+                                "message": "package org.apache.logging.log4j does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 42,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 20,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 32,
+                                "message": "package org.apache.logging.log4j does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 26,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Level\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nI'm sorry, but it seems like your request contradicts what is allowed in StackOverflow. To create an example with certain dependencies requires defining a custom question that includes the dependencies. Please provide the necessary dependencies so that I can create a program for you.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.21676009893417358,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Level\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a basic example of a Java program using the \"log4j-over-slf4j-2.0.12\" logging package along with the \"guava\" and \"jackson-databind\" data processing APIs:\n\n```java\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport com.google.common.collect.Lists;\nimport com.fasterxml.jackson.core.JsonProcessingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n    private static final Logger logger = LoggerFactory.getLogger(Main.class);\n    \n    public static void main(String[] args) {\n        logger.info(\"Starting application...\");\n\n        try {\n            // Guava usage\n            System.out.println(\"Guava list: \" + Lists.newArrayList(\"a\", \"b\", \"c\"));\n\n            // Jackson usage\n            ObjectMapper mapper = new ObjectMapper();\n            String json = mapper.writeValueAsString(\"Hello, world!\");\n            System.out.println(\"JSON String: \" + json);\n        } catch (JsonProcessingException e) {\n            logger.error(\"An error occurred while processing the JSON\", e);\n        }\n\n        logger.info(\"Application finished.\");\n    }\n}\n```\n\nIn this example, I'm using the logger provided by \"log4j-over-slf4j\" to output informational and error messages in the console. I'm also using \"guava\" to create a simple list and \"jackson-databind\" for JSON processing.",
+                "extracted_java_code_from_prediction": "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\nimport com.google.common.collect.Lists;\nimport com.fasterxml.jackson.core.JsonProcessingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n    private static final Logger logger = LoggerFactory.getLogger(Main.class);\n    \n    public static void main(String[] args) {\n        logger.info(\"Starting application...\");\n\n        try {\n            // Guava usage\n            System.out.println(\"Guava list: \" + Lists.newArrayList(\"a\", \"b\", \"c\"));\n\n            // Jackson usage\n            ObjectMapper mapper = new ObjectMapper();\n            String json = mapper.writeValueAsString(\"Hello, world!\");\n            System.out.println(\"JSON String: \" + json);\n        } catch (JsonProcessingException e) {\n            logger.error(\"An error occurred while processing the JSON\", e);\n        }\n\n        logger.info(\"Application finished.\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory",
+                    "com.google.common.collect.Lists",
+                    "com.fasterxml.jackson.core.JsonProcessingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "correct_FQN_predictions": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory",
+                    "com.fasterxml.jackson.core.JsonProcessingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.google.common.collect.Lists"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.5836971998214722,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,33] package com.google.common.collect does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[7,34] package com.fasterxml.jackson.core does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[8,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[18,49] cannot find symbol\n  symbol:   variable Lists\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,13] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,39] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[24,18] cannot find symbol\n  symbol:   class JsonProcessingException\n  location: class org.example.Main\n[INFO] 7 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.725 s\n[INFO] Finished at: 2024-04-17T01:12:07-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,33] package com.google.common.collect does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[7,34] package com.fasterxml.jackson.core does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[8,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[18,49] cannot find symbol\n[ERROR]   symbol:   variable Lists\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,13] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,39] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java:[24,18] cannot find symbol\n[ERROR]   symbol:   class JsonProcessingException\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 33,
+                                "message": "package com.google.common.collect does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 49,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 34,
+                                "message": "package com.fasterxml.jackson.core does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/log4j-over-slf4j-2.0.12/Level/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 24,
+                                "column": 18,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Level\" API from \"log4j-over-slf4j-2.0.12\" project along with other necessary APIs. The dependency is already added for \"log4j-over-slf4j-2.0.12\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo run this code, you must have a Log4j SLF4J adapter properly configured in your project. Here is a basic example of a Java program using Log4j SLF4J API.\n\nPlease note that actual compilation depends on your environment, for example how you run your code, and how you manage dependencies. \n\n```java\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Using the SLF4J API to access a Logger named \"myApp\".\n        Logger logger = LoggerFactory.getLogger(\"myApp\");\n        // Log an INFO message.\n        logger.info(\"My App is logging some info.\");\n    }\n}\n```\n\nThis program will output an INFO message to the console when run. It does not depend on any other APIs beside the ones provided by the \"slf4j-api\" and \"log4j-over-slf4j\" project.\n\nBut note, in real projects we rarely use LoggerFactory.getLogger(\"myApp\") in real-world applications.\n\nInstead, we would typically create a static logger field:\n\n```java\nimport org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n    private static final Logger logger = LoggerFactory.getLogger(Main.class);\n\n    public static void main(String[] args) {\n        logger.info(\"My App is logging some info.\");\n    }\n}\n```",
+                "extracted_java_code_from_prediction": "import org.slf4j.Logger;\nimport org.slf4j.LoggerFactory;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Using the SLF4J API to access a Logger named \"myApp\".\n        Logger logger = LoggerFactory.getLogger(\"myApp\");\n        // Log an INFO message.\n        logger.info(\"My App is logging some info.\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "org.slf4j.Logger",
+                    "org.slf4j.LoggerFactory"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.500684916973114,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        }
+    }
+}

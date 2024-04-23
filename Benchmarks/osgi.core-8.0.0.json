@@ -1,0 +1,876 @@
+{
+    "jar_name": "osgi.core-8.0.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from osgi.core-8.0.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from osgi.core-8.0.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the code or project files. However, based on the information provided, I can suggest some possible API class names that might be present in the osgi.core-8.0.0 project.\n\n1. Bundle\n2. BundleContext\n3. BundleEvent\n4. BundleException\n5. BundleListener\n6. Framework\n7. FrameworkFactory\n8. FrameworkFactory.getFramework\n9. FrameworkEvent\n10. FrameworkListener\n11. FrameworkWiring\n12. FrameworkWiring.addFrameworkListener\n13. FrameworkWiring.removeFrameworkListener\n14. FrameworkWiring.getBundle\n15. FrameworkWiring.getBundleContext\n16. FrameworkWiring.getBundleWiring\n17. FrameworkWiring.getService\n18. FrameworkWiring.getServiceReference\n19. FrameworkWiring.ungetService\n20. FrameworkWiring.addServiceListener\n21. FrameworkWiring.removeServiceListener\n22. FrameworkWiring.getServiceListener\n23. FrameworkWiring.getServiceListeners\n24. FrameworkWiring.getServiceRegistration\n25. FrameworkWiring.getServiceRegistrations\n26. FrameworkWiring.getServiceObjects\n27. FrameworkWiring.getServiceFactory\n28. FrameworkWiring.getServiceFactorys\n29. FrameworkWiring.getServiceFactorys.getServiceFactory\n30. FrameworkWiring.getServiceFactorys.getServiceFactory.getService\n31. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceReference\n32. FrameworkWiring.getServiceFactorys.getServiceFactory.ungetService\n33. FrameworkWiring.getServiceFactorys.getServiceFactory.addServiceListener\n34. FrameworkWiring.getServiceFactorys.getServiceFactory.removeServiceListener\n35. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceListener\n36. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceListeners\n37. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceRegistration\n38. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceRegistrations\n39. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceObjects\n40. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory\n41. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getService\n42. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceReference\n43. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.ungetService\n44. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.addServiceListener\n45. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.removeServiceListener\n46. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceListener\n47. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceListeners\n48. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceRegistration\n49. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceRegistrations\n50. FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceObjects\n\nPlease note that these are just suggestions and may not be the complete list of API classes. The actual list would depend on the specific project and the codebase.",
+        "extracted_APIs_from_prediction": [
+            "Bundle",
+            "BundleContext",
+            "BundleEvent",
+            "BundleException",
+            "BundleListener",
+            "Framework",
+            "FrameworkFactory",
+            "FrameworkFactory.getFramework",
+            "FrameworkEvent",
+            "FrameworkListener",
+            "FrameworkWiring",
+            "FrameworkWiring.addFrameworkListener",
+            "FrameworkWiring.removeFrameworkListener",
+            "FrameworkWiring.getBundle",
+            "FrameworkWiring.getBundleContext",
+            "FrameworkWiring.getBundleWiring",
+            "FrameworkWiring.getService",
+            "FrameworkWiring.getServiceReference",
+            "FrameworkWiring.ungetService",
+            "FrameworkWiring.addServiceListener",
+            "FrameworkWiring.removeServiceListener",
+            "FrameworkWiring.getServiceListener",
+            "FrameworkWiring.getServiceListeners",
+            "FrameworkWiring.getServiceRegistration",
+            "FrameworkWiring.getServiceRegistrations",
+            "FrameworkWiring.getServiceObjects",
+            "FrameworkWiring.getServiceFactory",
+            "FrameworkWiring.getServiceFactorys",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getService",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceReference",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.ungetService",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.addServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.removeServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceListeners",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceRegistration",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceRegistrations",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceObjects",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getService",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceReference",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.ungetService",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.addServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.removeServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceListeners",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceRegistration",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceRegistrations",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceObjects"
+        ],
+        "correct_API_predictions": [
+            "BundleEvent",
+            "BundleException",
+            "FrameworkEvent"
+        ],
+        "wrong_API_predictions": [
+            "Bundle",
+            "BundleContext",
+            "BundleListener",
+            "Framework",
+            "FrameworkFactory",
+            "FrameworkFactory.getFramework",
+            "FrameworkListener",
+            "FrameworkWiring",
+            "FrameworkWiring.addFrameworkListener",
+            "FrameworkWiring.removeFrameworkListener",
+            "FrameworkWiring.getBundle",
+            "FrameworkWiring.getBundleContext",
+            "FrameworkWiring.getBundleWiring",
+            "FrameworkWiring.getService",
+            "FrameworkWiring.getServiceReference",
+            "FrameworkWiring.ungetService",
+            "FrameworkWiring.addServiceListener",
+            "FrameworkWiring.removeServiceListener",
+            "FrameworkWiring.getServiceListener",
+            "FrameworkWiring.getServiceListeners",
+            "FrameworkWiring.getServiceRegistration",
+            "FrameworkWiring.getServiceRegistrations",
+            "FrameworkWiring.getServiceObjects",
+            "FrameworkWiring.getServiceFactory",
+            "FrameworkWiring.getServiceFactorys",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getService",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceReference",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.ungetService",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.addServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.removeServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceListeners",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceRegistration",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceRegistrations",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceObjects",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getService",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceReference",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.ungetService",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.addServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.removeServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceListener",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceListeners",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceRegistration",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceRegistrations",
+            "FrameworkWiring.getServiceFactorys.getServiceFactory.getServiceFactory.getServiceObjects"
+        ],
+        "number_of_correct_APIs": 3,
+        "number_of_wrong_APIs": 47,
+        "failure_rate_for_APIs": 0.94,
+        "model_confidence": 0.8549919724464417,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "BundleEvent": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"BundleEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple java application with the use of the BundleEvent API from the \"osgi.core-8.0.0\" project. However, it is not a full-fledged OSGi application since it does not contain any Bundle or BundleContext. It's just a simple Java application using the BundleEvent API.\n\nTo run this code you need the latest version of the osgi.core-8.0.0 project jar. Also you must ensure that your Java development environment is properly set up with the required dependencies for this particular project.\n\n```java\npackage core8.example;\n\nimport java.util.EventObject;\n\npublic class BundleEvent extends EventObject {\n  \n    private static final long serialVersionUID = 1L;\n\n    public BundleEvent(Object source) {\n        super(source);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        BundleEvent event = new BundleEvent(\"BundleContext\");\n        System.out.println(\"Bundle Event created. The event source is: \" + event.getSource());\n    }\n}\n```\n\nPlease replace \"BundleContext\" with your BundleContext object or appropriate object. Also please note that osgi.core-8.0.0 project might not have the classes necessary to create an EventObject and BundleEvent. These classes and methods might need different libraries or other dependencies to function. If you plan to use these classes, you might need to download those dependencies and import them to your project.",
+                "extracted_java_code_from_prediction": "package core8.example;\n\nimport java.util.EventObject;\n\npublic class BundleEvent extends EventObject {\n  \n    private static final long serialVersionUID = 1L;\n\n    public BundleEvent(Object source) {\n        super(source);\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        BundleEvent event = new BundleEvent(\"BundleContext\");\n        System.out.println(\"Bundle Event created. The event source is: \" + event.getSource());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.EventObject"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.util.EventObject"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.38921332359313965,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java code using \"BundleEvent\" API from the \"osgi.core-8.0.0\" project. For this code, you have to ensure that the classpath for the java compiler includes the \"osgi.core-8.0.0.jar\", which should be included in the classpath as dependency in the build system.\n\nThe following Java code creates a Main class with a main method that prints out a \"BundleEvent\" message:\n\n```java\nimport org.osgi.framework.BundleEvent;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.framework.Bundle;\n\npublic class Main {\n    public static void main(String[] args) {\n        BundleEvent event = createBundleEvent();\n        System.out.println(\"Bundle Event: \" + event.toString());\n    }\n\n    public static BundleEvent createBundleEvent() {\n        return new BundleEvent(Bundle.STARTING, new Bundle());\n    }\n}\n```\n\nThis program creates a BundleEvent which is passed to the `createBundleEvent()` method as an argument. `BundleEvent` is a concrete class that represents a bundle life cycle event. The \"BundleEvent\" has a `Bundle` object, which represents the bundle that the event is associated with. \n\nIn the `main` method, the program retrieves the string representation of the `BundleEvent` using the `toString()` method and prints it to the console. The output of the program would be the event created by calling `createBundleEvent()`.",
+                "extracted_java_code_from_prediction": "import org.osgi.framework.BundleEvent;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.framework.Bundle;\n\npublic class Main {\n    public static void main(String[] args) {\n        BundleEvent event = createBundleEvent();\n        System.out.println(\"Bundle Event: \" + event.toString());\n    }\n\n    public static BundleEvent createBundleEvent() {\n        return new BundleEvent(Bundle.STARTING, new Bundle());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.BundleEvent",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.Bundle"
+                ],
+                "correct_FQN_predictions": [
+                    "org.osgi.framework.BundleEvent",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.Bundle"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.41655224561691284,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[14,19] cannot find symbol\n  symbol:   class BundleEvent\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n  symbol:   class BundleEvent\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,20] cannot find symbol\n  symbol:   class BundleEvent\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,32] cannot find symbol\n  symbol:   variable Bundle\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,53] cannot find symbol\n  symbol:   class Bundle\n  location: class org.example.Main\n[INFO] 8 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.669 s\n[INFO] Finished at: 2024-04-16T23:48:09-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[14,19] cannot find symbol\n[ERROR]   symbol:   class BundleEvent\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n[ERROR]   symbol:   class BundleEvent\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,20] cannot find symbol\n[ERROR]   symbol:   class BundleEvent\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,32] cannot find symbol\n[ERROR]   symbol:   variable Bundle\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,53] cannot find symbol\n[ERROR]   symbol:   class Bundle\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 19,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 20,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 32,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 53,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to properly use BundleEvent API and other APIs from \"osgi.core-8.0.0\" project in a Java application, you would require a bit more context or additional specifications about the purpose of your application. Without specific details about the requirements or the design of your program, a general implementation cannot be provided. \n\nHowever, here's an example of using BundleEvent API:\n\n```java\nimport org.osgi.framework.BundleEvent;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.util.tracker.BundleTracker;\nimport org.osgi.util.tracker.BundleTrackerCustomizer;\n\npublic class Main {\n    \n    private BundleContext context;\n    private BundleTracker tracker;\n\n    public void start(BundleContext context) throws Exception {\n        this.context = context;\n\n        tracker = new BundleTracker(context, Bundle.STARTING | Bundle.STOPPING | Bundle.STARTED | Bundle.STOPPED, null);\n        tracker.open();\n    }\n\n    public void stop(BundleContext context) throws Exception {\n        if (tracker != null) {\n            tracker.close();\n        }\n    }\n\n    public void bundleChanged(BundleEvent event) {\n        System.out.println(\"Bundle Event: \" + event.getType());\n    }\n}\n```\n\nThis is a basic OSGi bundle tracker example. The bundleChanged() method would trigger when a bundle starts or stops in the application. \n\nNote: \"osgi.core-8.0.0\" and \"BundleEvent\" are libraries for OSGi service, they have to be referenced and properly imported into your project and they should be compatible with the rest of your libraries if any. Also, for more complex OSGi application, you would need to include more services and classes for their functionality.\n\nDo remember that you need to adapt the given examples according to your application needs.",
+                "extracted_java_code_from_prediction": "import org.osgi.framework.BundleEvent;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.util.tracker.BundleTracker;\nimport org.osgi.util.tracker.BundleTrackerCustomizer;\n\npublic class Main {\n    \n    private BundleContext context;\n    private BundleTracker tracker;\n\n    public void start(BundleContext context) throws Exception {\n        this.context = context;\n\n        tracker = new BundleTracker(context, Bundle.STARTING | Bundle.STOPPING | Bundle.STARTED | Bundle.STOPPED, null);\n        tracker.open();\n    }\n\n    public void stop(BundleContext context) throws Exception {\n        if (tracker != null) {\n            tracker.close();\n        }\n    }\n\n    public void bundleChanged(BundleEvent event) {\n        System.out.println(\"Bundle Event: \" + event.getType());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.BundleEvent",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.util.tracker.BundleTracker",
+                    "org.osgi.util.tracker.BundleTrackerCustomizer"
+                ],
+                "correct_FQN_predictions": [
+                    "org.osgi.framework.BundleEvent",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.util.tracker.BundleTracker",
+                    "org.osgi.util.tracker.BundleTrackerCustomizer"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.48020097613334656,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[3,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,29] package org.osgi.util.tracker does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[6,29] package org.osgi.util.tracker does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[10,13] cannot find symbol\n  symbol:   class BundleContext\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,13] cannot find symbol\n  symbol:   class BundleTracker\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,23] cannot find symbol\n  symbol:   class BundleContext\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[20,22] cannot find symbol\n  symbol:   class BundleContext\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[26,31] cannot find symbol\n  symbol:   class BundleEvent\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,23] cannot find symbol\n  symbol:   class BundleTracker\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,46] cannot find symbol\n  symbol:   variable Bundle\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,64] cannot find symbol\n  symbol:   variable Bundle\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,82] cannot find symbol\n  symbol:   variable Bundle\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,99] cannot find symbol\n  symbol:   variable Bundle\n  location: class org.example.Main\n[INFO] 14 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.670 s\n[INFO] Finished at: 2024-04-16T23:48:10-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[3,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,29] package org.osgi.util.tracker does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[6,29] package org.osgi.util.tracker does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[10,13] cannot find symbol\n[ERROR]   symbol:   class BundleContext\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,13] cannot find symbol\n[ERROR]   symbol:   class BundleTracker\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,23] cannot find symbol\n[ERROR]   symbol:   class BundleContext\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[20,22] cannot find symbol\n[ERROR]   symbol:   class BundleContext\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[26,31] cannot find symbol\n[ERROR]   symbol:   class BundleEvent\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,23] cannot find symbol\n[ERROR]   symbol:   class BundleTracker\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,46] cannot find symbol\n[ERROR]   symbol:   variable Bundle\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,64] cannot find symbol\n[ERROR]   symbol:   variable Bundle\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,82] cannot find symbol\n[ERROR]   symbol:   variable Bundle\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java:[16,99] cannot find symbol\n[ERROR]   symbol:   variable Bundle\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 29,
+                                "message": "package org.osgi.util.tracker does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 31,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 99,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 22,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 64,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 82,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 29,
+                                "message": "package org.osgi.util.tracker does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 46,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of how to use BundleEvent API:\n\nThis code registers a listener for Bundle events and prints out the type of each event received.\n\nRemember to handle exceptions that may be raised by APIs. \n\n```java\nimport java.util.Dictionary;\nimport java.util.Hashtable;\nimport org.osgi.framework.*;\n\npublic class Main {\n    public static void main(String args[]) {\n        BundleContext context = null;\n        Bundle bundle = null;\n        ServiceRegistration serviceRegistration = null;\n\n        try {\n            context = new InitialContribution().initialize(args);\n\n            bundle = context.getBundle();\n            Dictionary props = new Hashtable();\n            serviceRegistration = bundle.getBundleContext().registerService(\n                    \"my.test.service\", bundle, props);\n\n            while (true) {\n                // do nothing and listen for events\n                Thread.sleep(5000);\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        } finally {\n            if (serviceRegistration != null) {\n                serviceRegistration.unregister();\n            }\n            if (bundle != null && bundle.getBundleContext() != null) {\n                bundle.getBundleContext().stop();\n            }\n            if (context != null) {\n                context.getBundle(0).stop();\n            }\n        }\n    }\n\n    // Implement this method to respond to bundle events\n    private static class BundleListener implements BundleListener {\n        public void bundleChanged(BundleEvent event) {\n            switch (event.getType()) {\n                case BundleEvent.STARTED:\n                    System.out.println(\"Bundle started: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.STOPPED:\n                    System.out.println(\"Bundle stopped: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.RESOLVED:\n                    System.out.println(\"Bundle resolved: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.UNRESOLVED:\n                    System.out.println(\"Bundle unresolved: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.INSTALLED:\n                    System.out.println(\"Bundle installed: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.UNINSTALLED:\n                    System.out.println(\"Bundle uninstalled: \" + event.getBundle().getSymbolicName());\n                    break;\n            }\n        }\n    }\n\n    // This is a sample InitialContribution to get the bundle context\n    // in a real use case you might not need it\n    private static class InitialContribution implements BundleActivator {\n        public BundleContext initialize(String args[]) throws Exception {\n            return null;\n        }\n\n        public void start(BundleContext context) throws Exception {\n        }\n\n        public void stop(BundleContext context) throws Exception {\n        }\n    }\n}\n```\n\nNote: This is a simplification of your code. The real life applications will require more specific implementations. \n\nAlso note that you need to include the correct .jar file of Osgi framework in your classpath. You can download it from the osgi.org or use any versioned repository (e.g., Maven Central). \n\nThis class is using a hypothetical BundleActivator and InitialContribution to get a BundleContext and initialize the application. In a real world application, you would have to provide the proper dependencies needed. \n\nThis code will print out the symbolic names of the bundles and their corresponding start/stop types when they are started or stopped, installed or uninstalled, resolved or unresolved.\n\nYou can improve and modify this example to suit your specific requirements.",
+                "extracted_java_code_from_prediction": "import java.util.Dictionary;\nimport java.util.Hashtable;\nimport org.osgi.framework.*;\n\npublic class Main {\n    public static void main(String args[]) {\n        BundleContext context = null;\n        Bundle bundle = null;\n        ServiceRegistration serviceRegistration = null;\n\n        try {\n            context = new InitialContribution().initialize(args);\n\n            bundle = context.getBundle();\n            Dictionary props = new Hashtable();\n            serviceRegistration = bundle.getBundleContext().registerService(\n                    \"my.test.service\", bundle, props);\n\n            while (true) {\n                // do nothing and listen for events\n                Thread.sleep(5000);\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        } finally {\n            if (serviceRegistration != null) {\n                serviceRegistration.unregister();\n            }\n            if (bundle != null && bundle.getBundleContext() != null) {\n                bundle.getBundleContext().stop();\n            }\n            if (context != null) {\n                context.getBundle(0).stop();\n            }\n        }\n    }\n\n    // Implement this method to respond to bundle events\n    private static class BundleListener implements BundleListener {\n        public void bundleChanged(BundleEvent event) {\n            switch (event.getType()) {\n                case BundleEvent.STARTED:\n                    System.out.println(\"Bundle started: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.STOPPED:\n                    System.out.println(\"Bundle stopped: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.RESOLVED:\n                    System.out.println(\"Bundle resolved: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.UNRESOLVED:\n                    System.out.println(\"Bundle unresolved: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.INSTALLED:\n                    System.out.println(\"Bundle installed: \" + event.getBundle().getSymbolicName());\n                    break;\n                case BundleEvent.UNINSTALLED:\n                    System.out.println(\"Bundle uninstalled: \" + event.getBundle().getSymbolicName());\n                    break;\n            }\n        }\n    }\n\n    // This is a sample InitialContribution to get the bundle context\n    // in a real use case you might not need it\n    private static class InitialContribution implements BundleActivator {\n        public BundleContext initialize(String args[]) throws Exception {\n            return null;\n        }\n\n        public void start(BundleContext context) throws Exception {\n        }\n\n        public void stop(BundleContext context) throws Exception {\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.Dictionary",
+                    "java.util.Hashtable",
+                    "org.osgi.framework.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.util.Dictionary",
+                    "java.util.Hashtable",
+                    "org.osgi.framework.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.7144919633865356,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nI can't compile code here. However, here is a brief example of how a class would look like that includes necessary APIs like BundleEvent from \"osgi.core-8.0.0\" project.\n\n```java\nimport org.osgi.framework.BundleEvent;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.framework.ServiceReference;\n\npublic class Main {\n    private BundleContext context;\n\n    public Main(BundleContext context) {\n        this.context = context;\n    }\n\n    public void handleBundleEvent(BundleEvent event) {\n        // Handle the bundle event\n    }\n\n    public void handleServiceEvent(ServiceReference reference) {\n        // Handle service reference\n    }\n}\n```\nThe class `Main` includes two methods `handleBundleEvent` and `handleServiceEvent` which are used to handle `BundleEvent` and `ServiceReference` respectively.\n\nYou may need to use other APIs that are not imported as `BundleEvent` from \"osgi.core-8.0.0\" project is already included in the necessary APIs. However, as a rule, the more APIs you're using, the more dependencies you might need to add.",
+                "extracted_java_code_from_prediction": "import org.osgi.framework.BundleEvent;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.framework.ServiceReference;\n\npublic class Main {\n    private BundleContext context;\n\n    public Main(BundleContext context) {\n        this.context = context;\n    }\n\n    public void handleBundleEvent(BundleEvent event) {\n        // Handle the bundle event\n    }\n\n    public void handleServiceEvent(ServiceReference reference) {\n        // Handle service reference\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.BundleEvent",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.ServiceReference"
+                ],
+                "correct_FQN_predictions": [
+                    "org.osgi.framework.BundleEvent",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.ServiceReference"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.37307101488113403,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[3,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,13] cannot find symbol\n  symbol:   class BundleContext\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,17] cannot find symbol\n  symbol:   class BundleContext\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,35] cannot find symbol\n  symbol:   class BundleEvent\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[18,36] cannot find symbol\n  symbol:   class ServiceReference\n  location: class org.example.Main\n[INFO] 7 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.645 s\n[INFO] Finished at: 2024-04-16T23:48:12-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[3,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,13] cannot find symbol\n[ERROR]   symbol:   class BundleContext\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,17] cannot find symbol\n[ERROR]   symbol:   class BundleContext\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,35] cannot find symbol\n[ERROR]   symbol:   class BundleEvent\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[18,36] cannot find symbol\n[ERROR]   symbol:   class ServiceReference\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 36,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 17,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "BundleException": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"BundleException\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleException\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple class with the name Main that uses the necessary OSGi APIs. This is just a basic example, and your actual requirements may demand more complex and error-handling code.\n\n```java\nimport org.osgi.framework.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating a framework factory\n        FrameworkFactory frameworkFactory = getFrameworkFactory();\n        \n        // Creating a configuration and setting up properties\n        Properties props = new Properties();\n        props.put(\"org.osgi.framework.storage.clean\", \"onFirstInit\");\n\n        // Initializing the framework\n        BundleContext ctx = frameworkFactory.getFramework(props);\n        ctx.installBundle(\"http://example.com/mybundles/mybundle.jar\");\n\n        // Getting a bundle list\n        Collection<Bundle> bundles = ctx.getBundles();\n\n        // Iterating over the bundles and stopping a specific bundle\n        for (Bundle b : bundles) {\n            if (b.getSymbolicName().equals(\"myBundle\")) {\n                try {\n                    b.stop();\n                } catch (BundleException e) {\n                    e.printStackTrace();\n                }\n            }\n        }\n        \n        // Uninstalling the bundle\n        Bundle bundle = ctx.getBundle(\"myBundle\");\n        try {\n            bundle.uninstall();\n        } catch (BundleException e) {\n            e.printStackTrace();\n        }\n    }\n    \n    private static FrameworkFactory getFrameworkFactory() {\n        try {\n            return ServiceLoader.load(FrameworkFactory.class).iterator().next();\n        } catch (Exception e) {\n            e.printStackTrace();\n            return null;\n        }\n    }\n}\n```\n\nHere are the notes:\n\n1. The necessary OSGi APIs are imported.\n2. The `FrameworkFactory` is instantiated using a static `getFrameworkFactory()` method that gets the `FrameworkFactory` using the `ServiceLoader` API. \n3. We're setting up our framework with some properties in a `Properties` object and initializing it with the `getFramework()` method call.\n4. We then install a bundle from a URL, get the bundles list and then iterate over it to find a bundle named \"myBundle\". Once we find it, we're stopping it using `stop()` method and uninstalling it using `uninstall()` method. \n5. `BundleException` is caught and handled in the try-catch blocks.\n6. To compile the code, you need to ensure that your dependencies are correct and you're using Java 8 or greater. The necessary dependencies and OSGi version should be declared in your pom.xml file. For Maven, you can use the following dependencies. Note that this is a simple example, you will also need the correct versions of the OSGi bundles.\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.osgi</groupId>\n        <artifactId>org.osgi.core</artifactId>\n        <version>8.0.0</version>\n    </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "import org.osgi.framework.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creating a framework factory\n        FrameworkFactory frameworkFactory = getFrameworkFactory();\n        \n        // Creating a configuration and setting up properties\n        Properties props = new Properties();\n        props.put(\"org.osgi.framework.storage.clean\", \"onFirstInit\");\n\n        // Initializing the framework\n        BundleContext ctx = frameworkFactory.getFramework(props);\n        ctx.installBundle(\"http://example.com/mybundles/mybundle.jar\");\n\n        // Getting a bundle list\n        Collection<Bundle> bundles = ctx.getBundles();\n\n        // Iterating over the bundles and stopping a specific bundle\n        for (Bundle b : bundles) {\n            if (b.getSymbolicName().equals(\"myBundle\")) {\n                try {\n                    b.stop();\n                } catch (BundleException e) {\n                    e.printStackTrace();\n                }\n            }\n        }\n        \n        // Uninstalling the bundle\n        Bundle bundle = ctx.getBundle(\"myBundle\");\n        try {\n            bundle.uninstall();\n        } catch (BundleException e) {\n            e.printStackTrace();\n        }\n    }\n    \n    private static FrameworkFactory getFrameworkFactory() {\n        try {\n            return ServiceLoader.load(FrameworkFactory.class).iterator().next();\n        } catch (Exception e) {\n            e.printStackTrace();\n            return null;\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.*",
+                    "java.util.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.osgi.framework.*",
+                    "java.util.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.6659373641014099,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleException\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nGiven that the problem lacks specific details such as the specific APIs or bundle names you require, it's impossible to give a concrete example to your needs. However, here is an example of a simple program using BundleContext API from \"org.osgi.framework\".\n\nHere is the Main Class:\n\n```java\nimport org.osgi.framework.BundleContext;\n\npublic class Main {\n    private BundleContext context;\n\n    // The rest of your code goes here..\n}\n```\nTo use the BundleContext, you have to instantiate it in a bundle. If you are in a non-OSGi container, you will get an error about non-OSGi code trying to access an OSGi bundle.\n\nIn order to have BundleContext, you need to create your own bundle and inject it into Main, or you could create a bundle activator which will give you access to the bundle context from the start.\n\nAlso note that in a true OSGi environment, you won't just have a simple Main method, but you would have Activator classes for your bundle and methods in your bundle activator that have the context parameter to be able to use the bundle context.\n\nAlso, if you would like to use other APIs, you will have to add those dependencies yourself, which you didn't specify, otherwise you are free to use other APIs of your choice.\n\nPlease provide more details about the specific APIs and their usage you need to implement. Then I will be able to write code that solves your problem with those APIs.",
+                "extracted_java_code_from_prediction": "import org.osgi.framework.BundleContext;\n\npublic class Main {\n    private BundleContext context;\n\n    // The rest of your code goes here..\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.BundleContext"
+                ],
+                "correct_FQN_predictions": [
+                    "org.osgi.framework.BundleContext"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.3542998135089874,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_2/Wrapper/src/main/java/org/example/Main.java:[3,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,13] cannot find symbol\n  symbol:   class BundleContext\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.302 s\n[INFO] Finished at: 2024-04-16T23:48:53-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_2/Wrapper/src/main/java/org/example/Main.java:[3,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,13] cannot find symbol\n[ERROR]   symbol:   class BundleContext\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleException\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, below is an example of how to make a basic OSGi bundle service. In this example, we have a simple 'HelloWorld' service and a 'HelloWorldUser' bundle consuming the service. We are going to use the \"BundleException\" from \"osgi.core-8.0.0\". However, it is crucial to note that for this code to compile you need to have \"osgi.core-8.0.0\" as a dependency in your IDE or Maven project or at the same place where you are running the code. This is a basic sample and might not cover all possible exceptions and edge cases.\n\n```java\nimport org.osgi.framework.*;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        // Create a Framework Factory and get the framework\n        BundleContext context = FrameworkFactory.newInstance().getBundleContext();\n        \n        // Start HelloWorld Service \n        startHelloWorldService(context);\n        \n        // Create HelloWorld user bundle and use the service\n        createAndUseHelloWorldUserBundle(context);\n        \n        // Wait to see the output\n        System.in.read();\n    }\n    \n    private static void startHelloWorldService(BundleContext context) throws BundleException {\n        Bundle helloWorldBundle = context.installBundle(\"file:/absolute/path/to/helloworld.jar\");\n        helloWorldBundle.start();\n    }\n    \n    private static void createAndUseHelloWorldUserBundle(BundleContext context) throws BundleException, InterruptedException {\n        Bundle helloWorldUserBundle = context.installBundle(\"file:/absolute/path/to/helloworlduser.jar\");\n        helloWorldUserBundle.start();\n        Thread.sleep(1000); // wait for the bundle to activate\n        helloWorldUserBundle.stop();\n    }\n}\n```\nThis `Main` class can be used to show the usage of \"BundleException\" from \"osgi.core-8.0.0\". In the actual code, the BundleContext `newInstance().getBundleContext()` would be in some OSGi framework implementation, and installing and starting bundles would be done in a similar way across various OSGi frameworks.\n\nIn addition, it is crucial to remember that this is a very simple example, the actual production-ready code would be much more complicated and probably you wouldn't want to put all such tasks in the main function. You would likely want to separate the `startHelloWorldService` and `createAndUseHelloWorldUserBundle` into separate classes or even use some form of dependency injection or other design pattern to keep your code clean and manageable.",
+                "extracted_java_code_from_prediction": "import org.osgi.framework.*;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        // Create a Framework Factory and get the framework\n        BundleContext context = FrameworkFactory.newInstance().getBundleContext();\n        \n        // Start HelloWorld Service \n        startHelloWorldService(context);\n        \n        // Create HelloWorld user bundle and use the service\n        createAndUseHelloWorldUserBundle(context);\n        \n        // Wait to see the output\n        System.in.read();\n    }\n    \n    private static void startHelloWorldService(BundleContext context) throws BundleException {\n        Bundle helloWorldBundle = context.installBundle(\"file:/absolute/path/to/helloworld.jar\");\n        helloWorldBundle.start();\n    }\n    \n    private static void createAndUseHelloWorldUserBundle(BundleContext context) throws BundleException, InterruptedException {\n        Bundle helloWorldUserBundle = context.installBundle(\"file:/absolute/path/to/helloworlduser.jar\");\n        helloWorldUserBundle.start();\n        Thread.sleep(1000); // wait for the bundle to activate\n        helloWorldUserBundle.stop();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.osgi.framework.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5288904905319214,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleException\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIt's a tricky question, I am an artificial intelligence model and I don't have access to the internet nor do I have the capability of installing, compiling, running Java code. This question is asking for a complete, correct and compilable Java code which uses the BundleException class from the osgi.core-8.0.0 project and might also use other APIs. However, without knowing exactly what the code is supposed to do and the context in which it's supposed to be used, it's impossible to provide an exact and accurate code. But let's assume we have a simple program that throws an BundleException.\n\n```java\nimport org.osgi.framework.BundleException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            throwException();\n        } catch (BundleException e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static void throwException() throws BundleException {\n        throw new BundleException(\"Something went wrong!\");\n    }\n}\n```\n\nThe `throwException` method throws a `BundleException`. In the `main` method, we handle it by catching `BundleException` and printing its stack trace. \n\nHowever, this scenario may not reflect the full requirement of the question. Please provide more context or detail so I can create the exact code you need.",
+                "extracted_java_code_from_prediction": "import org.osgi.framework.BundleException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            throwException();\n        } catch (BundleException e) {\n            e.printStackTrace();\n        }\n    }\n\n    public static void throwException() throws BundleException {\n        throw new BundleException(\"Something went wrong!\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.BundleException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.osgi.framework.BundleException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.42472249269485474,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java:[15,48] cannot find symbol\n  symbol:   class BundleException\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,18] cannot find symbol\n  symbol:   class BundleException\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,19] cannot find symbol\n  symbol:   class BundleException\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.670 s\n[INFO] Finished at: 2024-04-16T23:48:55-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java:[15,48] cannot find symbol\n[ERROR]   symbol:   class BundleException\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,18] cannot find symbol\n[ERROR]   symbol:   class BundleException\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,19] cannot find symbol\n[ERROR]   symbol:   class BundleException\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 19,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 18,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 48,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BundleException\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nCreating a fully functional Java application that uses an OSGi bundle exception requires a lot of setup and configuration which goes beyond the scope of this platform. However, below is a simple example using the required APIs.\n\nRemember that import statements and dependencies are external to your question, and OSGi is a framework for developing modular and loosely coupled applications. Below is a simple example of using a BundleException that might be applicable.\n\n```java\npackage org.osgi.core-8.0.0;\n\nimport org.osgi.framework.BundleException;\nimport org.osgi.framework.Bundle;\n\npublic class Main {\n    public static void main(String[] args) {\n        // assuming some bundle instance is created\n        Bundle bundle = null;\n        \n        try {\n            // simulate a potential bundle exception\n            bundle.start();\n        } catch (BundleException e) {\n            // handle the exception\n            System.err.println(\"Bundle could not be started due to an exception: \" + e.getMessage());\n        }\n    }\n}\n```\nNote: Please make sure the 'osgi.core-8.0.0' project is properly imported or add the required jar files within your classpath for the code to run.\n\nRemember that exceptions thrown by the OSGi bundle may be specific to your use case and thus the solution might require to adapt to the specific exception types you are dealing with. Please refer to the OSGi documentation for detailed information about the Bundle Exception API.",
+                "extracted_java_code_from_prediction": "package org.osgi.core-8.0.0;\n\nimport org.osgi.framework.BundleException;\nimport org.osgi.framework.Bundle;\n\npublic class Main {\n    public static void main(String[] args) {\n        // assuming some bundle instance is created\n        Bundle bundle = null;\n        \n        try {\n            // simulate a potential bundle exception\n            bundle.start();\n        } catch (BundleException e) {\n            // handle the exception\n            System.err.println(\"Bundle could not be started due to an exception: \" + e.getMessage());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.BundleException",
+                    "org.osgi.framework.Bundle"
+                ],
+                "correct_FQN_predictions": [
+                    "org.osgi.framework.BundleException",
+                    "org.osgi.framework.Bundle"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.40935075283050537,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n  symbol:   class Bundle\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,18] cannot find symbol\n  symbol:   class BundleException\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.969 s\n[INFO] Finished at: 2024-04-16T23:48:58-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n[ERROR]   symbol:   class Bundle\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,18] cannot find symbol\n[ERROR]   symbol:   class BundleException\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 18,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/BundleException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "FrameworkEvent": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"FrameworkEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"FrameworkEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs per the information you shared, I am not sure what you meant by the \"FrameworkEvent\" API, but if you want to get an instance of the \"FrameworkEvent\", you can do so using the \"FrameworkEvent.newEvent()\" method which can be imported as such:\n\n```Java\nimport org.osgi.framework.FrameworkEvent;\n\npublic class Main {\n  public static void main(String[] args) {\n    FrameworkEvent event = FrameworkEvent.newEvent(FrameworkEvent.STARTED, \"Framework\");\n    System.out.println(\"Framework Event Type: \" + event.getType());\n    System.out.println(\"Framework Event Service: \" + event.getServiceReference());\n  }\n}\n```\n\nThis code will print the type of event (in this case \"STARTED\") and the associated service reference (\"Framework\"). If you wanted to get a different type of event or a different service reference, you could replace \"STARTED\" with another type from \"org.osgi.framework.FrameworkEvent\" and \"Framework\" with another service reference.\n\nPlease, ensure that you have the correct dependency for \"osgi.core-8.0.0\" project added to your pom.xml or build.gradle file, and this code should compile without issues. Note, however, that the \"osgi.core-8.0.0\" project is not a typical Java project and does not ship with standard Java libraries, but rather uses the OSGi specifications, which are part of Java EE.\n\nIt might be worth noting that using \"osgi.core-8.0.0\" or similar libraries might require additional knowledge of OSGi, which is outside the scope of simple Java applications.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.47000008821487427,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"FrameworkEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to solve this problem you would need to develop your own code as the problem statement is a bit confusing. However, I'm going to provide an example with a simple program using the necessary APIs from the \"osgi.core-8.0.0\" project, namely the `FrameworkEvent` class.\n\n```java\nimport org.osgi.framework.BundleContext;\nimport org.osgi.framework.Bundle;\nimport org.osgi.framework.FrameworkEvent;\nimport org.osgi.framework.FrameworkListener;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Your code using \"osgi.core-8.0.0\" project and other necessary APIs \n        BundleContext bundleContext = /* Your BundleContext instantiation */;\n        Bundle bundle = bundleContext.getBundle(0);\n        bundle.addFrameworkListener(new FrameworkListener() {\n            @Override\n            public void frameworkEvent(FrameworkEvent event) {\n                switch (event.getType()) {\n                    case FrameworkEvent.STARTED:\n                        System.out.println(\"Framework has started.\");\n                        break;\n                    case FrameworkEvent.ERROR:\n                        System.out.println(\"An error occurred in the Framework.\");\n                        break;\n                    // Handle other types of Framework events\n                    default:\n                        break;\n                }\n            }\n        });\n    }\n}\n```\n\nThis code creates a simple OSGi Framework application that listens to Framework events. In a production environment, you would need to create your own context and bundle for your application and handle the lifecycle events as per your requirements.\n\nPlease note that the \"osgi.core-8.0.0\" project will depend on other libraries that you would need to include as dependencies. Those dependencies are not added here to keep this simple, as they usually require additional work to include into a Java project.",
+                "extracted_java_code_from_prediction": "import org.osgi.framework.BundleContext;\nimport org.osgi.framework.Bundle;\nimport org.osgi.framework.FrameworkEvent;\nimport org.osgi.framework.FrameworkListener;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Your code using \"osgi.core-8.0.0\" project and other necessary APIs \n        BundleContext bundleContext = /* Your BundleContext instantiation */;\n        Bundle bundle = bundleContext.getBundle(0);\n        bundle.addFrameworkListener(new FrameworkListener() {\n            @Override\n            public void frameworkEvent(FrameworkEvent event) {\n                switch (event.getType()) {\n                    case FrameworkEvent.STARTED:\n                        System.out.println(\"Framework has started.\");\n                        break;\n                    case FrameworkEvent.ERROR:\n                        System.out.println(\"An error occurred in the Framework.\");\n                        break;\n                    // Handle other types of Framework events\n                    default:\n                        break;\n                }\n            }\n        });\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.Bundle",
+                    "org.osgi.framework.FrameworkEvent",
+                    "org.osgi.framework.FrameworkListener"
+                ],
+                "correct_FQN_predictions": [
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.Bundle",
+                    "org.osgi.framework.FrameworkEvent",
+                    "org.osgi.framework.FrameworkListener"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5152482390403748,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,77] illegal start of expression\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.627 s\n[INFO] Finished at: 2024-04-16T23:49:31-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,77] illegal start of expression\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 77,
+                                "message": "illegal start of expression"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"FrameworkEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\n```java\nimport java.util.*;\nimport java.lang.*;\n\nimport org.osgi.core.FrameworkEvent;\nimport org.osgi.core.Framework;\n\npublic class Main {\n    private static List<FrameworkEvent> eventList = new ArrayList<FrameworkEvent>();\n    private static Framework framework = null;\n\n    public static void main(String[] args) {\n        FrameworkEvent event = getEvent();\n        System.out.println(\"Event Type: \" + event.getType());\n    }\n\n    private static FrameworkEvent getEvent() {\n        if (eventList.size() == 0) {\n            return createEvent();\n        }\n        return eventList.get(0);\n    }\n\n    private static FrameworkEvent createEvent() {\n        FrameworkEvent event = new FrameworkEvent(Framework.STARTED_INITIALIZATION, null);\n        eventList.add(event);\n        return event;\n    }\n}\n```\nThe above code will print \"STARTED_INITIALIZATION\" on the console as a starting point to explain the usage of the FrameworkEvent API.",
+                "extracted_java_code_from_prediction": "import java.util.*;\nimport java.lang.*;\n\nimport org.osgi.core.FrameworkEvent;\nimport org.osgi.core.Framework;\n\npublic class Main {\n    private static List<FrameworkEvent> eventList = new ArrayList<FrameworkEvent>();\n    private static Framework framework = null;\n\n    public static void main(String[] args) {\n        FrameworkEvent event = getEvent();\n        System.out.println(\"Event Type: \" + event.getType());\n    }\n\n    private static FrameworkEvent getEvent() {\n        if (eventList.size() == 0) {\n            return createEvent();\n        }\n        return eventList.get(0);\n    }\n\n    private static FrameworkEvent createEvent() {\n        FrameworkEvent event = new FrameworkEvent(Framework.STARTED_INITIALIZATION, null);\n        eventList.add(event);\n        return event;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.*",
+                    "java.lang.*",
+                    "org.osgi.core.FrameworkEvent",
+                    "org.osgi.core.Framework"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.util.*",
+                    "java.lang.*",
+                    "org.osgi.core.FrameworkEvent",
+                    "org.osgi.core.Framework"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4844920039176941,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"FrameworkEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of how you might use some APIs from the \"osgi.core-8.0.0\" project in a Java class called \"Main\". The class has a simple method that simulates receiving a FrameworkEvent:\n\n```java\npackage mainpackage;\n\nimport org.osgi.framework.Bundle;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.framework.FrameworkEvent;\nimport org.osgi.framework.FrameworkListener;\nimport org.osgi.framework.InvalidSyntaxException;\nimport org.osgi.framework.ServiceEvent;\nimport org.osgi.framework.ServiceListener;\nimport org.osgi.framework.ServiceReference;\nimport org.osgi.service.log.LogService;\nimport org.osgi.service.log.ServiceLogFactory;\nimport org.osgi.util.tracker.ServiceTracker;\n\npublic class Main implements FrameworkListener, ServiceListener {\n\n  private BundleContext bundleContext;\n  private ServiceTracker logServiceTracker;\n\n  public Main(BundleContext bundleContext) {\n    this.bundleContext = bundleContext;\n    bundleContext.addFrameworkListener(this);\n    logServiceTracker = new ServiceTracker(bundleContext, LogService.class.getName(), null);\n    logServiceTracker.open();\n  }\n\n  @Override\n  public void frameworkEvent(FrameworkEvent event) {\n    LogService logService = (LogService) logServiceTracker.getService();\n    if (logService != null) {\n      logService.log(LogService.LOG_INFO, \"Framework Event: \" + event.getType());\n    }\n  }\n\n  @Override\n  public void serviceChanged(ServiceEvent event) {\n    if (event.getType() == ServiceEvent.UNREGISTERING) {\n      ServiceReference reference = event.getServiceReference();\n      if (reference != null) {\n        Bundle bundle = bundleContext.getBundle(reference.getBundle().getBundleId());\n        if (bundle != null) {\n          bundle.update(Bundle.STARTED);\n        }\n      }\n    }\n  }\n\n  public static void main(String[] args) {\n    // Start your application, for example:\n    BundleContext bundleContext = /* get your bundleContext */;\n    Main mainClass = new Main(bundleContext);\n  }\n\n}\n```\nThis example simply listens for STARTING events and ensures that a bundle is started when it's registered. It also logs important framework events. \n\nYou need to replace \"BundleContext bundleContext = /* get your bundleContext */;\" with a correct bundle context in your application.",
+                "extracted_java_code_from_prediction": "package mainpackage;\n\nimport org.osgi.framework.Bundle;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.framework.FrameworkEvent;\nimport org.osgi.framework.FrameworkListener;\nimport org.osgi.framework.InvalidSyntaxException;\nimport org.osgi.framework.ServiceEvent;\nimport org.osgi.framework.ServiceListener;\nimport org.osgi.framework.ServiceReference;\nimport org.osgi.service.log.LogService;\nimport org.osgi.service.log.ServiceLogFactory;\nimport org.osgi.util.tracker.ServiceTracker;\n\npublic class Main implements FrameworkListener, ServiceListener {\n\n  private BundleContext bundleContext;\n  private ServiceTracker logServiceTracker;\n\n  public Main(BundleContext bundleContext) {\n    this.bundleContext = bundleContext;\n    bundleContext.addFrameworkListener(this);\n    logServiceTracker = new ServiceTracker(bundleContext, LogService.class.getName(), null);\n    logServiceTracker.open();\n  }\n\n  @Override\n  public void frameworkEvent(FrameworkEvent event) {\n    LogService logService = (LogService) logServiceTracker.getService();\n    if (logService != null) {\n      logService.log(LogService.LOG_INFO, \"Framework Event: \" + event.getType());\n    }\n  }\n\n  @Override\n  public void serviceChanged(ServiceEvent event) {\n    if (event.getType() == ServiceEvent.UNREGISTERING) {\n      ServiceReference reference = event.getServiceReference();\n      if (reference != null) {\n        Bundle bundle = bundleContext.getBundle(reference.getBundle().getBundleId());\n        if (bundle != null) {\n          bundle.update(Bundle.STARTED);\n        }\n      }\n    }\n  }\n\n  public static void main(String[] args) {\n    // Start your application, for example:\n    BundleContext bundleContext = /* get your bundleContext */;\n    Main mainClass = new Main(bundleContext);\n  }\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.Bundle",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.FrameworkEvent",
+                    "org.osgi.framework.FrameworkListener",
+                    "org.osgi.framework.InvalidSyntaxException",
+                    "org.osgi.framework.ServiceEvent",
+                    "org.osgi.framework.ServiceListener",
+                    "org.osgi.framework.ServiceReference",
+                    "org.osgi.service.log.LogService",
+                    "org.osgi.service.log.ServiceLogFactory",
+                    "org.osgi.util.tracker.ServiceTracker"
+                ],
+                "correct_FQN_predictions": [
+                    "org.osgi.framework.Bundle",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.FrameworkEvent",
+                    "org.osgi.framework.FrameworkListener",
+                    "org.osgi.framework.InvalidSyntaxException",
+                    "org.osgi.framework.ServiceEvent",
+                    "org.osgi.framework.ServiceListener",
+                    "org.osgi.framework.ServiceReference",
+                    "org.osgi.service.log.LogService",
+                    "org.osgi.util.tracker.ServiceTracker"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.osgi.service.log.ServiceLogFactory"
+                ],
+                "number_of_correct_FQNs": 10,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.09090909090909091,
+                "model_confidence": 0.7441512942314148,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_4/Wrapper/src/main/java/org/example/Main.java:[51,63] illegal start of expression\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.560 s\n[INFO] Finished at: 2024-04-16T23:49:33-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_4/Wrapper/src/main/java/org/example/Main.java:[51,63] illegal start of expression\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 51,
+                                "column": 63,
+                                "message": "illegal start of expression"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"FrameworkEvent\" API from \"osgi.core-8.0.0\" project along with other necessary APIs. The dependency is already added for \"osgi.core-8.0.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nDue to the constraints in your request, I'm going to create a simple example of an OSGi bundle that listens for framework events (specifically framework start and stop). We will also use Java's logging API for logging. In order to run this you need to have a suitable OSGi framework set up.\n\nThe \"osgi.core-8.0.0\" project cannot be used directly as it is an abstract framework. However, we can use Apache Karaf or any other OSGi runtime to run our bundle.\n\nHere is an example of a class that listens for framework events:\n\n```java\nimport org.osgi.framework.BundleActivator;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.framework.FrameworkEvent;\nimport org.osgi.framework.FrameworkListener;\nimport java.util.logging.Logger;\n\npublic class Main implements BundleActivator, FrameworkListener {\n    \n    private static Logger logger = Logger.getLogger(Main.class.getName());\n\n    public void start(BundleContext context) {\n        context.addFrameworkListener(this);\n        logger.info(\"Started\");\n    }\n\n    public void stop(BundleContext context) {\n        context.removeFrameworkListener(this);\n        logger.info(\"Stopped\");\n    }\n\n    @Override\n    public void frameworkEvent(FrameworkEvent event) {\n        switch (event.getType()) {\n            case FrameworkEvent.STARTED:\n                logger.info(\"Framework started\");\n                break;\n            case FrameworkEvent.STARTING:\n                logger.info(\"Framework starting\");\n                break;\n            case FrameworkEvent.STOPPED:\n                logger.info(\"Framework stopped\");\n                break;\n            case FrameworkEvent.STOPPING:\n                logger.info(\"Framework stopping\");\n                break;\n        }\n    }\n}\n```\nThis class implements `BundleActivator` and `FrameworkListener` interfaces in OSGi. In the `start()` method we register our class as a FrameworkListener which listens for framework events. In the `stop()` method we remove the listener. Implemented `frameworkEvent()` method is used to handle the events.\n\nRemember to import the necessary OSGi and java logging libraries in your classpath.",
+                "extracted_java_code_from_prediction": "import org.osgi.framework.BundleActivator;\nimport org.osgi.framework.BundleContext;\nimport org.osgi.framework.FrameworkEvent;\nimport org.osgi.framework.FrameworkListener;\nimport java.util.logging.Logger;\n\npublic class Main implements BundleActivator, FrameworkListener {\n    \n    private static Logger logger = Logger.getLogger(Main.class.getName());\n\n    public void start(BundleContext context) {\n        context.addFrameworkListener(this);\n        logger.info(\"Started\");\n    }\n\n    public void stop(BundleContext context) {\n        context.removeFrameworkListener(this);\n        logger.info(\"Stopped\");\n    }\n\n    @Override\n    public void frameworkEvent(FrameworkEvent event) {\n        switch (event.getType()) {\n            case FrameworkEvent.STARTED:\n                logger.info(\"Framework started\");\n                break;\n            case FrameworkEvent.STARTING:\n                logger.info(\"Framework starting\");\n                break;\n            case FrameworkEvent.STOPPED:\n                logger.info(\"Framework stopped\");\n                break;\n            case FrameworkEvent.STOPPING:\n                logger.info(\"Framework stopping\");\n                break;\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.osgi.framework.BundleActivator",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.FrameworkEvent",
+                    "org.osgi.framework.FrameworkListener",
+                    "java.util.logging.Logger"
+                ],
+                "correct_FQN_predictions": [
+                    "org.osgi.framework.BundleActivator",
+                    "org.osgi.framework.BundleContext",
+                    "org.osgi.framework.FrameworkEvent",
+                    "org.osgi.framework.FrameworkListener"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.util.logging.Logger"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.616951584815979,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[3,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[9,30] cannot find symbol\n  symbol: class BundleActivator\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[9,47] cannot find symbol\n  symbol: class FrameworkListener\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,23] cannot find symbol\n  symbol:   class BundleContext\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[18,22] cannot find symbol\n  symbol:   class BundleContext\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[24,32] cannot find symbol\n  symbol:   class FrameworkEvent\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[23,5] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[26,32] package FrameworkEvent does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[29,32] package FrameworkEvent does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[32,32] package FrameworkEvent does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[35,32] package FrameworkEvent does not exist\n[INFO] 14 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.681 s\n[INFO] Finished at: 2024-04-16T23:49:34-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[3,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,26] package org.osgi.framework does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[9,30] cannot find symbol\n[ERROR]   symbol: class BundleActivator\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[9,47] cannot find symbol\n[ERROR]   symbol: class FrameworkListener\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,23] cannot find symbol\n[ERROR]   symbol:   class BundleContext\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[18,22] cannot find symbol\n[ERROR]   symbol:   class BundleContext\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[24,32] cannot find symbol\n[ERROR]   symbol:   class FrameworkEvent\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[23,5] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[26,32] package FrameworkEvent does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[29,32] package FrameworkEvent does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[32,32] package FrameworkEvent does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java:[35,32] package FrameworkEvent does not exist\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 30,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 29,
+                                "column": 32,
+                                "message": "package FrameworkEvent does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 35,
+                                "column": 32,
+                                "message": "package FrameworkEvent does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 24,
+                                "column": 32,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 47,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 22,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 23,
+                                "column": 5,
+                                "message": "method does not override or implement a method from a supertype"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 26,
+                                "message": "package org.osgi.framework does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 32,
+                                "message": "package FrameworkEvent does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 32,
+                                "column": 32,
+                                "message": "package FrameworkEvent does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/osgi.core-8.0.0/FrameworkEvent/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

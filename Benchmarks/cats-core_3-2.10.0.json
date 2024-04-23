@@ -1,0 +1,24 @@
+{
+    "jar_name": "cats-core_3-2.10.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from cats-core_3-2.10.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from cats-core_3-2.10.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of a project to extract the class names. However, I can provide you with a general idea of how you can approach this problem.\n\nTo list correct API's class names from cats-core_3-2.10.0 project, you can use the following steps:\n\n1. Download the source code of the project.\n2. Unzip the downloaded file.\n3. Navigate to the root directory of the project.\n4. Use a tool like IntelliJ IDEA or Eclipse to open the project.\n5. Use a tool like Maven or Gradle to build the project.\n6. Once the project is built, you can use a tool like Javap or javap.exe in Windows to analyze the bytecode of the classes.\n7. Use a tool like grep or findstr in Windows to filter the classes that are not abstract.\n\nHere is a general idea of how you can do it:\n\n```bash\n# Step 1: Download the source code of the project\nwget https://repo1.maven.org/maven2/org/typelevel/cats-core_3-2.10.0/cats-core_3-2.10.0-sources.jar\n\n# Step 2: Unzip the downloaded file\nunzip cats-core_3-2.10.0-sources.jar\n\n# Step 3: Navigate to the root directory of the project\ncd cats-core_3-2.10.0-sources/\n\n# Step 4: Use a tool like Javap or javap.exe in Windows to analyze the bytecode of the classes\n# For example, if you want to analyze the class cats.effect.IOApp\njavap -public -c cats.effect.IOApp > IOApp.txt\n\n# Step 5: Use a tool like grep or findstr in Windows to filter the classes that are not abstract\n# For example, to find non-abstract classes\ngrep -v \"abstract\" IOApp.txt\n\n# Step 6: Repeat the process for all classes\n```\n\nPlease note that this is a general idea and the actual implementation may vary depending on the specifics of the project and the tools used. Also, the process may not work if the project is not open source or if the classes are not in a format that can be analyzed with javap.",
+        "extracted_APIs_from_prediction": [
+            "maven.org/maven2/org/typelevel/cats-core_3-2.10.0/cats-core_3-2.10.0-sources.jar",
+            "10.0-sources.jar",
+            "10.0-sources/"
+        ],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [
+            "maven.org/maven2/org/typelevel/cats-core_3-2.10.0/cats-core_3-2.10.0-sources.jar",
+            "10.0-sources.jar",
+            "10.0-sources/"
+        ],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 3,
+        "model_confidence": 0.7020595073699951,
+        "failure_rate_for_APIs": 1.0,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

@@ -1,0 +1,38 @@
+{
+    "jar_name": "postgresql-42.3.3.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from postgresql-42.3.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from postgresql-42.3.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the PostgreSQL source code or any other external resources. However, based on the PostgreSQL documentation and the project structure, I can provide you with a list of some of the most relevant classes that are not abstract:\n\n1. `org.postgresql.core.BaseConnection`\n2. `org.postgresql.core.v3.QueryExecutorImpl`\n3. `org.postgresql.jdbc.PgConnection`\n4. `org.postgresql.jdbc.PgStatement`\n5. `org.postgresql.util.PSQLException`\n6. `org.postgresql.util.PSQLState`\n7. `org.postgresql.util.ServerInfo`\n8. `org.postgresql.util.Tuple`\n9. `org.postgresql.util.UserInfo`\n10. `org.postgresql.util.XmlParser`\n\nPlease note that this list is not exhaustive and may vary depending on the specific version and the project structure. Also, the actual implementation of these classes may vary and could be subject to change.",
+        "extracted_APIs_from_prediction": [
+            "org.postgresql.core.BaseConnection",
+            "org.postgresql.core.v3.QueryExecutorImpl",
+            "org.postgresql.jdbc.PgConnection",
+            "org.postgresql.jdbc.PgStatement",
+            "org.postgresql.util.PSQLException",
+            "org.postgresql.util.PSQLState",
+            "org.postgresql.util.ServerInfo",
+            "org.postgresql.util.Tuple",
+            "org.postgresql.util.UserInfo",
+            "org.postgresql.util.XmlParser"
+        ],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [
+            "org.postgresql.core.BaseConnection",
+            "org.postgresql.core.v3.QueryExecutorImpl",
+            "org.postgresql.jdbc.PgConnection",
+            "org.postgresql.jdbc.PgStatement",
+            "org.postgresql.util.PSQLException",
+            "org.postgresql.util.PSQLState",
+            "org.postgresql.util.ServerInfo",
+            "org.postgresql.util.Tuple",
+            "org.postgresql.util.UserInfo",
+            "org.postgresql.util.XmlParser"
+        ],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 10,
+        "model_confidence": 0.6673469543457031,
+        "failure_rate_for_APIs": 1.0,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

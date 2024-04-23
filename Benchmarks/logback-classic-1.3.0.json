@@ -1,0 +1,20 @@
+{
+    "jar_name": "logback-classic-1.3.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from logback-classic-1.3.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from logback-classic-1.3.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of a project to extract the class names. However, I can provide you with a general idea of how you can get the class names from a Java project.\n\n1. Open the project in an IDE like Eclipse or IntelliJ IDEA.\n2. Navigate to the package where the classes are located.\n3. Right-click on the package and select \"Find\" or \"Command + Shift + O\" on Mac.\n4. This will open a dialog box where you can type the class name and press \"Enter\".\n5. The class files will be listed in the dialog box.\n6. If the class is not abstract, it will have a line that says \"public\" or \"protected\" before the class name.\n\nRemember, the classes listed here are not the actual class names, but the names used in the code. The actual class names can be different based on the project structure and naming conventions.\n\nIf you want to get the actual class names programmatically, you can use Java Reflection API to get the list of classes in a package. Here is a simple example:\n\n```java\nimport java.lang.reflect.Modifier;\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Main {\n    public static void main(String[] args) {\n        String packageName = \"logback.classic.1.3.0\";\n        List<String> classes = getClasses(packageName);\n        for (String clazz : classes) {\n            System.out.println(clazz);\n        }\n    }\n\n    private static List<String> getClasses(String packageName) {\n        List<String> classes = new ArrayList<>();\n        try {\n            ClassLoader classLoader = Thread.currentThread().getContextClassLoader();\n            assert classLoader != null;\n            String path = packageName.replace('.', '/');\n            java.net.URL resource = classLoader.getResource(path);\n            assert resource != null;\n            File file = new File(resource.getFile());\n            for (File f : file.listFiles()) {\n                if (f.isDirectory()) {\n                    classes.addAll(getClasses(packageName + \".\" + f.getName()));\n                } else if (f.getName().endsWith(\".class\")) {\n                    String className = packageName + \".\" + f.getName().substring(0, f.getName().length() - 6);\n                    Class<?> clazz = Class.forName(className);\n                    if (!Modifier.isAbstract(clazz.getModifiers())) {\n                        classes.add(className);\n                    }\n                }\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n        return classes;\n    }\n}\n```\n\nThis code will list all non-abstract classes in the specified package and its subpackages. Please note that this code is just an example and may not work as expected in all scenarios. You need to adjust it according to your needs.",
+        "extracted_APIs_from_prediction": [
+            "3.0\";"
+        ],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [
+            "3.0\";"
+        ],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 1,
+        "model_confidence": 0.7676010131835938,
+        "failure_rate_for_APIs": 1.0,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

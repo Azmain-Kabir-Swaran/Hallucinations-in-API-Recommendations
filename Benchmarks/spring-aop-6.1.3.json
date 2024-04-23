@@ -1,0 +1,691 @@
+{
+    "jar_name": "spring-aop-6.1.3.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from spring-aop-6.1.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from spring-aop-6.1.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the Spring AOP 6.1.3 project or any other project files. However, I can provide you with a general idea of the classes that are part of Spring AOP and are not abstract.\n\nHere are some of the classes that are part of Spring AOP and are not abstract:\n\n1. AspectJExpressionPointcut\n2. AspectJExpressionPointcutAdvisor\n3. AspectJPointcut\n4. AspectJPointcutAdvisor\n5. AspectJExpressionPointcut\n6. AspectJPointcut\n7. AspectJExpressionPointcutAdvisor\n8. AspectJPointcutAdvisor\n9. AspectJExpressionPointcut\n10. AspectJPointcut\n11. AspectJExpressionPointcutAdvisor\n12. AspectJPointcutAdvisor\n13. AspectJExpressionPointcut\n14. AspectJPointcut\n15. AspectJExpressionPointcutAdvisor\n16. AspectJPointcutAdvisor\n17. AspectJExpressionPointcut\n18. AspectJPointcut\n19. AspectJExpressionPointcutAdvisor\n20. AspectJPointcutAdvisor\n21. AspectJExpressionPointcut\n22. AspectJPointcut\n23. AspectJExpressionPointcutAdvisor\n24. AspectJPointcutAdvisor\n25. AspectJExpressionPointcut\n26. AspectJPointcut\n27. AspectJExpressionPointcutAdvisor\n28. AspectJPointcutAdvisor\n29. AspectJExpressionPointcut\n30. AspectJPointcut\n31. AspectJExpressionPointcutAdvisor\n32. AspectJPointcutAdvisor\n33. AspectJExpressionPointcut\n34. AspectJPointcut\n35. AspectJExpressionPointcutAdvisor\n36. AspectJPointcutAdvisor\n37. AspectJExpressionPointcut\n38. AspectJPointcut\n39. AspectJExpressionPointcutAdvisor\n40. AspectJPointcutAdvisor\n41. AspectJExpressionPointcut\n42. AspectJPointcut\n43. AspectJExpressionPointcutAdvisor\n44. AspectJPointcutAdvisor\n45. AspectJExpressionPointcut\n46. AspectJPointcut\n47. AspectJExpressionPointcutAdvisor\n48. AspectJPointcutAdvisor\n49. AspectJExpressionPointcut\n50. AspectJPointcut\n\nPlease note that the actual list may vary depending on the version of Spring AOP you are using.",
+        "extracted_APIs_from_prediction": [
+            "AspectJExpressionPointcut",
+            "AspectJExpressionPointcutAdvisor",
+            "AspectJPointcut",
+            "AspectJPointcutAdvisor"
+        ],
+        "correct_API_predictions": [
+            "AspectJExpressionPointcut",
+            "AspectJExpressionPointcutAdvisor",
+            "AspectJPointcutAdvisor"
+        ],
+        "wrong_API_predictions": [
+            "AspectJPointcut"
+        ],
+        "number_of_correct_APIs": 3,
+        "number_of_wrong_APIs": 1,
+        "failure_rate_for_APIs": 0.25,
+        "model_confidence": 0.8520883321762085,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "AspectJExpressionPointcut": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcut\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcut\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs I'm an AI model, I don't have the capability to write Java code. But I can provide an example based on the given details, which you can run directly on your IDE if Spring-AOP library is properly set up. This example uses AspectJExpressionPointcut from Spring-Aop library to create a pointcut dynamically:\n\n```java\nimport org.aspectj.lang.Aspects;\nimport org.aspectj.lang.Pointcut;\nimport org.aspectj.lang.reflect.CodeSignature;\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\nimport org.springframework.util.Assert;\n\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* com.package..*(..))\");\n\n        CodeSignature signature = (CodeSignature) Aspects.aspectOf(pointcut);\n\n        System.out.println(\"Pointcut expression: \" + pointcut.getExpression());\n        System.out.println(\"Code signature: \" + signature.getMethod());\n    }\n}\n```\nHere, `pointcut` is set to execute all methods in package com.package. Please change com.package accordingly.\n\nThis example code can be run inside a Spring Boot application, with AspectJ expressions properly configured in Spring. The Spring AOP library uses AspectJ under the hood.\n\nThis is only a brief example. The library that you're using provides many other features and can serve as the backbone for various Java applications based on the specific requirements of your use case.",
+                "extracted_java_code_from_prediction": "import org.aspectj.lang.Aspects;\nimport org.aspectj.lang.Pointcut;\nimport org.aspectj.lang.reflect.CodeSignature;\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\nimport org.springframework.util.Assert;\n\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* com.package..*(..))\");\n\n        CodeSignature signature = (CodeSignature) Aspects.aspectOf(pointcut);\n\n        System.out.println(\"Pointcut expression: \" + pointcut.getExpression());\n        System.out.println(\"Code signature: \" + signature.getMethod());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.aspectj.lang.Aspects",
+                    "org.aspectj.lang.Pointcut",
+                    "org.aspectj.lang.reflect.CodeSignature",
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+                    "org.springframework.util.Assert"
+                ],
+                "correct_FQN_predictions": [
+                    "org.aspectj.lang.reflect.CodeSignature",
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+                    "org.springframework.util.Assert"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.aspectj.lang.Aspects",
+                    "org.aspectj.lang.Pointcut"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.4,
+                "model_confidence": 0.5197336077690125,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,32] package org.aspectj.lang.reflect does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n  symbol:   class CodeSignature\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,36] cannot find symbol\n  symbol:   class CodeSignature\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,51] cannot find symbol\n  symbol:   variable Aspects\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.707 s\n[INFO] Finished at: 2024-04-17T00:04:14-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,32] package org.aspectj.lang.reflect does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n[ERROR]   symbol:   class CodeSignature\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,36] cannot find symbol\n[ERROR]   symbol:   class CodeSignature\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,51] cannot find symbol\n[ERROR]   symbol:   variable Aspects\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 51,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 32,
+                                "message": "package org.aspectj.lang.reflect does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 36,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.aspectj.lang does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 24,
+                                "message": "package org.aspectj.lang does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcut\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, let's create a complete, correct and compilable code that uses \"AspectJExpressionPointcut\" from the \"spring-aop-6.1.3\" project. This code must have the necessary imports in place to work correctly.\n\n```Java\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // Creating object of AspectJExpressionPointcut class\n        AspectJExpressionPointcut aspectJExpressionPointcut = new AspectJExpressionPointcut();\n\n        // Setting the expression of the pointcut\n        aspectJExpressionPointcut.setExpression(\"execution(public void com.sample.MyClass.*(..))\");\n\n        // Checking if a specific method matches the pointcut expression\n        boolean isMatch = aspectJExpressionPointcut.matchesMethodExecution(\n            MyClass.class.getMethod(\"myMethod\", String.class, int.class)\n        );\n\n        // Printing the result\n        System.out.println(\"Does the method match the pointcut expression? \" + isMatch);\n    }\n}\n```\nIn this code, we create an instance of \"AspectJExpressionPointcut\" and set an expression which is a method execution pointcut for the method `myMethod` on class `MyClass`.\n\nThen, we use the method `matchesMethodExecution()` to check if the pointcut expression matches a method execution on \"MyClass\".\n\nRemember to replace `MyClass` and `myMethod` with your actual class and method names respectively. \n\nPlease note, to run this program, you would also need to import \"MyClass\" into the same directory.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5756886601448059,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcut\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs I can't add dependencies in a real scenario without full context, I will provide you with a simple example of using `AspectJExpressionPointcut`. Remember, if any class or API from `spring-aop-6.1.3` is not included in your code, your project would not compile or run. Also, the import statements are written with explanations and do not require the `spring-aop-6.1.3` library or any other dependencies.\n\nPlease adapt the following code according to your needs, for example by providing the specific method for pointcut expression:\n\n```java\nimport org.aspectj.lang.ProceedingJoinPoint;\nimport org.aspectj.lang.s;\n\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"within(java.lang.String)\");  // Set the pointcut expression, for example, for all methods in String class.\n        MethodExecution aMethod = new MethodExecution(); // Assume it's a method that you want to wrap\n\n        if (pointcut.matches(aMethod, Main.class.getName(), \"main\")) {\n            System.out.println(\"Matched\");\n        } else {\n            System.out.println(\"Not matched\");\n        }\n    }\n}\n```\nRemember that this code will compile and run in any environment having JDK 1.5 or higher and AspectJ available. If you don't have AspectJ in your project, you have to add it as Maven or Gradle dependency. \n\nThis code doesn't perform the actual wrapping around the method execution as `AspectJExpressionPointcut` does not provide such functionality. For that, you should probably create your own aspect or use an AOP library such as Spring AOP.\n\nPlease update your question or provide more details to get a more precise solution.",
+                "extracted_java_code_from_prediction": "import org.aspectj.lang.ProceedingJoinPoint;\nimport org.aspectj.lang.s;\n\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"within(java.lang.String)\");  // Set the pointcut expression, for example, for all methods in String class.\n        MethodExecution aMethod = new MethodExecution(); // Assume it's a method that you want to wrap\n\n        if (pointcut.matches(aMethod, Main.class.getName(), \"main\")) {\n            System.out.println(\"Matched\");\n        } else {\n            System.out.println(\"Not matched\");\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.aspectj.lang.ProceedingJoinPoint",
+                    "org.aspectj.lang.s"
+                ],
+                "correct_FQN_predictions": [
+                    "org.aspectj.lang.ProceedingJoinPoint"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.aspectj.lang.s"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5398489832878113,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,9] cannot find symbol\n  symbol:   class AspectJExpressionPointcut\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,50] cannot find symbol\n  symbol:   class AspectJExpressionPointcut\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n  symbol:   class MethodExecution\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,39] cannot find symbol\n  symbol:   class MethodExecution\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.690 s\n[INFO] Finished at: 2024-04-17T00:04:15-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,9] cannot find symbol\n[ERROR]   symbol:   class AspectJExpressionPointcut\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,50] cannot find symbol\n[ERROR]   symbol:   class AspectJExpressionPointcut\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n[ERROR]   symbol:   class MethodExecution\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,39] cannot find symbol\n[ERROR]   symbol:   class MethodExecution\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 50,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 24,
+                                "message": "package org.aspectj.lang does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 24,
+                                "message": "package org.aspectj.lang does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcut\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a sample Java code that makes use of AspectJExpressionPointcut from spring-aop-6.1.3 project:\n\nTo use this, you must have AspectJ and Spring AOP libraries properly set up in your project and have the necessary dependencies and classes/methods already defined. You may also need a build system such as Maven or Gradle to handle dependencies.\n\nHere is the Main.java file:\n\n```java\nimport org.aspectj.lang.annotation.*;\nimport org.aspectj.lang.JoinPoint;\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\n\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* *(..))\");\n\n        System.out.println(\"Pointcut matches: \" + pointcut.matches(Main.class, \"methodName\", new Object[0], null));\n    }\n\n    @Aspect\n    static class Aspect {\n        @Pointcut(\"execution(* *(..))\")\n        public void anyMethod() {}\n\n        @Before(\"anyMethod()\")\n        public void before(JoinPoint joinPoint) {\n            System.out.println(\"Called method: \" + joinPoint.getSignature().getName());\n        }\n    }\n\n    public void methodName() {\n        System.out.println(\"I am a method.\");\n    }\n}\n```\n\nIn this example, we are using the `AspectJExpressionPointcut` to define a pointcut that will match any method. Then we are using the pointcut in an aspect that will output the name of the method being called. Finally, we are testing the pointcut with the `methodName` method.\n\nKeep in mind that the exact method signature and package requirements may vary depending on your specific use case and the rest of your Spring AOP configuration.",
+                "extracted_java_code_from_prediction": "import org.aspectj.lang.annotation.*;\nimport org.aspectj.lang.JoinPoint;\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\n\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* *(..))\");\n\n        System.out.println(\"Pointcut matches: \" + pointcut.matches(Main.class, \"methodName\", new Object[0], null));\n    }\n\n    @Aspect\n    static class Aspect {\n        @Pointcut(\"execution(* *(..))\")\n        public void anyMethod() {}\n\n        @Before(\"anyMethod()\")\n        public void before(JoinPoint joinPoint) {\n            System.out.println(\"Called method: \" + joinPoint.getSignature().getName());\n        }\n    }\n\n    public void methodName() {\n        System.out.println(\"I am a method.\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.aspectj.lang.annotation.*",
+                    "org.aspectj.lang.JoinPoint",
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut"
+                ],
+                "correct_FQN_predictions": [
+                    "org.aspectj.lang.JoinPoint",
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.aspectj.lang.annotation.*"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.6472201347351074,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,1] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[22,28] cannot find symbol\n  symbol:   class JoinPoint\n  location: class org.example.Main.Aspect\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,6] incompatible types: org.example.Main.Aspect cannot be converted to java.lang.annotation.Annotation\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[18,10] cannot find symbol\n  symbol:   class Pointcut\n  location: class org.example.Main.Aspect\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,10] cannot find symbol\n  symbol:   class Before\n  location: class org.example.Main.Aspect\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[13,72] incompatible types: java.lang.Class<org.example.Main> cannot be converted to java.lang.reflect.Method\n[INFO] 7 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.761 s\n[INFO] Finished at: 2024-04-17T00:04:17-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,24] package org.aspectj.lang does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,1] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[22,28] cannot find symbol\n[ERROR]   symbol:   class JoinPoint\n[ERROR]   location: class org.example.Main.Aspect\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,6] incompatible types: org.example.Main.Aspect cannot be converted to java.lang.annotation.Annotation\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[18,10] cannot find symbol\n[ERROR]   symbol:   class Pointcut\n[ERROR]   location: class org.example.Main.Aspect\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[21,10] cannot find symbol\n[ERROR]   symbol:   class Before\n[ERROR]   location: class org.example.Main.Aspect\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java:[13,72] incompatible types: java.lang.Class<org.example.Main> cannot be converted to java.lang.reflect.Method\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 24,
+                                "message": "package org.aspectj.lang does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 6,
+                                "message": "incompatible types: org.example.Main.Aspect cannot be converted to java.lang.annotation.Annotation"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 1,
+                                "message": "package org.aspectj.lang.annotation does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 10,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 22,
+                                "column": 28,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 72,
+                                "message": "incompatible types: java.lang.Class<org.example.Main> cannot be converted to java.lang.reflect.Method"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 10,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcut\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic example showing how you might use AspectJExpressionPointcut with Spring. This example includes the necessary dependencies and the class structure to make this work:\n\n```java\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\nimport org.springframework.aop.Pointcut;\nimport org.springframework.aop.support.AopUtils;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* set*(int))\");\n        \n        Pointcut pc = AopUtils.canonical(pointcut);\n        \n        System.out.println(pc.getClass().getName());\n        System.out.println(pc.getExpression());\n    }\n}\n```\n\nIn this example, I have created a new instance of `AspectJExpressionPointcut` and set a method execution pointcut expression. This matches any method named \"set\" that takes a single integer argument. This may not be a useful example, but it shows how you can use AspectJExpressionPointcut with the Spring AOP library.\n\nPlease replace 'execution(* set*(int))' with your actual AspectJ pointcut expression for your specific use case. This example does not include the specific logic, you need to add it according to your requirements.",
+                "extracted_java_code_from_prediction": "import org.springframework.aop.aspectj.AspectJExpressionPointcut;\nimport org.springframework.aop.Pointcut;\nimport org.springframework.aop.support.AopUtils;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* set*(int))\");\n        \n        Pointcut pc = AopUtils.canonical(pointcut);\n        \n        System.out.println(pc.getClass().getName());\n        System.out.println(pc.getExpression());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+                    "org.springframework.aop.Pointcut",
+                    "org.springframework.aop.support.AopUtils"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+                    "org.springframework.aop.Pointcut"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.aop.support.AopUtils"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.49191752076148987,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,31] cannot find symbol\n  symbol:   method canonical(org.springframework.aop.aspectj.AspectJExpressionPointcut)\n  location: class org.springframework.aop.support.AopUtils\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_5/Wrapper/src/main/java/org/example/Main.java:[17,30] cannot find symbol\n  symbol:   method getExpression()\n  location: variable pc of type org.springframework.aop.Pointcut\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.650 s\n[INFO] Finished at: 2024-04-17T00:04:18-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,31] cannot find symbol\n[ERROR]   symbol:   method canonical(org.springframework.aop.aspectj.AspectJExpressionPointcut)\n[ERROR]   location: class org.springframework.aop.support.AopUtils\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_5/Wrapper/src/main/java/org/example/Main.java:[17,30] cannot find symbol\n[ERROR]   symbol:   method getExpression()\n[ERROR]   location: variable pc of type org.springframework.aop.Pointcut\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 31,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcut/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 30,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "AspectJExpressionPointcutAdvisor": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a complete, correct and compilable Java code that uses \"AspectJExpressionPointcutAdvisor\" API from \"spring-aop-6.1.3\" project:\n\n```Java\nimport org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor;\nimport org.springframework.aop.support.DefaultPointcutAdvisor;\nimport org.springframework.aop.Advisor;\n\npublic class Main {\n    public static void main(String[] args) {\n        Advisor advisor = new AspectJExpressionPointcutAdvisor(\"execution(* com..*(..))\");\n        System.out.println(advisor);\n    }\n}\n```\n\nThis code does the following:\n1. Import the necessary classes from the Spring framework, specifically \"org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor\" and \"org.springframework.aop.support.DefaultPointcutAdvisor\".\n2. Define a main method in the `Main` class.\n3. Create an instance of `AspectJExpressionPointcutAdvisor`. The constructor requires a string representing the pointcut expression - in this case, one that matches all methods in all classes within the `com` package (or deeper).\n4. The application prints out the advisor, using its `toString` method.\n\nNote that it's assumed that you have the Spring AOP dependencies correctly configured in your project build configuration, including the correct version (6.1.3 in this case), and that you're running this in an environment where that version of Spring is available. The package structure of the code may differ based on how you structured your own code.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.48444485664367676,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nI'm afraid it's not possible to provide an exact code due to several conditions you mentioned:\n\n1. You need to use \"AspectJExpressionPointcutAdvisor\" API from \"spring-aop-6.1.3\" project. But \"spring-aop-6.1.3\" does not have an API called \"AspectJExpressionPointcutAdvisor\".\n\n2. We can't import APIs whose import statements require adding new dependencies. As you mentioned, we only use Spring's AOP module in the mentioned version. So, Spring's AOP only provides \"AspectJExpressionPointcutAdvisor\" class.\n\nHowever, here's a simplified example of using AspectJExpressionPointcutAdvisor with Spring's AOP:\n\nLet's start by creating a simple service class:\n\n```java\npackage com.example.service;\n\npublic class MyService {\n    public void doSomething() {\n        System.out.println(\"Doing something...\");\n    }\n}\n```\n\nThen we can create an aspect:\n\n```java\npackage com.example.aspect;\n\nimport org.aspectj.lang.annotation.Aspect;\nimport org.aspectj.lang.annotation.Before;\nimport org.aspectj.lang.annotation.Pointcut;\n\n@Aspect\npublic class LoggingAspect {\n\n    @Pointcut(\"execution(* com.example.service.MyService.*(..))\")\n    public void logExecution() {}\n\n    @Before(\"logExecution()\")\n    public void beforeLog() {\n        System.out.println(\"Before method execution...\");\n    }\n}\n```\n\nNow, let's setup the configuration for Spring to utilize the AspectJExpressionPointcutAdvisor, along with the aspects defined:\n\n```java\npackage com.example.config;\n\nimport com.example.aspect.LoggingAspect;\nimport org.springframework.aop.Advisor;\nimport org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\nimport org.springframework.context.annotation.EnableAspectJAutoProxy;\n\n@Configuration\n@EnableAspectJAutoProxy\npublic class AppConfig {\n\n    @Bean\n    public LoggingAspect loggingAspect() {\n        return new LoggingAspect();\n    }\n\n    @Bean\n    public Advisor advisor() {\n        AspectJExpressionPointcutAdvisor advisor = new AspectJExpressionPointcutAdvisor();\n        advisor.setExpression(\"execution(* com.example.service.MyService.*(..))\");\n        advisor.setAdvice(loggingAspect());\n        return advisor;\n    }\n}\n```\n\nAnd finally, the main class:\n\n```java\npackage com.example;\n\nimport com.example.service.MyService;\nimport org.springframework.context.annotation.AnnotationConfigApplicationContext;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);\n\n        MyService myService = context.getBean(MyService.class);\n        myService.doSomething();\n    }\n}\n```\n\nIn this code, when you run the Main class, both \"Before method execution...\" and \"Doing something...\" should print.\n\nPlease note that you would need to replace package names and service invocation according to your actual project. And you would need to use the Maven/Gradle to include the Spring library and compile the code.",
+                "extracted_java_code_from_prediction": "package com.example.service;\n\npublic class MyService {\n    public void doSomething() {\n        System.out.println(\"Doing something...\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.7497735023498535,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a Java code that uses AspectJExpressionPointcutAdvisor from the spring-aop-6.1.3 project.\n\n```Java\nimport org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor;\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // Create an instance of the AspectJExpressionPointcut\n        AspectJExpressionPointcut myPointcut = new AspectJExpressionPointcut();\n\n        // Define the expression\n        myPointcut.setExpression(\"execution(* com.example..*(..))\");\n\n        // Create an instance of the AspectJExpressionPointcutAdvisor\n        AspectJExpressionPointcutAdvisor advisor = new AspectJExpressionPointcutAdvisor();\n\n        // Set the pointcut\n        advisor.setPointcut(myPointcut);\n\n        System.out.println(advisor.getPointcut()); // this will print out the expression used\n    }\n}\n```\n\nHere, we are simply defining an expression that will be matched against the advice to create an advisor. But remember, without any actual code that matches the expression, this will do nothing. You'll also need to include the spring-aop dependency in your build, like:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-aop</artifactId>\n        <version>6.1.3</version>\n    </dependency>\n</dependencies>\n```\n\nRemember that you also might need to include the spring-aop.jar in your classpath and have the proper jars for aspectjweaver and spring-core.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5233976244926453,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\n```java\nimport org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor;\nimport org.springframework.aop.support.DefaultIntroductionAdvisor;\nimport org.springframework.aop.support.DefaultIntroductionInterceptor;\n\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcutAdvisor advisor = new AspectJExpressionPointcutAdvisor();\n        advisor.setExpression(\"execution(void com.acme.somePackage.*.*(..))\");\n        advisor.setAdvice(new DefaultIntroductionAdvisor(new DefaultIntroductionInterceptor()));\n    }\n}\n```\n\nNote: This is the simplest possible example using the AspectJExpressionPointcutAdvisor API. The AspectJExpressionPointcutAdvisor class and its methods are from the \"spring-aop-6.1.3\" project.\n\nIn the example, `execution(void com.acme.somePackage.*.*(..))` is the pointcut expression used to define the method in the package \"somePackage\" to be used by the advisory, and `DefaultIntroductionAdvisor` and `DefaultIntroductionInterceptor` are part of the Spring framework for advising an object with additional methods/information.\n\nYou may need to adjust the `com.acme.somePackage`, `com.acme.somePackage.*`, and other expressions depending on what you are trying to accomplish.",
+                "extracted_java_code_from_prediction": "import org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor;\nimport org.springframework.aop.support.DefaultIntroductionAdvisor;\nimport org.springframework.aop.support.DefaultIntroductionInterceptor;\n\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcutAdvisor advisor = new AspectJExpressionPointcutAdvisor();\n        advisor.setExpression(\"execution(void com.acme.somePackage.*.*(..))\");\n        advisor.setAdvice(new DefaultIntroductionAdvisor(new DefaultIntroductionInterceptor()));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor",
+                    "org.springframework.aop.support.DefaultIntroductionAdvisor",
+                    "org.springframework.aop.support.DefaultIntroductionInterceptor"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor",
+                    "org.springframework.aop.support.DefaultIntroductionAdvisor"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.aop.support.DefaultIntroductionInterceptor"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.4510471224784851,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,39] cannot find symbol\n  symbol:   class DefaultIntroductionInterceptor\n  location: package org.springframework.aop.support\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,62] cannot find symbol\n  symbol:   class DefaultIntroductionInterceptor\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,27] incompatible types: org.springframework.aop.support.DefaultIntroductionAdvisor cannot be converted to org.aopalliance.aop.Advice\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.708 s\n[INFO] Finished at: 2024-04-17T00:05:07-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,39] cannot find symbol\n[ERROR]   symbol:   class DefaultIntroductionInterceptor\n[ERROR]   location: package org.springframework.aop.support\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,62] cannot find symbol\n[ERROR]   symbol:   class DefaultIntroductionInterceptor\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,27] incompatible types: org.springframework.aop.support.DefaultIntroductionAdvisor cannot be converted to org.aopalliance.aop.Advice\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 27,
+                                "message": "incompatible types: org.springframework.aop.support.DefaultIntroductionAdvisor cannot be converted to org.aopalliance.aop.Advice"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJExpressionPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 62,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJExpressionPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe problem provided seems to be incomplete or ambiguous. Could you please provide more specifics on what kind of functionality you'd like to see in the code and what kind of AOP (Aspect-Oriented Programming) functionality you're looking to accomplish with AspectJExpressionPointcutAdvisor? I'll proceed assuming you're looking for a code snippet that advises methods in a specific bean (e.g., \"myBean\") and advises the execution of any method with a certain signature (\"execution(* the.required.method.signature)\").\n\n```Java\nimport org.aspectj.lang.annotation.Aspect;\nimport org.aspectj.langexpr.AspectJExpressionPointcutAdvisor;\nimport org.springframework.aop.Pointcut;\nimport org.springframework.aop.support.DefaultPointcutAdvisor;\nimport org.springframework.beans.BeansException;\nimport org.springframework.context.ApplicationContext;\nimport org.springframework.context.ApplicationContextAware;\n\n@Aspect\npublic class Main implements ApplicationContextAware {\n\n    private ApplicationContext context;\n\n    @Override\n    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {\n        this.context = applicationContext;\n        addAdvisor(\"myBean\", \"execution(* the.required.method.signature)\");\n    }\n\n    private void addAdvisor(String beanName, String expression) {\n        Object bean = context.getBean(beanName);\n        Pointcut pointcut = new AspectJExpressionPointcut(expression);\n        DefaultPointcutAdvisor advisor = new DefaultPointcutAdvisor(pointcut);\n        advisor.setAdvice(bean);\n        context.getBean(\"advisorRetrievalHelper\", AdvisorRetrievalHelper.class).addAdvisor(advisor);\n    }\n}\n```\n\nRemember to replace `\"execution(* the.required.method.signature)\"` with the specific method signature you need to advise. This will inject the aspect with `myBean` whenever this method signature is executed.\n\nAlso, if you're trying to implement an advice like a logging aspect, you'd have to set an advice (a method) that performs the logging functionality. There are multiple ways to do it, and this example is just a simplification. Depending on your needs, you might also want to consider using the Spring framework's `@Before`, `@After`, and `@Around` annotations from the AspectJ library, which can be more explicit and clear about when a method should be advised, rather than relying on expression matching. \n\nRemember to add your aspects correctly into the context, and consider how you want to manage aspects that want to advise multiple beans. This example assumes you are using Spring. If you're not using Spring, you may need to use a different approach to apply aspects. \n\nKindly, provide more details if the above approach does not work or provide an explanation about the problem you're facing in depth so that I can help you in the best possible way.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5212323069572449,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "AspectJPointcutAdvisor": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"AspectJPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\n```java\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\nimport org.springframework.aop.support.AopUtils;\nimport org.springframework.aop.support.JdkRegexpMethodPointcut;\nimport org.springframework.aop.support.SyntheticMethodMatcher;\nimport org.springframework.aop.support.StaticMethodMatcherPointcut;\nimport org.springframework.aop.Advisor;\nimport org.springframework.aop.support.ClassFilterAdapter;\nimport org.springframework.aop.support.NameMatchMethodPointcut;\nimport org.springframework.aop.support.DefaultPointcutAdvisor;\nimport org.springframework.aop.support.DefaultClassFilter;\n\nimport java.lang.reflect.Method;\n\npublic class Main {\n    public static void main(String[] args) {\n        // AspectJ Expression Pointcut\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* com.example.service.*Service.*(..))\");\n        \n        // NameMatchMethodPointcut\n        NameMatchMethodPointcut methodPointcut = new NameMatchMethodPointcut();\n        methodPointcut.addName(\"invoke\");\n\n        // StaticMethodMatcherPointcut\n        StaticMethodMatcherPointcut staticMatcherPointcut = new StaticMethodMatcherPointcut() {\n            @Override\n            public boolean matches(Method method, Class targetClass) {\n                return method.getName().startsWith(\"start\") || method.getName().startsWith(\"stop\");\n            }\n        };\n\n        // SyntheticMethodMatcher\n        SyntheticMethodMatcher syntheticMatcher = new SyntheticMethodMatcher() {\n            @Override\n            public boolean matches(Method method) {\n                return AopUtils.isSyntheticMethod(method);\n            }\n        };\n\n        // JdkRegexpMethodPointcut\n        JdkRegexpMethodPointcut regexpMethodPointcut = new JdkRegexpMethodPointcut();\n        regexpMethodPointcut.setPattern(\".*start.*\");\n\n        // ClassFilterAdapter\n        ClassFilterAdapter classFilterAdapter = new ClassFilterAdapter(new DefaultClassFilter() {\n            @Override\n            public boolean matches(Class targetClass) {\n                return targetClass.getSimpleName().startsWith(\"Service\");\n            }\n        });\n\n        // Advisor\n        Advisor advisor = new DefaultPointcutAdvisor(pointcut, classFilterAdapter);\n\n        // Other way is by using AspectJPointcutAdvisor from spring-aop-6.1.3\n        // AspectJPointcutAdvisor aspectJPointcutAdvisor = new AspectJPointcutAdvisor(pointcut);\n\n        System.out.println(\"Pointcut classes compiled correctly.\");\n    }\n}\n```\n\nThe code snippet above shows various examples of Spring AOP pointcuts and advisors, their creation, and usage in a main method. Note that \"spring-aop-6.1.3\" isn't included in the dependencies. Thus, we cannot use AspectJPointcutAdvisor directly here. To use AspectJPointcutAdvisor from the \"spring-aop-6.1.3\", you will need to add the Spring AOP dependency in your Maven project or Gradle project.",
+                "extracted_java_code_from_prediction": "import org.springframework.aop.aspectj.AspectJExpressionPointcut;\nimport org.springframework.aop.support.AopUtils;\nimport org.springframework.aop.support.JdkRegexpMethodPointcut;\nimport org.springframework.aop.support.SyntheticMethodMatcher;\nimport org.springframework.aop.support.StaticMethodMatcherPointcut;\nimport org.springframework.aop.Advisor;\nimport org.springframework.aop.support.ClassFilterAdapter;\nimport org.springframework.aop.support.NameMatchMethodPointcut;\nimport org.springframework.aop.support.DefaultPointcutAdvisor;\nimport org.springframework.aop.support.DefaultClassFilter;\n\nimport java.lang.reflect.Method;\n\npublic class Main {\n    public static void main(String[] args) {\n        // AspectJ Expression Pointcut\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* com.example.service.*Service.*(..))\");\n        \n        // NameMatchMethodPointcut\n        NameMatchMethodPointcut methodPointcut = new NameMatchMethodPointcut();\n        methodPointcut.addName(\"invoke\");\n\n        // StaticMethodMatcherPointcut\n        StaticMethodMatcherPointcut staticMatcherPointcut = new StaticMethodMatcherPointcut() {\n            @Override\n            public boolean matches(Method method, Class targetClass) {\n                return method.getName().startsWith(\"start\") || method.getName().startsWith(\"stop\");\n            }\n        };\n\n        // SyntheticMethodMatcher\n        SyntheticMethodMatcher syntheticMatcher = new SyntheticMethodMatcher() {\n            @Override\n            public boolean matches(Method method) {\n                return AopUtils.isSyntheticMethod(method);\n            }\n        };\n\n        // JdkRegexpMethodPointcut\n        JdkRegexpMethodPointcut regexpMethodPointcut = new JdkRegexpMethodPointcut();\n        regexpMethodPointcut.setPattern(\".*start.*\");\n\n        // ClassFilterAdapter\n        ClassFilterAdapter classFilterAdapter = new ClassFilterAdapter(new DefaultClassFilter() {\n            @Override\n            public boolean matches(Class targetClass) {\n                return targetClass.getSimpleName().startsWith(\"Service\");\n            }\n        });\n\n        // Advisor\n        Advisor advisor = new DefaultPointcutAdvisor(pointcut, classFilterAdapter);\n\n        // Other way is by using AspectJPointcutAdvisor from spring-aop-6.1.3\n        // AspectJPointcutAdvisor aspectJPointcutAdvisor = new AspectJPointcutAdvisor(pointcut);\n\n        System.out.println(\"Pointcut classes compiled correctly.\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+                    "org.springframework.aop.support.AopUtils",
+                    "org.springframework.aop.support.JdkRegexpMethodPointcut",
+                    "org.springframework.aop.support.SyntheticMethodMatcher",
+                    "org.springframework.aop.support.StaticMethodMatcherPointcut",
+                    "org.springframework.aop.Advisor",
+                    "org.springframework.aop.support.ClassFilterAdapter",
+                    "org.springframework.aop.support.NameMatchMethodPointcut",
+                    "org.springframework.aop.support.DefaultPointcutAdvisor",
+                    "org.springframework.aop.support.DefaultClassFilter",
+                    "java.lang.reflect.Method"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+                    "org.springframework.aop.support.JdkRegexpMethodPointcut",
+                    "org.springframework.aop.support.StaticMethodMatcherPointcut",
+                    "org.springframework.aop.Advisor",
+                    "org.springframework.aop.support.NameMatchMethodPointcut",
+                    "org.springframework.aop.support.DefaultPointcutAdvisor"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.aop.support.AopUtils",
+                    "org.springframework.aop.support.SyntheticMethodMatcher",
+                    "org.springframework.aop.support.ClassFilterAdapter",
+                    "org.springframework.aop.support.DefaultClassFilter",
+                    "java.lang.reflect.Method"
+                ],
+                "number_of_correct_FQNs": 6,
+                "number_of_wrong_FQNs": 5,
+                "failure_rate_for_FQNs": 0.45454545454545453,
+                "model_confidence": 0.6689382791519165,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,39] cannot find symbol\n  symbol:   class SyntheticMethodMatcher\n  location: package org.springframework.aop.support\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,39] cannot find symbol\n  symbol:   class ClassFilterAdapter\n  location: package org.springframework.aop.support\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[13,39] cannot find symbol\n  symbol:   class DefaultClassFilter\n  location: package org.springframework.aop.support\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[24,23] cannot find symbol\n  symbol:   method addName(java.lang.String)\n  location: variable methodPointcut of type org.springframework.aop.support.NameMatchMethodPointcut\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[35,9] cannot find symbol\n  symbol:   class SyntheticMethodMatcher\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[35,55] cannot find symbol\n  symbol:   class SyntheticMethodMatcher\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[36,13] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[38,32] cannot find symbol\n  symbol:   method isSyntheticMethod(java.lang.reflect.Method)\n  location: class org.springframework.aop.support.AopUtils\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[47,9] cannot find symbol\n  symbol:   class ClassFilterAdapter\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[47,53] cannot find symbol\n  symbol:   class ClassFilterAdapter\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[47,76] cannot find symbol\n  symbol:   class DefaultClassFilter\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[48,13] method does not override or implement a method from a supertype\n[INFO] 12 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.721 s\n[INFO] Finished at: 2024-04-17T00:06:00-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,39] cannot find symbol\n[ERROR]   symbol:   class SyntheticMethodMatcher\n[ERROR]   location: package org.springframework.aop.support\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,39] cannot find symbol\n[ERROR]   symbol:   class ClassFilterAdapter\n[ERROR]   location: package org.springframework.aop.support\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[13,39] cannot find symbol\n[ERROR]   symbol:   class DefaultClassFilter\n[ERROR]   location: package org.springframework.aop.support\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[24,23] cannot find symbol\n[ERROR]   symbol:   method addName(java.lang.String)\n[ERROR]   location: variable methodPointcut of type org.springframework.aop.support.NameMatchMethodPointcut\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[35,9] cannot find symbol\n[ERROR]   symbol:   class SyntheticMethodMatcher\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[35,55] cannot find symbol\n[ERROR]   symbol:   class SyntheticMethodMatcher\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[36,13] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[38,32] cannot find symbol\n[ERROR]   symbol:   method isSyntheticMethod(java.lang.reflect.Method)\n[ERROR]   location: class org.springframework.aop.support.AopUtils\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[47,9] cannot find symbol\n[ERROR]   symbol:   class ClassFilterAdapter\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[47,53] cannot find symbol\n[ERROR]   symbol:   class ClassFilterAdapter\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[47,76] cannot find symbol\n[ERROR]   symbol:   class DefaultClassFilter\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java:[48,13] method does not override or implement a method from a supertype\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 38,
+                                "column": 32,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 47,
+                                "column": 76,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 47,
+                                "column": 53,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 47,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 24,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 35,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 36,
+                                "column": 13,
+                                "message": "method does not override or implement a method from a supertype"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 35,
+                                "column": 55,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 48,
+                                "column": 13,
+                                "message": "method does not override or implement a method from a supertype"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo create an AOP-based application in Spring framework, we need a few pieces of code and configuration. Here's an example of an AOP code which advises all methods in a class with logging:\n\n1. Create an interface that will define a signature to be advised\n\n```java\npublic interface IWorkout {\n    void doSomething();\n}\n```\n\n2. Create the implementation of the interface, which will be our advised target:\n\n```java\npublic class Workout implements IWorkout {\n    @Override\n    public void doSomething() {\n        System.out.println(\"Running!\");\n    }\n}\n```\n\n3. Create an aspect for logging:\n\n```java\nimport org.aspectj.lang.JoinPoint;\nimport org.aspectj.lang.annotation.Aspect;\nimport org.aspectj.langlang.annotation.Before;\n\n@Aspect\npublic class LoggingAspect {\n\n    // The JoinPoint parameter 'joinPoint' represents the point in the program that has been called\n    // The @Before annotation tells AspectJ to run this method before any method call made to Workout\n    // The execution(*) represents all method calls. We can narrow this down to specific methods or package calls as needed\n    @Before(\"execution(* *(..))\")\n    public void logBefore(JoinPoint joinPoint) {\n        System.out.println(\"Method called: \" + joinPoint.getSignature().getName());\n    }\n}\n```\n\n4. The main class of the application:\n\n```java\nimport org.springframework.aop.framework.ProxyFactoryBean;\nimport org.springframework.aop.support.AopUtils;\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\nimport org.springframework.aop.aspectj.AspectJPointcutAdvisor;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create our target (the object we want to operate on)\n        Workout target = new Workout();\n\n        // Create AspectJ expression pointcut\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* *(..))\");  // The expression represents any method call\n\n        // Create aspect advisor\n        AspectJPointcutAdvisor advisor = new AspectJPointcutAdvisor(pointcut, new LoggingAspect());\n\n        // Wrap the target bean with an advisor\n        ProxyFactoryBean pfb = new ProxyFactoryBean();\n        pfb.setTarget(target);\n        pfb.setInterceptorNames(new String[] { \"<name of your interceptor>\" });\n        AopUtils.getSingletonInstance(advisor);\n        pfb.setInterceptorNames(new String[] { advisor.getName() });\n\n        // Obtain the advised bean\n        Workout advised = (Workout)pfb.getObject();\n\n        // The bean can now be treated as our target class\n        advised.doSomething();\n    }\n}\n```\nThis code uses Spring's AspectJ-based AOP features to advise every method call on the `Workout` class with logging.\n\nPlease note that AspectJ is part of Java EE server containers, not part of the standard JDK and JRE. In order to compile it, you need to add AspectJ compiler and runtime to your classpath:\n```xml\n<dependency>\n    <groupId>org.aspectj</groupId>\n    <artifactId>aspectjtools</artifactId>\n    <version>1.8.8</version>\n    <scope>provided</scope>\n</dependency>\n<dependency>\n    <groupId>org.aspectj</groupId>\n    <artifactId>aspectjrt</artifactId>\n    <version>1.8.8</version>\n</dependency>\n```\nAnd these dependencies are already available in the Spring's Maven repository (Spring libraries are managed and uploaded to Maven central and thus Spring AOP is available there). The versions of these dependencies need to be the latest versions compatible with your Spring's version.",
+                "extracted_java_code_from_prediction": "public interface IWorkout {\n    void doSomething();\n}",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6852846145629883,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, I'm an AI model and I don't have the capability to provide a Java application compiled from scratch. However, here's a simple example of how an AspectJPointcutAdvisor might be implemented in a Spring environment.\n\nPlease note that this example assumes you have the `spring-context` dependency in your project.\n\n```Java\nimport org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;\nimport org.springframework.aop.support.StaticMethodMatcherPointcutAdvisor;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.context.annotation.Configuration;\n\n@Configuration\npublic class MyConfig {\n\n    @Bean\n    public MyBean myBean(){\n        return new MyBean();\n    }\n\n    @Bean\n    public StaticMethodMatcherPointcutAdvisor myAdvisor(){\n        StaticMethodMatcherPointcutAdvisor advisor = new StaticMethodMatcherPointcutAdvisor();\n        advisor.setAdvice(new MyAdvice());\n        advisor.setAdviceTypes(ADVICE_TYPE);\n        advisor.setPointcut(new MyPointcut());\n        return advisor;\n    }\n\n    @Bean\n    public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {\n        DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator = new DefaultAdvisorAutoProxyCreator();\n        defaultAdvisorAutoProxyCreator.setProxyTargetClass(true);\n        return defaultAdvisorAutoProxyCreator;\n    }\n}\n\nclass MyBean {\n    void doSomething(String arg) {\n        System.out.println(\"Doing something...\");\n    }\n}\n\nclass MyPointcut {\n    boolean matches(JoinPoint jp, Object target) {\n        MethodSignature methodSig = (MethodSignature) jp.getStaticPart();\n        Method method = methodSig.getMethod();\n        return method.getName().startsWith(\"advised\");\n    }\n}\n\nclass MyAdvice {\n    void before() {\n        System.out.println(\"Before method executed...\");\n    }\n}\n```\n\nFor the above code to work, you need to include the following in your `pom.xml` file:\n\n```xml\n<dependency>\n    <groupId>org.springframework</groupId>\n    <artifactId>spring-context</artifactId>\n    <version>5.3.2</version>\n</dependency>\n```\n\nYou also need to have `spring-context` in your classpath. Remember to replace the spring version to your own as per your project's need.\n\nThis is a complete example and can be compiled into a .jar file directly if you want to run it using command line or IDE. The `MyPointcut` class is a simple implementation of a `MethodMatcher` used to determine whether the advice should be applied to a method. The `MyAdvice` class is a simple `MethodInterceptor` that will intercept a method invocation and perform an action before the method is executed. The application context configuration is written in the `MyConfig` class. The main method for running the example would be:\n\n```Java\npublic static void main(String[] args) {\n    AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(MyConfig.class);\n    MyBean bean = ctx.getBean(MyBean.class);\n    bean.doSomething(\"Hi\");\n}\n```",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6326537728309631,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use the \"AspectJPointcutAdvisor\" API from \"spring-aop-6.1.3\" project, we will need a Maven project set up and then the relevant dependencies can be added to the `pom.xml` file. Let's also assume the \"spring-aop-6.1.3\" project is already added and used elsewhere in the project.\n\nFirstly, create a new Maven project.\n\n```xml\n<properties>\n   <spring.version>6.1.3</spring.version>\n</properties>\n\n<dependencies>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-aop</artifactId>\n        <version>${spring.version}</version>\n    </dependency>\n</dependencies>\n```\nThen you can use the below code:\n\n```java\nimport org.aspectj.lang.annotation.Aspect;\nimport org.aspectj.lang.annotation.Before;\nimport org.springframework.aop.aspectj.AspectJPointcutAdvisor;\n\n@Aspect\npublic class Main {\n    \n    AspectJPointcutAdvisor advisor = new AspectJPointcutAdvisor();\n\n    public static void main(String[] args) {\n        // Your main method here\n    }\n\n    @Before(\"execution(* your.specific.package.*.*(..))\")\n    public void advise(){\n        // Your advise method here\n    }\n}\n```\nIn this example, the `@Aspect` annotation marks this class as an Aspect and the `@Before` annotation marks a method that should be run before a specific method of the bean or class. The pointcut is set using the annotation expression `execution(* your.specific.package.*.*(..))`, which means to run this advice before any method of any class in the specified package. Please replace `your.specific.package` with your actual package name.\n\nPlease note, a method annotated with `@Before` requires a concrete join point. A pointcut expression specifies the method at which the advice will be applied. In this case, it is applied before any method.\n\nIn the advise method, you can put the logic that will execute when the `@Before` annotation methods are invoked.\n\nLastly, run your main method from a class that is annotated with `@SpringBootApplication` or `@SpringBootTest`. The `@SpringBootApplication` or `@SpringBootTest` annotation enables and configures Spring Boot and its application context. Spring Boot will detect your main class and run it.",
+                "extracted_java_code_from_prediction": "import org.aspectj.lang.annotation.Aspect;\nimport org.aspectj.lang.annotation.Before;\nimport org.springframework.aop.aspectj.AspectJPointcutAdvisor;\n\n@Aspect\npublic class Main {\n    \n    AspectJPointcutAdvisor advisor = new AspectJPointcutAdvisor();\n\n    public static void main(String[] args) {\n        // Your main method here\n    }\n\n    @Before(\"execution(* your.specific.package.*.*(..))\")\n    public void advise(){\n        // Your advise method here\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.aspectj.lang.annotation.Aspect",
+                    "org.aspectj.lang.annotation.Before",
+                    "org.springframework.aop.aspectj.AspectJPointcutAdvisor"
+                ],
+                "correct_FQN_predictions": [
+                    "org.aspectj.lang.annotation.Aspect",
+                    "org.aspectj.lang.annotation.Before",
+                    "org.springframework.aop.aspectj.AspectJPointcutAdvisor"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5311616063117981,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,35] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,35] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,6] cannot find symbol\n  symbol:   class Before\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,38] constructor AspectJPointcutAdvisor in class org.springframework.aop.aspectj.AspectJPointcutAdvisor cannot be applied to given types;\n  required: org.springframework.aop.aspectj.AbstractAspectJAdvice\n  found:    no arguments\n  reason: actual and formal argument lists differ in length\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.670 s\n[INFO] Finished at: 2024-04-17T00:06:01-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,35] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,35] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[16,6] cannot find symbol\n[ERROR]   symbol:   class Before\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,38] constructor AspectJPointcutAdvisor in class org.springframework.aop.aspectj.AspectJPointcutAdvisor cannot be applied to given types;\n[ERROR]   required: org.springframework.aop.aspectj.AbstractAspectJAdvice\n[ERROR]   found:    no arguments\n[ERROR]   reason: actual and formal argument lists differ in length\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 35,
+                                "message": "package org.aspectj.lang.annotation does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 38,
+                                "message": "constructor AspectJPointcutAdvisor in class org.springframework.aop.aspectj.AspectJPointcutAdvisor cannot be applied to given types;"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 35,
+                                "message": "package org.aspectj.lang.annotation does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"AspectJPointcutAdvisor\" API from \"spring-aop-6.1.3\" project along with other necessary APIs. The dependency is already added for \"spring-aop-6.1.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a sample code using AspectJPointcutAdvisor. To run this, you would need to have a correct build configuration and a package structure in Java. We don't have the specific requirement or explanation of what you are trying to achieve in the given problem statement, but based on the requirement from the problem, the following might be the sample code:\n\n```java\nimport org.aspectj.lang.annotation.Aspect;\nimport org.aspectj.lang.annotation.Pointcut;\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\nimport org.springframework.aop.aspectj.AspectJPointcutAdvisor;\n\n@Aspect\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* BusinessService.*(..))\");\n        AspectJPointcutAdvisor advisor = new AspectJPointcutAdvisor();\n        advisor.setPointcut(pointcut);\n        advisor.setAdvice(new BusinessServiceAdvice());\n    }\n}\n```\n\nThis example is just to show the pointcut creation and advisor. In real case, it's much more complicated as it also involves creating beans, bean factory, application context, etc.\n\nAlso, note that AspectJPointcutAdvisor and AspectJExpressionPointcut come from spring-aop library which is indirectly used here via AspectJ annotation. \n\nYou would need to replace `BusinessService` and `BusinessServiceAdvice` with your own class names and methods, this is just a representative example.",
+                "extracted_java_code_from_prediction": "import org.aspectj.lang.annotation.Aspect;\nimport org.aspectj.lang.annotation.Pointcut;\nimport org.springframework.aop.aspectj.AspectJExpressionPointcut;\nimport org.springframework.aop.aspectj.AspectJPointcutAdvisor;\n\n@Aspect\npublic class Main {\n    public static void main(String[] args) {\n        AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();\n        pointcut.setExpression(\"execution(* BusinessService.*(..))\");\n        AspectJPointcutAdvisor advisor = new AspectJPointcutAdvisor();\n        advisor.setPointcut(pointcut);\n        advisor.setAdvice(new BusinessServiceAdvice());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.aspectj.lang.annotation.Aspect",
+                    "org.aspectj.lang.annotation.Pointcut",
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+                    "org.springframework.aop.aspectj.AspectJPointcutAdvisor"
+                ],
+                "correct_FQN_predictions": [
+                    "org.aspectj.lang.annotation.Aspect",
+                    "org.aspectj.lang.annotation.Pointcut",
+                    "org.springframework.aop.aspectj.AspectJExpressionPointcut",
+                    "org.springframework.aop.aspectj.AspectJPointcutAdvisor"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4303571581840515,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,35] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,35] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,42] constructor AspectJPointcutAdvisor in class org.springframework.aop.aspectj.AspectJPointcutAdvisor cannot be applied to given types;\n  required: org.springframework.aop.aspectj.AbstractAspectJAdvice\n  found:    no arguments\n  reason: actual and formal argument lists differ in length\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,16] cannot find symbol\n  symbol:   method setPointcut(org.springframework.aop.aspectj.AspectJExpressionPointcut)\n  location: variable advisor of type org.springframework.aop.aspectj.AspectJPointcutAdvisor\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,31] cannot find symbol\n  symbol:   class BusinessServiceAdvice\n  location: class org.example.Main\n[INFO] 5 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.695 s\n[INFO] Finished at: 2024-04-17T00:06:03-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[4,35] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,35] package org.aspectj.lang.annotation does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,42] constructor AspectJPointcutAdvisor in class org.springframework.aop.aspectj.AspectJPointcutAdvisor cannot be applied to given types;\n[ERROR]   required: org.springframework.aop.aspectj.AbstractAspectJAdvice\n[ERROR]   found:    no arguments\n[ERROR]   reason: actual and formal argument lists differ in length\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,16] cannot find symbol\n[ERROR]   symbol:   method setPointcut(org.springframework.aop.aspectj.AspectJExpressionPointcut)\n[ERROR]   location: variable advisor of type org.springframework.aop.aspectj.AspectJPointcutAdvisor\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,31] cannot find symbol\n[ERROR]   symbol:   class BusinessServiceAdvice\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 31,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 42,
+                                "message": "constructor AspectJPointcutAdvisor in class org.springframework.aop.aspectj.AspectJPointcutAdvisor cannot be applied to given types;"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 16,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 35,
+                                "message": "package org.aspectj.lang.annotation does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-aop-6.1.3/AspectJPointcutAdvisor/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 35,
+                                "message": "package org.aspectj.lang.annotation does not exist"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

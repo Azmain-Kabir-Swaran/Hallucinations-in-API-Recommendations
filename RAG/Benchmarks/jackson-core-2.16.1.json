@@ -1,0 +1,932 @@
+{
+    "jar_name": "jackson-core-2.16.1.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from jackson-dataformat-yaml-2.16.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JacksonYAMLParseException\n2. YAMLMapper\n3. YAMLFactoryBuilder\n4. YAMLException\n5. YAMLGenerator\n6. YAMLParser\n7. YAMLFactory\n8. PackageVersion\n9. MarkedYAMLException\n10. UTF8Writer\n11. Mark\n12. UTF8Reader\n\nList correct API's class names from caffeine-3.1.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. CaffeineSpec\n2. Caffeine<K,\n3. CacheStats\n4. ConcurrentStatsCounter\n\nList correct API's class names from jackson-core-2.16.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from jackson-dataformat-yaml-2.16.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JacksonYAMLParseException\n2. YAMLMapper\n3. YAMLFactoryBuilder\n4. YAMLException\n5. YAMLGenerator\n6. YAMLParser\n7. YAMLFactory\n8. PackageVersion\n9. MarkedYAMLException\n10. UTF8Writer\n11. Mark\n12. UTF8Reader\n\nList correct API's class names from caffeine-3.1.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. CaffeineSpec\n2. Caffeine<K,\n3. CacheStats\n4. ConcurrentStatsCounter\n\nList correct API's class names from jackson-core-2.16.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. JsonParseException\n2. JsonParser\n3. JsonFactory\n4. JsonGenerator\n5. JsonToken\n6. JsonLocation\n7. JsonNode\n8. JsonMappingException\n9. JsonMappingException\n10. JsonMappingException\n11. JsonMappingException\n12. JsonMappingException\n13. JsonMappingException\n14. JsonMappingException\n15. JsonMappingException\n16. JsonMappingException\n17. JsonMappingException\n18. JsonMappingException\n19. JsonMappingException\n20. JsonMappingException\n21. JsonMappingException\n22. JsonMappingException\n23. JsonMappingException\n24. JsonMappingException\n25. JsonMappingException\n26. JsonMappingException\n27. JsonMappingException\n28. JsonMappingException\n29. JsonMappingException\n30. JsonMappingException\n31. JsonMappingException\n32. JsonMappingException\n33. JsonMappingException\n34. JsonMappingException\n35. JsonMappingException\n36. JsonMappingException\n37. JsonMappingException\n38. JsonMappingException\n39. JsonMappingException\n40. JsonMappingException\n41. JsonMappingException\n42. JsonMappingException\n43. JsonMappingException\n44. JsonMappingException\n45. JsonMappingException\n46. JsonMappingException\n47. JsonMappingException\n48. JsonMappingException\n49. JsonMappingException\n50. JsonMappingException",
+        "extracted_APIs_from_prediction": [
+            "JsonParseException",
+            "JsonParser",
+            "JsonFactory",
+            "JsonGenerator",
+            "JsonToken",
+            "JsonLocation",
+            "JsonNode",
+            "JsonMappingException"
+        ],
+        "correct_API_predictions": [
+            "JsonParseException",
+            "JsonFactory",
+            "JsonToken",
+            "JsonLocation"
+        ],
+        "wrong_API_predictions": [
+            "JsonParser",
+            "JsonGenerator",
+            "JsonNode",
+            "JsonMappingException"
+        ],
+        "number_of_correct_APIs": 4,
+        "number_of_wrong_APIs": 4,
+        "failure_rate_for_APIs": 0.5,
+        "model_confidence": 0.8024166226387024,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "JsonParseException": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonParseException\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParseException\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of the correct java program. This code imports classes from appropriate packages from the jackson-core-2.16.1 project:\n\n```java\nimport com.fasterxml.jackson.core.JsonParseException;\nimport com.fasterxmljackson.core.JsonFactory;\n\npublic class Main {\n    public static void main(String[] args) throws JsonParseException {\n\n        JsonFactory factory = new JsonFactory();\n        JsonParseException exception = new JsonParseException(\"Sample error message\");\n\n        // You can throw an exception or handle it as needed for your application.\n        // throw exception;\n    }\n}\n```\n\nIn the example, the `JsonParseException` exception class is instantiated and thrown within the `main` method. You would replace the comment with your own exception handling logic.\n\nPlease note that you need to properly handle the dependencies and packages. If you need to use other classes, you may need to add them to your dependencies. They are not there by default to ensure a clean, minimal dependency footprint.\n\nYou can install the additional dependencies through your preferred build management tool like Maven or Gradle. For instance, for Gradle:\n\n```groovy\ndependencies {\n    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.3'\n}\n```\n\nDo remember that `JsonParseException` is available in the `com.fasterxml.jackson.core` package and not in the default Java's `java.lang` package.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonParseException;\nimport com.fasterxmljackson.core.JsonFactory;\n\npublic class Main {\n    public static void main(String[] args) throws JsonParseException {\n\n        JsonFactory factory = new JsonFactory();\n        JsonParseException exception = new JsonParseException(\"Sample error message\");\n\n        // You can throw an exception or handle it as needed for your application.\n        // throw exception;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonParseException",
+                    "com.fasterxmljackson.core.JsonFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonParseException"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.fasterxmljackson.core.JsonFactory"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.43371233344078064,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,33] package com.fasterxmljackson.core does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n  symbol:   class JsonFactory\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,35] cannot find symbol\n  symbol:   class JsonFactory\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.749 s\n[INFO] Finished at: 2024-04-16T20:17:19-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,33] package com.fasterxmljackson.core does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n[ERROR]   symbol:   class JsonFactory\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,35] cannot find symbol\n[ERROR]   symbol:   class JsonFactory\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 33,
+                                "message": "package com.fasterxmljackson.core does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParseException\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to add this dependency in a Maven project, your pom.xml should look something like the below:\n\n```xml\n<project xmlns=\"http://maven.apache./POM/4.0.0\"\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n  <modelVersion>4.0.0</modelVersion>\n  <groupId>com.example</groupId>\n  <artifactId>demo</artifactId>\n  <version>0.0.1-SNAPSHOT</version>\n  <dependencies>\n    <dependency>\n      <groupId>com.fasterxml.jackson.core</groupId>\n      <artifactId>jackson-core</artifactId>\n      <version>2.16.1</version>\n    </dependency>\n  </dependencies>\n</project>\n```\n\nHere is an example of the class with the main method:\n\n```java\nimport com.fasterxml.jackson.core.JsonParseException;\nimport com.fasterxml.jackson.databind.JsonMappingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        \n        try{\n            throw new JsonParseException(\"Example JSON parse exception\");\n        }\n        catch(JsonParseException e) {\n            System.out.println(\"JsonParseException: \"+e.getMessage());\n        }\n        \n        ObjectMapper mapper = new ObjectMapper(); \n        \n        try {\n            throw new JsonMappingException(\"Example JSON mapping exception\");\n        } catch (JsonMappingException e) {\n            System.out.println(\"JsonMappingException: \"+e.getMessage());\n        }\n        \n    }\n\n}\n```\n\nThis code will create a `JsonParseException` and `JsonMappingException` for you to work with. Be sure to have these two dependencies in your `pom.xml` as mentioned above before compiling this code.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonParseException;\nimport com.fasterxml.jackson.databind.JsonMappingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        \n        try{\n            throw new JsonParseException(\"Example JSON parse exception\");\n        }\n        catch(JsonParseException e) {\n            System.out.println(\"JsonParseException: \"+e.getMessage());\n        }\n        \n        ObjectMapper mapper = new ObjectMapper(); \n        \n        try {\n            throw new JsonMappingException(\"Example JSON mapping exception\");\n        } catch (JsonMappingException e) {\n            System.out.println(\"JsonMappingException: \"+e.getMessage());\n        }\n        \n    }\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonParseException",
+                    "com.fasterxml.jackson.databind.JsonMappingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonParseException",
+                    "com.fasterxml.jackson.databind.JsonMappingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.7510883212089539,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[19,9] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[19,35] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[22,23] cannot find symbol\n  symbol:   class JsonMappingException\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[23,18] cannot find symbol\n  symbol:   class JsonMappingException\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.737 s\n[INFO] Finished at: 2024-04-16T20:17:21-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[19,9] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[19,35] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[22,23] cannot find symbol\n[ERROR]   symbol:   class JsonMappingException\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java:[23,18] cannot find symbol\n[ERROR]   symbol:   class JsonMappingException\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 23,
+                                "column": 18,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 22,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParseException\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nJava is a statically-typed programming language which means every variable needs to have a type. However, due to Java's flexible nature, it is not a requirement to specify the type every time we use a class or method. Java supports automatic conversion from a subtype to a supertype, so you don't need to specify the type of a method parameter, and vice versa.\n\nBelow is a simple example of a complete, correct and compilable Java code that uses two APIs from the \"jackson-core-2.16.1\" project: \"JsonFactory\" and \"JsonParseException\".\n\n```java\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonParseException;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) throws JsonParseException, IOException {\n        JsonFactory factory = new JsonFactory();\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        try {\n            com.fasterxml.jackson.databind.JsonNode node = factory.getCodec().readTree(json);\n        } catch (JsonParseException e) {\n            System.out.println(\"Invalid JSON\");\n        }\n    }\n}\n```\n\nKeep in mind that in order to use the `JsonParseException` from \"jackson-core-2.16.1\" project in your main method, you need to import \"com.fasterxml.jackson.core.JsonParseException\" without \"s\" sign. The import statement without \"s\" sign is necessary to identify the correct Exception from the \"jackson-core-2.16.1\" project.\n\nAlso note that this example is very minimalistic and may not function properly. It is more of a starting point for understanding how to use the two specified APIs.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonParseException;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) throws JsonParseException, IOException {\n        JsonFactory factory = new JsonFactory();\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        try {\n            com.fasterxml.jackson.databind.JsonNode node = factory.getCodec().readTree(json);\n        } catch (JsonParseException e) {\n            System.out.println(\"Invalid JSON\");\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonParseException",
+                    "java.io.*"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonParseException"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.*"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.5477228760719299,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,43] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,88] incompatible types: java.lang.String cannot be converted to com.fasterxml.jackson.core.JsonParser\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.736 s\n[INFO] Finished at: 2024-04-16T20:17:22-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,43] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,88] incompatible types: java.lang.String cannot be converted to com.fasterxml.jackson.core.JsonParser\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 88,
+                                "message": "incompatible types: java.lang.String cannot be converted to com.fasterxml.jackson.core.JsonParser"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 43,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParseException\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's an example of a simple Java class using the necessary APIs:\n\n```java\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxmlJsonParseException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonFactory factory = new JsonFactory();\n        ObjectMapper mapper = new ObjectMapper(factory);\n\n        String json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\";\n\n        try {\n            // Parse JSON to Java object\n            Person person = mapper.readValue(json, Person.class);\n            \n            System.out.println(person.getName()); // John\n            System.out.println(person.getAge()); // 30\n            System.out.println(person.getCity()); // New York\n            \n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n\nclass Person {\n    private String name;\n    private int age;\n    private String city;\n    \n    // getter and setters\n    public String getName() { return name; }\n    public int getAge() { return age; }\n    public String getCity() { return city; }\n    // constructor, other methods etc...\n}\n```\n\nPlease note that you will need to define a class named `Person` to parse the JSON. The above example is a basic usage of Jackson JSON processing. For a more complex JSON object or nested JSON objects, you can use Jackson's `readValue` method. Also, the `JsonParseException` class does not exist in Jackson's library. You might want to look for a different exception in case you need to handle JSON parsing errors.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxmlJsonParseException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonFactory factory = new JsonFactory();\n        ObjectMapper mapper = new ObjectMapper(factory);\n\n        String json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\";\n\n        try {\n            // Parse JSON to Java object\n            Person person = mapper.readValue(json, Person.class);\n            \n            System.out.println(person.getName()); // John\n            System.out.println(person.getAge()); // 30\n            System.out.println(person.getCity()); // New York\n            \n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n\nclass Person {\n    private String name;\n    private int age;\n    private String city;\n    \n    // getter and setters\n    public String getName() { return name; }\n    public int getAge() { return age; }\n    public String getCity() { return city; }\n    // constructor, other methods etc...\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxmlJsonParseException",
+                    "com.fasterxml.jackson.databind.ObjectMapper",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.fasterxmlJsonParseException",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5914126634597778,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Person.java:[4,11] cannot find symbol\n  symbol:   class fasterxmlJsonParseException\n  location: package com\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Person.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,11] cannot find symbol\n  symbol:   class fasterxmlJsonParseException\n  location: package com\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,35] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.743 s\n[INFO] Finished at: 2024-04-16T20:17:24-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Person.java:[4,11] cannot find symbol\n[ERROR]   symbol:   class fasterxmlJsonParseException\n[ERROR]   location: package com\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Person.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,11] cannot find symbol\n[ERROR]   symbol:   class fasterxmlJsonParseException\n[ERROR]   location: package com\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,35] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Person.java",
+                                "line": 5,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Person.java",
+                                "line": 4,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonParseException\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of how to use JsonParseException from the \"jackson-core-2.16.1\" project in a simple application.\n\nMain.java:\n```java\nimport com.fasterxml.jackson.core.JsonProcessingException;\nimport com.fasterxml.jackson.databind.JsonMappingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n    public static void main(String[] args) {\n        ObjectMapper mapper = new ObjectMapper();\n        try {\n            String json = \"{ \\\"name\\\": \\\"Bob\\\", \\\"age\\\": \\\"42\\\", \\\"favoriteFood\\\": \\\"Potatoes\\\" }\";\n            Person p = mapper.readValue(json, Person.class);\n            System.out.println(\"Successfully parsed a person!\");\n        } catch (JsonMappingException e) {\n            System.out.println(\"Caught JsonMappingException: \" + e);\n        } catch (JsonProcessingException e) {\n            System.out.println(\"Caught JsonProcessingException: \" + e);\n        }\n    }\n}\n```\n\nPerson.java:\n```java\npublic class Person {\n    private String name;\n    private int age;\n    private String favoriteFood;\n\n    // getters and setters for all attributes\n}\n```\n\nThis code creates a `Person` object from a JSON string, using the Jackson ObjectMapper's `readValue` method. It catches two possible exceptions that can be thrown when parsing a JSON string: `JsonMappingException` if the JSON keys don't match the names of the Person object's properties, and `JsonProcessingException` if there's an error reading the JSON.\n\nPlease note that in order for this to work, the following dependencies would need to be added to your pom.xml file (which is common for Maven builds). \n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>com.fasterxml.jackson.core</groupId>\n        <artifactId>jackson-databind</artifactId>\n        <version>2.16.1</version>\n    </dependency>\n</dependencies>\n```",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonProcessingException;\nimport com.fasterxml.jackson.databind.JsonMappingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n    public static void main(String[] args) {\n        ObjectMapper mapper = new ObjectMapper();\n        try {\n            String json = \"{ \\\"name\\\": \\\"Bob\\\", \\\"age\\\": \\\"42\\\", \\\"favoriteFood\\\": \\\"Potatoes\\\" }\";\n            Person p = mapper.readValue(json, Person.class);\n            System.out.println(\"Successfully parsed a person!\");\n        } catch (JsonMappingException e) {\n            System.out.println(\"Caught JsonMappingException: \" + e);\n        } catch (JsonProcessingException e) {\n            System.out.println(\"Caught JsonProcessingException: \" + e);\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonProcessingException",
+                    "com.fasterxml.jackson.databind.JsonMappingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonProcessingException",
+                    "com.fasterxml.jackson.databind.JsonMappingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.7095816731452942,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,35] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,13] cannot find symbol\n  symbol:   class Person\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,47] cannot find symbol\n  symbol:   class Person\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,18] cannot find symbol\n  symbol:   class JsonMappingException\n  location: class org.example.Main\n[INFO] 7 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.764 s\n[INFO] Finished at: 2024-04-16T20:17:25-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,35] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,13] cannot find symbol\n[ERROR]   symbol:   class Person\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,47] cannot find symbol\n[ERROR]   symbol:   class Person\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,18] cannot find symbol\n[ERROR]   symbol:   class JsonMappingException\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 47,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 18,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonParseException/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "JsonFactory": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonFactory\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonFactory\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to use JSON with Java, you need to import the necessary APIs like `ObjectMapper`. Here's a simple example using `ObjectMapper` to parse and generate JSON:\n\n```java\nimport java.io.IOException;\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonProcessingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\nclass Main {\n    public static void main(String[] args) {\n        // Create ObjectMapper instance\n        ObjectMapper objectMapper = new ObjectMapper();\n        JsonFactory factory = objectMapper.getFactory();\n\n        // Create a simple Json\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n\n        try {\n            // Convert JSON string from file to Object\n            Person person = objectMapper.readValue(json, Person.class);\n\n            // Convert Object to JSON string and pretty print\n            String jsonString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(person);\n\n            // Print the result\n            System.out.println(jsonString);\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n\n// Create a class to map to JSON\nclass Person {\n    public String name;\n    public int age;\n    public String city;\n\n    public Person() {\n    }\n\n    public Person(String name, int age, String city) {\n        this.name = name;\n        this.age = age;\n        this.city = city;\n    }\n\n    // Getters and setters\n    public String getName() { return name; }\n\n    public void setName(String name) { this.name = name; }\n\n    public int getAge() { return age; }\n\n    public void setAge(int age) { this.age = age; }\n\n    public String getCity() { return city; }\n\n    public void setCity(String city) { this.city = city; }\n}\n```\nPlease note that the actual Jackson libraries available are not jackson-core-2.16.1, but different versions of the same library that may work with different Java versions. Also note that the above code is made according to Java 8 standard. If you're using an older version, you need to adapt the code according to your requirements and available dependencies.",
+                "extracted_java_code_from_prediction": "import java.io.IOException;\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonProcessingException;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\nclass Main {\n    public static void main(String[] args) {\n        // Create ObjectMapper instance\n        ObjectMapper objectMapper = new ObjectMapper();\n        JsonFactory factory = objectMapper.getFactory();\n\n        // Create a simple Json\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n\n        try {\n            // Convert JSON string from file to Object\n            Person person = objectMapper.readValue(json, Person.class);\n\n            // Convert Object to JSON string and pretty print\n            String jsonString = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(person);\n\n            // Print the result\n            System.out.println(jsonString);\n\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n\n// Create a class to map to JSON\nclass Person {\n    public String name;\n    public int age;\n    public String city;\n\n    public Person() {\n    }\n\n    public Person(String name, int age, String city) {\n        this.name = name;\n        this.age = age;\n        this.city = city;\n    }\n\n    // Getters and setters\n    public String getName() { return name; }\n\n    public void setName(String name) { this.name = name; }\n\n    public int getAge() { return age; }\n\n    public void setAge(int age) { this.age = age; }\n\n    public String getCity() { return city; }\n\n    public void setCity(String city) { this.city = city; }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.IOException",
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonProcessingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonProcessingException",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6245781779289246,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_1/Wrapper/src/main/java/org/example/to.java:[8,9] '{' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.595 s\n[INFO] Finished at: 2024-04-16T20:18:03-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_1/Wrapper/src/main/java/org/example/to.java:[8,9] '{' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_1/Wrapper/src/main/java/org/example/to.java",
+                                "line": 8,
+                                "column": 9,
+                                "message": "'{' expected"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonFactory\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYou can create the Java main method in the Main class with the mentioned dependencies using \"jackson-core-2.16.1\". Here's an example:\n\n```java\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml2.16.1</s>.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    JsonFactory factory = new JsonFactory();\n    // Code goes here...\n  }\n}\n```\nIn the place you see `Code goes here...` you can use all of Jackson's capabilities - creating JSONParser instances, JsonGenerator instances, JsonParser instances, etc. Just replace that comment with your own logic and code using those APIs. \n\nRemember to add the following dependency in your pom.xml file:\n\n```xml\n<dependency>\n  <groupId>com.fasterxml.jackson.core</groupId>\n  <artifactId>jackson-core</artifactId>\n  <version>2.16.1</version>\n</dependency>\n```",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml2.16.1</s>.*;\n\npublic class Main {\n  public static void main(String[] args) {\n    JsonFactory factory = new JsonFactory();\n    // Code goes here...\n  }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml2.16.1</s>.*"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.fasterxml2.16.1</s>.*"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.4518093764781952,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,22] ';' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.596 s\n[INFO] Finished at: 2024-04-16T20:18:04-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,22] ';' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonFactory/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 22,
+                                "message": "';' expected"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonFactory\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\n```java\nimport com.fasterxml.jackson.core.JsonFactory;\n\npublic class Main {\n   public static void main(String[] args) {\n      JsonFactory jsonFactory = new JsonFactory();\n      \n      // Use the JsonFactory instance here as per your requirement\n   }\n}\n```\nThis is a very basic example of how to use the `JsonFactory` from the \"jackson-core-2.16.1\" project. Please modify it as per your requirements. For example, you can use `ObjectMapper` from `com.fasterxml.jackson.databind` package.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonFactory;\n\npublic class Main {\n   public static void main(String[] args) {\n      JsonFactory jsonFactory = new JsonFactory();\n      \n      // Use the JsonFactory instance here as per your requirement\n   }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonFactory"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.3407280445098877,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonFactory\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo get started using the Jackson Library in Java you would typically use the following sequence of imports:\n\n```java\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonParser;\nimport com.fasterxml.jackson.core.JsonProcessingException;\n```\nNote: Replace the <s> with the version you have installed. The Jackson library does not include the JsonFactory in its core distribution. It is a separate module, so you need to include it separately.\n\nGiven your requirements, I will provide a basic example of how to use Jackson to parse and create JSON.\n\n```java\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonParser;\nimport com.fasterxml.jackson.core.JsonProcessingException;\n\nimport java.io.IOException;\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class Main {\n    public static void main(String[] args) throws JsonProcessingException, IOException {\n\n        ObjectMapper objectMapper = new ObjectMapper();\n\n        // create a json string\n        String jsonStr = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n\n        // parse json to object\n        Person person = objectMapper.readValue(jsonStr, Person.class);\n\n        // print parsed person object\n        System.out.println(person);\n\n        // create person object\n        Person personObj = new Person(\"John\", 30, \"New York\");\n\n        // convert object to json string\n        jsonStr = objectMapper.writeValueAsString(personObj);\n\n        // print converted json string\n        System.out.println(jsonStr);\n    }\n}\n\nclass Person {\n    private String name;\n    private Integer age;\n    private String city;\n\n    public Person() {\n    }\n\n    public Person(String name, Integer age, String city) {\n        this.name = name;\n        this.age = age;\n        this.city = city;\n    }\n\n    // getters and setters\n\n    @Override\n    public String toString() {\n        return \"Person [name=\" + name + \", age=\" + age + \", city=\" + city + \"]\";\n    }\n}\n```\nIn this example, we use Jackson's ObjectMapper to convert JSON to a Person object and vice versa. The Person class simply stores and outputs three fields: name, age, and city.\n\nPlease ensure you add the appropriate dependencies if your project uses Maven, Gradle, or similar build tools. The Jackson library is available on Maven Central.\n\nNote: Above solution is for Jackson version greater than or equal to 2.0. You would need to add additional dependencies for older Jackson versions.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.databind.ObjectMapper;\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonParser;\nimport com.fasterxml.jackson.core.JsonProcessingException;",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.databind.ObjectMapper",
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonParser",
+                    "com.fasterxml.jackson.core.JsonProcessingException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.databind.ObjectMapper",
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonParser",
+                    "com.fasterxml.jackson.core.JsonProcessingException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.7183759212493896,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonFactory\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a complete program using \"JsonFactory\" from \"jackson-core\" library:\n\nFirst, add the necessary dependencies to your project. You can download them from maven central repository, or simply include them in your project if you're using an IDE such as Eclipse, IntelliJ or Netbeans.\n\nInclude these dependencies in your pom.xml file for Maven project:\n\n```xml\n<dependencies>\n    <!-- other dependencies -->\n    <dependency>\n        <groupId>com.fasterxml.jackson.core</groupId>\n        <artifactId>jackson-core</artifactId>\n        <version>2.16.1</version>\n    </dependency>\n</dependencies>\n```\n\nInclude these dependencies in your build.gradle file for Gradle project:\n\n```groovy\ndependencies {\n    // other dependencies\n    implementation 'com.fasterxml:jackson-core:2.16.1'\n}\n```\n\nNext, you can use the \"JsonFactory\" API in your Main class:\n\n```java\nimport com.fasterxml.jackson.core.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonFactory factory = new JsonFactory();\n        // Use JsonFactory ...\n    }\n}\n```\n\nThis code creates a `JsonFactory` instance and can be used to create JsonParser or JsonGenerator instances. However, JsonFactory alone is generally used for very low-level or advanced serialization/deserialization where you have to implement serialization/deserialization manually, and normally we use high-level feature like ObjectMapper for serialization and deserialization.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonFactory factory = new JsonFactory();\n        // Use JsonFactory ...\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "com.fasterxml.jackson.core.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5287050008773804,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "JsonToken": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonToken\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonToken\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a simple example of parsing JSON data using the \"jackson-core-2.16.1\" project in Java:\n\n```java\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonToken;\nimport com.fasterxml.jackson.core.JsonParseException;\nimport com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        String jsonString = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        \n        ObjectMapper mapper = new ObjectMapper();\n        JsonNode rootNode = mapper.readTree(jsonString);\n\n        JsonNode nameNode = rootNode.path(\"name\");\n        String name = nameNode.asText();\n        System.out.println(\"Name: \" + name);\n\n        JsonNode ageNode = rootNode.path(\"age\");\n        int age = ageNode.asInt();\n        System.out.println(\"Age: \" + age);\n\n        JsonNode cityNode = rootNode.path(\"city\");\n        String city = cityNode.asText();\n        System.out.println(\"City: \" + city);\n    }\n}\n```\n\nIn this example, we parse the JSON string into a JsonNode and then extract data from the JsonNode using the `path` method. It's worth noting that while the JsonToken is not explicitly imported, it's likely included in other APIs of Jackson.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonToken;\nimport com.fasterxml.jackson.core.JsonParseException;\nimport com.fasterxml.jackson.databind.JsonNode;\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        String jsonString = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        \n        ObjectMapper mapper = new ObjectMapper();\n        JsonNode rootNode = mapper.readTree(jsonString);\n\n        JsonNode nameNode = rootNode.path(\"name\");\n        String name = nameNode.asText();\n        System.out.println(\"Name: \" + name);\n\n        JsonNode ageNode = rootNode.path(\"age\");\n        int age = ageNode.asInt();\n        System.out.println(\"Age: \" + age);\n\n        JsonNode cityNode = rootNode.path(\"city\");\n        String city = cityNode.asText();\n        System.out.println(\"City: \" + city);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonToken",
+                    "com.fasterxml.jackson.core.JsonParseException",
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxml.jackson.databind.ObjectMapper",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonToken",
+                    "com.fasterxml.jackson.core.JsonParseException",
+                    "com.fasterxml.jackson.databind.JsonNode",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.16666666666666666,
+                "model_confidence": 0.714047908782959,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[8,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,35] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[16,9] cannot find symbol\n  symbol:   class JsonNode\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[18,9] cannot find symbol\n  symbol:   class JsonNode\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[22,9] cannot find symbol\n  symbol:   class JsonNode\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[26,9] cannot find symbol\n  symbol:   class JsonNode\n  location: class org.example.Main\n[INFO] 8 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.793 s\n[INFO] Finished at: 2024-04-16T20:18:28-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[8,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,35] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[16,9] cannot find symbol\n[ERROR]   symbol:   class JsonNode\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[18,9] cannot find symbol\n[ERROR]   symbol:   class JsonNode\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[22,9] cannot find symbol\n[ERROR]   symbol:   class JsonNode\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java:[26,9] cannot find symbol\n[ERROR]   symbol:   class JsonNode\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 22,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonToken\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nWhile the provided question doesn't describe what specific code you need, here is a simple example using Jackson for JSON parsing. \n\nIn this example, we are using Jackson to parse a simple JSON string and print each JSON value.\n\nAdd the following dependency in your build.gradle or pom.xml:\n\n```\ndependencies {\n    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'\n}\n```\n\nThe corresponding Java code to read values from a JSON String could look like this:\n\n```java\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonToken;",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonToken;",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonToken"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.JsonToken"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4436730742454529,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonToken\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here's a complete Java code snippet that utilizes \"JsonToken\" API from \"jackson-core-2.16.1\" project along with other necessary APIs.\n\n```Java\n// Import necessary APIs\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonToken;",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.40373802185058594,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonToken\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a complete example of using the \"JsonToken\" API from the \"jackson-core-2.16.1\" project:\n\n```java\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxmljackson.core.JsonToken;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonFactory factory = new JsonFactory();\n        JsonToken token = JsonToken.NOT_AVAILABLE;\n\n        // Use token somewhere...\n    }\n}\n```\nIn this example, the `JsonFactory` is created to later create `JsonParser` instances for parsing JSON content.\n\nThe `JsonToken` is just an enumeration that contains all JSON tokens that may appear in a JSON stream. \n\nThe token `JsonToken.NOT_AVAILABLE` is defined here and it is used as an instance of the `JsonToken` enumeration. This token represents no real token value in JSON - it just stands for a value to be set in the case when there's no real JSON token to be extracted.\n\nPlease note that the `JsonToken` is a part of the `jackson-core-2.16.1` library, so you need to have that library available in your project's classpath. If that's not your case, there might be other ways to accomplish the same thing, depending on what exactly you need.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxmljackson.core.JsonToken;\n\npublic class Main {\n    public static void main(String[] args) {\n        JsonFactory factory = new JsonFactory();\n        JsonToken token = JsonToken.NOT_AVAILABLE;\n\n        // Use token somewhere...\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxmljackson.core.JsonToken"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.fasterxmljackson.core.JsonToken"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.47326743602752686,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,33] package com.fasterxmljackson.core does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n  symbol:   class JsonToken\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,27] cannot find symbol\n  symbol:   variable JsonToken\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.668 s\n[INFO] Finished at: 2024-04-16T20:18:29-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,33] package com.fasterxmljackson.core does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n[ERROR]   symbol:   class JsonToken\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,27] cannot find symbol\n[ERROR]   symbol:   variable JsonToken\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 33,
+                                "message": "package com.fasterxmljackson.core does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 27,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonToken/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonToken\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYou need to add Jackson libraries manually in your Maven project, so here is how you can utilize JSON in Java using \"JsonToken\" API.\n\n```Java\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.JsonParser;\nimport com.fasterxml.jackson.core.JsonToken;\n\npublic class Main {\n    public static void main(String[] args) {\n        String json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30,\\\"city\\\":\\\"New York\\\"}\";\n        JsonFactory factory = new JsonFactory();\n        try {\n            JsonParser parser = factory.createParser(json);\n            while (!parser.isClosed()) {\n                JsonToken token = parser.nextToken();\n                if (token == null) break;\n                if (token == JsonToken.FIELD_NAME) {\n                    String fieldName = parser.getCurrentName();\n                    token = parser.nextToken();\n                    if (\"name\".equals(fieldName)) {\n                        System.out.println(\"Field name: \" + parser.getValueAsString());\n                    }\n                }\n            }\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code imports all necessary classes from the Jackson library for JSON handling. The `JsonFactory` is used to get an instance of `JsonParser`. The `JsonToken` class represents the type of the next JSON token to be read or written. The `parser.nextToken()` will move the parser to the next token. And `parser.getCurrentName()` will return the name of the current JSON field. Here, we only print name of JSON objects which have a field name as \"name\".",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.6722750663757324,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "JsonLocation": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"JsonLocation\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonLocation\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIt's a bit unclear what exactly you want to accomplish here, but let's say you want to create a JSON object, then convert it into a String and vice versa. Here's a simple example showing how this could be done using the Jackson JSON library:\n\n```java\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport com.fasterxml.jackson.databind.ObjectWriter;\nimport com.fasterxml.jackson.databind.node.ObjectNode;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        ObjectMapper mapper = new ObjectMapper();\n\n        // Create a JSON object\n        ObjectNode jsonObject = mapper.createObjectNode();\n        jsonObject.put(\"name\", \"John\");\n        jsonObject.put(\"age\", 25);\n\n        // Convert the object to JSON string\n        String jsonString = \"\";\n        try {\n            jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n        System.out.println(jsonString);\n\n        // Convert the JSON string back to an object\n        ObjectNode jsonNode = null;\n        try {\n            jsonNode = (ObjectNode) mapper.readTree(jsonString);\n            System.out.println(\"Name: \" + jsonNode.get(\"name\").asText());\n            System.out.println(\"Age: \" + jsonNode.get(\"age\").asInt());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nHere's what this code does:\n\n1. Creates a new JSON object using the `ObjectNode` class.\n2. Sets some properties on the JSON object.\n3. Converts the object to a JSON string using the `writerWithDefaultPrettyPrinter()` method.\n4. Prints the JSON string to the console.\n5. Converts the JSON string back into an `ObjectNode` object.\n6. Prints the properties of the JSON object back to the console.\n\nNote: This code assumes that you are using Java 8 or later because of the use of lambda expressions and method references.\n\nPlease let me know if you have any specific requirements for this code.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.databind.ObjectMapper;\nimport com.fasterxml.jackson.databind.ObjectWriter;\nimport com.fasterxml.jackson.databind.node.ObjectNode;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        ObjectMapper mapper = new ObjectMapper();\n\n        // Create a JSON object\n        ObjectNode jsonObject = mapper.createObjectNode();\n        jsonObject.put(\"name\", \"John\");\n        jsonObject.put(\"age\", 25);\n\n        // Convert the object to JSON string\n        String jsonString = \"\";\n        try {\n            jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(jsonObject);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n        System.out.println(jsonString);\n\n        // Convert the JSON string back to an object\n        ObjectNode jsonNode = null;\n        try {\n            jsonNode = (ObjectNode) mapper.readTree(jsonString);\n            System.out.println(\"Name: \" + jsonNode.get(\"name\").asText());\n            System.out.println(\"Age: \" + jsonNode.get(\"age\").asInt());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.databind.ObjectMapper",
+                    "com.fasterxml.jackson.databind.ObjectWriter",
+                    "com.fasterxml.jackson.databind.node.ObjectNode",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.databind.ObjectMapper",
+                    "com.fasterxml.jackson.databind.ObjectWriter",
+                    "com.fasterxml.jackson.databind.node.ObjectNode"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.6738845705986023,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,43] package com.fasterxml.jackson.databind.node does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,35] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n  symbol:   class ObjectNode\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[29,9] cannot find symbol\n  symbol:   class ObjectNode\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[31,25] cannot find symbol\n  symbol:   class ObjectNode\n  location: class org.example.Main\n[INFO] 8 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.674 s\n[INFO] Finished at: 2024-04-16T20:19:04-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,43] package com.fasterxml.jackson.databind.node does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,35] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n[ERROR]   symbol:   class ObjectNode\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[29,9] cannot find symbol\n[ERROR]   symbol:   class ObjectNode\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java:[31,25] cannot find symbol\n[ERROR]   symbol:   class ObjectNode\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 29,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 35,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 43,
+                                "message": "package com.fasterxml.jackson.databind.node does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 31,
+                                "column": 25,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonLocation\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is the sample Java code using `com.fasterxml.jackson.core.JsonLocation` along with necessary APIs:\n\n```java\nimport com.fasterxml.jackson.core.JsonLocation;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        JsonLocation location = new JsonLocation(\"file\", 1, 1, 1);\n        System.out.println(\"File Name: \" + location.getFileName());\n        System.out.println(\"Line Number: \" + location.getLineNr());\n        System.out.println(\"Column Number: \" + location.getColumnNr());\n        System.out.println(\"Charater Offset: \" + location.getCharacterOffset());\n    }\n}\n```\n\nIn this code, we create a new instance of `JsonLocation` and then print out the file name, line number, column number, and character offset.\n\nPlease make sure to replace `<s>` with your actual module/package name in the import statement depending on how you have structured your project.\n\nThis code has been verified to compile and run successfully with Java 8 and the Jackson library version mentioned.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonLocation;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        JsonLocation location = new JsonLocation(\"file\", 1, 1, 1);\n        System.out.println(\"File Name: \" + location.getFileName());\n        System.out.println(\"Line Number: \" + location.getLineNr());\n        System.out.println(\"Column Number: \" + location.getColumnNr());\n        System.out.println(\"Charater Offset: \" + location.getCharacterOffset());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonLocation",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonLocation"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5107980966567993,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/java/org/example/Main.java: /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/java/org/example/Main.java uses or overrides a deprecated API.\n[WARNING] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/java/org/example/Main.java: Recompile with -Xlint:deprecation for details.\n[INFO] 2 warnings \n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/java/org/example/Main.java:[10,52] cannot find symbol\n  symbol:   method getFileName()\n  location: variable location of type com.fasterxml.jackson.core.JsonLocation\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/java/org/example/Main.java:[13,58] cannot find symbol\n  symbol:   method getCharacterOffset()\n  location: variable location of type com.fasterxml.jackson.core.JsonLocation\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.657 s\n[INFO] Finished at: 2024-04-16T20:19:05-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/java/org/example/Main.java:[10,52] cannot find symbol\n[ERROR]   symbol:   method getFileName()\n[ERROR]   location: variable location of type com.fasterxml.jackson.core.JsonLocation\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/java/org/example/Main.java:[13,58] cannot find symbol\n[ERROR]   symbol:   method getCharacterOffset()\n[ERROR]   location: variable location of type com.fasterxml.jackson.core.JsonLocation\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 58,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 52,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonLocation\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nFor this problem, we will be using the Jackson JSON library. Here is a simple example of how to use the `JsonLocation` API:\n\nPlease ensure you have added the necessary dependencies in your `pom.xml` file, like below:\n\n```xml\n<dependency>\n    <groupId>com.fasterxml.jackson.core</groupId>\n    <artifactId>jackson-databind</artifactId>\n    <version>2.16.1</version>\n</dependency>\n```\n\nHere is the complete and correct Java code using \"JsonLocation\" API from \"jackson-core-2.16.1\":\n\n```java\nimport com.fasterxml.jackson.core.JsonLocation;\nimport com.fasterxml.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        JsonLocation location = new ObjectMapper().readerFor(MyClass.class).readValue(json).getLocation();\n        System.out.println(\"Location: \" + location);\n    }\n}\n\nclass MyClass {\n    private String name;\n    private int age;\n    private String city;\n\n    public String getName() {\n        return name;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n\n    public void setAge(int age) {\n        this.age = age;\n    }\n\n    public String getCity() {\n        return city;\n    }\n\n    public void setCity(String city) {\n        this.city = city;\n    }\n}\n```\n\nReplace the `MyClass` with your actual class. If you are using some other classes or APIs then you can use their classes and packages without adding dependencies. Only `ObjectMapper`, `JsonLocation` and your own classes will have dependencies.\n\nPlease note, the class `MyClass` is used for example only and it's not an actual API and should be replaced accordingly.\n\nThe `ObjectMapper` reads JSON as per the provided JSON string to the class `MyClass`. Then the `getLocation()` function is called on the object which is returned from the `readValue` function to get the `JsonLocation`. The `JsonLocation` object is then printed on the console. \n\nThis should work without any errors assuming you have set up your project properly to include the necessary dependencies and have a class named `MyClass` with fields matching those in the JSON string.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonLocation;\nimport com.fasterxml.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        String json = \"{\\\"name\\\":\\\"John\\\", \\\"age\\\":30, \\\"city\\\":\\\"New York\\\"}\";\n        JsonLocation location = new ObjectMapper().readerFor(MyClass.class).readValue(json).getLocation();\n        System.out.println(\"Location: \" + location);\n    }\n}\n\nclass MyClass {\n    private String name;\n    private int age;\n    private String city;\n\n    public String getName() {\n        return name;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    public int getAge() {\n        return age;\n    }\n\n    public void setAge(int age) {\n        this.age = age;\n    }\n\n    public String getCity() {\n        return city;\n    }\n\n    public void setCity(String city) {\n        this.city = city;\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonLocation",
+                    "com.fasterxml.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonLocation"
+                ],
+                "wrong_FQN_predictions": [
+                    "com.fasterxml.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.681499719619751,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,48] package com.fasterxml.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/java/org/example/MyClass.java:[4,48] package com.fasterxml.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,37] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.712 s\n[INFO] Finished at: 2024-04-16T20:19:06-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/java/org/example/Main.java:[5,48] package com.fasterxml.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/java/org/example/MyClass.java:[4,48] package com.fasterxml.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,37] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/java/org/example/MyClass.java",
+                                "line": 4,
+                                "column": 48,
+                                "message": "package com.fasterxml.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 48,
+                                "message": "package com.fasterxml.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 37,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonLocation\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe code below gives a complete, correct and compilable Java code. It uses the \"JsonLocation\" API from the \"jackson-core-2.16.1\" project along with the \"JsonFactory\" and \"JsonParser\" APIs from the same project. Note that dependencies for these APIs are included by default for this project due to the dependency of \"jackson-core-2.16.1\". For other APIs, the dependencies will need to be manually added to your project.\n\n```java\nimport com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.JsonParser;\n\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.JsonParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Your code goes here\n    }\n}\n```\n\nReplace the placeholders  with one of the APIs you need from the project. Replace the comment with your actual code. \n\nPlease remember, without the actual Json input, this is a simple skeleton program and won't provide an actual value. \n\nAlso note that the actual library file might be named slightly differently depending upon the operating system. For instance, if the library file was named 'jackson-core-2.16.1.jar', the import statement would be `import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;`.",
+                "extracted_java_code_from_prediction": "import com.fasterxml.jackson.core.JsonFactory;\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.JsonParser;\n\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.util.DefaultPrettyPrinter;\nimport com.fasterxml.jackson.core.JsonParser;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Your code goes here\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.JsonParser",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.JsonParser"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonFactory",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.JsonParser",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.util.DefaultPrettyPrinter",
+                    "com.fasterxml.jackson.core.JsonParser"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 8,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5011323094367981,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"JsonLocation\" API from \"jackson-core-2.16.1\" project along with other necessary APIs. The dependency is already added for \"jackson-core-2.16.1\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is an example of a simple Java program using the \"JsonLocation\" API from the \"jackson-core-2.16.1\" project:\n\n```java\nimport java.io.IOException;\nimport com.fasterxml.jackson.core.JsonLocation;\nimport com.fasterxml.jackson.core.JsonParser;\nimport com.fasterxml.jackson.core.JsonToken;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n\n    public static void main(String[] args) throws IOException {\n        String jsonString = \"{ \\\"name\\\": \\\"John\\\", \\\"age\\\": 30, \\\"city\\\": \\\"New York\\\" }\";\n        ObjectMapper objectMapper = new ObjectMapper();\n        JsonParser jsonParser = objectMapper.getFactory().createParser(jsonString);\n\n        JsonLocation location;\n\n        while (!jsonParser.isClosed()) {\n            JsonToken jsonToken = jsonParser.nextToken();\n            if (jsonToken != null) {\n                location = jsonParser.getCurrentLocation();\n                System.out.println(\"The token '\" + jsonToken + \"' is found at position \" + location);\n            }\n        }\n    }\n}\n```\n\nThis program will parse a JSON string, and for each token found, it will print the token and the location of the token in the JSON string. Note that it doesn't require the use of APIs from additional dependencies, which are already included in the jar file provided in the question (jackson-core-2.16.1).",
+                "extracted_java_code_from_prediction": "import java.io.IOException;\nimport com.fasterxml.jackson.core.JsonLocation;\nimport com.fasterxml.jackson.core.JsonParser;\nimport com.fasterxml.jackson.core.JsonToken;\nimport com.fasterxml.jackson.databind.ObjectMapper;\n\npublic class Main {\n\n    public static void main(String[] args) throws IOException {\n        String jsonString = \"{ \\\"name\\\": \\\"John\\\", \\\"age\\\": 30, \\\"city\\\": \\\"New York\\\" }\";\n        ObjectMapper objectMapper = new ObjectMapper();\n        JsonParser jsonParser = objectMapper.getFactory().createParser(jsonString);\n\n        JsonLocation location;\n\n        while (!jsonParser.isClosed()) {\n            JsonToken jsonToken = jsonParser.nextToken();\n            if (jsonToken != null) {\n                location = jsonParser.getCurrentLocation();\n                System.out.println(\"The token '\" + jsonToken + \"' is found at position \" + location);\n            }\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.IOException",
+                    "com.fasterxml.jackson.core.JsonLocation",
+                    "com.fasterxml.jackson.core.JsonParser",
+                    "com.fasterxml.jackson.core.JsonToken",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "correct_FQN_predictions": [
+                    "com.fasterxml.jackson.core.JsonLocation",
+                    "com.fasterxml.jackson.core.JsonParser",
+                    "com.fasterxml.jackson.core.JsonToken",
+                    "com.fasterxml.jackson.databind.ObjectMapper"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.582689642906189,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,9] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,41] cannot find symbol\n  symbol:   class ObjectMapper\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.766 s\n[INFO] Finished at: 2024-04-16T20:19:09-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,38] package com.fasterxml.jackson.databind does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,9] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,41] cannot find symbol\n[ERROR]   symbol:   class ObjectMapper\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 38,
+                                "message": "package com.fasterxml.jackson.databind does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/jackson-core-2.16.1/JsonLocation/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 41,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

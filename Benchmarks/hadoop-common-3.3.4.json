@@ -1,0 +1,1147 @@
+{
+    "jar_name": "hadoop-common-3.3.4.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from hadoop-common-3.3.4 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from hadoop-common-3.3.4 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the Hadoop source code or any other external resources. However, based on the information provided, I can make a few assumptions:\n\n1. The Hadoop-common-3.3.4 project is a part of the Apache Hadoop project, which is a framework for distributed processing and storage.\n2. The classes in the project are typically non-abstract and are used for various functionalities related to Hadoop.\n3. The classes are not necessarily API's, but they could be used as part of the public API.\n\nWithout specific details about the classes in the Hadoop-common-3.3.4 project, it's difficult to provide a definitive list of correct API's class names. However, based on the above assumptions, I can suggest a few possible class names:\n\n1. Configuration\n2. FileSystem\n3. Path\n4. Writable\n5. WritableComparable\n6. WritableComparator\n7. JobConf\n8. Job\n9. TaskAttemptContext\n10. TaskAttemptID\n11. TaskID\n12. TaskInputOutputContext\n13. TaskInputOutputContextImpl\n14. TaskType\n15. TaskTypeImpl\n16. TaskTracker\n17. TaskTrackerImpl\n18. TaskAttempt\n19. TaskAttemptImpl\n20. TaskAttemptIDImpl\n21. TaskIDImpl\n22. TaskInputOutputContextImpl\n23. TaskInputOutputContextImpl\n24. TaskTypeImpl\n25. TaskTypeImpl\n26. TaskTrackerImpl\n27. TaskTrackerImpl\n28. TaskAttemptImpl\n29. TaskAttemptImpl\n30. TaskIDImpl\n31. TaskIDImpl\n32. TaskInputOutputContextImpl\n33. TaskInputOutputContextImpl\n34. TaskTypeImpl\n35. TaskTypeImpl\n36. TaskTrackerImpl\n37. TaskTrackerImpl\n38. TaskAttemptImpl\n39. TaskAttemptImpl\n40. TaskIDImpl\n41. TaskIDImpl\n42. TaskInputOutputContextImpl\n43. TaskInputOutputContextImpl\n44. TaskTypeImpl\n45. TaskTypeImpl\n46. TaskTrackerImpl\n47. TaskTrackerImpl\n48. TaskAttemptImpl\n49. TaskAttemptImpl\n50. TaskIDImpl\n\nPlease note that these are just general suggestions and may not be exhaustive or correct. The actual list of classes would depend on the specific functionalities and functionalities of the Hadoop-common-3.3.4 project.",
+        "extracted_APIs_from_prediction": [
+            "Configuration",
+            "FileSystem",
+            "Path",
+            "Writable",
+            "WritableComparable",
+            "WritableComparator",
+            "JobConf",
+            "Job",
+            "TaskAttemptContext",
+            "TaskAttemptID",
+            "TaskID",
+            "TaskInputOutputContext",
+            "TaskInputOutputContextImpl",
+            "TaskType",
+            "TaskTypeImpl",
+            "TaskTracker",
+            "TaskTrackerImpl",
+            "TaskAttempt",
+            "TaskAttemptImpl",
+            "TaskAttemptIDImpl",
+            "TaskIDImpl"
+        ],
+        "correct_API_predictions": [
+            "Configuration",
+            "Path",
+            "WritableComparator"
+        ],
+        "wrong_API_predictions": [
+            "FileSystem",
+            "Writable",
+            "WritableComparable",
+            "JobConf",
+            "Job",
+            "TaskAttemptContext",
+            "TaskAttemptID",
+            "TaskID",
+            "TaskInputOutputContext",
+            "TaskInputOutputContextImpl",
+            "TaskType",
+            "TaskTypeImpl",
+            "TaskTracker",
+            "TaskTrackerImpl",
+            "TaskAttempt",
+            "TaskAttemptImpl",
+            "TaskAttemptIDImpl",
+            "TaskIDImpl"
+        ],
+        "number_of_correct_APIs": 3,
+        "number_of_wrong_APIs": 18,
+        "failure_rate_for_APIs": 0.8571428571428571,
+        "model_confidence": 0.7376853227615356,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "Configuration": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Configuration\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Configuration\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIt's quite difficult to provide an example without knowing what specific functionality you want your code to have since Hadoop's Configuration API is quite versatile and you can't cover everything with a simple example. However, below is a simple example of how you can use the Configuration API from hadoop-common-3.3.4 project:\n\n```java\nimport java.util.*;\nimport org.apache.hadoop.conf.Configuration;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration conf = new Configuration();\n\n        // Set a property\n        conf.set(\"name\", \"Hadoop\");\n        \n        // Get the value of the property\n        String value = conf.get(\"name\");\n        \n        System.out.println(value); // prints \"Hadoop\"\n    }\n}\n```\n\nThis code creates a new Configuration object and sets a property named \"name\" with the value \"Hadoop\". Then it gets the value of \"name\" and prints it to the console.\n\nPlease replace the code above with your specific use case considering the APIs you have.",
+                "extracted_java_code_from_prediction": "import java.util.*;\nimport org.apache.hadoop.conf.Configuration;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration conf = new Configuration();\n\n        // Set a property\n        conf.set(\"name\", \"Hadoop\");\n        \n        // Get the value of the property\n        String value = conf.get(\"name\");\n        \n        System.out.println(value); // prints \"Hadoop\"\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.*",
+                    "org.apache.hadoop.conf.Configuration"
+                ],
+                "correct_FQN_predictions": [
+                    "java.util.*",
+                    "org.apache.hadoop.conf.Configuration"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.4362460672855377,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Configuration\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThis kind of task is quite complex and requires a detailed scenario. However, I'll provide a simple code snippet demonstrating usage of Configuration, assuming that you'd like to get an existing property and set a new one from the hadoop configuration file 'core-site.xml'. \n\nIn Java, you typically use the Hadoop's Configuration class to access or set properties for Hadoop. Here's how to do that:\n\n```java\nimport org.apache.hadoop.conf.Configuration;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration conf = new Configuration();\n        \n        // Setting a new property\n        conf.set(\"key\", \"value\");\n        \n        // Getting an existing property\n        String value = conf.get(\"key\");\n        System.out.println(value);\n    }\n}\n```\n\nRemember that you'd also need to copy and paste your 'core-site.xml' into your project's classpath, under $HADOOP_HOME/etc/hadoop/ . \n\nFor larger tasks, you might need to make use of other APIs like FileSystem API to read, write, delete files, and directories, among others. To import these APIs, you'll need to add their dependencies as well. \n\nWithout more information regarding the specific task you want accomplished, this task is quite vague and might require much more work. \n\nAlso note that using the official Hadoop and Java APIs outside of an application server, such as a standalone Java application, might require some modifications to run smoothly.",
+                "extracted_java_code_from_prediction": "import org.apache.hadoop.conf.Configuration;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration conf = new Configuration();\n        \n        // Setting a new property\n        conf.set(\"key\", \"value\");\n        \n        // Getting an existing property\n        String value = conf.get(\"key\");\n        System.out.println(value);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.hadoop.conf.Configuration"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.conf.Configuration"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.44236454367637634,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Configuration\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple Java class that uses the \"Configuration\" API from \"hadoop-common-3.3.4\" project. It also sets up a Property, then displays it on the console:\n\n```java\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String args[]) throws IOException {\n        Configuration conf = new Configuration();\n        conf.set(\"fs.defaultFS\", \"hdfs://localhost:9000\"); \n        FileSystem fs = FileSystem.get(conf);\n\n        conf.set(\"test.property\", \"testing property\");\n        System.out.println(conf.get(\"test.property\"));\n    }\n}\n```\nThis is just a simple example to give you an idea of how you might set up a Configuration object with a few properties. The above code also depends on the 'hadoop-client' and 'hadoop-common' libraries. Note that 'localhost:9000' should be replaced with your HDFS (Hadoop Distributed File System) address and port.\n\nAlso, always ensure to import the necessary packages that are used in your code and always handle checked exceptions properly.",
+                "extracted_java_code_from_prediction": "import org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String args[]) throws IOException {\n        Configuration conf = new Configuration();\n        conf.set(\"fs.defaultFS\", \"hdfs://localhost:9000\"); \n        FileSystem fs = FileSystem.get(conf);\n\n        conf.set(\"test.property\", \"testing property\");\n        System.out.println(conf.get(\"test.property\"));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path",
+                    "java.io.*"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path",
+                    "java.io.*"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.4690546989440918,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Configuration\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a basic example of how to use the `Configuration` class with other APIs. In this example, we're creating a new HDFS directory, writing a text file to it, and listing all files in the directory. Note that it's not actually compilable here because it requires the context of a larger Hadoop project, including dependencies and configuration settings. But it's a basic example that should work on a system setup with those dependencies:\n\n```java\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport java.io.IOException;\nimport java.net.URI;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        // Create a configuration\n        Configuration conf = new Configuration();\n\n        // Create a file system using the configuration\n        FileSystem fs = FileSystem.get(URI.create(\"hdfs://localhost:9000\"), conf);\n\n        // Create a new directory\n        fs.mkdirs(new Path(\"/user/hadoop/inputDir\"));\n        System.out.println(\"Directory created\");\n\n        // Create a new file and write to it\n        Path outputFile = new Path(\"/user/hadoop/inputDir/testfile.txt\");\n        if (fs.exists(outputFile)) {\n            fs.delete(outputFile, true);\n        }\n        fs.create(outputFile).close();\n        System.out.println(\"File created\");\n\n        // List all files in the directory\n        FileStatus[] statuses = fs.listStatus(new Path(\"/user/hadoop/inputDir\"));\n        System.out.println(\"List of files: \" + Arrays.toString(statuses));\n\n        // Close the file system\n        fs.close();\n    }\n}\n```\n\nThis code will create a directory on HDFS at `/user/hadoop/inputDir`. If a file with the same name exists, it will be deleted before creating a new one. It then lists all files in that directory and closes the file system. You'll need to run this on a system with a setup Hadoop environment (e.g., an Hadoop cluster) and adjust the `hdfs://localhost:9000` URI to point to your HDFS (if not on localhost).",
+                "extracted_java_code_from_prediction": "import org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport java.io.IOException;\nimport java.net.URI;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        // Create a configuration\n        Configuration conf = new Configuration();\n\n        // Create a file system using the configuration\n        FileSystem fs = FileSystem.get(URI.create(\"hdfs://localhost:9000\"), conf);\n\n        // Create a new directory\n        fs.mkdirs(new Path(\"/user/hadoop/inputDir\"));\n        System.out.println(\"Directory created\");\n\n        // Create a new file and write to it\n        Path outputFile = new Path(\"/user/hadoop/inputDir/testfile.txt\");\n        if (fs.exists(outputFile)) {\n            fs.delete(outputFile, true);\n        }\n        fs.create(outputFile).close();\n        System.out.println(\"File created\");\n\n        // List all files in the directory\n        FileStatus[] statuses = fs.listStatus(new Path(\"/user/hadoop/inputDir\"));\n        System.out.println(\"List of files: \" + Arrays.toString(statuses));\n\n        // Close the file system\n        fs.close();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path",
+                    "java.io.IOException",
+                    "java.net.URI",
+                    "java.util.Arrays"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException",
+                    "java.net.URI",
+                    "java.util.Arrays"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.6125558614730835,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/Configuration/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/Configuration/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/Configuration/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/Configuration/sample_4/Wrapper/src/main/java/org/example/Main.java:[32,9] cannot find symbol\n  symbol:   class FileStatus\n  location: class org.example.Main\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.694 s\n[INFO] Finished at: 2024-04-16T23:35:08-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/Configuration/sample_4/Wrapper/src/main/java/org/example/Main.java:[32,9] cannot find symbol\n[ERROR]   symbol:   class FileStatus\n[ERROR]   location: class org.example.Main\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/Configuration/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 32,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Configuration\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simple example of how you might use the \"Configuration\" class from the \"hadoop-common-3.3.4\" project along with the \"FileSystem\" and \"Path\" classes from the same project. Note that the API documentation for the classes you are using are assumed to be available, and that your project's actual import statements will depend on what other APIs you are using.\n\nTo compile and run the code below, make sure you have Hadoop 3.3.4 and Java Development Kit (JDK) installed on your machine. Please install the Hadoop libraries in your system path environment variable to avoid any compilation errors.\n\nRemember that to use Hadoop's APIs, you'll need to add Hadoop's jar to your project's classpath.\n\n```java\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // Create a new configuration object\n        Configuration conf = new Configuration();\n\n        // Set configuration properties\n        conf.set(\"fs.defaultFS\", \"hdfs://localhost:9000\");\n\n        // Get a FileSystem instance from the configuration\n        FileSystem fs = FileSystem.get(conf);\n\n        // Get the file status of a file\n        Path file = new Path(\"/path/to/your/file\");\n        if (fs.exists(file)) {\n            System.out.println(\"File exists.\");\n        } else {\n            System.out.println(\"File does not exist.\");\n        }\n    }\n}\n```\n\nIn this example, we're getting a FileSystem instance and checking the existence of a file on a HDFS system that's running at localhost with its WebHDFS service on port 9000. Be sure to replace \"/path/to/your/file\" with the path to the file you are interested in.\n\nYou can run this code with a command like:\n\n```sh\njavac -cp .:/path/to/hadoop/hadoop-common-3.3.4.jar Main.java\n```\n\nThis assumes that the `/path/to/hadoop/` directory is the directory where you installed the Hadoop libraries. Replace `Main.java` with the name of the Java file containing the Main class.\n\nThe `-cp` option sets the classpath, telling the JVM where to find the Hadoop jar file.\n\nTo run the application, use the command:\n\n```sh\njava -cp .:/path/to/hadoop/hadoop-common-3.3.4.jar Main\n```",
+                "extracted_java_code_from_prediction": "import org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        // Create a new configuration object\n        Configuration conf = new Configuration();\n\n        // Set configuration properties\n        conf.set(\"fs.defaultFS\", \"hdfs://localhost:9000\");\n\n        // Get a FileSystem instance from the configuration\n        FileSystem fs = FileSystem.get(conf);\n\n        // Get the file status of a file\n        Path file = new Path(\"/path/to/your/file\");\n        if (fs.exists(file)) {\n            System.out.println(\"File exists.\");\n        } else {\n            System.out.println(\"File does not exist.\");\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6547527313232422,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "Path": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"Path\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Path\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe java code to be implemented would depend upon the exact requirement. If you want to use 'Path' API from \"hadoop-common-3.3.4\" project, it would require a lot of dependencies which are not directly available in Java. The Path API belongs to 'Hadoop' - a large ecosystem of libraries for big data processing and analysis, and is not a standard Java API. Therefore, it would depend upon the specific use case where the code would be applied and not available as a basic Java API.\n\nHere's a simplified example of a class which uses 'java.nio.file.Path' in Java:\n\n```java\nimport java.nio.file.*;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            Path filePath = Paths.get(\"/path/to/your/file\");\n            System.out.println(Files.exists(filePath));\n            System.out.println(Files.isDirectory(filePath));\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nNote that this uses the java.nio.file package for creating a Path object, which is a low level I/O access API for manipulating pathnames.\n\nPlease replace \"/path/to/your/file\" with the actual location of your file.\n\nIf you wish to use the Hadoop APIs, you need to use a Maven dependency that includes the Hadoop APIs in your project. You need to check the documentation of the library that includes these APIs for how to add them. And also note, these APIs are not generally straightforward and would require a good understanding of how they work together.\n\nIn the case you have a specific task that requires Hadoop functionality, providing specific use case details might be helpful for providing more precise and complete code.",
+                "extracted_java_code_from_prediction": "import java.nio.file.*;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            Path filePath = Paths.get(\"/path/to/your/file\");\n            System.out.println(Files.exists(filePath));\n            System.out.println(Files.isDirectory(filePath));\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.nio.file.*",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.nio.file.*",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4329465925693512,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Path\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nDue to the constraints outlined in your prompt, I am unable to provide a single compilable Java class that uses a wide variety of APIs. But below is a simple example of how one can create a class and use Path API from a Hadoop project:\n\n```java\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.conf.Configuration;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration conf = new Configuration();\n        try {\n            FileSystem fs = FileSystem.get(conf);\n\n            // Get a file status\n            Path file = new Path(\"hdfs://mycluster/path/to/myfile\");\n            System.out.println(\"File: \" + fs.getFileStatus(file).getPath());\n\n        } catch (Exception e) {\n            System.err.println(\"Caught exception: \" + e);\n        }\n    }\n}\n```\n\nThis example is very basic and doesn't cover any complex HDFS operations, it's only using the FileSystem to interact with Hadoop File System. For a complete and robust Hadoop File System interaction, consider using Hadoop's Distributed FileSystem class and similar methods for other APIs.\n\nThe code may not compile if some other external libraries or frameworks are being used, as these need their own dependencies configured and included in the classpath to allow for their use. In these cases, you would need to review and adjust the specific code to conform to your specific requirements.",
+                "extracted_java_code_from_prediction": "import org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.conf.Configuration;\n\npublic class Main {\n    public static void main(String[] args) {\n        Configuration conf = new Configuration();\n        try {\n            FileSystem fs = FileSystem.get(conf);\n\n            // Get a file status\n            Path file = new Path(\"hdfs://mycluster/path/to/myfile\");\n            System.out.println(\"File: \" + fs.getFileStatus(file).getPath());\n\n        } catch (Exception e) {\n            System.err.println(\"Caught exception: \" + e);\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path",
+                    "org.apache.hadoop.conf.Configuration"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path",
+                    "org.apache.hadoop.conf.Configuration"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4210628867149353,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Path\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a complete, correct and compilable Java code using Path API from \"hadoop-common-3.3.4\" project. It uses a couple of other Hadoop-related APIs too for the sake of completion. \n\nTo run this, make sure you have added the \"hadoop-common-3.3.4\" to your classpath.\n\n```java\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.io.IOUtils;\n\nimport java.io.InputStream;\nimport java.io.OutputStream;\nimport java.net.URI;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        String uri = args[0];\n        Configuration conf = new Configuration();\n        FileSystem fs = FileSystem.get(URI.create(uri), conf);\n        InputStream in = null;\n        OutputStream out = null;\n\n        try {\n            in = fs.open(new Path(uri));\n            IOUtils.copyBytes(in, System.out, 4096, false);\n        } finally {\n            IOUtils.closeStream(in);\n        }\n    }\n}\n```\nThis simple Java program reads a file on HDFS at the location provided in the command line and outputs its content to console. \n\nPlease replace the \"uri\" String with the appropriate URI of your file. You may need to install Hadoop or some equivalent, depending upon the environment in which you want to execute this.\n\nAlso, note that Apache's Hadoop framework and its respective APIs are usually used to work with Hadoop Distributed File System (HDFS), not just for reading and writing simple files. For such use cases, other APIs from the Hadoop Ecosystem such as HDFS APIs (org.apache.hadoop.hdfs.*) might be useful. This example does not demonstrate these.",
+                "extracted_java_code_from_prediction": "import org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.io.IOUtils;\n\nimport java.io.InputStream;\nimport java.io.OutputStream;\nimport java.net.URI;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        String uri = args[0];\n        Configuration conf = new Configuration();\n        FileSystem fs = FileSystem.get(URI.create(uri), conf);\n        InputStream in = null;\n        OutputStream out = null;\n\n        try {\n            in = fs.open(new Path(uri));\n            IOUtils.copyBytes(in, System.out, 4096, false);\n        } finally {\n            IOUtils.closeStream(in);\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path",
+                    "org.apache.hadoop.io.IOUtils",
+                    "java.io.InputStream",
+                    "java.io.OutputStream",
+                    "java.net.URI"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path",
+                    "org.apache.hadoop.io.IOUtils",
+                    "java.io.InputStream",
+                    "java.io.OutputStream",
+                    "java.net.URI"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 7,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5714285714285714,
+                "model_confidence": 0.5426639914512634,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Path\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe code you want depends on what the exact tasks are you want your Java program to accomplish in relation to the Path API. Here is a simple example of how to use the Path API, create a directory and list all files in the directory. This assumes that you have a running Hadoop environment setup, and the code can only be run on a machine that has access to Hadoop. You may need to adjust the code to match your needs.\n\nIf you want to create a File or a directory, you might need additional permissions or settings in your HDFS setup. Be aware that you might need to setup and configure your Hadoop environment properly before running the code below.\n\nHere's a simple example using \"java.nio.file.Files\" and \"java.nio.file.Paths\":\n\n```java\nimport java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\n\npublic class Main {\n\n    public static void main(String[] args) throws IOException {\n        String inputDirectory = \"/input/directory\";\n        String outputDirectory = \"/output/directory\";\n        \n        Path inputPath = Paths.get(inputDirectory);\n        Path outputPath = Paths.get(outputDirectory);\n        \n        // Create an output directory if it doesn't already exist\n        if (!Files.exists(outputPath)) {\n            Files.createDirectory(outputPath);\n        }\n\n        // Print the names of all files in the input directory\n        Files.list(inputPath)\n                .map(Path::toString)\n                .forEach(System.out::println);\n    }\n}\n```\n\nThis will read the contents of the directory at /input/directory and write a list of all file names to stdout. It assumes that the Hadoop configuration is set up properly and that the HDFS is accessible from the machine where you're running the Java program.\n\nThis example doesn't use the hadoop APIs directly, but it shows how to use the Java I/O APIs (java.nio.file package) for HDFS operations. Be aware that java.nio.file.Path and java.nio.file.Files classes use system specific file pathing conventions which may not be compatible with Hadoop's.\n\nIf you want to use Hadoop APIs directly, you have to add the Hadoop libraries in your project's build path and modify your code accordingly. Here is an example that uses Hadoop APIs to get a list of all files in a directory:\n\n```java\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        Configuration conf = new Configuration();\n        FileSystem fs = FileSystem.get(conf);\n        Path path = new Path(\"/my/hadoop/directory\");\n        for (FileStatus fileStatus : fs.listStatus(path)) {\n            System.out.println(fileStatus.getPath().getName());\n        }\n    }\n}\n```\nIn this example, the Hadoop FileSystem API is used to list the files in a directory named \"/my/hadoop/directory\". You will need to add the necessary Hadoop dependencies to your project.",
+                "extracted_java_code_from_prediction": "import java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.nio.file.Paths;\n\npublic class Main {\n\n    public static void main(String[] args) throws IOException {\n        String inputDirectory = \"/input/directory\";\n        String outputDirectory = \"/output/directory\";\n        \n        Path inputPath = Paths.get(inputDirectory);\n        Path outputPath = Paths.get(outputDirectory);\n        \n        // Create an output directory if it doesn't already exist\n        if (!Files.exists(outputPath)) {\n            Files.createDirectory(outputPath);\n        }\n\n        // Print the names of all files in the input directory\n        Files.list(inputPath)\n                .map(Path::toString)\n                .forEach(System.out::println);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.IOException",
+                    "java.nio.file.Files",
+                    "java.nio.file.Path",
+                    "java.nio.file.Paths"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException",
+                    "java.nio.file.Files",
+                    "java.nio.file.Path",
+                    "java.nio.file.Paths"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 4,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.6365604400634766,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"Path\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe requirements you've specified are a bit abstract. You haven't stated the exact tasks that need to be done with the \"Path\" API of the \"hadoop-common-3.3.4\" project and the other necessary APIs.\n\nHowever, from what you've said in your commentaries, I've assumed you're planning to interact with the file system of Hadoop and perform certain tasks using the \"Path\" API. If that's the case, you can try the following code snippet. This simple code creates a new file, gets its full path, and deletes the file.\n\n```java\npackage mypackage;\n\nimport java.io.IOException;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\n\npublic class Main {\n    \n    public static void main(String[] args) throws Exception {\n        Configuration conf = new Configuration();\n        FileSystem fs = FileSystem.get(conf);\n\n        // Create a new file\n        Path file = new Path(\"/user/myuser/myfile\");\n        fs.createNewFile(file);\n\n        // Print out its full path\n        System.out.println(\"File Path: \" + file.toUri().toURL().toString());\n\n        // Delete the file\n        fs.delete(file, true);\n    }\n}\n```\nThis code creates a new file in the Hadoop file system using `FileSystem.createNewFile`, prints out the full path of the file using `Path.toUri().toURL().toString()`, and finally, deletes the file using `FileSystem.delete`.\n\nThe full project Hadoop client library provides many FileSystem methods to perform file and directory operations, and the Path class can be used for file path operations and manipulations.\n\nPlease specify the tasks that you want to accomplish with the \"Path\" API for the \"hadoop-common-3.3.4\" project to give a more specific answer.",
+                "extracted_java_code_from_prediction": "package mypackage;\n\nimport java.io.IOException;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.FileSystem;\nimport org.apache.hadoop.fs.Path;\n\npublic class Main {\n    \n    public static void main(String[] args) throws Exception {\n        Configuration conf = new Configuration();\n        FileSystem fs = FileSystem.get(conf);\n\n        // Create a new file\n        Path file = new Path(\"/user/myuser/myfile\");\n        fs.createNewFile(file);\n\n        // Print out its full path\n        System.out.println(\"File Path: \" + file.toUri().toURL().toString());\n\n        // Delete the file\n        fs.delete(file, true);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.IOException",
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path"
+                ],
+                "correct_FQN_predictions": [
+                    "java.io.IOException",
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.FileSystem",
+                    "org.apache.hadoop.fs.Path"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.5187748074531555,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "WritableComparator": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"WritableComparator\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"WritableComparator\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYour question is quite broad and it is not entirely clear what the requirements are. However, I will give a simple example of how to use WritableComparator from the Hadoop 3.3.4 project.\n\nFirst, ensure that Hadoop dependencies are properly configured in your build file or Maven file. The appropriate dependency for \"hadoop-common-3.3.4\" would be:\n```xml\n<dependency>\n    <groupId>org.apache.hadoop</groupId>\n    <artifactId>hadoop-common</artifactId>\n    <version>3.3.4</version>\n</dependency>\n```\n\nHere is a simple example of a MapReduce job that uses a custom comparator:\n```java\nimport java.io.IOException;\nimport org.apache.hadoop.io.Text;\nimport org.apache.hadoop.mapreduce.Mapper;\nimport org.apache.hadoop.mapreduce.Reducer;\nimport org.apache.hadoop.mapreduce.lib.input.FileInputFormat;\nimport org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.mapreduce.Job;\nimport org.apache.hadoop.mapreduce.lib.input.KeyValueLineRecordReader;\nimport org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;\nimport org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat;\nimport org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;\nimport org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;\nimport org.apache.hadoop.util.Tool;\nimport org.apache.hadoop.util.ToolRunner;\nimport org.apache.hadoop.io.LongWritable;\nimport org.apache.hadoop.io.WritableComparable;\nimport org.apache.hadoop.io.WritableComparator;\n\n// Define your own comparator\npublic class MyComparator extends WritableComparator {\n\n    protected MyComparator() {\n        super(Text.class, true);\n    }\n\n    @Override\n    public int compare(WritableComparable w1, WritableComparable w2) {\n        // Your comparison logic here.\n    }\n}\n\n// Define a custom mapper that uses the comparator\npublic class MyMapper extends Mapper<LongWritable, Text, Text, Text> {\n\n    @Override\n    public void map(LongWritable key, Text value, Context context)\n        throws IOException, InterruptedException {\n        // Your map logic here.\n    }\n}\n\n// Define a custom reducer\npublic class MyReducer extends Reducer<Text, Text, Text, Text> {\n\n    @Override\n    public void reduce(Text key, Iterable<Text> values, Context context)\n        throws IOException, InterruptedException {\n        // Your reduce logic here.\n    }\n}\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        Configuration conf = new Configuration();\n        Job job = Job.getInstance(conf, \"Sort Job\");\n        job.setJarByClass(Main.class);\n\n        // Set your input and output paths here\n        FileInputFormat.addInputPath(job, new Path(args[0]));\n        FileOutputFormat.setOutputPath(job, new Path(args[1]));\n\n        // Set your mapper and reducer classes here\n        job.setMapperClass(MyMapper.class);\n        job.setReducerClass(MyReducer.class);\n\n        // Set your key and value classes here\n        job.setOutputKeyClass(Text.class);\n        job.setOutputValueClass(Text.class);\n\n        // Add the custom comparator\n        Job.getInstance(conf).setSortComparatorClass(MyComparator.class);\n\n        // Execute the job and wait for completion\n        System.exit(job.waitForCompletion(true) ? 0 : 1);\n    }\n}\n```\nThis code creates a MapReduce job that uses a custom comparator to sort its output. The custom comparator is set in the main function, replacing the standard comparator that sorts the keys of MapReduce output. This shows an example of how to use the WritableComparator API from \"hadoop-common-3.3.4\" project.",
+                "extracted_java_code_from_prediction": "import java.io.IOException;\nimport org.apache.hadoop.io.Text;\nimport org.apache.hadoop.mapreduce.Mapper;\nimport org.apache.hadoop.mapreduce.Reducer;\nimport org.apache.hadoop.mapreduce.lib.input.FileInputFormat;\nimport org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;\nimport org.apache.hadoop.conf.Configuration;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.mapreduce.Job;\nimport org.apache.hadoop.mapreduce.lib.input.KeyValueLineRecordReader;\nimport org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;\nimport org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat;\nimport org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;\nimport org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;\nimport org.apache.hadoop.util.Tool;\nimport org.apache.hadoop.util.ToolRunner;\nimport org.apache.hadoop.io.LongWritable;\nimport org.apache.hadoop.io.WritableComparable;\nimport org.apache.hadoop.io.WritableComparator;\n\n// Define your own comparator\npublic class MyComparator extends WritableComparator {\n\n    protected MyComparator() {\n        super(Text.class, true);\n    }\n\n    @Override\n    public int compare(WritableComparable w1, WritableComparable w2) {\n        // Your comparison logic here.\n    }\n}\n\n// Define a custom mapper that uses the comparator\npublic class MyMapper extends Mapper<LongWritable, Text, Text, Text> {\n\n    @Override\n    public void map(LongWritable key, Text value, Context context)\n        throws IOException, InterruptedException {\n        // Your map logic here.\n    }\n}\n\n// Define a custom reducer\npublic class MyReducer extends Reducer<Text, Text, Text, Text> {\n\n    @Override\n    public void reduce(Text key, Iterable<Text> values, Context context)\n        throws IOException, InterruptedException {\n        // Your reduce logic here.\n    }\n}\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        Configuration conf = new Configuration();\n        Job job = Job.getInstance(conf, \"Sort Job\");\n        job.setJarByClass(Main.class);\n\n        // Set your input and output paths here\n        FileInputFormat.addInputPath(job, new Path(args[0]));\n        FileOutputFormat.setOutputPath(job, new Path(args[1]));\n\n        // Set your mapper and reducer classes here\n        job.setMapperClass(MyMapper.class);\n        job.setReducerClass(MyReducer.class);\n\n        // Set your key and value classes here\n        job.setOutputKeyClass(Text.class);\n        job.setOutputValueClass(Text.class);\n\n        // Add the custom comparator\n        Job.getInstance(conf).setSortComparatorClass(MyComparator.class);\n\n        // Execute the job and wait for completion\n        System.exit(job.waitForCompletion(true) ? 0 : 1);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.IOException",
+                    "org.apache.hadoop.io.Text",
+                    "org.apache.hadoop.mapreduce.Mapper",
+                    "org.apache.hadoop.mapreduce.Reducer",
+                    "org.apache.hadoop.mapreduce.lib.input.FileInputFormat",
+                    "org.apache.hadoop.mapreduce.lib.output.FileOutputFormat",
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.Path",
+                    "org.apache.hadoop.mapreduce.Job",
+                    "org.apache.hadoop.mapreduce.lib.input.KeyValueLineRecordReader",
+                    "org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat",
+                    "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat",
+                    "org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat",
+                    "org.apache.hadoop.mapreduce.lib.output.TextOutputFormat",
+                    "org.apache.hadoop.util.Tool",
+                    "org.apache.hadoop.util.ToolRunner",
+                    "org.apache.hadoop.io.LongWritable",
+                    "org.apache.hadoop.io.WritableComparable",
+                    "org.apache.hadoop.io.WritableComparator"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.io.Text",
+                    "org.apache.hadoop.conf.Configuration",
+                    "org.apache.hadoop.fs.Path",
+                    "org.apache.hadoop.util.ToolRunner",
+                    "org.apache.hadoop.io.LongWritable",
+                    "org.apache.hadoop.io.WritableComparable",
+                    "org.apache.hadoop.io.WritableComparator"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException",
+                    "org.apache.hadoop.mapreduce.Mapper",
+                    "org.apache.hadoop.mapreduce.Reducer",
+                    "org.apache.hadoop.mapreduce.lib.input.FileInputFormat",
+                    "org.apache.hadoop.mapreduce.lib.output.FileOutputFormat",
+                    "org.apache.hadoop.mapreduce.Job",
+                    "org.apache.hadoop.mapreduce.lib.input.KeyValueLineRecordReader",
+                    "org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat",
+                    "org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat",
+                    "org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat",
+                    "org.apache.hadoop.mapreduce.lib.output.TextOutputFormat",
+                    "org.apache.hadoop.util.Tool"
+                ],
+                "number_of_correct_FQNs": 7,
+                "number_of_wrong_FQNs": 12,
+                "failure_rate_for_FQNs": 0.631578947368421,
+                "model_confidence": 0.7698465585708618,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 4 source files to /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[8,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[9,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[13,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[16,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[5,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[6,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[7,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[8,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[11,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[12,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[13,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[15,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[16,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[5,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[6,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[7,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[8,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[11,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[12,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[13,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[15,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[16,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[23,32] cannot find symbol\n  symbol: class Reducer\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[26,57] cannot find symbol\n  symbol:   class Context\n  location: class org.example.MyReducer\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[5,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[6,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[7,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[8,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[11,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[12,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[13,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[15,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[16,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[23,31] cannot find symbol\n  symbol: class Mapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[26,51] cannot find symbol\n  symbol:   class Context\n  location: class org.example.MyMapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[28,9] cannot find symbol\n  symbol:   class Job\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[28,19] cannot find symbol\n  symbol:   variable Job\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[32,9] cannot find symbol\n  symbol:   variable FileInputFormat\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[33,9] cannot find symbol\n  symbol:   variable FileOutputFormat\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[44,9] cannot find symbol\n  symbol:   variable Job\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[25,5] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[25,5] method does not override or implement a method from a supertype\n[INFO] 51 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.633 s\n[INFO] Finished at: 2024-04-16T23:37:40-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[8,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[9,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[13,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[16,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[5,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[6,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[7,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[8,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[11,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[12,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[13,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[15,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java:[16,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[5,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[6,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[7,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[8,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[11,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[12,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[13,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[15,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[16,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[23,32] cannot find symbol\n[ERROR]   symbol: class Reducer\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[26,57] cannot find symbol\n[ERROR]   symbol:   class Context\n[ERROR]   location: class org.example.MyReducer\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[5,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[6,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[7,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[8,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[11,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[12,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[13,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[15,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[16,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[23,31] cannot find symbol\n[ERROR]   symbol: class Mapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[26,51] cannot find symbol\n[ERROR]   symbol:   class Context\n[ERROR]   location: class org.example.MyMapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[28,9] cannot find symbol\n[ERROR]   symbol:   class Job\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[28,19] cannot find symbol\n[ERROR]   symbol:   variable Job\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[32,9] cannot find symbol\n[ERROR]   symbol:   variable FileInputFormat\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[33,9] cannot find symbol\n[ERROR]   symbol:   variable FileOutputFormat\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java:[44,9] cannot find symbol\n[ERROR]   symbol:   variable Job\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java:[25,5] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java:[25,5] method does not override or implement a method from a supertype\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 8,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 32,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 13,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 23,
+                                "column": 32,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 26,
+                                "column": 57,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 7,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 11,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 13,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 6,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 14,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 26,
+                                "column": 51,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 44,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 11,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 12,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 15,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 14,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 8,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 23,
+                                "column": 31,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 8,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 16,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 13,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 28,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 5,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 5,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 16,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 7,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 28,
+                                "column": 19,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 5,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 25,
+                                "column": 5,
+                                "message": "method does not override or implement a method from a supertype"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 16,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 15,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 6,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 6,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 12,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 15,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyReducer.java",
+                                "line": 14,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 25,
+                                "column": 5,
+                                "message": "method does not override or implement a method from a supertype"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 33,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 11,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyMapper.java",
+                                "line": 7,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/MyComparator.java",
+                                "line": 12,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"WritableComparator\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a complete, correct and compilable Java code that utilizes the \"WritableComparator\" API from the \"hadoop-common-3.3.4\" project along with other necessary APIs. Note that it is not possible to use this code if you are to use APIs that require adding new dependencies.\n\n```java\nimport org.apache.hadoop.io.WritableComparator;\nimport org.apache.hadoop.io.WritableComparable;\n\npublic class MyWritableComparator extends WritableComparator {\n    public MyWritableComparator(Class<? extends WritableComparable> c) {\n        super(c);\n    }\n\n    @Override\n    public int compare(byte[] b1, int s1, int l1,\n                       byte[] b2, int s2, int l2) {\n        // Your comparison logic goes here.\n        return 0;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        WritableComparator.setDefault(MyWritableComparator.class);\n    }\n}\n```\n\nIn this Java code, `MyWritableComparator` is a class that extends `WritableComparator`, and you must override the method `compare` which specifies the comparator logic. \n\nIn the `Main` class, there is a `main` method to set a default comparator.\n\nPlease, note that to use this code, you need to import the correct classes that extend `WritableComparator` and `WritableComparable`.\n\nAlso note that you need to replace your comparison logic in the `compare` method in the `MyWritableComparator` class with the actual logic you need.",
+                "extracted_java_code_from_prediction": "import org.apache.hadoop.io.WritableComparator;\nimport org.apache.hadoop.io.WritableComparable;\n\npublic class MyWritableComparator extends WritableComparator {\n    public MyWritableComparator(Class<? extends WritableComparable> c) {\n        super(c);\n    }\n\n    @Override\n    public int compare(byte[] b1, int s1, int l1,\n                       byte[] b2, int s2, int l2) {\n        // Your comparison logic goes here.\n        return 0;\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        WritableComparator.setDefault(MyWritableComparator.class);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.hadoop.io.WritableComparator",
+                    "org.apache.hadoop.io.WritableComparable"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.io.WritableComparator",
+                    "org.apache.hadoop.io.WritableComparable"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4699700176715851,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,27] cannot find symbol\n  symbol:   method setDefault(java.lang.Class<org.example.MyWritableComparator>)\n  location: class org.apache.hadoop.io.WritableComparator\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.404 s\n[INFO] Finished at: 2024-04-16T23:37:42-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,27] cannot find symbol\n[ERROR]   symbol:   method setDefault(java.lang.Class<org.example.MyWritableComparator>)\n[ERROR]   location: class org.apache.hadoop.io.WritableComparator\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 27,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"WritableComparator\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThis is an example of a Hadoop MapReduce program which uses a `WritableComparator`. You would compile it with a Hadoop library that comes with a Hadoop installation and has the required dependencies. For simplicity, it's assumed you are using Maven to manage dependencies.\n\nNote: Hadoop is a distributed file system, and is not a standalone framework like Java or Python. The code provided assumes you are working with a Hadoop-based project, which means you need to download and include the `hadoop-common-3.3.4.jar` file with your classpath. Please make sure to replace any `[CLASS_PATH]` placeholders with the actual path to your hadoop jar file.\n\nPlease refer to the Maven dependency you need to add in your pom.xml file for the libraries required :\n\n```xml\n<dependency>\n    <groupId>org.apache.hadoop</groupId>\n    <artifactId>hadoop-common</artifactId>\n    <version>3.3.4</version>\n</dependency>\n```\n\nThen write the Java program as follows:\n\n```java\nimport java.io.IOException;\n\nimport org.apache.hadoop.io.IntWritable;\nimport org.apache.hadoop.io.Text;\nimport org.apache.hadoop.mapreduce.Reducer;\nimport org.apache.hadoop.mapreduce.Reducer.Context;\nimport org.apache.hadoop.mapreduce.lib.partition.InputSampler;\nimport org.apache.hadoop.mapreduce.lib.partition.InputSampler.SampledKey;\nimport org.apache.hadoop.mapreduce.Partitioner;\nimport org.apache.hadoop.mapreduce.Job;\nimport org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;\nimport org.apache.hadoop.mapreduce.lib.input.FileInputFormat;\nimport org.apache.hadoop.conf.Configured;\nimport org.apache.hadoop.util.Tool;\nimport org.apache.hadoop.util.ToolRunner;\nimport org.apache.hadoop.fs.Path;\n\npublic class WritableComparatorDemo extends Configured implements Tool {\n\n    public static class MyReducer extends Reducer<Text, IntWritable, Text, IntWritable> {\n        @Override\n        public void reduce(Text key, Iterable<IntWritable> values, Context context) \n                throws IOException, InterruptedException {\n            int sum = 0;\n            for (IntWritable val : values) {\n                sum += val.get();\n            }\n            context.write(key, new IntWritable(sum));\n        }\n    }\n\n    public static class MyPartitioner extends Partitioner<Text, IntWritable> {\n        @Override\n        public int getPartition(Text key, IntWritable value, int numReduceTasks) {\n            return (key.hashCode() & Integer.MAX_VALUE) % numReduceTasks;\n        }\n    }\n\n    public int run(String[] args) throws Exception {\n        if (args.length != 2) {\n            System.out.printf(\"Usage: WritableComparatorDemo <input> <output>\\n\");\n            return -1;\n        }\n\n        Job job = new Job(getConf(), \"word count\");\n        job.setJarByClass(WritableComparatorDemo.class);\n        job.setMapperClass(MyReducer.class);\n        job.setReducerClass(MyReducer.class);\n        job.setPartitionerClass(MyPartitioner.class);\n\n        FileInputFormat.addInputPath(job, new Path(args[0]));\n        FileOutputFormat.setOutputPath(job, new Path(args[1]));\n\n        job.setOutputKeyClass(Text.class);\n        job.setOutputValueClass(IntWritable.class);\n\n        return job.waitForCompletion(true) ? 0 : 1;\n    }\n\n    public static void main(String[] args) throws Exception {\n        int exitCode = ToolRunner.run(new WritableComparatorDemo(), args);\n        System.exit(exitCode);\n    }\n}\n```\n\nThis program reads lines from a file, and for each line, it splits on spaces to extract words, counts them and writes the word and count to the output file. The MapReduce job is run on a Hadoop cluster.\n\nPlease replace the above Java code to match your specific requirements. \n\nThe Hadoop MapReduce Java code given here is a generic template and does not represent actual business logic. Actual application logic depends on what you are trying to accomplish and will require specific modifications in the given code.",
+                "extracted_java_code_from_prediction": "import java.io.IOException;\n\nimport org.apache.hadoop.io.IntWritable;\nimport org.apache.hadoop.io.Text;\nimport org.apache.hadoop.mapreduce.Reducer;\nimport org.apache.hadoop.mapreduce.Reducer.Context;\nimport org.apache.hadoop.mapreduce.lib.partition.InputSampler;\nimport org.apache.hadoop.mapreduce.lib.partition.InputSampler.SampledKey;\nimport org.apache.hadoop.mapreduce.Partitioner;\nimport org.apache.hadoop.mapreduce.Job;\nimport org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;\nimport org.apache.hadoop.mapreduce.lib.input.FileInputFormat;\nimport org.apache.hadoop.conf.Configured;\nimport org.apache.hadoop.util.Tool;\nimport org.apache.hadoop.util.ToolRunner;\nimport org.apache.hadoop.fs.Path;\n\npublic class WritableComparatorDemo extends Configured implements Tool {\n\n    public static class MyReducer extends Reducer<Text, IntWritable, Text, IntWritable> {\n        @Override\n        public void reduce(Text key, Iterable<IntWritable> values, Context context) \n                throws IOException, InterruptedException {\n            int sum = 0;\n            for (IntWritable val : values) {\n                sum += val.get();\n            }\n            context.write(key, new IntWritable(sum));\n        }\n    }\n\n    public static class MyPartitioner extends Partitioner<Text, IntWritable> {\n        @Override\n        public int getPartition(Text key, IntWritable value, int numReduceTasks) {\n            return (key.hashCode() & Integer.MAX_VALUE) % numReduceTasks;\n        }\n    }\n\n    public int run(String[] args) throws Exception {\n        if (args.length != 2) {\n            System.out.printf(\"Usage: WritableComparatorDemo <input> <output>\\n\");\n            return -1;\n        }\n\n        Job job = new Job(getConf(), \"word count\");\n        job.setJarByClass(WritableComparatorDemo.class);\n        job.setMapperClass(MyReducer.class);\n        job.setReducerClass(MyReducer.class);\n        job.setPartitionerClass(MyPartitioner.class);\n\n        FileInputFormat.addInputPath(job, new Path(args[0]));\n        FileOutputFormat.setOutputPath(job, new Path(args[1]));\n\n        job.setOutputKeyClass(Text.class);\n        job.setOutputValueClass(IntWritable.class);\n\n        return job.waitForCompletion(true) ? 0 : 1;\n    }\n\n    public static void main(String[] args) throws Exception {\n        int exitCode = ToolRunner.run(new WritableComparatorDemo(), args);\n        System.exit(exitCode);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.IOException",
+                    "org.apache.hadoop.io.IntWritable",
+                    "org.apache.hadoop.io.Text",
+                    "org.apache.hadoop.mapreduce.Reducer",
+                    "org.apache.hadoop.mapreduce.Reducer.Context",
+                    "org.apache.hadoop.mapreduce.lib.partition.InputSampler",
+                    "org.apache.hadoop.mapreduce.lib.partition.InputSampler.SampledKey",
+                    "org.apache.hadoop.mapreduce.Partitioner",
+                    "org.apache.hadoop.mapreduce.Job",
+                    "org.apache.hadoop.mapreduce.lib.output.FileOutputFormat",
+                    "org.apache.hadoop.mapreduce.lib.input.FileInputFormat",
+                    "org.apache.hadoop.conf.Configured",
+                    "org.apache.hadoop.util.Tool",
+                    "org.apache.hadoop.util.ToolRunner",
+                    "org.apache.hadoop.fs.Path"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.io.IntWritable",
+                    "org.apache.hadoop.io.Text",
+                    "org.apache.hadoop.conf.Configured",
+                    "org.apache.hadoop.util.ToolRunner",
+                    "org.apache.hadoop.fs.Path"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException",
+                    "org.apache.hadoop.mapreduce.Reducer",
+                    "org.apache.hadoop.mapreduce.Reducer.Context",
+                    "org.apache.hadoop.mapreduce.lib.partition.InputSampler",
+                    "org.apache.hadoop.mapreduce.lib.partition.InputSampler.SampledKey",
+                    "org.apache.hadoop.mapreduce.Partitioner",
+                    "org.apache.hadoop.mapreduce.Job",
+                    "org.apache.hadoop.mapreduce.lib.output.FileOutputFormat",
+                    "org.apache.hadoop.mapreduce.lib.input.FileInputFormat",
+                    "org.apache.hadoop.util.Tool"
+                ],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 10,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.7554368376731873,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[20,8] class WritableComparatorDemo is public, should be declared in a file named WritableComparatorDemo.java\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[7,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,43] package org.apache.hadoop.mapreduce.Reducer does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,49] package org.apache.hadoop.mapreduce.lib.partition does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[10,62] package org.apache.hadoop.mapreduce.lib.partition.InputSampler does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[22,43] cannot find symbol\n  symbol:   class Reducer\n  location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[24,68] cannot find symbol\n  symbol:   class Context\n  location: class org.example.WritableComparatorDemo.MyReducer\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,47] cannot find symbol\n  symbol:   class Partitioner\n  location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[23,9] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[35,9] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[47,9] cannot find symbol\n  symbol:   class Job\n  location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[47,23] cannot find symbol\n  symbol:   class Job\n  location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[53,9] cannot find symbol\n  symbol:   variable FileInputFormat\n  location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[54,9] cannot find symbol\n  symbol:   variable FileOutputFormat\n  location: class org.example.WritableComparatorDemo\n[INFO] 18 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.518 s\n[INFO] Finished at: 2024-04-16T23:37:45-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[20,8] class WritableComparatorDemo is public, should be declared in a file named WritableComparatorDemo.java\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[7,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,43] package org.apache.hadoop.mapreduce.Reducer does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[9,49] package org.apache.hadoop.mapreduce.lib.partition does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[10,62] package org.apache.hadoop.mapreduce.lib.partition.InputSampler does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[11,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[12,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[14,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[22,43] cannot find symbol\n[ERROR]   symbol:   class Reducer\n[ERROR]   location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[24,68] cannot find symbol\n[ERROR]   symbol:   class Context\n[ERROR]   location: class org.example.WritableComparatorDemo.MyReducer\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[34,47] cannot find symbol\n[ERROR]   symbol:   class Partitioner\n[ERROR]   location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[23,9] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[35,9] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[47,9] cannot find symbol\n[ERROR]   symbol:   class Job\n[ERROR]   location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[47,23] cannot find symbol\n[ERROR]   symbol:   class Job\n[ERROR]   location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[53,9] cannot find symbol\n[ERROR]   symbol:   variable FileInputFormat\n[ERROR]   location: class org.example.WritableComparatorDemo\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java:[54,9] cannot find symbol\n[ERROR]   symbol:   variable FileOutputFormat\n[ERROR]   location: class org.example.WritableComparatorDemo\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 54,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 43,
+                                "message": "package org.apache.hadoop.mapreduce.Reducer does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 8,
+                                "message": "class WritableComparatorDemo is public, should be declared in a file named WritableComparatorDemo.java"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 62,
+                                "message": "package org.apache.hadoop.mapreduce.lib.partition.InputSampler does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 35,
+                                "column": 9,
+                                "message": "method does not override or implement a method from a supertype"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 24,
+                                "column": 68,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 34,
+                                "column": 47,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 23,
+                                "column": 9,
+                                "message": "method does not override or implement a method from a supertype"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 49,
+                                "message": "package org.apache.hadoop.mapreduce.lib.partition does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 53,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 47,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 22,
+                                "column": 43,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 47,
+                                "column": 23,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"WritableComparator\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure! To use the WritableComparator, it would be necessary to create a new comparator class that extends WritableComparator and implements WritableComparable.\n\nLet's assume that we have a Key/Value pair which is a pair of strings. We'll sort the values in a descending order.\n\n```Java\nimport org.apache.hadoop.io.Text;\nimport org.apache.hadoop.io.WritableComparable;\nimport org.apache.hadoop.io.WritableComparator;\nimport org.apache.hadoop.io.WritableUtils;\n\npublic class MyKey implements WritableComparable<MyKey> {\n    \n    private Text name;\n    private Text city;\n\n    public MyKey() {\n        set(new Text(), new Text());\n    }\n\n    public MyKey(String name, String city) {\n        set(new Text(name), new Text(city));\n    }\n\n    public MyKey(Text name, Text city) {\n        set(name, city);\n    }\n\n    private void set(Text name, Text city) {\n        this.name = name;\n        this.city = city;\n    }\n\n    public Text getName() {\n        return name;\n    }\n\n    public Text getCity() {\n        return city;\n    }\n\n    @Override\n    public void readFields(DataInput in) throws IOException {\n        name.readFields(in);\n        city.readFields(in);\n    }\n\n    @Override\n    public void write(DataOutput out) throws IOException {\n        name.write(out);\n        city.write(out);\n    }\n\n    @Override\n    public int compareTo(MyKey key) {\n        int cmp = this.name.compareTo(key.getName());\n        if (cmp != 0) {\n            return cmp;\n        }\n        return this.city.compareTo(key.getCity());\n    }\n    \n    @Override\n    public boolean equals(Object o) {\n        if (o instanceof MyKey) {\n            MyKey myKey = (MyKey) o;\n            return this.name.equals(myKey.getName()) && this.city.equals(myKey.getCity());\n        }\n        return false;\n    }\n\n    @Override\n    public int hashCode() {\n        return this.name.hashCode() + this.city.hashCode();\n    }\n}\n\npublic class MyKeyComparator extends WritableComparator {\n\n    public MyKeyComparator() {\n        super(MyKey.class, true);\n    }\n\n    public int compare(byte[] b1, int s1, int l1, byte[] b2, int s2, int l2) {\n        try {\n            return super.compare(WritableUtils.clone(b1, s1, l1),\n                    WritableUtils.clone(b2, s2, l2));\n        } catch (CloneNotSupportedException e) {\n            return -1;\n        }\n    }\n}\n\npublic class Main {\n    public static void main(String[] args) {\n        MyKey key1 = new MyKey(\"John\", \"New York\");\n        MyKey key2 = new MyKey(\"Alice\", \"New York\");\n\n        WritableComparator comparator = new MyKeyComparator();\n        System.out.println(comparator.compare(key1.toString().getBytes(), 0, key1.toString().length(), key2.toString().getBytes(), 0, key2.toString().length()));\n    }\n}\n```\n\nIn this code, we create a MyKey class that represents a pair of values: name and city. We extend WritableComparable and override necessary methods: readFields(), write(), compareTo(), equals() and hashCode().\n\nWe also create a MyKeyComparator that extends WritableComparator and overrides the compare() method. In this method, we clone the passed bytes to compare them as instances of MyKey.\n\nIn the main method, we create two instances of MyKey and a comparator, then compare them using the compare() method of the comparator.\n\nPlease note, that this class doesn't create a proper comparison between keys based solely on their values but it demonstrates the correct usage of WritableComparator by cloning byte arrays that represent the keys.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.7542650699615479,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"WritableComparator\" API from \"hadoop-common-3.3.4\" project along with other necessary APIs. The dependency is already added for \"hadoop-common-3.3.4\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, without more context and details on the specific task, an example of how you would use `WritableComparator` could be anything from counting words to sorting values based on custom rules. \n\nFor example, consider the below code example which is a Word Count program, and it uses `WritableComparator` to sort the values during the reduction phase.\n\n```java\nimport org.apache.hadoop.conf.Configured;\nimport org.apache.hadoop.util.Tool;\nimport org.apache.hadoop.util.ToolRunner;\nimport org.apache.hadoop.mapreduce.Job;\nimport org.apache.hadoop.mapreduce.Mapper;\nimport org.apache.hadoop.mapreduce.Reducer;\nimport org.apache.hadoop.mapreduce.lib.input.TextInputFormat;\nimport org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;\nimport org.apache.hadoop.io.IntWritable;\nimport org.apache.hadoop.io.Text;\nimport org.apache.hadoop.mapreduce.Partitioner;\nimport org.apache.hadoop.mapreduce.WritableComparator;\nimport org.apache.hadoop.mapreduce.Reducer;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.conf.Configuration;\n\nimport java.io.IOException;\n\npublic class WordCount extends Configured implements Tool {\n\n    public static void main(String[] args) throws Exception {\n        Configuration conf = new Configuration();\n        Job job = Job.getInstance(conf);\n        job.setJarByClass(WordCount.class);\n        job.setMapperClass(WordCountMapper.class);\n        job.setReducerClass(WordCountReducer.class);\n        job.setInputFormatClass(TextInputFormat.class);\n        job.setOutputFormatClass(TextOutputFormat.class);\n        job.setOutputKeyClass(Text.class);\n        job.setOutputValueClass(IntWritable.class);\n        job.setSortComparatorClass(IntComparator.class, true);\n        TextInputFormat.addInputPath(job, new Path(args[0]));\n        TextOutputFormat.setOutputPath(job, new Path(args[1]));\n        System.exit(job.waitForCompletion(true) ? 0 : 1);\n    }\n\n    public static class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {\n        private final static IntWritable one = new IntWritable(1);\n        private Text word = new Text();\n\n        public void map(Object key, Text value, Context context) throws IOException, InterruptedException {\n            StringTokenizer itr = new StringTokenizer(value.toString());\n            while (itr.hasMoreTokens()) {\n                word.set(itr.nextToken());\n                context.write(word, one);\n            }\n        }\n    }\n\n    public static class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritable> {\n        public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {\n            int sum = 0;\n            for (IntWritable val : values) {\n                sum += val.get();\n            }\n            context.write(key, new IntWritable(sum));\n        }\n    }\n\n    public static class IntComparator extends WritableComparator {\n        protected IntComparator() {\n            super(IntWritable.class, true);\n        }\n\n        @Override\n        public int compare(byte[] b1, int s1, int l1, byte[] b2, int s2, int l2) {\n            int v1 = BytesWritable.readInt(b1, s1);\n            int v2 = BytesWritable.readInt(b2, s2);\n            return -Integer.compare(v1, v2);\n        }\n    }\n}\n```\n\nThis is a very basic WordCount program. It uses the `StringTokenizer` class to split the input data into words. It uses the `TextInputFormat` and `TextOutputFormat` for input and output respectively. The sort is done using the `WritableComparator` class with an inner class `IntComparator` that implements the `compare` method to define the custom sorting rule. The results are then written out to a file. \n\nPlease note that it won't work without an actual input data. You will need to adjust this code to match your requirements or create a new one for specific use case.",
+                "extracted_java_code_from_prediction": "import org.apache.hadoop.conf.Configured;\nimport org.apache.hadoop.util.Tool;\nimport org.apache.hadoop.util.ToolRunner;\nimport org.apache.hadoop.mapreduce.Job;\nimport org.apache.hadoop.mapreduce.Mapper;\nimport org.apache.hadoop.mapreduce.Reducer;\nimport org.apache.hadoop.mapreduce.lib.input.TextInputFormat;\nimport org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;\nimport org.apache.hadoop.io.IntWritable;\nimport org.apache.hadoop.io.Text;\nimport org.apache.hadoop.mapreduce.Partitioner;\nimport org.apache.hadoop.mapreduce.WritableComparator;\nimport org.apache.hadoop.mapreduce.Reducer;\nimport org.apache.hadoop.fs.Path;\nimport org.apache.hadoop.conf.Configuration;\n\nimport java.io.IOException;\n\npublic class WordCount extends Configured implements Tool {\n\n    public static void main(String[] args) throws Exception {\n        Configuration conf = new Configuration();\n        Job job = Job.getInstance(conf);\n        job.setJarByClass(WordCount.class);\n        job.setMapperClass(WordCountMapper.class);\n        job.setReducerClass(WordCountReducer.class);\n        job.setInputFormatClass(TextInputFormat.class);\n        job.setOutputFormatClass(TextOutputFormat.class);\n        job.setOutputKeyClass(Text.class);\n        job.setOutputValueClass(IntWritable.class);\n        job.setSortComparatorClass(IntComparator.class, true);\n        TextInputFormat.addInputPath(job, new Path(args[0]));\n        TextOutputFormat.setOutputPath(job, new Path(args[1]));\n        System.exit(job.waitForCompletion(true) ? 0 : 1);\n    }\n\n    public static class WordCountMapper extends Mapper<Object, Text, Text, IntWritable> {\n        private final static IntWritable one = new IntWritable(1);\n        private Text word = new Text();\n\n        public void map(Object key, Text value, Context context) throws IOException, InterruptedException {\n            StringTokenizer itr = new StringTokenizer(value.toString());\n            while (itr.hasMoreTokens()) {\n                word.set(itr.nextToken());\n                context.write(word, one);\n            }\n        }\n    }\n\n    public static class WordCountReducer extends Reducer<Text, IntWritable, Text, IntWritable> {\n        public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {\n            int sum = 0;\n            for (IntWritable val : values) {\n                sum += val.get();\n            }\n            context.write(key, new IntWritable(sum));\n        }\n    }\n\n    public static class IntComparator extends WritableComparator {\n        protected IntComparator() {\n            super(IntWritable.class, true);\n        }\n\n        @Override\n        public int compare(byte[] b1, int s1, int l1, byte[] b2, int s2, int l2) {\n            int v1 = BytesWritable.readInt(b1, s1);\n            int v2 = BytesWritable.readInt(b2, s2);\n            return -Integer.compare(v1, v2);\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.hadoop.conf.Configured",
+                    "org.apache.hadoop.util.Tool",
+                    "org.apache.hadoop.util.ToolRunner",
+                    "org.apache.hadoop.mapreduce.Job",
+                    "org.apache.hadoop.mapreduce.Mapper",
+                    "org.apache.hadoop.mapreduce.Reducer",
+                    "org.apache.hadoop.mapreduce.lib.input.TextInputFormat",
+                    "org.apache.hadoop.mapreduce.lib.output.TextOutputFormat",
+                    "org.apache.hadoop.io.IntWritable",
+                    "org.apache.hadoop.io.Text",
+                    "org.apache.hadoop.mapreduce.Partitioner",
+                    "org.apache.hadoop.mapreduce.WritableComparator",
+                    "org.apache.hadoop.mapreduce.Reducer",
+                    "org.apache.hadoop.fs.Path",
+                    "org.apache.hadoop.conf.Configuration",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.hadoop.conf.Configured",
+                    "org.apache.hadoop.util.ToolRunner",
+                    "org.apache.hadoop.io.IntWritable",
+                    "org.apache.hadoop.io.Text",
+                    "org.apache.hadoop.fs.Path",
+                    "org.apache.hadoop.conf.Configuration"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.apache.hadoop.util.Tool",
+                    "org.apache.hadoop.mapreduce.Job",
+                    "org.apache.hadoop.mapreduce.Mapper",
+                    "org.apache.hadoop.mapreduce.Reducer",
+                    "org.apache.hadoop.mapreduce.lib.input.TextInputFormat",
+                    "org.apache.hadoop.mapreduce.lib.output.TextOutputFormat",
+                    "org.apache.hadoop.mapreduce.Partitioner",
+                    "org.apache.hadoop.mapreduce.WritableComparator",
+                    "org.apache.hadoop.mapreduce.Reducer",
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 6,
+                "number_of_wrong_FQNs": 10,
+                "failure_rate_for_FQNs": 0.625,
+                "model_confidence": 0.79716557264328,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[21,8] class WordCount is public, should be declared in a file named WordCount.java\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[9,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[11,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[16,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[39,49] cannot find symbol\n  symbol:   class Mapper\n  location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[43,49] cannot find symbol\n  symbol:   class Context\n  location: class org.example.WordCount.WordCountMapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[52,50] cannot find symbol\n  symbol:   class Reducer\n  location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[53,68] cannot find symbol\n  symbol:   class Context\n  location: class org.example.WordCount.WordCountReducer\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[62,47] cannot find symbol\n  symbol:   class WritableComparator\n  location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,9] cannot find symbol\n  symbol:   class Job\n  location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,19] cannot find symbol\n  symbol:   variable Job\n  location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[29,33] cannot find symbol\n  symbol:   class TextInputFormat\n  location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[30,34] cannot find symbol\n  symbol:   class TextOutputFormat\n  location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[34,9] cannot find symbol\n  symbol:   variable TextInputFormat\n  location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[35,9] cannot find symbol\n  symbol:   variable TextOutputFormat\n  location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[44,13] cannot find symbol\n  symbol:   class StringTokenizer\n  location: class org.example.WordCount.WordCountMapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[44,39] cannot find symbol\n  symbol:   class StringTokenizer\n  location: class org.example.WordCount.WordCountMapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[67,9] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[69,22] cannot find symbol\n  symbol:   variable BytesWritable\n  location: class org.example.WordCount.IntComparator\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[70,22] cannot find symbol\n  symbol:   variable BytesWritable\n  location: class org.example.WordCount.IntComparator\n[INFO] 25 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  1.577 s\n[INFO] Finished at: 2024-04-16T23:37:47-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[21,8] class WordCount is public, should be declared in a file named WordCount.java\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[9,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,45] package org.apache.hadoop.mapreduce.lib.input does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[11,46] package org.apache.hadoop.mapreduce.lib.output does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[16,35] package org.apache.hadoop.mapreduce does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[39,49] cannot find symbol\n[ERROR]   symbol:   class Mapper\n[ERROR]   location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[43,49] cannot find symbol\n[ERROR]   symbol:   class Context\n[ERROR]   location: class org.example.WordCount.WordCountMapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[52,50] cannot find symbol\n[ERROR]   symbol:   class Reducer\n[ERROR]   location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[53,68] cannot find symbol\n[ERROR]   symbol:   class Context\n[ERROR]   location: class org.example.WordCount.WordCountReducer\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[62,47] cannot find symbol\n[ERROR]   symbol:   class WritableComparator\n[ERROR]   location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,9] cannot find symbol\n[ERROR]   symbol:   class Job\n[ERROR]   location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[25,19] cannot find symbol\n[ERROR]   symbol:   variable Job\n[ERROR]   location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[29,33] cannot find symbol\n[ERROR]   symbol:   class TextInputFormat\n[ERROR]   location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[30,34] cannot find symbol\n[ERROR]   symbol:   class TextOutputFormat\n[ERROR]   location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[34,9] cannot find symbol\n[ERROR]   symbol:   variable TextInputFormat\n[ERROR]   location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[35,9] cannot find symbol\n[ERROR]   symbol:   variable TextOutputFormat\n[ERROR]   location: class org.example.WordCount\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[44,13] cannot find symbol\n[ERROR]   symbol:   class StringTokenizer\n[ERROR]   location: class org.example.WordCount.WordCountMapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[44,39] cannot find symbol\n[ERROR]   symbol:   class StringTokenizer\n[ERROR]   location: class org.example.WordCount.WordCountMapper\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[67,9] method does not override or implement a method from a supertype\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[69,22] cannot find symbol\n[ERROR]   symbol:   variable BytesWritable\n[ERROR]   location: class org.example.WordCount.IntComparator\n[ERROR] /home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java:[70,22] cannot find symbol\n[ERROR]   symbol:   variable BytesWritable\n[ERROR]   location: class org.example.WordCount.IntComparator\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 70,
+                                "column": 22,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 16,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 46,
+                                "message": "package org.apache.hadoop.mapreduce.lib.output does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 44,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 19,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 35,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 52,
+                                "column": 50,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 29,
+                                "column": 33,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 30,
+                                "column": 34,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 45,
+                                "message": "package org.apache.hadoop.mapreduce.lib.input does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 67,
+                                "column": 9,
+                                "message": "method does not override or implement a method from a supertype"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 62,
+                                "column": 47,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 53,
+                                "column": 68,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 39,
+                                "column": 49,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 34,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 69,
+                                "column": 22,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 43,
+                                "column": 49,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 8,
+                                "message": "class WordCount is public, should be declared in a file named WordCount.java"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 44,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/hadoop-common-3.3.4/WritableComparator/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 35,
+                                "message": "package org.apache.hadoop.mapreduce does not exist"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

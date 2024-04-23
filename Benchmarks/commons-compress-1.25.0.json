@@ -1,0 +1,16 @@
+{
+    "jar_name": "commons-compress-1.25.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from commons-compress-1.25.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from commons-compress-1.25.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of commons-compress-1.25.0 project. However, I can provide you with a general approach to solve this problem.\n\nTo list correct API's class names from a project, you would typically need to:\n\n1. Access the source code of the project.\n2. Analyze the source code to identify classes and interfaces.\n3. Check if the classes are abstract or not.\n4. If the class is not abstract, add it to the list.\n\nHowever, as I don't have the source code, I can't provide you with the exact class names. However, I can provide you with a general approach to solve this problem.\n\nHere's a Python code snippet that uses the `javalang` library to parse Java source code and find non-abstract classes:\n\n```python\nimport javalang\n\ndef find_non_abstract_classes(source_code):\n    tree = javalang.parse.parse(source_code)\n    classes = [node for node in tree.filter(javalang.tree.ClassDeclaration)]\n    non_abstract_classes = [node.name for node in classes if not node.is_abstract]\n    return non_abstract_classes\n```\n\nThis function takes Java source code as input and returns a list of non-abstract class names.\n\nPlease note that this is a general approach and might not work for all projects. Also, you need to have the source code to use this function.",
+        "extracted_APIs_from_prediction": [],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 0,
+        "model_confidence": 0.6578442454338074,
+        "failure_rate_for_APIs": 1,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

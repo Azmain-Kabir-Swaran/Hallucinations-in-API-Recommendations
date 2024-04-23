@@ -1,0 +1,475 @@
+{
+    "jar_name": "spring-webmvc-5.3.23.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from spring-webmvc-5.3.23 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from spring-webmvc-5.3.23 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI, I don't have the ability to directly access or view a project's source code. However, I can provide you with a general list of Spring MVC classes that are not abstract and are part of the Spring WebMVC framework.\n\n1. HandlerAdapter\n2. HandlerMapping\n3. HandlerExceptionResolver\n4. RequestToViewNameTranslator\n5. ViewNameTranslator\n6. FlashMapManager\n7. SessionFlashMapManager\n8. RedirectAttributesModelMap\n9. RedirectAttributesModelMapManager\n10. RedirectAttributesFlashMapManager\n11. RedirectAttributesFlashMapManager\n12. RedirectAttributesModelMapManager\n13. RedirectAttributesFlashMapManager\n14. RedirectAttributesModelMapManager\n15. RedirectAttributesFlashMapManager\n16. RedirectAttributesModelMapManager\n17. RedirectAttributesFlashMapManager\n18. RedirectAttributesModelMapManager\n19. RedirectAttributesFlashMapManager\n20. RedirectAttributesModelMapManager\n21. RedirectAttributesFlashMapManager\n22. RedirectAttributesModelMapManager\n23. RedirectAttributesFlashMapManager\n24. RedirectAttributesModelMapManager\n25. RedirectAttributesFlashMapManager\n26. RedirectAttributesModelMapManager\n27. RedirectAttributesFlashMapManager\n28. RedirectAttributesModelMapManager\n29. RedirectAttributesFlashMapManager\n30. RedirectAttributesModelMapManager\n31. RedirectAttributesFlashMapManager\n32. RedirectAttributesModelMapManager\n33. RedirectAttributesFlashMapManager\n34. RedirectAttributesModelMapManager\n35. RedirectAttributesFlashMapManager\n36. RedirectAttributesModelMapManager\n37. RedirectAttributesFlashMapManager\n38. RedirectAttributesModelMapManager\n39. RedirectAttributesFlashMapManager\n40. RedirectAttributesModelMapManager\n41. RedirectAttributesFlashMapManager\n42. RedirectAttributesModelMapManager\n43. RedirectAttributesFlashMapManager\n44. RedirectAttributesModelMapManager\n45. RedirectAttributesFlashMapManager\n46. RedirectAttributesModelMapManager\n47. RedirectAttributesFlashMapManager\n48. RedirectAttributesModelMapManager\n49. RedirectAttributesFlashMapManager\n50. RedirectAttributesModelMapManager\n\nPlease note that this list is not exhaustive and may not include all classes that are part of the Spring WebMVC framework.",
+        "extracted_APIs_from_prediction": [
+            "HandlerAdapter",
+            "HandlerMapping",
+            "HandlerExceptionResolver",
+            "RequestToViewNameTranslator",
+            "ViewNameTranslator",
+            "FlashMapManager",
+            "SessionFlashMapManager",
+            "RedirectAttributesModelMap",
+            "RedirectAttributesModelMapManager",
+            "RedirectAttributesFlashMapManager"
+        ],
+        "correct_API_predictions": [
+            "SessionFlashMapManager",
+            "RedirectAttributesModelMap"
+        ],
+        "wrong_API_predictions": [
+            "HandlerAdapter",
+            "HandlerMapping",
+            "HandlerExceptionResolver",
+            "RequestToViewNameTranslator",
+            "ViewNameTranslator",
+            "FlashMapManager",
+            "RedirectAttributesModelMapManager",
+            "RedirectAttributesFlashMapManager"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 8,
+        "failure_rate_for_APIs": 0.8,
+        "model_confidence": 0.8289319276809692,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "SessionFlashMapManager": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"SessionFlashMapManager\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SessionFlashMapManager\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use the SessionFlashMapManager from Spring's Spring-webmvc project, you need to import the following classes:\n\n- `org.springframework.web.servlet.FlashMap`\n- `org.springframework.web.servlet.FlashMapManager`\n\nThen, in your `Main` class, you can use the code below to test the functionality:\n\n```java\nimport org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\nimport javax.servlet.http.HttpServletRequest;\nimport javax.servlet.http.HttpServletResponse;\nimport java.util.Map;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        HttpServletRequest request = null; // provide appropriate request here\n        HttpServletResponse response = null; // provide appropriate response here\n\n        FlashMap flashMap = new FlashMap();\n        flashMap.put(\"flashAttribute\", \"flashValue\");\n\n        FlashMapManager flashMapManager = new FlashMapManager();\n        flashMapManager.saveOutputFlashMap(flashMap, request, response);\n    }\n}\n```\n\nPlease replace `null` in the `main` method with appropriate `HttpServletRequest` and `HttpServletResponse` objects. The code creates a new `FlashMap`, stores a flash attribute and value, and saves it in the HTTP session using the `FlashMapManager`.\n\nFor the `HttpServletRequest` and `HttpServletResponse` objects to be used in the main method, you need to provide an appropriate `HttpServletRequest` and `HttpServletResponse` objects that could be used in the server environment where your application is being deployed.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\nimport javax.servlet.http.HttpServletRequest;\nimport javax.servlet.http.HttpServletResponse;\nimport java.util.Map;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        HttpServletRequest request = null; // provide appropriate request here\n        HttpServletResponse response = null; // provide appropriate response here\n\n        FlashMap flashMap = new FlashMap();\n        flashMap.put(\"flashAttribute\", \"flashValue\");\n\n        FlashMapManager flashMapManager = new FlashMapManager();\n        flashMapManager.saveOutputFlashMap(flashMap, request, response);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager",
+                    "javax.servlet.http.HttpServletRequest",
+                    "javax.servlet.http.HttpServletResponse",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager",
+                    "javax.servlet.http.HttpServletRequest",
+                    "javax.servlet.http.HttpServletResponse"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.util.Map"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.5493215918540955,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,9] cannot find symbol\n  symbol:   class HttpServletRequest\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n  symbol:   class HttpServletResponse\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[20,43] org.springframework.web.servlet.FlashMapManager is abstract; cannot be instantiated\n[INFO] 5 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.822 s\n[INFO] Finished at: 2024-04-16T21:56:29-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[7,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,9] cannot find symbol\n[ERROR]   symbol:   class HttpServletRequest\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,9] cannot find symbol\n[ERROR]   symbol:   class HttpServletResponse\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java:[20,43] org.springframework.web.servlet.FlashMapManager is abstract; cannot be instantiated\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 26,
+                                "message": "package javax.servlet.http does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 43,
+                                "message": "org.springframework.web.servlet.FlashMapManager is abstract; cannot be instantiated"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 26,
+                                "message": "package javax.servlet.http does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SessionFlashMapManager\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a Java code snippet that utilizes the APIs discussed. \n\nThis code snippet assumes you have a FlashMapManager that is available in your Spring web application and is being used for setting and getting Flash attributes to and from the session.\n\nNote: The following code cannot be run as it's a standalone program and needs to be incorporated in an existing Spring web application. The FlashMapManager API is Spring Web MVC specific and is likely not available outside of a Spring web application.\n\n```java\nimport org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creates a FlashMap\n        FlashMap flashMap = new FlashMap();\n        flashMap.put(\"attr1\", \"value1\");\n        flashMap.put(\"attr2\", \"value2\");\n\n        // Assume we have a FlashMapManager available\n        FlashMapManager flashMapManager = new FlashMapManager();\n\n        // Add the FlashMap to the session\n        flashMapManager.saveOutputFlashMap(flashMap, new MockHttpServletRequest(), new MockHttpServletResponse());\n\n        // Get the FlashMap from the session\n        FlashMap retrievedFlashMap = flashMapManager.retrieveAndPurge(new MockHttpServletRequest(), new MockHttpServletResponse());\n\n        // Print the retrieved attributes\n        System.out.println(retrievedFlashMap.get(\"attr1\"));\n        System.out.println(retrievedFlashMap.get(\"attr2\"));\n    }\n}\n```\n\nPlease note that Spring's FlashMapManager and its implementation (in the form of HttpSessionFlashMapManager) are used solely within the Spring Web MVC framework, and are not available for use outside of that framework. You will need to replace MockHttpServletRequest and MockHttpServletResponse with appropriate imports from your framework.\n\nAlso, remember that SessionFlashMapManager is deprecated in Spring 4, so a more modern approach may be to use the standard Spring Framework FlashMap (org.springframework.web.servlet.FlashMap), which now also supports Java SE environments.\n\nIf you plan on maintaining a Spring web app, you could utilize the provided FlashMapManager APIs and examples in the context of that. If you need to run this code outside of a Spring web app, FlashMap might not be the right solution for you.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Creates a FlashMap\n        FlashMap flashMap = new FlashMap();\n        flashMap.put(\"attr1\", \"value1\");\n        flashMap.put(\"attr2\", \"value2\");\n\n        // Assume we have a FlashMapManager available\n        FlashMapManager flashMapManager = new FlashMapManager();\n\n        // Add the FlashMap to the session\n        flashMapManager.saveOutputFlashMap(flashMap, new MockHttpServletRequest(), new MockHttpServletResponse());\n\n        // Get the FlashMap from the session\n        FlashMap retrievedFlashMap = flashMapManager.retrieveAndPurge(new MockHttpServletRequest(), new MockHttpServletResponse());\n\n        // Print the retrieved attributes\n        System.out.println(retrievedFlashMap.get(\"attr1\"));\n        System.out.println(retrievedFlashMap.get(\"attr2\"));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5967622995376587,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,43] org.springframework.web.servlet.FlashMapManager is abstract; cannot be instantiated\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[18,58] cannot find symbol\n  symbol:   class MockHttpServletRequest\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[18,88] cannot find symbol\n  symbol:   class MockHttpServletResponse\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[21,75] cannot find symbol\n  symbol:   class MockHttpServletRequest\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[21,105] cannot find symbol\n  symbol:   class MockHttpServletResponse\n  location: class org.example.Main\n[INFO] 5 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.709 s\n[INFO] Finished at: 2024-04-16T21:56:30-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,43] org.springframework.web.servlet.FlashMapManager is abstract; cannot be instantiated\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[18,58] cannot find symbol\n[ERROR]   symbol:   class MockHttpServletRequest\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[18,88] cannot find symbol\n[ERROR]   symbol:   class MockHttpServletResponse\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[21,75] cannot find symbol\n[ERROR]   symbol:   class MockHttpServletRequest\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java:[21,105] cannot find symbol\n[ERROR]   symbol:   class MockHttpServletResponse\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 88,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 58,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 105,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 43,
+                                "message": "org.springframework.web.servlet.FlashMapManager is abstract; cannot be instantiated"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 75,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SessionFlashMapManager\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSpring's SessionFlashMapManager is a utility for managing flash attributes in HTTP sessions. It adds and retrieves flash attributes for a session, ensuring the same session can be used across multiple requests, but not accessible to other sessions. \n\nThis example will show how you can use it. Please note the class and method names are placeholder names and should be replaced with your own project configuration.\n\n```java\nimport org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\nimport org.springframework.web.servlet.support.SessionFlashMapManager;\nimport javax.servlet.http.HttpSession;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // HttpSession is provided elsewhere and injected as a dependency\n        // HttpSession session = ...\n\n        // A session specific flash scope needs to be created\n        FlashMapManager flashMapManager = new SessionFlashMapManager();\n        FlashMap flashMap = flashMapManager.retrieveFlashMap(session);\n\n        // The session's flash map is now retrievable\n        if (flashMap != null) {\n            System.out.println(\"Flash map present.\");\n            // Use the FlashMap as needed...\n        }\n\n        // Add some data to the flash scope\n        flashMap.put(\"key\", \"value\");\n\n        // The flashMap now contains the key \"key\" with value \"value\"\n        // Store the modified FlashMap back in the session\n        flashMapManager.saveOutputFlashMap(flashMap, session);\n\n        // The session's FlashMap now has the key-value pair we just put in\n        // You can also remove keys or clear the entire FlashMap\n    }\n}\n```\n\nIn the code above, a flashMap is created and stored in the session. Flash attributes have a limited lifetime. They are deleted when the session that created them is invalidated or when the time to live (TTL) has expired, whichever comes first.\n\nNote: Spring\u2019s FlashMap implementation is thread-safe as it uses `Map` and it also provides methods to clear the flash map and get all keys from it.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\nimport org.springframework.web.servlet.support.SessionFlashMapManager;\nimport javax.servlet.http.HttpSession;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        // HttpSession is provided elsewhere and injected as a dependency\n        // HttpSession session = ...\n\n        // A session specific flash scope needs to be created\n        FlashMapManager flashMapManager = new SessionFlashMapManager();\n        FlashMap flashMap = flashMapManager.retrieveFlashMap(session);\n\n        // The session's flash map is now retrievable\n        if (flashMap != null) {\n            System.out.println(\"Flash map present.\");\n            // Use the FlashMap as needed...\n        }\n\n        // Add some data to the flash scope\n        flashMap.put(\"key\", \"value\");\n\n        // The flashMap now contains the key \"key\" with value \"value\"\n        // Store the modified FlashMap back in the session\n        flashMapManager.saveOutputFlashMap(flashMap, session);\n\n        // The session's FlashMap now has the key-value pair we just put in\n        // You can also remove keys or clear the entire FlashMap\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager",
+                    "org.springframework.web.servlet.support.SessionFlashMapManager",
+                    "javax.servlet.http.HttpSession"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager",
+                    "org.springframework.web.servlet.support.SessionFlashMapManager",
+                    "javax.servlet.http.HttpSession"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5189816951751709,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/java/org/example/Main.java:[7,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/java/org/example/Main.java:[18,62] cannot find symbol\n  symbol:   variable session\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/java/org/example/Main.java:[31,54] cannot find symbol\n  symbol:   variable session\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.702 s\n[INFO] Finished at: 2024-04-16T21:56:31-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/java/org/example/Main.java:[7,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/java/org/example/Main.java:[18,62] cannot find symbol\n[ERROR]   symbol:   variable session\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/java/org/example/Main.java:[31,54] cannot find symbol\n[ERROR]   symbol:   variable session\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 31,
+                                "column": 54,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 62,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 26,
+                                "message": "package javax.servlet.http does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SessionFlashMapManager\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simplified example of how you might use the SessionFlashMapManager class, which seems to be part of the Spring Web MVC framework. Make sure to have the correct Spring MVC dependency in the POM file if you're using Maven. \n\nAlso note that the SessionFlashMapManager was removed in Spring MVC 5. You may have to look into other methods of storing data across requests in the new versions.\n\nThis example may not actually work out of the box due to multiple reasons:\n- It's not a compilable code.\n- You haven't declared any additional dependencies which would not be necessary if you're using the Spring Web MVC.\n- For session management, Flash attributes are more commonly used with redirect instead of model attributes.\n\n```java\nimport java.util.Map;\nimport javax.servlet.http.HttpSession;\nimport org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\nimport org.springframework.web.servlet.support.SessionFlashMapManager;\n\npublic class Main {\n    public static void main(String[] args) {\n        HttpSession session = null;\n        FlashMap flashMap = new FlashMap();\n        FlashMapManager flashMapManager = new SessionFlashMapManager();\n        \n        flashMap.put(\"message\", \"Hello, world!\");\n        flashMapManager.saveOutputFlashMap(flashMap, session);\n    }\n}\n```\n\nPlease replace \"HttpSession\" instance with real HttpSession.\n\nIf you're using Spring Boot, you could simply create a new `@Component` class with the necessary code. If you're not using Spring Boot, you might need to set up a DispatcherServlet and HandlerMapping etc. It all depends on how you are using the FlashMapManager.",
+                "extracted_java_code_from_prediction": "import java.util.Map;\nimport javax.servlet.http.HttpSession;\nimport org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\nimport org.springframework.web.servlet.support.SessionFlashMapManager;\n\npublic class Main {\n    public static void main(String[] args) {\n        HttpSession session = null;\n        FlashMap flashMap = new FlashMap();\n        FlashMapManager flashMapManager = new SessionFlashMapManager();\n        \n        flashMap.put(\"message\", \"Hello, world!\");\n        flashMapManager.saveOutputFlashMap(flashMap, session);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.util.Map",
+                    "javax.servlet.http.HttpSession",
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager",
+                    "org.springframework.web.servlet.support.SessionFlashMapManager"
+                ],
+                "correct_FQN_predictions": [
+                    "javax.servlet.http.HttpSession",
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager",
+                    "org.springframework.web.servlet.support.SessionFlashMapManager"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.util.Map"
+                ],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.48556452989578247,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n  symbol:   class HttpSession\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.740 s\n[INFO] Finished at: 2024-04-16T21:56:33-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,26] package javax.servlet.http does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n[ERROR]   symbol:   class HttpSession\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 26,
+                                "message": "package javax.servlet.http does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"SessionFlashMapManager\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nDue to the complexity of code you mentioned and lack of a clear understanding of what specific function or feature you want implemented, here is a general example using SessionFlashMapManager and its method put and getFlashMap (in the spring-webmvc-5.3.23) dependency:\n\n**Note**: You would have to replace `FlashMap` and `FlashMapManager` with the actual ones from the `org.springframework.web.servlet.support.SessionFlashMapManager` package.\n\n```java\nimport org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\nimport org.springframework.web.servlet.support.SessionFlashMapManager;\nimport org.springframework.mock.web.MockHttpServletRequest;\nimport org.springframework.mock.web.MockHttpServletResponse;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        FlashMap flashMap = new FlashMap();\n        flashMap.put(\"message\", \"Hello, World!\");\n\n        FlashMapManager flashMapManager = new SessionFlashMapManager();\n        flashMapManager.saveOutputFlashMap(flashMap, request, response);\n\n        FlashMap outputFlashMap = flashMapManager.getOutputFlashMap(request);\n        if (outputFlashMap != null) {\n            String message = (String) outputFlashMap.get(\"message\");\n            System.out.println(\"Message from flash map: \" + message);\n        } else {\n            System.out.println(\"No message in flash map.\");\n        }\n    }\n}\n```\n\nIn this example, we are creating a FlashMap, adding a \"message\" attribute to it, and then storing it in the session. We then retrieve the FlashMap from the session and retrieve the \"message\". If the FlashMap doesn't exist, it prints \"No message in flash map\".\n\nIt's important to note that this is a simplistic use case and in a real-world scenario, you would probably integrate this with a web framework like Spring or a Java web application server like Tomcat.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.servlet.FlashMap;\nimport org.springframework.web.servlet.FlashMapManager;\nimport org.springframework.web.servlet.support.SessionFlashMapManager;\nimport org.springframework.mock.web.MockHttpServletRequest;\nimport org.springframework.mock.web.MockHttpServletResponse;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        MockHttpServletRequest request = new MockHttpServletRequest();\n        MockHttpServletResponse response = new MockHttpServletResponse();\n\n        FlashMap flashMap = new FlashMap();\n        flashMap.put(\"message\", \"Hello, World!\");\n\n        FlashMapManager flashMapManager = new SessionFlashMapManager();\n        flashMapManager.saveOutputFlashMap(flashMap, request, response);\n\n        FlashMap outputFlashMap = flashMapManager.getOutputFlashMap(request);\n        if (outputFlashMap != null) {\n            String message = (String) outputFlashMap.get(\"message\");\n            System.out.println(\"Message from flash map: \" + message);\n        } else {\n            System.out.println(\"No message in flash map.\");\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager",
+                    "org.springframework.web.servlet.support.SessionFlashMapManager",
+                    "org.springframework.mock.web.MockHttpServletRequest",
+                    "org.springframework.mock.web.MockHttpServletResponse"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.servlet.FlashMap",
+                    "org.springframework.web.servlet.FlashMapManager",
+                    "org.springframework.web.servlet.support.SessionFlashMapManager",
+                    "org.springframework.mock.web.MockHttpServletRequest",
+                    "org.springframework.mock.web.MockHttpServletResponse"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6416305899620056,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,36] package org.springframework.mock.web does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,36] package org.springframework.mock.web does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,9] cannot find symbol\n  symbol:   class MockHttpServletRequest\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,46] cannot find symbol\n  symbol:   class MockHttpServletRequest\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,9] cannot find symbol\n  symbol:   class MockHttpServletResponse\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,48] cannot find symbol\n  symbol:   class MockHttpServletResponse\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.774 s\n[INFO] Finished at: 2024-04-16T21:56:34-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[7,36] package org.springframework.mock.web does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[8,36] package org.springframework.mock.web does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,9] cannot find symbol\n[ERROR]   symbol:   class MockHttpServletRequest\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,46] cannot find symbol\n[ERROR]   symbol:   class MockHttpServletRequest\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,9] cannot find symbol\n[ERROR]   symbol:   class MockHttpServletResponse\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,48] cannot find symbol\n[ERROR]   symbol:   class MockHttpServletResponse\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 36,
+                                "message": "package org.springframework.mock.web does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 48,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 36,
+                                "message": "package org.springframework.mock.web does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/SessionFlashMapManager/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 46,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "RedirectAttributesModelMap": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"RedirectAttributesModelMap\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"RedirectAttributesModelMap\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a Java code using the \"RedirectAttributesModelMap\" API:\n\n```java\nimport org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        RedirectAttributesModelMap redirectAttributesModelMap = new RedirectAttributesModelMap();\n\n        // Add attributes\n        redirectAttributesModelMap.addAttribute(\"message\", \"Hello\");\n        redirectAttributesModelMap.addAttribute(\"number\", 123);\n        \n        // Get attributes\n        Object message = redirectAttributesModelMap.getAttribute(\"message\");\n        Object number = redirectAttributesModelMap.getAttribute(\"number\");\n\n        System.out.println(\"Message: \" + message);\n        System.out.println(\"Number: \" + number);\n    }\n}\n```\n\nIn this code, first we are creating a `RedirectAttributesModelMap` instance. Then we are adding some attributes like a string \"Hello\" and an integer 123 with names \"message\" and \"number\" respectively. After that, we are getting these attributes using their names and printing them.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        RedirectAttributesModelMap redirectAttributesModelMap = new RedirectAttributesModelMap();\n\n        // Add attributes\n        redirectAttributesModelMap.addAttribute(\"message\", \"Hello\");\n        redirectAttributesModelMap.addAttribute(\"number\", 123);\n        \n        // Get attributes\n        Object message = redirectAttributesModelMap.getAttribute(\"message\");\n        Object number = redirectAttributesModelMap.getAttribute(\"number\");\n\n        System.out.println(\"Message: \" + message);\n        System.out.println(\"Number: \" + number);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5303162336349487,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"RedirectAttributesModelMap\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe RedirectAttributesModelMap functionality is not provided by \"spring-webmvc-5.3.23\" project but it is provided by the Spring MVC framework. Therefore, you can use it only if the Spring MVC is properly configured and the corresponding imports and annotations are in place. Here is an example of how this could look like:\n\n```java\nimport org.springframework.ui.ModelMap;\nimport org.springframework.web.servlet.ModelAndView;\nimport org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        RedirectAttributesModelMap redirectAttributes = new RedirectAttributesModelMap();\n        ModelMap modelMap = new ModelMap();\n        ModelAndView modelAndView = new ModelAndView(\"/myView\", modelMap);\n\n        redirectAttributes.addAllAttributes(modelMap);\n        // now the attributes in modelMap are saved into the redirectAttributes\n        redirectAttributes.addFlashAttribute(\"attribute1\", \"value1\");\n        redirectAttributes.addFlashAttribute(\"attribute2\", \"value2\");\n\n        // The code to perform the redirection goes here...\n\n        System.out.println(redirectAttributes);\n    }\n}\n```\n\nPlease note:\n- This code does not implement a redirection and the redirection itself depends on your application configuration and the details of how you implement it.\n- The import statements do not require adding new dependencies since Spring is already provided by the Spring framework, so you should not have to add Spring dependencies unless you need to import APIs that are specific to Spring applications.\n- For the implementation of the redirection to work, you would need to replace the comment with actual code that would cause a redirection. In a real-world scenario, you would likely have to call a method on a controller, which in turn would need to perform a redirection. For the sake of brevity, however, I didn't include that code in the example.",
+                "extracted_java_code_from_prediction": "import org.springframework.ui.ModelMap;\nimport org.springframework.web.servlet.ModelAndView;\nimport org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\n\npublic class Main {\n    public static void main(String[] args) {\n        RedirectAttributesModelMap redirectAttributes = new RedirectAttributesModelMap();\n        ModelMap modelMap = new ModelMap();\n        ModelAndView modelAndView = new ModelAndView(\"/myView\", modelMap);\n\n        redirectAttributes.addAllAttributes(modelMap);\n        // now the attributes in modelMap are saved into the redirectAttributes\n        redirectAttributes.addFlashAttribute(\"attribute1\", \"value1\");\n        redirectAttributes.addFlashAttribute(\"attribute2\", \"value2\");\n\n        // The code to perform the redirection goes here...\n\n        System.out.println(redirectAttributes);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.ui.ModelMap",
+                    "org.springframework.web.servlet.ModelAndView",
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.ui.ModelMap",
+                    "org.springframework.web.servlet.ModelAndView",
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5363619923591614,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"RedirectAttributesModelMap\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, I cannot run the \"spring-webmvc-5.3.23\" project in this environment and the code you provided cannot be compiled and run due to dependency and version issues. However, I can provide a general code template that illustrates how you can use RedirectAttributesModelMap API in a Spring MVC application.\n\nIf you need the code to work, you'd need to create a new Spring Boot application. Then, you can add the dependency for \"spring-webmvc\" in your `pom.xml`. You can take the following code as an example:\n\nMain.java\n\n```java\nimport org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\nimport org.springframework.web.servlet.ModelAndView;\nimport org.springframework.web.servlet.view.RedirectView;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        RedirectAttributesModelMap redirectAttributes = new RedirectAttributesModelMap();\n        redirectAttributes.addFlashAttribute(\"message\", \"Hello Flash\");\n        redirectAttributes.addAttribute(\"message\", \"Hello Attribute\");\n\n        RedirectView view = new RedirectView(\"/redirect\");\n        ModelAndView modelAndView = new ModelAndView(view, redirectAttributes);\n\n        // here you can use the modelAndView for your specific use case\n    }\n}\n```\n\nThis is a simple Java code that creates a RedirectAttributesModelMap object, adds a flash attribute and a model attribute, and then creates a RedirectView to redirect to another URL. It then creates a ModelAndView with the RedirectView and the RedirectAttributesModelMap.\n\nRemember, you have to create the new RedirectView with the correct URL to where you want the data to be redirected to. The RedirectAttributesModelMap is designed to be used in conjunction with a controller's redirect method, which sends a redirect response to the client.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\nimport org.springframework.web.servlet.ModelAndView;\nimport org.springframework.web.servlet.view.RedirectView;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        RedirectAttributesModelMap redirectAttributes = new RedirectAttributesModelMap();\n        redirectAttributes.addFlashAttribute(\"message\", \"Hello Flash\");\n        redirectAttributes.addAttribute(\"message\", \"Hello Attribute\");\n\n        RedirectView view = new RedirectView(\"/redirect\");\n        ModelAndView modelAndView = new ModelAndView(view, redirectAttributes);\n\n        // here you can use the modelAndView for your specific use case\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap",
+                    "org.springframework.web.servlet.ModelAndView",
+                    "org.springframework.web.servlet.view.RedirectView"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap",
+                    "org.springframework.web.servlet.ModelAndView",
+                    "org.springframework.web.servlet.view.RedirectView"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5654826164245605,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"RedirectAttributesModelMap\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a complete, correct, and compileable Java code snippet that uses \"RedirectAttributesModelMap\" from \"spring-webmvc-5.3.23\" project:\n\n```java\nimport org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\nimport org.springframework.web.servlet.ModelAndView;\n\npublic class Main {\n    public static void main(String[] args) {\n        RedirectAttributesModelMap redirectAttributesModelMap = new RedirectAttributesModelMap();\n        redirectAttributesModelMap.addFlashAttribute(\"attributeName\", \"attributeValue\");\n\n        ModelAndView modelAndView = new ModelAndView(\"viewName\");\n        modelAndView.addObject(\"objectName\", \"objectValue\");\n        modelAndView.setViewName(\"redirect:/redirectedView\");\n        \n        // Other APIs can also be used as per the requirement \n        // E.g. : modelAndView.setViewName(\"forward:/forwardedView\");\n        \n        // Your complete code goes here......\n    }\n}\n```\n\nIn the above code:\n\n- `RedirectAttributesModelMap` is a subclass of `ModelMap` and extends it by implementing the `FlashMapManager` and `WebUtils.getRedirectFlashModelMap(request)`.\n\n- `ModelAndView` represents a Model-View-Controller (MVC) for sending model object and setting view name.\n\n- `addFlashAttribute` is a method of `RedirectAttributesModelMap` that adds an attribute that will be available to the next request/view as a flash attribute.\n\n- `setViewName` method of `ModelAndView` sets the name of the view to resolve.\n\n- `addObject` method of `ModelAndView` adds an attribute with the name `objectName` and the value `objectValue`.\n\nYou may add more functionalities to this code like redirecting to a different view with other APIs.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\nimport org.springframework.web.servlet.ModelAndView;\n\npublic class Main {\n    public static void main(String[] args) {\n        RedirectAttributesModelMap redirectAttributesModelMap = new RedirectAttributesModelMap();\n        redirectAttributesModelMap.addFlashAttribute(\"attributeName\", \"attributeValue\");\n\n        ModelAndView modelAndView = new ModelAndView(\"viewName\");\n        modelAndView.addObject(\"objectName\", \"objectValue\");\n        modelAndView.setViewName(\"redirect:/redirectedView\");\n        \n        // Other APIs can also be used as per the requirement \n        // E.g. : modelAndView.setViewName(\"forward:/forwardedView\");\n        \n        // Your complete code goes here......\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap",
+                    "org.springframework.web.servlet.ModelAndView"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap",
+                    "org.springframework.web.servlet.ModelAndView"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.6005395650863647,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"RedirectAttributesModelMap\" API from \"spring-webmvc-5.3.23\" project along with other necessary APIs. The dependency is already added for \"spring-webmvc-5.3.23\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nDue to the complexity of creating a complete compilable program with several dependencies, including \"spring-webmvc-5.3.23\", we cannot provide an actual complete Java code here. The \"spring-webmvc-5.3.23\" project requires a large number of dependencies and is specifically designed for use within a Spring environment. \n\nHowever, I can provide a basic example of how you could use the \"RedirectAttributesModelMap\" API:\n\n```java\nimport org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\nimport org.springframework.web.~;  // You will need to import your necessary classes here\nimport java.lang.~; // You will need to import your necessary classes here\n\npublic class Main {\n\n    public static void main(String[] args) {\n        RedirectAttributesModelMap redirectAttributesModelMap = new RedirectAttributesModelMap();\n        \n        // Assume there is some string attribute called \"attribute1\" that you want to set\n        String attributeValue = \"Attribute Value\";\n        \n        // Using \"setAttribute\" from the RedirectAttributesModelMap to set the attribute value\n        redirectAttributesModelMap.addFlashAttribute(\"attribute1\", attributeValue);\n        \n        // Then you can add some logic to check if the attribute was added correctly.\n        // For example:\n        String retrievedAttributeValue = redirectAttributesModelMap.getFlashAttribute(\"attribute1\");\n        System.out.println(\"Retrieved Attribute Value: \" + retrievedAttributeValue);\n    }\n}\n```\nRemember, you may need to import certain classes depending on the functionality you're trying to use. Please replace `~` with the necessary imports, according to the functionality you need.\n\nYou should be aware that Spring's web mvc dependency is designed for use within a Spring Environment and may have dependencies on Spring's other components. However, you can still use the classes used in this example without adding a new dependency. This code example shows you how you could use a method from the \"RedirectAttributesModelMap\" class, which is a common way of interacting with attributes for redirect in Spring MVC.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap;\nimport org.springframework.web.~;  // You will need to import your necessary classes here\nimport java.lang.~; // You will need to import your necessary classes here\n\npublic class Main {\n\n    public static void main(String[] args) {\n        RedirectAttributesModelMap redirectAttributesModelMap = new RedirectAttributesModelMap();\n        \n        // Assume there is some string attribute called \"attribute1\" that you want to set\n        String attributeValue = \"Attribute Value\";\n        \n        // Using \"setAttribute\" from the RedirectAttributesModelMap to set the attribute value\n        redirectAttributesModelMap.addFlashAttribute(\"attribute1\", attributeValue);\n        \n        // Then you can add some logic to check if the attribute was added correctly.\n        // For example:\n        String retrievedAttributeValue = redirectAttributesModelMap.getFlashAttribute(\"attribute1\");\n        System.out.println(\"Retrieved Attribute Value: \" + retrievedAttributeValue);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap",
+                    "org.springframework.web.~",
+                    "java.lang.~"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.servlet.mvc.support.RedirectAttributesModelMap"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.web.~",
+                    "java.lang.~"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.5694720149040222,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/RedirectAttributesModelMap/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/RedirectAttributesModelMap/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/RedirectAttributesModelMap/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/RedirectAttributesModelMap/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,32] <identifier> expected\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/RedirectAttributesModelMap/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,18] <identifier> expected\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.543 s\n[INFO] Finished at: 2024-04-16T21:57:10-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/RedirectAttributesModelMap/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,32] <identifier> expected\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/RedirectAttributesModelMap/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,18] <identifier> expected\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/RedirectAttributesModelMap/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 18,
+                                "message": "<identifier> expected"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-webmvc-5.3.23/RedirectAttributesModelMap/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 32,
+                                "message": "<identifier> expected"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

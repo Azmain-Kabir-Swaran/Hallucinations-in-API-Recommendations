@@ -1,0 +1,336 @@
+{
+    "jar_name": "commons-compress-1.22.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from commons-compress-1.22 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from commons-compress-1.22 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the source code of the commons-compress-1.22 project. However, I can provide you with a general idea of the classes that should be in the project.\n\nHere are some of the classes that are likely to be in the project:\n\n1. BZip2CompressorInputStream\n2. BZip2CompressorOutputStream\n3. BZip2Compressor\n4. BZip2Utils\n5. BZip2\n6. BZip2CountingOutputStream\n7. BZip2CountingInputStream\n8. BZip2Callbacks\n9. BZip2Crasher\n10. BZip2Exception\n11. BZip2Test\n12. BZip2TestUtils\n13. BZip2TestUtils\n14. BZip2TestUtils\n15. BZip2TestUtils\n16. BZip2TestUtils\n17. BZip2TestUtils\n18. BZip2TestUtils\n19. BZip2TestUtils\n20. BZip2TestUtils\n21. BZip2TestUtils\n22. BZip2TestUtils\n23. BZip2TestUtils\n24. BZip2TestUtils\n25. BZip2TestUtils\n26. BZip2TestUtils\n27. BZip2TestUtils\n28. BZip2TestUtils\n29. BZip2TestUtils\n30. BZip2TestUtils\n31. BZip2TestUtils\n32. BZip2TestUtils\n33. BZip2TestUtils\n34. BZip2TestUtils\n35. BZip2TestUtils\n36. BZip2TestUtils\n37. BZip2TestUtils\n38. BZip2TestUtils\n39. BZip2TestUtils\n40. BZip2TestUtils\n41. BZip2TestUtils\n42. BZip2TestUtils\n43. BZip2TestUtils\n44. BZip2TestUtils\n45. BZip2TestUtils\n46. BZip2TestUtils\n47. BZip2TestUtils\n48. BZip2TestUtils\n49. BZip2TestUtils\n50. BZip2TestUtils\n\nPlease note that the actual classes may vary depending on the project's structure and the specific classes used.",
+        "extracted_APIs_from_prediction": [
+            "BZip2CompressorInputStream",
+            "BZip2CompressorOutputStream",
+            "BZip2Compressor",
+            "BZip2Utils",
+            "BZip2",
+            "BZip2CountingOutputStream",
+            "BZip2CountingInputStream",
+            "BZip2Callbacks",
+            "BZip2Crasher",
+            "BZip2Exception",
+            "BZip2Test",
+            "BZip2TestUtils"
+        ],
+        "correct_API_predictions": [
+            "BZip2CompressorInputStream",
+            "BZip2CompressorOutputStream"
+        ],
+        "wrong_API_predictions": [
+            "BZip2Compressor",
+            "BZip2Utils",
+            "BZip2",
+            "BZip2CountingOutputStream",
+            "BZip2CountingInputStream",
+            "BZip2Callbacks",
+            "BZip2Crasher",
+            "BZip2Exception",
+            "BZip2Test",
+            "BZip2TestUtils"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 10,
+        "failure_rate_for_APIs": 0.8333333333333334,
+        "model_confidence": 0.8239825367927551,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "BZip2CompressorInputStream": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"BZip2CompressorInputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorInputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a Java code example that uses the \"BZip2CompressorInputStream\" from \"commons-compress-1.22\". In this example, it also takes \"BufferedOutputStream\" and \"FileOutputStream\".\n\nThe Maven \"pom.xml\" file dependencies are required to include the proper commons-compress library:\n\n```xml\n<dependencies>\n   <dependency>\n       <groupId>org.apache.commons</groupId>\n       <artifactId>commons-compress</artifactId>\n       <version>1.22</version>\n   </dependency>\n</dependencies>\n```\n\n```java\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\n\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        // Open the file to be read\n        FileInputStream fis = new FileInputStream(\"yourfile.bz2\");\n\n        // Open the BZip2 Compressor Input Stream on the file input stream\n        BZip2CompressorInputStream bZip2CompressorInputStream = new BZip2CompressorInputStream(fis);\n\n        // Initialize a Buffered Output Stream and a File Output Stream with the same file as the input\n        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(\"yourfile.txt\"));\n\n        // Byte Array to hold data during the transfer\n        byte[] buffer = new byte[1024];\n\n        // Transfer the compressed data to the uncompressed data in buffer\n        int bytesRead;\n        while ((bytesRead = bZip2CompressorInputStream.read(buffer)) != -1) {\n            bos.write(buffer, 0, bytesRead);\n        }\n\n        // Close the streams\n        bZip2CompressorInputStream.close();\n        bos.close();\n        fis.close();\n    }\n}\n```\nIn the above code, you need to replace \"yourfile.bz2\" and \"yourfile.txt\" with the paths to the compressed and uncompressed files you want to use. \n\nThis code will extract the content of a bzip2 compressed file.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\n\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        // Open the file to be read\n        FileInputStream fis = new FileInputStream(\"yourfile.bz2\");\n\n        // Open the BZip2 Compressor Input Stream on the file input stream\n        BZip2CompressorInputStream bZip2CompressorInputStream = new BZip2CompressorInputStream(fis);\n\n        // Initialize a Buffered Output Stream and a File Output Stream with the same file as the input\n        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(\"yourfile.txt\"));\n\n        // Byte Array to hold data during the transfer\n        byte[] buffer = new byte[1024];\n\n        // Transfer the compressed data to the uncompressed data in buffer\n        int bytesRead;\n        while ((bytesRead = bZip2CompressorInputStream.read(buffer)) != -1) {\n            bos.write(buffer, 0, bytesRead);\n        }\n\n        // Close the streams\n        bZip2CompressorInputStream.close();\n        bos.close();\n        fis.close();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+                    "java.io.*"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+                    "java.io.*"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.616169810295105,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorInputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a correct and compilable Java code snippet:\n\nFirstly, add these dependencies into your POM file if they're not there:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.apache.commons</groupId>\n        <artifactId>commons-compress</artifactId>\n        <version>1.22</version>\n    </dependency>\n</dependencies>\n```\n\nThen write this Java code:\n\n```java\nimport java.io.FileInputStream;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            compressBZip2();\n            deCompressBZip2();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n    \n    public static void compressBZip2() throws IOException {\n        FileOutputStream fout = new FileOutputStream(\"out.bz2\");\n        BZip2CompressorOutputStream bzOut = new BZip2CompressorOutputStream(fout);\n        FileInputStream in = new FileInputStream(\"input.txt\");\n        byte[] buffer = new byte[1024];\n        int length;\n        while ((length = in.read(buffer)) > 0) {\n            bzOut.write(buffer, 0, length);\n        }\n        in.close();\n        bzOut.close();\n    }\n    \n    public static void deCompressBZip2() throws IOException {\n        FileInputStream fin = new FileInputStream(\"out.bz2\");\n        BZip2CompressorInputStream bzIn = new BZip2CompressorInputStream(fin);\n        FileOutputStream out = new FileOutputStream(\"decompressed.txt\");\n        byte[] buffer = new byte[1024];\n        int length;\n        while ((length = bzIn.read(buffer)) > 0) {\n            out.write(buffer, 0, length);\n        }\n        bzIn.close();\n        out.close();\n    }\n}\n```\n\nPlease replace \"input.txt\" with your source file that needs to be compressed and \"out.bz2\" with your desired output file. The file \"decompressed.txt\" is the destination file from which you will get original data after decompressing the file compressed by bzip2 compression algorithm.\n\nThis code compresses an input file using bzip2 compression and decompresses it back to another file. It has two methods: `compressBZip2()` and `deCompressBZip2()`, each is responsible for compressing/decompressing respectively.\n\nPlease note that this code only includes the functionality of compressing and decompressing a file using the BZip2 algorithm. It doesn't contain input-output management or exception handling mechanisms, so you might want to add those depending on the complexity of your task. For exception handling, I used try-catch blocks, but depending on your requirements, you might want to change it to something more specific.",
+                "extracted_java_code_from_prediction": "import java.io.FileInputStream;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            compressBZip2();\n            deCompressBZip2();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n    }\n    \n    public static void compressBZip2() throws IOException {\n        FileOutputStream fout = new FileOutputStream(\"out.bz2\");\n        BZip2CompressorOutputStream bzOut = new BZip2CompressorOutputStream(fout);\n        FileInputStream in = new FileInputStream(\"input.txt\");\n        byte[] buffer = new byte[1024];\n        int length;\n        while ((length = in.read(buffer)) > 0) {\n            bzOut.write(buffer, 0, length);\n        }\n        in.close();\n        bzOut.close();\n    }\n    \n    public static void deCompressBZip2() throws IOException {\n        FileInputStream fin = new FileInputStream(\"out.bz2\");\n        BZip2CompressorInputStream bzIn = new BZip2CompressorInputStream(fin);\n        FileOutputStream out = new FileOutputStream(\"decompressed.txt\");\n        byte[] buffer = new byte[1024];\n        int length;\n        while ((length = bzIn.read(buffer)) > 0) {\n            out.write(buffer, 0, length);\n        }\n        bzIn.close();\n        out.close();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.FileInputStream",
+                    "java.io.FileOutputStream",
+                    "java.io.IOException",
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream"
+                ],
+                "correct_FQN_predictions": [
+                    "java.io.FileInputStream",
+                    "java.io.FileOutputStream",
+                    "java.io.IOException",
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.6,
+                "model_confidence": 0.7496070265769958,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorInputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of a Main class in Java that utilizes the BZip2CompressorInputStream from the commons-compress-1.22 project. Make sure to add the required dependencies in your build system or setup the project correctly in an IDE.\n\n```java\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\nimport java.io.File;\nimport java.io.FileInputStream;\nimport java.io.InputStream;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        File compressedFile = new File(\"example.bz2\"); // Replace with your file path\n        File uncompressedFile = new File(\"example_uncompressed.txt\");\n\n        try (InputStream inputStream = new BZip2CompressorInputStream(new FileInputStream(compressedFile));\n             FileOutputStream outputStream = new FileOutputStream(uncompressedFile)) {\n\n            byte[] buffer = new byte[1024];\n            int bytesRead;\n\n            while ((bytesRead = inputStream.read(buffer)) != -1) {\n                outputStream.write(buffer, 0, bytesRead);\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nThis program opens a bzip2 compressed file (like \"example.bz2\") and then saves the uncompressed version in a separate file (\"example_uncompressed.txt\"). It does this by using the BZip2CompressorInputStream to read bytes from the compressed file, and then writing these bytes to the \"example_uncompressed.txt\" file using a FileOutputStream.\n\nRemember to replace \"example.bz2\" and \"example_uncompressed.txt\" with your own compressed and uncompressed files respectively. If your bzip2 file is located somewhere other than the root directory of your project, you'll need to provide a path to that file in the FileInputStream constructor. The above code doesn't handle the compression and uncompression process itself, it only serves as a helper to show how to use the BZip2CompressorInputStream from the commons-compress-1.22 library in a Java program. In a real-world situation, you will need to do additional error handling and checks.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\nimport java.io.File;\nimport java.io.FileInputStream;\nimport java.io.InputStream;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        File compressedFile = new File(\"example.bz2\"); // Replace with your file path\n        File uncompressedFile = new File(\"example_uncompressed.txt\");\n\n        try (InputStream inputStream = new BZip2CompressorInputStream(new FileInputStream(compressedFile));\n             FileOutputStream outputStream = new FileOutputStream(uncompressedFile)) {\n\n            byte[] buffer = new byte[1024];\n            int bytesRead;\n\n            while ((bytesRead = inputStream.read(buffer)) != -1) {\n                outputStream.write(buffer, 0, bytesRead);\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+                    "java.io.File",
+                    "java.io.FileInputStream",
+                    "java.io.InputStream",
+                    "java.io.FileOutputStream",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+                    "java.io.File",
+                    "java.io.FileInputStream",
+                    "java.io.InputStream",
+                    "java.io.FileOutputStream",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 6,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.8333333333333334,
+                "model_confidence": 0.607446551322937,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorInputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs per your requirements, I can suggest a complete, correct and compilable Java code that uses \"BZip2CompressorInputStream\" API from \"commons-compress-1.22\" project along with \"FileInputStream\", \"FileOutputStream\", \"IOException\", and \"File\". Please ensure that these packages and their dependencies are already added to your project.\n\nHere is the Java code:\n\n```java\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\nimport java.io.File;\nimport java.io.FileInputStream;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.io.OutputStream;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        File bzFile = new File(\"/path-to-your-file.bz2\");\n        File outFile = new File(\"/path-to-output-file\");\n\n        try (InputStream is = new FileInputStream(bzFile);\n             BZip2CompressorInputStream bzIn = new BZip2CompressorInputStream(is);\n             OutputStream os = new FileOutputStream(outFile)) {\n            byte[] buffer = new byte[1024];\n            int bytesRead;\n            while ((bytesRead = bzIn.read(buffer)) != -1) {\n                os.write(buffer, 0, bytesRead);\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code defines a method `main` in the class `Main`, which opens a bzip2 compressed file, decompresses it into an output file using the \"BZip2CompressorInputStream\" class from the \"commons-compress-1.22\" project. Please replace \"/path-to-your-file.bz2\" and \"/path-to-output-file\" with actual file paths on your machine.\n\nPlease note that this code doesn't require additional dependencies or import statements that require adding new dependencies. Only the imported classes are from the \"commons-compress-1.22\" project.\n\nAlso remember to add the necessary import statements to make sure your IDE can find these classes.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream;\nimport java.io.File;\nimport java.io.FileInputStream;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.io.OutputStream;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        File bzFile = new File(\"/path-to-your-file.bz2\");\n        File outFile = new File(\"/path-to-output-file\");\n\n        try (InputStream is = new FileInputStream(bzFile);\n             BZip2CompressorInputStream bzIn = new BZip2CompressorInputStream(is);\n             OutputStream os = new FileOutputStream(outFile)) {\n            byte[] buffer = new byte[1024];\n            int bytesRead;\n            while ((bytesRead = bzIn.read(buffer)) != -1) {\n                os.write(buffer, 0, bytesRead);\n            }\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+                    "java.io.File",
+                    "java.io.FileInputStream",
+                    "java.io.FileOutputStream",
+                    "java.io.IOException",
+                    "java.io.InputStream",
+                    "java.io.OutputStream"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream",
+                    "java.io.File",
+                    "java.io.FileInputStream",
+                    "java.io.FileOutputStream",
+                    "java.io.IOException",
+                    "java.io.InputStream",
+                    "java.io.OutputStream"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 7,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.8571428571428571,
+                "model_confidence": 0.6113906502723694,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorInputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYour requirements seem contradictory. \"BZip2CompressorInputStream\" is a class within the \"commons-compress-1.22\" project and it's not an API for others to use. It's used within the project for decompressing bzip2 files. On the other hand, if you need to use additional APIs, you would need to add these dependencies to your project's pom file, which isn't currently the case with the \"commons-compress-1.22\" project. \n\nAs an API has been specified, it might be beneficial to showcase an example of how to use this API within the \"commons-compress-1.22\" project. But, due to the problem at hand, unfortunately, I can't provide a complete, correct and compilable Java code at this time. Please correct the question based on specific requirements if there are any. \n\nIf you want to include other APIs like FileInputStream and FileOutputStream in your classpath, then the pom.xml file should have added dependencies, which is currently not the case.\n\nPlease provide a detailed problem description/requirements so the code can be better tailored.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.3380162715911865,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "BZip2CompressorOutputStream": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"BZip2CompressorOutputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorOutputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use \"BZip2CompressorOutputStream\" and other APIs from \"commons-compress-1.22\", we need to create a main method within a class named \"Main\". Here is the complete Java code:\n\n```java\nimport java.io.*;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        // Create a source file\n        File sourceFile = new File(\"source.txt\");\n        // Create an output stream to compress the source file into a .bz2 file\n        BZip2CompressorOutputStream bcos = new BZip2CompressorOutputStream(new FileOutputStream(\"source.txt.bz2\"));\n\n        // Create a buffered output stream\n        BufferedOutputStream bos = new BufferedOutputStream(bcos);\n\n        // Create an input stream to read the source file\n        FileInputStream fis = new FileInputStream(sourceFile);\n\n        byte[] buf = new byte[1024];\n        int len;\n        // Read the source file and write to the output stream\n        while ((len = fis.read(buf)) > 0) {\n            bos.write(buf, 0, len);\n        }\n\n        // Close the streams\n        bos.close();\n        bcos.close();\n        fis.close();\n    }\n}\n```\nThis program creates an input stream for the source file (\"source.txt\"), creates an output stream for the compressed file (\"source.txt.bz2\"), then reads the source file and writes it to the output stream. The compression is done by using the \"BZip2CompressorOutputStream\" and \"BufferedOutputStream\" APIs from \"commons-compress-1.22\".\n\nRemember to replace \"source.txt\" with the path to the file you want to compress. Make sure the file you want to compress exists and the file and directory you run the program from have sufficient permissions.",
+                "extracted_java_code_from_prediction": "import java.io.*;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\n\npublic class Main {\n    public static void main(String[] args) throws IOException {\n        // Create a source file\n        File sourceFile = new File(\"source.txt\");\n        // Create an output stream to compress the source file into a .bz2 file\n        BZip2CompressorOutputStream bcos = new BZip2CompressorOutputStream(new FileOutputStream(\"source.txt.bz2\"));\n\n        // Create a buffered output stream\n        BufferedOutputStream bos = new BufferedOutputStream(bcos);\n\n        // Create an input stream to read the source file\n        FileInputStream fis = new FileInputStream(sourceFile);\n\n        byte[] buf = new byte[1024];\n        int len;\n        // Read the source file and write to the output stream\n        while ((len = fis.read(buf)) > 0) {\n            bos.write(buf, 0, len);\n        }\n\n        // Close the streams\n        bos.close();\n        bcos.close();\n        fis.close();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.*",
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream"
+                ],
+                "correct_FQN_predictions": [
+                    "java.io.*",
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.6682193279266357,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorOutputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple Java code snippet using the BZip2CompressorOutputStream from commons-compress-1.22. Note that the import statements do not require new dependencies. \n\nPlease note that in a real world scenario, you'll need to ensure you handle exceptions appropriately and do proper input validation. This example does not include those.\n\n```java\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\nimport java.io.ByteArrayOutputStream;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String sample = \"Sample text to compress\";\n            ByteArrayOutputStream out = new ByteArrayOutputStream();\n            try (BZip2CompressorOutputStream bzipOut = new BZip2CompressorOutputStream(out)) {\n                bzipOut.write(sample.getBytes());\n            }\n            System.out.println(out.toByteArray().length);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nIn this code:\n- BZip2CompressorOutputStream is imported from the \"org.apache.commons.compress.compressors.bzip2\" package.\n- BZip2CompressorOutputStream is used to compress a string \"Sample text to compress\". The string is converted into a byte array using `getBytes()` and then compressed using `write()`.\n- The output is then written to the ByteArrayOutputStream `out`.\n- The compressed data, when converted back to a byte array, can be printed to the console.\n- Error handling is wrapped in a try-catch block, in order to handle any potential IOException that may occur when trying to compress data.\n\nThis is a simple demonstration of how to use BZip2CompressorOutputStream. If you need something more complex, you might need additional APIs and more detailed error handling.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\nimport java.io.ByteArrayOutputStream;\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String sample = \"Sample text to compress\";\n            ByteArrayOutputStream out = new ByteArrayOutputStream();\n            try (BZip2CompressorOutputStream bzipOut = new BZip2CompressorOutputStream(out)) {\n                bzipOut.write(sample.getBytes());\n            }\n            System.out.println(out.toByteArray().length);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream",
+                    "java.io.ByteArrayOutputStream",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream",
+                    "java.io.ByteArrayOutputStream",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.6102179288864136,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorOutputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a complete, correct, and compileable Java code snippet for using \"BZip2CompressorOutputStream\" API from the \"commons-compress\" project. You would need to ensure that you've imported necessary classes appropriately and that the Apache Commons Compress library is properly imported in your project's build file. Here, we're using a FileInputStream, FileOutputStream, and BZip2CompressorOutputStream.\n\n```java\nimport java.io.*;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\nimport org.apache.commons.compress.utils.IOUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        FileInputStream fis = null;\n        BZip2CompressorOutputStream bos = null;\n        \n        try {\n            File f = new File(\"/path/to/your/file\");\n            fis = new FileInputStream(f);\n            \n            File fOut = new File(\"/path/to/your/compressed/file.bz2\");\n            FileOutputStream fos = new FileOutputStream(fOut);\n            bos = new BZip2CompressorOutputStream(fos);\n            \n            IOUtils.copyLarge(fis, bos);\n            \n            System.out.println(\"Successfully compressed the file\");\n        } catch (FileNotFoundException e) {\n            e.printStackTrace();\n        } catch (IOException e) {\n            e.printStackTrace();\n        } finally {\n            IOUtils.closeQuietly(fis);\n            IOUtils.closeQuietly(bos);\n        }\n    }\n}\n```\n\nRemember to replace \"/path/to/your/file\" and \"/path/to/your/compressed/file.bz2\" with the respective paths of your file and your output file, respectively.",
+                "extracted_java_code_from_prediction": "import java.io.*;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\nimport org.apache.commons.compress.utils.IOUtils;\n\npublic class Main {\n    public static void main(String[] args) {\n        FileInputStream fis = null;\n        BZip2CompressorOutputStream bos = null;\n        \n        try {\n            File f = new File(\"/path/to/your/file\");\n            fis = new FileInputStream(f);\n            \n            File fOut = new File(\"/path/to/your/compressed/file.bz2\");\n            FileOutputStream fos = new FileOutputStream(fOut);\n            bos = new BZip2CompressorOutputStream(fos);\n            \n            IOUtils.copyLarge(fis, bos);\n            \n            System.out.println(\"Successfully compressed the file\");\n        } catch (FileNotFoundException e) {\n            e.printStackTrace();\n        } catch (IOException e) {\n            e.printStackTrace();\n        } finally {\n            IOUtils.closeQuietly(fis);\n            IOUtils.closeQuietly(bos);\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.*",
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream",
+                    "org.apache.commons.compress.utils.IOUtils"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.*",
+                    "org.apache.commons.compress.utils.IOUtils"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.6534281373023987,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/commons-compress-1.22/BZip2CompressorOutputStream/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/commons-compress-1.22/BZip2CompressorOutputStream/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/commons-compress-1.22/BZip2CompressorOutputStream/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-compress-1.22/BZip2CompressorOutputStream/sample_3/Wrapper/src/main/java/org/example/Main.java:[21,20] cannot find symbol\n  symbol:   method copyLarge(java.io.FileInputStream,org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream)\n  location: class org.apache.commons.compress.utils.IOUtils\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.665 s\n[INFO] Finished at: 2024-04-16T22:03:50-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/commons-compress-1.22/BZip2CompressorOutputStream/sample_3/Wrapper/src/main/java/org/example/Main.java:[21,20] cannot find symbol\n[ERROR]   symbol:   method copyLarge(java.io.FileInputStream,org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream)\n[ERROR]   location: class org.apache.commons.compress.utils.IOUtils\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/commons-compress-1.22/BZip2CompressorOutputStream/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 21,
+                                "column": 20,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorOutputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nI need to clarify that it's not practical or doable to provide a complete, correct and compilable code snippet without knowing the exact requirement, but I can provide an example based on the provided information.\n\nHere is a basic example of how you could use the BZip2CompressorOutputStream and some other necessary APIs from the \"commons-compress-1.22\" project:\n\n```java\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\nimport java.io.OutputStream;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Use BZip2CompressorOutputStream\n            OutputStream out = new FileOutputStream(\"compressed.bz2\");\n            BZip2CompressorOutputStream bout = new BZip2CompressorOutputStream(out);\n\n            // Compress data...\n            String data = \"Hello World!\";\n            byte[] bytes = data.getBytes();\n            bout.write(bytes);\n            \n            // Ensure data is flushed and compressed\n            bout.flush();\n            bout.finish();\n\n            // Ensure streams are closed\n            bout.close();\n            out.close();\n        } catch (IOException e) {\n            System.out.println(\"An error occurred: \" + e.getMessage());\n        }\n    }\n}\n```\n\nNote:\n\n1. This example does not use any APIs whose import statements requires additional dependencies.\n2. The import statements for BZip2CompressorOutputStream and FileOutputStream are all from the \"org.apache.commons.compress.compressors.bzip2\" and \"java.io\" packages respectively.\n3. This example just writes a string to the BZip2CompressorOutputStream and then ensures to flush the data to the output stream, finish the compression, and finally, ensure both the streams are closed.\n4. A `try-catch` block is used to handle any IO exceptions which can occur during the process.",
+                "extracted_java_code_from_prediction": "import org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\nimport java.io.FileOutputStream;\nimport java.io.IOException;\nimport java.io.OutputStream;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            // Use BZip2CompressorOutputStream\n            OutputStream out = new FileOutputStream(\"compressed.bz2\");\n            BZip2CompressorOutputStream bout = new BZip2CompressorOutputStream(out);\n\n            // Compress data...\n            String data = \"Hello World!\";\n            byte[] bytes = data.getBytes();\n            bout.write(bytes);\n            \n            // Ensure data is flushed and compressed\n            bout.flush();\n            bout.finish();\n\n            // Ensure streams are closed\n            bout.close();\n            out.close();\n        } catch (IOException e) {\n            System.out.println(\"An error occurred: \" + e.getMessage());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream",
+                    "java.io.FileOutputStream",
+                    "java.io.IOException",
+                    "java.io.OutputStream"
+                ],
+                "correct_FQN_predictions": [
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream",
+                    "java.io.FileOutputStream",
+                    "java.io.IOException",
+                    "java.io.OutputStream"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.75,
+                "model_confidence": 0.6686010360717773,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"BZip2CompressorOutputStream\" API from \"commons-compress-1.22\" project along with other necessary APIs. The dependency is already added for \"commons-compress-1.22\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, as an AI language model, I can't write entire code solutions to your specific needs. However, I can guide you how to write a simple program using a known library and API combination. You need to add the necessary dependencies and import statements in your Java project manually.\n\nHere is a simple example of Java code using \"BZip2CompressorOutputStream\" API from \"commons-compress-1.22\" project:\n\n```java\nimport java.io.ByteArrayOutputStream;\nimport java.io.IOException;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String str = \"Hello World!\";\n\n            // Step 1: Create a byte array output stream\n            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();\n\n            // Step 2: Create a BZip2 compressor output stream\n            BZip2CompressorOutputStream bZip2CompressorOutputStream = new BZip2CompressorOutputStream(byteArrayOutputStream);\n\n            // Step 3: Write the string to the output stream\n            bZip2CompressorOutputStream.write(str.getBytes());\n\n            // Step 4: Flush and close the output stream\n            bZip2CompressorOutputStream.flush();\n            bZip2CompressorOutputStream.close();\n\n            System.out.println(\"Compressed data size: \" + byteArrayOutputStream.size());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nThis code will compress the string \"Hello World!\" and print the size of the compressed data.\n\nRemember, you need to add necessary import statements and the respective dependencies as per your project setup.",
+                "extracted_java_code_from_prediction": "import java.io.ByteArrayOutputStream;\nimport java.io.IOException;\nimport org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            String str = \"Hello World!\";\n\n            // Step 1: Create a byte array output stream\n            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();\n\n            // Step 2: Create a BZip2 compressor output stream\n            BZip2CompressorOutputStream bZip2CompressorOutputStream = new BZip2CompressorOutputStream(byteArrayOutputStream);\n\n            // Step 3: Write the string to the output stream\n            bZip2CompressorOutputStream.write(str.getBytes());\n\n            // Step 4: Flush and close the output stream\n            bZip2CompressorOutputStream.flush();\n            bZip2CompressorOutputStream.close();\n\n            System.out.println(\"Compressed data size: \" + byteArrayOutputStream.size());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.ByteArrayOutputStream",
+                    "java.io.IOException",
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream"
+                ],
+                "correct_FQN_predictions": [
+                    "java.io.ByteArrayOutputStream",
+                    "java.io.IOException",
+                    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorOutputStream"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.6279004216194153,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        }
+    }
+}

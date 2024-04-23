@@ -1,0 +1,883 @@
+{
+    "jar_name": "easymock-5.2.0.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from h2-2.1.214 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. H2Type\n2. H2AuthConfig\n3. Regclass\n4. H2AuthConfigXml\n5. JSR310Utils\n6. ObjectDataType\n7. DataType\n8. LongDataType\n9. SHA256\n10. ByteArrayDataType\n11. SetTypes\n12. SpatialDataType\n13. VersionedValueType<T,\n14. StringDataType\n15. GeometryUtils\n16. RuleList\n17. MVDelegateIndex\n18. CompatibilityDatePlusTimeOperation\n19. ListaggArguments\n20. InformationSchemaTable\n21. ErrorCode\n22. MetaType<D>\n23. MVSecondaryIndex\n24. TypeInfo\n25. JdbcUtils\n26. ParserUtil\n27. LegacyDateTimeUtils\n28. CacheLRU\n29. IndexType\n30. AbbaLockingDetector\n31. AssignRealmNameRole\n32. SortedProperties\n33. ExpressionList\n34. JTSUtils\n35. AlterSchemaRename\n36. ValueDataType\n37. CompareModeIcu4J\n38. ConstraintActionType\n39. SourceCompiler\n40. JdbcXid\n41. JdbcCallableStatement\n42. RowDataType\n43. OffHeapStore\n44. SHA3\n45. JdbcResultSet\n46. TypePredicate\n47. NullValueDataType\n48. MathUtils\n49. WindowFunctionType\n50. Utils10\n\nList correct API's class names from junit-4.13.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JUnit4ClassRunner\n2. JUnit38ClassRunner\n3. JUnitMatchers\n4. JUnit4\n5. JUnit4Builder\n6. JUnit3Builder\n7. JUnit4TestAdapter\n8. JUnit4TestCaseFacade\n9. JUnitCore\n10. JUnit4TestAdapterCache\n11. TestClass\n12. InvalidTestClassError\n13. BlockJUnit4ClassRunnerWithParameters\n14. BlockJUnit4ClassRunnerWithParametersFactory\n15. BlockJUnit4ClassRunner\n16. Classes\n17. TestMethod\n18. ClassRoadie\n19. IgnoredClassRunner\n20. TestName\n21. TestCouldNotBeSkippedException\n22. ClassRequest\n23. TestSetup\n24. EachTestNotifier\n25. TestRunner\n26. MethodSorters\n27. TestWithParameters\n28. MethodSorter\n29. TestDecorator\n30. TestFailure\n31. ResultMatchers\n32. ActiveTestSuite\n33. PublicClassValidator\n34. TestedOnSupplier\n35. AnnotationValidatorFactory\n36. TestResult\n37. AnnotatedBuilder\n38. AllTests\n39. InexactComparisonCriteria\n40. TestTimedOutException\n41. Assert\n42. TestSuite\n43. MethodRoadie\n44. FilterFactoryParams\n45. InvalidOrderingException\n46. Assignments\n47. TestWatchman\n48. RepeatedTest\n\nList correct API's class names from easymock-5.2.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from h2-2.1.214 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. H2Type\n2. H2AuthConfig\n3. Regclass\n4. H2AuthConfigXml\n5. JSR310Utils\n6. ObjectDataType\n7. DataType\n8. LongDataType\n9. SHA256\n10. ByteArrayDataType\n11. SetTypes\n12. SpatialDataType\n13. VersionedValueType<T,\n14. StringDataType\n15. GeometryUtils\n16. RuleList\n17. MVDelegateIndex\n18. CompatibilityDatePlusTimeOperation\n19. ListaggArguments\n20. InformationSchemaTable\n21. ErrorCode\n22. MetaType<D>\n23. MVSecondaryIndex\n24. TypeInfo\n25. JdbcUtils\n26. ParserUtil\n27. LegacyDateTimeUtils\n28. CacheLRU\n29. IndexType\n30. AbbaLockingDetector\n31. AssignRealmNameRole\n32. SortedProperties\n33. ExpressionList\n34. JTSUtils\n35. AlterSchemaRename\n36. ValueDataType\n37. CompareModeIcu4J\n38. ConstraintActionType\n39. SourceCompiler\n40. JdbcXid\n41. JdbcCallableStatement\n42. RowDataType\n43. OffHeapStore\n44. SHA3\n45. JdbcResultSet\n46. TypePredicate\n47. NullValueDataType\n48. MathUtils\n49. WindowFunctionType\n50. Utils10\n\nList correct API's class names from junit-4.13.1 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. JUnit4ClassRunner\n2. JUnit38ClassRunner\n3. JUnitMatchers\n4. JUnit4\n5. JUnit4Builder\n6. JUnit3Builder\n7. JUnit4TestAdapter\n8. JUnit4TestCaseFacade\n9. JUnitCore\n10. JUnit4TestAdapterCache\n11. TestClass\n12. InvalidTestClassError\n13. BlockJUnit4ClassRunnerWithParameters\n14. BlockJUnit4ClassRunnerWithParametersFactory\n15. BlockJUnit4ClassRunner\n16. Classes\n17. TestMethod\n18. ClassRoadie\n19. IgnoredClassRunner\n20. TestName\n21. TestCouldNotBeSkippedException\n22. ClassRequest\n23. TestSetup\n24. EachTestNotifier\n25. TestRunner\n26. MethodSorters\n27. TestWithParameters\n28. MethodSorter\n29. TestDecorator\n30. TestFailure\n31. ResultMatchers\n32. ActiveTestSuite\n33. PublicClassValidator\n34. TestedOnSupplier\n35. AnnotationValidatorFactory\n36. TestResult\n37. AnnotatedBuilder\n38. AllTests\n39. InexactComparisonCriteria\n40. TestTimedOutException\n41. Assert\n42. TestSuite\n43. MethodRoadie\n44. FilterFactoryParams\n45. InvalidOrderingException\n46. Assignments\n47. TestWatchman\n48. RepeatedTest\n\nList correct API's class names from easymock-5.2.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. EasyMock\n2. EasyMockRule\n3. EasyMockSupport\n4. EasyMockRule_1\n5. EasyMockRule_2\n6. EasyMockRule_3\n7. EasyMockRule_4\n8. EasyMockRule_5\n9. EasyMockRule_6\n10. EasyMockRule_7\n11. EasyMockRule_8\n12. EasyMockRule_9\n13. EasyMockRule_",
+        "extracted_APIs_from_prediction": [
+            "EasyMock",
+            "EasyMockRule",
+            "EasyMockSupport",
+            "EasyMockRule_1",
+            "EasyMockRule_2",
+            "EasyMockRule_3",
+            "EasyMockRule_4",
+            "EasyMockRule_5",
+            "EasyMockRule_6",
+            "EasyMockRule_7",
+            "EasyMockRule_8",
+            "EasyMockRule_9",
+            "EasyMockRule_"
+        ],
+        "correct_API_predictions": [
+            "EasyMock",
+            "EasyMockRule",
+            "EasyMockSupport"
+        ],
+        "wrong_API_predictions": [
+            "EasyMockRule_1",
+            "EasyMockRule_2",
+            "EasyMockRule_3",
+            "EasyMockRule_4",
+            "EasyMockRule_5",
+            "EasyMockRule_6",
+            "EasyMockRule_7",
+            "EasyMockRule_8",
+            "EasyMockRule_9",
+            "EasyMockRule_"
+        ],
+        "number_of_correct_APIs": 3,
+        "number_of_wrong_APIs": 10,
+        "failure_rate_for_APIs": 0.7692307692307693,
+        "model_confidence": 0.6381246447563171,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "EasyMock": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"EasyMock\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMock\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use EasyMock library in Java, first you need to import the necessary libraries. EasyMock is a mocking library designed for developing unit tests. To use it, you must include the easy-mock.jar in your project's build path. Then create a class Main with a method main which uses the classes you want to mock.\n\nHere's a basic example. Imagine you want to mock a Database class in the DatabaseAccess class. You would write the following code:\n\n```Java\nimport org.easymock.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        Database database = EasyMock.createMock(Database.class);\n        database.connect(\"localhost\", 8080);\n        database.connect(\"localhost\", 8081);\n        EasyMock.expectLastCall().times(2);\n        EasyMock.replay(database);\n        database.connect(\"localhost\", 8080);\n        database.connect(\"localhost\", 8081);\n        EasyMock.verify(database);\n    }\n}\n```\n\nIn the above example, we are testing Database class by creating an EasyMock mock and then calling the connect method twice. Then we set the expectations that the connect method should be called twice. After setting the expectations, we \"replay\" the mock object to prepare it for recording the interactions. The \"verify\" method checks whether all methods expected to be called, actually were called. This would fail if a method was expected to be called but was not called.\n\nPlease note:\n1. If you want to use other libraries which require new dependencies then you have to manage these dependencies manually and don't use APIs which are not compatible with EasyMock as they require different versions of dependencies.\n\n2. For such cases, you might be required to manage classpath yourself.\n\nAlso, it's good practice to remove the Mock creation, and setting expectations, replaying, verification code at actual unit test class and keep it in separate method for better testability. This is known as Test Driven Development (TDD). \n\nIf you're not aware of how EasyMock works, you may want to refer to the EasyMock User Guide for a more detailed explanation.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.48893555998802185,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMock\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYou haven't mentioned what you want the \"EasyMock\" code to do. Here's a simple example:\n\nFirst, make sure you add the \"EasyMock\" dependency in your pom.xml file:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.easymock</groupId>\n        <artifactId>easymock</artifactId>\n        <version>3.2</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```\n\nThen, you can create a test class with a main method:\n\n```java\nimport org.easymock.EasyMock;\nimport org.easymock.EasyMockSupport;\n\npublic class Main extends EasyMockSupport {\n\n    public static void main(String[] args) {\n        // Create mock objects\n        AccountService accountService = EasyMock.createMock(AccountService.class);\n        CreditCardService creditCardService = EasyMock.createMock(CreditCardService.class);\n\n        // Define behavior\n        EasyMock.expect(accountService.getBalance()).andReturn(100.0);\n        EasyMock.expect(creditCardService.getCreditLimit()).andReturn(10000.0);\n\n        // Record behavior\n        EasyMock.replay(accountService, creditCardService);\n\n        // Using the mock objects\n        double balance = accountService.getBalance();\n        double creditLimit = creditCardService.getCreditLimit();\n\n        // Check results\n        System.out.println(\"Account Balance: \" + balance);\n        System.out.println(\"Credit Limit: \" + creditLimit);\n\n        // Verify the behavior\n        EasyMock.verify(accountService, creditCardService);\n    }\n}\n\ninterface AccountService {\n    double getBalance();\n}\n\ninterface CreditCardService {\n    double getCreditLimit();\n}\n```\n\nThis Java code creates mock objects of two interfaces (AccountService and CreditCardService) using \"EasyMock\" API and sets their behaviors. The main method then uses these mock objects to get balance and credit limit, prints the result and verify the behavior. \n\nThis is a very simple example and you may need to adjust it according to your exact needs.",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMock;\nimport org.easymock.EasyMockSupport;\n\npublic class Main extends EasyMockSupport {\n\n    public static void main(String[] args) {\n        // Create mock objects\n        AccountService accountService = EasyMock.createMock(AccountService.class);\n        CreditCardService creditCardService = EasyMock.createMock(CreditCardService.class);\n\n        // Define behavior\n        EasyMock.expect(accountService.getBalance()).andReturn(100.0);\n        EasyMock.expect(creditCardService.getCreditLimit()).andReturn(10000.0);\n\n        // Record behavior\n        EasyMock.replay(accountService, creditCardService);\n\n        // Using the mock objects\n        double balance = accountService.getBalance();\n        double creditLimit = creditCardService.getCreditLimit();\n\n        // Check results\n        System.out.println(\"Account Balance: \" + balance);\n        System.out.println(\"Credit Limit: \" + creditLimit);\n\n        // Verify the behavior\n        EasyMock.verify(accountService, creditCardService);\n    }\n}\n\ninterface AccountService {\n    double getBalance();\n}\n\ninterface CreditCardService {\n    double getCreditLimit();\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockSupport"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockSupport"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.716821014881134,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n  symbol:   class AccountService\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,61] cannot find symbol\n  symbol:   class AccountService\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n  symbol:   class CreditCardService\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,67] cannot find symbol\n  symbol:   class CreditCardService\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.716 s\n[INFO] Finished at: 2024-04-16T20:28:55-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n[ERROR]   symbol:   class AccountService\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,61] cannot find symbol\n[ERROR]   symbol:   class AccountService\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,9] cannot find symbol\n[ERROR]   symbol:   class CreditCardService\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java:[12,67] cannot find symbol\n[ERROR]   symbol:   class CreditCardService\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 61,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 67,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMock\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple Java code using EasyMock:\n\n```java\npackage org.easymock.test;\n\nimport org.easymock.*;\nimport org.junit.Test;\n\npublic class Main {\n\n    @Test\n    public void testEasyMock() {\n        // create an EasyMock mock\n        Calculator calc = EasyMock.createMock(Calculator.class);\n\n        // specify the behavior\n        EasyMock.expect(calc.add(5, 7)).andReturn(12);\n\n        // activate the mock\n        EasyMock.replay(calc);\n\n        // use the mock\n        int result = calc.add(5, 7);\n        System.out.println(\"Result: \" + result);\n\n        // verify that behavior\n        EasyMock.verify(calc);\n    }\n\n    // define an interface\n    public interface Calculator {\n        int add(int a, int b);\n    }\n}\n```\nThis example defines an interface `Calculator` with a method `add` and then a test method `testEasyMock` which is using EasyMock to create a mock of this interface. Then, the test specifies the behavior of the `add` method of the mock when invoked with arguments `5` and `7`, and then it re-plays the mock behavior to allow verifying it afterwards. \n\nPlease note: This code assumes that you are using JUnit testing framework, and you are importing the `EasyMock` and `org.junit` libraries. If you're not, adjust the import statements as necessary.",
+                "extracted_java_code_from_prediction": "package org.easymock.test;\n\nimport org.easymock.*;\nimport org.junit.Test;\n\npublic class Main {\n\n    @Test\n    public void testEasyMock() {\n        // create an EasyMock mock\n        Calculator calc = EasyMock.createMock(Calculator.class);\n\n        // specify the behavior\n        EasyMock.expect(calc.add(5, 7)).andReturn(12);\n\n        // activate the mock\n        EasyMock.replay(calc);\n\n        // use the mock\n        int result = calc.add(5, 7);\n        System.out.println(\"Result: \" + result);\n\n        // verify that behavior\n        EasyMock.verify(calc);\n    }\n\n    // define an interface\n    public interface Calculator {\n        int add(int a, int b);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.*",
+                    "org.junit.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.easymock.*"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5306326746940613,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.706 s\n[INFO] Finished at: 2024-04-16T20:28:56-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_3/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_3/Wrapper/src/main/java/org/example/Main.java:[8,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMock\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nDue to the constraints mentioned in the prompt, the complete Java code using \"EasyMock\" APIs is as follows:\n\n```java\nimport org.easymock.EasyMock;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of the EasyMock\n        EasyMock.reportBadNews();\n        EasyMock.reportBadNews();\n    }\n}\n```\n\nThis Java code simply instantiates an \"EasyMock\" instance and calls the reportBadNews() method twice. No other API was used since its import statements already imply the dependency to \"easymock-5.2.0\" project.\n\nMake sure you have imported necessary EasyMock classes and dependencies in your project before using them.\n\nAlso, be aware that this example lacks a real-world use case and is only for demonstrating basic usage of the EasyMock library.\n\nAlso note that the version of the \"easymock-5.2.0\" project which this answer is based on is quite outdated (as of March 2022). The library might have evolved and changed its API in the meantime. Please update this information accordingly.",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMock;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Create an instance of the EasyMock\n        EasyMock.reportBadNews();\n        EasyMock.reportBadNews();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMock"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMock"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.39142265915870667,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_4/Wrapper/src/main/java/org/example/Main.java:[9,17] cannot find symbol\n  symbol:   method reportBadNews()\n  location: class org.easymock.EasyMock\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,17] cannot find symbol\n  symbol:   method reportBadNews()\n  location: class org.easymock.EasyMock\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.695 s\n[INFO] Finished at: 2024-04-16T20:28:58-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_4/Wrapper/src/main/java/org/example/Main.java:[9,17] cannot find symbol\n[ERROR]   symbol:   method reportBadNews()\n[ERROR]   location: class org.easymock.EasyMock\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,17] cannot find symbol\n[ERROR]   symbol:   method reportBadNews()\n[ERROR]   location: class org.easymock.EasyMock\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 17,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMock/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 17,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMock\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a complete Java program that uses EasyMock framework:\n\n```Java\nimport static org.easymock.EasyMock.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Mock object for MyClass\n        MyClass mock = createMock(MyClass.class);\n\n        // Stub method invocations\n        expect(mock.doSomething()).andReturn(\"Hello EasyMock!\");\n        expect(mock.getNumber()).andReturn(10);\n\n        // Setting listeners\n        setInternalListener(new ExceptionProxyMockControl(mock));\n\n        // Replay\n        replay(mock);\n\n        // Testing the stubbed methods\n        System.out.println(mock.doSomething());  // Hello EasyMock!\n        System.out.println(mock.getNumber());    // 10\n\n        // Verify\n        verify(mock);\n    }\n}\n\nclass MyClass {\n    public String doSomething() {\n        return \"\";\n    }\n\n    public int getNumber() {\n        return 0;\n    }\n}\n```\n\nIn the code above, we first create a mock of class `MyClass` using `createMock`. Then we stub the `doSomething` and `getNumber` methods to return \"Hello EasyMock!\" and `10` respectively. After that, we set an internal listener to mock control instance using `setInternalListener`. Then we replay our mocks to enable the mock expectations. After that, we are going to verify our expectations. We can see if our expectations were actually met using `verify`.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.5167897939682007,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            }
+        },
+        "EasyMockRule": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"EasyMockRule\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockRule\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, since the problem requirements do not clarify on the precise functionality of the mocked class, we can't provide a complete Java program based on your request. However, I will provide a basic example of using EasyMock rule along with Java's built-in rule for exception handling.\n\nNote: To use EasyMock, you need to add the library into your build system (like Maven or Gradle). Here we are using Maven.\n\nBelow is a simple program where `MyClass` under test `myMethod` is being tested using a mock object of `OtherClass` and an exception rule.\n\nFirst, make sure you have added the easymock dependency in your pom.xml:\n\n```xml\n<dependencies>\n  <dependency>\n    <groupId>org.easymock</groupId>\n    <artifactId>easymock</artifactId>\n    <version>5.2.0</version>\n    <scope>test</scope>\n  </dependency>\n</dependencies>\n```\n\nHere is the main code:\n\n```java\nimport org.junit.Rule;\nimport org.junit.Test;\nimport org.junit.rules.ExpectedException;\nimport org.easymock.EasyMockRule;\nimport org.easymock.EasyMock;\n\npublic class Main {\n\n  @Rule\n  public EasyMockRule mockRule = new EasyMockRule(this);\n\n  @Rule\n  public ExpectedException thrown = ExpectedException.none();\n\n  @Test\n  public void myMethod_exception_rule() {\n    OtherClass mockOther = mockRule.createNiceMock(OtherClass.class);\n\n    thrown.expect(IllegalArgumentException.class);\n    thrown.expectMessage(\"some message\");\n\n    EasyMock.expect(mockOther.someMethod()).andThrow(new IllegalArgumentException(\"some message\"));\n    mockRule.replayAll();\n\n    MyClass myClass = new MyClass(mockOther);\n    myClass.myMethod();\n  }\n}\n```\n\nThis above example uses `EasyMockRule` to generate mocks for the tests, and JUnit rule for exception expectations. If something goes wrong in `myMethod`, it should throw an exception as per the mocked object.\n\nPlease replace `MyClass`, `myMethod` and `OtherClass` with your own classes and methods.\n\nPlease take note that Mocking frameworks might not cover all cases and the program above is just a simple example.",
+                "extracted_java_code_from_prediction": "import org.junit.Rule;\nimport org.junit.Test;\nimport org.junit.rules.ExpectedException;\nimport org.easymock.EasyMockRule;\nimport org.easymock.EasyMock;\n\npublic class Main {\n\n  @Rule\n  public EasyMockRule mockRule = new EasyMockRule(this);\n\n  @Rule\n  public ExpectedException thrown = ExpectedException.none();\n\n  @Test\n  public void myMethod_exception_rule() {\n    OtherClass mockOther = mockRule.createNiceMock(OtherClass.class);\n\n    thrown.expect(IllegalArgumentException.class);\n    thrown.expectMessage(\"some message\");\n\n    EasyMock.expect(mockOther.someMethod()).andThrow(new IllegalArgumentException(\"some message\"));\n    mockRule.replayAll();\n\n    MyClass myClass = new MyClass(mockOther);\n    myClass.myMethod();\n  }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.junit.Rule",
+                    "org.junit.Test",
+                    "org.junit.rules.ExpectedException",
+                    "org.easymock.EasyMockRule",
+                    "org.easymock.EasyMock"
+                ],
+                "correct_FQN_predictions": [
+                    "org.junit.Rule",
+                    "org.junit.Test",
+                    "org.junit.rules.ExpectedException",
+                    "org.easymock.EasyMockRule",
+                    "org.easymock.EasyMock"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.47248080372810364,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,23] package org.junit.rules does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,10] cannot find symbol\n  symbol:   class ExpectedException\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[11,4] cannot find symbol\n  symbol:   class Rule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,4] cannot find symbol\n  symbol:   class Rule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,4] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,37] cannot find symbol\n  symbol:   variable ExpectedException\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,5] cannot find symbol\n  symbol:   class OtherClass\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,52] cannot find symbol\n  symbol:   class OtherClass\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,36] cannot access org.junit.rules.TestRule\n  class file for org.junit.rules.TestRule not found\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[25,13] cannot find symbol\n  symbol:   method replayAll()\n  location: variable mockRule of type org.easymock.EasyMockRule\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[27,5] cannot find symbol\n  symbol:   class MyClass\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[27,27] cannot find symbol\n  symbol:   class MyClass\n  location: class org.example.Main\n[INFO] 14 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.782 s\n[INFO] Finished at: 2024-04-16T20:30:04-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[3,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,23] package org.junit.rules does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,10] cannot find symbol\n[ERROR]   symbol:   class ExpectedException\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[11,4] cannot find symbol\n[ERROR]   symbol:   class Rule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[14,4] cannot find symbol\n[ERROR]   symbol:   class Rule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[17,4] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[15,37] cannot find symbol\n[ERROR]   symbol:   variable ExpectedException\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,5] cannot find symbol\n[ERROR]   symbol:   class OtherClass\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,52] cannot find symbol\n[ERROR]   symbol:   class OtherClass\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[19,36] cannot access org.junit.rules.TestRule\n[ERROR]   class file for org.junit.rules.TestRule not found\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[25,13] cannot find symbol\n[ERROR]   symbol:   method replayAll()\n[ERROR]   location: variable mockRule of type org.easymock.EasyMockRule\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[27,5] cannot find symbol\n[ERROR]   symbol:   class MyClass\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java:[27,27] cannot find symbol\n[ERROR]   symbol:   class MyClass\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 4,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 27,
+                                "column": 27,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 3,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 17,
+                                "column": 4,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 37,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 27,
+                                "column": 5,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 23,
+                                "message": "package org.junit.rules does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 52,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 36,
+                                "message": "cannot access org.junit.rules.TestRule"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 5,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 10,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 4,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockRule\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs per the requirement, here is a simple implementation of using EasyMockRule in a Java class. The code will not involve the APIs that require adding new dependencies because we are using \"EasyMockRule\" API that is already present in our local library without requiring any additional dependencies. \n\nThis example is using Mock objects to validate calls on methods.\n\nNote: Your exact scenario may require different coding depending on the specific requirements.\n\nMain.java:\n\n```java\nimport org.easymock.EasyMock;\nimport org.easymock.EasyMockSupport;\nimport org.easymock.Mock;\nimport org.junit.Rule;\nimport org.junit.Test;\nimport org.junit.rules.TestRule;\nimport org.junit.runner.RunWith;\nimport org.junit.runners.JUnit4;\n\n@RunWith(JUnit4.class)\npublic class Main {\n\n    @Rule\n    public TestRule rule = new EasyMockRule(this);\n\n    @Mock\n    private Calculator calculator;\n\n    @Test\n    public void testCalculator() {\n        calculator.add(1, 2);\n        EasyMock.expectLastCall();\n        calculator.add(1, 3);\n        EasyMock.expectLastCall();\n\n        calculator.multiply(1, 2);\n        EasyMock.expectLastCall();\n\n        calculator.divide(1, 2);\n        EasyMock.expectLastCall();\n\n        EasyMock.replay(calculator);\n\n        calculator.add(1, 2);\n        calculator.add(1, 3);\n        calculator.multiply(1, 2);\n        calculator.divide(1, 2);\n\n        EasyMock.verify(calculator);\n    }\n}\n```\n\nEasyMockRule.java:\n\n```java\nimport java.lang.reflect.Field;\n\nimport org.easymock.EasyMock;\nimport org.easymock.EasyMockRunner;\nimport org.junit.rules.MethodInvocationRecorder;\nimport org.junit.rules.TestRule;\nimport org.junit.runner.RunWith;\nimport org.junit.runners.model.FrameworkMethod;\nimport org.junit.runners.model.InitializationError;\nimport org.junit.runners.model.Statement;\n\npublic class EasyMockRule implements TestRule {\n\n    private EasyMockRecorder recorder;\n\n    public EasyMockRule(Object test) {\n        recorder = new EasyMockRecorder();\n    }\n\n    public Statement apply(final Statement base, final FrameworkMethod method) {\n        return new Statement() {\n            public void evaluate() throws Throwable {\n                EasyMock.addRule(recorder);\n                try {\n                    base.evaluate();\n                } finally {\n                    EasyMock.removeLastRule();\n                }\n            }\n        };\n    }\n\n    private class EasyMockRecorder extends MethodInvocationRecorder implements EasyMock.IArgumentMatcher {\n\n        private EasyMockRecorder() {\n        }\n\n        public void invoke(Object mock, Method method, Object[] args) {\n            for (Field field : method.getDeclaringClass().getDeclaredFields()) {\n                try {\n                    if (!Modifier.isPrivate(field.getModifiers()) || !Modifier.isPublic(field.getModifiers()) || !Modifier.isProtected(field.getModifiers()))\n                        continue;\n                    field.setAccessible(true);\n                    Object value = field.get(mock);\n                    if (value instanceof EasyMock) {\n                        recorder.record(new MethodInvocation(mock, method, args));\n                    }\n                } catch (Exception e) {\n                }\n            }\n        }\n\n        public void verify() {\n            try {\n                for (MethodInvocation invocation : methodInvocations()) {\n                    invocation.invoke();\n                }\n            } catch (Exception e) {\n                e.printStackTrace();\n                throw new RuntimeException(e);\n            }\n        }\n\n        public boolean matches(Object argument) {\n            return false;\n        }\n\n        public void reset() {\n        }\n\n        public String toString() {\n            return \"EasyMockRecorder\";\n        }\n    }\n}\n```\n\nThis code will not compile and run correctly out-of-the-box, the classes are just placeholders for demonstration. They need to be extended and customized according to your need. \n\nA more extensive usage of EasyMock rule with all its features can't be covered here. It is better to refer EasyMock's user guide and reference manual for more detailed information.\n\nPlease make sure you have `easymock-5.2.0` on your classpath before running this code. You can download it from [Maven Central](https://mvnrepository.com/artifact/org.easymock/easymock/5.2.0).",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMock;\nimport org.easymock.EasyMockSupport;\nimport org.easymock.Mock;\nimport org.junit.Rule;\nimport org.junit.Test;\nimport org.junit.rules.TestRule;\nimport org.junit.runner.RunWith;\nimport org.junit.runners.JUnit4;\n\n@RunWith(JUnit4.class)\npublic class Main {\n\n    @Rule\n    public TestRule rule = new EasyMockRule(this);\n\n    @Mock\n    private Calculator calculator;\n\n    @Test\n    public void testCalculator() {\n        calculator.add(1, 2);\n        EasyMock.expectLastCall();\n        calculator.add(1, 3);\n        EasyMock.expectLastCall();\n\n        calculator.multiply(1, 2);\n        EasyMock.expectLastCall();\n\n        calculator.divide(1, 2);\n        EasyMock.expectLastCall();\n\n        EasyMock.replay(calculator);\n\n        calculator.add(1, 2);\n        calculator.add(1, 3);\n        calculator.multiply(1, 2);\n        calculator.divide(1, 2);\n\n        EasyMock.verify(calculator);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockSupport",
+                    "org.easymock.Mock",
+                    "org.junit.Rule",
+                    "org.junit.Test",
+                    "org.junit.rules.TestRule",
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.JUnit4"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockSupport",
+                    "org.easymock.Mock",
+                    "org.junit.Rule",
+                    "org.junit.Test",
+                    "org.junit.rules.TestRule",
+                    "org.junit.runner.RunWith",
+                    "org.junit.runners.JUnit4"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 8,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.7467795014381409,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[7,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[8,23] package org.junit.rules does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[10,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,12] cannot find symbol\n  symbol:   class TestRule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[18,13] cannot find symbol\n  symbol:   class Calculator\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[14,6] cannot find symbol\n  symbol:   class Rule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[20,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,32] cannot find symbol\n  symbol:   class EasyMockRule\n  location: class org.example.Main\n[INFO] 10 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.735 s\n[INFO] Finished at: 2024-04-16T20:30:05-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[7,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[8,23] package org.junit.rules does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[9,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[10,25] package org.junit.runners does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,12] cannot find symbol\n[ERROR]   symbol:   class TestRule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[18,13] cannot find symbol\n[ERROR]   symbol:   class Calculator\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[14,6] cannot find symbol\n[ERROR]   symbol:   class Rule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[20,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java:[15,32] cannot find symbol\n[ERROR]   symbol:   class EasyMockRule\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 25,
+                                "message": "package org.junit.runners does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 32,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 20,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 12,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 18,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 8,
+                                "column": 23,
+                                "message": "package org.junit.rules does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockRule\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIn order to create a basic test case using EasyMockRule from the easymock-5.2.0 project, we will write a Java class called \"Main\", where the main method is contained.\n\nBelow is the Java code:\n\n```Java\nimport org.easymock.EasyMock;\nimport org.easymock.EasyMockRule;\nimport org.easymock.TestSubject;\nimport org.junit.Rule;\nimport org.junit.Test;\n\npublic class Main {\n\n    @Rule\n    public EasyMockRule easyMockRule = new EasyMockRule(this);\n\n    // Mocked class\n    @TestSubject\n    ClassToTest classToTest = EasyMock.createMock(ClassToTest.class);\n\n    // Test case\n    @Test\n    public void testSomething() {\n        // Arrange\n        // You can arrange expectations for your test, using EasyMock methods like anyXXX() or expect(classToTest.method())\n\n        // Act\n        // You can act like calling methods on the class you are testing\n\n        // Assert\n        // You can verify your expectations using verify() method of EasyMock, for example\n        EasyMock.verify(classToTest);\n    }\n\n    public static void main(String[] args) {\n        // Run the JUnit tests from command line using the Maven Surefire plugin, Maven, or an IDE such as IntelliJ IDEA\n    }\n}\n```\n\nIn the code above, the class to test, \"ClassToTest\" needs to be defined elsewhere in your project. You can replace \"ClassToTest\" with your actual class name. You can also replace the verify() method with your assertions for your specific use case.\n\nThis is a simple example showing how you can set up an EasyMock test using the EasyMockRule in your JUnit tests.",
+                "extracted_java_code_from_prediction": "",
+                "extracted_FQNs_from_prediction": [],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 1,
+                "model_confidence": 0.39072954654693604,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockRule\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's an example of how you could use EasyMock in a Java project:\n\n```java\nimport org.easymock.EasyMock;\nimport org.junit.Rule;\nimport org.junit.Test;\nimport org.junit.contrib.java.lang.system.SystemOutRule;\n\npublic class Main {\n    @Rule\n    public EasyMockRule mockery = new EasyMockRule(this);\n    \n    @Rule\n    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();\n\n    public interface InterfaceClass {\n        String aMethod(String a);\n    }\n    \n    @Test\n    public void test() {\n        InterfaceClass mock = mockery.createMock(InterfaceClass.class);\n        String someString = \"Hello\";\n        \n        // Prepare the mock\n        EasyMock.expect(mock.aMethod(EasyMock.eq(someString))).andReturn(someString).times(1);\n        EasyMock.replay(mock);\n\n        // Call the method we're interested in\n        String actualResult = mock.aMethod(someString);\n\n        // Verify we did what we set out to do\n        EasyMock.verify(mock);\n\n        // Let's assert the result\n        assert(actualResult.equals(someString));\n\n        // Now let's print the output\n        System.out.println(actualResult);\n    }\n}\n```\nIn the given code, we are creating an interface `InterfaceClass` and creating a mock instance of it using `EasyMock.createMock(InterfaceClass.class)`. We then call the `aMethod()` method with a specific string, expect it to return the same string and call it only once. We then verify if the method was called exactly once and finally assert if the return value from the method matches with the input string.",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMock;\nimport org.junit.Rule;\nimport org.junit.Test;\nimport org.junit.contrib.java.lang.system.SystemOutRule;\n\npublic class Main {\n    @Rule\n    public EasyMockRule mockery = new EasyMockRule(this);\n    \n    @Rule\n    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();\n\n    public interface InterfaceClass {\n        String aMethod(String a);\n    }\n    \n    @Test\n    public void test() {\n        InterfaceClass mock = mockery.createMock(InterfaceClass.class);\n        String someString = \"Hello\";\n        \n        // Prepare the mock\n        EasyMock.expect(mock.aMethod(EasyMock.eq(someString))).andReturn(someString).times(1);\n        EasyMock.replay(mock);\n\n        // Call the method we're interested in\n        String actualResult = mock.aMethod(someString);\n\n        // Verify we did what we set out to do\n        EasyMock.verify(mock);\n\n        // Let's assert the result\n        assert(actualResult.equals(someString));\n\n        // Now let's print the output\n        System.out.println(actualResult);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMock",
+                    "org.junit.Rule",
+                    "org.junit.Test",
+                    "org.junit.contrib.java.lang.system.SystemOutRule"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMock",
+                    "org.junit.Rule",
+                    "org.junit.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.junit.contrib.java.lang.system.SystemOutRule"
+                ],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.4397951066493988,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,42] package org.junit.contrib.java.lang.system does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,12] cannot find symbol\n  symbol:   class EasyMockRule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[13,18] cannot find symbol\n  symbol:   class SystemOutRule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[9,6] cannot find symbol\n  symbol:   class Rule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,6] cannot find symbol\n  symbol:   class Rule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[19,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,39] cannot find symbol\n  symbol:   class EasyMockRule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[13,52] cannot find symbol\n  symbol:   class SystemOutRule\n  location: class org.example.Main\n[INFO] 10 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.815 s\n[INFO] Finished at: 2024-04-16T20:30:07-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[4,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[6,42] package org.junit.contrib.java.lang.system does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,12] cannot find symbol\n[ERROR]   symbol:   class EasyMockRule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[13,18] cannot find symbol\n[ERROR]   symbol:   class SystemOutRule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[9,6] cannot find symbol\n[ERROR]   symbol:   class Rule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,6] cannot find symbol\n[ERROR]   symbol:   class Rule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[19,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[10,39] cannot find symbol\n[ERROR]   symbol:   class EasyMockRule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java:[13,52] cannot find symbol\n[ERROR]   symbol:   class SystemOutRule\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 42,
+                                "message": "package org.junit.contrib.java.lang.system does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 12,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 18,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 4,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 52,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockRule\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo use EasyMock in your project you need to include the following dependencies in your pom.xml file of your maven project.\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.easymock</groupId>\n        <artifactId>easymock</artifactId>\n        <version>5.2.0</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```\n\nYou can also use the following dependencies if you want to include more APIs for testing purpose.\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>junit</groupId>\n        <artifactId>junit</artifactId>\n        <version>4.13</version>\n        <scope>test</scope>\n    </dependency>\n    <dependency>\n        <groupId>org.easymock</groupId>\n        <artifactId>easymock</artifactId>\n        <version>5.2.0</version>\n        <scope>test</scope>\n    </dependency>\n    <dependency>\n        <groupId>org.hamcrest</groupId>\n        <artifactId>hamcrest-library</artifactId>\n        <version>2.2</version>\n        <scope>test</scope>\n    </dependency>\n</dependencies>\n```\n\nHere is the Java code using EasyMock.\n\n```java\nimport org.easymock.EasyMockRule;\nimport org.easymock.EasyMockSupport;\nimport org.junit.Rule;\nimport org.junit.Test;\n\npublic class Main extends EasyMockSupport {\n\n    @Rule\n    public EasyMockRule mockery = new EasyMockRule(this);\n\n    @Test\n    public void test() {\n        // Put the test code here\n    }\n}\n```\n\nHere `@Rule` is used to add a rule to the lifecycle of the test. It is used in the Test annotation `@Test`. The `@Rule` annotation is used in JUnit 4.7 and later versions. This is a way to declare a field where a rule is attached. That's why you will see a rule declared with a name in the form \"ruleFieldName\" instead of a method where it is attached.\n\nIf you want more details or complex test, feel free to ask.",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMockRule;\nimport org.easymock.EasyMockSupport;\nimport org.junit.Rule;\nimport org.junit.Test;\n\npublic class Main extends EasyMockSupport {\n\n    @Rule\n    public EasyMockRule mockery = new EasyMockRule(this);\n\n    @Test\n    public void test() {\n        // Put the test code here\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMockRule",
+                    "org.easymock.EasyMockSupport",
+                    "org.junit.Rule",
+                    "org.junit.Test"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMockRule",
+                    "org.easymock.EasyMockSupport",
+                    "org.junit.Rule",
+                    "org.junit.Test"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.48737895488739014,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,6] cannot find symbol\n  symbol:   class Rule\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[INFO] 4 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.678 s\n[INFO] Finished at: 2024-04-16T20:30:08-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java:[6,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java:[10,6] cannot find symbol\n[ERROR]   symbol:   class Rule\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java:[13,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockRule/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "EasyMockSupport": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"EasyMockSupport\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockSupport\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nAs an AI language model, I don't have the capability to write or compile Java code. However, I can show you an example of how to use EasyMockSupport API. Make sure to import the necessary dependencies in your Java project. Here is an example of a code that you can use:\n\n```java\nimport org.easymock.EasyMockSupport;\nimport org.easymock.EasyMock;\nimport org.easymock.Mock;\n\npublic class Main extends EasyMockSupport {\n  \n    private Calculator calculator;\n  \n    @Mock\n    private Calculator calculator;\n\n    public void setUp() {\n        EasyMock.reset(calculator);\n        replayAll();\n    }\n\n    public void testAdd() {\n        // Setting up the expectation\n        EasyMock.expect(calculator.add(10, 20)).andReturn(30);\n        // Replay all\n        replayAll();\n        \n        // Testing the code\n        int result = calculator.add(10, 20);\n        \n        // Verifying if expectation was met\n        verifyAll();\n\n        // Validating results\n        assertEquals(30, result);\n    }\n}\n\ninterface Calculator {\n    int add(int a, int b);\n}\n```\n\nThis is a mocking example using EasyMock. You can create an interface `Calculator` with one method `add(int a, int b)`. In the test class `Main`, you are using `EasyMock` to mock `Calculator` and test its methods in isolation. It includes setting up expectations, replaying mocked objects, validating expectations and more.\n\nPlease note, this example will not compile because you didn't provide a complete context of what you want the code to accomplish. You have to replace the placeholders with your specific logic.",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMockSupport;\nimport org.easymock.EasyMock;\nimport org.easymock.Mock;\n\npublic class Main extends EasyMockSupport {\n  \n    private Calculator calculator;\n  \n    @Mock\n    private Calculator calculator;\n\n    public void setUp() {\n        EasyMock.reset(calculator);\n        replayAll();\n    }\n\n    public void testAdd() {\n        // Setting up the expectation\n        EasyMock.expect(calculator.add(10, 20)).andReturn(30);\n        // Replay all\n        replayAll();\n        \n        // Testing the code\n        int result = calculator.add(10, 20);\n        \n        // Verifying if expectation was met\n        verifyAll();\n\n        // Validating results\n        assertEquals(30, result);\n    }\n}\n\ninterface Calculator {\n    int add(int a, int b);\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMockSupport",
+                    "org.easymock.EasyMock",
+                    "org.easymock.Mock"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMockSupport",
+                    "org.easymock.EasyMock",
+                    "org.easymock.Mock"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5567326545715332,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/java/org/example/Main.java:[9,13] cannot find symbol\n  symbol:   class Calculator\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,13] cannot find symbol\n  symbol:   class Calculator\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/java/org/example/Main.java:[32,9] cannot find symbol\n  symbol:   method assertEquals(int,int)\n  location: class org.example.Main\n[INFO] 3 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.665 s\n[INFO] Finished at: 2024-04-16T20:30:33-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/java/org/example/Main.java:[9,13] cannot find symbol\n[ERROR]   symbol:   class Calculator\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/java/org/example/Main.java:[12,13] cannot find symbol\n[ERROR]   symbol:   class Calculator\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/java/org/example/Main.java:[32,9] cannot find symbol\n[ERROR]   symbol:   method assertEquals(int,int)\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 32,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 9,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockSupport\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a sample complete, correct and compilable Java code. This code uses EasyMock, JUnit and Hamcrest APIs from the \"easymock-5.2.0\" project and \"junit-4.12\" project. Note that you would need to have these projects in your classpath to compile and run the code.\n\n```java\nimport org.easymock.EasyMock;\nimport org.junit.Test;\nimport static org.hamcrest.CoreMatchers.*;\nimport static org.junit.Assert.assertThat;\n\npublic class Main {\n\n    @Test\n    public void testMain() {\n        // Mocking an object\n        IMockObject mockObject = EasyMock.mock(IMockObject.class);\n        \n        // Setting expectations\n        EasyMock.expect(mockObject.getAnswer()).andReturn(42);\n        \n        // Reset mock and verify expectations\n        EasyMock.replay(mockObject);\n        \n        // Call method to be tested\n        int actual = mockObject.getAnswer();\n        \n        // Check if expected outcome\n        assertThat(actual, is(42));\n    }\n    \n    interface IMockObject {\n        int getAnswer();\n    }\n\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\nIn the above code, `testMain` method is a JUnit test case, used for testing the expected output of the method `getAnswer()`. \n\n`IMockObject` is a mocked object for testing the interaction with this object is as expected or not. \n\n`replay` method is used to indicate that the mock object is re-played, i.e., prepared for the caller to record more interactions with the mock, after which the recording of interactions will be turned off. \n\nFinally the `main` method just prints \"Hello, World!\".",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMock;\nimport org.junit.Test;\nimport static org.hamcrest.CoreMatchers.*;\nimport static org.junit.Assert.assertThat;\n\npublic class Main {\n\n    @Test\n    public void testMain() {\n        // Mocking an object\n        IMockObject mockObject = EasyMock.mock(IMockObject.class);\n        \n        // Setting expectations\n        EasyMock.expect(mockObject.getAnswer()).andReturn(42);\n        \n        // Reset mock and verify expectations\n        EasyMock.replay(mockObject);\n        \n        // Call method to be tested\n        int actual = mockObject.getAnswer();\n        \n        // Check if expected outcome\n        assertThat(actual, is(42));\n    }\n    \n    interface IMockObject {\n        int getAnswer();\n    }\n\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMock",
+                    "org.junit.Test",
+                    "static org.hamcrest.CoreMatchers.*",
+                    "static org.junit.Assert.assertThat"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMock",
+                    "org.junit.Test"
+                ],
+                "wrong_FQN_predictions": [
+                    "static org.hamcrest.CoreMatchers.*",
+                    "static org.junit.Assert.assertThat"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.582991898059845,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,27] package org.hamcrest does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[7,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[7,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[26,28] cannot find symbol\n  symbol:   method is(int)\n  location: class org.example.Main\n[INFO] 6 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.716 s\n[INFO] Finished at: 2024-04-16T20:30:35-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[5,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[6,27] package org.hamcrest does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[7,24] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[7,1] static import only from classes and interfaces\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[11,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java:[26,28] cannot find symbol\n[ERROR]   symbol:   method is(int)\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 1,
+                                "message": "static import only from classes and interfaces"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 7,
+                                "column": 24,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 27,
+                                "message": "package org.hamcrest does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 28,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockSupport\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nYour problem description is a bit ambiguous due to lack of clear instructions of what methods or APIs you need to use from \"EasyMockSupport\" API. However, I will provide a simple example to show how to use the EasyMockSupport API. Here I'll use a hypothetical API call that requires no additional dependencies.\n\nPlease note: In real scenarios, the correct usage of API will depend on the methods provided by EasyMockSupport. Without a specific method to mock, the solution will remain general.\n\nHere is a simple example of a Main class that creates a mock using EasyMockSupport:\n\n```java\nimport org.easymock.EasyMock;\nimport org.easymock.EasyMockSupport;\nimport org.easymock.IMocksControl;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        //Create mocks control object\n        IMocksControl mocks = EasyMock.strictControl();\n\n        //Mock a new object using the mocks control object\n        Object mockedObject = mocks.mock(Object.class);\n\n        //Start recording\n        mocks.startRecording();\n\n        //Here you would add expectations and return values to your mock. \n\n        mocks.stopRecording();\n\n        //Replay all recorded calls\n        mocks.replayAll();\n\n        //Here you would call methods on your mock and test them\n\n        //Verify all recorded calls\n        mocks.verifyAll();\n    }\n}\n```\n\nRemember to replace `Object` with the actual type you want to mock. You'd also add your own expectations and return values to this mock using `mocks.expect()` and `mocks.returnValue()` respectively. In a complete project, you'll probably want to use a build tool or other configuration to manage dependencies, and this would ideally live in a test directory.\n\nAlso, I would like to note that it's recommended to switch to Mockito or PowerMock for real-world scenarios. EasyMock is quite an old library and does not have the feature set of more recent frameworks (like Mockito or PowerMock).",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMock;\nimport org.easymock.EasyMockSupport;\nimport org.easymock.IMocksControl;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        //Create mocks control object\n        IMocksControl mocks = EasyMock.strictControl();\n\n        //Mock a new object using the mocks control object\n        Object mockedObject = mocks.mock(Object.class);\n\n        //Start recording\n        mocks.startRecording();\n\n        //Here you would add expectations and return values to your mock. \n\n        mocks.stopRecording();\n\n        //Replay all recorded calls\n        mocks.replayAll();\n\n        //Here you would call methods on your mock and test them\n\n        //Verify all recorded calls\n        mocks.verifyAll();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockSupport",
+                    "org.easymock.IMocksControl"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockSupport"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.easymock.IMocksControl"
+                ],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.5472033619880676,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,39] cannot find symbol\n  symbol:   method strictControl()\n  location: class org.easymock.EasyMock\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[19,14] cannot find symbol\n  symbol:   method startRecording()\n  location: variable mocks of type org.easymock.IMocksControl\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[23,14] cannot find symbol\n  symbol:   method stopRecording()\n  location: variable mocks of type org.easymock.IMocksControl\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[26,14] cannot find symbol\n  symbol:   method replayAll()\n  location: variable mocks of type org.easymock.IMocksControl\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[31,14] cannot find symbol\n  symbol:   method verifyAll()\n  location: variable mocks of type org.easymock.IMocksControl\n[INFO] 5 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.675 s\n[INFO] Finished at: 2024-04-16T20:30:36-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[13,39] cannot find symbol\n[ERROR]   symbol:   method strictControl()\n[ERROR]   location: class org.easymock.EasyMock\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[19,14] cannot find symbol\n[ERROR]   symbol:   method startRecording()\n[ERROR]   location: variable mocks of type org.easymock.IMocksControl\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[23,14] cannot find symbol\n[ERROR]   symbol:   method stopRecording()\n[ERROR]   location: variable mocks of type org.easymock.IMocksControl\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[26,14] cannot find symbol\n[ERROR]   symbol:   method replayAll()\n[ERROR]   location: variable mocks of type org.easymock.IMocksControl\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java:[31,14] cannot find symbol\n[ERROR]   symbol:   method verifyAll()\n[ERROR]   location: variable mocks of type org.easymock.IMocksControl\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 14,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 19,
+                                "column": 14,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 13,
+                                "column": 39,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 31,
+                                "column": 14,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_3/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 23,
+                                "column": 14,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockSupport\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a complete, correct and compilable Java code that uses \"EasyMockSupport\" from \"easymock-5.2.0\" project and creates an instance of the class MockEasyMockTest. You can adapt this sample as needed for your specific needs. \n\n```java\nimport org.easymock.EasyMock;\nimport org.easymock.EasyMockRunner;\nimport org.easymock.EasyMockSupport;\nimport org.easymock.IAnswer;\nimport org.junit.Before;\nimport org.junit.Test;\nimport org.junit.runner.RunWith;\n\n@RunWith(EasyMockRunner.class)\npublic class MockEasyMockTest extends EasyMockSupport {\n    private TestService testService;\n\n    @Before\n    public void setUp() {\n        testService = createNiceMock(TestService.class);\n    }\n\n    @Test\n    public void testMethod() {\n        replay(testService);\n        // when\n        testService.someMethod(\"param\");\n        // then\n        verify(testService);\n    }\n}\n\ninterface TestService {\n    void someMethod(String param);\n}\n```\n\nPlease note that:\n\n1. This is an example of using EasyMock, the TestService here is a hypothetical interface.\n\n2. You should replace TestService and its methods with the actual interface and methods that you need in your code.\n\n3. Also replace `someMethod` and `param` with the actual methods and parameters that you are going to use in your code.\n\n4. Also, replace `testMethod` with the actual test case that you want to implement.",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMock;\nimport org.easymock.EasyMockRunner;\nimport org.easymock.EasyMockSupport;\nimport org.easymock.IAnswer;\nimport org.junit.Before;\nimport org.junit.Test;\nimport org.junit.runner.RunWith;\n\n@RunWith(EasyMockRunner.class)\npublic class MockEasyMockTest extends EasyMockSupport {\n    private TestService testService;\n\n    @Before\n    public void setUp() {\n        testService = createNiceMock(TestService.class);\n    }\n\n    @Test\n    public void testMethod() {\n        replay(testService);\n        // when\n        testService.someMethod(\"param\");\n        // then\n        verify(testService);\n    }\n}\n\ninterface TestService {\n    void someMethod(String param);\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockRunner",
+                    "org.easymock.EasyMockSupport",
+                    "org.easymock.IAnswer",
+                    "org.junit.Before",
+                    "org.junit.Test",
+                    "org.junit.runner.RunWith"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockRunner",
+                    "org.easymock.EasyMockSupport",
+                    "org.easymock.IAnswer",
+                    "org.junit.Before",
+                    "org.junit.Test",
+                    "org.junit.runner.RunWith"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 7,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5650235414505005,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 2 source files to /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[7,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[8,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[9,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[12,13] cannot find symbol\n  symbol:   class TestService\n  location: class org.example.MockEasyMockTest\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[14,6] cannot find symbol\n  symbol:   class Before\n  location: class org.example.MockEasyMockTest\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[19,6] cannot find symbol\n  symbol:   class Test\n  location: class org.example.MockEasyMockTest\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[16,38] cannot find symbol\n  symbol:   class TestService\n  location: class org.example.MockEasyMockTest\n[INFO] 7 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.687 s\n[INFO] Finished at: 2024-04-16T20:30:37-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[7,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[8,17] package org.junit does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[9,24] package org.junit.runner does not exist\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[12,13] cannot find symbol\n[ERROR]   symbol:   class TestService\n[ERROR]   location: class org.example.MockEasyMockTest\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[14,6] cannot find symbol\n[ERROR]   symbol:   class Before\n[ERROR]   location: class org.example.MockEasyMockTest\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[19,6] cannot find symbol\n[ERROR]   symbol:   class Test\n[ERROR]   location: class org.example.MockEasyMockTest\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java:[16,38] cannot find symbol\n[ERROR]   symbol:   class TestService\n[ERROR]   location: class org.example.MockEasyMockTest\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java",
+                                "line": 9,
+                                "column": 24,
+                                "message": "package org.junit.runner does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java",
+                                "line": 16,
+                                "column": 38,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java",
+                                "line": 12,
+                                "column": 13,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java",
+                                "line": 14,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java",
+                                "line": 8,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java",
+                                "line": 19,
+                                "column": 6,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/easymock-5.2.0/EasyMockSupport/sample_4/Wrapper/src/main/java/org/example/MockEasyMockTest.java",
+                                "line": 7,
+                                "column": 17,
+                                "message": "package org.junit does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"EasyMockSupport\" API from \"easymock-5.2.0\" project along with other necessary APIs. The dependency is already added for \"easymock-5.2.0\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, I can provide the code that uses EasyMockSupport. But please note that you need to add Mock dependencies in your `pom.xml` file:\n\n```xml\n<dependency>\n   <groupId>org.easymock</groupId>\n   <artifactId>easymock</artifactId>\n   <version>3.4</version>\n   <scope>test</scope>\n</dependency>\n```\nAfter adding the dependency, below is the code:\n\n```java\nimport org.easymock.EasyMock;\nimport org.easymock.EasyMockSupport;\nimport org.easymock.IArgumentMatcher;\nimport java.util.List;\n\npublic class Main extends EasyMockSupport {\n\n    public static void main(String[] args) {\n\n        Main main = new Main();\n\n        List<String> listMock = EasyMock.createMock(List.class);\n        EasyMock.expect(listMock.add(\"test\")).andReturn(true);\n        EasyMock.expect(listMock.size()).andReturn(1);\n        EasyMock.expect(listMock.get(0)).andReturn(\"test\");\n        EasyMock.replay(listMock);\n\n        boolean result = main.useListMock(listMock);\n\n        EasyMock.verify(listMock);\n\n        System.out.println(\"Test result: \" + result);\n    }\n\n    private boolean useListMock(List<String> listMock) {\n        listMock.add(\"test\");\n        int size = listMock.size();\n        String firstElement = listMock.get(0);\n\n        return (size == 1) && (firstElement.equals(\"test\"));\n    }\n}\n```\n\nThis program tests a List mock, adding an element \"test\" and checking if size of list is 1 and first element is \"test\". If the conditions are met, it returns true.",
+                "extracted_java_code_from_prediction": "import org.easymock.EasyMock;\nimport org.easymock.EasyMockSupport;\nimport org.easymock.IArgumentMatcher;\nimport java.util.List;\n\npublic class Main extends EasyMockSupport {\n\n    public static void main(String[] args) {\n\n        Main main = new Main();\n\n        List<String> listMock = EasyMock.createMock(List.class);\n        EasyMock.expect(listMock.add(\"test\")).andReturn(true);\n        EasyMock.expect(listMock.size()).andReturn(1);\n        EasyMock.expect(listMock.get(0)).andReturn(\"test\");\n        EasyMock.replay(listMock);\n\n        boolean result = main.useListMock(listMock);\n\n        EasyMock.verify(listMock);\n\n        System.out.println(\"Test result: \" + result);\n    }\n\n    private boolean useListMock(List<String> listMock) {\n        listMock.add(\"test\");\n        int size = listMock.size();\n        String firstElement = listMock.get(0);\n\n        return (size == 1) && (firstElement.equals(\"test\"));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockSupport",
+                    "org.easymock.IArgumentMatcher",
+                    "java.util.List"
+                ],
+                "correct_FQN_predictions": [
+                    "org.easymock.EasyMock",
+                    "org.easymock.EasyMockSupport",
+                    "org.easymock.IArgumentMatcher",
+                    "java.util.List"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 4,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.25,
+                "model_confidence": 0.6532871723175049,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        }
+    }
+}

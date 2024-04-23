@@ -1,0 +1,616 @@
+{
+    "jar_name": "spring-web-6.0.3.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from spring-web-6.0.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from spring-web-6.0.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the Spring Web project source code. However, I can provide you with a general list of Spring Web's non-abstract classes.\n\n1. ResponseEntity\n2. ServerHttpRequest\n3. ServerHttpResponse\n4. HttpHeaders\n5. HttpMethod\n6. HttpStatus\n7. RequestEntity\n8. ResponseEntity\n9. ServerHttpRequest\n10. ServerHttpResponse\n11. UriComponentsBuilder\n12. UriComponents\n13. HttpEntity\n14. RequestEntity\n15. ResponseEntity\n16. HttpHeaders\n17. HttpMethod\n18. HttpStatus\n19. RequestEntity\n20. ResponseEntity\n21. ServerHttpRequest\n22. ServerHttpResponse\n23. UriComponentsBuilder\n24. UriComponents\n25. HttpEntity\n26. RequestEntity\n27. ResponseEntity\n28. ServerHttpRequest\n29. ServerHttpResponse\n30. UriComponentsBuilder\n31. UriComponents\n32. HttpEntity\n33. RequestEntity\n34. ResponseEntity\n35. ServerHttpRequest\n36. ServerHttpResponse\n37. UriComponentsBuilder\n38. UriComponents\n39. HttpEntity\n40. RequestEntity\n41. ResponseEntity\n42. ServerHttpRequest\n43. ServerHttpResponse\n44. UriComponentsBuilder\n45. UriComponents\n46. HttpEntity\n47. RequestEntity\n48. ResponseEntity\n49. ServerHttpRequest\n50. ServerHttpResponse\n\nPlease note that this list is based on the Spring Web's non-abstract classes. The actual list may vary depending on the version of the Spring Web project you are referring to.",
+        "extracted_APIs_from_prediction": [
+            "ResponseEntity",
+            "ServerHttpRequest",
+            "ServerHttpResponse",
+            "HttpHeaders",
+            "HttpMethod",
+            "HttpStatus",
+            "RequestEntity",
+            "UriComponentsBuilder",
+            "UriComponents",
+            "HttpEntity"
+        ],
+        "correct_API_predictions": [
+            "HttpHeaders",
+            "HttpMethod",
+            "HttpStatus",
+            "UriComponentsBuilder"
+        ],
+        "wrong_API_predictions": [
+            "ResponseEntity",
+            "ServerHttpRequest",
+            "ServerHttpResponse",
+            "RequestEntity",
+            "UriComponents",
+            "HttpEntity"
+        ],
+        "number_of_correct_APIs": 4,
+        "number_of_wrong_APIs": 6,
+        "failure_rate_for_APIs": 0.6,
+        "model_confidence": 0.7830941081047058,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "HttpHeaders": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"HttpHeaders\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpHeaders\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simple Java code snippet using the \"HttpHeaders\" API from the \"spring-web-6.0.3\" project:\n\n```java\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.MediaType;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // create HttpHeaders object\n        HttpHeaders headers = new HttpHeaders();\n\n        // add MediaType in header\n        headers.setContentType(MediaType.APPLICATION_JSON);\n\n        // print HttpHeaders\n        System.out.println(headers.toString());\n    }\n}\n```\n\nIn the given Java program, we import necessary APIs `org.springframework.http.HttpHeaders` and `org.springframework` from `spring-web-6.0.3` project and then use these APIs. The above program adds a MediaType to the HttpHeaders and then prints the headers.\n\nBut please note that you should have spring-web-6.0.3 as a dependency in your project. Also, you need to use this Spring project in a Spring application.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpHeaders;\nimport org.springframework.http.MediaType;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        // create HttpHeaders object\n        HttpHeaders headers = new HttpHeaders();\n\n        // add MediaType in header\n        headers.setContentType(MediaType.APPLICATION_JSON);\n\n        // print HttpHeaders\n        System.out.println(headers.toString());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.MediaType"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.MediaType"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.46187421679496765,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpHeaders\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic example of using `HttpHeaders` in a Spring Web application. This does not require adding any other dependencies but it needs a Spring context setup, and it depends on the `spring-web` artifact and version `6.0.3`.\n\nYou will need to add the Spring Framework version `6.0.3` and Java version `17` or higher to your project to run this.\n\n```java\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.MediaType;\n\npublic class Main {\n    public static void main(String[] args) {\n\n        // Create new HttpHeaders\n        HttpHeaders headers = new HttpHeaders();\n\n        // Add values to the headers\n        headers.setContentType(MediaType.APPLICATION_JSON);\n        headers.set(\"myHeader\", \"headerValue\");\n\n        // You can get values from the headers\n        System.out.println(\"Content Type: \" + headers.getContentType());\n        System.out.println(\"myHeader: \" + headers.getFirst(\"myHeader\"));\n    }\n}\n```\n\nIn the above code, `HttpHeaders` are used to represent the HTTP headers of a message. In this example, we are setting the `Content-Type` of the message to `application/json` using `setContentType` method and a custom header `myHeader` using the `set` method. Then we are fetching these headers using the `getContentType` and `getFirst` method.\n\nThis code should run in a Spring Boot application, as it is designed to be executed within an application that has this Spring Boot context setup. \n\nPlease note that this is a basic example, the actual usage of the HttpHeaders API would depend on the context and requirements of your specific use case.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpHeaders;\nimport org.springframework.http.MediaType;\n\npublic class Main {\n    public static void main(String[] args) {\n\n        // Create new HttpHeaders\n        HttpHeaders headers = new HttpHeaders();\n\n        // Add values to the headers\n        headers.setContentType(MediaType.APPLICATION_JSON);\n        headers.set(\"myHeader\", \"headerValue\");\n\n        // You can get values from the headers\n        System.out.println(\"Content Type: \" + headers.getContentType());\n        System.out.println(\"myHeader: \" + headers.getFirst(\"myHeader\"));\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.MediaType"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.MediaType"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.4518376588821411,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpHeaders\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a simple Java code example using the Spring's HttpHeaders API.\n\nFirst, you need to add the required dependencies to your project. You can add the dependency via Maven in your `pom.xml` file as follows:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-web</artifactId>\n        <version>6.0.3</version>\n    </dependency>\n</dependencies>\n```\n\nNote: The `spring-web` dependency is a meta-package that includes all the sub-projects under Spring Framework: `spring-beans`, `spring-context`, `spring-core`, `spring-expression`, `spring-aop`, `spring-web`, and `spring-webmvc`.\n\nNow you can use `HttpHeaders` from Spring Framework in your Java code:\n\n```java\npackage com.example;\n\nimport org.springframework.http.HttpHeaders;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        HttpHeaders headers = new HttpHeaders();\n        headers.add(\"key\", \"value\");\n        System.out.println(headers);\n    }\n}\n```\n\nIn this code, a new `HttpHeaders` object is created, and a key-value pair is added to it using the `add()` method. The `System.out.println()` is used to print the headers to the console.\n\nRemember that when Spring's `HttpHeaders` is used in a standalone application, there's no need to add additional dependencies. If you are working on a Spring Boot application or any application that uses Spring Framework, additional dependencies might be needed.",
+                "extracted_java_code_from_prediction": "package com.example;\n\nimport org.springframework.http.HttpHeaders;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        HttpHeaders headers = new HttpHeaders();\n        headers.add(\"key\", \"value\");\n        System.out.println(headers);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpHeaders"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.springframework.http.HttpHeaders"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5412023067474365,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpHeaders\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple Java code that uses the HttpHeaders from the \"spring-web-6.0.3\" project, along with a couple of the other basic APIs:\n\n```java\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.util.MimeType;\nimport java.net.URI;\nimport java.util.Iterator;\nimport java.util.Map;\n\npublic class Main {\n    \n    public static void main(String[] args) {\n        \n        // Creating HttpHeaders instance\n        HttpHeaders headers = new HttpHeaders();\n\n        // Add a new header of type String\n        headers.set(\"MyHeader\", \"HeaderValue\");\n\n        // Add a new header of type URI\n        headers.setLocation(URI.create(\"http://www.example.com\"));\n\n        // Access the headers and values\n        Map<String, String> headersMap = headers.toSingleValueMap();\n        Iterator<String> iterator = headersMap.keySet().iterator();\n\n        while (iterator.hasNext()) {\n            String key = iterator.next();\n            System.out.println(key + \": \" + headersMap.get(key));\n        }\n    }\n}\n```\nThis code defines a class named `Main` with a `main()` method. Inside the `main()` method, we use the `HttpHeaders` class from the \"spring-web-6.0.3\" project. We first create an instance of `HttpHeaders` named `headers`. We then add two headers with `set()` method - one as a string and another as a URI. After that, we print the headers and values of the `HttpHeaders` object. \n\nPlease ensure that you have properly configured your Java environment to compile and run Java programs. If your build environment does not have Spring dependency, you will need to add the following to your pom.xml file:\n\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.springframework</groupId>\n        <artifactId>spring-web</artifactId>\n        <version>6.0.3</version>\n    </dependency>\n</dependencies>\n```\n\nThen you can compile this program with `javac` and run it with `java` command.\n\nPlease note, the `HttpHeaders` class is not part of the default Java API, it's a class from the \"spring-web\" library which is a part of the Spring framework. Depending on the version you have installed, you might need to modify the `dependency` in your `pom.xml`.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpHeaders;\nimport org.springframework.util.MimeType;\nimport java.net.URI;\nimport java.util.Iterator;\nimport java.util.Map;\n\npublic class Main {\n    \n    public static void main(String[] args) {\n        \n        // Creating HttpHeaders instance\n        HttpHeaders headers = new HttpHeaders();\n\n        // Add a new header of type String\n        headers.set(\"MyHeader\", \"HeaderValue\");\n\n        // Add a new header of type URI\n        headers.setLocation(URI.create(\"http://www.example.com\"));\n\n        // Access the headers and values\n        Map<String, String> headersMap = headers.toSingleValueMap();\n        Iterator<String> iterator = headersMap.keySet().iterator();\n\n        while (iterator.hasNext()) {\n            String key = iterator.next();\n            System.out.println(key + \": \" + headersMap.get(key));\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.util.MimeType",
+                    "java.net.URI",
+                    "java.util.Iterator",
+                    "java.util.Map"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.util.MimeType",
+                    "java.net.URI",
+                    "java.util.Iterator",
+                    "java.util.Map"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.8,
+                "model_confidence": 0.6664437651634216,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpHeaders\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSince you asked for a complete Java code that uses Spring's \"HttpHeaders\" API, I assume that you also want to use Spring's \"RestTemplate\" API to perform a GET request. Assuming you have a project set up properly, here is a simple example of how to use them in Java:\n\n```java\nimport org.springframework.http.HttpEntity;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.HttpMethod;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.client.RestTemplate;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        final String uri = \"http://api.example.com\";\n\n        RestTemplate restTemplate = new RestTemplate();\n        HttpHeaders headers = new HttpHeaders();\n        headers.set(\"API-KEY\", \"secret-key\");\n\n        HttpEntity<String> entity = new HttpEntity<>(headers);\n\n        ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);\n\n        System.out.println(response.getBody());\n    }\n}\n```\nThis code creates an HttpHeader object with some headers, then uses RestTemplate to make a GET request. The response body is then printed to the console.\n\nIf you want to include additional dependencies, they need to be added to your project's build path or added to the classpath when you run your program. This usually requires an external build tool like Maven or Gradle.\n\nNote: This code should work only if you place it inside a SpringBoot application, or if you define your own Spring context with `@ComponentScan`. If you want to use this code outside of a Spring Boot application or if you're using Java standalone programs, the RestTemplate and HttpEntity classes are not managed by Spring and need to be imported manually. In that case, you also need to make sure that the dependencies for Spring Web are available on the classpath. This will likely involve adding additional dependencies to your `pom.xml` in case of Maven or `build.gradle` in case of Gradle.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpEntity;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.HttpMethod;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.client.RestTemplate;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        final String uri = \"http://api.example.com\";\n\n        RestTemplate restTemplate = new RestTemplate();\n        HttpHeaders headers = new HttpHeaders();\n        headers.set(\"API-KEY\", \"secret-key\");\n\n        HttpEntity<String> entity = new HttpEntity<>(headers);\n\n        ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);\n\n        System.out.println(response.getBody());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpEntity",
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.HttpMethod",
+                    "org.springframework.http.ResponseEntity",
+                    "org.springframework.web.client.RestTemplate"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpEntity",
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.HttpMethod",
+                    "org.springframework.http.ResponseEntity",
+                    "org.springframework.web.client.RestTemplate"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.5243807435035706,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "HttpMethod": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"HttpMethod\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpMethod\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of using `HttpMethod` from \"org.springframework.http\" package in a Spring Boot application. \n\n```java\nimport org.springframework.http.HttpMethod;\nimport org.springframework.web.reactive.function.client.WebClient;\nimport reactor.core.publisher.Mono;\n\npublic class Main {\n    public static void main(String[] args) {\n        WebClient client = WebClient.create(\"https://httpbin.org\");\n        Mono<String> result = client.method(HttpMethod.GET)\n                .uri(\"/get\")\n                .retrieve()\n                .bodyToMono(String.class);\n        System.out.println(result.block());\n    }\n}\n```\n\nThis program is making a GET request to the \"https://httpbin.org/get\" URL using WebClient from \"org.springframework.web.reactive.function.client\" package. \n\n`WebClient` is a non-blocking client which allows you to make HTTP requests in a non-blocking way. The `WebClient` creates a new instance for each operation and does not share resources between them. So, it\u2019s thread-safe.\n\nThe `HttpMethod.GET` method is used to specify that the request is a GET request.\n\nThe `uri(\"/get\")` method is used to set the URI of the request.\n\nThe `retrieve()` method is used to execute the request and return the response.\n\nFinally, the `bodyToMono(String.class)` method is used to convert the response body to a Mono of String. The `block()` method is used to block until the Mono completes and returns the result or signals an error. This is important because it allows you to get the result of the HTTP request synchronously.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpMethod;\nimport org.springframework.web.reactive.function.client.WebClient;\nimport reactor.core.publisher.Mono;\n\npublic class Main {\n    public static void main(String[] args) {\n        WebClient client = WebClient.create(\"https://httpbin.org\");\n        Mono<String> result = client.method(HttpMethod.GET)\n                .uri(\"/get\")\n                .retrieve()\n                .bodyToMono(String.class);\n        System.out.println(result.block());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpMethod",
+                    "org.springframework.web.reactive.function.client.WebClient",
+                    "reactor.core.publisher.Mono"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpMethod"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.web.reactive.function.client.WebClient",
+                    "reactor.core.publisher.Mono"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 0.6666666666666666,
+                "model_confidence": 0.5733642578125,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,56] package org.springframework.web.reactive.function.client does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,30] package reactor.core.publisher does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n  symbol:   class WebClient\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,28] cannot find symbol\n  symbol:   variable WebClient\n  location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n  symbol:   class Mono\n  location: class org.example.Main\n[INFO] 5 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.697 s\n[INFO] Finished at: 2024-04-17T00:15:11-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[5,56] package org.springframework.web.reactive.function.client does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[6,30] package reactor.core.publisher does not exist\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,9] cannot find symbol\n[ERROR]   symbol:   class WebClient\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,28] cannot find symbol\n[ERROR]   symbol:   variable WebClient\n[ERROR]   location: class org.example.Main\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java:[11,9] cannot find symbol\n[ERROR]   symbol:   class Mono\n[ERROR]   location: class org.example.Main\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 28,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 5,
+                                "column": 56,
+                                "message": "package org.springframework.web.reactive.function.client does not exist"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 9,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpMethod/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 6,
+                                "column": 30,
+                                "message": "package reactor.core.publisher does not exist"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpMethod\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSince the problem does not provide any specific details on the type of operation to be performed or the expected result, I'll write a simple Java program using HttpMethod from the Spring Web Framework, which sends a GET request to the Google homepage. Note that this is a simple demonstration and does not require any additional dependencies.\n\nIncluding the Spring framework is a must if you are working on a Spring Boot Application.\n\nThe `org.springframework.http.HttpMethod` and `org.springframework.http.client.HttpComponentsClientHttpRequestFactory` need to be imported.\n\n```java\nimport org.springframework.http.HttpMethod;\nimport org.springframework.http.client.HttpComponentsClientHttpRequestFactory;\nimport org.springframework.http.client.ClientHttpRequest;\nimport org.springframework.http.client.ClientHttpResponse;\nimport org.springframework.web.client.ResponseExtractor;\nimport org.springframework.web.client.RestTemplate;\n\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        String url = \"http://www.google.com\";\n\n        RestTemplate restTemplate = new RestTemplate(new HttpComponentsClientHttpRequestFactory());\n\n        restTemplate.execute(url, HttpMethod.GET, null, new ResponseExtractor<String>() {\n\n            @Override\n            public String extractData(ClientHttpResponse response) throws IOException {\n                return response.getStatusCode().toString();\n            }\n        });\n    }\n}\n```\n\nThe above code does not perform any operation with the response body, it just prints the HTTP status code. If you are interested in extracting the actual body, you would need to modify the `extractData` method in your own implementation accordingly.\n\nThis is a simple demonstration. Depending on the use case, you might need to configure the RestTemplate or handle exceptions, which is outside the scope of this answer.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpMethod;\nimport org.springframework.http.client.HttpComponentsClientHttpRequestFactory;\nimport org.springframework.http.client.ClientHttpRequest;\nimport org.springframework.http.client.ClientHttpResponse;\nimport org.springframework.web.client.ResponseExtractor;\nimport org.springframework.web.client.RestTemplate;\n\nimport java.io.IOException;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        String url = \"http://www.google.com\";\n\n        RestTemplate restTemplate = new RestTemplate(new HttpComponentsClientHttpRequestFactory());\n\n        restTemplate.execute(url, HttpMethod.GET, null, new ResponseExtractor<String>() {\n\n            @Override\n            public String extractData(ClientHttpResponse response) throws IOException {\n                return response.getStatusCode().toString();\n            }\n        });\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpMethod",
+                    "org.springframework.http.client.HttpComponentsClientHttpRequestFactory",
+                    "org.springframework.http.client.ClientHttpRequest",
+                    "org.springframework.http.client.ClientHttpResponse",
+                    "org.springframework.web.client.ResponseExtractor",
+                    "org.springframework.web.client.RestTemplate",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpMethod",
+                    "org.springframework.http.client.HttpComponentsClientHttpRequestFactory",
+                    "org.springframework.http.client.ClientHttpRequest",
+                    "org.springframework.http.client.ClientHttpResponse",
+                    "org.springframework.web.client.ResponseExtractor",
+                    "org.springframework.web.client.RestTemplate",
+                    "java.io.IOException"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 7,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.14285714285714285,
+                "model_confidence": 0.5654323101043701,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpMethod\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a Java code using the necessary APIs from the spring-web project, namely, the HttpMethod class:\n\n```java\nimport org.springframework.http.HttpMethod;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.HttpEntity;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.client.RestTemplate;\n\npublic class Main {\n    public static void main(String[] args) {\n        String url = \"http://example.com\";\n        RestTemplate restTemplate = new RestTemplate();\n        \n        HttpHeaders headers = new HttpHeaders();\n        headers.set(\"Authorization\", \"Bearer YOUR_AUTH_TOKEN\");\n        headers.set(\"Content-Type\", \"application/json\");\n        \n        HttpEntity<String> entity = new HttpEntity<>(\"parameters\", headers);\n        ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);\n        \n        System.out.println(response.getBody());\n    }\n}\n```\n\nThis code creates an instance of RestTemplate and sends a GET request to the URL provided. It adds a \"Content-Type\" and \"Authorization\" header to the request before sending it. The response body is then printed to the console. \n\nPlease replace `\"http://example.com\"` and `\"YOUR_AUTH_TOKEN\"` with your actual URL and auth token, respectively. \n\nPlease note that you would need to include the Spring Framework for this code to function properly. The Spring framework is not part of the standard Java libraries and needs to be included separately.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpMethod;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.HttpEntity;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.client.RestTemplate;\n\npublic class Main {\n    public static void main(String[] args) {\n        String url = \"http://example.com\";\n        RestTemplate restTemplate = new RestTemplate();\n        \n        HttpHeaders headers = new HttpHeaders();\n        headers.set(\"Authorization\", \"Bearer YOUR_AUTH_TOKEN\");\n        headers.set(\"Content-Type\", \"application/json\");\n        \n        HttpEntity<String> entity = new HttpEntity<>(\"parameters\", headers);\n        ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);\n        \n        System.out.println(response.getBody());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpMethod",
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.HttpEntity",
+                    "org.springframework.http.ResponseEntity",
+                    "org.springframework.web.client.RestTemplate"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpMethod",
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.HttpEntity",
+                    "org.springframework.http.ResponseEntity",
+                    "org.springframework.web.client.RestTemplate"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.2,
+                "model_confidence": 0.5665861964225769,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpMethod\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a very basic example that demonstrates using spring's HttpMethod API. This example doesn't include anything else beyond the HttpMethod class from spring-web, so it will work without any dependencies other than Spring Framework.\n\n```java\nimport org.springframework.http.HttpMethod;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        HttpMethod httpMethod = HttpMethod.GET;\n        System.out.println(\"HTTP method: \" + httpMethod);\n    }\n}\n```\n\nThis will print out:\n\n```\nHTTP method: GET\n```\n\nPlease note that a class with the `main` method should be named exactly `Main` in order for your application to run correctly. In this case, the class name in the source code matches exactly with what the application expects, so it should run correctly.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpMethod;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        HttpMethod httpMethod = HttpMethod.GET;\n        System.out.println(\"HTTP method: \" + httpMethod);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpMethod"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpMethod"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.39540183544158936,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpMethod\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a simple example of a Java code that uses HttpMethod and HttpHeaders API from spring-web-6.0.3 project.\n\n```java\nimport org.springframework.http.HttpEntity;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.HttpMethod;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.client.RestTemplate;\n\nimport java.net.URI;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        RestTemplate restTemplate = new RestTemplate();\n        String url = \"http://example.com\"; //replace with your own url\n        HttpHeaders httpHeaders = new HttpHeaders();\n        httpHeaders.set(\"Content-Type\", \"application/json\");\n\n        HttpEntity<String> requestEntity = new HttpEntity<>(httpHeaders);\n        URI uri = new URI(url);\n\n        ResponseEntity<String> responseEntity = restTemplate.exchange(uri, HttpMethod.GET, requestEntity, String.class);\n\n        String result = responseEntity.getBody();\n\n        System.out.println(\"Response \" + result);\n    }\n}\n```\n\nIn this code, we create an HttpHeaders object and add a header field \"Content-Type\" with the value \"application/json\". We then create an HttpEntity object, passing the HttpHeaders object in the constructor. We then create a new URI object pointing to the URL where we want to send the HTTP request.\n\nFinally, we use the RestTemplate's exchange() method to send the HTTP GET request to the URL. The URL, HTTP method (GET in this case), the HttpEntity object and the type of the response body are passed as arguments to this method.\n\nThe response is stored in a ResponseEntity object and its body is extracted using the getBody() method.\n\nPlease note that running this code will not display anything on the console as we didn't add any printing statement to display the content. The console output will be shown once the content is fetched from the url and printed.\n\nAlso, this code assumes that Spring WebMVC is correctly set up in your application and the required dependencies are correctly managed. If you receive any errors, you might need to look into how to correctly set up Spring in your project.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpEntity;\nimport org.springframework.http.HttpHeaders;\nimport org.springframework.http.HttpMethod;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.client.RestTemplate;\n\nimport java.net.URI;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        RestTemplate restTemplate = new RestTemplate();\n        String url = \"http://example.com\"; //replace with your own url\n        HttpHeaders httpHeaders = new HttpHeaders();\n        httpHeaders.set(\"Content-Type\", \"application/json\");\n\n        HttpEntity<String> requestEntity = new HttpEntity<>(httpHeaders);\n        URI uri = new URI(url);\n\n        ResponseEntity<String> responseEntity = restTemplate.exchange(uri, HttpMethod.GET, requestEntity, String.class);\n\n        String result = responseEntity.getBody();\n\n        System.out.println(\"Response \" + result);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpEntity",
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.HttpMethod",
+                    "org.springframework.http.ResponseEntity",
+                    "org.springframework.web.client.RestTemplate",
+                    "java.net.URI"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpEntity",
+                    "org.springframework.http.HttpHeaders",
+                    "org.springframework.http.HttpMethod",
+                    "org.springframework.http.ResponseEntity",
+                    "org.springframework.web.client.RestTemplate",
+                    "java.net.URI"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 6,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.6431118845939636,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "HttpStatus": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"HttpStatus\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpStatus\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nWithout the specific task that needs to be accomplished, it is difficult to provide an exact answer. However, I will try to create a simple example of how to use the \"HttpStatus\" API from \"spring-web-6.0.3\" project.\n\nHere is a simple class to illustrate this:\n\n```java\nimport org.springframework.http.HttpStatus;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(HttpStatus.NOT_FOUND.toString()); \n        System.out.println(HttpStatus.NOT_FOUND.value()); \n        System.out.println(HttpStatus.OK.ordinal()); \n    }\n}\n```\n\nPlease replace the `HttpStatus.NOT_FOUND` and `HttpStatus.OK` with the specifics required by your task.\n\nThe above code outputs:\n\n- \"NOT_FOUND\"\n- 404\n- 200 (The `.ordinal()` of HttpStatus.OK is 200 because it's the third value in the enumeration.)\n\nRemember that each project setup is unique and there may be additional import statements or additional setup required. Be sure to add `@SpringBootApplication` above the Main class and use the Spring Application context to get instances of required classes.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpStatus;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(HttpStatus.NOT_FOUND.toString()); \n        System.out.println(HttpStatus.NOT_FOUND.value()); \n        System.out.println(HttpStatus.OK.ordinal()); \n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpStatus"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.springframework.http.HttpStatus"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4792448878288269,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpStatus\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe specific API you're referring to doesn't appear to be available in Java, and the Spring Web project isn't usually used for its status codes either. However, if you just need the HttpStatus codes like OK, BAD_REQUEST, and UNAUTHORIZED, here's how you'd do it using those constants:\n\n```java\nimport org.springframework.http.HttpStatus;\n\npublic class Main {\n    public static void main(String[] args) {\n        HttpStatus code = HttpStatus.OK;\n        System.out.println(code); // prints \"200 OK\"\n\n        code = HttpStatus.BAD_REQUEST;\n        System.out.println(code); // prints \"400 BAD_REQUEST\"\n\n        code = HttpStatus.UNAUTHORIZED;\n        System.out.println(code); // prints \"401 UNAUTHORIZED\"\n    }\n}\n```\n\nJust keep in mind that this is a different set of codes. If you need to use other APIs, their respective dependencies must be added to your pom.xml and imported accordingly.\n\nHere is an example for a REST API built using Spring:\n\n```java\nimport org.springframework.http.HttpStatus;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RequestMethod;\nimport org.springframework.web.bind.annotation.RestController;\n\n@RestController\npublic class MyController {\n\n    @RequestMapping(method = RequestMethod.GET, value = \"/test\")\n    public String test() {\n        return \"Success\";\n    }\n}\n```\n\nThis will return a \"200 OK\" status for a GET request to \"/test\". The status will also be used for error handling, such as if the client sends a request with an invalid HTTP method:\n\n```java\n@ExceptionHandler(HttpRequestMethodNotSupportedException.class)\npublic ResponseEntity<String> handleMethodNotAllowed(HttpRequestMethodNotSupportedException e) {\n    return new ResponseEntity<String>(\"Method Not Allowed\", HttpStatus.METHOD_NOT_ALLOWED);\n}\n```\nThis will return a \"405 METHOD_NOT_ALLOWED\" for any method other than \"GET\" on \"/test\".",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpStatus;\n\npublic class Main {\n    public static void main(String[] args) {\n        HttpStatus code = HttpStatus.OK;\n        System.out.println(code); // prints \"200 OK\"\n\n        code = HttpStatus.BAD_REQUEST;\n        System.out.println(code); // prints \"400 BAD_REQUEST\"\n\n        code = HttpStatus.UNAUTHORIZED;\n        System.out.println(code); // prints \"401 UNAUTHORIZED\"\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpStatus"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.springframework.http.HttpStatus"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.6762253642082214,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpStatus\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a complete, correct and compilable Java code using the \"HttpStatus\" API from the \"spring-web-6.0.3\" project:\n\n```java\nimport org.springframework.http.HttpStatus;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(HttpStatus.OK);\n    }\n}\n```\nThis code firstly imports the \"HttpStatus\" API from the \"spring-web-6.0.3\" project, then it creates a class named Main where the `main` method resides. The `main` method then outputs the `OK` status of the Http request to the console using `System.out.println`.\n\nPlease, note that this code only works within the Spring framework. If you intend to use other APIs, please remember to import the necessary classes and check that you have all the correct dependencies. The example given does not require additional dependencies.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpStatus;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(HttpStatus.OK);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpStatus"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.springframework.http.HttpStatus"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.40612104535102844,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpStatus\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a complete, correct and compilable Java code that uses the HttpStatus and ResponseEntity from the spring-web-6.0.3 project. Note that I'm using the latest versions of Spring Web (6.0.3) and Java (11) so the code might not exactly match the given project's (6.0.3) version.\n\nPOM.XML:\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project xmlns=\"http://maven.apache.4.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\n    <modelVersion>4.0.0</modelVersion>\n    <groupId>org.example</groupId>\n    <artifactId>test</artifactId>\n    <version>1.0-SNAPSHOT</version>\n    <dependencies>\n        <dependency>\n            <groupId>org.springframework</groupId>\n            <artifactId>spring-web</artifactId>\n            <version>6.0.3</version>\n        </dependency>\n    </dependencies>\n</project>\n```\n\nMain.java:\n```java\nimport org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Use the HttpStatus API\n        HttpStatus httpStatus = HttpStatus.OK;\n\n        // Use the ResponseEntity API\n        ResponseEntity<String> responseEntity = new ResponseEntity<>(\"Response body\", httpStatus);\n\n        System.out.println(\"Status code: \" + responseEntity.getStatusCode());\n        System.out.println(\"Body: \" + responseEntity.getBody());\n    }\n}\n```\nNote: Replace `\"Response body\"` with your actual response body.",
+                "extracted_java_code_from_prediction": "import org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\n\npublic class Main {\n    public static void main(String[] args) {\n        // Use the HttpStatus API\n        HttpStatus httpStatus = HttpStatus.OK;\n\n        // Use the ResponseEntity API\n        ResponseEntity<String> responseEntity = new ResponseEntity<>(\"Response body\", httpStatus);\n\n        System.out.println(\"Status code: \" + responseEntity.getStatusCode());\n        System.out.println(\"Body: \" + responseEntity.getBody());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.http.HttpStatus",
+                    "org.springframework.http.ResponseEntity"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.http.HttpStatus",
+                    "org.springframework.http.ResponseEntity"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.687764585018158,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"HttpStatus\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nBelow is a Java code snippet that you can use.\n\nNote: Spring Boot is used for setting the status code in the Http response. You need to add the following dependencies to use Spring Boot along with Spring Web:\n\n```xml\n<dependency>\n    <groupId>org.springframework.boot</groupId>\n    <artifactId>spring-boot-starter-web</artifactId>\n    <version>3.0.0</version>\n</dependency>\n```\nPlease ensure that you use the correct version of Spring Boot as per your project's requirement.\n\n```java\nimport org.springframework.web.server.ResponseStatusException;\nimport org.springframework.http.HttpStatus;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        try {\n            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, \"Bad Request\");\n        } catch (ResponseStatusException e) {\n            System.out.println(e.getMessage());\n            System.out.println(e.getStatus());\n        }\n    }\n}\n```\nIn the above code, we are throwing a `ResponseStatusException` with a `HttpStatus.BAD_REQUEST` status. If that exception is caught, the message and the status code of the exception are printed out. The same would be the output for this case.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.server.ResponseStatusException;\nimport org.springframework.http.HttpStatus;\n\npublic class Main {\n\n    public static void main(String[] args) {\n\n        try {\n            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, \"Bad Request\");\n        } catch (ResponseStatusException e) {\n            System.out.println(e.getMessage());\n            System.out.println(e.getStatus());\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.server.ResponseStatusException",
+                    "org.springframework.http.HttpStatus"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.server.ResponseStatusException"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.springframework.http.HttpStatus"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.515343427658081,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpStatus/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpStatus/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpStatus/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpStatus/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,33] cannot find symbol\n  symbol:   method getStatus()\n  location: variable e of type org.springframework.web.server.ResponseStatusException\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.677 s\n[INFO] Finished at: 2024-04-17T00:15:51-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpStatus/sample_5/Wrapper/src/main/java/org/example/Main.java:[15,33] cannot find symbol\n[ERROR]   symbol:   method getStatus()\n[ERROR]   location: variable e of type org.springframework.web.server.ResponseStatusException\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/Projects/spring-web-6.0.3/HttpStatus/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 15,
+                                "column": 33,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "UriComponentsBuilder": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"UriComponentsBuilder\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"UriComponentsBuilder\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nUnfortunately, the given problem description seems to conflict with the current Spring framework's current version (6.0.3). In the given version, the UriComponentsBuilder does not exist or is misspelled. I cannot create a code that uses an API that does not exist. \n\nHowever, you can create a simple program using URI instead of using the UriComponentsBuilder. Here's a sample program:\n\n```java\nimport java.net.URI;\nimport java.net.URISyntaxException;\n\npublic class Main {\n    public static void main(String[] args) throws URISyntaxException {\n        URI uri = new URI(\"https://example.com/path?query=string&another=param\");\n        \n        System.out.println(uri.toURL().toExternalForm());\n    }\n}\n```\n\nIn this program, we are creating a URI object, which constructs a URI reference using the generic syntax parser. This URI is then converted into URL using the toURL() method and then converted into a string using toExternalForm() method.",
+                "extracted_java_code_from_prediction": "import java.net.URI;\nimport java.net.URISyntaxException;\n\npublic class Main {\n    public static void main(String[] args) throws URISyntaxException {\n        URI uri = new URI(\"https://example.com/path?query=string&another=param\");\n        \n        System.out.println(uri.toURL().toExternalForm());\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.net.URI",
+                    "java.net.URISyntaxException"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "java.net.URI",
+                    "java.net.URISyntaxException"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 2,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.4226769506931305,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"UriComponentsBuilder\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nGiven that you need to use the `UriComponentsBuilder` class from \"spring-web-6.0.3\", and you did mention other necessary APIs such as `Date`, `TimeZone`, `SimpleDateFormat`, `Calendar`, `TimeZone`, etc., I assume that you have no need for any new dependencies as the dependencies mentioned in your question already exist, including \"spring-web-6.0.3\".\n\nHowever, if you still want to use these other APIs along with `UriComponentsBuilder` without any issues, you need to include the import statements for these APIs. Here is a complete, correct, and compilable Java code that uses `UriComponentsBuilder` API from \"spring-web-6.0.3\" project and other necessary APIs:\n\n```java\nimport java.text.SimpleDateFormat;\nimport java.util.Calendar;\nimport java.util.Date;\nimport java.util.TimeZone;\n\nimport org.springframework.web.util.UriComponentsBuilder;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String baseUrl = \"http://example.com\";\n\n        // Use UriComponentsBuilder to build a URI\n        String builtUri = UriComponentsBuilder.fromUriString(baseUrl)\n                .queryParam(\"name\", \"John\")\n                .queryParam(\"age\", 30)\n                .build()\n                .toUriString();\n\n        System.out.println(\"Built URI: \" + builtUri);\n\n        // Use Date, SimpleDateFormat, Calendar, and TimeZone API for other functionality\n        Date date = new Date();\n        SimpleDateFormat sdf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\n        Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone(\"America/New_York\"));\n\n        System.out.println(\"Date in New York: \" + sdf.format(calendar.getTime()));\n    }\n\n}\n```\n\nIn this code, you are building a URI using the `UriComponentsBuilder` from \"spring-web-6.0.3\" with some parameters, and also using other APIs such as `Date`, `SimpleDateFormat`, `Calendar`, and `TimeZone` to demonstrate that the dependencies are correct and that the APIs were imported correctly.\n\nIf you still have difficulties, please provide more details about the exact functionality you'd like to achieve, as the provided code doesn't cover that functionality.\n\nPlease note that you need to have a correct maven setup and make sure to package the project correctly as the project must be compilable from the main method. If you have any issues with the setup, it is recommended to provide more specific requirements for the task, and try to troubleshoot the setup using those details.",
+                "extracted_java_code_from_prediction": "import java.text.SimpleDateFormat;\nimport java.util.Calendar;\nimport java.util.Date;\nimport java.util.TimeZone;\n\nimport org.springframework.web.util.UriComponentsBuilder;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        String baseUrl = \"http://example.com\";\n\n        // Use UriComponentsBuilder to build a URI\n        String builtUri = UriComponentsBuilder.fromUriString(baseUrl)\n                .queryParam(\"name\", \"John\")\n                .queryParam(\"age\", 30)\n                .build()\n                .toUriString();\n\n        System.out.println(\"Built URI: \" + builtUri);\n\n        // Use Date, SimpleDateFormat, Calendar, and TimeZone API for other functionality\n        Date date = new Date();\n        SimpleDateFormat sdf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\n        Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone(\"America/New_York\"));\n\n        System.out.println(\"Date in New York: \" + sdf.format(calendar.getTime()));\n    }\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.text.SimpleDateFormat",
+                    "java.util.Calendar",
+                    "java.util.Date",
+                    "java.util.TimeZone",
+                    "org.springframework.web.util.UriComponentsBuilder"
+                ],
+                "correct_FQN_predictions": [
+                    "java.text.SimpleDateFormat",
+                    "java.util.Calendar",
+                    "java.util.Date",
+                    "java.util.TimeZone",
+                    "org.springframework.web.util.UriComponentsBuilder"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 5,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.8,
+                "model_confidence": 0.6366610527038574,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"UriComponentsBuilder\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nThe exact problem described is quite vague and requires the context to be clear. However, I'll use an example where we want to build a URI using the `UriComponentsBuilder` from the `spring-web` project. Here's a simple example:\n\nHere's how to do it:\n\nStep 1: Include the required imports.\n```java\nimport org.springframework.web.util.UriComponentsBuilder;\n```\nStep 2: Now create the main method which is located in a class named `Main`.\n```java\npublic class Main {\n    public static void main(String[] args) {\n        String uri = UriComponentsBuilder\n                     .newInstance()\n                     .scheme(\"http\")\n                     .host(\"www.example.com\")\n                     .path(\"test\")\n                     .queryParam(\"name\", \"Baeldung\")\n                     .build()\n                     .toUriString();\n\n        System.out.println(uri);\n    }\n}\n```\n\nThis code snippet creates a URI string with `scheme` set as \"http\", `host` as \"www.example.com\", and `path` as \"/test\". It then adds a query parameter named \"name\" with a value of \"Baeldung\". The `toUriString()` method is called to convert the `UriComponentsBuilder` object to a URI string. The final URI would be \"http://www.example.com/test?name=Baeldung\".\n\nPlease provide more details/context to the question for a more precise solution.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.util.UriComponentsBuilder;",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.util.UriComponentsBuilder"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.util.UriComponentsBuilder"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.5257399082183838,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "No valid Java code found from the model's output.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"UriComponentsBuilder\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is an example of a Java code using the \"UriComponentsBuilder\" from the spring-web-6.0.3 project. This example doesn't use any APIs requiring additional dependencies, but they exist in the spring-web-6.0.3 project:\n\n```java\nimport org.springframework.web.util.UriComponentsBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        String uri = UriComponentsBuilder\n            .fromPath(\"/example\")\n            .queryParam(\"param1\", \"value1\")\n            .queryParam(\"param2\", \"value2\")\n            .build()\n            .toString();\n\n        System.out.println(\"Built URI: \" + uri);\n    }\n}\n```\n\nThe code generates a URI using UriComponentsBuilder, it starts by calling the static fromPath method to create a builder from the specified path. It then adds two query parameters to the URI with the queryParam method. Finally, it uses the build method to construct the URI, and the toString method to print the built URI.\n\nPlease note that it is a very basic example and does not necessarily represent a real-world application. It's also important to know that this code depends on the spring-web-6.0.3 package that is required to compile and run. Also, to run the compiled java code you need to have a compatible Java runtime environment installed on your machine.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.util.UriComponentsBuilder;\n\npublic class Main {\n    public static void main(String[] args) {\n        String uri = UriComponentsBuilder\n            .fromPath(\"/example\")\n            .queryParam(\"param1\", \"value1\")\n            .queryParam(\"param2\", \"value2\")\n            .build()\n            .toString();\n\n        System.out.println(\"Built URI: \" + uri);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.util.UriComponentsBuilder"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.util.UriComponentsBuilder"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4739140272140503,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"UriComponentsBuilder\" API from \"spring-web-6.0.3\" project along with other necessary APIs. The dependency is already added for \"spring-web-6.0.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSince your main intention is to create an UriComponentsBuilder with \"http\" and \"https\" protocols, I will only show you how to do that without using other APIs:\n\n```java\nimport org.springframework.web.util.UriComponentsBuilder;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.fromHttpUrl(\"http://localhost\")\n                .scheme(\"https\").port(443).path(\"/test\");\n        \n        System.out.println(uriComponentsBuilder.toUriString());\n    }\n\n}\n```\n\nIn the above Java code,\n- `UriComponentsBuilder.fromHttpUrl(\"http://localhost\")` creates a builder instance with the base URI set to `http://localhost`.\n- `.scheme(\"https\")` sets the scheme to `https`.\n- `.port(443)` sets the port to `443`.\n- `.path(\"/test\")` adds the path segment `/test`.\n- `.toUriString()` converts the builder's state to a URI string.",
+                "extracted_java_code_from_prediction": "import org.springframework.web.util.UriComponentsBuilder;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.fromHttpUrl(\"http://localhost\")\n                .scheme(\"https\").port(443).path(\"/test\");\n        \n        System.out.println(uriComponentsBuilder.toUriString());\n    }\n\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.springframework.web.util.UriComponentsBuilder"
+                ],
+                "correct_FQN_predictions": [
+                    "org.springframework.web.util.UriComponentsBuilder"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.0,
+                "model_confidence": 0.4540213942527771,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        }
+    }
+}

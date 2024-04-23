@@ -1,0 +1,24 @@
+{
+    "jar_name": "slf4j-reload4j-1.7.36.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from maven-plugin-api-3.9.6 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. MojoNotFoundException\n2. PluginDescriptorBuilder\n3. MojoExecutionException\n4. InvalidPluginDescriptorException\n5. MojoFailureException\n6. PluginDescriptor\n7. LifecycleConfiguration\n8. MojoDescriptor\n9. LifecycleMappingsXpp3Reader\n10. LifecycleMappingsXpp3Writer\n11. Lifecycle\n12. InvalidParameterException\n13. DuplicateMojoDescriptorException\n14. DuplicateParameterException\n15. Parameter\n16. DefaultLog\n17. Requirement\n18. Phase\n19. SystemStreamLog\n20. Execution\n\nList correct API's class names from tools.nrepl-0.2.13 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. StdOutBuffer\n2. main\n3. Connection\n\nList correct API's class names from slf4j-reload4j-1.7.36 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from maven-plugin-api-3.9.6 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. MojoNotFoundException\n2. PluginDescriptorBuilder\n3. MojoExecutionException\n4. InvalidPluginDescriptorException\n5. MojoFailureException\n6. PluginDescriptor\n7. LifecycleConfiguration\n8. MojoDescriptor\n9. LifecycleMappingsXpp3Reader\n10. LifecycleMappingsXpp3Writer\n11. Lifecycle\n12. InvalidParameterException\n13. DuplicateMojoDescriptorException\n14. DuplicateParameterException\n15. Parameter\n16. DefaultLog\n17. Requirement\n18. Phase\n19. SystemStreamLog\n20. Execution\n\nList correct API's class names from tools.nrepl-0.2.13 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. StdOutBuffer\n2. main\n3. Connection\n\nList correct API's class names from slf4j-reload4j-1.7.36 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. StdOutBuffer\n2. main\n3. Connection\n\nList correct API's class names from slf4j-reload4j-1.7.36 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\nNo. The project slf4j-reload4j-1.7.36 does not contain any non-abstract classes.",
+        "extracted_APIs_from_prediction": [
+            "StdOutBuffer",
+            "main",
+            "Connection"
+        ],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [
+            "StdOutBuffer",
+            "main",
+            "Connection"
+        ],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 3,
+        "model_confidence": 0.6956505179405212,
+        "failure_rate_for_APIs": 1.0,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

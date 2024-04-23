@@ -1,0 +1,16 @@
+{
+    "jar_name": "junit-jupiter-api-5.10.2.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from junit-jupiter-api-5.10.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from junit-jupiter-api-5.10.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the JUnit Jupiter API project to extract the class names. However, I can provide you with a general idea of how you might approach this task.\n\nHere are some general steps you might take:\n\n1. Download the JUnit Jupiter API project.\n2. Unzip the project and navigate to the root directory.\n3. Use a tool like IntelliJ IDEA or Eclipse to open the project.\n4. Use a tool like Maven or Gradle to build the project.\n5. Once the project is built, you can use a tool like Javap or javap.exe in the command line to inspect the bytecode of the classes.\n6. Look for classes that are not abstract.\n\nHere's a simple example of how you might use javap to inspect a class:\n\n```\njavap -public MyClass\n```\n\nThis will display the public methods and fields of the class MyClass.\n\nRemember, this is a general approach and the specific steps may vary depending on the programming language and build tool used in the project. Also, the actual class names may vary based on the project structure and dependencies.\n\nIf you have the source code available, you can use a tool like grep or a text editor to search for non-abstract classes.\n\nIf you don't have the source code or the project is too large to inspect manually, you might need to use a more advanced tool like a static analysis tool or a dynamic analysis tool to inspect the bytecode or the running application.\n\nPlease note that this is a complex task and may require a good understanding of Java and the JUnit Jupiter API.",
+        "extracted_APIs_from_prediction": [],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 0,
+        "model_confidence": 0.5935969352722168,
+        "failure_rate_for_APIs": 1,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

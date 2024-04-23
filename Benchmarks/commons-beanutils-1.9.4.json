@@ -1,0 +1,20 @@
+{
+    "jar_name": "commons-beanutils-1.9.4.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from commons-beanutils-1.9.4 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from commons-beanutils-1.9.4 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n@@ Response\nAs an AI model, I don't have direct access to the commons-beanutils-1.9.4 project or its source code. However, I can provide you with a general approach to solve this problem.\n\nTo list correct API's class names from a project, you would typically need to:\n\n1. Access the project's source code.\n2. Analyze the source code to identify classes that are not abstract.\n3. Filter out any abstract classes.\n4. List the names of the remaining classes.\n\nHowever, since you mentioned that you don't know the answer, I'll provide a general approach to solve this problem.\n\nHere's a Python code snippet that uses the `javap` command to list non-abstract classes in a jar file:\n\n```python\nimport os\nimport subprocess\n\ndef list_non_abstract_classes(jar_file):\n    # Unzip the jar file\n    subprocess.run([\"jar\", \"xvf\", jar_file])\n\n    # List all class files\n    class_files = [f for f in os.listdir('.') if f.endswith('.class')]\n\n    # Use javap to get the class information\n    for class_file in class_files:\n        output = subprocess.check_output([\"javap\", \"-public\", class_file]).decode('utf-8')\n        if \"abstract\" not in output:\n            print(class_file.replace('.class', ''))\n\n    # Clean up the unzipped files\n    subprocess.run([\"rm\", \"-rf\", \"*\"])\n\n# Usage\nlist_non_abstract_classes(\"commons-beanutils-1.9.4.jar\")\n```\n\nThis script will list non-abstract classes in the jar file \"commons-beanutils-1.9.4.jar\". Note that this script assumes that you have the `javap` command available in your system.\n\nPlease replace \"commons-beanutils-1.9.4.jar\" with the actual jar file you want to analyze. Also, this script will only work if the jar file is not encrypted or password protected.\n\nRemember to handle exceptions and errors properly in a production environment.",
+        "extracted_APIs_from_prediction": [
+            "9.4.jar\")"
+        ],
+        "correct_API_predictions": [],
+        "wrong_API_predictions": [
+            "9.4.jar\")"
+        ],
+        "number_of_correct_APIs": 0,
+        "number_of_wrong_APIs": 1,
+        "model_confidence": 0.7066730856895447,
+        "failure_rate_for_APIs": 1.0,
+        "hallucinations_for_APIs": true
+    },
+    "Code_and_FQN_predictions": "The model could not give any valid API."
+}

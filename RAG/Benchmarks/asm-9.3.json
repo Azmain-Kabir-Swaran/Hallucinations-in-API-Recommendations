@@ -1,0 +1,439 @@
+{
+    "jar_name": "asm-9.3.jar",
+    "API_prediction": {
+        "prompt": "List correct API's class names from jakarta.mail-api-2.1.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. RecipientStringTerm\n2. MailDateFormat\n3. RecipientTerm\n4. MessagingException\n5. NewsAddress\n6. MimePartDataSource\n7. InternetAddress\n8. AddressException\n9. MessageIDTerm\n10. MethodNotSupportedException\n11. FlagTerm\n12. HeaderTokenizer\n13. Flags\n14. MessageNumberTerm\n15. FolderNotFoundException\n16. MimeMultipart\n17. SendFailedException\n18. MimeBodyPart\n19. ReceivedDateTerm\n20. MessageContext\n21. SentDateTerm\n22. MimeUtility\n23. ContentType\n24. ParameterList\n25. HeaderTerm\n26. MimeMessage\n27. SearchException\n28. ParseException\n29. ByteArrayDataSource\n30. FolderClosedException\n31. AuthenticationFailedException\n32. Header\n33. BodyTerm\n34. SubjectTerm\n35. MessageRemovedException\n36. IllegalWriteException\n37. InternetHeaders\n38. StoreClosedException\n39. Provider\n40. MessageCountEvent\n41. ReadOnlyFolderException\n42. TransportEvent\n43. AndTerm\n44. URLName\n45. NotTerm\n46. PreencodedMimeBodyPart\n47. SharedByteArrayInputStream\n48. MessageChangedEvent\n49. OrTerm\n50. FetchProfile\n\nList correct API's class names from commons-logging-1.3.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. LogFactoryImpl\n2. Log4JLogger\n3. LogSource\n4. Jdk14Logger\n5. Slf4jLogFactory\n6. Log4jApiLogFactory\n7. LogKitLogger\n8. SimpleLog\n9. LogConfigurationException\n10. Jdk13LumberjackLogger\n11. NoOpLog\n12. AvalonLogger\n13. ServletContextCleaner\n14. WeakHashtable\n\nList correct API's class names from asm-9.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.",
+        "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nList correct API's class names from jakarta.mail-api-2.1.2 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. RecipientStringTerm\n2. MailDateFormat\n3. RecipientTerm\n4. MessagingException\n5. NewsAddress\n6. MimePartDataSource\n7. InternetAddress\n8. AddressException\n9. MessageIDTerm\n10. MethodNotSupportedException\n11. FlagTerm\n12. HeaderTokenizer\n13. Flags\n14. MessageNumberTerm\n15. FolderNotFoundException\n16. MimeMultipart\n17. SendFailedException\n18. MimeBodyPart\n19. ReceivedDateTerm\n20. MessageContext\n21. SentDateTerm\n22. MimeUtility\n23. ContentType\n24. ParameterList\n25. HeaderTerm\n26. MimeMessage\n27. SearchException\n28. ParseException\n29. ByteArrayDataSource\n30. FolderClosedException\n31. AuthenticationFailedException\n32. Header\n33. BodyTerm\n34. SubjectTerm\n35. MessageRemovedException\n36. IllegalWriteException\n37. InternetHeaders\n38. StoreClosedException\n39. Provider\n40. MessageCountEvent\n41. ReadOnlyFolderException\n42. TransportEvent\n43. AndTerm\n44. URLName\n45. NotTerm\n46. PreencodedMimeBodyPart\n47. SharedByteArrayInputStream\n48. MessageChangedEvent\n49. OrTerm\n50. FetchProfile\n\nList correct API's class names from commons-logging-1.3.0 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No.\n\n1. LogFactoryImpl\n2. Log4JLogger\n3. LogSource\n4. Jdk14Logger\n5. Slf4jLogFactory\n6. Log4jApiLogFactory\n7. LogKitLogger\n8. SimpleLog\n9. LogConfigurationException\n10. Jdk13LumberjackLogger\n11. NoOpLog\n12. AvalonLogger\n13. ServletContextCleaner\n14. WeakHashtable\n\nList correct API's class names from asm-9.3 project. Not more than 50 and classes are must be non-abstract. If you do not know the answer then reply with a No..\n\n@@ Response\n1. ClassWriter\n2. ClassVisitor\n3. ClassReader\n4. ClassAdapter\n5. MethodAdapter\n6. MethodVisitor\n7. MethodReader\n8. TraceMethodVisitor\n9. ClassRemapper\n10. Remapper\n11. RemapperData\n12. RemapperData$Remap\n13. RemapperData$Remap$Field\n14. RemapperData$Remap$Method\n15. RemapperData$Remap$Class\n16. RemapperData$Remap$InnerClass\n17. RemapperData$Remap$InnerClassAccessor\n18. RemapperData$Remap$InnerClassImpl\n19. RemapperData$Remap$InnerClassFieldAccessor\n20. RemapperData$Remap$InnerClassFieldImpl\n21. RemapperData$Remap$InnerClassMethodAccessor\n22. RemapperData$Remap$InnerClassMethodImpl\n23. RemapperData$Remap$MethodParameter\n24. RemapperData$Remap$MethodParameters\n25. RemapperData$Remap$FieldSignature\n26. RemapperData$Remap$MethodSignature\n27. RemapperData$Remap$ClassSignature\n28. RemapperData$Remap$InnerClassSignature\n29. RemapperData$Remap$InnerClassAccessorSignature\n30. RemapperData$Remap$InnerClassImplSignature\n31. RemapperData$Remap$InnerClassFieldAccessorSignature\n32. RemapperData$Remap$InnerClassFieldImplSignature\n3",
+        "extracted_APIs_from_prediction": [
+            "ClassWriter",
+            "ClassVisitor",
+            "ClassReader",
+            "ClassAdapter",
+            "MethodAdapter",
+            "MethodVisitor",
+            "MethodReader",
+            "TraceMethodVisitor",
+            "ClassRemapper",
+            "Remapper",
+            "RemapperData",
+            "RemapperData$Remap",
+            "RemapperData$Remap$Field",
+            "RemapperData$Remap$Method",
+            "RemapperData$Remap$Class",
+            "RemapperData$Remap$InnerClass",
+            "RemapperData$Remap$InnerClassAccessor",
+            "RemapperData$Remap$InnerClassImpl",
+            "RemapperData$Remap$InnerClassFieldAccessor",
+            "RemapperData$Remap$InnerClassFieldImpl",
+            "RemapperData$Remap$InnerClassMethodAccessor",
+            "RemapperData$Remap$InnerClassMethodImpl",
+            "RemapperData$Remap$MethodParameter",
+            "RemapperData$Remap$MethodParameters",
+            "RemapperData$Remap$FieldSignature",
+            "RemapperData$Remap$MethodSignature",
+            "RemapperData$Remap$ClassSignature",
+            "RemapperData$Remap$InnerClassSignature",
+            "RemapperData$Remap$InnerClassAccessorSignature",
+            "RemapperData$Remap$InnerClassImplSignature",
+            "RemapperData$Remap$InnerClassFieldAccessorSignature",
+            "RemapperData$Remap$InnerClassFieldImplSignature"
+        ],
+        "correct_API_predictions": [
+            "ClassWriter",
+            "ClassReader"
+        ],
+        "wrong_API_predictions": [
+            "ClassVisitor",
+            "ClassAdapter",
+            "MethodAdapter",
+            "MethodVisitor",
+            "MethodReader",
+            "TraceMethodVisitor",
+            "ClassRemapper",
+            "Remapper",
+            "RemapperData",
+            "RemapperData$Remap",
+            "RemapperData$Remap$Field",
+            "RemapperData$Remap$Method",
+            "RemapperData$Remap$Class",
+            "RemapperData$Remap$InnerClass",
+            "RemapperData$Remap$InnerClassAccessor",
+            "RemapperData$Remap$InnerClassImpl",
+            "RemapperData$Remap$InnerClassFieldAccessor",
+            "RemapperData$Remap$InnerClassFieldImpl",
+            "RemapperData$Remap$InnerClassMethodAccessor",
+            "RemapperData$Remap$InnerClassMethodImpl",
+            "RemapperData$Remap$MethodParameter",
+            "RemapperData$Remap$MethodParameters",
+            "RemapperData$Remap$FieldSignature",
+            "RemapperData$Remap$MethodSignature",
+            "RemapperData$Remap$ClassSignature",
+            "RemapperData$Remap$InnerClassSignature",
+            "RemapperData$Remap$InnerClassAccessorSignature",
+            "RemapperData$Remap$InnerClassImplSignature",
+            "RemapperData$Remap$InnerClassFieldAccessorSignature",
+            "RemapperData$Remap$InnerClassFieldImplSignature"
+        ],
+        "number_of_correct_APIs": 2,
+        "number_of_wrong_APIs": 30,
+        "failure_rate_for_APIs": 0.9375,
+        "model_confidence": 0.7600750923156738,
+        "hallucinations_for_APIs": "Partially Present. Need manual review."
+    },
+    "Code_and_FQN_predictions": {
+        "ClassWriter": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"ClassWriter\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassWriter\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nIt appears you want to write some class bytecode using the ClassWriter API provided by the asm library. This library requires the jar files of the asm libraries.\n\nIf the necessary libraries are in the classpath, we can just write a simple main method to create a class using ClassWriter and return the bytes that define that class.\n\nThe dependencies of the asm library are managed by the Maven build system by default. Therefore, the jar files do not need to be downloaded manually. But if you want to get acquainted with how to do it manually without maven, you can download them from: https://mvnrepository.com/artifact/org.ow2.asm/asm/9.3.\n\nHere is a simple example:\n\n```java\nimport org.objectweb.asm.ClassWriter;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n    public static void main(String[] args) {\n        ClassWriter cw = new ClassWriter(0);\n        cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT + Opcodes.ACC_INTERFACE,\n                \"MyClass\", null, \"java/lang/Object\", null);\n        cw.visitEnd();\n        \n        byte[] classBytes = cw.toByteArray();\n    }\n}\n```\nThis code generates a very simple class that doesn't do anything. The main issue with the ClassWriter is to get a byte array from it containing all the bytecode of the class that can be written in a .class file using the FileOutputStream or similar.\n\nThis example is very basic and can be extended, for example adding methods, fields, implementing interfaces etc. \n\nThe library asm is quite complex and provides functionality to create almost any class with any combination of fields, methods and constructors. This library is extremely powerful and flexible, offering a lot of functionality to create almost any kind of class, given enough time and effort. \n\nNote: It would be important to check how the byte array produced by the ClassWriter can be written to a .class file and understood by a Java Virtual Machine or other compatible runtime environment.",
+                "extracted_java_code_from_prediction": "import org.objectweb.asm.ClassWriter;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n    public static void main(String[] args) {\n        ClassWriter cw = new ClassWriter(0);\n        cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT + Opcodes.ACC_INTERFACE,\n                \"MyClass\", null, \"java/lang/Object\", null);\n        cw.visitEnd();\n        \n        byte[] classBytes = cw.toByteArray();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.objectweb.asm.ClassWriter",
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "correct_FQN_predictions": [
+                    "org.objectweb.asm.ClassWriter",
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.4586096704006195,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassWriter\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nCertainly, below is a simple Java code that uses the \"ClassWriter\" API from the \"asm-9.3\" project for creating a new class. This example creates a \"HelloWorld\" class with a main method. Note that \"ClassWriter\" and other ASM classes require a dependency on \"asm-9.3\". It should be included in the classpath for the code below to compile successfully.\n\nHere is the required code:\n\n```java\nimport org.objectweb.asm.ClassWriter;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n        // create a new ClassWriter\n        ClassWriter cw = new ClassWriter(0);\n\n        // define the class version\n        int VERSION = Opcodes.V1_7;\n\n        // start the class with the required modifiers and version\n        cw.visit(VERSION, Opcodes.ACC_PUBLIC + Opcodes.ACC_SUPER, \"HelloWorld\", null, \"java/lang/Object\", null);\n\n        // visit the constructor method of the class\n        cw.visitMethod(Opcodes.ACC_PUBLIC, \"<init>\", \"()V\", null, null);\n        // generate code for method body\n        cw.visitCode();\n        // generate instructions to execute\n        cw.visitVarInsn(Opcodes.ALOAD, 0);\n        cw.visitMethodInsn(Opcodes.INVOKESPECIAL, \"java/lang/Object\", \"<init>\", \"()V\");\n        cw.visitInsn(Opcodes.RETURN);\n        // end method\n        cw.visitMaxs(1, 1);\n        cw.visitEnd();\n\n        // visit the main method of the class\n        cw.visitMethod(Opcodes.ACC_PUBLIC + Opcodes.ACC_STATIC, \"main\", \"([Ljava/lang/String;)V\", null, null);\n\n        // generate code for method body\n        cw.visitCode();\n        // generate instructions to execute\n        cw.visitFieldInsn(Opcodes.GETSTATIC, \"java/lang/System\", \"out\", \"Ljava/io/PrintStream;\");\n        cw.visitLdcInsn(\"Hello World\");\n        cw.visitMethodInsn(Opcodes.INVOKEVIRTUAL, \"java/io/PrintStream\", \"println\", \"(Ljava/lang/String;)V\");\n        cw.visitInsn(Opcodes.RETURN);\n        // end method\n        cw.visitMaxs(2, 1);\n        cw.visitEnd();\n\n        // end the class\n        cw.visitEnd();\n\n        // generate the byte code and write it to a file named HelloWorld.class\n        byte[] b = cw.toByteArray();\n        java.io.File file = new java.io.File(\"HelloWorld.class\");\n        java.io.FileOutputStream fileOut = new java.io.FileOutputStream(file);\n        fileOut.write(b);\n        fileOut.close();\n    }\n}\n```\nRemember this code will produce an output file \"HelloWorld.class\" in your current working directory. This code defines and writes to a bytecode for a Java class which has a static main method that prints \"Hello World\". Please note, ASM (Java bytecode engineering framework) is meant for creating and manipulating classes and other classes. It has been around since 2002, so it is outdated and not recommended for many modern applications or libraries, and its use in current environments is discouraged.",
+                "extracted_java_code_from_prediction": "import org.objectweb.asm.ClassWriter;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n\n        // create a new ClassWriter\n        ClassWriter cw = new ClassWriter(0);\n\n        // define the class version\n        int VERSION = Opcodes.V1_7;\n\n        // start the class with the required modifiers and version\n        cw.visit(VERSION, Opcodes.ACC_PUBLIC + Opcodes.ACC_SUPER, \"HelloWorld\", null, \"java/lang/Object\", null);\n\n        // visit the constructor method of the class\n        cw.visitMethod(Opcodes.ACC_PUBLIC, \"<init>\", \"()V\", null, null);\n        // generate code for method body\n        cw.visitCode();\n        // generate instructions to execute\n        cw.visitVarInsn(Opcodes.ALOAD, 0);\n        cw.visitMethodInsn(Opcodes.INVOKESPECIAL, \"java/lang/Object\", \"<init>\", \"()V\");\n        cw.visitInsn(Opcodes.RETURN);\n        // end method\n        cw.visitMaxs(1, 1);\n        cw.visitEnd();\n\n        // visit the main method of the class\n        cw.visitMethod(Opcodes.ACC_PUBLIC + Opcodes.ACC_STATIC, \"main\", \"([Ljava/lang/String;)V\", null, null);\n\n        // generate code for method body\n        cw.visitCode();\n        // generate instructions to execute\n        cw.visitFieldInsn(Opcodes.GETSTATIC, \"java/lang/System\", \"out\", \"Ljava/io/PrintStream;\");\n        cw.visitLdcInsn(\"Hello World\");\n        cw.visitMethodInsn(Opcodes.INVOKEVIRTUAL, \"java/io/PrintStream\", \"println\", \"(Ljava/lang/String;)V\");\n        cw.visitInsn(Opcodes.RETURN);\n        // end method\n        cw.visitMaxs(2, 1);\n        cw.visitEnd();\n\n        // end the class\n        cw.visitEnd();\n\n        // generate the byte code and write it to a file named HelloWorld.class\n        byte[] b = cw.toByteArray();\n        java.io.File file = new java.io.File(\"HelloWorld.class\");\n        java.io.FileOutputStream fileOut = new java.io.FileOutputStream(file);\n        fileOut.write(b);\n        fileOut.close();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.objectweb.asm.ClassWriter",
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "correct_FQN_predictions": [
+                    "org.objectweb.asm.ClassWriter"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.7619069218635559,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[23,11] cannot find symbol\n  symbol:   method visitCode()\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[25,11] cannot find symbol\n  symbol:   method visitVarInsn(int,int)\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[26,11] cannot find symbol\n  symbol:   method visitMethodInsn(int,java.lang.String,java.lang.String,java.lang.String)\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[27,11] cannot find symbol\n  symbol:   method visitInsn(int)\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[29,11] cannot find symbol\n  symbol:   method visitMaxs(int,int)\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[36,11] cannot find symbol\n  symbol:   method visitCode()\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[38,11] cannot find symbol\n  symbol:   method visitFieldInsn(int,java.lang.String,java.lang.String,java.lang.String)\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[39,11] cannot find symbol\n  symbol:   method visitLdcInsn(java.lang.String)\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[40,11] cannot find symbol\n  symbol:   method visitMethodInsn(int,java.lang.String,java.lang.String,java.lang.String)\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[41,11] cannot find symbol\n  symbol:   method visitInsn(int)\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[43,11] cannot find symbol\n  symbol:   method visitMaxs(int,int)\n  location: variable cw of type org.objectweb.asm.ClassWriter\n[INFO] 11 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.662 s\n[INFO] Finished at: 2024-04-16T20:43:45-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[23,11] cannot find symbol\n[ERROR]   symbol:   method visitCode()\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[25,11] cannot find symbol\n[ERROR]   symbol:   method visitVarInsn(int,int)\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[26,11] cannot find symbol\n[ERROR]   symbol:   method visitMethodInsn(int,java.lang.String,java.lang.String,java.lang.String)\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[27,11] cannot find symbol\n[ERROR]   symbol:   method visitInsn(int)\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[29,11] cannot find symbol\n[ERROR]   symbol:   method visitMaxs(int,int)\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[36,11] cannot find symbol\n[ERROR]   symbol:   method visitCode()\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[38,11] cannot find symbol\n[ERROR]   symbol:   method visitFieldInsn(int,java.lang.String,java.lang.String,java.lang.String)\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[39,11] cannot find symbol\n[ERROR]   symbol:   method visitLdcInsn(java.lang.String)\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[40,11] cannot find symbol\n[ERROR]   symbol:   method visitMethodInsn(int,java.lang.String,java.lang.String,java.lang.String)\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[41,11] cannot find symbol\n[ERROR]   symbol:   method visitInsn(int)\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java:[43,11] cannot find symbol\n[ERROR]   symbol:   method visitMaxs(int,int)\n[ERROR]   location: variable cw of type org.objectweb.asm.ClassWriter\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 39,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 38,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 26,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 36,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 43,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 29,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 25,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 27,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 40,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 41,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassWriter/sample_2/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 23,
+                                "column": 11,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassWriter\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, Here is a simple example of how you can use the ClassWriter API from the \"asm-9.3\" project to generate a class that prints the string \"Hello World!\":\n\nNote: The ASM library may not come with a preconfigured environment, so you need to add it manually. If ASM is not correctly configured, this code may throw an exception.\n\n1. Add ASM dependencies to your project.\nFor maven, you can add the following dependencies to your pom.xml file:\n```xml\n<dependencies>\n    <dependency>\n        <groupId>org.ow2.asm</groupId>\n        <artifactId>asm</artifactId>\n        <version>9.3</version>\n    </dependency>\n    <dependency>\n        <groupId>org.ow2.asm</groupId>\n        <artifactId>asm-util</artifactId>\n        <version>9.3</version>\n    </dependency>\n    <dependency>\n        <groupId>org.ow2.asm</groupId>\n        <artifactId>asm-tree</artifactId>\n        <version>9.3</version>\n    </dependency>\n</dependencies>\n```\n\n2. Generating a new class:\n```java\nimport org.objectweb.asm.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        ClassWriter cw = new ClassWriter(0);\n        cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT + Opcodes.ACC_INTERFACE, \"GeneratedClass\", null, \"java/lang/Runnable\", null);\n        cw.visitEnd();\n\n        //Generate the method\n        MethodVisitor mv = cw.visitMethod(Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT, \"run\", \"()V\", null, null);\n        mv.visitEnd();\n\n        byte[] bytes = cw.toByteArray();\n        Files.write(Paths.get(\"GeneratedClass.class\"), bytes);\n    }\n}\n```\n\nThe code writes a class named \"GeneratedClass\" into the bytecode of your program. If you want to save the class file as a .class file on your local disk, you can use the Files.write function from Java NIO.\n\nThis simple example can be extended to generate full functional classes with specific methods, constructor and so on depending on the requirements.",
+                "extracted_java_code_from_prediction": "import org.objectweb.asm.*;\n\npublic class Main {\n\n    public static void main(String[] args) throws Exception {\n        ClassWriter cw = new ClassWriter(0);\n        cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT + Opcodes.ACC_INTERFACE, \"GeneratedClass\", null, \"java/lang/Runnable\", null);\n        cw.visitEnd();\n\n        //Generate the method\n        MethodVisitor mv = cw.visitMethod(Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT, \"run\", \"()V\", null, null);\n        mv.visitEnd();\n\n        byte[] bytes = cw.toByteArray();\n        Files.write(Paths.get(\"GeneratedClass.class\"), bytes);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.objectweb.asm.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.objectweb.asm.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.598525881767273,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassWriter\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's the complete code:\n\nNote: This code generates an empty class named \"Main\".\n\n```java\nimport org.objectweb.asm.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        ClassWriter cw = new ClassWriter(0);\n        cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT + Opcodes.ACC_INTERFACE, \"Main\", null, \"java/lang/Runnable\", null);\n        cw.visitEnd();\n        \n        byte[] byteCode = cw.toByteArray();\n    }\n}\n```\nIn this code, the \"org.objectweb.asm\" package is used which provides the \"ClassWriter\" class we are using to generate our Java class bytecode. We specify the bytecode version as V1_8, set the class' accessibility to be public and also implement the \"Runnable\" interface from Java's standard library. The generated class has nothing else in it since this is the basic minimum bytecode needed to declare a new class in java and also includes the necessary class dependencies to run a java application.",
+                "extracted_java_code_from_prediction": "import org.objectweb.asm.*;\n\npublic class Main {\n    public static void main(String[] args) {\n        ClassWriter cw = new ClassWriter(0);\n        cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT + Opcodes.ACC_INTERFACE, \"Main\", null, \"java/lang/Runnable\", null);\n        cw.visitEnd();\n        \n        byte[] byteCode = cw.toByteArray();\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.objectweb.asm.*"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.objectweb.asm.*"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.37869468331336975,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassWriter\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nTo write this, you need to:\n\n- Import required libraries\n- Define a class with main method\n- Create a ClassWriter instance\n- Write the bytecode of a class\n- Return bytecode as byte array.\n\nHere is a complete and compilable Java code snippet using \"ClassWriter\" from the asm project:\n\n```java\nimport org.objectweb.asm.ClassWriter;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n    public static void main(String[] args) {\n        ClassWriter cw = new ClassWriter(0);\n        cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT + Opcodes.ACC_INTERFACE,\n                \"test/Class1\", null, \"java/lang/Object\", null);\n        cw.visitEnd();\n        byte[] classBytes = cw.toByteArray();\n        // Now, you can save the classBytes to file.\n    }\n}\n```\n\nThis creates a bytecode for a simple interface called \"Class1\" which is a subtype of \"java/lang/Object\". Note that it is Abstract and Public. \n\nClassWriter's method toByteArray() provides the compiled class in bytecode format which could be saved to a file or loaded into a ClassLoader.\n\nThis sample class just demonstrates basic usage of the asm library for creating bytecode, it's not a complete example of a real use case, and it assumes the reader has at least a brief knowledge of Java bytecode manipulation using ASM library. \n\nPlease refer to the ASM library javadocs for more information on how to use ClassWriter, MethodVisitor and FieldVisitor.",
+                "extracted_java_code_from_prediction": "import org.objectweb.asm.ClassWriter;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n    public static void main(String[] args) {\n        ClassWriter cw = new ClassWriter(0);\n        cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC + Opcodes.ACC_ABSTRACT + Opcodes.ACC_INTERFACE,\n                \"test/Class1\", null, \"java/lang/Object\", null);\n        cw.visitEnd();\n        byte[] classBytes = cw.toByteArray();\n        // Now, you can save the classBytes to file.\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.objectweb.asm.ClassWriter",
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "correct_FQN_predictions": [
+                    "org.objectweb.asm.ClassWriter",
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 2,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.45150065422058105,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            }
+        },
+        "ClassReader": {
+            "prompt": "Give me a complete, correct and compilable Java code. This code must use \"ClassReader\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.",
+            "sample_1": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassReader\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere's a simple program that reads Java bytecode for a class with the main method named `Main` using the `ClassReader` API from the `asm-9.3` project:\n\n```java\nimport org.objectweb.asm.ClassReader;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        ClassReader cr = new ClassReader(\"Main\");\n        cr.accept(new ClassReader(Opcodes.ASM9), 0);\n    }\n}\n```\n\nThis program will not do much - it just tries to load the bytecode for the `Main` class and does not actually do anything with it. The `ClassReader` constructor which accepts a string argument loads the bytecodes for the class with that name. The `accept` method on the reader object prints out the details of the class - this will not actually do anything on its own.\n\nTo compile the code you need to add the ASM library jar to your classpath, you can do this with:\n\n```bash\njavac -cp \"lib/asm-9.3.jar:.\" Main.java\n```\n\nRemember to replace \"lib/asm-9.3.jar\" with the path to the ASM jar file on your machine.\n\nAlso remember that the `ClassReader` is a utility class, you may want to use it in conjunction with `ClassVisitor` or `MethodVisitor` for more detailed analysis of the Java bytecode. \n\nFor example:\n\n```java\nimport org.objectweb.asm.*;\nimport org.objectweb.asm.ClassReader;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        ClassReader cr = new ClassReader(\"Main\");\n        cr.accept(new ClassPrinter(new PrintWriter(System.out)), 0);\n    }\n}\n\nclass ClassPrinter extends ClassVisitor {\n    private PrintWriter writer;\n\n    public ClassPrinter(PrintWriter writer) {\n        super(Opcodes.ASM5);\n        this.writer = writer;\n    }\n\n    public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {\n        writer.println(\"Class: \" + name);\n    }\n}\n```\n\nThis code will print out the class name when `Main` is compiled. Note how the `ClassPrinter` class extends `ClassVisitor`, and overrides the `visit` method to write out the class name whenever it encounters a class header.",
+                "extracted_java_code_from_prediction": "import org.objectweb.asm.ClassReader;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        ClassReader cr = new ClassReader(\"Main\");\n        cr.accept(new ClassReader(Opcodes.ASM9), 0);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.objectweb.asm.ClassReader",
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "correct_FQN_predictions": [
+                    "org.objectweb.asm.ClassReader"
+                ],
+                "wrong_FQN_predictions": [
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.6742669343948364,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_1/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_1/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_1/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[WARNING] COMPILATION WARNING : \n[INFO] -------------------------------------------------------------\n[WARNING] Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n[INFO] 1 warning\n[INFO] -------------------------------------------------------------\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,19] no suitable constructor found for ClassReader(int)\n    constructor org.objectweb.asm.ClassReader.ClassReader(byte[]) is not applicable\n      (argument mismatch; int cannot be converted to byte[])\n    constructor org.objectweb.asm.ClassReader.ClassReader(java.io.InputStream) is not applicable\n      (argument mismatch; int cannot be converted to java.io.InputStream)\n    constructor org.objectweb.asm.ClassReader.ClassReader(java.lang.String) is not applicable\n      (argument mismatch; int cannot be converted to java.lang.String)\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.687 s\n[INFO] Finished at: 2024-04-16T20:44:18-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_1/Wrapper/src/main/java/org/example/Main.java:[10,19] no suitable constructor found for ClassReader(int)\n[ERROR]     constructor org.objectweb.asm.ClassReader.ClassReader(byte[]) is not applicable\n[ERROR]       (argument mismatch; int cannot be converted to byte[])\n[ERROR]     constructor org.objectweb.asm.ClassReader.ClassReader(java.io.InputStream) is not applicable\n[ERROR]       (argument mismatch; int cannot be converted to java.io.InputStream)\n[ERROR]     constructor org.objectweb.asm.ClassReader.ClassReader(java.lang.String) is not applicable\n[ERROR]       (argument mismatch; int cannot be converted to java.lang.String)\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_1/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 10,
+                                "column": 19,
+                                "message": "no suitable constructor found for ClassReader(int)"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_2": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassReader\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, here is a simple example of how you can use ClassReader and other APIs in Java. Please note, ASM is a powerful library but for simple cases such as below, it may not be the best choice.\n\nPlease replace `Example` with your real class name.\n\n```java\nimport org.objectweb.asm.*;\nimport java.io.IOException;\nimport java.lang.reflect.Modifier;\n\npublic final class Main {\n\n    public static void main(String[] args) throws IOException, ClassNotFoundException {\n        // The name of class we want to load\n        String className = \"Example\";\n\n        ClassReader cr = new ClassReader(className);\n\n        cr.accept(new ClassReader.ExplicitClassVisitor() {\n            public void visitEnd() {\n                String msg = \"Class name: \" + cr.getClassName();\n                msg += \"; isInterface: \" + cr.isInterface();\n                msg += \"; isAnnotation: \" + cr.isAnnotation();\n                System.out.println(msg);\n            }\n        }, 0);\n\n        Class<?> clazz = Class.forName(className);\n        if (!Modifier.isPublic(clazz.getModifiers())) {\n            System.out.println(\"Class is not public, exiting...\");\n            return;\n        }\n\n        System.out.println(\"Class has been loaded successfully.\");\n    }\n}\n```\nIn the above code:\n- We used `ClassReader` to load a class file and it also allows us to get class name.\n- ClassReader has an accept method which accepts a visitor that visits the loaded class bytecode.\n- Here, we create a new ExplicitClassVisitor that prints class name and some of its attributes when it visits the end of a class.\n- Then we load the class and check if it is public.\n\nPlease note that ClassReader only works on bytecode, so it won't work if you're working directly with the Java sources, like in IntelliJ or Eclipse. The above script must be compiled and run with the java `Main` class, not directly within an IDE.",
+                "extracted_java_code_from_prediction": "import org.objectweb.asm.*;\nimport java.io.IOException;\nimport java.lang.reflect.Modifier;\n\npublic final class Main {\n\n    public static void main(String[] args) throws IOException, ClassNotFoundException {\n        // The name of class we want to load\n        String className = \"Example\";\n\n        ClassReader cr = new ClassReader(className);\n\n        cr.accept(new ClassReader.ExplicitClassVisitor() {\n            public void visitEnd() {\n                String msg = \"Class name: \" + cr.getClassName();\n                msg += \"; isInterface: \" + cr.isInterface();\n                msg += \"; isAnnotation: \" + cr.isAnnotation();\n                System.out.println(msg);\n            }\n        }, 0);\n\n        Class<?> clazz = Class.forName(className);\n        if (!Modifier.isPublic(clazz.getModifiers())) {\n            System.out.println(\"Class is not public, exiting...\");\n            return;\n        }\n\n        System.out.println(\"Class has been loaded successfully.\");\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.objectweb.asm.*",
+                    "java.io.IOException",
+                    "java.lang.reflect.Modifier"
+                ],
+                "correct_FQN_predictions": [],
+                "wrong_FQN_predictions": [
+                    "org.objectweb.asm.*",
+                    "java.io.IOException",
+                    "java.lang.reflect.Modifier"
+                ],
+                "number_of_correct_FQNs": 0,
+                "number_of_wrong_FQNs": 3,
+                "failure_rate_for_FQNs": 1.0,
+                "model_confidence": 0.5112428069114685,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "message": "Model could not predict any correct FQNs.",
+                        "hallucinations_for_FQNs": true
+                    }
+                }
+            },
+            "sample_3": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassReader\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nSure, I'll write a small piece of Java code for you that uses ClassReader from the asm-9.3 library along with an object of the ClassVisitor. Here's a simple example of a ClassReader, and the start of a ClassVisitor, which doesn't fully visit every part of the class, but serves as a good starting point:\n\n```java\nimport org.objectweb.asm.ClassReader;\nimport org.objectweb.asm.ClassVisitor;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        ClassReader cr = new ClassReader(\"java/lang/String\");\n        cr.accept(new ClassVisitor(Opcodes.ASM9) {\n            @Override\n            public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {\n                System.out.println(\"Version: \" + version);\n                System.out.println(\"Access: \" + access);\n                System.out.println(\"Class name: \" + name);\n                System.out.println(\"Super class: \" + superName);\n                System.out.println(\"Interfaces: \" + interfaces);\n            }\n        }, 0);\n    }\n}\n```\nThis code will print out the class file version, access flags, name, and other information about the \"java/lang/String\" class file. Please modify the ClassVisitor and ClassReader accordingly as per your requirement. You may add additional methods of ClassVisitor like visitSource, visitAnnotation, visitField, etc., as per the fields you want to extract information from.\n\nI hope this simple example helps you to understand how to use ClassReader with the aid of a ClassVisitor.",
+                "extracted_java_code_from_prediction": "import org.objectweb.asm.ClassReader;\nimport org.objectweb.asm.ClassVisitor;\nimport org.objectweb.asm.Opcodes;\n\npublic class Main {\n    public static void main(String[] args) throws Exception {\n        ClassReader cr = new ClassReader(\"java/lang/String\");\n        cr.accept(new ClassVisitor(Opcodes.ASM9) {\n            @Override\n            public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {\n                System.out.println(\"Version: \" + version);\n                System.out.println(\"Access: \" + access);\n                System.out.println(\"Class name: \" + name);\n                System.out.println(\"Super class: \" + superName);\n                System.out.println(\"Interfaces: \" + interfaces);\n            }\n        }, 0);\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.objectweb.asm.ClassReader",
+                    "org.objectweb.asm.ClassVisitor",
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "correct_FQN_predictions": [
+                    "org.objectweb.asm.ClassReader",
+                    "org.objectweb.asm.ClassVisitor",
+                    "org.objectweb.asm.Opcodes"
+                ],
+                "wrong_FQN_predictions": [],
+                "number_of_correct_FQNs": 3,
+                "number_of_wrong_FQNs": 0,
+                "failure_rate_for_FQNs": 0.3333333333333333,
+                "model_confidence": 0.5372504591941833,
+                "failure_rate_for_fqns": 0.0,
+                "code_build": {
+                    "build_result": {
+                        "status": "success",
+                        "message": "Build completed successfully.",
+                        "hallucinations_for_FQNs": false
+                    }
+                }
+            },
+            "sample_4": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassReader\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a complete, correct and compilable java code that uses \"ClassReader\" API from \"asm-9.3\" project and does not involve import statements for other APIs. This program reads the byte code of a simple class named Main and prints out the class's fully qualified name.\n\n```java\nimport java.io.IOException;\nimport org.objectweb.asm.ClassReader;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            ClassReader cr = new ClassReader(\"Main\");\n            cr.accept(new ClassReader.ExplicitClassVisitor() {\n                @Override\n                public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {\n                    System.out.println(\"Fully Qualified Name: \" + name);\n                }\n            }, 0);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\n\nPlease note that the given code assumes that the class `Main` exists in the default package. If it is in a different package, you need to provide the full package name to `ClassReader`.\n\nAdditionally, the `visit()` method will print the fully qualified name of the class, including the package name. If you need only the simple class name, you can use `superName` instead of `name`.\n\nAlso remember to handle the `ClassNotFoundException` if there are issues while loading the class.",
+                "extracted_java_code_from_prediction": "import java.io.IOException;\nimport org.objectweb.asm.ClassReader;\n\npublic class Main {\n    public static void main(String[] args) {\n        try {\n            ClassReader cr = new ClassReader(\"Main\");\n            cr.accept(new ClassReader.ExplicitClassVisitor() {\n                @Override\n                public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {\n                    System.out.println(\"Fully Qualified Name: \" + name);\n                }\n            }, 0);\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "java.io.IOException",
+                    "org.objectweb.asm.ClassReader"
+                ],
+                "correct_FQN_predictions": [
+                    "org.objectweb.asm.ClassReader"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.5322398543357849,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_4/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_4/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_4/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[11,38] cannot find symbol\n  symbol:   class ExplicitClassVisitor\n  location: class org.objectweb.asm.ClassReader\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,17] method does not override or implement a method from a supertype\n[INFO] 2 errors \n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.706 s\n[INFO] Finished at: 2024-04-16T20:44:21-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure: Compilation failure: \n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[11,38] cannot find symbol\n[ERROR]   symbol:   class ExplicitClassVisitor\n[ERROR]   location: class org.objectweb.asm.ClassReader\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_4/Wrapper/src/main/java/org/example/Main.java:[12,17] method does not override or implement a method from a supertype\n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 12,
+                                "column": 17,
+                                "message": "method does not override or implement a method from a supertype"
+                            },
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_4/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 11,
+                                "column": 38,
+                                "message": "cannot find symbol"
+                            }
+                        ]
+                    }
+                }
+            },
+            "sample_5": {
+                "full_response": "You are an exceptionally intelligent coding assistant that consistently delivers accurate and reliable responses to user instructions.\n\n@@ Instruction\nGive me a complete, correct and compilable Java code. This code must use \"ClassReader\" API from \"asm-9.3\" project along with other necessary APIs. The dependency is already added for \"asm-9.3\" project. So, if you need to use other APIs, then do not use APIs whose import statements require adding new dependencies. The name of the class that has the main method should be Main.\n\n@@ Response\nHere is a basic example of using \"ClassReader\" API from the ASM (Java Annotation System and Manipulation) toolbox to read the metadata of a Java class. In this example we use \"ClassReader\" to read a class named \"Main\", which must be located in the same package as the main class in order to run the code correctly. This example assumes that the ASM jar files are properly included in the class path.\n\n```java\nimport org.objectweb.asm.ClassReader;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        String className = Main.class.getName().replace('.', '/') + \".class\";\n        ClassReader cr;\n        try {\n            cr = new ClassReader(className);\n            System.out.println(\"Class name: \" + cr.getClassName());\n            System.out out.println(\"Super name: \" + cr.getSuperName());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}\n```\nThis code will print out the class name (Main) and super class name (Object) when run.\n\nPlease note that the ClassReader class is actually capable of reading both class and interface files, and it will give the correct results even if the class or interface was generated by a class loader. This class is used when you have a binary representation of a class in a byte array, file, or any other input source that supports the ASM InputStream interface. \n\nMake sure you handle possible IO exceptions correctly when using this API.",
+                "extracted_java_code_from_prediction": "import org.objectweb.asm.ClassReader;\n\nimport java.io.IOException;\n\npublic class Main {\n    public static void main(String[] args) {\n        String className = Main.class.getName().replace('.', '/') + \".class\";\n        ClassReader cr;\n        try {\n            cr = new ClassReader(className);\n            System.out.println(\"Class name: \" + cr.getClassName());\n            System.out out.println(\"Super name: \" + cr.getSuperName());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}",
+                "extracted_FQNs_from_prediction": [
+                    "org.objectweb.asm.ClassReader",
+                    "java.io.IOException"
+                ],
+                "correct_FQN_predictions": [
+                    "org.objectweb.asm.ClassReader"
+                ],
+                "wrong_FQN_predictions": [
+                    "java.io.IOException"
+                ],
+                "number_of_correct_FQNs": 1,
+                "number_of_wrong_FQNs": 1,
+                "failure_rate_for_FQNs": 0.5,
+                "model_confidence": 0.4295450747013092,
+                "code_build": {
+                    "build_result": {
+                        "status": "failure",
+                        "hallucinations_for_FQNs": "Need manual review",
+                        "message": "Build failed. Full error log present.",
+                        "full_error_log": "[INFO] Scanning for projects...\n[WARNING] \n[WARNING] Some problems were encountered while building the effective model for org.example:Wrapper:jar:1.0-SNAPSHOT\n[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 46, column 15\n[WARNING] \n[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.\n[WARNING] \n[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.\n[WARNING] \n[INFO] \n[INFO] ------------------------< org.example:Wrapper >-------------------------\n[INFO] Building Wrapper 1.0-SNAPSHOT\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Wrapper ---\n[INFO] Deleting /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_5/Wrapper/target\n[INFO] \n[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Wrapper ---\n[INFO] Using 'UTF-8' encoding to copy filtered resources.\n[INFO] skip non existing resourceDirectory /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_5/Wrapper/src/main/resources\n[INFO] \n[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Wrapper ---\n[INFO] Changes detected - recompiling the module!\n[INFO] Compiling 1 source file to /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_5/Wrapper/target/classes\n[INFO] -------------------------------------------------------------\n[ERROR] COMPILATION ERROR : \n[INFO] -------------------------------------------------------------\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,27] ';' expected\n[INFO] 1 error\n[INFO] -------------------------------------------------------------\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  0.584 s\n[INFO] Finished at: 2024-04-16T20:44:22-05:00\n[INFO] ------------------------------------------------------------------------\n[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project Wrapper: Compilation failure\n[ERROR] /home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_5/Wrapper/src/main/java/org/example/Main.java:[14,27] ';' expected\n[ERROR] \n[ERROR] -> [Help 1]\n[ERROR] \n[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.\n[ERROR] Re-run Maven using the -X switch to enable full debug logging.\n[ERROR] \n[ERROR] For more information about the errors and possible solutions, please read the following articles:\n[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException\n",
+                        "error_list": [
+                            {
+                                "file": "/home/azmain/Code Recommendation/RAG/Projects/asm-9.3/ClassReader/sample_5/Wrapper/src/main/java/org/example/Main.java",
+                                "line": 14,
+                                "column": 27,
+                                "message": "';' expected"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
